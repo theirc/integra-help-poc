@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<meta charset="UTF-8"/><title>Distribute CIK Inventory Items </title><meta name="generator" content="Adobe RoboHelp 2020"/><link rel="stylesheet" href="assets/css/default.css"/><link rel="stylesheet" href="assets/css/rh_import-UG_Receiving and Distributing CIK Inventory Items.css"/></head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Distribute CIK Inventory Items ">
+        <span>Distribute CIK Inventory Items </span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+<div><h1><a id="Distribute_CIK_Inventory_Items"></a>Distribute CIK Inventory Items </h1><p>Purpose </p><ul data-start="1" class="List33" xmlns=""><li>Prerequisites </li><li></li><li></li></ul><p>Steps </p><ol data-start="1" class="List3" xmlns=""><li>From the Integra home page, navigate the modules Project management and accounting <span></span> Projects <span></span> All projects.<p><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image12.png" width="639.0" height="225.0"/> </p></li><li>In the list of projects, locate the relevant CIK project and click the Project ID number to open the project form.  <p><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image13.png" width="631.0" height="235.0"/> </p></li><li>On the menu at the top of page, click Plan and select Item requirements. </li></ol><p><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image14.png"/> </p><p class="ListParagraph">Note: You may see a list of previously created item requirements in the Lines table.</p><ol data-start="4" class="List3" xmlns=""><li>On the menu at top of page, click <img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image15.png" width="52.0" height="25.0"/><p><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image16.png" width="668.0" height="213.0"/> </p></li><li>In the new item requirement line, complete/validate the following fields for all items being distributed:</li></ol><div align="left"><table border="1.3" cellspacing="0" class="NormalTable" style="width:672.0px"><colgroup xmlns=""><col style="width:126px"/><col style="width:546px"/></colgroup><tbody><tr><td><p>Field </p></td><td><p>Entry/Selection Required</p></td></tr><tr><td><p>Project ID </p></td><td></td></tr><tr><td><p>Product name</p></td><td></td></tr><tr><td><p>Item number</p></td><td></td></tr><tr><td><p>Quantity</p></td><td></td></tr><tr><td><p>Line property</p></td><td></td></tr><tr><td></td><td></td></tr></tbody></table></div><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image17.png" width="668.0" height="180.0"/> </p><ol data-start="6" class="List3" xmlns=""><li>On the menu above the line item table, click Financial dimensions.</li><li>On the toolbar at the top of the page, click Save. (This retrieves the D2 code that was previously entered in the Category field of the line).</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image18.png" width="664.0" height="304.0"/> </p><ol data-start="8" class="List3" xmlns=""><li>Complete the following financial dimension fields:</li></ol><div align="left"><table border="1.3" cellspacing="0" class="NormalTable" style="width:672.0px"><colgroup xmlns=""><col style="width:244.8px"/><col style="width:427.2px"/></colgroup><tbody><tr><td><p>Field / Button</p></td><td><p>Entry/Selection Required</p></td></tr><tr><td><p>D00Matching_Cost</p></td><td><p>Matching Grant</p><p>If applicable, enter the matching grant project ID. E.g., GH938 –FY2019 Matching Grant Program.</p></td></tr><tr><td><p>D01Project_Code </p></td><td><p>This value defaults based on project selected at beginning of transaction.</p></td></tr><tr><td><p>D02Project_Reporting_Line</p></td><td><p>Enter the relevant D2 code. </p><p>Note: This value should default if you clicked Save after completing the Category field in the Lines section above.</p></td></tr><tr><td><p>D03Program_Area</p></td><td><p>Enter the relevant D3 code.</p></td></tr><tr><td><p>D04Location</p></td><td><p>Enter the relevant D4 code.</p></td></tr><tr><td><p>D05Entity_Code</p></td><td><p>This value defaults based on legal entity. </p></td></tr><tr><td><p>D06Functional_Area</p></td><td><p>Enter the relevant D6 code.</p></td></tr><tr><td><p>D09Client_ID</p></td><td><p>Select the client ID for the recipient from the drop-down selection list. </p><p>Tip: If client code is unknown, filter by program type and/or client name under the Description column in the drop-down window. E.g., Entering MG filters the list to only display matching grant clients, entering RP filters the list to only display reception and placement clients.</p></td></tr></tbody></table></div><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image19.png" width="675.0" height="225.0"/> </p><ol data-start="9" class="List3" xmlns=""><li>Click Lines to return to the line item view. </li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image20.png" width="683.0" height="239.0"/> </p><ol data-start="10" class="List3" xmlns=""><li>Click the Product dimensions tab.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image21.png" width="687.0" height="246.0"/> </p><ol data-start="11" class="List3" xmlns=""><li>Complete the Warehouse and Location fields to identify the location from which the items are being distributed. </li></ol><p class="ListParagraph">Remember: There must be sufficient on-hand inventory in the specific location selected.</p><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image22.png" width="697.0" height="249.0"/> </p><ol data-start="12" class="List3" xmlns=""><li>Click Lines to return to the line item view.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image23.png" width="697.0" height="209.0"/> </p><ol data-start="13" class="List3" xmlns=""><li>On the menu at top of page, click Manage.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image24.png" width="697.0" height="254.0"/> </p><ol data-start="14" class="List3" xmlns=""><li>On the action pane, click Inventory and select Marking from the drop-down selection list.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image25.png" width="669.0" height="307.0"/> </p><p class="ListParagraph">Note: It is possible that the same type of item was donated with different fair market values. To ensure the correct cost price is posted, “marking” is used before the packing slip is posted. Marking allows you to override FIFO costing.</p><ol data-start="15" class="List3" xmlns=""><li>Review the lines to identify the record with the correct cost price. </li></ol><p class="ListParagraph">Notes: </p><ul data-start="1" class="List5" xmlns=""><li>Lines display for all on-hand inventory for that site, warehouse and location. </li><li>Each line represents a different transaction (movement journal) that the inventory was received through. <br/>‎</li></ul><ol data-start="16" class="List3" xmlns=""><li>To mark the relevant record, select the check mark under the column, Set mark now. </li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image26.png"/> </p><ol data-start="17" class="List3" xmlns=""><li>Under the Marking transaction section (top section), validate the Mark now field is populated with the quantity being distributed.</li><li>In the bottom right corner of page, click OK to continue.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image27.png" width="676.0" height="220.0"/> </p><ol data-start="19" class="List3" xmlns=""><li>On the menu at top of page, click Manage.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image28.png" width="669.0" height="217.0"/> </p><ol data-start="20" class="List3" xmlns=""><li>On the action pane, click Posting and select Packing slip from the drop-down selection list.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image29.png" width="667.0" height="305.0"/> </p><ol data-start="21" class="List3" xmlns=""><li>In the Quantity field, select All from the drop-down selection list. </li><li>Click the Posting indicator to display Yes.</li><li>Ensure the Print packing slip indicator displays Yes. </li><li>Cick OK to post the packing slip.</li></ol><p class="ListParagraph"><img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image30.png" width="667.0" height="305.0"/> </p><p class="ListParagraph">Note: The post action removes the CIK item from inventory and expenses to to main account 85000.</p><ol data-start="25" class="List3" xmlns=""><li>To print the pick list, click <img src="assets/images/rh_import-UG_Receiving and Distributing CIK Inventory Items_files/image31.png" width="30.0" height="33.0"/> (printer icon).<ul data-start="25.1"><li>To export the receipt form to a different format, click Export and select output format, e.g., PDF.</li></ul></li><li>Click the X in the top right corner of page to close the print view and return to the item requirements list.</li><li>Obtain signature from client on printed packing list.</li><li>Scan and save signed packing list.<ul data-start="28.1"><li>Include the sales order number in the uploaded file name. </li></ul></li><li>Attach the signed packing list to the client vendor record. (See next procedure for attachment steps.)</li></ol><p class="ListParagraph"> </p><p>Result</p><p>You have recorded the record the distribution of CIK inventory items to a client and have obtained client signature on hard copy of packing list.</p><ul data-start="1" class="List7" xmlns=""><li>The signed packing list can now be uploaded to the client’s vendor record.</li></ul><p> </p></div></body></html>

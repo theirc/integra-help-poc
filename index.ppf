@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ppfml version="2.00" project="Integra Help (PoC)" type="4">
+  <contextmap>
+    
+  </contextmap>
+  <topiclist defaulttopic="rh_import-Personalize_Table_Grid_Layout.htm#Personalization_Overview">
+    
+    <topic>
+      Distribute_CIK_Inventory_Items.htm
+    </topic>
+    
+    <topic>
+      rh_import-Personalize_Table_Grid_Layout.htm
+    </topic>
+    
+    <topic>
+      rh_import-UG_Receiving_and_Distributing_CIK_Inventory_Items.htm
+    </topic>
+    
+    <topic>
+      rh_import-UG_Receiving_and_Distributing_CIK_Inventory_Items.htm
+    </topic>
+    
+    <topic>
+      rh_import-UG_Requesting_Client_Payments_in_Integra.htm
+    </topic>
+    
+    <topic>
+      rh_import-UG_Requesting_Client_Payments_in_Integra.htm
+    </topic>
+    
+    <topic>
+      ‎Attach_Signed_Packing_List_to_Clients_Vendor_Record.htm
+    </topic>
+    
+    <topic>
+      rh_import-Personalize_Table_Grid_Layout.htm#Personalization_Overview
+    </topic>
+    
+  </topiclist>
+  <filenamemap>
+    <filenameentry moniker="wh_languagetype">
+      <filename>
+        en_US
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="wh_stoplist">
+      <filename>
+        whxdata/stopwords.xml
+      </filename>
+    </filenameentry>
+    <filenameentry moniker="startpage">
+      <filename>
+        index.htm
+      </filename>
+    </filenameentry>
+        
+  </filenamemap>
+</ppfml>

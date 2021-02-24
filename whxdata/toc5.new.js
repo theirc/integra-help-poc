@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Attach_Signed_Packing_List_to_Client’s_Vendor_Record","type":"item","tilePath":"","description":"","url":"‎Attach_Signed_Packing_List_to_Clients_Vendor_Record.htm#Attach_Signed_Packing_List_to_Client’s_Vendor_Record"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

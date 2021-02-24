@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "4";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+
+  <meta charset="UTF-8"/>
+  <title>Requesting Client Payments in Integra</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <link rel="stylesheet" href="assets/css/default.css"/>
+  <link rel="stylesheet" href="assets/css/rh_import-UG_Requesting Client Payments in Integra.css"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Requesting Client Payments in Integra">
+        <span>Requesting Client Payments in Integra</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <h1><a id="Setting up Clients as Vendors in Integra"></a>Setting up Clients as Vendors in Integra</h1>
+  <p>In Integra, the details of all persons and organizations with whom the IRC interacts with are stored in the global address book. The BENE Vendor group relates to any person who is targeted for assistance, who directly benefits from or comes in contact with an IRC-implemented or financially-supported IRC program.</p>
+  <p>Most clients are automatically created in Integra through the ETO (Efforts to Outcome) interface; however, non-ETO clients who do not need heightened confidentiality (i.e., their name being saved in Integra is acceptable) can be manually entered and approved by the local requestor. Examples of a requestor include but are not limited to the following roles:</p>
+  <ul class="List10" data-start="1" xmlns="">
+    <li>Caseworker</li>
+    <li>Casework Supervisor</li>
+    <li>Resettlement Manager</li>
+    <li>Anti-Trafficking Manager</li>
+    <li>Finance Manager</li>
+  </ul>
+  <p>If the office has a program(s) where clients require heightened confidentiality, Finance will create a generic vendor record in the Vendor module. This is done during the project set-up phase. Example of a such a vendor includes anti-trafficking clients.  Due to the sensitivity of this vendor type and to ensure the record is secured to the legal entity, only those with permission can view the record. </p>
+  <h3>The D9 Financial Dimension</h3>
+  <ul class="List9" data-start="1" xmlns="">
+    <li>One client can have multiple D9 financial dimensions if enrolled in multiple programs.</li>
+    <li>When processing client payment requests, it is critical that the correct D9 is selected, as this is how Integra and ETO track what is spent on each collection and individual client.</li>
+    <li>For client payments where the vendor selected is not the principal applicant, the D9 dimension value is the collection/case number. This number is linked to the principal applicant’s name.</li>
+    <li>For anti-trafficking clients, before requesting the first payment, the client ID (D9) must be created in Integra. When requesting the payment, select the generic vendor record as the vendor.</li>
+  </ul>
+  <h4>Process Diagram</h4>
+  <h4><img alt="Picture 96" height="350.8" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image1.png" width="692.1"/></h4>
+  <p>Process Overview</p>
+  <ol class="List25" data-start="1" xmlns="">
+    <li>Caseworker enters client payment request in Integra.</li>
+    <li>Caseworker submits payment request to workflow for approval.</li>
+    <li>Once approved by supervisor and Finance, caseworker prints hard copy of payment request.</li>
+    <li>Finance posts the payment request.</li>
+    <li>Finance processes payment in Integra.
+      <ol>
+        <li>The client’s date of birth is required for payment. Refer to the procedure in this document titled, Display List of Direct Assistance Cases for instructions on finding this information.</li>
+      </ol>
+    </li>
+    <li>Caseworker gives prepaid card (or check) to client (or vendor, when applicable) and obtains client signature on hard copy printout of payment request.</li>
+    <li>Caseworker attaches electronic copy of signed document to payment request journal in Integra.</li>
+    <li>Caseworker files hardcopy in client’s folder.</li>
+  </ol>
+  <p><br/>
+    ‎Recommended Follow-on Steps</p>
+  <ul class="List21" data-start="1" xmlns="">
+    <li>Caseworker verifies that the remaining budget has been updated on the Client Payment Dashboard.</li>
+    <li>Caseworker ensures that payment transferred to ETO.</li>
+  </ul>
+  <h1><a id="Navigate_the_Client_Payment_Dashboard"></a>Navigate the Client Payment Dashboard</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to familiarize yourself with the Client Payment Dashboard layout and the information contained within it.</p>
+  <p>Steps</p>
+  <p>Log into Integra and ensure the correct legal entity is selected in the top right corner. E.g., 6DAT.</p>
+  <p><img alt="Picture 77" height="318.9" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image2.png" width="696.0"/></p>
+  <p>From the Iist of module tiles on the Integra home page, click Client Payment Dashboard.</p>
+  <p><img alt="Picture 66" height="316.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image3.png" width="696.0"/></p>
+  <p>Review the information contained within the Summary tiles.</p>
+  <p>Note: The tiles are quick links to standard Integra screens.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:174px"/>
+        <col style="width:521.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Tile name</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Clients</p>
+          </td>
+          <td>
+            <p>This tile links you to the vendor list of beneficiaries.</p>
+            <p>Note: Remember, all beneficiaries over the age of 18 are set up as vendors in Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>R&amp;P cases</p>
+          </td>
+          <td>
+            <p>This tile links you to the Direct assistance cases screen filtered for R&amp;P clients, which lists all the R&amp;P clients for the legal entity that have come over from ETO.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Payment requests (Invoice journal)</p>
+          </td>
+          <td>
+            <p>This tile links to the Invoice journal screen where payment requests are processed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Reception and placement inquiry</p>
+          </td>
+          <td>
+            <p>This tile links to the Reception and placement inquiry screen. This inquiry can be filtered for a set time period to see clients within a specific window.</p>
+            <p>Note: This report was built on the legacy report, Direct Assistance Flex Spending Report.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>P-Card Processing</p>
+          </td>
+          <td>
+            <p>This tile links to the Expense management module.</p>
+            <p>For detailed instructions on entering an expense report, refer to the Expense Management training user guide on RescueNet.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Picture 72" height="316.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image4.png" width="696.0"/></p>
+  <p> </p>
+  <p>Refer to table below and review the display options listed under the Cases heading.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:174px"/>
+        <col style="width:521.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Display Option</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>All R&amp;P active cases</p>
+          </td>
+          <td>
+            <p>This option updates the grid to list all cases with an enrollment/arrival date within 90 days.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>All MG active cases</p>
+          </td>
+          <td>
+            <p>This option displays any Matching grant client with an enrollment/arrival date within 180 days.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>All R&amp;P cases this year</p>
+          </td>
+          <td>
+            <p>This option updates the grid to list all cases for the fiscal year, both active and non-active.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>R&amp;P cases near service end</p>
+          </td>
+          <td>
+            <p>This option updates the grid to list cases that have 45 days remaining in their R&amp;P period.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>R&amp;P active cases not paid</p>
+          </td>
+          <td>
+            <p>This option updates the grid to list to any cases where there is remaining budget.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>My active MG/R&amp;P cases</p>
+          </td>
+          <td>
+            <p>This option updates the grid to list only those active cases for which you are the caseworker.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Other cash assistance programs</p>
+          </td>
+          <td>
+            <p>This option displays clients in other cash assistance programs that have come over from ETO, namely, Safety &amp; Wellness and Workforce Development.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTML377bf0a1.PNG" height="316.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image5.png" width="696.0"/></p>
+  <p>Review the table columns.</p>
+  <p>Notes:</p>
+  <p>Scroll to the right to see all columns. To modify this dashboard so that your preferred columns are more prominent, or to remove any columns you find not pertinent, please refer to the table personalization steps included in the Appendix of this document.</p>
+  <p>Not all columns listed below are displayed for all views; only the columns relevant to the view (case type) are displayed.</p>
+  <p>You can filter on any of the columns below to narrow down display results.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:666.0px">
+      <colgroup xmlns="">
+        <col style="width:174px"/>
+        <col style="width:492px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Column</p>
+          </td>
+          <td>
+            <p>Description</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Office</p>
+          </td>
+          <td>
+            <p>The legal entity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Sub-office</p>
+          </td>
+          <td>
+            <p>The sub-office for the legal entity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Full name</p>
+          </td>
+          <td>
+            <p>The full name of the Principal applicant.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Case number</p>
+          </td>
+          <td>
+            <p>The D9 financial dimension. (R&amp;P, Match grants and all other cash assistance programs).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Case size</p>
+          </td>
+          <td>
+            <p>The number of clients that belong to a case, including minors.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Days remaining</p>
+          </td>
+          <td>
+            <p>Client’s remaining time in the program.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Remaining budget</p>
+          </td>
+          <td>
+            <p>The amount left to be spent on the client.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Flex spent</p>
+          </td>
+          <td>
+            <p>The amount that has been spent beyond the budget.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Case manager</p>
+          </td>
+          <td>
+            <p>The caseworker ID assigned to the case.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>To view a history of payments posted for a case, select the case line and click Voucher transactions (top right corner above the grid).</p>
+  <p> </p>
+  <p>Result</p>
+  <p>You have navigated the Client Payment Dashboard and understand where different types of information are stored within the dashboard.</p>
+  <p> </p>
+  <h1><a id="Display_List_of_Direct_Assistance_Cases"></a>Display List of Direct Assistance Cases</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to determine/view the following:</p>
+  <p>The list of clients that have come over from ETO, and in which programs they are enrolled. This helps determine the case number to use to process the payment request.</p>
+  <p>The invoice journals (payment requests) posted for a client.</p>
+  <p>View the date of birth for a client</p>
+  <p>The finance manager requires the date of birth to load a customer card.</p>
+  <p>Note: The table grid can be personalized to add/remove and move columns. Refer to the procedure directly after this procedure for instructions on personalizing a grid.</p>
+  <p>Steps</p>
+  <p>Navigate to Project management and accounting <span></span> Projects <span></span> Direct assistance cases. You can also access this page by searching “Direct assistance cases” in the search bar at the top of the screen.</p>
+  <p><img alt="Picture 20" height="279.1" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image6.png" width="696.0"/></p>
+  <p>A list of all cases is displayed for the legal entity. Review the information contained under each column. Scroll to the right to view all the columns.</p>
+  <p>Note: The client’s date of birth is found in the Date of birth column (scroll to the right).</p>
+  <p><br/>
+    ‎View the number and type of cases for a client</p>
+  <p>To narrow down results to a specific client, filter on the Full name column.</p>
+  <p><img alt="Picture 21" height="204.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image7.png" width="696.0"/></p>
+  <p>Review all the individual case numbers related to that full name.</p>
+  <p>Note: The entries under the Program column help identify the correct D9 (case/collection number) to select when creating a payment request.</p>
+  <p>View the invoice journals posted for a client</p>
+  <p>Navigate to the Vendor account column in the grid. (Scroll to the right to see all columns)</p>
+  <p>Click a vendor account number to open the vendor master record.</p>
+  <p>On the action pane near the top of the form, under the Vendor tab, click Transactions to view a list of posted journals.</p>
+  <p>Note: There will be two entries for each payment that has been completed. Those vouchers starting with “AP” reflect the invoice journals (initiated by caseworkers) and those with “PV” are those vendor payment journals completed by Finance used to process the client payment.</p>
+  <p> </p>
+  <p>Result</p>
+  <p>You have displayed a list of clients and their enrolment programs. You have also viewed invoice journals (payment requests) posted for a client.</p>
+  <p>‎</p>
+  <h1><a id="Process_Payment_Request_for_a_Client"></a>Process Payment Request for a Client</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to enter a client payment request journal in Integra.</p>
+  <p>Each payment request journal requires two lines: a vendor line and a project line.</p>
+  <p>Note: If you are including multiple vendor lines in one journal (all using the same Client ID), each vendor line must have a corresponding project line.</p>
+  <p>There are different financial dimension requirements for each line in the payment request journal:</p>
+  <p>Vendor line requires D1, D4, and D5</p>
+  <p>Project line requires D1, D2, D3, D4, D5, D6 and D9</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable">
+      <colgroup xmlns="">
+        <col style="width:695.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Attention: Ensure you attach the client-signed document at the journal batch level, not on the individual journal voucher lines.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Prerequisites</p>
+  <p>Client has a BENE vendor record set up in the Integra system. If a BENE vendor record does not exist for the client, each RAI office has one or more individuals who can create the vendor record.</p>
+  <p>All financial dimensions are known</p>
+  <p>Steps</p>
+  <p>Log into Integra and ensure your correct legal entity is selected in the top right corner. E.g., 6DAT (Atlanta).</p>
+  <p><img alt="Picture 84" height="318.9" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image8.png" width="696.0"/></p>
+  <p>From the Iist of module tiles on the Integra home page, click Client Payment Dashboard.</p>
+  <p>Note: If you do not have access to the Client Payment Dashboard, navigate to the Invoice journal via Accounts payable <span></span> Invoices <span></span> Invoice journal and proceed to step 5.</p>
+  <p><img alt="Picture 80" height="315.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image9.png" width="696.0"/></p>
+  <p>Make note of the client’s remaining budget on the R&amp;P dashboard for comparison purposes after payment request is posted.</p>
+  <p>Click the Payment requests (invoice journal) tile on the left to begin a payment request, which will take you to the Invoice journal form.</p>
+  <p><img alt="Picture 28" height="235.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image10.png" width="678.9"/></p>
+  <p>On the top menu, click <img alt="Picture 15" height="31.8" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image11.png" width="56.0"/>to generate a new invoice line.</p>
+  <p><img alt="Picture 16" height="238.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image12.png" width="677.2"/></p>
+  <p>In the Name field of the new line, click the drop-down arrow and select the relevant option from the selection list. Note: Options available are specific to the legal entity and location.</p>
+  <p><img alt="Picture 36" height="317.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image13.png" width="696.0"/></p>
+  <p>Update the Description field with specific details to help you identify the payment request more easily later on, i.e., client name, payment reason, date, caseworker’s initials.</p>
+  <p>Example: T Lannister July Rent 6.24.20 – SDR</p>
+  <p><img alt="Picture 58" height="318.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image14.png" width="696.0"/></p>
+  <p>On the menu at the top, click Lines.</p>
+  <p><img alt="Picture 19" height="223.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image15.png" width="670.1"/></p>
+  <p>Ensure a voucher line with account type Vendor is displayed in the table. If not, click <img alt="Picture 2" height="21.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image16.png" width="62.0"/>just above the table grid to insert a line.</p>
+  <p>Note: Each vendor payment transaction requires at least two voucher lines to be successfully processed:</p>
+  <p>The vendor voucher line, which represents the payment to the client.</p>
+  <p>The project voucher line, which represents the charge to the project.</p>
+  <p>Note: In cases where payments are split among multiple programs, each program requires its own project voucher line.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable">
+      <colgroup xmlns="">
+        <col style="width:623.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>If not already displayed, add the Posting profile column to the table. To do this, right click on any column header and select Add columns. Enter Posting profile in the filter field and press Enter. Select the checkbox next to Posting profile and click Insert. The new column is inserted at the end of the table. This column can be moved to a different location I the table per the previous instruction outlined in this document.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Complete the following fields for the vendor voucher line:</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:120px"/>
+        <col style="width:575.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Entry Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account </p>
+          </td>
+          <td>
+            <p>Click the drop-down arrow and select the client’s vendor account number.</p>
+            <p>Tip: To search the list, click the Search name column header to bring up a search filter window and enter the last name of the client. If you select search option, “Contains”, you can search by first or last name.</p>
+            <p>Important: If paying a vendor on behalf of a client, enter the account number by searching for the name of the vendor you are paying, e.g., Walmart or Landlord.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account name</p>
+          </td>
+          <td>
+            <p>This value defaults after you enter the account number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Invoice date</p>
+          </td>
+          <td>
+            <p>In the Invoice date field, click the drop-down list and select today’s date.</p>
+            <p>Note: If making a payment on behalf of a client, select the relevant invoice date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Invoice</p>
+          </td>
+          <td>
+            <p>Enter a unique invoice number.</p>
+            <p>Note: Each payment, regardless of whether it is to the same client, requires a unique invoice number.</p>
+            <p>Examples:</p>
+            <p>Client first initial, last name, date</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>This is a free text field. Enter a clear description of what the payment is for. E.g., Pocket Money, Rent - November</p>
+            <p>This is the description that prints on the voucher.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Debit</p>
+          </td>
+          <td>
+            <p>Leave this field blank for vendor line.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Credit</p>
+          </td>
+          <td>
+            <p>Enter the amount being paid to client. E.g., $875.00</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Posting profile</p>
+          </td>
+          <td>
+            <p>Click the drop-down arrow and select the type of payment issuance. E.g., PREPCARD (Prepaid card).</p>
+            <p>Important: Selecting the correct Posting profile is critical in ensuring the correct G/L account gets updated. Options GENAP or PREPCARD are the only options that should be selected.</p>
+            <p>For any payments to a 3rd party (including rent to landlords or shopping for a client at Walmart), always use GENAP.</p>
+            <p>If check is being issued direct to client, use GENAP.</p>
+            <p>For all prepaid payment cards, use PREPCARD, e.g., for “pocket money”.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Picture 76" height="318.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image17.png" width="696.0"/></p>
+  <p>On the toolbar just above the lines table, click Financial dimensions and select Account from the drop-down list.</p>
+  <p><img alt="Picture 5" height="313.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image18.png" width="692.1"/><br/>
+    ‎</p>
+  <p> </p>
+  <p>Complete the following financial dimension fields for the vendor account line:</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:174px"/>
+        <col style="width:521.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Entry Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project ID (D1)</p>
+          </td>
+          <td>
+            <p>Enter U1000.</p>
+            <p>Note: For the vendor line in a client payment invoice, always enter U1000. This is just a generic code to satisfy finance requirements; the actual project code gets entered on the project voucher line.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Operating Unit (D4)</p>
+          </td>
+          <td>
+            <p>Enter the office/sub-office code. E.g., UGAAT – Atlanta</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Reporting Entity (D5)</p>
+          </td>
+          <td>
+            <p>Enter the legal entity code. E.g., 6DAT</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Click <img alt="Picture 27" height="25.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image19.png" width="46.5"/> to proceed.</p>
+  <p><img alt="Picture 74" height="318.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image20.png" width="696.0"/></p>
+  <p>Result: The vendor voucher line is now complete.</p>
+  <p>To add the project voucher line, click <img alt="Picture 29" height="21.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image21.png" width="62.0"/> on the toolbar above the grid.</p>
+  <p><img alt="Picture 71" height="262.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image22.png" width="696.0"/></p>
+  <p>Validate that a new line has been inserted above (or below) the vendor line you just completed.</p>
+  <p>Complete the following fields for the project voucher line:</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:132px"/>
+        <col style="width:563.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Entry Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account type</p>
+          </td>
+          <td>
+            <p>Click the drop-down arrow and select Project from the drop-down list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Click the drop-down arrow and select the project ID from the drop-down list.</p>
+            <p>E.g., GB728, GH949</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account name</p>
+          </td>
+          <td>
+            <p>This value defaults after you enter the account number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project date</p>
+          </td>
+          <td>
+            <p>This value defaults.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Category</p>
+          </td>
+          <td>
+            <p>Select the relevant D2 code (project category) from the drop-down list.</p>
+            <p>Most common entries used:</p>
+            <p>75020.0.e – Cash assistance</p>
+            <p>750006.0.e – Refugee Housing/Rent</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Invoice date</p>
+          </td>
+          <td>
+            <p>Enter the same date as the first invoice account line.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Invoice</p>
+          </td>
+          <td>
+            <p>Enter the same invoice entry used on the vendor line.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>This value defaults to match the entry of the vendor line.</p>
+            <p>E.g., Pocket money</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Debit</p>
+          </td>
+          <td>
+            <p>Enter the amount of the payment. This value must match the credit value entered on the first invoice account line.</p>
+            <p>E.g., $875.00</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Credit</p>
+          </td>
+          <td>
+            <p>Leave this field blank for project invoice account line.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Picture 70" height="318.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image23.png" width="696.0"/></p>
+  <p>On the toolbar just above the grid, click Financial dimensions and select Account from the drop-down list.</p>
+  <p>Complete the following financial dimension fields for the project invoice account line:</p>
+  <p>Note: Some of the required D-codes may default if the project was set up with default codes.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:695.3px">
+      <colgroup xmlns="">
+        <col style="width:174px"/>
+        <col style="width:521.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Field</p>
+          </td>
+          <td>
+            <p>Entry Required</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project ID (D1) </p>
+          </td>
+          <td>
+            <p>This value defaults from the account previously entered.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project Category (D2)</p>
+          </td>
+          <td>
+            <p>This value defaults from the category previously entered.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Program Area (D3)</p>
+          </td>
+          <td>
+            <p>Enter the program code. E.g., SARP – Reception and placement</p>
+            <p>For R&amp;P payments, SARP will always be the correct entry.</p>
+            <p>For other programs, refer to your D-code chart on RescueNet.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Operating Unit (D4)</p>
+          </td>
+          <td>
+            <p>Enter the office/sub-office code. E.g., UGAAT – Atlanta</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Reporting Unit (D5)</p>
+          </td>
+          <td>
+            <p>Enter the legal entity code. E.g., 6DAT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Functional Area (D6)</p>
+          </td>
+          <td>
+            <p>Enter the functional area code. E.g., PRIM – Program Implementation</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Client ID (D9)</p>
+          </td>
+          <td>
+            <p>Enter the collection/case number. E.g., IA-572346</p>
+            <p>Note: Collection and case numbers can be found in the Direct Assistance Case table and the client’s ETO dashboard.</p>
+            <p>Note: Although there is functionality to search by client name under the Description column of the search window, it is advisable not to do this as you may not see all necessary results. This is because R&amp;P and MG collection numbers are listed by principal applicant; if the person you are searching for is not a principal applicant, their name will not appear in the search results.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Click <img alt="Picture 32" height="25.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image24.png" width="46.5"/> to proceed.</p>
+  <p><img alt="Picture 104" height="316.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image25.png" width="696.0"/></p>
+  <p>The project voucher line is now complete.</p>
+  <p>Under the BALANCE column at the bottom of the page, ensure the balances are zero.</p>
+  <p>Note: If balances are not zero, check your credit/debit lines and adjust as required.<br/>
+    ‎</p>
+  <p>Validate Payment Journal Posting via Posting Simulation</p>
+  <p><img alt="Picture 44" height="310.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image26.png" width="696.0"/></p>
+  <p>On the top menu, click Validate and select Simulate posting from the drop-down list.</p>
+  <p><img alt="Picture 105" height="314.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image27.png" width="696.0"/></p>
+  <p>Confirm that a message appears at the top of the page labeled, “Operation completed”.</p>
+  <p>Note: This is just a simulation of the actual posting to ensure there will be no errors.</p>
+  <p>Click <img alt="Picture 1" height="27.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image28.png" width="66.0"/>on the top menu.<br/>
+    ‎</p>
+  <p>Click the X in the top to close the journal posting page and return to the Invoice journal screen.</p>
+  <p><img alt="Picture 9" height="316.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image29.png" width="696.0"/></p>
+  <p>Submit Invoice Journal to Workflow Approval</p>
+  <p>Select the journal batch number line (it should be highlighted in blue) and click Workflow <span></span> Submit on the top menu bar.</p>
+  <p>In the workflow comment window, enter any relevant details for the approver.</p>
+  <p>Note: When requesting payments to a Bank of America pre-paid card, enter the client’s date of birth and proxy number in the workflow comment pane.</p>
+  <p>Click Submit.</p>
+  <p>Additional Workflow Notes:</p>
+  <p>Once the invoice is fully approved, Finance actions the final “post” for the invoice journal.</p>
+  <p>An invoice journal cannot be posted until the workflow approval is complete.</p>
+  <p>If you want to recall the item from workflow to make changes, and the item has not yet been approved, click Workflow <span></span> Recall. You can then make changes and resubmit to workflow.</p>
+  <p>If the workflow item gets rejected by the approver, the caseworker will receive an email alerting them it was rejected.</p>
+  <p><br/>
+    ‎Print Invoice Journal After Journal is Approved in Workflow</p>
+  <p>On the Invoice journal page, select the invoice journal to be printed.</p>
+  <p>On the menu at the top of the page, click Print and select RAI Journal from the drop-down list. (This printout has been customized for RAI client payments)</p>
+  <p><img alt="Picture 40" height="309.2" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image30.png" width="696.0"/></p>
+  <p>Under Destination section, click Change.</p>
+  <p><img alt="Picture 41" height="310.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image31.png" width="696.0"/></p>
+  <p>Select Printer.</p>
+  <p><img alt="Picture 42" height="312.8" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image32.png" width="696.0"/></p>
+  <p>In the Name field, select the relevant printer from the drop-down list.</p>
+  <p>Click OK to proceed.</p>
+  <p><img alt="Picture 31" height="386.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image33.png" width="495.6"/></p>
+  <p>Review the print output for accuracy.</p>
+  <p>Close the print window to return to the payment processing screen.</p>
+  <p>Obtain client signature on printout when issuing payment and file the signed copy in client’s hardcopy file.</p>
+  <p><img alt="Picture 108" height="316.1" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image34.png" width="696.0"/></p>
+  <p>Click the refresh button <img alt="Picture 107" height="26.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image35.png" width="27.5"/> in the top right corner to refresh the Invoice journal screen. A new journal batch number should appear at the bottom of the list.<br/>
+    ‎</p>
+  <p>Result</p>
+  <p>You have created a client payment request (invoice journal) and submitted it for approval.</p>
+  <p>Once approved, Finance can post the invoice journal, process payment and provide the case worker the funds to give to the client, i.e., check or prepaid card. Remember to obtain the client’s signature on the printed invoice journal when payment is given to client.<br/>
+    ‎</p>
+  <h1><a id="Upload_Signed_Copy_of_Invoice_to_Journal_Invoice_Record"></a>Upload Signed Copy of Invoice to Journal Invoice Record</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to attach the client-signed invoice to the posted invoice journal in Integra.</p>
+  <p>IMPORTANT: The invoice must be attached at the journal batch level, not the journal voucher line level.</p>
+  <p>Prerequisites</p>
+  <p>Finance has posted invoice journal and issued payment to client.</p>
+  <p>Client has signed the hard copy of the invoice journal.</p>
+  <p>Steps</p>
+  <p>Access the Client Payment Dashboard page and select the tile Payment requests (Invoice journal).</p>
+  <p><img alt="Picture 35" height="318.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image36.png" width="696.0"/></p>
+  <p>Under Show, click the drop-down arrow and select Posted.</p>
+  <p>Note: This field always defaults to Not posted so this must be changed to Posted each time a signed invoice needs to be uploaded.</p>
+  <p>Tip: Select the checkbox next to Show user-created only to narrow down the list to only display journals you have created.</p>
+  <p>Select the checkbox to the left of the relevant journal batch number.</p>
+  <p><img alt="Picture 37" height="204.1" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image37.png" width="696.0"/></p>
+  <p>To upload/attach a file, click the paperclip <img alt="Picture 81" height="26.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image38.png" width="27.0"/>in the top right corner tool bar.</p>
+  <p><img alt="Picture 86" height="261.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image39.png" width="696.0"/></p>
+  <p>On the menu bar at top, click <img alt="Picture 83" height="33.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image40.png" width="63.3"/> and select File from the drop-down list.</p>
+  <p><img alt="Picture 87" height="311.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image41.png" width="696.0"/></p>
+  <p>Click Browse and locate and attach the signed document.</p>
+  <p>A message will appear when the upload is complete. The number on the paperclip icon will also update to reflect the number of attachments on the record.</p>
+  <p>Close the attachment window to return to the invoice journal page.</p>
+  <p>Note: To view all attachments at any time, simply click the paperclip icon and the attached documents are displayed in the left-hand pane.<br/>
+    ‎</p>
+  <p>Result</p>
+  <p>You have uploaded the client-signed invoice to the posted invoice journal in Integra</p>
+  <p> </p>
+  <h1><a id="Workflow_Management"></a>Workflow Management</h1>
+  <h2><a id="Check_Status_of_Workflow_Approval_for_an_Invoice_Journal"></a>Check Status of Workflow Approval for an Invoice Journal</h2>
+  <p>Purpose</p>
+  <p>Use this procedure to find out if an invoice journal has been fully approved. The journal cannot be posted by Finance until the workflow approval is complete.</p>
+  <p>Note: A caseworker will get an email if an invoice journal has been rejected.</p>
+  <p>Prerequisites</p>
+  <p>Invoice journal has been submitted to workflow.</p>
+  <p>Steps</p>
+  <p>Display the Invoice journal list screen.</p>
+  <h3><img alt="Picture 50" height="313.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image42.png" width="696.0"/></h3>
+  <p>Select the relevant journal invoice line. (Click to the left of line and a blue checkmark will appear once selected).</p>
+  <p>Note: Newest entries are at the bottom of the list.</p>
+  <p>On the top menu, click Workflow and select View history.</p>
+  <h3><img alt="Picture 117" height="317.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image43.png" width="696.0"/></h3>
+  <p>Scroll down to the Tracking details list section. Under the Message column, you can see the approver’s name.</p>
+  <p>Scroll down further to the Tracking details section.</p>
+  <h3><img alt="Picture 116" height="314.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image44.png" width="696.0"/></h3>
+  <p>Review the status of the workflow item. Once approved, you will see a “Workflow completed” message.<br/>
+    ‎</p>
+  <p>Result</p>
+  <p>You have uploaded the client-signed invoice to the posted invoice.</p>
+  <h1><br/>
+    ‎<a id="Recall_an_Invoice_Journal_from_Workflow"></a>Recall an Invoice Journal from Workflow</h1>
+  <p>Purpose</p>
+  <p>Use this procedure if you would like to make any edits to a payment request (invoice journal) or delete a payment request that has been submitted but has not yet been fully approved. This option is only available if the workflow process has not been completed.</p>
+  <p>Prerequisites</p>
+  <p>The invoice journal has been submitted to workflow.</p>
+  <p>Steps</p>
+  <p>Display the Invoice journal list screen.</p>
+  <h3><img alt="Picture 62" height="317.8" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image45.png" width="696.0"/></h3>
+  <p>Select the relevant journal invoice line. (Click to the left of line and a blue checkmark will appear once selected).</p>
+  <p>Note: Newest entries are at the bottom of the list.</p>
+  <p>On the top menu, click Workflow and select Recall.</p>
+  <h3><img alt="Picture 63" height="317.1" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image46.png" width="696.0"/></h3>
+  <p>Enter a comment (optional) and click <img alt="Picture 64" height="29.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image47.png" width="58.0"/>.<br/>
+    ‎</p>
+  <p>Result</p>
+  <p>You have recalled an invoice journal from workflow.</p>
+  <p>Make any required edits to the invoice journal and then submit to workflow again.</p>
+  <p>If invoice journal should be deleted, select the journal batch number on the Invoice journal page, and click <img alt="Picture 48" height="25.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image48.png" width="71.0"/> on the menu at the top of the page.</p>
+  <h3><br/>
+    ‎</h3>
+  <h1><a id="Edit_an_Invoice_Journal_after_Workflow_Approval_is_Completed"></a>Edit an Invoice Journal after Workflow Approval is Completed</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to make changes to an invoice journal that has already been fully approved. Once the change is made, the invoice journal must be submitted to workflow again.</p>
+  <p>Prerequisites</p>
+  <p>The workflow status for the item is Complete.</p>
+  <p>Steps</p>
+  <p>Display the Invoice journal list screen.</p>
+  <h3><img alt="Picture 24" height="316.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image49.png" width="696.0"/></h3>
+  <p>Select the relevant invoice journal line.</p>
+  <p>On the top menu, click Lines <span></span> Edit.</p>
+  <p>Note: If you don’t see the Edit option, it means that the Workflow approval has not been completed and you can still use the Recall option from the Workflow menu.</p>
+  <h3><img alt="Picture 30" height="316.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image50.png" width="696.0"/></h3>
+  <p>Click <img alt="Picture 33" height="29.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image51.png" width="56.0"/>When prompted with the pop-up message.</p>
+  <h3><img alt="Picture 39" height="316.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image52.png" width="696.0"/></h3>
+  <p>Make required changes to journal lines.</p>
+  <p>Click X in the top right corner to close the window to return to the Invoice journal list screen.</p>
+  <h3><img alt="Picture 49" height="314.3" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image53.png" width="696.0"/></h3>
+  <p>Select the updated journal and click Workflow <span></span> Submit.</p>
+  <p><img alt="Picture 65" height="316.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image54.png" width="696.0"/></p>
+  <p>Enter a comment (optional) and click <img alt="Picture 67" height="29.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image55.png" width="66.0"/>.</p>
+  <p>Result</p>
+  <p>You have edited an invoice journal after workflow was completed.</p>
+  <p>Once edits are complete, submit invoice journal to workflow approval again.</p>
+  <h3> </h3>
+  <h1><a id="Display_Reception_and_Placement_Inquiry_(R&amp;P_Inquiry)"></a>Display Reception and Placement Inquiry (R&amp;P Inquiry)</h1>
+  <p>Purpose</p>
+  <p>Use this procedure to view client payments for a selected time period.</p>
+  <p>Note: This report was built on the legacy report, Direct Assistance Flex Spending report.</p>
+  <p>Steps</p>
+  <p>Log into Integra and ensure the correct legal entity is selected in the top right corner. E.g., 6DAT.</p>
+  <p><img alt="Picture 90" height="305.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image56.png" width="666.7"/></p>
+  <p>From the Iist of module tiles on the Integra home page, click Client Payment Dashboard.</p>
+  <p><img alt="Picture 92" height="304.9" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image57.png" width="672.6"/></p>
+  <p>Click the Reception and placement inquiry tile on the left of the screen.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:654.6px">
+      <colgroup xmlns="">
+        <col style="width:654.6px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><img alt="Picture 10" height="210.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image58.png" width="674.2"/></p>
+            <p><img alt="Picture 26" height="124.6" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image59.jpeg" width="679.4"/></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Review the information displayed in the report. To see clients from a time period different from the results displayed, change the Start date and/or End date and then click Apply parameters on the top left of the screen.</p>
+  <p>important: You may need to add, remove, or move columns around in the table to see all pertinent information. For detailed steps on how to do this, copy and paste this link into your internet browser and scroll down to the last section of the page.</p>
+  <p><a href="https://rescuenet.rescue.org/interact/Pages/Content/Document.aspx?id=12268">https://rescuenet.rescue.org/interact/Pages/Content/Document.aspx?id=12268</a></p>
+  <p>Status Meanings in Results Table:</p>
+  <p>The following table outlines the logic behind the various statuses displayed in the R&amp;P Inquiry.<br/>
+    ‎</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable">
+      <colgroup xmlns="">
+        <col style="width:221.66666666666666666666666667px"/>
+        <col style="width:445.8px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p>Status</p>
+          </td>
+          <td>
+            <p>Meaning</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Active</p>
+          </td>
+          <td>
+            <p>Remaining Days &gt; 0 and Remaining Budget &gt; 0</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Paid and active</p>
+          </td>
+          <td>
+            <p>Remaining Days &gt; 0 and Remaining Budget = 0</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Paid and complete</p>
+          </td>
+          <td>
+            <p>Remaining Days = 0 and Remaining Budget = 0</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unpaid and complete</p>
+          </td>
+          <td>
+            <p>Any other combination </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><br/>
+    ‎Result</p>
+  <p>You have displayed the Reception and Placement Inquiry to view an overview of client payments for a selected time period.<br/>
+    ‎</p>
+  <h1><br/>
+    <a id="Appendix:"></a>Appendix:
+  </h1>
+  <h2><a id="Approvers’_Responsibilities"></a>Approvers’ Responsibilities</h2>
+  <p>As an approver, you will receive an email when a client payment invoice journal requires your approval. Click the link in the email to access the approval pages in Integra.</p>
+  <p>Alternatively, invoices requiring your approval can also be viewed and actioned from your Home page under Work items assigned to me.</p>
+  <p>All requests get routed to everyone in the supervisor approver group; supervisors should only look for their direct reports&#39; requests.</p>
+  <p>There are two lines to validate in every client payment invoice journal: 1. The project line and 2. The vendor line.</p>
+  <p>Procedure Steps</p>
+  <p>Display your Integra Home page.</p>
+  <p>Note: If you are actioning the approval from your email notification, proceed to step 3.</p>
+  <h2><img alt="Picture 6" height="306.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image60.png" width="669.0"/></h2>
+  <h2>Under Work items assigned to me, click the hyperlinked workflow item requiring your approval.</h2>
+  <h2><img alt="Picture 22" height="223.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image61.png" width="672.0"/></h2>
+  <h2>Click the hyperlinked work item line to access the Invoice journal page.</h2>
+  <h2><img alt="Picture 38" height="224.4" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image62.png" width="666.3"/></h2>
+  <h2>Click the relevant journal batch number to access the Vendor invoice journal page.</h2>
+  <h2><img alt="Picture 45" height="305.7" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image63.png" width="668.3"/></h2>
+  <h2>Refer to the table below for approval review details.</h2>
+  <div align="left">
+    <table border="1.3" cellspacing="0" class="NormalTable" style="width:671.3px">
+      <colgroup xmlns="">
+        <col style="width:222px"/>
+        <col style="width:449.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <h2>Review Item</h2>
+          </td>
+          <td>
+            <h2>Details</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Approval notes</h2>
+          </td>
+          <td>
+            <h2>Review any approval notes from the journal invoice creator. These notes can be seen in the email. They can also be seen in the workflow history under the Message column of the Tracking details section.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <h2>Project Line</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Project ID and description</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Account and Account name fields of the project line</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Project category (D2)</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Category field of the project line.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Description of payment</h2>
+            <h2> </h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Description field.</h2>
+            <h2>E.g., pocket money</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Amount of payment</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Debit field.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Financial dimensions</h2>
+          </td>
+          <td>
+            <h2>Select the checkbox to the left of the project line.</h2>
+            <h2>On the menu directly above the table, click <img alt="Picture 46" height="25.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image64.png" width="146.0"/> and select Account</h2>
+            <h2>Validate the accuracy and completion of the D-codes for the project line.</h2>
+            <h2>Required entries are D1 through D6, and D9.</h2>
+            <h2>Notes:</h2>
+            <h2>Ensure the D9 reflects the vendor (client) being paid.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <h2>Vendor Line</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Client vendor ID and client name</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Account and Account name fields.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Description of payment</h2>
+            <h2> </h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Description field and must match the description entered in the project line.</h2>
+            <h2>E.g., pocket money</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Amount of payment</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Credit field and must match the amount displayed in the project line.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Financial dimensions for vendor line</h2>
+          </td>
+          <td>
+            <h2>Select the checkbox to the left of the vendor line.</h2>
+            <h2>On the menu directly above the table, click <img alt="Picture 52" height="25.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image65.png" width="146.0"/> and select Account</h2>
+            <h2>Validate the accuracy and completion of the D-codes for the vendor line.</h2>
+            <h2>Required entries are D1, D4 and D5.</h2>
+            <h2>Note: The D1 should always be U1000 for the vendor line.</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Posting profile</h2>
+            <h2>E.g., prepaid card</h2>
+          </td>
+          <td>
+            <h2>This is displayed in the Posting profile field of the vendor line if the journal has been personalized using the steps in the note below or under the Invoice Tab if it has not.</h2>
+            <h2> </h2>
+            <h2>If a Posting Profile of Prepcard is selected, caseworker must provide the client’s DOB and card Proxy number in the description.</h2>
+            <h2>Note: This column must be manually added to the table. Refer to the procedure in this document titled, Personalize Table Layout for step-by-step instructions.</h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2><img alt="Picture 53" height="306.0" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image66.png" width="669.0"/></h2>
+  <h2>In the bottom section of the page, validate that the balance is zero.</h2>
+  <h2>Once all information has been validated, click the X in the top right corner of page to return to the Invoice journal page.</h2>
+  <h2><img alt="Picture 69" height="264.5" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image67.png" width="667.0"/></h2>
+  <h2>To action the approval, on the menu at the top of the page, click Workflow and select Approve from the drop-down selection list.</h2>
+  <h2>If there are errors, select Reject and enter details of the error(s) in the approver notes. The creator will need to make the required changes and submit to workflow again.</h2>
+  <h2><img alt="Picture 61" height="311.1" src="assets/images/rh_import-UG_Requesting Client Payments in Integra_files/image68.png" width="680.0"/></h2>
+  <h2>Click Approve to proceed.</h2>
+  <h2> </h2>
+  <h2>Result</h2>
+  <h2>You have approved the client payment request invoice journal.</h2>
+  <h2>Finance can now post the invoice and process payment to client.</h2>
+  <h2> </h2>
+  <h2> </h2>
+  <h2><a id="Requesting_Client_Payment_for_Minor_Clients_(under_18_years)"></a>Requesting Client Payment for Minor Clients (under 18 years)</h2>
+  <h2>Minor clients are enrolled in ETO program (typically workforce development, youth or safety and wellness).</h2>
+  <h2>The minor client is created via the ETO/Integra interface and appears on the direct assistance case table.</h2>
+  <h2>As the client is under 18, no vendor record is created. We do not manually create these records as there is an anticipation that the record will be created automatically when the client turns 18 and we do not want duplicates.</h2>
+  <h2>To make a payment directly to the minor child, the generic client record is selected as the vendor record (e.g., Atlanta Client) and the correct client ID is tagged to the transaction using the same steps as any other client payment.</h2>
+  <h2>As long as the correct ETO Program is tagged to the Project ID and the correct D9 is selected, this transaction should flow over to ETO, the same as any third party payment</h2>
+  <p class="Headlineyellow"> </p>
+  <p> </p>
+
+</body></html>

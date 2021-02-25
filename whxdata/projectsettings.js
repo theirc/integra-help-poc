@@ -6,8 +6,8 @@ var defaultTopic = "rh_import-Personalize_Table_Grid_Layout.htm#Personalization_
 rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("rh_import-Personalize_Table_Grid_Layout.htm#Personalization_Overview"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
-rh.consts('START_FILEPATH', encodeURI('topic.htm'));
-rh.consts('HELP_ID', 'ffc48842-ada4-4f5f-9462-88c8cd9881ef' || 'preview');
+rh.consts('START_FILEPATH', encodeURI('index.htm'));
+rh.consts('HELP_ID', 'abd125e2-f702-4910-a580-dea4f79db0c4' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");
@@ -17,7 +17,7 @@ model.publish(rh.consts('KEY_LNG'), {"Contents":"Contents","Index":"Index","Sear
 model.publish(rh.consts('KEY_HEADER_TITLE'), "Integra Help (PoC)");
 model.publish(rh.consts('PDF_FILE_NAME'), "");
 model.publish(rh.consts('MAX_SEARCH_RESULTS'), "20");
-model.publish(rh.consts('KEY_SKIN_FOLDER_NAME'), "integra_help-theme");
+model.publish(rh.consts('KEY_SKIN_FOLDER_NAME'), "Integra_help_v2-theme");
 model.publish(rh.consts('CHAT_API_SESSION_TOKEN'), "");
 model.publish(rh.consts('CHAT_API_PROJ_ID'), "");
 

@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("Key_Components_of_Inventory_Management.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '320a8e39-98ec-42bf-8a34-b53cb96dd59a' || 'preview');
+rh.consts('HELP_ID', 'ad4e4d2d-6a19-4986-b77f-87a514b2d7be' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

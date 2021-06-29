@@ -2,7 +2,7 @@ h1.Heading1 {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-family: Arial Black;
-  font-size: 15pt;
+  font-size: 20pt;
   margin-left: 0px;
   margin-right: 0px;
   color: #FFC000;
@@ -15,7 +15,7 @@ h2.Heading2 {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-family: 'Arial', 'sans-serif';
-  font-size: 18px;
+  font-size: 18pt;
   margin-left: 0px;
   margin-right: 0px;
   color: #A85402;
@@ -28,7 +28,7 @@ h3.Heading3 {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-family: 'Arial', 'sans-serif';
-  font-size: 16px;
+  font-size: 16pt;
   margin-left: 0px;
   margin-right: 0px;
   color: #002060;
@@ -45,7 +45,7 @@ h4.Heading4 {
   font-size: 14pt;
   margin-left: 0px;
   margin-right: 0px;
-  color: #A85402;
+  color: #191919;
   font-weight: bold;
   padding-top: 1em;
   padding-right: 0px;

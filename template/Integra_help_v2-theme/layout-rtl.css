@@ -1496,7 +1496,42 @@ body.media-desktop div.searchresults.search-sidebar {
     color: var(--search_results_desktop_breadcrumb_color); }
   body.media-desktop div.searchresults.search-sidebar label.wSearchAndLabelResults {
     color: #e1e1e1; }
-
+  div.searchresults .wSearchResultFooter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator {
+    display: flex;
+    align-items: center; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorLabel {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    min-width: 5rem;
+    text-align: center; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorPrevLink {
+    margin-left: 1rem;
+    padding: 0.4375rem;
+    background-color: transparent;
+    border: none; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorPrevIcon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorNextLink {
+    margin-right: 1rem;
+    padding: 0.4375rem;
+    background-color: transparent;
+    border: none; }
+  div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorNextIcon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer; }
+  div.searchresults .wSearchResultPaginatorLabel {
+    color: var(--search_results_message_color); }
 div.social_buttons {
   -o-transition-duration: 0.35s;
   -o-transition-timing-function: ease-out;
@@ -1664,6 +1699,9 @@ body.media-mobile {
         top: 0.7em;
         right: 2.8em;
         left: 4em; }
+        body.media-mobile div.header div.title a {
+          text-decoration: none;
+          color: inherit; }
       body.media-mobile div.header div.brs_next, body.media-mobile div.header div.brs_previous, body.media-mobile div.header div.search {
         height: 3.125em;
         width: 3em;
@@ -1920,6 +1958,20 @@ body.media-mobile {
       background-position: 99% 1em; }
       body.media-mobile div.searchresults.layout-visible label.wSearchAndLabelResults.active {
         background-image: url(var(--and_search_enabled_image)); }
+  body.media-mobile div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorPrevIcon {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url(var(--next_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  body.media-mobile div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorNextIcon {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-image: url(var(--prev_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
   body.media-mobile div.topic div.topic-state.loading {
     top: 3.1em; }
   body.media-mobile div.social_buttons {
@@ -1995,6 +2047,9 @@ body.media-landscape {
         line-height: 100%;
         font-size: 1.875em;
         overflow: auto; }
+        body.media-landscape div.header div.title a {
+          text-decoration: none;
+          color: inherit; }
       body.media-landscape div.header div.brs_next {
         width: 1.875em;
         margin-left: 2.5em; }
@@ -2219,6 +2274,20 @@ body.media-landscape {
       background-size: auto 0.8em; }
       body.media-landscape div.searchresults.layout-visible label.wSearchAndLabelResults.active {
         background-image: url(var(--and_search_enabled_image)); }
+  body.media-landscape div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorPrevIcon {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-image: url(var(--next_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  body.media-landscape div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorNextIcon {
+    width: 1.625rem;
+    height: 1.625rem;
+    background-image: url(var(--prev_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
   body.media-landscape div.topic {
     position: absolute;
     top: 4em;
@@ -2326,6 +2395,9 @@ body.media-desktop {
         font-size: 3em;
         max-width: 28em;
         overflow: auto; }
+        body.media-desktop div.header div.title a {
+          text-decoration: none;
+          color: inherit; }
       body.media-desktop div.header div.brs_next, body.media-desktop div.header div.brs_previous, body.media-desktop div.header div.search {
         display: none; }
   body.media-desktop div.functionbar {
@@ -2481,6 +2553,20 @@ body.media-desktop {
     body.media-desktop div.searchresults.search-content > div {
       margin-right: 1.5em;
       font-size: 1.6em; }
+  body.media-desktop div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorPrevIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(var(--next_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
+  body.media-desktop div.searchresults .wSearchResultFooter .wSearchResultPaginator .wSearchResultPaginatorNextIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(var(--prev_search_page_image));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; }
   body.media-desktop div.sidebarsizer {
     display: block;
     position: absolute;

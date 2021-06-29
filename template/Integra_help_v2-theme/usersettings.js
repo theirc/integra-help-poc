@@ -7,7 +7,7 @@ var useFilter = true;
 var useFacebook = false;
 var useTwitter = false;
 var useANDsearch = true;
-var fontFamily = "\"Trebuchet MS\", Arial, sans-serif";
+var fontFamily = "Arial";
 
 var delayLoadIdx = true;
 var delayLoadGlo = true;

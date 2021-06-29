@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-rh_template.css"/>
+  <meta charset="UTF-8"/>
+  <title>Inventory Management (CRRD)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Inventory Management (CRRD)">
+        <span>Inventory Management (CRRD)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h1 class="Heading1"><a id="Key_Components_of_Inventory_ManagementThe_diagram_below_highlights_the_key_areas_that_compose_Inventory_Management_in_IntegraIRC_uses_both_counting_journals_and_inventory_adjustments_to_make_the_proper_adjustments_to_on-hand_inventory._All_inventory_journals_are_posted_by_an_authorized_staff;_in_some_instances_this_can_be_an_in-office_supply_chain_or_warehouse_manager.Physical_Inventory_Counts_IRC_has_three_different_scheduled_times_where_cycle_counts_are_performed._These_scenarios_apply_to_CIK_inventory_as_well.Periodic_inventory_count_(20%count):_20%_of_products_existing_are_randomly_chosen_for_inventory_counting_every_two_months._Products_chosen_will_not_repeat_within_the_same_year._Last_count_may_be_more_or_less_20%,_it_will_be_“count_everything_that_has_not_yet_been_counted.”_CRRD_does_a_20%_periodic_count_and_as_of_April_2021_RAI_does_a_periodic_count_every_6_months._Annual_inventory_count_(100%_count):_A_full_inventory_count_is_performed_at_the_end_of_the_fiscal_year_in_the_final_days_of_September_and_warehouses_are_locked_from_1-3_days_depending_on_the_country._All_on-hand_material_is_counted_during_an_annual_inventory_count,_including_material_procured_for_a_grant/project_and_CIK/donated_material.End_of_grant_count_(100%_count):_Two_months_before_a_grant_ends,_all_remaining_products_procured_for_a_grant_that_are_counted._This_applies_to_all_purchased_material.Note:_A_counting_journal_is_also_used_to_account_for_breakage,_theft_or_loss_of_inventory.Inventory_AdjustmentsInventory_adjustments_are_made_upon_discovery_of_discrepancies;_not_just_when_the_annual_cycle_count_is_completed._Adjustments_may_be_required_for_the_following_scenarios:Disposal_–_Items_are_expired_or_damagedLoss_–_It_is_discovered,_while_picking,_that_inventory_is_missingFound_–_Material_may_be_found_and_is_added_in_to_inventoryItem_sampling_–_IRC_receives_samples_of_inventory_from_vendors_in_the_RFP_process._The_IRC_must_keep_the_winning_vendor’s_samples_for_three_years_for_audit_purposes._Samples_are_recorded_at_zero_cost_and_have_no_ledger_impactSub-awardee_inventory_–_Adjustment_journals_are_used_to_track_inventory_given_to_sub-awardees_and_inventory_procured_by_sub-awardees._This_is_recorded_at_zero_cost_and_has_no_ledger_impact.IRC_Dispensary_inventory_–_IRC_dispensaries_can_elect_to_track_inventory_in_Integra_and_it_is_recorded_at_a_zero_cost_with_no_ledger_impact._If_an_inventory_adjustment_is_substantial,_there_is_the_potential_for_an_insurance_claim_to_be_made_to_help_recoup_the_cost_of_the_inventory_loss/adjustment.All_inventory_journals_such_as_adjustments_and_counting_journals_are_posted_by_Supply_Chain_to_a_holding_account._Supply_Chain_will_attach_proof_for_the_adjustment,_where_applicable._Finance,_in_coordination_with_in-office_Supply_Chain_or_equivalent,_executive_director,_etc.,_runs_a_report_every_two_weeks_to_view_all_adjustment_and_counting_journals._Finance_evaluates_the_journals_to_account_for_any_adjustments_in_inventory_that_will_have_a_financial_impact_to_the_organization_(i.e.,_spoilage_uncovered_during_cycle_count.)_and_will_make_financial_adjustments_as_required._"></a>Key Components of Inventory Management</h1>
+    <p>The diagram below highlights the key areas that compose Inventory Management in Integra</p>
+    <p><img alt="Picture 1" height="308.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image1.png" width="623.6"/></p>
+    <p>IRC uses both counting journals and inventory adjustments to make the proper adjustments to on-hand inventory. All inventory journals are posted by an authorized staff; in some instances this can be an in-office supply chain or warehouse manager.</p>
+    <p>Physical Inventory Counts</p>
+    <p>IRC has three different scheduled times where cycle counts are performed. These scenarios apply to CIK inventory as well.</p>
+    <p>Periodic inventory count (20%count): 20% of products existing are randomly chosen for inventory counting every two months. Products chosen will not repeat within the same year. Last count may be more or less 20%, it will be “count everything that has not yet been counted.” CRRD does a 20% periodic count and as of April 2021 RAI does a periodic count every 6 months.</p>
+    <p>Annual inventory count (100% count): A full inventory count is performed at the end of the fiscal year in the final days of September and warehouses are locked from 1-3 days depending on the country. All on-hand material is counted during an annual inventory count, including material procured for a grant/project and CIK/donated material.</p>
+    <p>End of grant count (100% count): Two months before a grant ends, all remaining products procured for a grant that are counted. This applies to all purchased material.</p>
+    <p>Note: A counting journal is also used to account for breakage, theft or loss of inventory.</p>
+    <p>Inventory Adjustments</p>
+    <p>Inventory adjustments are made upon discovery of discrepancies; not just when the annual cycle count is completed. Adjustments may be required for the following scenarios:</p>
+    <p class="Numbering10 Numbering151">Disposal – Items are expired or damaged</p>
+    <p class="Numbering10 Numbering151">Loss – It is discovered, while picking, that inventory is missing</p>
+    <p class="Numbering10 Numbering151">Found – Material may be found and is added in to inventory</p>
+    <p class="Numbering10 Numbering151">Item sampling – IRC receives samples of inventory from vendors in the RFP process. The IRC must keep the winning vendor’s samples for three years for audit purposes. Samples are recorded at zero cost and have no ledger impact</p>
+    <p class="Numbering10 Numbering151">Sub-awardee inventory – Adjustment journals are used to track inventory given to sub-awardees and inventory procured by sub-awardees. This is recorded at zero cost and has no ledger impact.</p>
+    <p class="Numbering10 Numbering151">IRC Dispensary inventory – IRC dispensaries can elect to track inventory in Integra and it is recorded at a zero cost with no ledger impact.</p>
+    <p>If an inventory adjustment is substantial, there is the potential for an insurance claim to be made to help recoup the cost of the inventory loss/adjustment.</p>
+    <p>All inventory journals such as adjustments and counting journals are posted by Supply Chain to a holding account. Supply Chain will attach proof for the adjustment, where applicable.</p>
+    <p>Finance, in coordination with in-office Supply Chain or equivalent, executive director, etc., runs a report every two weeks to view all adjustment and counting journals. Finance evaluates the journals to account for any adjustments in inventory that will have a financial impact to the organization (i.e., spoilage uncovered during cycle count.) and will make financial adjustments as required.</p>
+    <h2 class="Heading2"><a id="Process_Flow_Diagram"></a>Process Flow Diagram</h2>
+    <p><img alt="Picture 1" height="298.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image2.png" width="637.8"/></p>
+    <p class="Numbering1 Numbering131">Upon receipt of products, staff needs to manage the on-hand inventory.</p>
+    <p class="Numbering1 Numbering131">All tasks are managed in Integra except for the physical inventory count. Once the physical count is complete, the counting journal is submitted and the results are recorded in Integra.</p>
+    <p class="Numbering1 Numbering131">The physical count may be a segregated function from the recording and posting of the count results.<br/>
+      ‎</p>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_–_Annual_Count"></a>Create <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary">Counting Journal</a><span class="expanding-content" data-targetname="glossary"> </span> – Annual Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for an annual inventory count in Integra. It is important to note that when a counting journal for an annual count is created, the journal locks the inventory in the system and you cannot pick/pack or add it to a different journal/transaction until the counting journal is complete and posted.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering2 Numbering11">From the Integra Home page, navigate modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 30" height="181.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image3.png" width="624.4"/></p>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image4.png" width="65.1"/>on the menu at the top of the page.</p>
+    <p><img alt="Picture 35" height="283.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image5.png" width="596.3"/></p>
+    <p class="Numbering2 Numbering11">Complete/select the following fields/buttons:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Overview Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>Update the description to the type of counting journal this is. (e.g.) Annual Inventory <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary1">Counting Journal</a><span class="expanding-content" data-targetname="glossary1"> </span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Counting by Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch number</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image6.png" width="60.9"/>to proceed.</p>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image7.png" width="661.1"/></p>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 1" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image8.png" width="102.0"/><span></span> On-hand on the menu at the top of page.</p>
+    <p><img alt="Picture 8" height="329.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image9.png" width="689.5"/></p>
+    <p class="Numbering2 Numbering11">In the Create on-hand counting journal form, leave the Not counted since field blank.</p>
+    <p class="Numbering2 Numbering11">Scroll down and expand the Records to include tab.</p>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 86" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image10.png" width="62.0"/>.</p>
+    <p><img alt="Picture 89" height="337.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image11.png" width="666.0"/></p>
+    <p class="Numbering2 Numbering11">On the Range tab, click <img alt="Picture 87" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image12.png" width="25.0"/> to the left of the items to include in the query.</p>
+    <p class="Numbering2 Numbering11">Validate the Site and Warehouse values default to the correct site and warehouse to be counted.</p>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 88" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image13.png" width="61.0"/> to close the Item counting filter.</p>
+    <p class="Numbering2 Numbering11">Click <img alt="Picture 90" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image14.png" width="61.0"/> to close the Create on-hand counting journal form.</p>
+    <p><img alt="Picture 10" height="275.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image15.png" width="688.7"/></p>
+    <p class="Numbering2 Numbering11">Review the info-message the Operation completed successfully.</p>
+    <p class="Numbering2 Numbering11">Review the results. Scroll down the list as required.</p>
+    <h6 class="Heading6">Note: The journal lines display all items and associated on-hand count received in the warehouses.</h6>
+    <p class="Numbering2 Numbering11">Click X to close the INVxxxxxxx: Inventory <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary2">Counting Journal</a><span class="expanding-content" data-targetname="glossary2"> </span>.</p>
+    <p>The inventory counting journal is displayed below.</p>
+    <p><img alt="Picture 72" height="166.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image16.png" width="689.5"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for an annual count.</p>
+    <p>The counting journal can now be printed in preparation to perform the actual count.</p>
+    <h2 class="Heading2"><a id="Print_Counting_Journal"></a>Print <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary3">Counting Journal</a><span class="expanding-content" data-targetname="glossary3"> </span></h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to generate a counting list for the purpose of performing an inventory count. This could be required for an annual count, periodic count, or end-of-grant count.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The inventory counting journal has been created in Integra.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering4 Numbering01">From the Integra home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 91" height="151.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image17.png" width="666.0"/></p>
+    <p class="Numbering4 Numbering01">In the list, select the inventory journal by clicking the journal number.</p>
+    <p><img alt="Picture 93" height="252.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image18.png" width="682.1"/></p>
+    <p class="Numbering4 Numbering01">Click <img alt="Picture 92" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image19.png" width="63.0"/> <span></span> Counting list.</p>
+    <p> </p>
+    <p class="Numbering4 Numbering01">Leave the Print on-hand toggled to No.</p>
+    <h6 class="Heading6">Note: Best practice for warehouse counting is to provide an unbiased counting list. For this reason, leave the Print on-hand toggled to No to the counting sheet does not bias the count with printed on-hand count values.</h6>
+    <p class="Numbering4 Numbering01">In the Destination section, the default is Screen. To print to the screen, leave the default.</p>
+    <p>Option: To print the counting sheet to a printer, click <img alt="Picture 96" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image20.png" width="77.0"/>.</p>
+    <p><span> </span>Click <img alt="Picture 97" height="24.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image21.png" width="63.9"/>.</p>
+    <p><span> </span>Click the drop-down in the Name field and select the desired printer.</p>
+    <p class="Numbering4 Numbering01">Expand the Records to include section and validate as required.</p>
+    <p class="Numbering4 Numbering01">Click <img alt="Picture 95" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image22.png" width="61.0"/> to close the Counting list form.</p>
+    <p><img alt="Picture 100" height="328.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image23.png" width="674.8"/></p>
+    <p class="Numbering4 Numbering01">Review the results of the counting list.</p>
+    <p class="Numbering4 Numbering01">To export the list, click Export then select the preferred option. E.g., PDF, Excel, etc.</p>
+    <p> </p>
+    <p class="Numbering4 Numbering01">Click <img alt="Picture 102" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image24.png" width="27.0"/> to print the counting list.</p>
+    <p class="Numbering4 Numbering01">Click X to close the Counting list preview.</p>
+    <p class="Numbering4 Numbering01">Click X to close the Inventory <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary4">Counting Journal</a><span class="expanding-content" data-targetname="glossary4"> </span>.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have printed the counting journal.</p>
+    <p>Print multiple copies, as required.</p>
+    <p>Warehouse personnel perform the inventory count in the warehouse using the printed <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary5">Counting Journal</a><span class="expanding-content" data-targetname="glossary5"> </span>.</p>
+    <p>Upon completion, counting journal is submitted to the Supervisor.</p>
+    <h2 class="Heading2"><a id="Perform_Physical_Inventory_Count"></a>Perform Physical Inventory Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0">Use this procedure to perform the physical count of inventory.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering8 Numbering51">The counting list has been generated and printed.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering5 Numbering181">Staff retrieves hardcopy of counting list.</p>
+    <p class="Numbering5 Numbering181">Staff physically counts all the items for each line number and records the count on the counting list in the Now Counted column.</p>
+    <p class="Numbering5 Numbering181">Staff sends or submits the completed counting list to the in-office supply chain staff or warehouse manager.<br/>
+      ‎<span></span><span><br/>
+        ‎<span></span></span></p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have performed the physical inventory count and recorded results on paper counting list.</p>
+    <p>The inventory count results can now be entered in Integra.</p>
+    <h2 class="Heading2"><a id="Record_Counting_Results"></a>Record Counting Results</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0">Use this procedure to record the physical count in Integra and compare results with recorded on-hand inventory.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="Numbering8 Numbering51">Physical count has been completed and results recorded on counting sheet.<br/>
+      ‎</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering6 Numbering171">From the Integra Home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 103" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image25.png" width="666.0"/></p>
+    <p class="Numbering6 Numbering171">In the list, select the desired inventory journal by clicking the journal number.</p>
+    <p><img alt="Picture 18" height="242.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image26.png" width="656.4"/></p>
+    <p class="Numbering6 Numbering171">Click <img alt="Picture 104" height="30.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image27.png" width="55.0"/> on the menu at the top of page.</p>
+    <p>As the supervisor, the On-hand column is visible to you and these values are populated.</p>
+    <p><img alt="Picture 19" height="245.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image28.png" width="689.5"/></p>
+    <p class="Numbering6 Numbering171">In the Counted column, enter the number physically counted for each item as recorded on the counting journal by the warehouse personnel.</p>
+    <h6 class="Heading6">Note: Do not populate values in the Quantity field. The system calculates the value for this column and updates it automatically.</h6>
+    <h6 class="Heading6">Note: If the number is less than the expected on-hand, the Quantity column displays a negative value. If the counted quantity is greater than the on-hand quantity, the Quantity field displays a positive value.</h6>
+    <h3 class="Heading3">Discrepancy in Counted Values</h3>
+    <p>If there is a discrepancy between the on-hand and counted values, best practice is to perform a second count. The second count is a manual process and happens outside of the system and is not performed by the same person who did the original count. The warehouse personnel submits the second counted values to the supervisor. The supervisor enters the second count value in the Counted column, and this is the final count.</p>
+    <p class="Numbering6 Numbering171">In the Worker column, for each item counted, enter the personnel number for staff who performed the count.</p>
+    <h6 class="Heading6">Note: Click the drop-down and search for the individual using their name. Click <img alt="Picture 105" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image29.png" width="60.0"/> and their personnel number populates the Worker field.</h6>
+    <p><img alt="Picture 109" height="258.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image30.png" width="666.0"/></p>
+    <p class="Numbering6 Numbering171">Click <img alt="Picture 107" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image31.png" width="61.0"/> when all the Counted values are entered.</p>
+    <p><img alt="Picture 111" height="318.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image32.png" width="666.0"/></p>
+    <p class="Numbering6 Numbering171">Click <img alt="Picture 110" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image33.png" width="59.0"/>.</p>
+    <p><img alt="Picture 112" height="270.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image34.png" width="666.0"/></p>
+    <p class="Numbering6 Numbering171">Review the info-message the counting journal validated successfully.</p>
+    <p class="Numbering6 Numbering171">Click <img alt="Picture 106" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image35.png" width="64.0"/> on the toolbar at the top of page.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have recorded the counting results in Integra.</p>
+    <p>If there were discrepancies, you accounted for these and performed and entered a second count.</p>
+    <p>The counting results can now be posted.<br/>
+      ‎</p>
+    <h2 class="Heading2"><a id="Post_Counting_Results"></a>Post Counting Results</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to post the counting results.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p>Physical count of items has been recorded in Integra.</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering7 Numbering161">From the Integra Home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 114" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image36.png" width="666.0"/></p>
+    <p class="Numbering7 Numbering161">In the list, select the desired inventory journal by clicking the journal number.</p>
+    <p><img alt="Picture 21" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image37.png" width="689.5"/></p>
+    <p class="Numbering7 Numbering161">Click <img alt="Picture 113" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image38.png" width="41.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 117" height="317.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image39.png" width="666.0"/></p>
+    <p class="Numbering7 Numbering161">Click <img alt="Picture 116" height="30.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image40.png" width="60.0"/>.</p>
+    <p> </p>
+    <p class="Numbering7 Numbering161">Select from the following:</p>
+    <div align="left">
+      <table border="0" cellspacing="0" class="oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:335.66666666666666666666666667px"/>
+          <col style="width:305.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">If</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Then</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>The journal posted</p>
+            </td>
+            <td>
+              <p>Review the info-message the counting journal posted successfully.</p>
+              <p>Click X to close the counting journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>You receive the following error message,</p>
+              <p><img alt="Picture 36" height="49.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image41.png" width="323.1"/></p>
+            </td>
+            <td>
+              <p>1.Review the error message details.</p>
+              <p>2. For each item in the counting journal with a counting discrepancy, scroll down to the Line details and update the D1, D4 and D5 financial dimensions.</p>
+              <p>3. Click <img alt="Picture 368781633" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image42.png" width="56.0"/>.</p>
+              <p>4. Proceed to the next procedure Adjust an Inventory Reservation to Process an Inventory Adjustment to reserve or unreserve quantities for each item in the counting journal with a counting discrepancy.</p>
+              <p>5. When the reservations procedure is complete, return here to step 3 in this transaction to post the counting journal.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p>Review the info-message the counting journal posted successfully.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have posted the counting results.<br/>
+      ‎</p>
+    <h2 class="Heading2"><a id="Adjust_an_Inventory_Reservation_to_Process_an_Inventory_Adjustment"></a>Adjust an Inventory Reservation to Process an Inventory Adjustment</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Inventory is reserved to a project. To adjust the inventory balance of a stocked item, it must first be unreserved for a negative (-) discrepancy or reserved for a positive (+) discrepancy.</p>
+    <p>Use this procedure to unreserve an item with a negative (-) discrepancy or reserve an item with a positive (+) discrepancy from the project it is reserved to.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>You received an error message in an inventory adjustment transaction such as:</p>
+    <p><img alt="Picture 29" height="67.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image43.png" width="485.9"/></p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering11 ListParagraph">Open a duplicate session of Integra.</p>
+    <p class="Numbering11 ListParagraph">Navigate the modules to Project management and accounting <span></span> Projects <span></span> All projects.</p>
+    <p><img alt="Picture 30" height="327.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image44.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">On the All projects grid, in the Filter field, enter the project ID to search for the project the item is associated to.</p>
+    <p class="Numbering11 ListParagraph">Click <img alt="Picture 368781636" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image45.png" width="29.0"/> to the left of the line to select the project.</p>
+    <p><img alt="Picture 368781634" height="144.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image46.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">On the menu at the top, click the Plan tab.</p>
+    <p class="Numbering11 ListParagraph">Under the Item requirements section, click Item requirements.</p>
+    <p><img alt="Picture 31" height="251.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image47.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Right-click in the column heading and select Insert columns…. to add the Location column to the display.</p>
+    <h6 class="Heading6">Tip: Click <img alt="Picture 368781644" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image48.png" width="84.0"/> <span></span> Save so you do not have to add this column each time.</h6>
+    <p><img alt="Picture 34" height="319.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image49.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Scroll through the list and click <img alt="Picture 32" height="17.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image50.png" width="19.0"/> to the left of Location – Inventory dimensions.</p>
+    <p class="Numbering11 ListParagraph">Click <img alt="Picture 33" height="32.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image51.png" width="71.0"/>.</p>
+    <h6 class="Heading6">Note: Adding the Location column enables you to view the specific location the inventory should be unreserved/reserved from. It is added on the far-right of the display as the last column.</h6>
+    <p><img alt="Picture 35" height="120.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image52.png" width="566.4"/></p>
+    <p>Option: For easier reference, click the Location column heading and drag it to the right of the Item number column.</p>
+    <p class="Numbering11 ListParagraph">In the list of item requirements, locate the item number, location, and requested receipt date for the item to unreserve/ reserve.</p>
+    <p><img alt="Picture 73" height="216.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image53.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Click <img alt="Picture 368781712" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image54.png" width="21.0"/> to the left of the item to unreserve/reserve.</p>
+    <p class="Numbering11 ListParagraph">On the Manage tab, click <img alt="Picture 368781639" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image55.png" width="75.0"/> <span></span> Reservation.</p>
+    <p><img alt="Picture 368781731" height="194.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image56.png" width="681.6"/></p>
+    <p class="Numbering11 ListParagraph">Click the Reservation field and update the value.</p>
+    <h6 class="Heading6">Note: To unreserve an item with a negative (-) discrepancy, update the quantity by reducing it by the number of items to be adjusted.</h6>
+    <p>For example, in the annual cycle count, the counted value is 139.00 but the value in the on-hand column is 140.00, reduce the reservation value by 1 to 139.00.</p>
+    <h6 class="Heading6">Note: To reserve an item with a positive (+) discrepancy, update the quantity by increasing it by the number of items to be adjusted after the counting journal is posted.</h6>
+    <p>For example, in the annual cycle count, the counted value is 141.00 but the value in the on-hand column is 140.00, increase the reservation value by 1 to 141.00.</p>
+    <p>Once the value is updated in the Reservation field, the unreserve/reserve process is complete.</p>
+    <h6 class="Heading6">Note: This process does not require a validate or save.</h6>
+    <p class="Numbering11 ListParagraph">Click X to close the Reservation form and return to the Item requirements grid.</p>
+    <p class="Numbering11 ListParagraph">Return to or proceed to the inventory adjustment transaction in which you received the inventory error message.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have unreserved / reserved quantity of an item reserved to a project.</p>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_–_End-of-Grant_Count"></a>Create <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary6">Counting Journal</a><span class="expanding-content" data-targetname="glossary6"> </span> – End-of-Grant Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for an end-of-grant inventory count in Integra.</p>
+    <p>This process is very similar to the counting journal process for the annual count but some of the criteria is changed for the end-of-grant count.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering12 ListParagraph">From the Integra Home page, navigate modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image57.png" width="624.4"/></p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image58.png" width="65.1"/>on the toolbar at the top of the page.</p>
+    <p><img alt="Picture 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image59.png" width="594.1"/></p>
+    <p class="Numbering12 ListParagraph">Complete/select the following fields/buttons:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color: #FFFFFF">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Overview Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this counting journal. (e.g.) End Grant + Project ID + Inventory Count</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Counting by Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID button</p>
+            </td>
+            <td>
+              <p>For the end of grant count, the Project ID is required.</p>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image60.png" width="60.9"/>to proceed.</p>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image61.png" width="661.1"/></p>
+    <p class="Numbering12 ListParagraph">On the toolbar at the top of page, click <img alt="Picture 20" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image62.png" width="102.0"/><span></span> On-hand.</p>
+    <p><img alt="Picture 120" height="305.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image63.png" width="643.7"/></p>
+    <p class="Numbering12 ListParagraph">Complete/select the following fields/buttons:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Parameters Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Counting group</p>
+            </td>
+            <td>
+              <p>Leave this field blank. For the end-of-grant count, everything is counted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Activate counting code</p>
+            </td>
+            <td>
+              <p>Ensure this is toggles to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Include items with nothing on hand</p>
+            </td>
+            <td>
+              <p>Ensure this is toggles to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Inventory status</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch number</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Counting by Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID button</p>
+            </td>
+            <td>
+              <p>For the end of grant count, the Project ID is required.</p>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering12 ListParagraph">In the Create on-hand counting journal form, scroll down and expand the Records to include tab.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 94" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image64.png" width="62.0"/>.</p>
+    <p><img alt="Picture 22" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image65.png" width="666.0"/></p>
+    <p class="Numbering12 ListParagraph">In the Items counting section, click <img alt="Picture 101" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image66.png" width="25.0"/> to the left of the items to include in the query.</p>
+    <p class="Numbering12 ListParagraph">Validate the Site, Warehouse, and Project ID/grant values default to the correct site, warehouse, and project ID to be counted.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 108" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image67.png" width="61.0"/> to close the Item counting filter.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 115" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image68.png" width="61.0"/> to close the Create on-hand counting journal form.</p>
+    <p><img alt="Picture 118" height="252.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image69.png" width="688.7"/></p>
+    <p class="Numbering12 ListParagraph">Review the info-message the Operation completed successfully.</p>
+    <p class="Numbering12 ListParagraph">Review the lines added to the journal. Scroll down the list as required.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 121" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image70.png" width="129.0"/> in the Journal lines FastTab, to add dimensions to the display.</p>
+    <p><img alt="Picture 124" height="317.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image71.png" width="664.7"/></p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 122" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image72.png" width="19.0"/> to the left of the dimensions to add them to the display.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 123" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image73.png" width="58.0"/>.</p>
+    <p><img alt="Picture 98" height="228.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image74.png" width="666.0"/></p>
+    <p class="Numbering12 ListParagraph">View the dimensions added to the display. Scroll to the right, if required.</p>
+    <p class="Numbering12 ListParagraph">Click <img alt="Picture 125" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image75.png" width="57.0"/> to save the journal.</p>
+    <p class="Numbering12 ListParagraph">Click X to close the INVxxxxxxx: Inventory <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary7">Counting Journal</a><span class="expanding-content" data-targetname="glossary7"> </span>.</p>
+    <p>The inventory counting journal is displayed below.</p>
+    <p><img alt="Picture 119" height="166.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image76.png" width="689.5"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for an end-of-grant count.</p>
+    <p>The counting journal can now be printed in preparation to perform the actual count.</p>
+    <p>To complete the process, refer to the previous procedures for:</p>
+    <p class="Numbering8 ListParagraph">Print <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary8">Counting Journal</a><span class="expanding-content" data-targetname="glossary8"> </span></p>
+    <p class="Numbering8 ListParagraph">Perform Physical Inventory Count</p>
+    <p class="Numbering8 ListParagraph">Record Counting Results</p>
+    <p class="Numbering8 ListParagraph">Post Counting Results</p>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_–_20%_Count"></a>Create <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary9">Counting Journal</a><span class="expanding-content" data-targetname="glossary9"> </span> – 20% Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for a 20% inventory count in Integra.</p>
+    <p>This process is very similar to the counting journal process for the annual count but some of the criteria is changed for the 20%. This counting journal captures all the items in the warehouse in the 20% counting group to be counted and manually reduces the count to 20%.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering13 ListParagraph">From the Integra Home page, navigate modules to Inventory management <span></span> Journal entries <span></span> Item counting <span></span> Counting.</p>
+    <p><img alt="Picture 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image77.png" width="624.4"/></p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image78.png" width="65.1"/>on the toolbar at the top of the page.</p>
+    <p><img alt="Picture 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image79.png" width="593.5"/></p>
+    <p class="Numbering13 ListParagraph">Complete/select the following fields/buttons:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p style="color: #FFFFFF">Entry/<span style="color:#ffffff;">Selection </span>Required</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Overview Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>The Description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this counting journal. (e.g.) 20% + Warehouse + Inventory Count</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Counting by Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch number</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image80.png" width="60.9"/>to proceed.</p>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image81.png" width="585.6"/></p>
+    <p class="Numbering13 ListParagraph">On the toolbar at the top of page, click <img alt="Picture 131" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image82.png" width="102.0"/><span></span> On-hand.</p>
+    <p><img alt="Picture 368781635" height="541.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image83.png" width="384.0"/></p>
+    <p class="Numbering13 ListParagraph">Complete/select the following fields/buttons:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Field / Button</p>
+            </td>
+            <td>
+              <p>Entry/Selection Required</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Parameters Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Counting date</p>
+            </td>
+            <td>
+              <p>Defaults to today’s date. Leave the default.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Not counted since</p>
+            </td>
+            <td>
+              <p>Always select tomorrow’s date as Not counted since. This ensures all the items in the warehouse are captured and included for the count.</p>
+              <p>Click the calendar and select tomorrow’s date.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Counting date</p>
+            </td>
+            <td>
+              <p>Defaults to today’s date. Leave the default.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Not counted since</p>
+            </td>
+            <td>
+              <p>Always select tomorrow’s date as Not counted since. This ensures all the items in the warehouse are captured and included for the count.</p>
+              <p style="color: #FFFFFF">Click the calendar and select tomorrow’s date.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Counting group</p>
+            </td>
+            <td>
+              <p>Identifies if the item is part of the cycle count. When FIFO or FEFO items are created, a counting group is assigned to indicate that this item is to be included in the cycle count. Every two months, 20% of inventory is counted.</p>
+              <p>Click the drop-down and select 20.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Activate counting code</p>
+            </td>
+            <td>
+              <p>Validate this is toggled to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Include items with nothing on hand</p>
+            </td>
+            <td>
+              <p>Validate this is toggled to No.</p>
+              <p>This ensures no blank lines are included in the counting journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Inventory status</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location button</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch number</p>
+            </td>
+            <td>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Counting by Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID button</p>
+            </td>
+            <td>
+              <p>For the end of grant count, the Project ID is required.</p>
+              <p>Toggle to Yes.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering13 ListParagraph">In the Create on-hand counting journal form, scroll down and expand the Records to include tab.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 133" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image84.png" width="62.0"/>.</p>
+    <h6 class="Heading6">Note: It is important to always review the filters and validate/update the values.</h6>
+    <p><img alt="Picture 134" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image85.png" width="656.6"/></p>
+    <p class="Numbering13 ListParagraph">In the Item counting section, click <img alt="Picture 135" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image86.png" width="25.0"/> to the left of the items to include in the query.</p>
+    <p class="Numbering13 ListParagraph">Validate the Site and Warehouse values default to the correct site and warehouse to be counted.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 136" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image87.png" width="61.0"/> to close the Item counting filter.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 137" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image88.png" width="61.0"/> to close the Create on-hand counting journal form.</p>
+    <p><img alt="Picture 138" height="268.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image89.png" width="688.7"/></p>
+    <p class="Numbering13 ListParagraph">Review the info-message the Operation completed successfully.</p>
+    <p class="Numbering13 ListParagraph">Review the lines added to the journal. Scroll down the list as required.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 139" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image90.png" width="129.0"/> in the Journal lines FastTab, to add dimensions to the display grid.</p>
+    <p><img alt="Picture 140" height="302.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image91.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 141" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image92.png" width="19.0"/> to the left of the dimensions to add them to the display.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 142" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image93.png" width="58.0"/>.</p>
+    <p><img alt="Picture 145" height="216.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image94.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Scroll to the right to review the lines and the dimensions added. Scroll down to view all the lines on the counting journal.</p>
+    <h4 class="Heading4">Determining the 20% <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary10">Lines</a><span class="expanding-content" data-targetname="glossary10"> </span> to Count</h4>
+    <p class="Numbering13 ListParagraph">Once the lines are created in the counting journal using the counting group 20, which includes all FIFO and FEFO items, the supervisor or manager then decides which items in the list to count. The manager then manually deletes the items not being counted and therefore not being included on the counting journal to be printed for the physical count.</p>
+    <p><img alt="Picture 149" height="242.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image95.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">To display the total number of lines in the journal, click <img alt="Picture 148" height="29.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image96.png" width="16.5"/> (the ellipsis) in the upper right-hand corner of the Journal lines FastTab.</p>
+    <p><img alt="Picture 150" height="120.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image97.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Select Show footer to display a footer at the bottom of the grid with the total number of rows.</p>
+    <p class="Numbering13 ListParagraph">View the total number of rows displayed in the footer. Then manually determine the lines to be deleted.</p>
+    <p><img alt="Picture 153" height="258.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image98.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 132" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image99.png" width="22.0"/> next to the lines that are not being included in the 20% count.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 147" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image100.png" width="72.0"/> to delete the lines from the counting journal.</p>
+    <h6 class="Heading6">Note: Be sure to use the <img alt="Picture 151" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image101.png" width="72.0"/> in the Journal lines FastTab to delete the counting lines and not the <img alt="Picture 152" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image102.png" width="72.0"/> on the menu bar at the top of the page as this deletes the entire journal.</h6>
+    <p><img alt="Picture 154" height="112.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image103.png" width="293.2"/></p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 155" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image104.png" width="56.0"/> to delete all marked records.</p>
+    <p class="Numbering13 ListParagraph">Repeat the select and delete steps for all the lines to be deleted from the counting journal.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 156" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image105.png" width="59.0"/>.<img alt="Picture 157" height="318.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image106.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 158" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image107.png" width="62.0"/>.</p>
+    <p class="Numbering13 ListParagraph">Review the info-message the Journal is OK.</p>
+    <p class="Numbering13 ListParagraph">Click <img alt="Picture 146" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image108.png" width="62.0"/>.</p>
+    <p class="Numbering13 ListParagraph">Click X to close the INVxxxxxxx: Inventory <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary11">Counting Journal</a><span class="expanding-content" data-targetname="glossary11"> </span>.</p>
+    <p class="Numbering13 ListParagraph">The inventory counting journal is displayed below with the number of lines reduced to the 20% for the 20% count.</p>
+    <p><img alt="Picture 143" height="135.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image109.png" width="689.5"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for a 20% cycle count.</p>
+    <p>The counting journal can now be printed in preparation to perform the actual count.</p>
+    <p>To complete the process, refer to the previous procedures for:</p>
+    <p class="Numbering14 ListParagraph">Print <a class="glossterm" href="#" data-rhwidget="ExpandSpot" data-target="glossary12">Counting Journal</a><span class="expanding-content" data-targetname="glossary12"> </span></p>
+    <p class="Numbering14 ListParagraph">Perform Physical Inventory Count</p>
+    <p class="Numbering14 ListParagraph">Record Counting Results</p>
+    <p class="Numbering14 ListParagraph">Post Counting Results<br/>
+      ‎</p>
+    <h2 class="Heading2"><a id="Display_On-hand_Inventory"></a>Display On-hand Inventory</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to verify on-hand inventory associated with each stocked product received in inventory.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The item has been set up as an inventory item in Integra.</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering15 ListParagraph">From the Integra Home page, navigate the modules to Inventory management <span></span> Inquiries and reports <span></span> On-hand list.</p>
+    <p><img alt="Picture 24" height="291.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image110.png" width="598.0"/></p>
+    <p class="Numbering15 ListParagraph">Apply any or all of the following filters by selecting the drop-down list for more filtering options:</p>
+    <p class="Numbering8 ListParagraph">Item number</p>
+    <p class="Numbering8 ListParagraph">Site</p>
+    <p class="Numbering8 ListParagraph">Warehouse</p>
+    <p class="Numbering8 ListParagraph">Project ID</p>
+    <h6 class="Heading6">Note: If additional filters are needed, click <img alt="Picture 159" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image111.png" width="47.0"/> to select other values such as Project ID or Location.</h6>
+    <p class="Numbering15 ListParagraph">Click Dimensions on the menu at the top of the page to add additional inventory dimension values to the on-hand inquiry display.</p>
+    <p><img alt="Picture 161" height="316.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image112.png" width="666.0"/></p>
+    <p class="Numbering15 ListParagraph">Click <img alt="Picture 162" height="21.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image113.png" width="23.0"/> next to the dimensions to display in the relevant selections. E.g., Site, Warehouse, Location, Project ID, and Item number.</p>
+    <p class="Numbering15 ListParagraph">Click <img alt="Picture 163" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image114.png" width="61.0"/> to proceed.</p>
+    <p><img alt="Picture 1" height="304.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image115.png" width="627.2"/></p>
+    <p class="Numbering15 ListParagraph">Click <img alt="Picture 164" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image116.png" width="57.0"/> on the left-hand Filters pane to retrieve results.</p>
+    <p><img alt="Picture 166" height="323.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image117.png" width="666.0"/></p>
+    <p class="Numbering15 ListParagraph">Review the results of on-hand inventory displayed in the On-hand grid.</p>
+    <h6 class="Heading6">Note: Use <img alt="Picture 165" height="27.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image118.png" width="37.7"/> in the Filter pane to collapse or expand the pane, as required.</h6>
+    <p class="Numbering15 ListParagraph">Click X to close the On-hand inventory report when reviewing is complete.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have viewed the on-hand quantity for inventory items by site and warehouse.</p>
+    <h2 class="Heading2"><a id="Create_an_Inventory_Adjustment_Journal"></a>Create an Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create an adjustment journal to record inventory discrepancies.</p>
+    <p>Inventory adjustment journals are used to adjust out the disposal of inventory including expired, damaged, and stolen items. An adjustment is also used to adjust in inventory that is found but is not currently part of the on-hand inventory.</p>
+    <p>Note: This type of journal is not used for an adjustment as a result of a cycle count. Cycle count adjustments are done on the cycle count journal.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>It has been determined that an inventory adjustment is required.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering16 ListParagraph">From the Integra Home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item <span></span> Inventory adjustment.</p>
+    <p><img alt="Picture 25" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image119.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 26" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image120.png" width="54.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 160" height="311.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image121.png" width="652.5"/></p>
+    <p class="Numbering16 ListParagraph">Complete the following fields:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Overview Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Name</p>
+            </td>
+            <td>
+              <p>Defaults to INV_ADJ.</p>
+              <p>Leave the default for an adjustment journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this adjustment journal. (e.g.) Reason + Inventory Adjustment Journal</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 28" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image122.png" width="58.0"/> to proceed.</p>
+    <p><img alt="Picture 168" height="251.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image123.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Under Journal lines section, click <img alt="Picture 167" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image124.png" width="53.0"/> to enter a new line in the journal.</p>
+    <p><img alt="Picture 169" height="316.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image125.png" width="650.0"/></p>
+    <p class="Numbering16 ListParagraph">Complete the following fields in the new line:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Parameters Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Item number</p>
+            </td>
+            <td>
+              <p>Enter or click the drop-down and search for the item to be adjusted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Product name</p>
+            </td>
+            <td>
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Quantity</p>
+            </td>
+            <td>
+              <p>Identifies the number or amount of the item being adjusted. If the adjustment is for a removal or disposal enter a negative (-).</p>
+              <p>Enter the quantity of the adjustment.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cost price</p>
+            </td>
+            <td>
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cost amount</p>
+            </td>
+            <td>
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering16 ListParagraph">Scroll down to the Line details section.</p>
+    <p class="Numbering16 ListParagraph">Click the Inventory dimensions tab.</p>
+    <p><img alt="Picture 170" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image126.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">On the Inventory dimensions tab and complete the following fields:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID</p>
+            </td>
+            <td>
+              <p>Enter or click the drop-down and search for the project the item is being adjusted for.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location</p>
+            </td>
+            <td>
+              <p>Identifies where the item is being adjusted from.</p>
+              <p>Enter or click the drop-down and search for the location.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch</p>
+            </td>
+            <td>
+              <p>If the item entered is a batch-controlled item the batch number is required.</p>
+              <p>Enter or click the drop-down and search for the batch number.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="Numbering16 ListParagraph">Click the Financial dimensions tab.</p>
+    <p><img alt="Picture 173" height="300.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image127.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Complete the D1 through D6 financial dimensions.</p>
+    <h6 class="Heading6">Note: Contact your Finance team for guidance on selecting the correct dimensions.</h6>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 171" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image128.png" width="54.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 175" height="318.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image129.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 172" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image130.png" width="59.0"/>.</p>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 174" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image131.png" width="59.0"/> to proceed.</p>
+    <p class="Numbering16 ListParagraph">Review the info-message that the Journal is OK.</p>
+    <p class="Numbering16 ListParagraph">Click <img alt="Picture 177" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image132.png" width="54.0"/> on the menu at the top of the page.</p>
+    <p class="Numbering16 ListParagraph">Click X to close the adjustment journal.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory adjustment journal.</p>
+    <p>The adjustment journal can now be posted by GSC. The inventory adjustment out auto-posts to an inventory pending write off account managed by Finance based on the attached documentation to the inventory adjustment journal.</p>
+    <h2 class="Heading2"><a id="Post_Inventory_Adjustment_Journal"></a>Post Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0text-indent-0-25in">Use this procedure to post an inventory adjustment journal.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering9 Numbering61">Adjustment journal has been created.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering17 ListParagraph">From the Integra Home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item <span></span> Inventory adjustment.</p>
+    <p><img alt="Picture 192" height="205.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image133.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">In the list, select the adjustment journal to be posted.</p>
+    <p><img alt="Picture 194" height="241.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image134.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">Review the journal line and the Line details FastTab.</p>
+    <p class="Numbering17 ListParagraph">Click <img alt="Picture 193" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image135.png" width="39.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 195" height="316.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image136.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">On the Post journal form, click <img alt="Picture 368781632" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image137.png" width="59.0"/> to proceed.</p>
+    <p><img alt="Picture 196" height="253.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image138.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">Validate the info-message the Journal has been posted successfully.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have posted an inventory adjustment journal.</p>
+    <h2 class="Heading2"><a id="Create_and_Post_an_Inventory_Adjustment_Journal_–_Product_Sample"></a>Create and Post an Inventory Adjustment Journal – Product Sample</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create an adjustment journal to record vendor samples acquired through the RFP / RFQ process.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering3 Numbering21">The new product has been created as an item in Integra.</p>
+    <p class="Numbering3 Numbering21">If the item does not exist, work with the MDM team to coordinate new product creation.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering18 ListParagraph">From the Integra Home page, navigate the modules to Inventory management <span></span> Journal entries <span></span> Item <span></span> Inventory adjustment.</p>
+    <p><img alt="Picture 178" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image139.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 179" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image140.png" width="54.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 197" height="316.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image141.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Complete the following fields:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Overview Section</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Name</p>
+            </td>
+            <td>
+              <p>Defaults to INV_ADJ.</p>
+              <p>Leave the default for an adjustment journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this adjustment journal. (e.g.) RFP#22122 Adjustment Journal</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 181" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image142.png" width="58.0"/> to proceed.</p>
+    <p><img alt="Picture 199" height="245.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image143.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Under Journal lines section, click <img alt="Picture 183" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image144.png" width="53.0"/> to enter a new line in the journal.</p>
+    <p><img alt="Picture 204" height="317.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image145.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 200" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image146.png" width="129.0"/> in the Journal lines FastTab, to add dimensions to the display.</p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 202" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image147.png" width="19.0"/> to the left of the dimensions to add them to the display.</p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 203" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image148.png" width="58.0"/>.</p>
+    <p><img alt="Picture 205" height="323.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image149.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Complete the following fields in the new line:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Item number</p>
+            </td>
+            <td>
+              <p>Enter or click the drop-down and search for the item to be adjusted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Product name</p>
+            </td>
+            <td>
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID</p>
+            </td>
+            <td>
+              <p>Each reporting entity has a project called SAMPLE to record and track vendor samples. There is no budget associated with this project.</p>
+              <p>Enter SAMPLE.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Batch</p>
+            </td>
+            <td>
+              <p>If the item entered is a batch-controlled item the batch number is required.</p>
+              <p>Enter or click the drop-down and search for the batch number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Location</p>
+            </td>
+            <td>
+              <p>Identifies the bin where the sample is held.</p>
+              <p>Enter or click the drop-down and search for the location.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Quantity</p>
+            </td>
+            <td>
+              <p>Enter the number of vendor samples for this item.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cost price</p>
+            </td>
+            <td>
+              <p>This is no cost associated with the product.</p>
+              <p>Enter 0.00 to zero out the cost.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering18 ListParagraph">Scroll down to the Line details section to review and validate.</p>
+    <h6 class="Heading6">Note: Financial dimensions are not required on samples and the inventory dimensions were added to the line.</h6>
+    <p><img alt="Picture 206" height="317.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image150.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 189" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image151.png" width="59.0"/>.</p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 190" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image152.png" width="59.0"/> to proceed.</p>
+    <p><img alt="Picture 207" height="249.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image153.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Review the info-message that the Journal is OK.</p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 187" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image154.png" width="54.0"/> on the menu at the top of the page.</p>
+    <p><img alt="Picture 208" height="250.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image155.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Click <img alt="Picture 209" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image156.png" width="41.0"/> to post the journal.</p>
+    <p class="Numbering18 ListParagraph">Review the info-message the journal posted successfully.</p>
+    <p class="Numbering18 ListParagraph">Click X to close the adjustment journal.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created and posted an inventory adjustment journal for a sample product provided by a vendor.</p>
+    <h2 class="Heading2"><a id="Attach_a_Document_to_an_Inventory_Adjustment_Journal"></a>Attach a Document to an Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to attach a file or supporting documentation to an adjustment journal.</p>
+    <p>In Integra, these are standard steps to add a documentation to a record and can be used in other transactions and processes.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="Numbering19 ListParagraph">Click <img alt="Picture 368781660" height="33.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image157.png" width="28.0"/> in the top right corner of the screen to attach a document.</p>
+    <p><img alt="Picture 368781666" height="254.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image158.png" width="666.0"/></p>
+    <p class="Numbering19 ListParagraph">On the menu at the top of page, click <img alt="Picture 368781798" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image159.png" width="69.0"/> à File from the drop-down selection list.</p>
+    <p><img alt="Picture 368781668" height="260.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image160.png" width="666.0"/></p>
+    <p class="Numbering19 ListParagraph">In the right-hand panel, click Browse.</p>
+    <p class="Numbering19 ListParagraph">Locate and select relevant document, as per standard Windows browsing functionality. (It may take a few seconds for upload to complete).</p>
+    <p><img alt="Picture 368781799" height="248.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image161.png" width="602.0"/></p>
+    <p class="Numbering19 ListParagraph">Validate the attachment is listed in the left-hand panel.</p>
+    <p class="Numbering19 ListParagraph">Click the Preview FastTab to preview the attachment.</p>
+    <p class="Numbering19 ListParagraph">Click the X in the top right corner of page to close the print view and return to the form.</p>
+    <h6 class="Heading6">Note: the <img alt="Picture 368781800" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image162.png" width="26.0"/> (paperclip icon) now displays a number 1 indicating one document is attached to the PO.</h6>
+    <p class="Numbering19 ListParagraph">Depending in the journal or form you are working in, perform one of the following actions:</p>
+    <div align="left">
+      <table border="0" cellspacing="0" class="oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:335.66666666666666666666666667px"/>
+          <col style="width:305.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">If</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Then</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>You need to continue working on the journal</p>
+            </td>
+            <td>
+              <p>Return to the Journal lines and Line details FastTabs and proceed.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>The counting or inventory journal is complete</p>
+              <p> </p>
+            </td>
+            <td>
+              <p>Click <img alt="Picture 368781649" height="22.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image163.png" width="57.8"/> and <img alt="Picture 368781650" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image164.png" width="41.0"/> as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>You need to exit the journal</p>
+            </td>
+            <td>
+              <p>Click X in the right-hand corner of page to close and return to the counting or inventory adjustment grid.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have attached a document to an inventory adjustment or counting journal.</p>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;"><span data-field="project-title" data-format="default" style="float: left;font-family: Calibri">robohelp_import</span>                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

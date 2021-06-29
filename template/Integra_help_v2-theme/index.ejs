@@ -35,13 +35,15 @@
 			<button class="placeholder skip-to-content-link" data-trigger="EVT_FOCUS_ELEMENT_IN_IFRAME" data-attr="title:@KEY_LNG.SkipToMainContent; aria-label:@KEY_LNG.SkipToMainContent;" data-text="@KEY_LNG.SkipToMainContent" style="width: auto;"  role="link"></button>
 		</div>
 		<div class="header" data-class="mobile-header-visible: @.l.mobile_header_visible" role="banner">
-      <a data-click="$hc.goToHome() && (!(@KEY_SCREEN_DESKTOP || @KEY_SCREEN_TABLET) && @KEY_ACTIVE_TAB(null))" data-attr="title: @KEY_LNG.HomeButton; aria-label: @KEY_LNG.HomeButton; title:@KEY_LNG.HomeButton;href:rh.consts('DEFAULT_TOPIC')" >
+      <a data-click="$hc.goToHome() && (!(@KEY_SCREEN_DESKTOP || @KEY_SCREEN_TABLET) && @KEY_ACTIVE_TAB(null))" data-attr="title: @KEY_LNG.HomeButton; aria-label: @KEY_LNG.HomeButton; title:@KEY_LNG.HomeButton;href:rh.model.get(rh.consts('KEY_LOGO_URL')) || rh.consts('DEFAULT_TOPIC')" >
 				<div class="logo" data-attr="title:@KEY_LNG.HomeButton; data-logo-selector:@KEY_DO_NOT_PRESERVE_AR">
 			&nbsp;<span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.HomeButton"></span>
 				</div>
 			</a>
 			<div class="title">
-				<%= output.title %>
+				<a data-click="$hc.goToHome()" data-attr="title:@KEY_LNG.HomeButton; href: rh.model.get(rh.consts('KEY_LOGO_URL')) || rh.consts('DEFAULT_TOPIC')" tabindex="0">
+					<%= output.title %>
+				</a>
 			</div>
 			<div class="brs-holder">
 				<div class="brs_previous" data-attr="title:@KEY_LNG.Prev"  >
@@ -71,7 +73,7 @@
 					&#160;<span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.Glossary"></span>
 				</a>
 				<a class="filter" data-if="KEY_FEATURE.filter" data-class="active: @KEY_ACTIVE_TAB == 'filter'; filter-applied: @.l.tag_expression.length"  data-click="$mc.toggleActiveTab('filter')"   data-keyup="$mc.navigateTabList(event, 'filter')" data-attr="title:@KEY_LNG.Filter; href: '#'; aria-label:@KEY_LNG.Filter; aria-selected: @KEY_ACTIVE_TAB == 'filter'; tabindex: @KEY_ACTIVE_TAB == 'filter' ? 0 : -1" role="tab" aria-controls="filter-panel">&#160;</a>
-				<a class="fts" data-if="@KEY_SEARCH_LOCATION == 'tabbar'" data-class="active: @KEY_ACTIVE_TAB == 'fts'; search-sidebar: @KEY_SEARCH_LOCATION == 'tabbar'"
+				<a class="fts" data-if="!@KEY_SCREEN_DESKTOP || @KEY_SEARCH_LOCATION == 'tabbar'" data-class="active: @KEY_ACTIVE_TAB == 'fts'; search-sidebar: @KEY_SEARCH_LOCATION == 'tabbar'"
 						data-click="$mc.toggleActiveTab('fts')" data-keyup="$mc.navigateTabList(event, 'fts')" data-attr="title:@KEY_LNG.SearchTitle; href: '#'; aria-label:@KEY_LNG.SearchTitle; aria-selected: @KEY_ACTIVE_TAB == 'fts'; tabindex: @KEY_ACTIVE_TAB == 'fts' ? 0 : -1" role="tab" aria-controls="fts-panel">
 					&#160;<span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.SearchTitle"></span>
 				</a>
@@ -251,6 +253,17 @@
 					</div>
 				</div>
 			</div>
+			<div class="wSearchResultFooter">
+				<div class="wSearchResultPaginator" data-if="@KEY_PAGINATOR_SHOW_PREV_PAGE || @KEY_PAGINATOR_SHOW_NEXT_PAGE">
+					<button class="wSearchResultPaginatorPrevLink" href="#" data-click="@EVT_CHANGE_SEARCH_PAGE('previous')" data-css="visibility: @KEY_PAGINATOR_SHOW_PREV_PAGE ? null : 'hidden'" data-attr="title: @KEY_LNG.PrevSearchResults">
+						<span class="wSearchResultPaginatorPrevIcon"></span>
+					</button>
+					<span class="wSearchResultPaginatorLabel" data-text="@KEY_PAGINATOR_LABEL"></span>
+					<button class="wSearchResultPaginatorNextLink" href="#" data-click="@EVT_CHANGE_SEARCH_PAGE('next')" data-css="visibility: @KEY_PAGINATOR_SHOW_NEXT_PAGE ? null : 'hidden'" data-attr="title: @KEY_LNG.NextSearchResults">
+						<span class="wSearchResultPaginatorNextIcon"></span>
+					</button>
+				</div>
+			</div>
 			<div data-if="@.l.results_loaded && @.p.searchresults.length && !@EVT_SEARCH_IN_PROGRESS" class="wSearchResultsEnd">
 				<?rh-lng-string lngname="EndOfResults" lngvalue="End of search results." ?>
 			</div>
@@ -266,8 +279,8 @@
 		<div class="topic main" data-css="left: sidebar_width | screen: 'desktop', dir: 'ltr'; right: sidebar_width | screen: 'desktop', dir: 'rtl'" data-class="sidebar-opened: $mc.isSidebarTab(@KEY_ACTIVE_TAB); desktop-sidebar-hidden: @.l.desktop_sidebar_visible == false || @.l.desktop_sidebar_available === false; " role="main">
 			<div class="functionholder" role="banner">
 				<div data-repeat="@KEY_CUSTOM_BUTTONS" data-attr="class: '#{class}'" data-rif="item.align !== 'left'" data-i-data-if="item.show">
-					<a data-i-title="item.title" data-iattr="aria-label: item.title" data-i-href="item.link || '#'" data-i-onmouseover="item.onmouseover" 
-								data-i-onclick="item.onclick" data-i-onload="item.onload">&#160;
+					<a data-i-title="item.title" data-iattr="aria-label: item.title" data-i-href="item.href || '#'" data-i-onmouseover="item.onmouseover" 
+					data-i-onclick="!item.href ? item.onclick : null" data-i-onload="item.onload">&#160;
 								<span style="color: transparent; display: none;"  data-html="'#{title}'"></span></a>
 								<style display="none" data-i-onload="item.onload"></style>
 				  </div>

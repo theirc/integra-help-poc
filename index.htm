@@ -5,10 +5,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=yes"/>
 		<meta name="generator" content="Adobe RoboHelp 2020"/>
-		<title>Integra Help (PoC)</title>
+		<title>robohelp_import</title>
 		
 		
-		<link rel="StyleSheet" href="template/Integra_help_v2-theme/layout.css" type="text/css"/>
+		<link rel="StyleSheet" href="template/integra_help_v2-theme/layout.css" type="text/css"/>
 		<script type="text/javascript" src="template/scripts/rh.min.js"></script>
 		<script type="text/javascript" src="template/scripts/common.min.js"></script>
 		<script type="text/javascript" src="template/scripts/layout.min.js"></script>
@@ -20,7 +20,7 @@
 	  <script type="text/javascript">//<![CDATA[
 
 		gTopicFrameName = "rh_default_topic_frame_name";
-		gDefaultTopic = "#rh_import-Personalize_Table_Grid_Layout.htm#Personalization_Overview";
+		gDefaultTopic = "#Key_Components_of_Inventory_Management.htm";
 	
 //]]></script>
 	<script type="text/javascript">//<![CDATA[
@@ -36,13 +36,15 @@
 			<button class="placeholder skip-to-content-link" data-trigger="EVT_FOCUS_ELEMENT_IN_IFRAME" data-attr="title:@KEY_LNG.SkipToMainContent; aria-label:@KEY_LNG.SkipToMainContent;" data-text="@KEY_LNG.SkipToMainContent" style="width: auto;" role="link"></button>
 		</div>
 		<div class="header" data-class="mobile-header-visible: @.l.mobile_header_visible" role="banner">
-      <a data-click="$hc.goToHome() &amp;&amp; (!(@KEY_SCREEN_DESKTOP || @KEY_SCREEN_TABLET) &amp;&amp; @KEY_ACTIVE_TAB(null))" data-attr="title: @KEY_LNG.HomeButton; aria-label: @KEY_LNG.HomeButton; title:@KEY_LNG.HomeButton;href:rh.consts(&#39;DEFAULT_TOPIC&#39;)">
+      <a data-click="$hc.goToHome() &amp;&amp; (!(@KEY_SCREEN_DESKTOP || @KEY_SCREEN_TABLET) &amp;&amp; @KEY_ACTIVE_TAB(null))" data-attr="title: @KEY_LNG.HomeButton; aria-label: @KEY_LNG.HomeButton; title:@KEY_LNG.HomeButton;href:rh.model.get(rh.consts(&#39;KEY_LOGO_URL&#39;)) || rh.consts(&#39;DEFAULT_TOPIC&#39;)">
 				<div class="logo" data-attr="title:@KEY_LNG.HomeButton; data-logo-selector:@KEY_DO_NOT_PRESERVE_AR">
 			 <span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.HomeButton"></span>
 				</div>
 			</a>
 			<div class="title">
-				Integra Help (PoC)
+				<a data-click="$hc.goToHome()" data-attr="title:@KEY_LNG.HomeButton; href: rh.model.get(rh.consts(&#39;KEY_LOGO_URL&#39;)) || rh.consts(&#39;DEFAULT_TOPIC&#39;)" tabindex="0">
+					robohelp_import
+				</a>
 			</div>
 			<div class="brs-holder">
 				<div class="brs_previous" data-attr="title:@KEY_LNG.Prev">
@@ -70,7 +72,7 @@
 					 <span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.Glossary"></span>
 				</a>
 				<a class="filter" data-if="KEY_FEATURE.filter" data-class="active: @KEY_ACTIVE_TAB == &#39;filter&#39;; filter-applied: @.l.tag_expression.length" data-click="$mc.toggleActiveTab(&#39;filter&#39;)" data-keyup="$mc.navigateTabList(event, &#39;filter&#39;)" data-attr="title:@KEY_LNG.Filter; href: &#39;#&#39;; aria-label:@KEY_LNG.Filter; aria-selected: @KEY_ACTIVE_TAB == &#39;filter&#39;; tabindex: @KEY_ACTIVE_TAB == &#39;filter&#39; ? 0 : -1" role="tab" aria-controls="filter-panel"> </a>
-				<a class="fts" data-if="@KEY_SEARCH_LOCATION == &#39;tabbar&#39;" data-class="active: @KEY_ACTIVE_TAB == &#39;fts&#39;; search-sidebar: @KEY_SEARCH_LOCATION == &#39;tabbar&#39;" data-click="$mc.toggleActiveTab(&#39;fts&#39;)" data-keyup="$mc.navigateTabList(event, &#39;fts&#39;)" data-attr="title:@KEY_LNG.SearchTitle; href: &#39;#&#39;; aria-label:@KEY_LNG.SearchTitle; aria-selected: @KEY_ACTIVE_TAB == &#39;fts&#39;; tabindex: @KEY_ACTIVE_TAB == &#39;fts&#39; ? 0 : -1" role="tab" aria-controls="fts-panel">
+				<a class="fts" data-if="!@KEY_SCREEN_DESKTOP || @KEY_SEARCH_LOCATION == &#39;tabbar&#39;" data-class="active: @KEY_ACTIVE_TAB == &#39;fts&#39;; search-sidebar: @KEY_SEARCH_LOCATION == &#39;tabbar&#39;" data-click="$mc.toggleActiveTab(&#39;fts&#39;)" data-keyup="$mc.navigateTabList(event, &#39;fts&#39;)" data-attr="title:@KEY_LNG.SearchTitle; href: &#39;#&#39;; aria-label:@KEY_LNG.SearchTitle; aria-selected: @KEY_ACTIVE_TAB == &#39;fts&#39;; tabindex: @KEY_ACTIVE_TAB == &#39;fts&#39; ? 0 : -1" role="tab" aria-controls="fts-panel">
 					 <span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.SearchTitle"></span>
 				</a>
 			</div>
@@ -246,6 +248,17 @@
 					</div>
 				</div>
 			</div>
+			<div class="wSearchResultFooter">
+				<div class="wSearchResultPaginator" data-if="@KEY_PAGINATOR_SHOW_PREV_PAGE || @KEY_PAGINATOR_SHOW_NEXT_PAGE">
+					<button class="wSearchResultPaginatorPrevLink" href="#" data-click="@EVT_CHANGE_SEARCH_PAGE(&#39;previous&#39;)" data-css="visibility: @KEY_PAGINATOR_SHOW_PREV_PAGE ? null : &#39;hidden&#39;" data-attr="title: @KEY_LNG.PrevSearchResults">
+						<span class="wSearchResultPaginatorPrevIcon"></span>
+					</button>
+					<span class="wSearchResultPaginatorLabel" data-text="@KEY_PAGINATOR_LABEL"></span>
+					<button class="wSearchResultPaginatorNextLink" href="#" data-click="@EVT_CHANGE_SEARCH_PAGE(&#39;next&#39;)" data-css="visibility: @KEY_PAGINATOR_SHOW_NEXT_PAGE ? null : &#39;hidden&#39;" data-attr="title: @KEY_LNG.NextSearchResults">
+						<span class="wSearchResultPaginatorNextIcon"></span>
+					</button>
+				</div>
+			</div>
 			<div data-if="@.l.results_loaded &amp;&amp; @.p.searchresults.length &amp;&amp; !@EVT_SEARCH_IN_PROGRESS" class="wSearchResultsEnd">
 				<?rh-lng-string lngname="EndOfResults" lngvalue="End of search results." ?>
 			</div>
@@ -261,7 +274,7 @@
 		<div class="topic main" data-css="left: sidebar_width | screen: &#39;desktop&#39;, dir: &#39;ltr&#39;; right: sidebar_width | screen: &#39;desktop&#39;, dir: &#39;rtl&#39;" data-class="sidebar-opened: $mc.isSidebarTab(@KEY_ACTIVE_TAB); desktop-sidebar-hidden: @.l.desktop_sidebar_visible == false || @.l.desktop_sidebar_available === false; " role="main">
 			<div class="functionholder" role="banner">
 				<div data-repeat="@KEY_CUSTOM_BUTTONS" data-attr="class: &#39;#{class}&#39;" data-rif="item.align !== &#39;left&#39;" data-i-data-if="item.show">
-					<a data-i-title="item.title" data-iattr="aria-label: item.title" data-i-href="item.link || &#39;#&#39;" data-i-onmouseover="item.onmouseover" data-i-onclick="item.onclick" data-i-onload="item.onload"> 
+					<a data-i-title="item.title" data-iattr="aria-label: item.title" data-i-href="item.href || &#39;#&#39;" data-i-onmouseover="item.onmouseover" data-i-onclick="!item.href ? item.onclick : null" data-i-onload="item.onload"> 
 								<span style="color: transparent; display: none;" data-html="&#39;#{title}&#39;"></span></a>
 								<style display="none" data-i-onload="item.onload"></style>
 				  </div>
@@ -314,7 +327,7 @@
 			<div class="twitter-button" id="twitter-holder" data-if="KEY_FEATURE.twitter"></div>
 		</div>
 		<!-- Scripts -->
-		<script src="template/Integra_help_v2-theme/usersettings.js" type="text/javascript"></script>
+		<script src="template/integra_help_v2-theme/usersettings.js" type="text/javascript"></script>
 		<script>//<![CDATA[
 
 		if(useTwitter === true) {

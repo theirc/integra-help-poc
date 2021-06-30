@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"Key Components of Inventory Management","type":"book","tilePath":"","description":"","url":"Key_Components_of_Inventory_Management.htm","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"Inventory Management (CRRD)","type":"book","tilePath":"","description":"","url":"Key_Components_of_Inventory_Management.htm","key":"toc1"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

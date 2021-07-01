@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "3";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Item Forecasting to Purchase Order Creation</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Item Forecasting to Purchase Order Creation">
+        <span>Item Forecasting to Purchase Order Creation</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+    <p class="ListParagraph">The item forecast is used by CRRD for all project-related procurement planning.</p>
+    <p class="ListParagraph">Each project has their own item forecast.</p>
+    <p class="ListParagraph">An item forecast line is required for every product (items and services) that IRC expects to procure and distribute during the life of a project.</p>
+    <p class="ListParagraph">After the first upload of the Excel version of the item forecast to Integra, ongoing changes are made directly in Integra.</p>
+    <p class="ListParagraph">The item forecast is a “living document”; Programs and Supply Chain collaboratively create and maintain this document.</p>
+    <h2 class="Heading2" style="text-align: left"><a id="Approval_Stage_of_Proposal/Project"></a>Approval Stage of Proposal/Project</h2>
+    <p>Regardless of the approval stage of a proposal/project, the steps for populating the Item Forecast Template are the same; the difference lies in “when” you do it.</p>
+    <p class="ListParagraph">Proposal submitted to Donor and awaiting project approval (highly likely)</p>
+    <p class="ListParagraph">Written notification or Letter of Intent received from donor</p>
+    <p class="ListParagraph">Applies to follow-on projects that get renewed annually (where new D1 is assigned each year)</p>
+    <p class="ListParagraph">Could potentially be a non-follow-up project where verbal notification has been supplied by Donor.</p>
+    <p class="ListParagraph">A project ID/D1 is assigned but spending cannot start until financing approval has been received from Donor and/or IRC. (and project has been activated in Integra).</p>
+    <p class="ListParagraph">Award has been approved by Donor</p>
+    <p class="ListParagraph">May or may not have received award agreement</p>
+    <h2 class="Heading2"><a id="Process_Flow_–_Item_Forecast_to_Item_Requirements"></a>Process Flow – Item Forecast to Item Requirements</h2>
+    <p>Outlined below are the key steps from item forecasting through to item requirement creation. The responsible roles for each step are indicated above the step number.</p>
+    <p><img alt="Picture 4" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image1.png" width="711.8"/></p>
+    <h2 class="Heading2"><a id="Purchase_Order_Processing_from_Item_Requirements"></a>Purchase Order Processing from Item Requirements</h2>
+    <p class="ListParagraph">Prior to creating purchase order (PO), Supply Chain must validate that there is not enough on-hand quantity* (reserved to the project) to fulfill the item requirement quantity. *</p>
+    <p class="ListParagraph">Supply Chain assigns a vendor to each sales order line and creates POs from the sales order lines. (The Integra system automatically generates a sales order line for each item requirement line.)</p>
+    <p><span class="Heading3Char">Notes</span>: If there is excess inventory of a required item on another project, those items may be unreserved from the project with excess inventory and transferred to the project that requires the items.</p>
+    <p>For instructions for transferring inventory from one project to another, refer to the training user guide: Inventory Management for CRRD.</p>
+    <h2 class="Heading2"><a id="Items_Not_Procured_using_the_Item_Forecast"></a>Items Not Procured using the Item Forecast</h2>
+    <p class="margin-left-0-06in">The following items are procured using purchase requisitions, not the item forecast.</p>
+    <ul class="Disc">
+      <li>Capitalized fixed assets</li>
+      <li>Items using unrestricted funds</li>
+      <li>Shared program costs.</li>
+      <li>For instructions on how to process these type of purchases, refer to the following training user guide:</li>
+      <li>Procure to Confirm (PR-PO)</li>
+      <li>Fixed Asset Management</li>
+    </ul>
+    <h2 class="Heading2"><a id="Populate_the_Item_Forecast_Template"></a>Populate the Item Forecast Template</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to retrieve and populate the Item Forecast Template (Excel Format).</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul class="Disc">
+      <li class="ListParagraph">Project has been approved or is “highly likely” to be approved.</li>
+      <li class="ListParagraph">Senior Management has given the “go ahead” to begin populating the template.</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Retrieve the most current Item Forecast template from Box.</p>
+    <p class="ListParagraph">Populate all required columns in the sheet titled, Item Forecasts.</p>
+    <p>Important things to remember when populating the template:</p>
+    <p class="ListParagraph">A user should always retrieve the most recent version of the item forecast template.</p>
+    <p class="ListParagraph">If there are multiple required by dates for a given product, an item forecast line is created for each different “required by date”.</p>
+    <p class="ListParagraph">If there are multiple combinations of financial dimension values for a given product, an item forecast line must be created for each different combination of financial dimension values.</p>
+    <p class="ListParagraph">Use the drop-down selection lists to select data, where available.</p>
+    <p class="ListParagraph">ProductName field holds a maximum of 100 characters. If more than 100 characters are required, enter the full description in the Description column.</p>
+    <p class="ListParagraph">If item number is not known, enter 999999999 as a budget placeholder.</p>
+    <p class="ListParagraph">Manually type a description in the Description field.</p>
+    <p class="ListParagraph">Enter the unit of measure and price.</p>
+    <p class="ListParagraph">Item requirements cannot be created for item 999999999 so this field eventually needs to be updated with actual product ID (or multiple product IDs if necessary).</p>
+    <p class="ListParagraph">The required naming convention for successful upload is, Item Forecast [project ID] reporting entity].</p>
+    <p class="ListParagraph">Examples are: “Item Forecast DF119_2SLE”, “Item Forecast DF129_2KEN”</p>
+    <p class="ListParagraph">Standardized naming conventions have been developed for products for ease of searching and consistent reporting.</p>
+    <p class="ListParagraph">Creating and updating the item forecast template is typically an iterative process, meaning that it will evolve as more details about procurement needs are identified</p>
+    <h3 class="Heading3">Result</h3>
+    <p>The item forecast template is complete and ready to upload to Integra.</p>
+    <h2 class="Heading2"><a id="Upload_the_Item_Forecast_Template_to_Box"></a>Upload the Item Forecast Template to Box</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to upload the completed item forecast to Integra.</p>
+    <p>This procedure is performed by Supply Chain.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">All required fields in the template have been completed correctly</p>
+    <p class="ListParagraph">Template is saved on local drive</p>
+    <p class="ListParagraph">Project exists in Integra</p>
+    <p class="ListParagraph">Template file has been named correctly for successful upload, i.e., with reporting entity suffix.</p>
+    <p class="ListParagraph">data-list-level=&quot;2&quot;&gt;E.g., “Item Forecast DF119_2SLE” ; “Item Forecast DF129_2KEN”</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Open the following Box page.</p>
+    <p class="ListParagraph">&lt;LINK&gt;</p>
+    <p class="ListParagraph">Copy/upload file to Box location as per standard Box uploading procedures.</p>
+    <p class="ListParagraph">Copy/upload completed template to target Box folder.</p>
+    <p class="ListParagraph">“ABC Item Forecast Import_2KEN</p>
+    <p class="ListParagraph">Validate template was successfully uploaded to Integra.</p>
+    <p class="ListParagraph">After a few minutes, validate that file has disappeared from the Box location. This indicates that the file was uploaded to Integra.</p>
+    <p class="ListParagraph">An email similar to the one below will be sent to indicate success of upload.(And likewise if it failed.)</p>
+    <h3 class="Heading3">Result</h3>
+    <p>The item forecast has been uploaded to Integra to the Project management and accounting module.</p>
+    <h3 class="Heading3">Next Steps</h3>
+    <p>Supply Chain validates the uploaded item forecast lines against the donor restriction table.</p>
+    <h2 class="Heading2"><a id="Validate_Uploaded_Item_Forecast_Lines_Against_Donor_Restricted_Items"></a>Validate Uploaded Item Forecast Lines Against Donor Restricted Items</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to validate uploaded item forecast lines against the donor restricted items table.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">The item forecast template has been uploaded to Integra or a new line has been manually added.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 7" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image2.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 9" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image3.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 10" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image4.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Forecast fast tab, click Item forecasts.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 20" height="301.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image5.png" width="714.0"/></p>
+    <p class="ListParagraph">On the menu above the table grid, click Validate lines.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 40" height="152.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image6.png" width="713.8"/></p>
+    <p class="ListParagraph">Review any donor restriction messages and take appropriate action.</p>
+    <h6 class="Heading6">Notes: Lines with issues display a red X or a yellow exclamation point under the Validation check column.</h6>
+    <p class="ListParagraph">If there are restrictions, one of the following two messages will display at the top of page.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 15" height="65.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image7.png" width="697.1"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p class="ListParagraph">You have validated item forecast lines against the donor restrictions table.</p>
+    <h2 class="Heading2"><a id="Approve_Item_Forecast_Lines"></a>Approve Item Forecast Lines</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to approve item forecast lines. This action represents an approval to proceed with procuring the item or service.</p>
+    <p class="ListParagraph">Programs clicks Workflow <span></span> Submit to action the approval. After a short period of time (usually less than a minute), the line is auto-approved by the system as long as lines have been validated without errors.</p>
+    <p class="ListParagraph">Once an item forecast line is approved, an item requirement line is created in the project.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">Status of the item forecast line is “Draft”.</p>
+    <p class="ListParagraph">Draft lines have been validated without errors.</p>
+    <p class="ListParagraph">All placeholder lines have been removed</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 2" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image8.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 5" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image9.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 6" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image10.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Forecast fast tab, click Item forecasts.</p>
+    <h6 class="Heading6">Note: A list of existing item forecast lines for the project is displayed.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 14" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image11.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the selection circle next to the lines requiring approval. Multiple lines may be selected at once.</p>
+    <h6 class="Heading6">Tip: Filter on the Status field to show only item forecast lines in draft status.</h6>
+    <p class="ListParagraph">On menu at top of page, click the three dots and select Workflow <span></span> Submit.</p>
+    <h6 class="Heading6">Note: If the three dots are not displayed, click Workflow on the menu at the top of page to perform the same action.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 23" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image12.png" width="697.9"/></p>
+    <p class="ListParagraph">Confirm the status of the lines have changed to In review.</p>
+    <h6 class="Heading6">Note: These lines will be auto-approved within a minute (approximately).</h6>
+    <p class="ListParagraph">Confirm that the status of the item forecast line(s) has changed to Approved.</p>
+    <h3 class="Heading3">Result</h3>
+    <p class="ListParagraph">You have approved item forecast line(s).</p>
+    <p class="ListParagraph">Item requirements have been created for each approved line for further processing by Supply Chain.</p>
+    <h2 class="Heading2"><a id="Create_an_Item_Forecast_Line_Directly_in_Integra"></a>Create an Item Forecast Line Directly in Integra</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to manually add a line the item forecast in Integra.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">It has been verified that an item forecast line does not already exist for the requirement.</p>
+    <p class="ListParagraph">Financial dimensions are known.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 28" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image13.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 29" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image14.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 30" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image15.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Forecast fast tab, click Item forecasts.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 24" height="328.9" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image16.png" width="714.0"/></p>
+    <h6 class="Heading6">Note: A list of existing item forecast lines for the project displays.</h6>
+    <p class="margin-left-0-25in">Navigation Tips:</p>
+    <p class="ListParagraph">To view more of the item forecast lines, drag the double bars down to expand the view.</p>
+    <p class="ListParagraph">Hide extraneous columns by right-clicking on the column header and selecting Hide this column. Save any layout changes as a personalized view.</p>
+    <p class="ListParagraph">To add a new item forecast line, on the menu at the top of page, click New.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 60" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image17.png" width="697.9"/></p>
+    <p class="margin-left-0-25in">A new line with status Draft is added to the table.</p>
+    <p class="ListParagraph">Complete the following fields for the new item forecast line:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:695.3px">
+        <colgroup>
+          <col style="width:186px"/>
+          <col style="width:509.33333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Field</p>
+            </td>
+            <td>
+              <p>Entry Required</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Model</p>
+            </td>
+            <td>
+              <p>Ensure Obligated has defaulted in this field. If not, select it from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Requested receipt date </p>
+            </td>
+            <td>
+              <p>Select the date the item needs to be received into IRC’s inventory.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Requested ship date</p>
+            </td>
+            <td>
+              <p>Select the date the item will be distributed to beneficiaries.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Item number</p>
+            </td>
+            <td>
+              <p>Enter the product number for the item or service.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Site</p>
+            </td>
+            <td>
+              <p>Select the relevant site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Warehouse</p>
+            </td>
+            <td>
+              <p>Select the destination storage warehouse.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sales quantity</p>
+            </td>
+            <td>
+              <p>Enter the required order quantity.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cost price</p>
+            </td>
+            <td>
+              <p>Enter the price of the item/service, if one has not defaulted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sales price</p>
+            </td>
+            <td>
+              <p>Enter or validate the correct sales price. Consult with Finance for correct sales price.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="margin-left-0-25in"><img alt="Picture 61" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image18.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the Project tab.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 48" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image19.png" width="697.9"/></p>
+    <p class="ListParagraph">In the Category field, enter/select the correct project category for the item/service.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913857" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image20.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top, click Save. This will copy the project category value to the subsequent project category (D2 financial dimension) field.</p>
+    <p class="ListParagraph">Click the Inventory dimensions tab.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 45" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image21.png" width="697.9"/></p>
+    <p class="ListParagraph">In the Location field, click the drop-down arrow and select the relevant location.</p>
+    <p class="margin-left-0-25in">Notes:</p>
+    <p class="ListParagraph">If required, this value may be changed at the time of receipt.</p>
+    <p class="ListParagraph">For services, always select location Non-stock.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 63" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image22.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the Financial dimensions tab.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913856" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image23.png" width="697.9"/></p>
+    <p class="ListParagraph">Validate/complete all the required financial dimensions for the item forecast line.</p>
+    <p class="ListParagraph">The Project ID (D1), Project category (D2), and Reporting entity (D5) should default based on previous entries.</p>
+    <p class="ListParagraph">Populate the Program area (D3), Operating unit (D4), and Functional area (D6) fields.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 55" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image24.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the Overview tab to return to the list of item forecast lines.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913858" height="294.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image25.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top, click Save.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created a draft item forecast line directly in Integra.</p>
+    <h3 class="Heading3">Next Steps</h3>
+    <p>Programs must approve the item forecast line(s). Refer to procedure Approve Item Forecast Lines in this user guide.</p>
+    <h2 class="Heading2"><a id="Update_Item_Forecast_in_Integra"></a>Update Item Forecast in Integra</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to make updates to the item forecast after the initial upload of the Excel template.</p>
+    <p>Since IRC uploads the item forecast at the beginning of a project, it is likely that changes will need to be made. E.g., split item forecast lines, change quantity, delete line, etc.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">The item forecast template has been uploaded to Integra.</p>
+    <p class="ListParagraph">Status of item forecast line(s) is “Draft”.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 31" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image26.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 34" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image27.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 35" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image28.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Forecast fast tab, click Item forecasts.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 36" height="283.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image29.png" width="697.9"/></p>
+    <p class="ListParagraph">Make any required updates to the item forecast lines.</p>
+    <p class="ListParagraph">Save changes.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have updated an item forecast in Integra.</p>
+    <h2 class="Heading2"><a id="Display_On-hand_Inventory"></a><a id="Display_On-hand_Inventory_1"></a>Display On-hand Inventory</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0-13in">Use this procedure to view on-hand inventory quantities.</p>
+    <h3 class="Heading3">Prerequisites<span class="Heading3Char"> </span></h3>
+    <p class="ListParagraph">The item has been set up as an inventory item in Integra.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">From the Integra Home page, navigate the modules to Inventory management <span></span> Inquiries and reports <span></span> On-hand list.</p>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 19" height="291.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image30.png" width="598.0"/></p>
+    <p class="ListParagraph">Apply any or all of the following filters by selecting the drop-down list for more filtering options:</p>
+    <p class="ListParagraph">Item number</p>
+    <p class="ListParagraph">Site</p>
+    <p class="ListParagraph">Warehouse</p>
+    <p class="ListParagraph">Project ID</p>
+    <h6 class="Heading6">Note: If additional filters are needed, clickAdd to select other values such as Project ID or Location.</h6>
+    <p class="ListParagraph">Click Dimensions on the menu at the top of the page to add additional inventory dimension values to the on-hand inquiry display.</p>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 161" height="316.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image31.png" width="666.0"/></p>
+    <p class="ListParagraph">Click the check next to the dimensions to display in the relevant selections. E.g., Site, Warehouse, Location, Project ID, and Item number.</p>
+    <p class="ListParagraph">Click OK to proceed.</p>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 1" height="304.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image32.png" width="627.2"/></p>
+    <p class="ListParagraph">Click Apply on the left-hand Filters pane to retrieve results.</p>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 166" height="323.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image33.png" width="666.0"/></p>
+    <p class="ListParagraph">Review the results of on-hand inventory displayed in the On-hand grid.</p>
+    <h6 class="Heading6">Note: Use the Filter in the Filter pane to collapse or expand the pane, as required.</h6>
+    <p class="ListParagraph">Click X to close the On-hand inventory report when reviewing is complete.</p>
+    <h3 class="Heading3">Result</h3>
+    <p class="margin-left-0-13in">You have viewed on-hand inventory quantities.</p>
+    <h2 class="Heading2"><a id="Review_and/or_Update_Item_Requirement(s)_in_Project"></a>Review and/or Update Item Requirement(s) in Project</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to review or update item requirements that were generated from released item forecast lines.</p>
+    <h6 class="Heading6">Note: Only Supply Chain can make changes to an item requirement line.</h6>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">Item forecast line has been released by Programs.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> Projects <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 38" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image34.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 39" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image35.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 41" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image36.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Item requirements fast tab, click Item requirements.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 44" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image37.png" width="697.9"/></p>
+    <p class="ListParagraph">Review the list of item requirements for the project.</p>
+    <h6 class="Heading6">Tip: Add the column “Reference number” to the table grid to view associated purchase order numbers. This field is also available on the Other tab. If column is added, save it to personalized view.</h6>
+    <p class="ListParagraph">Click Edit to update item requirement lines, if required.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have reviewed item requirements for a project.</p>
+    <p>A sales order line has been created for each item requirement line.</p>
+    <h2 class="Heading2"><a id="Create_Purchase_Order_from_Sales_Order"></a><a id="Create_Purchase_Order_from_Sales_OrderPurpose_Use_this_procedure_to_create_purchase_orders_for_items/services_that_are_part_of_the_item_forecast.__PrerequisitesSupply_Chain_has_confirmed_there_is_not_enough_on-hand_stock_to_fulfill_item_requirement_amount_For_instructions_on_viewing_on-hand_inventory,_refer_to_training_user_guide,_Inventory_Management._StepsNavigate_modules_to_Project_management_and_accounting__Projects__All_projects.Search_for,_and_open,_the_target_project._On_the_menu_at_the_top_of_the_project_form,_click_Plan._On_the_action_pane,_click_Item_requirements.On_the_menu_at_the_top_of_page,_click_Manage.Click_Inquiries_and_select_Sales_order_from_the_drop-down_selection_list.Make_note_of,_or_copy,_the_sales_order_number.Navigate_to_Procurement_and_sourcing__Purchase_orders__All_purchase_orders._On_the_menu_at_the_top_of_page,_click_Purchase_order._Under_the_New_action_pane,_click_From_a_sales_order.Under_Lines_section,_click_Select.In_the_row_that_displays_Sales_order,_enter_the_sales_order_number_in_the_Criteria_field.Click_OK_to_proceed.Select_the_checkbox_under_the_Include_column_for_the_item/service_to_be_procured.In_the_Vendor_account_field,_enter_the_vendor_number_from_whom_the_item/service_will_be_purchased.Click_OK_to_proceed.Click_the_PO_number_that_was_just_created_to_open_the_PO_form.Note:_New_POs_are_typically_displayed_at_the_bottom_of_the_Purchase_Order_List_Page.Click_the_Header_tab_and_scroll_down_to_the_Setup_section_of_header.On_the_menu_at_the_top_of_page,_click_Edit.In_the_Requester_field,_enter_the_name_of_the_requestor._Important:_This_name_determines_the_person_to_whom_the_PO_is_routed_for_workflow_approval._Entering_a_requester’s_name_in_the_header_of_the_PO_will_apply_that_requester_to_all_lines_in_the_PO._If_requester_may_be_different_for_some_lines,_the_requester_must_be_added_at_the_line_level._On_the_menu_at_the_top_of_page,_click_Workflow_and_submit_the_PO_for_approval.Once_approved,_confirm_and_transmit_the_PO_to_vendor._Refer_to_the_procedure_in_this_user_guide_titled,_Confirm_PO_and_Transmit_to_Vendor.ResultYou_have_created_a_PO_for_a_service/item_identified_in_the_item_forecast.___Review_Draft_Purchase_Order_and_Submit_for_Approval"></a>Create Purchase Order from Sales Order</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create purchase orders for items/services that are part of the item forecast.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">Supply Chain has confirmed there is not enough on-hand stock to fulfill item requirement amount For instructions on viewing on-hand inventory, refer to training user guide, Inventory Management.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> Projects <span></span> All projects.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913892" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image38.png" width="697.9"/></p>
+    <p class="ListParagraph">Search for, and open, the target project.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 1" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image39.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of the project form, click Plan.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 26" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image40.png" width="697.9"/></p>
+    <p class="ListParagraph">On the action pane, click Item requirements.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913870" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image41.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Manage.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913871" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image42.png" width="697.9"/></p>
+    <p class="ListParagraph">Click Inquiries and select Sales order from the drop-down selection list.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913872" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image43.png" width="697.9"/></p>
+    <p class="ListParagraph">Make note of, or copy, the sales order number.</p>
+    <p class="ListParagraph">Navigate to Procurement and sourcing <span></span> Purchase orders <span></span> All purchase orders.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913873" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image44.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Purchase order.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913874" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image45.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the New action pane, click From a sales order.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913875" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image46.png" width="697.9"/></p>
+    <p class="ListParagraph">Under Lines section, click Select.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913876" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image47.png" width="697.9"/></p>
+    <p class="ListParagraph">In the row that displays Sales order, enter the sales order number in the Criteria field.</p>
+    <p class="ListParagraph">Click OK to proceed.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913879" height="321.4" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image48.png" width="704.4"/></p>
+    <p class="ListParagraph">Select the checkbox under the Include column for the item/service to be procured.</p>
+    <p class="ListParagraph">In the Vendor account field, enter the vendor number from whom the item/service will be purchased.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913881" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image49.png" width="697.9"/></p>
+    <p class="ListParagraph">Click OK to proceed.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913882" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image50.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the PO number that was just created to open the PO form.</p>
+    <h6 class="Heading6">Note: New POs are typically displayed at the bottom of the Purchase Order List Page.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 519913886" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image51.png" width="697.9"/></p>
+    <p class="ListParagraph">Click the Header tab and scroll down to the Setup section of header.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913889" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image52.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Edit.</p>
+    <p class="ListParagraph">In the Requester field, enter the name of the requestor.</p>
+    <h6 class="Heading6">Important: This name determines the person to whom the PO is routed for workflow approval. Entering a requester’s name in the header of the PO will apply that requester to all lines in the PO. If requester may be different for some lines, the requester must be added at the line level.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 519913890" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image53.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Workflow and submit the PO for approval.</p>
+    <p class="ListParagraph">Once approved, confirm and transmit the PO to vendor. Refer to the procedure in this user guide titled, Confirm PO and Transmit to Vendor.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created a PO for a service/item identified in the item forecast.</p>
+    <h2 class="Heading2"><a id="Review_Draft_Purchase_Order_and_Submit_for_Approval"></a>Review Draft Purchase Order and Submit for Approval</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to submit a PO for approval.</p>
+    <p>If initial delivery will be made to a location other than the final warehouse location, e.g., point of entry, update the delivery address field to reflect the delivery location and include note that says items should be transferred from point of entry to final warehouse location.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">PO has status “Draft”.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">From the Integra home page, navigate modules to Procurement and sourcing <span></span> Purchase orders <span></span> All purchase orders.</p>
+    <h6 class="Heading6">Note: Project POs can also be accessed from within the project itself. Refer to the following procedure in this user guide for instructions: View Purchase Orders for a Project.</h6>
+    <p class="ListParagraph margin-left-0-25in"><img alt="Picture 62" height="318.0" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image54.png" width="697.3"/></p>
+    <h6 class="Heading6">Note: Ensure the Purchase Order List Page view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</h6>
+    <p class="ListParagraph">Locate and click the relevant PO number to open the PO form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 21" height="325.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image55.png" width="714.0"/></p>
+    <h6 class="Heading6">Note: Ensure the Purchase Order view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</h6>
+    <p class="ListParagraph">Validate the following fields in each line for accuracy and completion.</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:696.0px">
+        <colgroup>
+          <col style="width:174px"/>
+          <col style="width:522px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="PGNormal">Field</p>
+            </td>
+            <td>
+              <p class="PGNormal">Required entry</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="PGNormal">Item number</p>
+            </td>
+            <td>
+              <p class="PGNormal">Confirm the product identifier number associated with a Product Name in Integra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="PGNormal">Product name</p>
+            </td>
+            <td>
+              <p class="PGNormal">Confirm the correct product is being ordered.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="PGNormal">Quantity</p>
+            </td>
+            <td>
+              <p class="PGNormal">Confirm the quantity is correct.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Vendor account/name</p>
+            </td>
+            <td>
+              <p class="PGNormal">Confirm or enter the Vendor account number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="PGNormal">Account</p>
+            </td>
+            <td>
+              <p class="PGNormal">Review the account string to ensure the main account and all D codes are correct for the expenditure.</p>
+              <p class="PGNormal">Tip: Click in this field to activate a pop-up window with account code details.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="ListParagraph">Scroll down to the Line details section of PO and click the Address tab.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 32" height="317.5" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image56.png" width="699.2"/></p>
+    <p class="ListParagraph">If the items will initially be delivered to a location other than the destination IRC warehouse, e.g., point of entry airport, select the location from the drop-down selection list in the Delivery address field. Additionally, in the text box under Attention information, enter a note identifying the final destination location.</p>
+    <p class="ListParagraph">Click the Header tab and scroll down to the Setup section of header.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 37" height="315.9" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image57.png" width="697.3"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Edit.</p>
+    <p class="ListParagraph">In the Requester field, enter the name of the requestor.</p>
+    <h6 class="Heading6">Important: This name determines the person to whom the PO is routed for workflow approval. Entering a requester’s name in the header of the PO will apply that requester to all lines in the PO. If requester may be different for some lines, the requester must be added at the line level.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 58" height="318.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image58.png" width="697.3"/></p>
+    <p class="ListParagraph">On the toolbar at the top of page, click Workflow and click Submit.</p>
+    <h3 class="Heading3">Result</h3>
+    <p class="ListParagraph">You have reviewed and submitted a PO to workflow for approval.</p>
+    <h3 class="Heading3"><a id="Next_Steps….Once_PO_is_approved,_confirm_PO_and_transmit_to_vendor.Confirm_PO_and_Transmit_"></a>Next Steps….</h3>
+    <p class="ListParagraph">Once PO is approved, confirm PO and transmit to vendor.</p>
+    <h2 class="Heading2"><a id="Confirm_PO_and_Transmit_to_Vendor"></a>Confirm PO and Transmit to Vendor</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to confirm a PO that has been fully approved.</p>
+    <h6 class="Heading6">Important: The confirmation step is required before the PO can be transmitted to vendor.</h6>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">PO has status “Approved”</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">From the Integra home page, navigate modules to Procurement and sourcing <span></span> Purchase orders <span></span> All purchase orders.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 12" height="310.5" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image59.png" width="680.9"/></p>
+    <p class="ListParagraph">Locate the relevant PO and click the PO number to open the PO form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913865" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image60.png" width="697.9"/></p>
+    <p class="ListParagraph">On the menu at the top of page, click Purchase.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913866" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image61.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Update action pane, click Order confirmation details.</p>
+    <h6 class="Heading6">Note: This step enables the selection of parameters that determine what information displays on the PO. E.g., terms and conditions.</h6>
+    <p class="margin-left-0-25in"><img alt="Picture 519913867" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image62.png" width="697.9"/></p>
+    <p class="ListParagraph">In the Confirmation report field, select the relevant option from the drop-down selection list.</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:713.33333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="margin-left-0-04in">Notes about Terms and Conditions:</p>
+              <p class="margin-left-0-04in">Terms and Conditions are standard texts that get applied to all IRC purchase orders.</p>
+              <p class="ListParagraph" data-list-level="3">For item POs that do not reference a purchase agreement, select the last option, Purchase order with terms and conditions. This ensures the PO will be transmitted to vendor with the terms and conditions displayed on the PO output.</p>
+              <p class="ListParagraph" data-list-level="3">For service POs that do not reference a purchase agreement, select one of:</p>
+              <p class="ListParagraph">Service order less than $2.5 K with terms and conditions</p>
+              <p class="ListParagraph">Service order greater than $2.5 K with terms and conditions</p>
+              <p class="ListParagraph" data-list-level="3">For item POs that were created with reference to a purchase agreement, select Purchase with no terms and conditions. (The terms and conditions will default from the agreement)</p>
+              <p class="ListParagraph" data-list-level="3">For service POs that were created with reference to a purchase agreement, select Service order no terms and conditions. (The terms and conditions will default from the agreement)</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="ListParagraph">Click OK to proceed.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913869" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image63.png" width="697.9"/></p>
+    <p class="ListParagraph">Under the Generate action pane, click Confirm.</p>
+    <p class="ListParagraph">To view the PO, click Purchase order confirmation under the Journals fast tab.</p>
+    <p class="margin-left-0-25in"> </p>
+    <p class="ListParagraph">If required, export the PO to PDF format by clicking Export <span></span> PDF.</p>
+    <h3 class="Heading3">Result</h3>
+    <p class="ListParagraph">You have confirmed a PO and transmitted PO to vendor.</p>
+    <h2 class="Heading2"><a id="Reporting_/_Inquiries"></a>Reporting / Inquiries</h2>
+    <p>The following reports are available for managing fixed assets.</p>
+    <h2 class="Heading2"><a id="View_Purchase_Orders_for_a_Project"></a><a id="View_Purchase_Orders_for_a_ProjectPurpose_Use_this_procedure_to_view_all_purchase_orders_that_have_been_created_for_a_project.PrerequisitesPlanned_order_was_converted_to_a_purchase_order._StepsNavigate_modules_to_Project_management_and_accounting__Projects__All_projects.Open_the_project_form.__On_the_menu_at_the_top,_click_Manage.Under_Related_information,_click_Item_tasks_and_select_Purchase_orders_from_the_drop-down_selection_list.Review_the_list_of_purchase_orders_that_have_been_generated_for_the_project._Scroll_to_the_right_to_see_more_information._To_open_the_actual_PO,_click_the_hyperlinked_PO_number._ResultYou_have_displayed_a_list_of_all_purchase_orders_linked_to_a_project._"></a>View Purchase Orders for a Project</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to view all purchase orders that have been created for a project.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p class="ListParagraph">Planned order was converted to a purchase order.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p class="ListParagraph">Navigate modules to Project management and accounting <span></span> Projects <span></span> All projects.</p>
+    <p class="ListParagraph">Open the project form.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 16" height="322.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image64.png" width="704.2"/></p>
+    <p class="ListParagraph">On the menu at the top, click Manage.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 47" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image65.png" width="697.9"/></p>
+    <p class="ListParagraph">Under Related information, click Item tasks and select Purchase orders from the drop-down selection list.</p>
+    <p class="margin-left-0-25in"><img alt="Picture 54" height="219.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image66.png" width="697.9"/></p>
+    <p class="ListParagraph">Review the list of purchase orders that have been generated for the project. Scroll to the right to see more information.</p>
+    <p class="ListParagraph">To open the actual PO, click the hyperlinked PO number.</p>
+    <h3 class="Heading3">Result</h3>
+    <p class="ListParagraph">You have displayed a list of all purchase orders linked to a project.</p>
+    <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+    <h2 class="Heading2"><a id="Pass/Fail_Conditions_when_Approving_Item_Forecast_Lines"></a>Pass/Fail Conditions when Approving Item Forecast Lines</h2>
+    <p class="margin-left-0-06in">There is a customized workflow that checks set conditions of each item forecast line. If any of the conditions below exist, the item forecast line will be rejected and an item requirement will not get generated for that line. Below are the details of the workflow conditions that will cause an item forecast line to be rejected.</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:697.9px">
+        <colgroup>
+          <col style="width:113.66666666666666666666666667px"/>
+          <col style="width:593.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Condition</p>
+            </td>
+            <td>
+              <p>Reason for Rejection</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>1</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If item is a “placeholder” item, the line will be rejected.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If item is “ineligible”, the line will be rejected.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>3</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If requested date is before tomorrow, the line will be rejected.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>4</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If forecast model “estimated” is entered under the Model column, the line will be rejected. The value “obligated” must be entered.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>5</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If emergency status is X….</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>6</p>
+            </td>
+            <td>
+              <p class="margin-left-0-06in">If any required financial dimensions are missing the line will be rejected.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

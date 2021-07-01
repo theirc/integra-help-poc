@@ -2,12 +2,12 @@
 (function() {
 rh = window.rh;
 model = rh.model;
-var defaultTopic = "Key_Components_of_Inventory_Management.htm";
+var defaultTopic = "Business_Process_Information.htm";
 rh._.exports(defaultTopic);
-rh.consts('DEFAULT_TOPIC', encodeURI("Key_Components_of_Inventory_Management.htm"));
+rh.consts('DEFAULT_TOPIC', encodeURI("Business_Process_Information.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '454a2ed2-1957-43b8-b75b-02a400aaf1af' || 'preview');
+rh.consts('HELP_ID', 'cb0b55ef-3462-44fc-b1c6-2402c4647794' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

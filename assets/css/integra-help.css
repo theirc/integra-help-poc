@@ -270,3 +270,72 @@ ul.Disc {
   list-style-type: disc;
 }
 span {}
+ol.AlphaNumeric {
+  list-style: decimal;
+}
+ol.AlphaNumeric>li>ol {
+  list-style: lower-alpha;
+}
+ol.AlphaNumeric>li>ol>li>ol {
+  list-style: lower-roman;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol {
+  counter-reset: item4;
+  list-style: none;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item4;
+  content: "("counter(item4, decimal)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  counter-reset: item5;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item5;
+  content: "("counter(item5, lower-alpha)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  counter-reset: item6;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item6;
+  content: "("counter(item6, lower-roman)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.LowerAlpha {
+  list-style-type: lower-alpha;
+}

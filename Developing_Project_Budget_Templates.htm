@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "3";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Developing Project Budget Templates</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Developing Project Budget Templates">
+        <span>Developing Project Budget Templates</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+  <p>This section outlines key terms and business process information for developing project budget templates for Integra.</p>
+  <h2 class="Heading2"><a id="Project_Setup_Process_Flow"></a>Project Setup Process Flow</h2>
+  <h2><img alt="Picture 65" height="327.9" src="assets/images/Developing Project Budget Templates_files/image1.png" width="678.0"/></h2>
+  <h6 class="Heading6">Note: Depending on location, step #2 may be done by Finance, budget owners (or designate), or Programs.</h6>
+  <h2 class="Heading2"><a id="General_Guidelines_for_Budget_Development"></a>General Guidelines for Budget Development</h2>
+  <p>Budget holders and designates have a responsibility to provide Finance with budgets. They are responsible for populating the standard Budget Development Template with all the required budget information.</p>
+  <p>Project budgets are subject to workflow approval.</p>
+  <p data-list-level="3">For restricted projects at HQ, all budgets submitted to workflow are approved by the PQU Support group in Finance.</p>
+  <p data-list-level="3">For all unrestricted projects and those temporary restricted projects at HQ managed by FP&amp;A, FP&amp;A submit all budgets to workflow within their group. Budget workflows are approved by the Senior Director, Financial Planning and Analysis.</p>
+  <p data-list-level="3">For the remaining temporary restricted projects at HQ managed by the Finance - PQU Support group, all budgets submitted to workflow are approved by this group.</p>
+  <p data-list-level="3">For CRRD and RAI, Finance submits budgets to workflow and they are approved by the Finance Controller or designate.</p>
+  <p>Funding limits are not applicable to unrestricted and temporary restricted projects.</p>
+  <h2 class="Heading2"><a id="Sub-projects"></a>Sub-projects</h2>
+  <p>Integra is using sub-projects in the following two ways:</p>
+  <p>To identify subaward sub-projects</p>
+  <p>To Identify non-subaward sub-projects</p>
+  <p>Both types of sub-projects are auto-assigned a D1 extension code (a numeric value tagged onto the end of the project ID). The example below highlights the naming convention relative to the project ID/D1.</p>
+  <p><img alt="Picture 68" height="80.9" src="assets/images/Developing Project Budget Templates_files/image2.png" width="463.7"/></p>
+  <p>The two types of sub-projects get created in Integra as outlined below:</p>
+  <p>A subaward sub-project D1 extension code is created centrally in OTIS and automatically flows to Integra via the OTIS/Integra interface.</p>
+  <p>A D1 extension is required for all subaward su-projects, regardless of the subaward budget value</p>
+  <p>A non-subaward sub-project D1 extension code is created manually in the relevant Integra reporting entity.</p>
+  <h6 class="Heading6">Note: As Integra only allows one naming convention, Finance teams must ensure the description of the sub-project clearly distinguishes between an organization name and a field site or program sector.</h6>
+  <h2 class="Heading2"><a id="Developing_Asset_Budget_Lines"></a>Developing Asset Budget Lines</h2>
+  <p>All fixed assets that are expensed to a project must be assigned a project category that is linked to a “Donor Asset Group”. This is done during project setup when project categories are either assigned (standard categories) or are created (unique categories). The process achieves the same objective and assigns a donor asset group to a specific project category. However, the steps to assign the donor asset group differs for the Unique Category Project Budget Development Template and the Standard Category Budget Development Template.</p>
+  <p>Unique Category Project Budget Development Template: This template is mainly used in CRRD where donor reporting formats are determined by the donor. If there are project budget lines set up to procure donor assets in the project budget, the Unique Categories Project Budget Development Template automatically assigns the “Donor Asset Group” in the Project Category worksheet when the following main accounts are entered into the Data Source tab.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="caption-side: top">
+      <caption>Asset Group Table</caption>
+      <colgroup>
+        <col style="width:120px"/>
+        <col style="width:248.86666666666666666666666667px"/>
+        <col style="width:182.46666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Main Account</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Account Description</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Asset Group</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74101</p>
+          </td>
+          <td>
+            <p>&lt;$5K IT Equipment</p>
+          </td>
+          <td>
+            <p>DITUNDR5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74102</p>
+          </td>
+          <td>
+            <p>&lt;$5K Other Equipment</p>
+          </td>
+          <td>
+            <p>DOTUNDR5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74103</p>
+          </td>
+          <td>
+            <p>&gt;=$5K Equipment &amp; Furniture</p>
+          </td>
+          <td>
+            <p>DEQFOVER5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74130</p>
+          </td>
+          <td>
+            <p>Vehicles Purchase</p>
+          </td>
+          <td>
+            <p>DVEHICLES</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>85000</p>
+          </td>
+          <td>
+            <p>CIK Asset (Non-Depreciable)</p>
+          </td>
+          <td>
+            <p>CIKASSETNO</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p>The project categories tagged with the “Donor Asset Group” (from table above) will be uploaded into Integra. The relevant project category is selected at the time of procuring the asset and the asset tag (from the Asset Group table above) on the project category will flow through to the purchase order.</p>
+  <p>Once the asset has been received and the product receipt has been recorded in Integra, the system will automatically create the asset record in the Fixed Assets module and will assign a penny value to the asset.<br/>
+    ‎</p>
+  <h2 class="Heading2"><a id="Roles_and_Responsibilities"></a>Roles and Responsibilities</h2>
+  <h2 class="Heading2"><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTMLe621b66.PNG" height="550.1" src="assets/images/Developing Project Budget Templates_files/image3.png" width="678.0"/></h2>
+  <h2 class="Heading2"><a id="The_Budget_Development_Template"></a>The Budget Development Template</h2>
+  <p>The Budget Development Template is a standardized template used to develop and amend project budgets.</p>
+  <p>The Budget Development Template has numerous macros and formulas that streamline the population of the project templates that get uploaded to Integra.</p>
+  <p>Be sure to read ALL the information on the Instructions sheet of template. (1st tab in file)</p>
+  <p data-list-level="2">There are also further user instructions built into each column of the sheets that need to be populated.</p>
+  <p>There are two Integra budget development template folders available on Box:</p>
+  <ul class="Disc">
+    <li>Standard Project Category Template</li>
+    <li>Unique Project Category Template</li>
+  </ul>
+  <h6 class="Heading6">Note: Ensure you are using the correct template!</h6>
+  <p>All unrestricted projects use standard project categories</p>
+  <p>Temporary restricted may use either standard or unique project categories; this is a judgment call based on the specific project.</p>
+  <p>Restricted projects may use unique or standard project categories. Examples of when each would be used are listed below.</p>
+  <ul class="Disc">
+    <li>US Gov – use standard project categories</li>
+    <li>European (ECHO funding) - use unique project categories</li>
+  </ul>
+  <p> </p>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to extract the donor budget lines required for the Integra Budget template. This makes it easy to use the copy/paste function for efficient template population.</p>
+  <p>For projects using standard project categories, the donor budgets are presented to the donor in the IRC internal budget format. When populating the project development template, it’s an easy copy/paste to assign the standard project categories because it is all the same format. </p>
+  <p>For projects using unique categories, the original budget is always prepared in the IRC internal budget template. Those budget lines are then mapped to the donor budget format which usually mirrors the donor reporting format.  In these situations, population of the project development template should not follow the IRC format because that format does not follow the donor budget/reporting format required.</p>
+  <h3 class="Heading3">Steps</h3>
+  <p>Download the approved donor budget from OTIS.</p>
+  <p>Copy and paste all lines from the donor budget into a new blank Excel sheet.</p>
+  <p>In the new Excel sheet, remove all columns and rows from the donor budget that are not required for the Integra Budget Development template. Below are some examples of rows to remove:</p>
+  <ul class="Disc">
+    <li>Rows with heading titles</li>
+    <li>Rows with sub-total information</li>
+    <li>Rows without dollar amounts</li>
+    <li>Rows not required for donor reporting requirements</li>
+    <li>Any other extraneous rows not required for the Integra budget development template.</li>
+  </ul>
+  <h3 class="Heading3">End of procedure<br/>
+    ‎</h3>
+  <h2 class="Heading2"><a id="Populate_the_Budget_Development_Template"></a>Populate the Budget Development Template</h2>
+  <h2 class="Heading2">Purpose</h2>
+  <p>Use this procedure to populate the Budget Template file. This file has several built-in formulas and macros that enable efficient and accurate population of all the required upload files.</p>
+  <p>Excel Requirements and Recommendations:</p>
+  <p>Do NOT modify or delete any of the rows and column headers in the Budget Development Template.</p>
+  <p>Always enable macros in template when prompted.</p>
+  <p>Turn off the automatic calculation option. On the Excel toolbar, navigate to Formulas <span></span> Calculation Options and select Manual.</p>
+  <h6 class="Heading6">Note: This makes the completion of the template much faster. Otherwise, the file “spins” for a lengthy period of time after every entry/update is made. When you are done making changes within a sheet, change it back to Automatic to apply updates to correlated sheets.</h6>
+  <p>Data entry is only required in the red tabbed worksheets of the file.</p>
+  <p>Only fields highlighted in yellow can be populated.</p>
+  <p>There are completion instructions for each of these fields when mouse is hovered on the column header.</p>
+  <p>Once all relevant yellow fields are completed in a sheet, follow the instructions in the blue arrows to proceed through the sheets of the file.</p>
+  <p>If/when copying and pasting information from a different file, use “paste special“ option so data copies over in an unformatted state.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Download the relevant budget development template from Box location.</li>
+    <li>Populate the Budget Development Template according to instructions embedded in the actual template file.</li>
+  </ol>
+  <h3 class="Heading3">End of procedure<br/>
+    ‎</h3>
+  <h2 class="Heading2"><a id="Prepare_and_Rename_Upload_Files_for_Integr"></a>Prepare and Rename Upload Files for Integra (Finance Function Only)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to prepare and name the upload files that were auto populated from the Budget Development Template.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="AlphaNumeric">
+    <li>Open the upload templates from the local drive.</li>
+    <li>Validate the upload files were opened and populated from the Budget Development Template source file.</li>
+    <li>After the files are opened, clicking the grey action button within each of the sheets should have actioned the auto-population of data from the source file.</li>
+    <li>“Clean up” the file by removing any extraneous rows and columns.</li>
+    <li>Save all the files back to the target hard drive location using the following naming convention requirements. (without brackets)
+      <ul class="Disc">
+        <li>[Project ID] [Name of upload file]-[Legal Entity].xlsx</li>
+      </ul>
+    </li>
+  </ol>
+  <p>Example of required naming convention for uploads to work:</p>
+  <ul class="Disc">
+    <li>EX102 ProjectCategory-9IRC.xlsx</li>
+    <li>EX102 BudgetRegister-9IRC.xlsx</li>
+    <li>EX102 FundingLimit-9IRC.xlsx</li>
+  </ul>
+  <h6 class="Heading6">Note: The dash and legal entity must be at the end of the name, with no spaces between the description and the dash (and beyond) in order for the upload to work.</h6>
+  <h3 class="Heading3">End of procedure<br/>
+    ‎</h3>
+  <h2 class="Heading2"><a id="Upload_Completed_Project_Templates_to_Integra"></a>Upload Completed Project Templates to Integra (Finance Function Only)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure upload the completed templates to Box.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Using the standard file upload function in Box, upload the completed template to the target Box location.</li>
+    <li>Validate the file has disappeared from the Box folder. This indicates the upload has taken place.</li>
+    <li>Review the email sent that indicates if the upload was successful or not.</li>
+    <li>View/validate the uploaded information in Integra.</li>
+  </ol>
+  <p>‎</p>
+  <h3 class="Heading3">End of procedure</h3>
+  <h3 class="Heading3"> </h3>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

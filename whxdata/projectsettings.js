@@ -2,12 +2,12 @@
 (function() {
 rh = window.rh;
 model = rh.model;
-var defaultTopic = "Business_Process_Information.htm";
+var defaultTopic = "Beneficiary_(BENE)_Vendor_Creation_(RAI).htm";
 rh._.exports(defaultTopic);
-rh.consts('DEFAULT_TOPIC', encodeURI("Business_Process_Information.htm"));
+rh.consts('DEFAULT_TOPIC', encodeURI("Beneficiary_(BENE)_Vendor_Creation_(RAI).htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '8b9a1c9d-b7b9-4cfd-b82b-7d4bb98dfb3c' || 'preview');
+rh.consts('HELP_ID', '6df026e4-0f11-408f-80d7-d1d1912c8613' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

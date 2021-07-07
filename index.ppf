@@ -3,7 +3,15 @@
   <contextmap>
     
   </contextmap>
-  <topiclist defaulttopic="Business_Process_Information.htm">
+  <topiclist defaulttopic="Beneficiary_(BENE)_Vendor_Creation_(RAI).htm">
+    
+    <topic>
+      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
+    </topic>
+    
+    <topic>
+      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
+    </topic>
     
     <topic>
       Business_Process_Information.htm
@@ -23,14 +31,6 @@
     
     <topic>
       Expense_Management.htm
-    </topic>
-    
-    <topic>
-      Expense_Report_-_Business_Process.htm
-    </topic>
-    
-    <topic>
-      Expense_Report_-_Business_Process.htm
     </topic>
     
     <topic>
@@ -59,6 +59,10 @@
     
     <topic>
       Personalization_Overview.htm
+    </topic>
+    
+    <topic>
+      Processing_AP_Invoices_–_Business_Process.htm
     </topic>
     
     <topic>

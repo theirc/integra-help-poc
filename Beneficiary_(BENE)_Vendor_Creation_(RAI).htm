@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Beneficiary (BENE) Vendor Creation (RAI)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Beneficiary (BENE) Vendor Creation (RAI)">
+        <span>Beneficiary (BENE) Vendor Creation (RAI)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1 class="Heading1"><a id="Business_Process_Overview"></a>Business Process Overview</h1>
+  <p>Beneficiaries are created as a type of Vendor record in Integra. Use the steps provided as a reference when creating or updating BENE records in Integra. <a id="Vendor_Record_Creation"></a></p>
+  <h2 class="Heading2"><a id="Vendor_Record_Creation
+"></a>Vendor Record Creation</h2>
+  <p>In Integra, the details of all persons and organizations with whom the IRC deals are stored in the global address book.</p>
+  <p>The BENE Vendors group relates to any person who is targeted for assistance, who directly benefits from, or comes in contact with, an IRC-implemented or financially supported IRC program.</p>
+  <p>Most clients are automatically created in Integra through the ETO interface; however, non-ETO clients who do not need heightened confidentiality (i.e., their name being saved in Integra is acceptable) can be manually entered and approved by the local Requestor. Examples of a Requestor include but are not limited to the following roles:</p>
+  <p>Caseworker</p>
+  <p>Casework Supervisor</p>
+  <p>Resettlement Manager</p>
+  <p>Anti-Trafficking Manager</p>
+  <p>Finance Manager</p>
+  <p>Clients pulled in from ETO come over with active status. However, clients created directly in Integra must be submitted to workflow approval or the status will be on hold. (Note: When submitting the client to workflow approval, the system auto-approves the record.)</p>
+  <p>If the office has a program(s) where clients require heightened confidentiality, Finance will create a generic vendor record in the Vendor module. This is done during the project set-up phase. Example of a such a vendor includes anti-trafficking clients.</p>
+  <p>Due to the sensitivity of this vendor type and to ensure the record is secured to the legal entity, only those with permission can view the record.</p>
+  <h2 class="Heading2"><a id="Business_Process_Flow_(ETO)
+"></a>Business Process Flow (ETO)</h2>
+  <p><img alt="Picture 52" height="295.6" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image1.png" width="250.0"/></p>
+  <h2 class="Heading2"><a id="Business_Process_Flow_(Non-ETO)
+"></a>Business Process Flow (Non-ETO)</h2>
+  <h2 class="Heading2"><img alt="Picture 91" height="324.8" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image2.png" width="516.2"/></h2>
+  <h2 class="Heading2"><a id="Create_Beneficiary_"></a>Create Beneficiary (standard confidentiality)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a beneficiary vendor in Integra with standard confidentiality needs.</p>
+  <p>BENE = Beneficiary (Client)</p>
+  <p>Requestor (Caseworker, Casework Supervisor, Resettlement Manager, Anti-Trafficking Manager)</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>The vendor does not already exist in Integra</li>
+    <li>The client is a non-ETO client</li>
+    <li>It is confirmed that the client does not require heightened confidentiality</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Common &gt; Common <span>&gt;</span> Global address book.</li>
+  </ol>
+  <p><img alt="Picture 16" height="328.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image3.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New.</li>
+  </ol>
+  <p><img alt="Picture 17" height="328.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image4.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">Under the General tab, complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:691.9px">
+      <colgroup>
+        <col style="width:151px"/>
+        <col style="width:540.86666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Party ID</p>
+          </td>
+          <td>
+            <p>This value is automatically assigned. No entry required.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Type</p>
+          </td>
+          <td>
+            <p>Select Person from the drop-down selection list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>First Name</p>
+          </td>
+          <td>
+            <p>Enter the first name of the vendor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Last name</p>
+          </td>
+          <td>
+            <p>Enter the last name of the vendor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Gender</p>
+          </td>
+          <td>
+            <p>Select Male or Female from the drop-down selection list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Address books</p>
+          </td>
+          <td>
+            <p>Select BEN (USP Beneficiaries) from the drop-down selection list.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Scroll down the form and open the Addresses section.</li>
+  </ol>
+  <h6 class="Heading6">Note: Since payments are often made in person to a beneficiary, address information in the BENE vendor record may be optional.</h6>
+  <p><img alt="Picture 18" height="323.9" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image5.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">Click Add.</li>
+  </ol>
+  <p><img alt="Picture 20" height="326.5" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image6.png" style="cursor: nwse-resize;" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 5;" value="6">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:709.0px">
+      <colgroup>
+        <col style="width:163px"/>
+        <col style="width:546px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Name or description</p>
+          </td>
+          <td>
+            <p>Enter the name or the description you are assigning to the address.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Purpose</p>
+          </td>
+          <td>
+            <p>Select one of the of location options from the drop-down list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ZIP/postal code</p>
+          </td>
+          <td>
+            <p>Enter the applicable zip code.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Street</p>
+          </td>
+          <td>
+            <p>Enter the street address.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Street number</p>
+          </td>
+          <td>
+            <p>Enter the street number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>City</p>
+          </td>
+          <td>
+            <p>Enter the city.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>State</p>
+          </td>
+          <td>
+            <p>Enter the state.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Primary</p>
+          </td>
+          <td>
+            <p>Select Yes if the address is the “primary” location.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 6;" value="7">Click OK to proceed.</li>
+  </ol>
+  <p><img alt="Picture 22" height="328.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image7.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8">To verify if this entry already exists, scroll up to the top of the page (upper left), click Check for duplicates.</li>
+  </ol>
+  <p><img alt="Picture 23" height="326.5" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image8.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">Select the values to include in the duplicate check, e.g., First name, last name.</li>
+    <li>Click Search.</li>
+    <li>Any duplicate records will be listed in the bottom section of panel. If a duplicate record is found, cancel the creation of the new record.</li>
+    <li>If there are no duplicates found, click OK to proceed.</li>
+  </ol>
+  <p><img alt="Picture 25" height="328.7" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image9.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">Click Save on the menu at the top of the page.</li>
+    <li>Under the New fast tab, click Vendor to access the New Record page.</li>
+  </ol>
+  <p><img alt="Picture 29" height="324.7" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image10.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 14;" value="15">In the Group field, select BENE from the drop-down selection list.</li>
+    <li>Scroll down and open the Purchasing demographics section.</li>
+  </ol>
+  <p><img alt="Picture 30" height="379.9" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image11.png" width="707.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 16;" value="17">In the Currency/Donor Currency field, select the currency the vendor wishes to be paid in.</li>
+    <li>Scroll down and open the Payment section.</li>
+  </ol>
+  <p><img alt="Picture 31" height="328.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image12.png" width="707.7"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 18;" value="19">In the Method of payment field, select the expected payment method
+      <ul class="Disc">
+        <li>Cash</li>
+        <li>Check</li>
+        <li>Prepaid Card</li>
+        <li>Bank Transfer</li>
+        <li>EFT_Chase</li>
+      </ul>
+    </li>
+    <li>Select the method of payment.</li>
+  </ol>
+  <h6 class="Heading6">IMPORTANT REMINDER: If the payment method type is anything other than cash, bank account information including bank name is required. Complete the following steps to enter banking information.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 20;" value="21">Click Bank accounts (top of page)</li>
+    <li>Click New on the set-up page</li>
+    <li>Enter a Bank account description and the Name of the bank</li>
+    <li>Enter the Routing number and the Bank account number</li>
+    <li>Enter the IBAN number – if applicable<br/>
+       </li>
+    <li>Click Save on the menu at the top of the page.</li>
+    <li>Click X (top right) to close the page</li>
+  </ol>
+  <h6 class="Heading6">Note: The newly created vendor is placed on hold automatically.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 27;" value="28">In the action pane, click DynAd Workflow then Submit for approval.</li>
+  </ol>
+  <p><img alt="Picture 104" height="136.3" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image13.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 28;" value="29">In the Vendor workflow - Submit form, enter a comment in the Comment field and click the Submit button.</li>
+  </ol>
+  <p><img alt="Picture 105" height="288.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image14.png" width="646.7"/></p>
+  <p><img alt="Picture 92" height="240.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image15.png" width="492.5"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>The beneficiary vendor is created and is automatically approved.</p>
+  <h2 class="Heading2"><a id="Create_Beneficiary_(with_heightened_confidentiality)PurposeUse_this_procedure_to_create_a_beneficiary_vendor_record_in_Integra_when_there_are_heightened_confidentiality_requirements.BENE_=_Beneficiary_(Client)This_is_a_generic_record_to_be_used_to_pay_a_range_of_clients_and_should_not_reflect_any_one_client’s_information_except_for_the_moment_it_is_being_used_to_make_a_payment._Finance_is_responsible_for_editing_the_generic_vendor_record’s_address_and_subsequently_removing_any_identifying_information_once_the_payment_is_complete.Important:_Only_one_(1)_generic_vendor_record_is_created_for_each_office_and_this_record_is_continuously_used_for_all_confidential_clients.ResponsibilitiesRequestor_(Caseworker,_Casework_Supervisor,_Resettlement_Manager,_Anti-Trafficking_Manager)Edits_the_generic_vendor_record_and_submits_payment_request_(invoice)Approver_group_(Casework_Supervisor)_receives,_reviews,_and_approves_invoice_and_sends_to_FinanceFinance_Manager_(Accounts_Payable)Follows_process_to_review_and_post_vendor_payment_journalPrerequisites_The_vendor_does_not_already_exist_in_IntegraThe_client_is_a_non-ETO_ClientIt_is_confirmed_that_the_client_requires_heightened_confidentialityStepsNavigate_modules_to_Common__Common__Global_address_book.Click_New_on_the_Action_Pane_at_the_top_of_the_Party_page.Under_the_General_tab,_complete_the_following_fields:FieldDescription_and/or_Action_RequiredParty_IDAuto_generated.TypeSelect_Person.First_NameType_the_word_GENERIC.Last_nameType_the_word_CLIENT.GenderSelect_Male_or_Female_or_Non-Specific.Address_booksSelect_BEN.Click_Vendor_at_the_top_of_the_page_to_open_the_vendors_New_Record_page.In_the_New_Record_page,_enter_or_select_a_value_in_the_Group_field_to_specify_the_type_of_vendor.__Select_BENE_for_Beneficiary_(Client).__Click_the_Save_button.Scroll_down_to_the_Payment_tab,_select_the_expected_payment_method_in_the_Method_of_payment_field.__Click_the_Save_button_once_again.Select_the_applicable_method_of_payment:CashCheckPrepaid_CardIn_the_action_pane,_click_DynAd_Workflow_then_Submit_for_Approval.In_the_Vendor_workflow_-_Submit_form,_you_may_enter_a_comment_in_the_Comment_field_and_click_the_Submit_button.Result_A_generic_beneficiary_vendor_has_been_created_and_will_be_automatically_approved.Next_StepsThe_requestor_submits_a_payment_request_in_IntegraReference_the_training_user_guide,_Requesting_Client_Payments_in_Integra_for_detailed_steps.Finance_reviews_and_posts_the_payment_request_invoice_and_processes_payment.Create_a_Client_ID_Financial_Dimension_for_Confidential_ClientPurposeFinance_uses_this_procedure_to_create_a_Client_ID_financial_dimension_(D9)_in_Integra_for_the_confidential_client_using_the_number_supplied_by_the_requestor.This_D9_value_is_managed_by_the_program_staff_responsible_for_supporting_the_client_and_this_record_should_not_include_anything_other_than_the_value_provided.PrerequisitesRequestor_has_provided_financial_dimension_numberStepsNavigate_modules_to_General_ledger__Chart_of_accounts__Dimensions__Financial_dimensions.Scroll_down_to_click_on_the_financial_dimension_ClientID(D9)_then_click_Dimension_values.Click_New_in_the_Action_pane_to_create_a_new_D9.Type_a_value_in_the_Dimension_value_field_and_copy_that_value_into_the_Description_field.__Click_the_Save_button.Result_The_client_ID_financial_dimension_has_been_created_for_a_generic_client_with_confidential_needs.Appendix:_Integra_to_ETO_Field_MappingIntegraETOSub-officeSite_NameETOAlienRecordIDParticipant_Site_IdentifierETO_ProgramCollection_Type_Identifier_16ETOCaseRecordIDCollection_Identifier_16JournalCategoryType_of_Assistance_276ProjectNameSource_of_funds_277MainAccountIDPurpose_280AccountingCurrencyAmountAmount_297PaymentMadeToPayment_Made_to_286VoucherCheck_Number_299"></a>Create Beneficiary (with heightened confidentiality)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a beneficiary vendor record in Integra when there are heightened confidentiality requirements.</p>
+  <p>BENE = Beneficiary (Client)</p>
+  <p>This is a generic record to be used to pay a range of clients and should not reflect any one client’s information except for the moment it is being used to make a payment. Finance is responsible for editing the generic vendor record’s address and subsequently removing any identifying information once the payment is complete.</p>
+  <h6 class="Heading6">Important: Only one (1) generic vendor record is created for each office and this record is continuously used for all confidential clients.</h6>
+  <h3 class="Heading3">Responsibilities</h3>
+  <ol class="RoundSquare">
+    <li>Requestor (Caseworker, Casework Supervisor, Resettlement Manager, Anti-Trafficking Manager)
+      <ol>
+        <li>Edits the generic vendor record and submits payment request (invoice)</li>
+      </ol>
+    </li>
+    <li>Approver group (Casework Supervisor) receives, reviews, and approves invoice and sends to Finance</li>
+    <li>Finance Manager (Accounts Payable)
+      <ol>
+        <li>Follows process to review and post vendor payment journal</li>
+      </ol>
+    </li>
+  </ol>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>The vendor does not already exist in Integra</li>
+    <li>The client is a non-ETO Client</li>
+    <li>It is confirmed that the client requires heightened confidentiality</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Common <span>&gt;</span> Common <span>&gt;</span> Global address book.</li>
+    <li>Click New on the Action Pane at the top of the Party page.</li>
+  </ol>
+  <p><img alt="Picture 28" height="168.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image16.png" width="701.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">Under the General tab, complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:697.0px">
+      <colgroup>
+        <col style="width:181px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Party ID</p>
+          </td>
+          <td>
+            <p>Auto generated.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Type</p>
+          </td>
+          <td>
+            <p>Select Person.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>First Name</p>
+          </td>
+          <td>
+            <p>Type the word GENERIC.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Last name</p>
+          </td>
+          <td>
+            <p>Type the word CLIENT.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Gender</p>
+          </td>
+          <td>
+            <p>Select Male or Female or Non-Specific.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Address books</p>
+          </td>
+          <td>
+            <p>Select BEN.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Picture 49" height="283.5" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image17.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Click Vendor at the top of the page to open the vendors New Record page.</li>
+  </ol>
+  <p><img alt="Picture 51" height="139.2" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image18.png" width="695.9"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">In the New Record page, enter or select a value in the Group field to specify the type of vendor. Select BENE for Beneficiary (Client). Click the Save button.</li>
+  </ol>
+  <p><img alt="Picture 53" height="220.8" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image19.png" width="605.2"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 5;" value="6">Scroll down to the Payment tab, select the expected payment method in the Method of payment field. Click the Save button once again.</li>
+    <li>Select the applicable method of payment:
+      <ol>
+        <li>Cash</li>
+        <li>Check</li>
+        <li>Prepaid Card</li>
+      </ol>
+    </li>
+  </ol>
+  <p><img alt="Picture 54" height="271.6" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image20.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8">In the action pane, click DynAd Workflow then Submit for Approval.</li>
+  </ol>
+  <p><img alt="Picture 55" height="139.5" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image21.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">In the Vendor workflow - Submit form, you may enter a comment in the Comment field and click the Submit button.</li>
+  </ol>
+  <p><img alt="Picture 95" height="240.0" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image22.png" width="425.3"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>A generic beneficiary vendor has been created and will be automatically approved.</p>
+  <h3 class="Heading3">Next Steps</h3>
+  <ol class="Decimal">
+    <li>The requestor submits a payment request in Integra</li>
+    <li>Reference the training user guide, Requesting Client Payments in Integra for detailed steps.</li>
+    <li>Finance reviews and posts the payment request invoice and processes payment.</li>
+  </ol>
+  <h2 class="Heading2"><a id="Create_a_Client_ID_Financial_Dimension_for_Confidential_Client"></a>Create a Client ID Financial Dimension for Confidential Client</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Finance uses this procedure to create a Client ID financial dimension (D9) in Integra for the confidential client using the number supplied by the requestor.</p>
+  <p>This D9 value is managed by the program staff responsible for supporting the client and this record should not include anything other than the value provided.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>Requestor has provided financial dimension number</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to General ledger &gt; Chart of accounts <span>&gt;</span> Dimensions <span>&gt;</span> Financial dimensions.</li>
+    <li>Scroll down to click on the financial dimension ClientID(D9) then click Dimension values.</li>
+  </ol>
+  <p><img alt="Picture 60" height="200.2" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image23.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">Click New in the Action pane to create a new D9.</li>
+  </ol>
+  <p><img alt="Picture 62" height="105.4" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image24.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Type a value in the Dimension value field and copy that value into the Description field. Click the Save button.</li>
+  </ol>
+  <p><img alt="Picture 63" height="97.4" src="assets/images/Beneficiary (BENE) Vendor Creation (RAI)_files/image25.png" width="681.6"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>The client ID financial dimension has been created for a generic client with confidential needs.<br/>
+    ‎</p>
+  <h2 class="Heading2"><a id="Appendix:_Integra_to_ETO_Field_Mapping"></a>Appendix: Integra to ETO Field Mapping</h2>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:684.0px">
+      <colgroup>
+        <col style="width:330px"/>
+        <col style="width:354px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Integra</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">ETO</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Sub-office</p>
+          </td>
+          <td>
+            <p>Site Name</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ETOAlienRecordID</p>
+          </td>
+          <td>
+            <p>Participant Site Identifier</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ETO_Program</p>
+          </td>
+          <td>
+            <p>Collection Type Identifier_16</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ETOCaseRecordID</p>
+          </td>
+          <td>
+            <p>Collection Identifier_16</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>JournalCategory</p>
+          </td>
+          <td>
+            <p>Type of Assistance_276</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ProjectName</p>
+          </td>
+          <td>
+            <p>Source of funds_277</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>MainAccountID</p>
+          </td>
+          <td>
+            <p>Purpose_280</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>AccountingCurrencyAmount</p>
+          </td>
+          <td>
+            <p>Amount_297</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>PaymentMadeTo</p>
+          </td>
+          <td>
+            <p>Payment Made to_286</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Voucher</p>
+          </td>
+          <td>
+            <p>Check Number_299</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

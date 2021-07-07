@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("Beneficiary_(BENE)_Vendor_Creation_(RAI).htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '26c620fc-8a52-438b-a592-8673cc796f8a' || 'preview');
+rh.consts('HELP_ID', 'ea55ec4a-6490-47f1-ba6e-6766c7912569' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

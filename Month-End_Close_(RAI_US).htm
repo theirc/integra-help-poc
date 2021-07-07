@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "10";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Month-End Close (RAI US)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Month-End Close (RAI US)">
+        <span>Month-End Close (RAI US)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <div>
+    <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+    <h2 class="Heading2"><a id="Key_MessagesThe_Dynad_Journal_is_used_for_populating_and_uploading_mass_journal_entries_to_Integra._Examples_of_mass_upload_journals_include_payroll_allocation,_subaward/expenses,_re-classification_of_entries,_and_shared_program_cost_allocation_entries.Selecting_the_correct_journal_name_in_the_Dynad_Journal_is_vital_to_ensure_data_is_processed_correctly_in_Integra._Behind_each_journal_name_there_is_systematic_coding,_i.e.,_posting_profiles,_that_updates_the_Integra_system_in_the_correct_way.Refer_to_the_appendix_at_the_end_of_this_guide_for_a_comprehensive_list_of_journal_names_and_usage.The_recommendation_is_that_if_you_have_less_than_ten_(10)_lines,_it_may_be_easier_to_create_the_journal_entries_directly_in_Integra._For_most_business_tasks,_transactions_are_posted_to_sub-ledgers_(vs._the_General_Ledger).However,_there_are_select_transactions_that_get_posted_directly_to_the_General_Ledger.__Period_statuses_are_used_to_control_access_for_postings_to_ledger_and_sub-ledgers._For_example,_vendor_(AP)_and_customer_(AR)_sub-ledgers_should_have_all_invoice/payment_journals_posted_by_the_sixth_working_day_of_month-end_closing._To_prevent_users_from_posting_to_AR/AP_sub-ledgers_after_the_sixth_working_day,_the_sub-ledgers_can_be_“closed”_for_posting_by_changing_the_module_status_to_On_hold.Month-end_Close_Tasks_(High_level)_Close/open_fiscal_posting_periodsThis_process_is_done_at_specified_times_in_the_month_by_designated_Finance_individuals._Ensure_all_‘daily’_transactions_have_been_posted_in_correct_fiscal_period.Post_intercompany_transactions.Post_month-end_journals.This_process_refers_to_journal_entries_that_are_processed_at_month-end_onlyCalculate_ICR_and_Prepare_Fee_JournalPerform_Reconciliation_and_AnalysisThis_process_includes_the_use_of_the_following_standard_delivered_Integra_transactions/functionality_to_identify_and_remedy_discrepancies_Trial_BalanceVoucher_TransactionsAccounting_Source_Explorer_Tracing_Original_EntriesGenerate_ReportsNumerous_reports_are_available_for_analysis_in_Integra_and_Power_BI.Month-end_Close_ChecklistRefer_to_the_checklist_in_the_appendix_of_this_document._This_checklist_can_also_be_found_on_RescueNet.Important_Note_About_This_Guide:_For_many_month-end_business_tasks,_the_step-by-step_procedures_are_documented_in_a_separate_user_guide_as_they_are_standard_transactions_used_for_day-to-day_business_tasks._In_these_instances,_a_reference_to_the_applicable_guide_is_included_in_this_document._This_guide_includes_detailed_procedures_for_tasks_that_are_not_contained_within_another_user_guide._Opening_and_Closing_of_Ledger_Posting_PeriodsOpen_or_Close_a_Fiscal_Year_Period"></a>Key Messages</h2>
+    <ol class="RoundSquare">
+      <li>The Dynad Journal is used for populating and uploading mass journal entries to Integra.
+        <ol>
+          <li>Examples of mass upload journals include payroll allocation, subaward/expenses, re-classification of entries, and shared program cost allocation entries.</li>
+          <li>Selecting the correct journal name in the Dynad Journal is vital to ensure data is processed correctly in Integra.
+            <ol>
+              <li>Behind each journal name there is systematic coding, i.e., posting profiles, that updates the Integra system in the correct way.</li>
+              <li>Refer to the appendix at the end of this guide for a comprehensive list of journal names and usage.</li>
+            </ol>
+          </li>
+          <li>The recommendation is that if you have less than ten (10) lines, it may be easier to create the journal entries directly in Integra.</li>
+        </ol>
+      </li>
+      <li>For most business tasks, transactions are posted to sub-ledgers (vs. the General Ledger).
+        <ol>
+          <li>However, there are select transactions that get posted directly to the General Ledger.</li>
+        </ol>
+      </li>
+      <li>Period statuses are used to control access for postings to ledger and sub-ledgers.
+        <ol>
+          <li>For example, vendor (AP) and customer (AR) sub-ledgers should have all invoice/payment journals posted by the sixth working day of month-end closing. To prevent users from posting to AR/AP sub-ledgers after the sixth working day, the sub-ledgers can be “closed” for posting by changing the module status to On hold.</li>
+        </ol>
+      </li>
+    </ol>
+    <h2 class="Heading2"><a id="Month-end_Close_Tasks_(High_level)"></a>Month-end Close Tasks (High level)</h2>
+    <ol class="AlphaNumeric">
+      <li>Close/open fiscal posting periods
+        <ul class="Disc">
+          <li>This process is done at specified times in the month by designated Finance individuals.</li>
+        </ul>
+      </li>
+      <li>Ensure all ‘daily’ transactions have been posted in correct fiscal period.</li>
+      <li>Post intercompany transactions.</li>
+      <li>Post month-end journals.
+        <ul class="Disc">
+          <li>This process refers to journal entries that are processed at month-end only</li>
+        </ul>
+      </li>
+      <li>Calculate ICR and Prepare Fee Journal</li>
+      <li>Perform Reconciliation and Analysis
+        <ul class="Disc">
+          <li>This process includes the use of the following standard delivered Integra transactions/functionality to identify and remedy discrepancies
+            <ul class="Circle">
+              <li>Trial Balance</li>
+              <li>Voucher Transactions</li>
+              <li>Accounting Source Explorer</li>
+              <li>Tracing Original Entries</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Generate Reports
+        <ul class="Disc">
+          <li>Numerous reports are available for analysis in Integra and Power BI.</li>
+        </ul>
+      </li>
+    </ol>
+    <h4 class="Heading4">Month-end Close Checklist</h4>
+    <p>Refer to the checklist in the appendix of this document. This checklist can also be found on RescueNet.</p>
+    <h4 class="Heading4">Important Note About This Guide:</h4>
+    <p>For many month-end business tasks, the step-by-step procedures are documented in a separate user guide as they are standard transactions used for day-to-day business tasks. In these instances, a reference to the applicable guide is included in this document.</p>
+    <p>This guide includes detailed procedures for tasks that are not contained within another user guide.</p>
+    <h2 class="Heading2"><a id="Opening_and_Closing_of_Ledger_Posting_Periods"></a>Opening and Closing of Ledger Posting Periods</h2>
+    <h2 class="Heading2"><a id="Open_or_Close_a_Fiscal_Year_Period"></a>Open or Close a Fiscal Year Period</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to open or close a fiscal calendar period.</p>
+    <p>Once you close the current period, the new period should immediately be opened to ensure users can transact from the first day of the next period.</p>
+    <p>A custom “Period close” security group (PrdCls) has been defined to allow designated Finance users the ability to process periodic transactions after the period has been closed to the general user population.</p>
+    <p>The following period “statuses” are used to open and close fiscal calendar periods.</p>
+    <ul class="Disc">
+      <li><strong>Open</strong>: Open to all eligible users for transaction posting. </li>
+      <li><strong>On hold</strong>: Transactions cannot be posted in the period. However, select users in Finance can post transactions for month-end reconciliation purposes.</li>
+      <li><strong>Permanently closed</strong>: This status is currently not being used; once you permanently close a period, it can never be reopened again.</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <p>From the Integra dashboard, go to General ledger &gt; Calendars &gt; Ledger calendars.  </p>
+    <p>In the left-hand panel of screen, click on the period to change.</p>
+    <p>Under the Legal entity column, select the legal entity to update. </p>
+    <h6 class="Heading6">Note: After selecting the legal entity, access levels to specific modules can be defined.</h6>
+    <p>In the top left of page, click &quot;Edit&quot;.</p>
+    <p>Select Update Period status. </p>
+    <p>Click Edit at the top right-hand side to allow you to change the period status. </p>
+    <p>In the Period status field drop down, select On hold/Open for the period that is being closed or opened.   </p>
+    <p>Under the Ledger column, select PrdCls.</p>
+    <p>The Ledger column refers to the General Ledger</p>
+    <p>PrdCls is a custom security group created for specific Finance individuals so they can post transaction after the Period status has been updated to On hold.</p>
+    <p>If opening or closing a sub-ledger, click Update module access.</p>
+    <p>For module access update, go to the module that you want to update. </p>
+    <p>Select from the drop down, whether you want to restrict a module or user group. If you select “None”, it means that no posting can happen to that sub ledger.  Also, if you select any access level, it overrides the period status.  </p>
+    <p>All necessary adjusting entries and re-classifications will be done at this point. <br/>
+      ‎ </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C380B253.tmp" height="232.1" src="assets/images/Month-End Close (RAI US)_files/image2.png" width="597.7"/> </p>
+    <p>Click Save. </p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have opened or closed a fiscal posting period.</p>
+    <p> </p>
+    <h2 class="Heading2"><a id="Intercompany_Transactions"></a>Intercompany Transactions</h2>
+    <h2 class="Heading2"><a id="Post_Intercompany_Transaction"></a>Post Intercompany Transaction</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to post intercompany transactions.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide and specific step-by-step procedures on how to post journals.</p>
+    <h2 class="Heading2"><a id="Intercompany_Accounting"></a>Intercompany Accounting</h2>
+    <p>The appendix of this user guide includes specific accounting entry requirements required based on the type of intercompany transaction being processed.</p>
+    <h2 class="Heading2"><a id="Month-end_General_Journals"></a>Month-end General Journals</h2>
+    <h2 class="Heading2"><a id="Post_Periodic_Journals"></a>Post Periodic Journals</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to post monthly charges, such as prepaid rent, prepaid insurance, etc.</p>
+    <p>There are different journal names for the various periodic charges. Refer to the Journal Name table in the Dynad Journal template for the correct selection.</p>
+    <h6 class="Heading6">Note: You don’t necessarily need to wait until month end to enter/post periodic charges. i.e., if you know the monthly allocation, you can enter it prior to month end.</h6>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide and specific step-by-step procedures on how to post journals.</p>
+    <h2 class="Heading2"><a id="Journal_Entry_and_Upload"></a>Journal Entry and Upload</h2>
+    <p>Procedure: Using the Dynad Template to Upload Journal Entries</p>
+    <p>Procedure: Posting Periodic Journals (directly in Integra)</p>
+    <h2 class="Heading2"><a id="Post_Depreciation_Allocation_Entries"></a>Post Depreciation Allocation Entries</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to allocate asset depreciation charges across projects.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide for step-by-step procedures on how to post journals.</p>
+    <ul class="Disc">
+      <li>Journal Entry and Upload
+        <ul>
+          <li>Procedure: Using the Dynad Journal Template to Upload Journal Entries</li>
+          <li>Procedure: Posting Periodic Journals</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="Heading2"><a id="Post_Payroll_Allocation_Entries"></a>Post Payroll Allocation Entries</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to allocate payroll charges across projects.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide for step-by-step procedures on how to post journals.</p>
+    <ul class="Disc">
+      <li>Journal Entry and Upload
+        <ul>
+          <li>Procedure: Using the Dynad Template to Upload Journal Entries</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="Heading2"><a id="Post_Shared_Program_Cost_Allocation_Entries"></a>Post Shared Program Cost Allocation Entries</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to allocate shared program costs across projects.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide for step-by-step procedures on how to post journals.</p>
+    <ul class="Disc">
+      <li>Journal Entry and Upload
+        <ul>
+          <li>Procedure: Using the Dynad Template to Upload Journal Entries</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="Heading2"><a id="Month-end_Adjustments_Reverse_G/L_Entry_Purpose_Use_this_procedure_to_reverse_wrong_entries_in_the_GL_and_later_record_them_to_the_correct_entries. Note:_Only_transactions_originating_in_the_GL_can_be_reversed_in_the_GL;_any_transactions_posted_to_a_sub-ledger_must_be_reversed_in_that_sub-ledger._StepsAfter_running_the_trial_balance_(see_above),_double-click_the_transaction in_the Closing_balance column_that_needs_to_be_reversed. Click Reverse_transaction. On_the Transaction_reversal screen,_enter_the Reversal_posting_date. Click OK.   Click Reversed_tracing._The_original_and_reversed_transactions_are_displayed.  Close_the_transaction_by_selecting  at_the_top_right_of_the_screen_when_the_review_is_completed. Result The_transaction_is_reversed_and_reviewed.   Post_Project_Adjustment_Entries_Purpose_Use_this_procedure_to_recode_a_transaction_from_one_project_to_another._Adjusting_project_transactions_in_the_project_sub_ledger_automatically_adjusts_the_corresponding_general_ledger_posting._There_are_two_methods_to_adjust_project_transactions_in_Integra._1._Adjust_transactions_per_project_2._Adjust_transactions_by_batch.Note:_Only_users_with_the_correct_security_access_can_use_the_project_adjustment_form_in_Integra._This_is_because_project_adjustment_does_not_have_any_workflow._StepsRefer_to_the_following_user_guide_for_step-by-step_procedures_on_how_to_post_journals.Journal_Entry_and_UploadProcedure:_Using_the_Dynad_Template_to_Upload_Journal_EntriesProcedure:_Recoding_Journal_EntriesPost_Inventory_Adjustments"></a>Month-end Adjustments</h2>
+    <h2 class="Heading2">Reverse G/L Entry</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to reverse wrong entries in the GL and later record them to the correct entries. </p>
+    <h6 class="Heading6">Note: Only transactions originating in the GL can be reversed in the GL; any transactions posted to a sub-ledger must be reversed in that sub-ledger.</h6>
+    <h3 class="Heading3">Steps</h3>
+    <p>After running the trial balance (see above), double-click the transaction in the Closing balance column that needs to be reversed. </p>
+    <p>Click Reverse transaction.</p>
+    <p><img alt="Picture 19" height="338.8" src="assets/images/Month-End Close (RAI US)_files/image3.png" width="696.0"/></p>
+    <p> On the Transaction reversal screen, enter the Reversal posting date. </p>
+    <p>Click OK. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\257AB711.tmp" height="207.9" src="assets/images/Month-End Close (RAI US)_files/image4.png" width="292.2"/> </p>
+    <p> Click Reversed tracing. The original and reversed transactions are displayed.  </p>
+    <p>Close the transaction by selecting <img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\6A9E5C47.tmp" height="21.7" src="assets/images/Month-End Close (RAI US)_files/image5.png" width="24.2"/> at the top right of the screen when the review is completed. </p>
+    <h3 class="Heading3">Result </h3>
+    <p>The transaction is reversed and reviewed. </p>
+    <p><img alt="Picture 20" height="379.5" src="assets/images/Month-End Close (RAI US)_files/image6.png" width="696.0"/></p>
+    <h2 class="Heading2"><a id="Post_Project_Adjustment_Entries"></a>Post Project Adjustment Entries</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to recode a transaction from one project to another.</p>
+    <p>Adjusting project transactions in the project sub ledger automatically adjusts the corresponding general ledger posting.</p>
+    <p>There are two methods to adjust project transactions in Integra.</p>
+    <ol class="Decimal">
+      <li>Adjust transactions per project.</li>
+      <li>Adjust transactions by batch.</li>
+    </ol>
+    <h6 class="Heading6">Note: Only users with the correct security access can use the project adjustment form in Integra. This is because project adjustment does not have any workflow.</h6>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide for step-by-step procedures on how to post journals.</p>
+    <ul class="Disc">
+      <li>Journal Entry and Upload
+        <ul>
+          <li>Procedure: Using the Dynad Template to Upload Journal Entries</li>
+          <li>Procedure: Recoding Journal Entries</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="Heading2"><a id="Post_Inventory_Adjustments"></a>Post Inventory Adjustments</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to allocate inventory adjustment values to update the relevant general ledger accounts.</p>
+    <p>For example, an inventory adjustment that Supply Chain previously made for damaged inventory now needs to be allocated to an insurance GL account.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Refer to the following user guide for step-by-step procedures on how to post journals.</p>
+    <p>Journal Entry and Upload</p>
+    <p>Procedure: Using the Dynad Template to Upload Journal Entries</p>
+    <h2 class="Heading2"><a id="Checking_for_Unposted_Journals"></a>Checking for Unposted Journals</h2>
+    <h2 class="Heading2"><a id="Check_for_Unposted_Journals_for_Current_Ledger_Period"></a>Check for Unposted Journals for Current Ledger Period</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to display unposted journals to review and action as required. E.g., post applicable journals.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>From the Integra dashboard, go to General ledger &gt; Journal entries &gt; General journals.</p>
+    <p><img alt="Picture 5" height="254.7" src="assets/images/Month-End Close (RAI US)_files/image7.png" width="696.0"/></p>
+    <p> Under the Show heading, the default entry is Not posted. These are the entries to look at to determine what should have been posted in the month being closed.</p>
+    <p>This entry can be changed to Posted or All by clicking the drop-down arrow.</p>
+    <p>To determine the date a journal was entered, customize the table grid by adding the column Created date and time.</p>
+    <p>Right click on any column header and select Add columns.</p>
+    <p>In the filter box, enter text “Created”.</p>
+    <p>Select Created date and time from the selection list and Insert it into the table. The column will be added at the end of the current columns.</p>
+    <p>Review the list of unposted journals in the current period and action as required. E.g., post applicable journals.</p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have identified unposted journals for the month-end close period.</p>
+    <h2 class="Heading2"><a id="Revenue_Recognition_(HQ_Finance_Only)"></a>Revenue Recognition (HQ Finance Only)</h2>
+    <p>Revenue Recognition is run by HQ. RAI offices are responsible for calculating ICR (Indirect Cost Recovery), preparing the fee journal and submitting the journal to HQ for uploading and posting.</p>
+    <p>ICR is calculated and prepared in a Fee Template outside of Integra. This template can be downloaded from the following location.</p>
+    <p>There are two methods available for uploading ICR entries:</p>
+    <ol class="Decimal">
+      <li>Performing a mass upload of entries using the Data Connector Tool (recommended to use when there are more than 10 entries.</li>
+      <li>Typing ICR entries directly into Integra (option to use when there are less than 10 entries)</li>
+    </ol>
+    <h2 class="Heading2"><a id="Perform_Mass_Upload_of_ICR_Journal_Template_via_Data_Connector_Tool_(HQ_Finance_Only)"></a>Perform Mass Upload of ICR Journal Template via Data Connector Tool (HQ Finance Only)</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to use the Data Connector tool to upload mass ICR entries to Integra.</p>
+    <p>This is only performed by HQ Finance.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The ICR Fee Template has been completed.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Navigate modules to Project management and accounting <span>&gt;</span> Journals <span>&gt;</span> Fee. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C874A6C6.tmp" height="283.4" src="assets/images/Month-End Close (RAI US)_files/image8.png" width="675.2"/></p>
+    <p>On the menu at the top, click Open in Excel and click OK.</p>
+    <p>Click on the Excel file to open.  </p>
+    <h6 class="Heading6">Note: If it is your first time using the Data Connector, you will need to install the application in your browser. Also, you will need to login using your IRC login credentials.</h6>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\865AA6C4.tmp" height="327.1" src="assets/images/Month-End Close (RAI US)_files/image9.png" width="675.0"/></p>
+    <p>Activate the number of rows required to copy the data from the ICR Fee Template.  </p>
+    <p><img alt="Picture 77" height="308.4" src="assets/images/Month-End Close (RAI US)_files/image10.png" width="684.5"/></p>
+    <p>Go to the right-hand side at the edge, hold and pull down using your mouse left click. Release your mouse left click. You should see all rows activated. This means that you can access some of the data directly from Integra by clicking in an activated cell. </p>
+    <p>In the active cells, use copy and paste ‘special value’ in each corresponding column. </p>
+    <p>Click Publish.  <br/>
+      ‎</p>
+    <p><img alt="Picture 79" height="326.1" src="assets/images/Month-End Close (RAI US)_files/image11.png" width="681.1"/>Navigate modules to Project management and accounting <span>&gt;</span> Journals <span>&gt;</span> Fee. </p>
+    <p><img alt="Picture 74" height="308.6" src="assets/images/Month-End Close (RAI US)_files/image12.png" width="689.0"/><br/>
+      ‎</p>
+    <p>Select your journal and click Lines at the top to display lines details. </p>
+    <p>On the menu at the top, click Validate to check for errors. </p>
+    <p>On the Check journal pop-up window, click OK to proceed. </p>
+    <p><img alt="Picture 76" height="274.4" src="assets/images/Month-End Close (RAI US)_files/image13.png" width="694.6"/></p>
+    <p>If there are no errors, a message in a blue ribbon appears near the top of the page. </p>
+    <p>On the menu at the top of the page, click Post.  </p>
+    <h6 class="Heading6">Note: When you post a fee journal, it does not post to the general ledger; it is a subledger posting. The fee journal will be posted to the General Ledger at the time of revenue recognition.</h6>
+    <p>The fee journal does not use workflow; it is based on the security access given to an individual in the system. </p>
+    <h2 class="Heading2"><a id="Enter_ICR_Fee_Journal_Directly_in_Integra_(HQ_Finance_Only)"></a>Enter ICR Fee Journal Directly in Integra (HQ Finance Only)</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to enter individual fee journals into Integra.</p>
+    <p>This is only performed by HQ Finance.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The ICR Fee Template has been completed.</p>
+    <h3 class="Heading3">Steps</h3>
+    <p>Navigate modules to Project management and accounting <span>&gt;</span> Journals <span>&gt;</span> Fee. </p>
+    <p><img alt="Picture 23" height="309.0" src="assets/images/Month-End Close (RAI US)_files/image14.png" width="690.0"/></p>
+    <p>On the menu at the top of page, click &quot;New&quot;.<br/>
+      ‎<br/>
+      ‎<img alt="Picture 25" height="261.0" src="assets/images/Month-End Close (RAI US)_files/image16.png" width="689.9"/></p>
+    <p>Select the newly added line and click &quot;Lines&quot; on the menu at the top of the page.</p>
+    <p><img alt="Picture 37" height="236.2" src="assets/images/Month-End Close (RAI US)_files/image18.png" width="689.3"/></p>
+    <p>On the menu at the top of page, click &quot;New&quot; to add journal lines.</p>
+    <p><img alt="Picture 45" height="239.7" src="assets/images/Month-End Close (RAI US)_files/image20.png" width="693.0"/></p>
+    <p>Complete the following fields for the vendor invoice line:</p>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:695.3px">
+        <colgroup>
+          <col style="width:138px"/>
+          <col style="width:557.33333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project date</p>
+            </td>
+            <td>
+              <p>Select the posting date.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project ID</p>
+            </td>
+            <td>
+              <p>Enter the project D1 code.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Category</p>
+            </td>
+            <td>
+              <p>Enter the D2 (project category) that correspond to the D1 code.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Resource</p>
+            </td>
+            <td>
+              <p>Leave this field blank.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Description</p>
+            </td>
+            <td>
+              <p>Enter a description.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sales currency</p>
+            </td>
+            <td>
+              <p>Do not change this field.</p>
+              <p>This value automatically defaults to the project contract currency when you select your project ID.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sales price</p>
+            </td>
+            <td>
+              <p>Enter the fee amount.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Line property</p>
+            </td>
+            <td>
+              <p>This value defaults to Billable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Purpose</p>
+            </td>
+            <td>
+              <p>Leave this field blank.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p><img alt="Picture 48" height="307.3" src="assets/images/Month-End Close (RAI US)_files/image21.png" width="696.0"/></p>
+    <p>On the menu at the top of page, click Financial dimensions. </p>
+    <p><img alt="Picture 49" height="266.0" src="assets/images/Month-End Close (RAI US)_files/image22.png" width="696.0"/></p>
+    <p>Complete the required financial dimensions and click OK.</p>
+    <h6 class="Heading6">Note: Some financial dimensions may default based on setting applied in the project form.</h6>
+    <p><img alt="Picture 50" height="213.0" src="assets/images/Month-End Close (RAI US)_files/image23.png" width="682.9"/></p>
+    <p>On the menu at the top, click Validate to check for errors. </p>
+    <p><img alt="Picture 55" height="307.3" src="assets/images/Month-End Close (RAI US)_files/image24.png" width="686.0"/></p>
+    <p>On the Check journal pop-up window, click OK to proceed. </p>
+    <p><img alt="Picture 63" height="275.0" src="assets/images/Month-End Close (RAI US)_files/image25.png" width="696.0"/></p>
+    <h6 class="Heading6">Note: If there are no errors, a message in a blue ribbon appears near the top of the page. </h6>
+    <p>On the menu at the top of the page, click Post.  </p>
+    <h6 class="Heading6">Note: When you post a fee journal, it does not post to the general ledger; it is a subledger posting. It will be posted to the General Ledger at the time of revenue recognition. The fee journal does not use workflow; it is based on security access given to an individual in the system. </h6>
+    <h3 class="Heading3">Steps – Method 2: Mass upload of the fee (ICR) journal using data connector </h3>
+    <h2 class="Heading2"><a id="Reconciliation_ReportsReconciliation_is_composed_of_three_key_steps._Running_the_reconciliation_reports_to_identify_discrepancies.Using_Integra’s_analysis_tools_to_find_out_the_cause_of_the_discrepancy._Process_journal_entries_to_fix_discrepancies.This_topic_identifies_the_reconciliation_reports_available_in_Integra,_PowerBI_or_Excel.Reconciliation_Reports_Reference_TablePurposeUse_this_procedure_to_run_the_various_reconciliation_reports_to_identify_discrepancies.A_common_reason_differences_occur_is_because_a_transaction_was_posted_to_the_General_Ledger_instead_of_the_sub-ledger._Complete_the To-From date_fields_and_make_sure_you_select_the_accounting_currency_in_the_Currency_field._Run_the_report_and_look_at_the_difference_column._It_should_always_be_zero._If_it_is_not_zero,_investigate_and_post_the_necessary_adjustment_entries. Outlined_below_is_a_list_of_the_reconciliation_reports_available_in_Integra,_PowerBI,_or_Excel_and_their_corresponding_module_navigation_paths.__Reconciliation_ReportMenu_PathCustomer_to_LedgerAccounts_receivable__Inquiries_and_reports__Customers__Customer_to_ledger_reconciliation_reportVendor_to_LedgerAccounts_payable__Inquiries_and_reports__Vendor_reports__Vendor_to_ledger_reconciliation_Project_to_LedgerGeneral_ledger__Inquiries_and_reports__Consolidation_reports__GL-to-Project_ReconciliationBank_to_LedgerTreasury_Automation_Suite__Inquiries__Bank__Bank/GL_statement_reconciliationAutomated/Manual_BankAccounts_receivable__Inquiries_and_reports__Customers__Customer_to_ledger_reconciliation_reportBalance_Sheet_Reconciliation_(for_balance_sheet_accounts_that_don’t_belong_to_a_sub-ledger)_Refer_to_list_of_main_accounts_in_Month-end_Close_Checklist_Benefit_%_Allocations_for_Personnel_–_Salary_ExpensesThis_report_is_available_in_PowerBI._"></a>Reconciliation Reports</h2>
+    <p>Reconciliation is composed of three key steps.</p>
+    <ol class="Decimal">
+      <li>Running the reconciliation reports to identify discrepancies.</li>
+      <li>Using Integra’s analysis tools to find out the cause of the discrepancy.</li>
+      <li>Process journal entries to fix discrepancies.</li>
+    </ol>
+    <p>This topic identifies the reconciliation reports available in Integra, PowerBI or Excel.</p>
+    <h2 class="Heading2"><a id="Reconciliation_Reports_Reference_Table"></a>Reconciliation Reports Reference Table</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to run the various reconciliation reports to identify discrepancies.</p>
+    <p>A common reason differences occur is because a transaction was posted to the General Ledger instead of the sub-ledger. Complete the To-From date fields and make sure you select the accounting currency in the Currency field. Run the report and look at the difference column. It should always be zero. If it is not zero, investigate and post the necessary adjustment entries. </p>
+    <p>Outlined below is a list of the reconciliation reports available in Integra, PowerBI, or Excel and their corresponding module navigation paths.</p>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:719.7px">
+        <colgroup>
+          <col style="width:231.73333333333333333333333333px"/>
+          <col style="width:487.93333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Reconciliation Report</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Menu Path</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Customer to Ledger</p>
+            </td>
+            <td>
+              <p>Accounts receivable <span>&gt;</span> Inquiries and reports <span>&gt;</span> Customers <span>&gt;</span> Customer to ledger reconciliation report</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Vendor to Ledger</p>
+            </td>
+            <td>
+              <p>Accounts payable <span>&gt;</span> Inquiries and reports <span>&gt;</span> Vendor reports <span>&gt;</span> Vendor to ledger reconciliation</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project to Ledger</p>
+            </td>
+            <td>
+              <p>General ledger <span>&gt;</span> Inquiries and reports <span>&gt;</span> Consolidation reports <span>&gt;</span> GL-to-Project Reconciliation</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Bank to Ledger</p>
+            </td>
+            <td>
+              <p>Treasury Automation Suite <span>&gt;</span> Inquiries <span>&gt;</span> Bank <span>&gt;</span> Bank/GL statement reconciliation</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Automated/Manual Bank</p>
+            </td>
+            <td>
+              <p>Accounts receivable <span>&gt;</span> Inquiries and reports <span>&gt;</span> Customers <span>&gt;</span> Customer to ledger reconciliation report</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Balance Sheet Reconciliation (for balance sheet accounts that don’t belong to a sub-ledger)</p>
+            </td>
+            <td>
+              <p> </p>
+              <p>Refer to list of main accounts in Month-end Close Checklist</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Benefit % Allocations for Personnel – Salary Expenses</p>
+            </td>
+            <td>
+              <p>This report is available in PowerBI.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h2 class="Heading2"><a id="Inquiries_and_Reports_for_Discrepancy_Analysis"></a>Inquiries and Reports for Discrepancy Analysis</h2>
+    <p>The following key inquiries are used repeatedly and iteratively in Integra for analyzing data and resolving discrepancies for month-end close purposes. Data can be exported from these inquiries to Excel for easier investigation.</p>
+    <ul class="Disc">
+      <li>Trial Balance</li>
+      <li>Voucher Transactions</li>
+      <li>Accounting Source Explorer (ASE)</li>
+      <li>Audit Trail</li>
+      <li>Trace Original Entries</li>
+    </ul>
+    <h2 class="Heading2"><a id="Run_Trial_Balance_Report"></a>Run Trial Balance Report</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>The Trial Balance is a list page that shows all the balances of an account and/or financial dimensions for a given period. When the trial balance is first opened it refreshes with the balances for the dates and properties that are set in the parameters. Properties that can be changed in the parameters include dates, posting layer, how opening balances appear, and what closing transaction types to show. </p>
+    <p>When you change the parameters, the balances are refreshed. You can also pick what dimension set you want to view balances for and whether each of the dimensions show in separate columns. You can also drill down on the balances to view the transactions that make up the balance. </p>
+    <h3 class="Heading3">Steps </h3>
+    <p>Go to General ledger &gt; Inquiries and reports &gt; Trial balance. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\DD3EEEA9.tmp" height="207.9" src="assets/images/Month-End Close (RAI US)_files/image26.png" width="462.5"/>  </p>
+    <p>In the From date field, enter the beginning date for the monthly balance. </p>
+    <p>In the To date field, enter the ending date for the monthly balance a date. </p>
+    <p>Click Calculate balances. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\1061AF9F.tmp" height="358.1" src="assets/images/Month-End Close (RAI US)_files/image27.png" width="478.3"/> </p>
+    <p>Once the trial balance is completed, you can double-click on the balances to view the transactions that make up the balance. </p>
+    <p>Close the transaction by selecting <img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\9F7B7A05.tmp" height="21.7" src="assets/images/Month-End Close (RAI US)_files/image28.png" width="24.2"/> at the top right of the screen when the review is completed. </p>
+    <p><img alt="Picture 29" height="397.6" src="assets/images/Month-End Close (RAI US)_files/image29.png" width="696.0"/> </p>
+    <p> <img alt="Picture 30" height="180.0" src="assets/images/Month-End Close (RAI US)_files/image30.png" width="696.0"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>The Trial Balance has been generated. </p>
+    <p>Export the trial balance to Microsoft Excel </p>
+    <p>On the Trial Balance screen, click the Open button &gt; EXPORT TO EXCEL &gt;Trial Balance. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\160C63FD.tmp" height="97.7" src="assets/images/Month-End Close (RAI US)_files/image31.png" width="627.7"/>  </p>
+    <p>Click Open to open the Excel file on your computer or click Save to save it on your computer. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\9C8E5413.tmp" height="70.1" src="assets/images/Month-End Close (RAI US)_files/image32.png" width="627.7"/> </p>
+    <p>The Trial Balance can be analysed in Excel. It lists the name of each nominal ledger account and the value of that nominal ledger balance, with either a debit balance or a credit balance, as well as a closing balance:  </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\996DBA99.tmp" height="239.3" src="assets/images/Month-End Close (RAI US)_files/image33.png" width="627.7"/> </p>
+    <h2 class="Heading2"><a id="Display_Voucher_Transactions"></a>Display Voucher Transactions</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>To get details of transactions posted in the system, we use voucher transactions in General ledger. This pulls out all the transactions and one can limit it by date, journal, voucher number and main account. Voucher transactions can be pulled out irrespective of the date range.  </p>
+    <h3 class="Heading3">Steps </h3>
+    <p>Log into Integra and click the Navigation Pane. </p>
+    <p>Go to General ledger &gt; Inquiries and reports &gt; voucher transactions. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\179F41DD.tmp" height="236.3" src="assets/images/Month-End Close (RAI US)_files/image34.png" width="577.7"/> </p>
+    <p>Leave everything blank if you want to pull out all the transactions. Otherwise complete a specific detail in the criteria column that you know about the transaction to download. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\173F4CF3.tmp" height="368.1" src="assets/images/Month-End Close (RAI US)_files/image35.png" width="508.4"/> </p>
+    <p>Review results.</p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C2B28679.tmp" height="270.5" src="assets/images/Month-End Close (RAI US)_files/image36.png" width="620.3"/></p>
+    <h2 class="Heading2"><a id="Run_Accounting_Source_Explorer"></a>Run Accounting Source Explorer</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Another method used to get transaction details form the system is using the accounting source explorer. Like the trial balance, this brings out transactions but only limited to a calendar year.   </p>
+    <h3 class="Heading3">Steps </h3>
+    <p>Log into Integra and click the Navigation Pane. </p>
+    <p>Go to General ledger &gt; Inquiries and reports &gt; Accounting source explorer. </p>
+    <p>On the Update menu, select the date range. </p>
+    <p>Click Update. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\F9BFA7EF.tmp" height="288.0" src="assets/images/Month-End Close (RAI US)_files/image37.png" width="600.2"/> </p>
+    <p>The transactions are automatically displayed based on the default setting in the Financial dimensions field.  </p>
+    <p>Click the Financial Dimensions field to select any relevant dimension combination.</p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\F54126D5.tmp" height="202.0" src="assets/images/Month-End Close (RAI US)_files/image38.png" width="564.3"/> </p>
+    <p>You can export to excel as previously discussed in the trial balance example. </p>
+    <h2 class="Heading2"><a id="View_Audit_Trail_Report_in_General_Ledger"></a>View Audit Trail Report in General Ledger</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to view the view the person that posted a specific transaction.</p>
+    <p>Integra has the ability at every given time to know you posted the transaction in the system. There two ways of knowing who posted the transaction:  </p>
+    <ol class="Decimal">
+      <li>The Audit trail report in General Ledger </li>
+      <li>Transaction method </li>
+    </ol>
+    <h6 class="Heading6">Note: You can also view the audit trial from within the Trial Balance transaction by clicking the Audit train menu at the top of the page.</h6>
+    <h3 class="Heading3">Steps </h3>
+    <p>Go to General ledger &gt; Inquiries and reports &gt; Audit trail </p>
+    <p>A list of records will open. The column ‘created by’ shows who posted the transaction. <br/>
+      ‎</p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\AEDD8E7F.tmp" height="272.1" src="assets/images/Month-End Close (RAI US)_files/image39.png" width="621.9"/> </p>
+    <p>If you want to see the details of the transactions, select only one transaction. </p>
+    <p>Click on Voucher transactions. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\A45A1BE5.tmp" height="246.3" src="assets/images/Month-End Close (RAI US)_files/image40.png" width="531.7"/> </p>
+    <p>Review results.</p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\8EB41C3B.tmp" height="182.0" src="assets/images/Month-End Close (RAI US)_files/image41.png" width="551.8"/> </p>
+    <h2 class="Heading2"><a id="Trace_Original_Entries:_Original_Documents_and_Related_Vouchers"></a>Trace Original Entries: Original Documents and Related Vouchers</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>In Integra, you can trace the origin of a transaction back to the original documentation and related vouchers.</p>
+    <p>Original journal entries can be viewed via the following transactions:</p>
+    <ol class="Decimal">
+      <li>Voucher transactions </li>
+      <li>Accounting Source Explorer</li>
+      <li>Trial Balance</li>
+    </ol>
+    <p><br/>
+      ‎The related vouchers feature is used to trace intercompany transactions. This enables you to see which legal entity an entry originated from.</p>
+    <h3 class="Heading3">Steps </h3>
+    <p>Log into Integra and navigate to Voucher transactions in General Ledger. </p>
+    <p>In the screen that opens, select the transaction you want to trace its origin. </p>
+    <p>Look at the tool bar to locate the tracing features. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\BB6DDD5F.tmp" height="279.7" src="assets/images/Month-End Close (RAI US)_files/image42.png" width="617.7"/> </p>
+    <p>Click on original document in the features shown above.  </p>
+    <p>In the window that opens, click on view details.  </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\2CF6ADC5.tmp" height="246.3" src="assets/images/Month-End Close (RAI US)_files/image43.png" width="591.9"/> </p>
+    <p>In the window that opens, you will see a one-line journal voucher. </p>
+    <p>Click Voucher to see the full entry journal entry </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\B7CE91B.tmp" height="167.8" src="assets/images/Month-End Close (RAI US)_files/image44.png" width="525.9"/> </p>
+    <p>View the original entry. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\E43CFCE1.tmp" height="210.3" src="assets/images/Month-End Close (RAI US)_files/image45.png" width="490.0"/> </p>
+    <p>To know if the transaction came from another legal entity, the Related vouchers feature must be active.  </p>
+    <p>After selecting a transaction, look at the tool bar to see if the Related vouchers feature is active. If so, click it and a table will open. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\1F753297.tmp" height="256.3" src="assets/images/Month-End Close (RAI US)_files/image46.png" width="564.3"/>  </p>
+    <p>In the table that opens, you will see all the legal entities listed. If you wish to see the journal voucher, click on voucher. </p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\84AE0FBD.tmp" height="283.8" src="assets/images/Month-End Close (RAI US)_files/image47.png" width="620.3"/>  </p>
+    <h2 class="Heading2"><a id="Month-end_Close_Reporting"></a>Month-end Close Reporting</h2>
+    <h2 class="Heading2"><a id="Month-end_Close_Reports_Reference_Table"></a>Month-end Close Reports Reference Table</h2>
+    <p>The following reports should be run after month-end close is complete.</p>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:683.7px">
+        <colgroup>
+          <col style="width:231.73333333333333333333333333px"/>
+          <col style="width:451.93333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Report</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Location</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Final Trial Balance</p>
+            </td>
+            <td>
+              <p>In Integra, navigate to General ledger <span>&gt;</span> Inquiries and reports <span>&gt;</span> Trial balance.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Revenue and Expense Report</p>
+            </td>
+            <td>
+              <p>This report exists in PowerBI.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Project BvA</p>
+            </td>
+            <td>
+              <p>These reports exist in PowerBI.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>FM01 Equivalent Report</p>
+            </td>
+            <td>
+              <p>This report exists in PowerBI.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+    <h2 class="Heading2"><a id="Integra_Journal_Names_and_Usage"></a>Integra Journal Names and Usage</h2>
+    <p>Additional notes have been added to certain journal names for clarification.</p>
+    <p>Insert table once finalized.</p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTMLf648ca3.PNG" height="575.1" src="assets/images/Month-End Close (RAI US)_files/image48.png" width="696.0"/></p>
+    <h2 class="Heading2"><a id="Month-end_Close_Checklist_(RAI_US_Offices)"></a>Month-end Close Checklist (RAI US Offices)</h2>
+    <p>This checklist outlines key tasks and dates required to complete financial month-end close. For detailed guidance on performing system transactions, refer to the following training user guide on RescueNet:</p>
+    <ul class="Disc">
+      <li>Month-end Close (RAI)</li>
+      <li>Monthly Due Dates</li>
+    </ul>
+    <p>The following table lists the due dates for month-end close tasks. Further details on each of these is outlined after the table.</p>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:654.0px">
+        <colgroup>
+          <col style="width:192px"/>
+          <col style="width:462px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Due Date</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Task</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Last day of every month</p>
+            </td>
+            <td>
+              <p>Sub-ledger postings</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>The 8th of every month</p>
+            </td>
+            <td>
+              <p>Intercompany close tasks</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>The 12th of every month</p>
+            </td>
+            <td>
+              <p>Monthly general journal postings</p>
+              <p>Note: Some of these journals can be posted during the month.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h4 class="Heading4">Complete Transaction Postings in Sub-ledger Modules</h4>
+    <ul class="Disc">
+      <li>Expense Management - process and post all approved travel advances and expense reports (including credit card liquidations and TER)</li>
+      <li>Accounts Payable - Process all vendor invoices and payments.</li>
+      <li>Accounts Receivable - Book all cash receipts and deposits.</li>
+      <li>Cash and Bank Management – Post direct charges, journalize unposted bank transactions as per prior month complete bank reconciliation.</li>
+      <li>Fixed Assets – Generate depreciation proposal</li>
+      <li>Inventory Management – All pick, pack and post transactions (except for &quot;in-kind&quot; Contribution)</li>
+    </ul>
+    <h4 class="Heading4">Perform Intercompany Accounting</h4>
+    <ul class="Disc">
+      <li>Post intercompany entries to A/c 29400 by the 8th of each month for RAI offices still using SUN</li>
+      <li>Post intercompany entries to HQ – 9IRC</li>
+      <li>Move intercompany entries in current period from General Ledger to relevant projects</li>
+      <li>Prepare and Post Monthly General JournalsPost prepaid rent, prepaid insurance, deferred charges, etc.</li>
+      <li>Post accruals (if required)</li>
+      <li>Post depreciation allocation.</li>
+      <li>Post In-kind contribution</li>
+      <li>Post inventory adjustments (if required)</li>
+      <li>Post any required project adjustment entries</li>
+    </ul>
+    <h4 class="Heading4">Post Allocation journals</h4>
+    <ul class="Disc">
+      <li>Post payroll allocation entries</li>
+      <li>Post shared program cost allocation entries</li>
+    </ul>
+    <h4 class="Heading4">Verify/Check Completion of Tasks</h4>
+    <ul class="Disc">
+      <li>All standard journals are posted</li>
+      <li>All unnecessary journals are deleted</li>
+      <li>All unposted journals with a current period date are investigated, amended and/or posted.</li>
+    </ul>
+    <h4 class="Heading4">Calculate ICR Entries, Post journal and Submit to HQ for Upload</h4>
+    <ul class="Disc">
+      <li>Once all of the previous tasks above are completed, calculate ICR entries, and populate the journal</li>
+      <li>Submit journal to HQ Finance for uploading</li>
+    </ul>
+    <h4 class="Heading4">Complete Sub Ledger to Ledger Reconciliations</h4>
+    <ul class="Disc">
+      <li>Run Customer to Ledger reconciliation report.</li>
+      <li>Run Vendor to Ledger reconciliation report.</li>
+      <li>Run Project to Ledger reconciliation report.</li>
+      <li>Run Bank to Ledger reconciliation report.</li>
+      <li>Post all adjustment entries to ensure balances in both sub ledger and ledger are equal</li>
+    </ul>
+    <h4 class="Heading4">Complete All Other Account Reconciliations</h4>
+    <ul class="Disc">
+      <li>Run automated or manual bank reconciliation to reconcile Bank accounts.</li>
+      <li>Perform balance sheet reconciliation and post all adjustment entries to reconcile.</li>
+      <li>Calculate and reconcile Benefit % allocations for Personnel – Salary expenses</li>
+    </ul>
+    <h4 class="Heading4">Generate Reports once Month-end Close is Complete</h4>
+    <ul class="Disc">
+      <li>Generate final Trial Balance</li>
+      <li>Generate Revenue and Expense Report</li>
+      <li>Generate all Project BvA Reports</li>
+      <li>Generate period-end financial statements by using Financial reporter</li>
+      <li>FM01 Report equivalent</li>
+    </ul>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

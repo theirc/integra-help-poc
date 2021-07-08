@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "4";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Cash and Bank Management</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Cash and Bank Management">
+        <span>Cash and Bank Management</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+  <h2 class="Heading2"><a id="Introduction_to_Cash_and_Bank_Management_in_Integra"></a>Introduction to Cash and Bank Management in Integra</h2>
+  <h2 class="Heading2">Business Activities Involved in Cash and Bank Management</h2>
+  <p><img alt="Picture 30" height="234.9" src="assets/images/Cash and Bank Management_files/image1.png" width="650.8"/></p>
+  <p>The IRC has approximately 200 bank accounts across the globe. Each bank account is mapped to one main account to simplify bank reconciliation. Bank groups can be set up to monitor bank activity based on the group.</p>
+  <p>The Cash Overview Workspace provides an overview of cash in the various bank accounts. It also has a cash forecast flows forecasts where each legal entity can see the General ledger, Accounts payable, Accounts Receivable, Budgeting, and Inventory balances. This helps provide enhanced and accurate information to start the monthly cash planning/projections for the month or months ahead.</p>
+  <p>IRC is using a product called Treasury Automation Suite (TAS) that facilitates the ability to automate IRC’s bank reconciliation process. This software suite is a seamless integration to the Integra system.</p>
+  <p>Once a bank record has been created in the Cash and Bank Management module of Integra, the bank account is available to be moved into the TAS. </p>
+  <p>All bank accounts are reconciled on a monthly basis using the TAS. The e-reconciliation process within Integra imports bank statements and reconciles them to transactions posted in Integra. Integra maps transaction types and their associated GL accounts to bank account transaction codes in order to identify each type of bank transaction.</p>
+  <p>If a bank is not able to send their statement as a file, Integra allows for the reconciliation of the bank account by manually clearing the transactions in Integra. This is completed by reviewing and marking valid auto-matches and processing open matches using the Click-and-match workbench.</p>
+  <h2 class="Heading2"><a id="Bank_Transaction_Types"></a>Bank Transaction Types</h2>
+  <p>Bank transaction types have been created in Integra to capture the different transaction types that come from a bank. Journal types have also been mapped to bank transactions and a rule has been created to not allow any posting to a bank account without a bank transaction type. Below is the list of the bank transaction types in Integra:</p>
+  <p><img alt="Picture 58" height="517.2" src="assets/images/Cash and Bank Management_files/image2.png" width="371.0"/></p>
+  <h2 class="Heading2"><a id="Cash_Management_and_Transfers"></a>Cash Management and Transfers</h2>
+  <h3 class="Heading3">Cash in Office Process</h3>
+  <p>Some offices operate with cash in a safe for to accommodate the following situations:</p>
+  <ul class="Disc">
+    <li>Payment to vendors who only accept cash payments</li>
+    <li>Payment of salary advances to expatriate staff</li>
+    <li>Disbursements in areas where no banks exist</li>
+    <li>Emergency cash for security purposes</li>
+    <li>Petty cash for the payment of routine and smaller expenses</li>
+  </ul>
+  <h2 class="Heading2"><a id="Cash_and_Bank_Management_Inquiries"></a>Cash and Bank Management Inquiries</h2>
+  <h2 class="Heading2"><a id="Display_Bank_Account_Balances_via_the_Bank_Management_Workspace"></a>Display Bank Account Balances via the Bank Management Workspace</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to display an overview of the balances in the various bank accounts. The Bank Management Workspace allows you to view information in different formats and at different levels. You can view trends for a specified period, etc.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>Accounts exist. in legal entity.</p>
+  <h3 class="Heading3">Steps</h3>
+  <p>Go to Cash and bank management &gt; Workspaces &gt; Bank management.</p>
+  <p><img alt="Picture 15402967" height="286.5" src="assets/images/Cash and Bank Management_files/image3.png" width="624.0"/></p>
+  <p>Under Bank accounts, view the bank balances displayed on each bank account tile.</p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed an overview of balances in various bank accounts.</p>
+  <h2 class="Heading2"><a id="Display_Current_Bank_Account_Balances_(Individual_Bank_Accounts)"></a>Display Current Bank Account Balances (Individual Bank Accounts)</h2>
+  <p>To view the available bank account balances in the system, follow these steps:</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and bank management &gt; Bank accounts &gt; Bank accounts.</li>
+  </ol>
+  <p><img alt="Picture 75" height="286.3" src="assets/images/Cash and Bank Management_files/image4.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Select your bank account and click Balance on the menu at the top of page.</li>
+    <li>Review the balance.</li>
+    <li>Click OK to close the balance window.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have viewed bank balances.</p>
+  <h2 class="Heading2"><a id="Display_Available_Cash_Balances_by_Main_Account"></a>Display Available Cash Balances by Main Account</h2>
+  <p>Use this procedure to view the cash balances for a specific main account.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to General ledger &gt; Chart of accounts &gt; Accounts &gt; Main accounts.</li>
+  </ol>
+  <p><img alt="Picture 123" height="297.0" src="assets/images/Cash and Bank Management_files/image5.png" width="639.2"/></p>
+  <ol class="Decimal">
+    <li>In the left-hand panel, search for the cash account (12500).</li>
+    <li>On the menu at the top, click Account statement.</li>
+    <li>Leave the defaults as shown above.</li>
+    <li>Click OK to proceed.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have viewed available cash balances by main account.</p>
+  <h2 class="Heading2"><a id="Display_Bank_Transaction_Details_for_a_Specified_Period_or_Account"></a>Display Bank Transaction Details for a Specified Period or Account</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to view bank transaction details for a specified period.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>Not applicable.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and bank management &gt; Inquiries and reports &gt; Bank transactions.</li>
+  </ol>
+  <p><img alt="Picture 13" height="315.7" src="assets/images/Cash and Bank Management_files/image6.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Enter relevant criteria, e.g., bank account number and/or date/range of dates.</li>
+    <li>Click OK to retrieve results.</li>
+  </ol>
+  <p><img alt="Picture 18" height="315.7" src="assets/images/Cash and Bank Management_files/image7.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">Review results.</li>
+  </ol>
+  <h6 class="Heading6">Note: Columns can be sorted on specific criteria.</h6>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed bank transactions for a specified period or account.</p>
+  <h2 class="Heading2"><a id="Display_the_Cash_Overview_Workspace_(Global_Cash_Status)"></a>Display the Cash Overview Workspace (Global Cash Status)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to see the global cash status. This procedure is done by Treasury.</p>
+  <p>The Cash Overview Workspace provides an overview of cash in the various bank accounts. It also has a cash forecast flows forecasts where each legal entity can see the General ledger, Account payable, Account Receivable, Budgeting, and Inventory balances. This helps provide enhanced and accurate information to start the monthly cash planning/projections for the month or months ahead.</p>
+  <h2 class="Heading2">Prerequisites</h2>
+  <ul class="Disc">
+    <li>All cash and bank accounts have been created in the legal entity.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Go to Cash and bank management &gt; Workspaces &gt; Cash overview – all companies.</li>
+  </ol>
+  <p><img alt="Picture 17" height="301.0" src="assets/images/Cash and Bank Management_files/image8.png" width="658.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Click the following four tabs to view the details:
+      <ul class="Disc">
+        <li>Cash overview</li>
+        <li>Cash flow forecast</li>
+        <li>Currency forecast</li>
+        <li>Bank balances</li>
+      </ul>
+    </li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed the Cash Overview workspace to see the global cash status.</p>
+  <h2 class="Heading2"><a id="Transfer_Procedures"></a>Transfer Procedures</h2>
+  <h2 class="Heading2"><a id="Transfer_Funds_from_HQ_to_Country_Office_or_RAI_Office"></a>Transfer Funds from HQ to Country Office or RAI Office</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Treasury can use the cash in transit function to transfer funds from HQ to a country office or an RAI office.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>Request from country office or RAI location</li>
+    <li>Transfer is part of monthly planning and/or requirement has been justified</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and Bank Management &gt; Bank accounts &gt; Bank account transfers.</li>
+  </ol>
+  <p><img alt="Picture 15402973" height="406.6" src="assets/images/Cash and Bank Management_files/image9.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New to create a new journal entry.</li>
+    <li>A new general journal line prepopulates with a journal batch number.</li>
+    <li>In the Name field, select CT (Cash Transfer to HQ) from the drop-down selection list.</li>
+    <li>On the menu at the top, click Lines.</li>
+  </ol>
+  <p><img alt="Picture 19" height="315.7" src="assets/images/Cash and Bank Management_files/image10.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 5;" value="6">Enter the following information for the 1st voucher line:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:171.06666666666666666666666667px"/>
+        <col style="width:518.93333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account type</p>
+          </td>
+          <td>
+            <p>Enter/select Bank.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Select the specific bank account for the transfer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td>
+            <p>Enter the legal entity code for the company from which the funds are being transferred.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Enter a description of the cash transfer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Debit</p>
+          </td>
+          <td>
+            <p>Enter the transfer amount.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Financial dimensions</p>
+          </td>
+          <td>
+            <p>Click on the Financial Dimensions tab above the grid table to complete the required dimensions (D01, D04, D05).</p>
+            <p>E.g., For 9IRC bank Account (D01=U1000; D04=ZZGEN; D05=9IRC)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 6;" value="7">Click New to add a 2nd voucher line for the offset account.</li>
+    <li>Enter the following information for the offset voucher line:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:647.1px">
+      <colgroup>
+        <col style="width:195.06666666666666666666666667px"/>
+        <col style="width:452px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td colspan="2">
+            <p>Should be ICCO or the company where the funds are being transferred to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account Type</p>
+          </td>
+          <td colspan="2">
+            <p>Enter/select Ledger.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td colspan="2">
+            <p>Enter the main account (12510) and financial dimensions (D01, D04, D05) for the legal entity receiving the funds.</p>
+            <p>E.g., (D01=U1000; D04=SLFRT; D05=2SLE)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Credit</p>
+          </td>
+          <td colspan="2">
+            <p>Enter the transfer amount</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Picture 1" height="152.2" src="assets/images/Cash and Bank Management_files/image11.png" width="649.1"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">On the menu at the top of page, click Validate and select Simulate posting.</li>
+    <li>Click the X in the top right corner of screen to close the Journal voucher page and return to the General journals page.</li>
+    <li>Ensure the journal line is selected.</li>
+    <li>On the menu at the top of page, click Workflow &gt; Submit to submit the journal entry for approval.</li>
+  </ol>
+  <p><img alt="Picture 12" height="177.1" src="assets/images/Cash and Bank Management_files/image12.png" width="273.5"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">If required, enter additional information in the Comment field.</li>
+    <li>Click Submit.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have transferred cash from HQ to a field office.</p>
+  <h3 class="Heading3">Follow-on Tasks</h3>
+  <p>Once approved, the invoice journal can be posted.</p>
+  <ol class="Decimal">
+    <li>Navigate modules to General ledger &gt; Journal entries &gt; General journals.</li>
+    <li>Locate and open the approved journal entry.</li>
+    <li>Click Post to post the journal.</li>
+  </ol>
+  <h2 class="Heading2"><a id="Process_Cash_Receipt_from_HQ"></a>Process Cash Receipt from HQ</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to process a cash receipt from HQ and clear the cash-in-transit account.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>The cash transfer has been processed.</li>
+    <li>Bank has confirmed the receipt of funds</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and Bank Management &gt; Bank Accounts &gt; Bank Account transfers.</li>
+    <li>Select journal name Other Cash receipts.</li>
+    <li>Complete/validate the following fields in the voucher lines.</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:592.9px">
+      <colgroup>
+        <col style="width:156.73333333333333333333333333px"/>
+        <col style="width:436.13333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account type</p>
+          </td>
+          <td>
+            <p>Select Bank for the bank account that received the funds</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Select the specific bank account for received</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td>
+            <p>Select the company receiving the funds.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Enter a description of the cash transfer</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Credit</p>
+          </td>
+          <td>
+            <p>Enter the transfer amount received</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Financial Dimensions</p>
+          </td>
+          <td>
+            <p>Complete the required financial dimensions: Project ID (D1), Operating Unit (D4), and Reporting Entity (D5)</p>
+            <p>E.g., For a 2SLE bank account D1=U1000; D4=ZZGEN; D5=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Offset account</p>
+          </td>
+          <td>
+            <p>Add a new voucher line for the offset account.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td>
+            <p>Enter the legal entity for the company receiving the funds.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account Type</p>
+          </td>
+          <td>
+            <p>Select Ledger.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Enter the main account (12510 cash transfer account) and required financial dimensions (D01, D04, D05) for the legal entity receiving the funds.</p>
+            <p>E.g., D01=U1000; D04=SLFRT; D05=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Debit</p>
+          </td>
+          <td>
+            <p>Enter the transfer amount received</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Submit to workflow</li>
+    <li>Once approved, post the journal.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a cash receipt from another legal entity and clear the cash in transit account.</p>
+  <h2 class="Heading2"><a id="Transfer_Cash_to_Field_Office_within_the_Same_Legal_Entity"></a>Transfer Cash to Field Office within the Same Legal Entity</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to record a cash transfer to the field offices for their operations</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>Cash transfer requirement has been validated.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and bank Management &gt; Bank accounts &gt; Bank Account transfers.</li>
+    <li>A list of journal entries appears on the General journals screen.</li>
+    <li>Click New to create a new journal entry.</li>
+    <li>A new general journal line prepopulates with a Journal batch number</li>
+    <li>In the Name field, select CT (cash transfer).</li>
+    <li>Click Lines to access the journal voucher page.</li>
+    <li>Complete the following fields for the 1st voucher line.</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:592.9px">
+      <colgroup>
+        <col style="width:344.66666666666666666666666667px"/>
+        <col style="width:344.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account type</p>
+          </td>
+          <td>
+            <p>Select Bank.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Select the specific bank account for transfer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td>
+            <p>Select the company from which the funds are being transferred.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Enter a description of the cash transfer</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Debit</p>
+          </td>
+          <td>
+            <p>Enter the transfer amount.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Financial Dimensions</p>
+          </td>
+          <td>
+            <p>Click on the Financial Dimensions tab above the grid table to complete the required dimensions (D01, D04, D05).</p>
+            <p>E.g., (D01, D04, D05) for 2SLE bank Account (D01=U1000; D04=ZZGEN; D05=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Offset Account</p>
+          </td>
+          <td>
+            <p>Add a new voucher line for the offset account.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Company</p>
+          </td>
+          <td>
+            <p>Enter the company to where funds are being transferred.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account type</p>
+          </td>
+          <td>
+            <p>Enter/select Ledger.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account</p>
+          </td>
+          <td>
+            <p>Enter the main account and financial dimensions.</p>
+            <p>Should be main account (12515) and dimension string (D01, D04, D05) for the field office receiving the funds. For example (D01=U1000; D04=SLBOF; D05=2SLE)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Credit</p>
+          </td>
+          <td>
+            <p>Enter the transfer amount</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8">Submit to workflow for approval.</li>
+    <li>Once approved, post the journal.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a cash receipt from HQ and cleared the cash in transit account.</p>
+  <h2 class="Heading2"><a id="Transfer_Cash_to_Another_Account_in_Local_Currency_(Cash_Exchange)"></a>Transfer Cash to Another Account in Local Currency (Cash Exchange)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to exchange cash to local currencies.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>Must have a foreign account that hosts cash.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and Bank Management &gt; Bank Accounts &gt; Bank Account transfers. This will bring you to General Journals.</li>
+  </ol>
+  <p><img alt="Picture 15402976" height="259.5" src="assets/images/Cash and Bank Management_files/image13.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Click New.</li>
+    <li>In Name field. select CT (Cash Transfer).</li>
+  </ol>
+  <p><img alt="Picture 15402978" height="255.7" src="assets/images/Cash and Bank Management_files/image14.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">On the menu at the top of page, click Lines.</li>
+  </ol>
+  <p><img alt="Picture 15402980" height="271.8" src="assets/images/Cash and Bank Management_files/image15.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">In Account type field, select Bank.</li>
+  </ol>
+  <p><img alt="Picture 15402981" height="342.5" src="assets/images/Cash and Bank Management_files/image16.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 5;" value="6">In Account field, select the relevant foreign bank account. Foreign bank account is always entered on the first journal line.</li>
+  </ol>
+  <p><img alt="Picture 15402982" height="128.1" src="assets/images/Cash and Bank Management_files/image17.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 6;" value="7">In the Description field, enter meaningful description.</li>
+    <li>In Credit field, enter amount sold in foreign currency.</li>
+  </ol>
+  <p><img alt="Picture 15402983" height="129.9" src="assets/images/Cash and Bank Management_files/image18.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">Enter bank selling exchange rate on the line if it’s different from Integra exchange rate.</li>
+    <li>Click the General tab.</li>
+  </ol>
+  <p><img alt="Picture 15402985" height="297.2" src="assets/images/Cash and Bank Management_files/image19.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 10;" value="11">In Exchange rate field, update the exchange rate to the bank selling exchange rate as well.</li>
+    <li>Click the List tab to return to the voucher lines.</li>
+  </ol>
+  <p><img alt="Picture 9" height="126.4" src="assets/images/Cash and Bank Management_files/image20.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">Click New to add a 2nd voucher line.</li>
+    <li>In Account type field, select Bank.</li>
+    <li>In Account field, select USD Bank account.</li>
+  </ol>
+  <p><img alt="Picture 99" height="133.7" src="assets/images/Cash and Bank Management_files/image21.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 15;" value="16">Manually calculate the USD equivalent of GBP sold at bank selling rate used on line 1: 10,000 GBP x 1.2843=12,843 USD</li>
+    <li>Enter calculated amount in the Debit field on journal line.</li>
+  </ol>
+  <p><img alt="Picture 100" height="119.6" src="assets/images/Cash and Bank Management_files/image22.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 17;" value="18">Click the Financial dimensions tab and enter dimensions for both journal lines.</li>
+    <li>Once journal lines are complete, on the menu at the top, click Validate &gt; Simulate posting.</li>
+    <li>Once journal is validated close journal voucher lines page to return to the list of journals.</li>
+    <li>Click Workflow &gt; Submit to submit journal for approval.</li>
+    <li>The journal will go to the appropriate approver.</li>
+    <li>Once journal is approved, click Post to post the journal.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have exchanged cash to local currencies.</p>
+  <h6 class="Heading6">Note: To verify posted voucher, go to the Journal lines and click Voucher tab.</h6>
+  <h2 class="Heading2"><a id="Bank_Reconciliation_Procedures"></a>Bank Reconciliation Procedures</h2>
+  <h2 class="Heading2"><a id="Reconcile_Bank_Account"></a>Reconcile Bank Account</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to reconcile a bank account.</p>
+  <p>Integra can read a file that is transmitted from a bank and import a list of transactions to be matched to transactions already processed in the system.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>File has been transmitted from bank.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Validate Bank File has been Imported to Integra</li>
+    <li>Navigate modules to Treasury Automation Suite &gt; Inquiries &gt; Bank &gt; Imported bank files.</li>
+  </ol>
+  <p><img alt="Picture 23" height="238.6" src="assets/images/Cash and Bank Management_files/image23.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">In the list, find and select the correct imported bank file.</li>
+    <li>On the menu at the top, click Imported transactions.</li>
+  </ol>
+  <p><img alt="Picture 15402988" height="254.0" src="assets/images/Cash and Bank Management_files/image24.png" width="667.1"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">Review the file details displayed on the Imported Electronic Bank Reconciliation File Details screen.</li>
+    <li>Close the open pages and return to the Integra home page.</li>
+  </ol>
+  <h3 class="Heading3"><br/>
+    ‎Perform Reconciliation</h3>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 6;" value="7">Navigate modules to Cash and bank management &gt; Bank accounts &gt; Bank accounts.</li>
+  </ol>
+  <p><img alt="Picture 22" height="315.7" src="assets/images/Cash and Bank Management_files/image25.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8">From the list of bank accounts, select the bank account to be reconciled.</li>
+    <li>On the menu at the top, click Reconcile and then select the Account reconciliation option.</li>
+  </ol>
+  <p><img alt="Picture 24" height="236.4" src="assets/images/Cash and Bank Management_files/image26.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">In the bank statement list, select the bank statement to be reconciled.</li>
+    <li>On the menu at the top, click Transactions.</li>
+  </ol>
+  <p><img alt="Picture 15402990" height="241.0" src="assets/images/Cash and Bank Management_files/image27.png" width="687.1"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 11;" value="12">On the Account Reconciliation (Unreconciled) screen click eBankRec imported trans.</li>
+  </ol>
+  <p><img alt="C:\Users\davidt\AppData\Local\Temp\SNAGHTML6b4af07f.PNG" height="244.0" src="assets/images/Cash and Bank Management_files/image28.png" width="689.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">The Treasury Automation Suite – Imported transactions screen appears. This ‘workbench’ allows for the manual selection of system and imported transactions for matching.</li>
+    <li>On the menu at the top of page, click Click-n-match workbench.</li>
+  </ol>
+  <p><img alt="Picture 51" height="293.4" src="assets/images/Cash and Bank Management_files/image29.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 14;" value="15">The Review the workbench information.</li>
+    <li>The workbench displays unreconciled transactions at the top and imported bank transactions at the bottom.</li>
+    <li>In the list, find and select the records that match each other from each section.</li>
+    <li>On the menu at the top, click Save.</li>
+    <li>On the menu at the top, click OK.</li>
+    <li>The matched transactions are displayed with their transaction number.</li>
+  </ol>
+  <p><img alt="Picture 52" height="59.2" src="assets/images/Cash and Bank Management_files/image30.png" width="710.5"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 20;" value="21">Return to the Integra Home page.</li>
+  </ol>
+  <h3 class="Heading3">Enter Ending Balance for Bank Statement</h3>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 21;" value="22">Navigate modules to Cash and bank management &gt; Bank accounts &gt; Bank accounts.</li>
+  </ol>
+  <p><img alt="Picture 27" height="315.7" src="assets/images/Cash and Bank Management_files/image31.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 22;" value="23">From the list of bank accounts, select the bank account to be reconciled.</li>
+    <li>On the menu at the top, click Reconcile and then select the Account reconciliation option.</li>
+  </ol>
+  <p><img alt="Picture 32" height="310.9" src="assets/images/Cash and Bank Management_files/image32.png" width="685.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 24;" value="25">On the Bank statement page, enter the Ending balance for the relevant bank statement.</li>
+    <li>Click Save.</li>
+    <li>Repeat steps 9 through 22 above for each bank statement to be reconciled</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>The bank account has been reconciled.</p>
+  <h2 class="Heading2"><a id="Display_Reconciliation_Summary"></a>Display Reconciliation Summary</h2>
+  <p>Closing out and returning to the account reconciliation screen, the transaction will be cleared. A cleared transaction summary is available as well. After all necessary transactions are matched and cleared, the account can be reconciled for that statement.</p>
+  <p>A reconciliation summary may be displayed or printed to confirm the reconciliation by completing the following steps:</p>
+  <ol class="Decimal">
+    <li>Cash and bank management &gt; Bank accounts &gt; Bank accounts.</li>
+    <li>Select relevant bank account</li>
+    <li>Click Reconcile &gt; Account reconciliation.</li>
+    <li>On the Accounts Reconciliation screen, click Print &gt; Reconciliation summary.</li>
+  </ol>
+  <p><img alt="Picture 15402992" height="368.0" src="assets/images/Cash and Bank Management_files/image33.png" width="356.1"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">In the Checking date field, enter a date.</li>
+    <li>Select Yes in the Cleared transaction detail field.</li>
+    <li>Select Yes in the Reconciliation summary field.</li>
+    <li>Select Yes in the Uncleared transaction detail field.</li>
+    <li>Click OK.</li>
+  </ol>
+  <p><img alt="Picture 15402993" height="323.7" src="assets/images/Cash and Bank Management_files/image34.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">Review the Reconciliation summary report.</li>
+    <li>Close the summary report form.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed the reconciliation summary.</p>
+  <h2 class="Heading2"><a id="Perform_Manual_Bank_Reconciliation"></a>Perform Manual Bank Reconciliation</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create and view a bank reconciliation statement. This process is used if bank transmissions are not available and a bank reconciliation needs to be done using a paper statement or a downloaded excel file.</p>
+  <h6 class="Heading6">Note: If the legal entity does not have a bank transmission for the bank statements to be imported into Integra, the manual bank reconciliation will have to happen on a monthly basis.</h6>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>When the automatic bank reconciliation runs, the remaining transactions have to be matched manually.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>Navigate modules to Cash and bank management &gt; Bank statement reconciliation &gt; Bank accounts.</li>
+  </ol>
+  <p><img alt="Picture 15402994" height="258.8" src="assets/images/Cash and Bank Management_files/image35.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top, click Reconcile and select option Account reconciliation.</li>
+  </ol>
+  <p><img alt="Picture 120" height="149.0" src="assets/images/Cash and Bank Management_files/image36.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">Click New to create a new statement and specify the statement date, the name of the statement, currency, and the ending balance specified on the bank statement.</li>
+  </ol>
+  <p><img alt="Picture 119" height="134.8" src="assets/images/Cash and Bank Management_files/image37.png" width="550.1"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Save the statement and click Transactions on the menu at the top of page.</li>
+  </ol>
+  <p><img alt="Picture 116" height="142.4" src="assets/images/Cash and Bank Management_files/image38.png" width="534.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 5;" value="6">Manually select the transaction to be cleared for the reconciliation.</li>
+  </ol>
+  <p><img alt="Picture 114" height="164.6" src="assets/images/Cash and Bank Management_files/image39.png" width="546.9"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 6;" value="7">Now that the correct transactions have been cleared, the statement can be reconciled.</li>
+    <li>On the menu at the top, click Reconcile account.</li>
+  </ol>
+  <h6 class="Heading6">Note: This button will be greyed out if the unreconciled amount highlighted above does not equal zero.</h6>
+  <p><img alt="Picture 113" height="115.0" src="assets/images/Cash and Bank Management_files/image40.png" width="514.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">Click Print &gt; Reconciliation summary.</li>
+  </ol>
+  <p><img alt="Picture 112" height="299.2" src="assets/images/Cash and Bank Management_files/image41.png" width="330.2"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">Specify the date of the summary for viewing, as well as the details to include, whether that be just the summary or cleared and uncleared transaction details.</li>
+    <li>Click OK to proceed.</li>
+  </ol>
+  <p><img alt="Picture 111" height="394.0" src="assets/images/Cash and Bank Management_files/image42.png" width="531.9"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 11;" value="12">Review the summary report.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created and viewed a bank reconciliation statement.</p>
+  <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+  <h2 class="Heading2"><a id="Bank_Transaction_Types_that_Link_e-statements_to_Bank_Accounts"></a>Bank Transaction Types that Link e-statements to Bank Accounts</h2>
+  <p>The eBankRec transaction type is a setup in the TAS which helps to link bank transaction types from e-statements to bank accounts in Integra. The File tran type is the code that comes from the bank that, by default, maps to a Matching group. (see table below) The default matching group is what IRC uses to match transactions against the bank statement with the required rules. Once established, all transactions will have an associated bank transaction type, which will match the file trans type of the bank to reconcile the transactions automatically.</p>
+  <p><img alt="Picture 71" height="507.9" src="assets/images/Cash and Bank Management_files/image43.png" width="604.5"/></p>
+  <h2 class="Heading2"><a id="eBank_Rec-Matching_Group"></a>eBank Rec-Matching Group</h2>
+  <p>The IRC enabled the DEFAULT setting to create rules for matching. All eBank reconciliations are setup under the default group. Without this group, there will be no rules and the bank transaction types will not connect to the e-statement. Below is where it sits in Integra:</p>
+  <p><img alt="Picture 15402945" height="192.0" src="assets/images/Cash and Bank Management_files/image44.png" width="650.4"/></p>
+  <h2 class="Heading2"><a id="Matching_Rules"></a>Matching Rules</h2>
+  <p>The IRC designed the transactions to match against three default rules (and some extensions).</p>
+  <p>DEFAULT 1 - Reference Number and Amount: This rule looks at the payment reference against the customer reference number from the e-statement, ties it to the amount and matches with zero tolerance on date and 100% confidence.</p>
+  <p><img alt="Picture 15402946" height="381.7" src="assets/images/Cash and Bank Management_files/image45.png" width="467.0"/></p>
+  <p>DEFAULT 2 - Reference Number and Amount: Like rule number 1, this matches the Deposited check number from Integra and matches it to the same reference in the e-statement if the reference and amount are the same. Date tolerance set to zero day and confidence level 100%.</p>
+  <p><img alt="Picture 15402947" height="463.1" src="assets/images/Cash and Bank Management_files/image46.png" width="548.0"/></p>
+  <p>DEFAULT 3 - Date and Amount: Like other rules, this matches the check number from Integra and matches it to the same reference in the e-statement if it is the same date and amount. Date tolerance set to zero day and confidence level 100%.</p>
+  <p><img alt="Picture 15402948" height="407.2" src="assets/images/Cash and Bank Management_files/image47.png" width="508.0"/></p>
+  <p>DEFAULT 4 - Date and Amount: This rule is an extension of rule 3 with a 1-day tolerance on the date of the check.</p>
+  <p><img alt="Picture 15402949" height="411.0" src="assets/images/Cash and Bank Management_files/image48.png" width="508.0"/></p>
+  <p>DEFAULT 5 - Date and Amount: This is another extension of rule 3 with a 5-day check tolerance. For this rule it is recommended that the user looks up the matched transaction against this rule and verify if the match is accurate.</p>
+  <p><img alt="Picture 77" height="293.7" src="assets/images/Cash and Bank Management_files/image49.png" width="694.1"/></p>
+  <p>Additional Rules: For the bank reconciliation to be more accurate, the Finance Officer must run the bank reconciliation daily and identify common transaction trends that can be matched if a new rule or step is created.</p>
+  <p>This will lead to an additional layer to help match those identical transactions. The Finance staff must also establish the balances each and every day to help accounts receivable capture receipts that have not been journalized.</p>
+  <p>It is recommended that there is consistent communication between the Finance officer and Accounts Receivable to journalize the receipts before month-end.</p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

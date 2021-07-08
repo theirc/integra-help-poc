@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "14";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Purchase Order Processing (HQ)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Purchase Order Processing (HQ)">
+        <span>Purchase Order Processing (HQ)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <div>
+    <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+    <h2 class="Heading2">Manage a Purchase Order (PO)</h2>
+    <p>This section outlines key terms and the business process flow for managing a PO.</p>
+    <h2 class="Heading2">Business Process Flow</h2>
+    <p> </p>
+    <p><img alt="Picture 1" height="230.4" src="assets/images/Purchase Order Processing (HQ)_files/image2.png" width="690.8"/></p>
+    <h2 class="Heading2"><a id="Purchase_Order_Creation"></a>Purchase Order Creation</h2>
+    <p>A purchase order defines the goods/services, quantities, prices, discounts, payment terms, date of performance or shipment, other associated terms and conditions, and identifies a specific vendor. Once the PR is reviewed and approved by the D4 owner, it becomes a draft purchase order.</p>
+    <p>The PO can now be managed and submitted for approval; it follows a defined workflow approval process depending on the authority level (spend level).</p>
+    <ol class="RoundSquare">
+      <li>Before a purchase order is submitted to Workflow, it should be reviewed for the following:
+        <ol>
+          <li>Confirm all the data looks accurate:
+            <ol>
+              <li>Project ID (D1)</li>
+              <li>Project Category (D2)</li>
+              <li>Item Number</li>
+              <li>Quantity</li>
+              <li>Unit price</li>
+              <li>Vendor account/name</li>
+              <li>Inventory Dimensions</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>Financial dimensions are entered</li>
+      <li>Check the currency code on the PO line(s). If the currency is other than USD, contact the PR requester and confirm the requester entered the Unit price(s) on the PR in the Vendor’s desired currency.</li>
+    </ol>
+    <p>For services and events, look at the order quantities and unit prices. Do the order quantities and unit prices support partial receipt and invoicing of the service? Services are sometimes based on a time period (i.e. unit of measure for hour, weekly, month or year) and services are delivered by that time period (think of a grant writer charging by the hour). Sometimes services are delivered based on a body of work. For example, a translator may be hired to translate 10 documents, but agrees to provide them 2 at a time. For events, it is common to make multiple payments prior to the event. If the order is for an event with an order quantity of 1 and a unit price of $12,000, that would not support multiple receipts and multiple payments. But if the purchase order was changed to show an order quantity of 2 and a unit price of $6,000, this would support doing 2 receipts and 2 payments, while leaving the overall value of the order unchanged</p>
+    <p>Once the PO is approved, it can then either physically be mailed or emailed to the vendor.</p>
+    <p>Learning objectives:</p>
+    <ul class="Disc">
+      <li>Submit Purchase Order for Approval</li>
+      <li>Access Approved Purchase Order and Confirm in System</li>
+    </ul>
+    <h6 class="Heading6">Note: Automated Funding Limit Alerts. An alert displays when the funding limit has exceeded 90% of the budget. This alert displays any time the Unit price is updated or Save is clicked.</h6>
+    <p>An additional alert displays when the funding limit has exceeded 100% of the budget. Once the funding limit has reached 100%, a budget revision is required with the appropriate budget holder to proceed with a purchase order.</p>
+    <h2 class="Heading2"><a id="Submit_Purchase_Order_(PO)_for_Approval"></a>Submit Purchase Order (PO) for Approval</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>To submit a draft Purchase Order (PO) for approval</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>Draft PO has been created.</p>
+    <p>Before a PO is submitted to Workflow, it should be reviewed for the following:</p>
+    <p>Confirm all the data looks accurate:</p>
+    <ul class="Disc">
+      <li>Project ID (D1)</li>
+      <li>Project Category (D2)</li>
+      <li>Item Number</li>
+      <li>Quantity</li>
+      <li>Unit price</li>
+      <li>Vendor account/name</li>
+      <li>Inventory Dimensions</li>
+      <li>Financial dimensions are entered</li>
+      <li>Check the currency code on the PO line(s).</li>
+    </ul>
+    <p>If the currency is not in USD, contact the PR requester and confirm the requester entered the Unit price(s) on the PR in the Vendor’s desired currency.</p>
+    <h3 class="Heading3">Steps</h3>
+    <ol class="Decimal">
+      <li>Go to Procurement and sourcing &gt; Purchase orders &gt; All purchase orders</li>
+    </ol>
+    <p><img alt="Picture 16" height="204.1" src="assets/images/Purchase Order Processing (HQ)_files/image3.png" width="624.0"/></p>
+    <h6 class="Heading6">Note: Ensure the Purchase Order List Page view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</h6>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 1;" value="2">Locate the relevant PO and click the PO number to open the PO form.</li>
+    </ol>
+    <p><img alt="Picture 21" height="282.5" src="assets/images/Purchase Order Processing (HQ)_files/image4.png" width="624.0"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 2;" value="3">Navigate to the Purchase order lines section of PO.</li>
+    </ol>
+    <h6 class="Heading6">Note: Ensure the Purchase Order view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</h6>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 3;" value="4">Review the following information to confirm it is accurate and complete:</li>
+    </ol>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:654.0px">
+        <colgroup>
+          <col style="width:174.33333333333333333333333333px"/>
+          <col style="width:479.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Project ID</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Selecting the appropriate Project ID will also increase the accuracy of the project’s budget information in Integra, which will help the team managing the budget to more effectively do so.<br/>
+                  ‎<br/>
+                  ‎The Project ID field and the D01Project_Code field on the Financial dimensions tab both require entry of the same value. The completed fields update different modules in Integra, so it is not enough to enter only one field with the value.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Item number</p>
+            </td>
+            <td>
+              <p>An item number is product identifier number associated with a Product Name in Integra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Quantity</p>
+              <p>Account</p>
+            </td>
+            <td>
+              <p>Confirm the quantity is correct.</p>
+              <p>Ensure all financial dimensions are correct in the Account field.</p>
+              <p> </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 4;" value="5">Navigate to the Line details section of PO.</li>
+    </ol>
+    <p><img alt="Picture 24" height="283.8" src="assets/images/Purchase Order Processing (HQ)_files/image5.png" width="624.0"/></p>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:654.0px">
+        <colgroup>
+          <col style="width:174.33333333333333333333333333px"/>
+          <col style="width:479.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Project category</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">On the Project tab, ensure the correct project category is entered in the Project category field.</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Address</p>
+            </td>
+            <td>
+              <p>Select the Address tab and enter the delivery address and attention information.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Storage dimensions</p>
+            </td>
+            <td>
+              <p>Select the Product tab and review the Site, Warehouse, Location</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h6 class="Heading6">Note: Vendor prepayments for PO related transactions</h6>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 5;" value="6">For a purchase order where a prepayment to the vendor is required, click Purchase, then click Prepayment.</li>
+    </ol>
+    <p><img alt="Picture 10" height="134.4" src="assets/images/Purchase Order Processing (HQ)_files/image6.png" width="624.0"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 6;" value="7">Enter the required fields in the Create or edit a prepayment window.</li>
+    </ol>
+    <p><img alt="Picture 18" height="558.7" src="assets/images/Purchase Order Processing (HQ)_files/image7.png" width="312.0"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 7;" value="8">Click Save, then continue with the remaining steps to submit the PO for approval.</li>
+      <li>When the vendor submits the Prepayment Invoice and PO number, AP/Finance processes the prepayment. After confirmation of receipt is completed the vendor must submit the final invoice using the full amount and Integra triggers a process to reduce the prepayment against the final invoice.</li>
+      <li>On the toolbar at the top of page, click Workflow and click Submit.</li>
+      <li>Enter any relevant approval comments and click Submit.</li>
+      <li>It is critical to verify that all required information is complete prior to submitting through the approval workflow. Examples of required data include but is not limited to the following:
+        <ul class="Disc">
+          <li>Project ID</li>
+          <li>Requestor</li>
+          <li>Item number and quantity</li>
+          <li>Vendor information</li>
+          <li>Financial dimensions</li>
+          <li>Inventory dimensions</li>
+          <li>Project Category</li>
+          <li>Attached documentation related to the PR</li>
+          <li>Statement of Work (SOW), Simple Service Agreement or Quotation</li>
+          <li>IT Purchase details</li>
+        </ul>
+      </li>
+      <li>In the Purchase order workflow – Submit window, add a comment in the Comment field then click Submit.</li>
+    </ol>
+    <h6 class="Heading6">Note: Include detailed information for the approvers.</h6>
+    <p><img alt="Picture 31" height="297.6" src="assets/images/Purchase Order Processing (HQ)_files/image10.png" width="660.7"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>The purchase order was submitted for approval; its status is updated to In review.</p>
+    <p><img alt="Picture 32" height="153.6" src="assets/images/Purchase Order Processing (HQ)_files/image11.png" width="683.1"/></p>
+    <h3 class="Heading3">Next Task</h3>
+    <p>Access Approved Purchase Order (PO) and Confirm in System.</p>
+    <h2 class="Heading2"><a id="Access_Approved_Purchase_Order_(PO)_and_Confirm_in_System"></a>Access Approved Purchase Order (PO) and Confirm in System</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>To confirm an approved Purchase Order (PO) in the system</p>
+    <h3 class="Heading3">Trigger</h3>
+    <p>An approved PO</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul class="Disc">
+      <li>Draft PO has been submitted for approval and has gone through the hierarchy to be approved and signed</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol class="Decimal">
+      <li>Access the Integra Home page dashboard, click on <img alt="Picture 5" height="28.8" src="assets/images/Purchase Order Processing (HQ)_files/image12.png" width="32.0"/> icon at the top left corner of the dashboard to show the Navigation pane.</li>
+    </ol>
+    <p><img alt="Picture 9" height="115.2" src="assets/images/Purchase Order Processing (HQ)_files/image13.png" width="218.6"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 1;" value="2">Go to Procurement and sourcing &gt; Purchase orders &gt; All purchase orders</li>
+    </ol>
+    <p><img alt="Picture 26" height="217.0" src="assets/images/Purchase Order Processing (HQ)_files/image14.png" width="339.4"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 2;" value="3">In the list, click the approved Purchase Order you wish to confirm.</li>
+    </ol>
+    <p><img alt="Picture 36" height="259.2" src="assets/images/Purchase Order Processing (HQ)_files/image15.png" width="679.9"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 3;" value="4">On the Action Pane, click Purchase then Order Confirmation Details.</li>
+    </ol>
+    <p><img alt="Picture 38" height="139.2" src="assets/images/Purchase Order Processing (HQ)_files/image16.png" width="673.9"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 4;" value="5">In the Order Confirmation form, complete the following fields:</li>
+    </ol>
+    <div align="left">
+      <table border="0" cellspacing="0" style="width:595.0px">
+        <colgroup>
+          <col style="width:211px"/>
+          <col style="width:384px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Confirmation report</p>
+            </td>
+            <td>
+              <p>Select an option from the drop-down list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Expiration date</p>
+            </td>
+            <td>
+              <p>Enter a date, if applicable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Effective date</p>
+            </td>
+            <td>
+              <p>Enter a date, if applicable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Terms and Conditions Amendments</p>
+            </td>
+            <td>
+              <p>Type a value. Add any additional instructions that are relevant to the order. Note any agreed modifications.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>OK button</p>
+            </td>
+            <td>
+              <p>Click OK.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p><img alt="Picture 39" height="259.2" src="assets/images/Purchase Order Processing (HQ)_files/image17.png" width="585.6"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 5;" value="6">On the Action Pane, click Purchase then Confirmation, select Yes in the Print purchase order field, then click OK.</li>
+    </ol>
+    <p><img alt="Picture 40" height="220.8" src="assets/images/Purchase Order Processing (HQ)_files/image18.png" width="492.9"/></p>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 6;" value="7">Order confirmation is printed to the screen. Click Export to view in PDF.</li>
+    </ol>
+    <p><img alt="Picture 41" height="224.0" src="assets/images/Purchase Order Processing (HQ)_files/image19.png" width="344.4"/></p>
+    <h3 class="Heading3">Result</h3>
+    <p>The confirmed and printed (or PDF) Purchase Order is ready to be sent to the vendor.</p>
+    <p>Please note, review the following options to communicate with the vendor:</p>
+    <p> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" style="width:659.7px">
+        <colgroup>
+          <col style="width:137.66666666666666666666666667px"/>
+          <col style="width:522px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Office Depot</span></p>
+            </td>
+            <td style="color: #fff">
+              <p><span style="color:#ffffff;">Email the confirmed Purchase Order <a href="mailto:NationalEmailOrders@officedepot.com">NationalEmailOrders@officedepot.com</a></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Planson</p>
+            </td>
+            <td>
+              <p>Go to the Planson portal <a href="https://plansonv2.azurewebsites.net/login/index">https://plansonv2.azurewebsites.net/login/index</a></p>
+              <p>and place the order, include the Integra Purchase Order #.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>All other vendors</p>
+            </td>
+            <td>
+              <p>Either call or email the confirmed Purchase Order.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "16";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Receive and Dispatch (RAI)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Receive and Dispatch (RAI)">
+        <span>Receive and Dispatch (RAI)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1><a id="Business_ProcessProduct_Receipt"></a>Business Process</h1>
+  <h2 class="Heading2">Product Receipt</h2>
+  <p>This section outlines key terms and business process steps for the following:</p>
+  <p>Receipt of non-stock products</p>
+  <p>Receipt of stock products</p>
+  <p>Receiving – General Information</p>
+  <p>When material arrives or services are delivered at an IRC location, Integra must be updated to record the receipt of the material. The receipt record is a prerequisite to invoice payment.</p>
+  <p>Stock products are received and tracked inventory, i.e., on-hand balances are updated with each goods movement<br/>
+    ‎</p>
+  <p>Non-stock products are not tracked in inventory. Upon receipt of non-stock items, the items are immediately expensed to a project.</p>
+  <h6 class="Heading6">Note: Services are received the same way non-stock items are received.</h6>
+  <p>A partial quantity of a PO may be received. In these situations, the PO remains open until all items are received.<br/>
+     </p>
+  <h2 class="Heading2">Receipt of Non-Stock Products and Services</h2>
+  <p><img alt="Picture 1" height="302.0" src="assets/images/Receive and Dispatch (RAI)_files/image1.png" width="654.2"/></p>
+  <h2 class="Heading2">Receipt of Stock Products</h2>
+  <p><img alt="Picture 9" height="339.0" src="assets/images/Receive and Dispatch (RAI)_files/image2.png" width="678.0"/></p>
+  <p>Receipt of Capitalized Fixed Assets</p>
+  <p>When receipt of a capitalized fixed asset is posted in Integra, an asset record is automatically created for the item in the Fixed Assets module.</p>
+  <p>After the fixed asset record is created, Supply Chain must update the asset record with pertinent information, such as, technical specifications, image uploads, warranty information, etc.</p>
+  <p>Refer to the following training user guide for detailed guidance on updating a fixed asset record:</p>
+  <p>Fixed Assets in Integra.</p>
+  <h2 class="Heading2"><a id="Enter_Product_Receipt_(Items_and_Services)PurposeUse_to_procedure_to_record_the_receipt_of_items_and_services._Note:_If_item_is_a_capitalized_asset,_Supply_Chain_must_update_the_fixed_asset_record_with_pertinent_details_after_receipt_is_posted._This_is_done_in_the_Fixed_Assets_module_of_Integra.PrerequisitesPO_Approval_status_is_Confirmed.Purchase_order_status_is_Open_OrderProducts_have_been_physically_received_or_services_have_been_performedVendor’s_delivery_document_confirming_shipment/receipt_has_been_received_for_itemsCertificate_of_completion_(or_equivalent)_has_been_received_for_completed_servicesStepsFrom_the_Integra_home_page,_navigate_modules_to_Procurement_and_sourcing__Purchase_orders__All_purchase_orders.Find_the_relevant_PO_and_click_the_PO_number_to_open_the_PO_form.Note:_There_are_various_search_filters_that_can_be_used_to_find_the_PO_number.Review_the_information_on_the_PO_lines_to_ensure_the_correct_PO_was_selected.On_the_menu_at_the_top_of_page,_click_Receive._Under_the_Generate_action_pane,_click_Product_receipt.Note:_Always_use_Product_receipt,_even_if_you_are_receiving_services.Optional:_Under_print_options_section,_click_the_Print_product_receipt_indicator_so_it_displays_Yes_(indicator_turns_blue)._This_enables_printing_of_the_receipt._Under_the_Overview_section,_in_the_Product_Receipt_field,_type_a_unique_identifier._E.g.,_Bill_of_lading_number,_certificate_of_service_completion,_etc.__If_no_equivalent_exists,_enter_the_PO_number._This_is_a_required_field_so_something_must_be_entered.Use_the_scroll_bar_on_the_right_to_scroll_down_to_the_Lines_section._(You_may_have_to_click_Lines_to_expand_the_section)._In_the_receipt_line,_update_the_Quantity_field_with_the_actual_quantity_received.__Note:_The_quantity_defaults_to_the_quantity_on_PO_but_a_partial_quantity_may_be_entered_if_the_delivered_quantity_is_less_than_PO_quantity._The_PO_will_remain_open_until_the_full_PO_quantity_is_received.Click_OK.If_print_option_was_previously_selected,_the_print_view_of_the_product_receipt_will_automatically_display.To_print_the_receipt,_click__(printer_icon)_and_select_the_print_destination.Click_the_X_in_the_top_right_corner_of_page_to_close_the_print_view_and_return_to_the_PO_form.If_the_full_amount_of_the_PO_was_received,_validate_that_the_PO_status_has_been_updated_to_Received._If_a_partial_amount_of_the_PO_was_received,_validate_that_the_PO_status_is_still_set_to_Open_order.ResultYou_have_recorded_the_receipt_of_items_or_services._An_invoice_can_now_be_created_for_the_PO.If_a_signed_receipt_document_needs_to_be_attached_to_the_PO,_click_the_paperclip_icon_in_the_top_right_corner_of_the_PO_form_and_upload_the_document.To_view_a_list_of_all_receipts_posted_against_the_PO,_select_Product_receipt_under_the_Journals_action_pane._If_you_need_to_print/reprint_the_product_receipt_document,_select_Product_receipt_under_the_Journals_action_pane;_select_the_relevant_receipt_document;_click_Preview/Print_tab_and_select_Copy_preview._Then_select_the_printer_icon_to_output_to_printer_or_PDF."></a>Enter Product Receipt (Items and Services)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use to procedure to record the receipt of items and services.</p>
+  <p>Note: If item is a capitalized asset, Supply Chain must update the fixed asset record with pertinent details after receipt is posted. This is done in the Fixed Assets module of Integra.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>PO Approval status is Confirmed.</li>
+    <li>Purchase order status is Open Order</li>
+    <li>Products have been physically received or services have been performed</li>
+    <li>Vendor’s delivery document confirming shipment/receipt has been received for items</li>
+    <li>Certificate of completion (or equivalent) has been received for completed services</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <p>From the Integra home page, navigate modules to Procurement and sourcing <span></span> Purchase orders <span></span> All purchase orders.</p>
+  <p><img alt="Picture 16" height="298.7" src="assets/images/Receive and Dispatch (RAI)_files/image3.png" width="652.8"/></p>
+  <p>Find the relevant PO and click the PO number to open the PO form.</p>
+  <h6 class="Heading6">Note: There are various search filters that can be used to find the PO number.</h6>
+  <p><img alt="Picture 12" height="301.9" src="assets/images/Receive and Dispatch (RAI)_files/image4.png" width="660.0"/></p>
+  <p>Review the information on the PO lines to ensure the correct PO was selected.</p>
+  <p>On the menu at the top of page, click Receive.</p>
+  <p><img alt="Picture 21" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image5.png" width="666.0"/></p>
+  <p>Under the Generate action pane, click Product receipt.</p>
+  <h6 class="Heading6">Note: Always use Product receipt, even if you are receiving services.</h6>
+  <p><img alt="Picture 19" height="301.9" src="assets/images/Receive and Dispatch (RAI)_files/image6.png" width="660.0"/></p>
+  <p>Optional: Under print options section, click the Print product receipt indicator so it displays Yes (indicator turns blue). This enables printing of the receipt.</p>
+  <p>Under the Overview section, in the Product Receipt field, type a unique identifier, e.g., Bill of lading number, certificate of service completion, etc. If no equivalent exists, enter the PO number. This is a required field so something must be entered.</p>
+  <p>Use the scroll bar on the right to scroll down to the Lines section. (You may have to click Lines to expand the section).</p>
+  <p><img alt="Picture 29" height="302.8" src="assets/images/Receive and Dispatch (RAI)_files/image7.png" width="661.8"/></p>
+  <p>In the receipt line, update the Quantity field with the actual quantity received.</p>
+  <p>Note: The quantity defaults to the quantity on PO but a partial quantity may be entered if the delivered quantity is less than PO quantity. The PO will remain open until the full PO quantity is received.</p>
+  <p>Click OK.</p>
+  <p>If print option was previously selected, the print view of the product receipt will automatically display.</p>
+  <p>To print the receipt, click <img alt="Picture 63" height="32.6" src="assets/images/Receive and Dispatch (RAI)_files/image8.png" width="30.1"/> (printer icon) and select the print destination.</p>
+  <p>Click the X in the top right corner of page to close the print view and return to the PO form.</p>
+  <p><img alt="Picture 34" height="250.0" src="assets/images/Receive and Dispatch (RAI)_files/image9.png" width="666.0"/></p>
+  <p>If the full amount of the PO was received, validate that the PO status has been updated to Received.</p>
+  <p>If a partial amount of the PO was received, validate that the PO status is still set to Open order.</p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have recorded the receipt of items or services. An invoice can now be created for the PO.</p>
+  <p>If a signed receipt document needs to be attached to the PO, click the paperclip icon in the top right corner of the PO form and upload the document.</p>
+  <p>To view a list of all receipts posted against the PO, select Product receipt under the Journals action pane.</p>
+  <p>If you need to print/reprint the product receipt document, select Product receipt under the Journals action pane; select the relevant receipt document; click Preview/Print tab and select Copy preview. Then select the printer icon to output to printer or PDF.</p>
+  <h2 class="Heading2"><a id="Business_Process–_Product_Dispatch"></a>Business Process– Product Dispatch</h2>
+  <p>This section outlines key terms and business process steps for dispatching products from the warehouse.</p>
+  <p>Dispatching – General Information</p>
+  <p>The IRC uses the Integra pick/pack function for the following tasks:<br/>
+    ‎</p>
+  <p>Distributing material from the IRC warehouse to a beneficiary<br/>
+    ‎</p>
+  <p>Transferring material from an IRC warehouse/dispensary to another IRC warehouse/dispensary</p>
+  <h2 class="Heading2">Business Process Flow – Dispatch Products</h2>
+  <p><img alt="Picture 10" height="317.9" src="assets/images/Receive and Dispatch (RAI)_files/image10.png" width="681.6"/></p>
+  <h2 class="Heading2"><a id="Generate_a_Packing_Slip"></a>Generate a Packing Slip</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to generate a packing slip for items picked for issue in the warehouse.</p>
+  <p>Posting the packing slip reduces on-hand physical inventory quantity and updates the inventory main account cost balance. The project expense is also updated.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>All available items have been picked.</p>
+  <h3 class="Heading3">Steps</h3>
+  <p>From the Integra home page, navigate the modules to Project management and accounting <span></span> Projects <span></span> All projects.</p>
+  <p><img alt="Picture 368781635" height="295.7" src="assets/images/Receive and Dispatch (RAI)_files/image11.png" width="646.2"/></p>
+  <p>In the All projects list, search for, and select, the project to which the packing slip will be posted. (Select the checkbox to the left of the line)</p>
+  <p>On the menu at the top, click Plan and select Item requirements.</p>
+  <p><img alt="Picture 368781636" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image12.png" width="666.0"/></p>
+  <p>In the list, click to the left of all applicable items being dispatched (a checkmark in a blue square is applied to all selected lines).</p>
+  <p>For RAI only, click the Financial dimension tab and add the D9 code. Then click the Lines tab to return to the list item requirements.</p>
+  <p><img alt="Picture 368781637" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image13.png" width="666.0"/></p>
+  <p>On the action pane, click Posting and select Packing slip from the drop-down list.</p>
+  <p><img alt="Picture 22" height="311.7" src="assets/images/Receive and Dispatch (RAI)_files/image14.png" width="681.6"/></p>
+  <p>In the Quantity field, select All from the drop-down selection list.</p>
+  <p>Ensure Yes is displayed under Print packing slip.</p>
+  <p>For RAI, ensure the RAI Packing Slip option is selected.</p>
+  <p>Click OK to proceed.</p>
+  <p><img alt="Picture 368781641" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image15.png" width="666.0"/></p>
+  <p>Click Yes when prompted with warning.</p>
+  <p><img alt="Picture 368781642" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image16.png" width="666.0"/></p>
+  <p>To print the pick list, click <img alt="Picture 368781643" height="32.6" src="assets/images/Receive and Dispatch (RAI)_files/image17.png" width="30.1"/> (printer icon).</p>
+  <p>To export the receipt form to a different format, click Export and select output format, e.g., PDF.</p>
+  <p>Click the X in the top right corner of page to close the print view and return to the item requirements list.</p>
+  <p><img alt="Picture 368781644" height="304.7" src="assets/images/Receive and Dispatch (RAI)_files/image18.png" width="666.0"/></p>
+  <p>Warehouse personnel review the packing list to verify contents being dispatched.</p>
+  <p>Attach the signed packing list. Refer to the instructions in the Appendix of this guide titled, Attach Signed Packing List to Client’s Vendor Record.</p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have generated a packing slip to be included with items being dispatched.</p>
+  <h2 class="Heading2"><a id="Appendi"></a>Appendix</h2>
+  <p>Attach Signed Packing List to Client’s Vendor Record</p>
+  <h3 class="Heading3">Steps</h3>
+  <p>From the Integra home page, navigate the modules Accounts Payable <span></span> Vendors <span></span> All vendors.</p>
+  <p>Search for and select the client vendor record.</p>
+  <p><img alt="Picture 14" height="239.4" src="assets/images/Receive and Dispatch (RAI)_files/image19.png" width="666.0"/></p>
+  <p>In the top right corner of page, click the paper clip icon.</p>
+  <p><img alt="Picture 6" height="254.8" src="assets/images/Receive and Dispatch (RAI)_files/image20.png" width="666.0"/></p>
+  <p>On the menu at the top of page, click New and select File from the drop-down selection list.</p>
+  <p><img alt="Picture 5" height="260.9" src="assets/images/Receive and Dispatch (RAI)_files/image21.png" width="666.0"/></p>
+  <p>In the right-hand panel, click Browse.</p>
+  <p>Locate and select relevant document, as per standard Windows browsing functionality. (It may take a few seconds for upload to complete)</p>
+  <p><img alt="Picture 2" height="256.3" src="assets/images/Receive and Dispatch (RAI)_files/image22.png" width="666.0"/></p>
+  <p>Validate the attachment is listed in the left-hand panel.</p>
+  <p>Note: If two distributions are required for the same D9, i.e., in cases where the principal applicant and someone within the principal applicant’s collection, both needed an item, enter a note in the Notes box that specifies the additional people.</p>
+  <p>Click X in the right-hand corner of page to close the window and return to the previous screen.</p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have uploaded (attached) a signed packing list to a client’s vendor record.</p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

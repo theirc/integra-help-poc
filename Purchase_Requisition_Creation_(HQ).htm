@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "15";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Purchase Requisition Creation (HQ)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Purchase Requisition Creation (HQ)">
+        <span>Purchase Requisition Creation (HQ)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
+  <h2 class="Heading2"><a id="Business_Process_Flow"></a>Business Process Flow</h2>
+  <p><img alt="Picture 1" height="236.2" src="assets/images/Purchase Requisition Creation (HQ)_files/image1.png" width="708.0"/></p>
+  <h2 class="Heading2"><a id="Purchase_Requisition_Creation_–_General_Information"></a>Purchase Requisition Creation – General Information</h2>
+  <p>A purchase requisition is an internal document that authorizes the procurement staff member to buy goods or services based upon approval of the requisition.</p>
+  <p>Purchase requisitions have a defined purchase requisition approval workflow which controls the approval process of the purchase requisition from the time it is submitted to the workflow until it is approved by all users in the approval flow.</p>
+  <p>Each HQ department will have one or more focal points (PR Creators) who will be responsible for creating PRs and confirming receipt of goods or services (except engaging individual consultants) for their department.</p>
+  <p>A centralized PO Creation Team, consisting of six members of the Nairobi-based GSC Master Data Management (MDM) Team has been established. This MDM team of PO Creators is responsible for creating and submitting the POs for approval and sending the POs to the vendors.</p>
+  <p>Since a PR is a request and an internal document, it establishes an intent to buy, not a commitment to buy and it is not subject to spend limits or thresholds.</p>
+  <h2 class="Heading2"><a id="Things_to_Consider_before_Creating_a_Purchase_Requisition"></a>Things to Consider before Creating a Purchase Requisition</h2>
+  <h3 class="Heading3">Refer to the Methods of Procurement Table</h3>
+  <p>In some cases, a Procurement Card, Corporate Credit Card or Direct to Invoice may be the correct choice instead of PR_PO.<br/>
+    ‎See <a href="https://rescue.box.com/s/968zsnjwjwqd88h4i3gmpevfdcyy8qwh">How do I know which Method of Procurement to use for the product(s) or service(s) I need?</a></p>
+  <h4>A PR/PO must be confirmed in Integra before an invoice is submitted by a Vendor to the IRC:</h4>
+  <p>For transactions requiring a PR/PO, any invoices submitted without a PR/PO will be rejected by Accounts Payable (AP). The staff member will be notified to rectify before payment is made.</p>
+  <p>How do I process vendor invoices at HQ?</p>
+  <p>All vendor invoices must be submitted electronically to <a href="mailto:IRC.AccountsPayable@rescue.org">IRC.AccountsPayable@rescue.org</a> by the vendor. The name of the vendor should appear in the email subject line. All submitted invoices should include the Purchase Order number. If vendors need to submit invoices on paper, they should send invoices to the following address:</p>
+  <p>ATTN: Accounts Payable</p>
+  <p>122 East 42nd Street</p>
+  <p>New York, NY 10168</p>
+  <p>Vendors should also direct all questions to <a href="mailto:IRC.AccountsPayable@rescue.org">IRC.AccountsPayable@rescue.org</a>.</p>
+  <p>Gather required information before PR creation</p>
+  <p>Setting up a PR completely and accurately is essential to ensuring more efficient procurement processing, invoicing and data quality for reporting purposes. Before creating a PR in Integra, the PR Creator should consider the following questions to correctly determine the order quantities and unit prices for the goods or services being purchased:</p>
+  <p>For products, does RESCUE have a Purchase Agreement?</p>
+  <p>Purchase agreements have been loaded into Integra for some vendors that provide products used by a large segment of RESCUE staff. Some examples of those vendors are Planson (laptops, computer accessories, PC-based software) Taylor Made Graphics (business printing and graphics) and Capita Translation Services (translation services).</p>
+  <p>When creating a new purchase requisition, please first select Contract as the Pricing type and see if there is a purchase agreement with a vendor that provides the goods/services you are seeking. If you cannot find a purchase agreement, then select Quote as the Pricing type.</p>
+  <p>For services, are the services for an hourly/weekly/monthly/annual rate, or are the services based upon deliverables? How will those services be received - all at once, or in multiple receipts?</p>
+  <p>How will the vendor invoice RESCUE for the goods and/or services?</p>
+  <p>How do I structure the PR to efficiently facilitate confirmation of receipt and invoicing?</p>
+  <p>If the requester knows the vendor to use for the procurement, in what currency will the vendor be paid?</p>
+  <p>Integra’s default currency is USD and it presumes the unit prices are in USD. If the vendor needs to be paid in a currency other than USD, the requester must manually convert currency to USD outside of Integra.</p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:654.0px">
+      <colgroup>
+        <col style="width:174.33333333333333333333333333px"/>
+        <col style="width:479.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Required Information</span></p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Name</p>
+          </td>
+          <td>
+            <p>Include the name of the staff member initiating the request so the PO Creation Team will be able to update the Requestor field in the PO.<br/>
+              ‎<br/>
+              ‎The Attention field is also automatically copied into a PO line, and can provide additional context to the PO Creation Team</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project ID</p>
+          </td>
+          <td>
+            <p>Selecting the appropriate Project ID will also increase the accuracy of the project’s budget information in Integra, which will help the team managing the budget to more effectively do so.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Item number</p>
+          </td>
+          <td>
+            <p>An item number is product identifier number associated with a Product Name in Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantity</p>
+          </td>
+          <td>
+            <p>Defaults to 1. Must update to the correct quantity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Account<br/>
+              ‎(Financial Dimensions)</p>
+          </td>
+          <td>
+            <p>Verify or enter the correct Financial Dimensions (Main Account, Project ID (D1), Project Category (D2), Program Area (D3), Operating Unit (D4), Reporting Entity (D5), Functional Area (D6)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vendor account/name</p>
+          </td>
+          <td>
+            <p>Search for the Vendor. If the Vendor is not found, notify the Global Supply Chain team so they can source the vendor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project category</p>
+          </td>
+          <td>
+            <p>The Project Category must be entered on the Project tab of the Line details section of PR.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Inventory dimensions</p>
+          </td>
+          <td>
+            <p>Site, Warehouse</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Supporting documents</p>
+          </td>
+          <td>
+            <p>Attach for Review by the PO Creation Team and D4 Owner</p>
+            <p>Services – Every PR submitted for services where the Vendor is known at that time of creation, must have one of the following attached for the PO Creation Team:</p>
+            <p>Statement of Work (SOW) – Must be a signed SOW. The PO will not be approved, and the PO Creation Team will contact the PR Creator to provide the information before the PO is finalized.</p>
+            <p>Simple Service Agreement</p>
+            <p>Quotation</p>
+            <p>Written approval (email)</p>
+            <p>Contact Details about the person the purchase is being made for</p>
+            <p>Comments – To add context on a purchase request for the D4 Owner and the PO Creation Team.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2"><a id="Create_a_PR_(without_purchase_agreement)PurposeUse_this_procedure_to_create_a_PR_when_there_is_no_purchase_agreement_in_place_with_the_vendor.PrerequisitesIt_has_been_validated_that_a_purchase_agreement_does_not_exist_with_the_vendor.The_item_or_service_record_exists_in_IntegraStepsFrom_the_Integra_home_page,_navigate_modules_to_Procurement_and_sourcing_&gt;_Purchase_requisitions_&gt;_All_purchase_requisitions.On_the_toolbar_at_the_top_of_the_page,_click_New.__On_the_toolbar_at_the_top_of_the_page,_click_New.__July_7,_2021_Page_8_of_33_July_7,_2021_Page_8_of_33_July_7,_2021_Page_8_of_33_July_7,_2021_Page_8_of_33_July_7,_2021_Page_8_of_33_July_7,_2021_Page_8_of_33_July_7,_2021_Page_9_of_33_July_7,_2021_Page_9_of_33In_the_right-hand_information_pane,_complete/validate_the_following_fields:FieldEntry_RequiredNameEnter_a_description_for_the_purchase_requisition.Note:_If_creating_PR_on_behalf_of_someone_else,_include_the_person’s_name_in_the_description.Requested_date_Defaults_to_today’s_date_but_may_want_to_enter_date_when_you_wish_to_receive_the_product(s)._Accounting_dateDo_not_change_the_defaulting_date.Select_default_projectClick_the_check_box._Important:_This_checkbox_must_always_be_selected_in_order_to_activate_the_Project_ID_field._which_is_a_mandatory_field.Buying_legal_entitySelect_the_relevant_buying_organization_from_the_drop-down_selection_list,_e.g.,_9IRC,_6DATProject_IDEnter_the_project_ID_to_which_the_expenditure_will_be_charged.Important:_This_field_must_be_populated_to_ensure_the_project_gets_charged_correctly._Pricing_typeIf_not_already_defaulting,_select_Quote_from_the_drop-down_selection_list.Note:_Quote_is_always_used_for_PRs_that_do_not_reference_a_purchase_agreement._Click_OK_to_proceed.Under_the_business_justification_section,_in_the_Reason_field,_select_the_relevant_reason_from_the_drop-down_selection_list,_e.g.,_10-Non-forecasted_item._Notes:_Option_10_–_Non-forecasted_item,_is_typically_used_for_RAI_offices.For_further_guidance_on_selecting_a_reason_code,_see_appendix_in_this_document,_Business_Justification_Reason_Codes.In_the_Details_text_box,_provide_additional_information_to_explain/clarify_PR_requirements.Scroll_down_to_the_Purchase_requisition_lines_section.Click_Add_line_to_add_a_new_PR_line.Complete_the_following_fields:Field_Entry_RequiredItem_numberEnter_the_item_number_(or_perform_a_search_to_find_the_item_number).For_guidance_on_searching_for_items,_refer_to_the_following_procedures_included_in_the_appendix_of_this_document.Searching_for_Data_in_Integra_–_General_InformationSearching_for_a_Product_in_a_Purchase_RequisitionQuantityEnter_the_quantity_required.Important:_This_field_defaults_with_a_value_of_“1”_but_must_be_overwritten_with_the_correct_quantity._Unit_priceThe_price_may_default_from_the_product_record._If_not,_enter_an_estimated_price.Vendor_accountEnter_the_vendor_account_number_(or_perform_a_search_by_name_to_find_the_vendor_number)._Important:_If_a_vendor_is_not_entered_on_a_PR,_a_draft_PO_does_not_get_created.If_vendor_unknown,_contact_GSC_(Global_Supply_Services)_to_find_out_vendor_number/name._For_guidance_on_searching_for_items,_refer_to_the_following_procedures_included_in_the_appendix_of_this_document.Searching_for_Data_in_Integra_–_General_InformationSearching_for_a_Vendor_in_a_Purchase_RequisitionVendor_nameThe_vendor_name_defaults_once_the_vendor_account_number_is_entered.Scroll_down_and_expand_the_Line_details_section_of_the_PR.Click_the_Project_tab.In_the_Project_category_field,_click_the_drop-down_arrow_and_select_the_relevant_project_category_for_the_item/service_being_purchased.Note:_This_step_must_be_done_so_the_correct_main_account_and_D2_code_get_applied_to_the_expenditure.__(If_this_step_is_not_done,_the_expenditure_will_get_coded_incorrectly.)Scroll_back_up_to_the_Purchase_requisition_lines_section_and_scroll_to_the_right_until_you_see_the_Account_field._In_the_Account_field,_notice_the_values_already_populated_in_the_account_string,_e.g.,_main_account,_D1,_D2,_and_D5_codes._(The_main_account_and_D2_value_were_updated_based_on_the_project_category_entered_in_the_previous_step.)Click_the_drop-down_arrow_in_the_Account_field_to_access_a_pop-up_window_with_more_financial_dimension_fields._Use_the_scroll_bar_in_the_pop-up_window_to_scroll_down_and_finish_populating_the_remaining_financial_dimensions_required_for_the_purchase,_e.g.,_D5,_D4,_D3,_D6,_etc._As_you_click_in_each_field,_a_menu_of_selectable_entries_displays_in_the_pane_on_the_left._Any_financial_dimensions_set_up_when_the_project_was_created_will_default_here_and_should_not_be_changed.Click_anywhere_outside_of_the_pop-up_window_to_close_it_and_return_to_the_PR_lines.Time-saving_tip!__The_contents_of_Account_field_can_be_copied_and_pasted_to_all_lines_in_the_PR_(if_applicable),_eliminating_the_need_to_enter_the_same_financial_dimensions_multiple_times!Scroll_back_down_to_the_Item_details_section_of_PR_and_click_the_Inventory_dimensions_tab.Complete/validate_the_following_inventory_dimension_fields:Field_Entry_RequiredSiteThis_field_auto-populates_based_on_the_legal_entity._WarehouseSelect_the_relevant_warehouse_from_the_drop-down_selection_list._LocationSelect_the_relevant_location_from_the_drop-down_selection_list._Note:_If_the_item_is_not_going_to_be_placed_into_inventory,_select_Non-stock.__If_delivery_address_requires_editing,_click_the_Address_tab_in_the_Item_details_sectio._If_applicable,_in_the_Delivery_location_field,_click_the_drop-down_and_select_an_alternate_delivery_address_from_the_selection_list.The_Delivery_name_and_the_Attention_information_fields_may_also_be_populated/updated_as_required._These_are_free_text_fields.To_add_additional_lines_to_the_PR,_repeat_steps_from_step_8_onwards.Add_any_required_attachments_to_the_PR,_such_as_SOW_(Statement_of_work),_Simple_Service_Agreement,_or_Quotation._Note:_For_guidance_on_attaching_documents_to_a_PR,_refer_to_the_procedure_listed_in_the_Appendix_of_this_document.Once_all_PR_lines_are_completed_submit_a_PR_for_review_and_approval_as_per_steps_outlined_below.Submit_Completed_PR_to_Workflow_for_ApprovalOn_the_toolbar_at_the_top_of_page,_click_Workflow_and_then_click_Submit.In_the_Comments_pane,_enter_any_relevant_comments_for_the_approver._Also,_if_creating_PR_on_behalf_of_another_person,_enter_this_information_here._Click_Submit_in_bottom_right_corner_of_approval_pane._You_are_returned_to_the_PR_form._The_PR_number_is_displayed_in_the_top_left_section_of_PR_form.ResultThe_PR_has_been_submitted_for_approval_and_approver_will_be_notified.PR_approval_status_can_be_viewed_under_the_Status_column_on_the_All_purchase_requisitions_page.End_of_procedureNote:_To_learn_how_to_personalize_the_layout_of_the_PR_lines_table_grid,_e.g.,_add/remove_columns_or_move_columns_around,_refer_to_the_RescueNet_document_titled,_Personalize_Table_Grid_Layouts._Create_a_PR_(with_purchase_agreement)PurposeUse_this_procedure_to_create_a_PR_that_references_a_purchase_agreement._Purchase_agreements_have_been_loaded_into_Integra_for_many_of_our_vendors_that_provide_products_used_by_a_large_segment_of_RESCUE._Some_examples_of_those_vendors_are_Planson_(laptops,_computer_accessories,_PC-based_software)_Taylor_Made_Graphics_(business_printing_and_graphics)_and_Capita_Translation_Services_(translation_services).The_key_differences_when_creating_a_PR_that_references_a_purchase_agreement_versus_one_that_doesn’t_are_the_following:__The_Pricing_type_selected_on_the_initial_PR_creation_pane_must_be_Contract_(vs._Quote).The_vendor_and_unit_price_for_item/service_defaults_from_the_agreement._Note:_All_offices/departments_must_liaise_with_Global_Supply_Chain_when_adding_or_changing_Integra_data_or_records_associated_with_a_trade_vendor_to_procure_goods_or_services._This_includes_trade_vendor_records,_products_(items)_and_purchase_agreements,_regardless_of_spend,_and_to_draft_statements_of_work_with_an_existing_trade_vendor.PrerequisitesPurchase_agreement_vendor_is_knownPurchase_agreement_exists_in_IntegraStepsFrom_the_Integra_home_page,_navigate_the_modules_to_Procurement_and_sourcing_&gt;_Purchase_requisitions_&gt;_All_purchase_requisitions.On_the_toolbar_at_the_top_of_the_page,_click_New._In_the_right-hand_information_pane,_complete/validate_the_following_fields:Field_Entry_RequiredNameEnter_a_description_for_the_purchase_requisition.Note:_If_creating_PR_on_behalf_of_someone_else,_include_the_person’s_name_in_the_description.Requested_date_Defaults_to_today’s_date_but_may_want_to_enter_date_when_you_wish_to_receive_the_product(s)._Accounting_dateDo_not_change_the_defaulting_date.Select_default_projectClick_the_check_box._Important:_This_checkbox_must_always_be_selected_in_order_to_activate_the_Project_ID_field._which_is_a_mandatory_field.Buying_legal_entitySelect_the_relevant_buying_organization_from_the_drop-down_selection_list,_e.g.,_9IRC,_6DATProject_IDEnter_the_project_ID_to_which_the_expenditure_will_be_charged.Important:_This_field_must_be_populated_to_ensure_the_project_gets_charged_correctly.__Pricing_typeSelect_Contract_from_the_drop-down_selection_list.Purchase_agreementIf_known,_enter_the_contract_number._If_contract_number_is_not_known,_click_to_perform_a_search_and_select_the_correct_one_from_the_list.__Click_OK_to_proceed.Under_the_business_justification_section,_in_the_Reason_field,_select_the_relevant_reason_from_the_drop-down_selection_list,_e.g.,_10-Non-forecasted_item._In_the_Details_text_box,_provide_additional_information_to_explain/clarify_PR_requirements.Scroll_down_to_the_Purchase_requisition_lines_section.Click_Add_line_to_add_a_new_PR_line.Complete_the_following_fields:Field_Entry_RequiredItem_numberEnter_the_item_number_(or_perform_a_search_to_find_the_item_number).For_guidance_on_searching_for_items,_refer_to_the_following_procedures_included_in_the_appendix_of_this_document.Searching_for_Data_in_Integra_–_General_InformationSearching_for_a_Product_in_a_Purchase_RequisitionQuantityEnter_the_quantity_required.Important:_This_field_defaults_with_a_value_of_“1”_but_must_be_overwritten_with_the_correct_quantity._Unit_priceThis_value_defaults_from_the_purchase_agreement.Vendor_accountThis_value_defaults_from_the_purchase_agreement.Vendor_nameThis_value_defaults_from_the_purchase_agreement._Scroll_down_to_the_Line_details_section.Click_the_Project_tab.In_the_Project_category_field,_select_the_correct_project_category_from_the_drop-down_selection_list._Note:_If_you_do_not_see_the_correct_project_category_in_the_drop-down_selection_list,_contact_Finance_for_guidance._Do_not_select_an_incorrect_project_category!Scroll_back_up_to_the_Purchase_requisition_lines_section_and_scroll_to_the_right_until_you_see_the_Account_field._In_the_Account_field,_notice_the_values_already_populated_in_the_account_string,_e.g.,_main_account,_D1,_D2,_and_D5_codes._(The_main_account_and_D2_values_were_updated_based_on_the_project_category_entered_in_step_6_above.)Click_the_drop-down_arrow_in_the_Account_field_to_access_a_pop-up_window_with_more_financial_dimension_fields._Use_the_scroll_bar_in_the_pop-up_window_to_scroll_down_and_finish_populating_the_remaining_financial_dimensions_required_for_the_purchase,_e.g.,_D3,_D4,_D5,_D6,_etc._As_you_click_in_each_field,_a_menu_of_selectable_entries_displays_in_the_pane_on_the_left._Remember,_any_financial_dimensions_set_up_when_the_project_was_created_will_default_here_and_should_not_be_changed.Click_anywhere_outside_of_the_pop-up_window_to_close_it_and_return_to_the_PR_lines.Time-saving_tip!__The_contents_of_Account_field_can_be_copied_and_pasted_to_all_lines_in_the_PR_(if_applicable),_eliminating_the_need_to_enter_the_same_financial_dimensions_multiple_times!Scroll_back_down_to_the_Item_details_section_of_PR_and_click_the_Inventory_dimensions_tab.Complete/validate_the_following_inventory_dimension_fields:Field_Entry_RequiredSiteThis_field_auto-populates_based_on_the_legal_entity._WarehouseSelect_the_relevant_warehouse_from_the_drop-down_selection_list._LocationSelect_the_relevant_location_from_the_drop-down_selection_list._Note:_If_the_item_is_not_going_to_be_placed_into_inventory,_select_Non-stock.__If_delivery_address_requires_editing,_click_the_Address_tab._If_applicable,_in_the_Delivery_location_field,_click_the_drop-down_and_select_an_alternate_delivery_address_from_the_selection_list.The_Delivery_name_and_the_Attention_information_fields_may_also_be_populated/updated_as_required._These_are_free_text_fields.To_add_additional_lines_to_the_PR,_repeat_steps_from_step_8_onwards.Add_any_required_attachments_to_the_PR,_such_as_SOW_(Statement_of_work),_Simple_Service_Agreement,_or_Quotation._Note:_For_guidance_on_attaching_documents_to_a_PR,_refer_to_the_procedure_listed_in_the_Appendix_of_this_document._Once_all_PR_lines_are_completed_submit_a_PR_for_review_and_approval.On_the_toolbar_at_the_top_of_page,_click_Workflow__and_then_click_Submit.Complete_approval_comments_and_click_Submit._End_of_procedure"></a>Create a PR (without purchase agreement)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a PR when there is no purchase agreement in place with the vendor.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>It has been validated that a purchase agreement does not exist with the vendor.</li>
+    <li>The item or service record exists in Integra</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>From the Integra home page, navigate modules to Procurement and sourcing &gt; Purchase requisitions &gt; All purchase requisitions.</li>
+  </ol>
+  <p><img alt="Picture 70" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image2.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">On the toolbar at the top of the page, click New. July 7, 2021  Page 8 of 33 </li>
+  </ol>
+  <p>July 7, 2021  Page 8 of 33 </p>
+  <p>July 7, 2021  Page 8 of 33 </p>
+  <p>July 7, 2021  Page 8 of 33 </p>
+  <p>July 7, 2021  Page 8 of 33 </p>
+  <p>July 7, 2021  Page 8 of 33 </p>
+  <p>July 7, 2021  Page 9 of 33 </p>
+  <p>July 7, 2021  Page 9 of 33 </p>
+  <p><img alt="Picture 71" height="315.7" src="assets/images/Purchase Requisition Creation (HQ)_files/image3.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">In the right-hand information pane, complete/validate the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0">
+      <colgroup>
+        <col style="width:185.66666666666666666666666667px"/>
+        <col style="width:479.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Name</p>
+          </td>
+          <td>
+            <p>Enter a description for the purchase requisition.</p>
+            <p>Note: If creating PR on behalf of someone else, include the person’s name in the description.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Requested date</p>
+          </td>
+          <td>
+            <p>Defaults to today’s date but may want to enter date when you wish to receive the product(s).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Accounting date</p>
+          </td>
+          <td>
+            <p>Do not change the defaulting date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Select default project</p>
+          </td>
+          <td>
+            <p>Click the check box.</p>
+            <p>Important: This checkbox must always be selected in order to activate the Project ID field. which is a mandatory field.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Buying legal entity</p>
+          </td>
+          <td>
+            <p>Select the relevant buying organization from the drop-down selection list, e.g., 9IRC, 6DAT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project ID</p>
+          </td>
+          <td>
+            <p>Enter the project ID to which the expenditure will be charged.</p>
+            <p>Important: This field must be populated to ensure the project gets charged correctly.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Pricing type</p>
+          </td>
+          <td>
+            <p>If not already defaulting, select Quote from the drop-down selection list.</p>
+            <p>Note: Quote is always used for PRs that do not reference a purchase agreement.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Click OK to proceed.</li>
+  </ol>
+  <p><img alt="Picture 73" height="315.7" src="assets/images/Purchase Requisition Creation (HQ)_files/image4.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">Under the business justification section, in the Reason field, select the relevant reason from the drop-down selection list, e.g., 10-Non-forecasted item.</li>
+  </ol>
+  <h6 class="Heading6">Notes: Option 10 – Non-forecasted item, is typically used for RAI offices.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 5;" value="6">For further guidance on selecting a reason code, see appendix in this document, Business Justification Reason Codes.</li>
+    <li>In the Details text box, provide additional information to explain/clarify PR requirements.</li>
+    <li>Scroll down to the Purchase requisition lines section.</li>
+  </ol>
+  <p><img alt="Picture 75" height="315.7" src="assets/images/Purchase Requisition Creation (HQ)_files/image5.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">Click Add line to add a new PR line.</li>
+  </ol>
+  <p><img alt="Picture 27" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image6.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:696.0px">
+      <colgroup>
+        <col style="width:132px"/>
+        <col style="width:564px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Item number</p>
+          </td>
+          <td>
+            <p>Enter the item number (or perform a search to find the item number).</p>
+            <p>For guidance on searching for items, refer to the following procedures included in the appendix of this document.</p>
+            <p>Searching for Data in Integra – General Information</p>
+            <p>Searching for a Product in a Purchase Requisition</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantity</p>
+          </td>
+          <td>
+            <p>Enter the quantity required.</p>
+            <p>Important: This field defaults with a value of “1” but must be overwritten with the correct quantity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unit price</p>
+          </td>
+          <td>
+            <p>The price may default from the product record. If not, enter an estimated price.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vendor account</p>
+          </td>
+          <td>
+            <p>Enter the vendor account number (or perform a search by name to find the vendor number).</p>
+            <p>Important: If a vendor is not entered on a PR, a draft PO does not get created.</p>
+            <p>If vendor unknown, contact GSC (Global Supply Services) to find out vendor number/name.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>For guidance on searching for items, refer to the following procedures included in the appendix of this document.</p>
+            <p>Searching for Data in Integra – General Information</p>
+            <p>Searching for a Vendor in a Purchase Requisition</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vendor name</p>
+          </td>
+          <td>
+            <p>The vendor name defaults once the vendor account number is entered.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 10;" value="11">Scroll down and expand the Line details section of the PR.</li>
+  </ol>
+  <p><img alt="Picture 20" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image7.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 11;" value="12">Click the Project tab.</li>
+  </ol>
+  <p><img alt="Picture 79" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image8.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">In the Project category field, click the drop-down arrow and select the relevant project category for the item/service being purchased.</li>
+  </ol>
+  <h6 class="Heading6">Note: This step must be done so the correct main account and D2 code get applied to the expenditure. (If this step is not done, the expenditure will get coded incorrectly.)</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 13;" value="14">Scroll back up to the Purchase requisition lines section and scroll to the right until you see the Account field.</li>
+  </ol>
+  <p><img alt="Picture 88" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image9.png" width="690.0"/></p>
+  <p>In the Account field, notice the values already populated in the account string, e.g., main account, D1, D2, and D5 codes. (The main account and D2 value were updated based on the project category entered in the previous step.)</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 14;" value="15">Click the drop-down arrow in the Account field to access a pop-up window with more financial dimension fields.</li>
+  </ol>
+  <p><img alt="Picture 10" height="283.3" src="assets/images/Purchase Requisition Creation (HQ)_files/image10.png" width="669.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 15;" value="16">Use the scroll bar in the pop-up window to scroll down and finish populating the remaining financial dimensions required for the purchase, e.g., D5, D4, D3, D6, etc.</li>
+    <li>As you click in each field, a menu of selectable entries displays in the pane on the left.</li>
+  </ol>
+  <p>Any financial dimensions set up when the project was created will default here and should not be changed.</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 17;" value="18">Click anywhere outside of the pop-up window to close it and return to the PR lines.</li>
+  </ol>
+  <p><img alt="Picture 94" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image11.png" width="690.0"/></p>
+  <p>Time-saving tip! The contents of Account field can be copied and pasted to all lines in the PR (if applicable), eliminating the need to enter the same financial dimensions multiple times!</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 18;" value="19">Scroll back down to the Item details section of PR and click the Inventory dimensions tab.</li>
+  </ol>
+  <p><img alt="Picture 95" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image12.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 19;" value="20">Complete/validate the following inventory dimension fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:654.0px">
+      <colgroup>
+        <col style="width:102px"/>
+        <col style="width:552px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Site</p>
+          </td>
+          <td>
+            <p>This field auto-populates based on the legal entity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Warehouse</p>
+          </td>
+          <td>
+            <p>Select the relevant warehouse from the drop-down selection list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Location</p>
+          </td>
+          <td>
+            <p>Select the relevant location from the drop-down selection list.</p>
+            <p>Note: If the item is not going to be placed into inventory, select Non-stock.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 20;" value="21">If delivery address requires editing, click the Address tab in the Item details sectio.</li>
+    <li>If applicable, in the Delivery location field, click the drop-down and select an alternate delivery address from the selection list.</li>
+  </ol>
+  <p>The Delivery name and the Attention information fields may also be populated/updated as required. These are free text fields.<br/>
+    ‎</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 22;" value="23">To add additional lines to the PR, repeat steps from step 8 onwards.</li>
+    <li>Add any required attachments to the PR, such as SOW (Statement of work), Simple Service Agreement, or Quotation.</li>
+  </ol>
+  <h6 class="Heading6">Note: For guidance on attaching documents to a PR, refer to the procedure listed in the Appendix of this document.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 24;" value="25">Once all PR lines are completed submit a PR for review and approval as per steps outlined below.</li>
+    <li>Submit Completed PR to Workflow for Approval</li>
+    <li>On the toolbar at the top of page, click Workflow and then click Submit.</li>
+  </ol>
+  <p><img alt="Picture 96" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image13.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 27;" value="28">In the Comments pane, enter any relevant comments for the approver. Also, if creating PR on behalf of another person, enter this information here.</li>
+    <li style="">Click Submit in bottom right corner of approval pane. You are returned to the PR form. The PR number is displayed in the top left section of PR form.</li>
+  </ol>
+  <h3 class="Heading3">‎<br/>
+    ‎Result</h3>
+  <p>The PR has been submitted for approval and approver will be notified.</p>
+  <p>PR approval status can be viewed under the Status column on the All purchase requisitions page.</p>
+  <h3 class="Heading3">End of procedure</h3>
+  <h6 class="Heading6">Note: To learn how to personalize the layout of the PR lines table grid, e.g., add/remove columns or move columns around, refer to the RescueNet document titled, Personalize Table Grid Layouts.</h6>
+  <h2 class="Heading2"><a id="Create_a_PR_(with_purchase_agreement)"></a>Create a PR (with purchase agreement)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a PR that references a purchase agreement.</p>
+  <p>Purchase agreements have been loaded into Integra for many of our vendors that provide products used by a large segment of RESCUE. Some examples of those vendors are Planson (laptops, computer accessories, PC-based software) Taylor Made Graphics (business printing and graphics) and Capita Translation Services (translation services).</p>
+  <p>The key differences when creating a PR that references a purchase agreement versus one that doesn’t are the following:</p>
+  <p>The Pricing type selected on the initial PR creation pane must be Contract (vs. Quote).</p>
+  <p>The vendor and unit price for item/service defaults from the agreement.</p>
+  <h6 class="Heading6">Note: All offices/departments must liaise with Global Supply Chain when adding or changing Integra data or records associated with a trade vendor to procure goods or services. This includes trade vendor records, products (items) and purchase agreements, regardless of spend, and to draft statements of work with an existing trade vendor.</h6>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>Purchase agreement vendor is known</li>
+    <li>Purchase agreement exists in Integra</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>From the Integra home page, navigate the modules to Procurement and sourcing &gt; Purchase requisitions &gt; All purchase requisitions.</li>
+  </ol>
+  <p><img alt="Picture 138" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image14.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">On the toolbar at the top of the page, click New.</li>
+  </ol>
+  <p><img alt="Picture 12" height="298.2" src="assets/images/Purchase Requisition Creation (HQ)_files/image15.png" width="657.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">In the right-hand information pane, complete/validate the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:666.0px">
+      <colgroup>
+        <col style="width:168px"/>
+        <col style="width:498px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Name</p>
+          </td>
+          <td>
+            <p>Enter a description for the purchase requisition.</p>
+            <p>Note: If creating PR on behalf of someone else, include the person’s name in the description.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Requested date</p>
+          </td>
+          <td>
+            <p>Defaults to today’s date but may want to enter date when you wish to receive the product(s).</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Accounting date</p>
+          </td>
+          <td>
+            <p>Do not change the defaulting date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Select default project</p>
+          </td>
+          <td>
+            <p>Click the check box.</p>
+            <p>Important: This checkbox must always be selected in order to activate the Project ID field. which is a mandatory field.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Buying legal entity</p>
+          </td>
+          <td>
+            <p>Select the relevant buying organization from the drop-down selection list, e.g., 9IRC, 6DAT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Project ID</p>
+          </td>
+          <td>
+            <p>Enter the project ID to which the expenditure will be charged.</p>
+            <p>Important: This field must be populated to ensure the project gets charged correctly.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:666.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:492px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Pricing type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Select Contract from the drop-down selection list.</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Purchase agreement</p>
+          </td>
+          <td>
+            <p>If known, enter the contract number.</p>
+            <p>If contract number is not known, click <img alt="Picture 53" height="21.0" src="assets/images/Purchase Requisition Creation (HQ)_files/image16.png" width="130.7"/>to perform a search and select the correct one from the list.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">Click OK to proceed.</li>
+  </ol>
+  <p><img alt="Picture 150" height="298.6" src="assets/images/Purchase Requisition Creation (HQ)_files/image17.png" width="652.8"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">Under the business justification section, in the Reason field, select the relevant reason from the drop-down selection list, e.g., 10-Non-forecasted item.</li>
+    <li>In the Details text box, provide additional information to explain/clarify PR requirements.</li>
+    <li>Scroll down to the Purchase requisition lines section.</li>
+  </ol>
+  <p><img alt="Picture 142" height="301.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image18.png" width="660.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8">Click Add line to add a new PR line.</li>
+  </ol>
+  <p><img alt="Picture 151" height="300.8" src="assets/images/Purchase Requisition Creation (HQ)_files/image19.png" width="657.5"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:666.0px">
+      <colgroup>
+        <col style="width:132px"/>
+        <col style="width:534px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Item number</p>
+          </td>
+          <td>
+            <p>Enter the item number (or perform a search to find the item number).</p>
+            <p>For guidance on searching for items, refer to the following procedures included in the appendix of this document.</p>
+            <p>Searching for Data in Integra – General Information</p>
+            <p>Searching for a Product in a Purchase Requisition</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantity</p>
+          </td>
+          <td>
+            <p>Enter the quantity required.</p>
+            <p>Important: This field defaults with a value of “1” but must be overwritten with the correct quantity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unit price</p>
+          </td>
+          <td>
+            <p>This value defaults from the purchase agreement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vendor account</p>
+          </td>
+          <td>
+            <p>This value defaults from the purchase agreement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vendor name</p>
+          </td>
+          <td>
+            <p>This value defaults from the purchase agreement.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">Scroll down to the Line details section.</li>
+  </ol>
+  <p><img alt="Picture 152" height="297.4" src="assets/images/Purchase Requisition Creation (HQ)_files/image20.png" width="650.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 10;" value="11">Click the Project tab.</li>
+    <li>In the Project category field, select the correct project category from the drop-down selection list.</li>
+  </ol>
+  <h6 class="Heading6">Note: If you do not see the correct project category in the drop-down selection list, contact Finance for guidance. Do not select an incorrect project category!</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 12;" value="13">Scroll back up to the Purchase requisition lines section and scroll to the right until you see the Account field.</li>
+  </ol>
+  <p><img alt="Picture 102" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image21.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 13;" value="14">In the Account field, notice the values already populated in the account string, e.g., main account, D1, D2, and D5 codes. (The main account and D2 values were updated based on the project category entered in step 6 above.)</li>
+    <li>Click the drop-down arrow in the Account field to access a pop-up window with more financial dimension fields.</li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTML78385fc5.PNG" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image22.png" width="690.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 15;" value="16">Use the scroll bar in the pop-up window to scroll down and finish populating the remaining financial dimensions required for the purchase, e.g., D3, D4, D5, D6, etc.</li>
+    <li>As you click in each field, a menu of selectable entries displays in the pane on the left.</li>
+    <li>Remember, any financial dimensions set up when the project was created will default here and should not be changed.</li>
+    <li>Click anywhere outside of the pop-up window to close it and return to the PR lines.</li>
+  </ol>
+  <p><img alt="Picture 105" height="290.9" src="assets/images/Purchase Requisition Creation (HQ)_files/image23.png" width="690.0"/></p>
+  <p>Time-saving tip! The contents of Account field can be copied and pasted to all lines in the PR (if applicable), eliminating the need to enter the same financial dimensions multiple times!</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 19;" value="20">Scroll back down to the Item details section of PR and click the Inventory dimensions tab.</li>
+  </ol>
+  <p><img alt="Picture 156" height="294.1" src="assets/images/Purchase Requisition Creation (HQ)_files/image24.png" width="642.8"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 20;" value="21">Complete/validate the following inventory dimension fields:</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:654.0px">
+      <colgroup>
+        <col style="width:102px"/>
+        <col style="width:552px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Site</p>
+          </td>
+          <td>
+            <p>This field auto-populates based on the legal entity.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Warehouse</p>
+          </td>
+          <td>
+            <p>Select the relevant warehouse from the drop-down selection list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Location</p>
+          </td>
+          <td>
+            <p>Select the relevant location from the drop-down selection list.</p>
+            <p>Note: If the item is not going to be placed into inventory, select Non-stock.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 21;" value="22">If delivery address requires editing, click the Address tab.</li>
+    <li>If applicable, in the Delivery location field, click the drop-down and select an alternate delivery address from the selection list.</li>
+  </ol>
+  <p>The Delivery name and the Attention information fields may also be populated/updated as required. These are free text fields.<br/>
+    ‎</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 23;" value="24">To add additional lines to the PR, repeat steps from step 8 onwards.</li>
+    <li>Add any required attachments to the PR, such as SOW (Statement of work), Simple Service Agreement, or Quotation.</li>
+  </ol>
+  <h6 class="Heading6">Note: For guidance on attaching documents to a PR, refer to the procedure listed in the Appendix of this document.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 25;" value="26">Once all PR lines are completed submit a PR for review and approval.</li>
+    <li>On the toolbar at the top of page, click Workflow and then click Submit.</li>
+    <li>Complete approval comments and click Submit.</li>
+  </ol>
+  <h3 class="Heading3">End of procedure</h3>
+  <h2 class="Heading2"><a id="View_Approval_Status_of_PR"></a>View Approval Status of PR</h2>
+  <p>Once submitted to workflow, the PR approval status is changed to In review. This can be seen in the top right corner of the PR form. See table below for status descriptions.</p>
+  <p><img alt="Picture 128" height="190.0" src="assets/images/Purchase Requisition Creation (HQ)_files/image25.png" width="704.9"/><br/>
+    ‎<br/>
+    ‎Approval statuses can also be viewed in the All purchase requisitions page under the Status column.</p>
+  <p><img alt="Picture 191" height="291.3" src="assets/images/Purchase Requisition Creation (HQ)_files/image26.png" width="713.9"/></p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:714.0px">
+      <colgroup>
+        <col style="width:82.93333333333333333333333333px"/>
+        <col style="width:631.06666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Status</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Meaning</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Draft</p>
+          </td>
+          <td>
+            <p>PR has been started or completed but has not been submitted for approval. Changes can be made to a PR with this status.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>In review</p>
+          </td>
+          <td>
+            <p>PR has been submitted to workflow for review. Changes cannot be made to a PR with this status. To enable changes, the PR must be “recalled” from workflow.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Approved</p>
+          </td>
+          <td>
+            <p>PR has been fully approved. Changes cannot be made to a PR with this status.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Closed</p>
+          </td>
+          <td>
+            <p>A PO has been created for the PR. Changes cannot be made to a PR with this status.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2"><a id="Recall_a_PR_from_Workflow_to_Make_Changes"></a>Recall a PR from Workflow to Make Changes</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to recall a PR from workflow after it has been submitted for approval. This may be required if an error was made on initial creation or the PR and must be changed, or the PR is no longer required.</p>
+  <p>A PR can only be recalled if it has status, In review. Once a PR is successfully recalled from workflow, the PR status changes back to Draft. Changes to a PR can only be done for a PR with Draft status.</p>
+  <p>Once changes are made, the PR must be resubmitted to workflow.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul class="Disc">
+    <li>PR has been submitted to workflow and has status In review.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>From the Integra home page, navigate modules to Procurement and sourcing &gt; Purchase requisitions &gt; All purchase requisitions.</li>
+  </ol>
+  <p><img alt="Picture 193" height="240.1" src="assets/images/Purchase Requisition Creation (HQ)_files/image27.png" width="658.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Locate and open the relevant PR. (PR must have status In review)</li>
+  </ol>
+  <p><img alt="Picture 194" height="285.2" src="assets/images/Purchase Requisition Creation (HQ)_files/image28.png" width="669.9"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3">On the menu at the top of page, click Workflow and then click Recall.</li>
+  </ol>
+  <p><img alt="Picture 197" height="310.4" src="assets/images/Purchase Requisition Creation (HQ)_files/image29.png" width="678.3"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 3;" value="4">In the bottom right corner of workflow pane, click Recall.</li>
+  </ol>
+  <h6 class="Heading6">Note: A comment may be entered but is not required.</h6>
+  <p><img alt="Picture 199" height="313.2" src="assets/images/Purchase Requisition Creation (HQ)_files/image30.png" width="684.5"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 4;" value="5">On the toolbar in the top right corner of page, click <img alt="Picture 200" height="29.3" src="assets/images/Purchase Requisition Creation (HQ)_files/image31.png" width="31.7"/>(refresh). This will update the PR status from In review to Draft, so that changes can be made.</li>
+    <li>Make changes as required.</li>
+    <li>Update select fields as required.</li>
+    <li>To remove a PR line, select the line item(s) and click Remove.</li>
+    <li>To delete an entire PR, click Delete on the menu at the top of the page.</li>
+    <li>If updates were made to PR, resubmit PR to approval workflow.</li>
+  </ol>
+  <p>‎</p>
+  <h3>End of procedure</h3>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

@@ -142,5 +142,11 @@
       <changefreq>monthly</changefreq>
     </url>
   
+    <url>
+      <loc>integra-help-staging.azurewebsites.net/Receive,_Quality_Inspection,_Dispatch,_Transfers,_Returns_(CRRD).htm</loc>
+      <lastmod>2021-07-08</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+  
 
 </urlset>

@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "8";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Intercompany Accounting</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Intercompany Accounting">
+        <span>Intercompany Accounting</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <span>Click here to see this page in full context</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p> </p>
+  </div>
+  <div>
+  <h1 class="Heading1"><a id="Business_Process_Overview"></a>Business Process Overview</h1>
+  <p>Integra facilitates the ability to post journals between different reporting entities. This process is defined as intercompany accounting. The intercompany accounting process ensures that on a regular monthly basis, expenditures paid by one office on behalf of another office are booked to the correct Integra reporting entity/SUN database.</p>
+  <p>Until deployment of Integra to all offices is complete, there are two processes that will be followed: 1. End-state solution and 2. Interim solution.</p>
+  <h2 class="Heading2"><a id="End-state_solution"></a>End-state solution</h2>
+  <p>The Integra solution for Intercompany Accounting was developed to achieve the following:</p>
+  <p>Streamline the intercompany process</p>
+  <p>Remove the need for too many staff members being involved in the process</p>
+  <p>Take advantage of Integra’s ability to allow a user with the correct security access to post directly to a different Integra legal entity.</p>
+  <h6 class="Heading6">The role responsible* for the executing office must always move the intercompany entry from the general ledger (GL) to the appropriate project (D1) in the Projects module (subledger). (local office CRRD Deputy Director Finance; RAI Finance Manager)</h6>
+  <p>This movement entry is necessary because posting these entries to the general ledger does not mean the entries automatically flow into the Projects module. If the entries remained in the general ledger the project budget balances in the Projects module would be incorrect. This would then have an impact on revenue recognition.</p>
+  <p>As part of moving these transactions from the GL to the project, there is a requirement to ensure the correct project category (D2) and other financial dimensions have been coded in the original entry as there is no ability for one legal entity to charge another legal entity’s project module through the intercompany journal.</p>
+  <p> </p>
+  <h2 class="Heading2"><a id="End-state_Business_Process_Flow"></a>End-state Business Process Flow</h2>
+  <h3 class="Heading3">Interim Solution</h3>
+  <p>Until IRC completes deployment of Integra to all offices, there is an interim period where some offices are using Integra and some offices are still using SUN.</p>
+  <p>During this transitional state, there is a requirement to post entries into multiple databases in Integra.</p>
+  <p>The databases involved in intercompany accounting are:</p>
+  <p>9IRC - the Integra reporting entity for HQ; it is where all the HQ and regional unit budgets are set up and it is the reporting entity where HQ staff transact daily.</p>
+  <p>ICCO - the Integra database that HQ and any office on Integra will post into for all entries paid for on behalf of another office that will need to be reflected in that office’s SUN database.</p>
+  <p>The postings to ICCO are converted into an output file with a format compatible with SUN Systems. This file is the equivalent of today’s HQ ZHQ File.<br/>
+    ‎Local Finance staff will continue to upload this file into their SUN database on a monthly basis.</p>
+  <p>ISUN - the Integra database that HQ will use to post all local SUN final monthly SAF files.<br/>
+    ‎The SAF files will be converted into a format compatible with Integra and mapped to financial dimensions in Integra.</p>
+  <p>Finance staff will continue to re-code their intercompany entries received by adding the T1, T2 codes and any other necessary T codes when they receive their intercompany entries via their ZHQ file and re-code to the appropriate T1.</p>
+  <h2 class="Heading2"><a id="Interim-state_Business_Process_Flow"></a>Interim-state Business Process Flow</h2>
+  <h3 class="Heading3">Key Messages for Intercompany Accounting with Integra</h3>
+  <p>Both the interim and end-state solutions require intercompany postings to be re-coded to the relevant projects.</p>
+  <p>When the executing office is on Integra, but the requesting office is not, the executing office must post to the interim reporting entity ICCO.</p>
+  <p>ICCO is only used when the executing office is on Integra and the receiving office is still using SUN.</p>
+  <p>When the executing office is still using SUN and the requesting office is using Integra, the executing office codes transactions to their balance sheet under main account 29300 or 29400, per current process.</p>
+  <p>When both offices are on Integra, the posting is done directly between the two reporting entity codes in Integra; there is no need to post to ICCO or ISUN.</p>
+  <p>Reporting entities do not have access to each other’s sub-ledgers, therefore, intercompany transactions must be posted to the requesting office’s GL.</p>
+  <p>The requesting office must then reverse the charge from their GL and post it to the relevant sub-ledger, e.g., Project management and accounting module.</p>
+  <h3 class="Heading3">IRC’s Intercompany Transactions</h3>
+  <p>Outlined below are the various types of intercompany transactions that may be processed.</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:221.66666666666666666666666667px"/>
+        <col style="width:491.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">From/To Office</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Details</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>Interim State (used when one or more of the companies are not yet using Integra)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>HQ to SUN Office</p>
+          </td>
+          <td>
+            <p>HQ is paying for something on behalf of another office who is still on SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>SUN office to HQ</p>
+          </td>
+          <td>
+            <p>An office that is still on SUN is paying for something on behalf of HQ.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Integra office to SUN office</p>
+          </td>
+          <td>
+            <p>A non-HQ office that is on Integra is paying on behalf of another office who is still on SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>SUN office to Integra office</p>
+          </td>
+          <td>
+            <p>An office that is still on SUN is paying for something on behalf of a non-HQ office that is on Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>SUN office to SUN office</p>
+          </td>
+          <td>
+            <p>An office that is still on SUN is paying for something on behalf of another office that is still on SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>End State (used when both companies are using Integra)</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Integra office to Integra office</p>
+          </td>
+          <td>
+            <p>One legal entity on Integra is paying for something on behalf of another legal entity on Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>Example: HQ purchases and pays for goods on behalf of the Atlanta office. HQ uses the intercompany journal to post the expenditure to Atlanta’s GL. (Remember, they cannot charge it to a sub-ledger. Atlanta must then reverse it out of their GL and post it to their sub-ledger (typically to projects). There may be some instances where Atlanta will not need to reverse the amount to a sub-ledger, e.g., prepayments, as they always sit in the GL.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2"><a id="Process_Intercompany_Transaction_in_Integra"></a>Process Intercompany Transaction in Integra</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to process an intercompany transaction in Integra. This same procedure can be used for all scenarios where the executing office is using Integra. However, specific field information will vary depending on the scenario.</p>
+  <p>Refer to the scenarios in the appendix of this document for detailed guidance on accounting entries.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="AlphaNumeric">
+    <li>From the Integra home page, navigate modules to General ledger à Journal entries à General journals.</li>
+    <li>On the menu at the top of page, click New.</li>
+    <li>A new journal row is added at the top of the table. In the Name field, click the drop-down arrow and select GL-IC.</li>
+    <li>In the Description field, overwrite the default text with a meaningful description for the intercompany transfer.</li>
+    <li>Select the new row and click Lines on the menu at the top of the page.</li>
+    <li>Complete the following fields for 1st line and 2nd (offset) line in the journal.
+      <ul class="Disc">
+        <li>Company</li>
+        <li>Account type</li>
+        <li>Account</li>
+        <li>Description</li>
+        <li>Debit/Credit</li>
+      </ul>
+    </li>
+    <li>Enter the required financial dimensions for each line.</li>
+    <li>Submit journal to workflow for approval.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed an intercompany transaction in Integra.</p>
+  <h3 class="Heading3">Follow-on procedures</h3>
+  <p>Execute AP Payment Process</p>
+  <p>Finance Controller of the requesting office moves expense from General Ledger to Project<br/>
+    ‎</p>
+  <h2 class="Heading2"><a id="View_Originating_Company_in_Voucher_Transactions_Report"></a>View Originating Company in Voucher Transactions Report</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure display the Voucher transactions inquiry and view originating office for intercompany transactions.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol class="Decimal">
+    <li>From the Integra home page, navigate modules to General ledger à Inquiries and reports à Voucher transactions.</li>
+    <li>Customize the table according to your filtering needs.</li>
+    <li>Click OK to proceed.</li>
+    <li>Review the list of results. Scroll to the right to the Originating company column.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed the Voucher transactions inquiry to see originating company for intercompany transaction.</p>
+  <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+  <h2 class="Heading2"><a id="Sample_Interim_Scenarios"></a>Sample Interim Scenarios</h2>
+  <p>The table below identifies the legal entity codes and system of operation for the offices referenced in the follow-on intercompany accounting scenarios.</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:107.66666666666666666666666667px"/>
+        <col style="width:144px"/>
+        <col style="width:144px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Office</span></p>
+          </td>
+          <td>
+            <p>Legal Entity</p>
+          </td>
+          <td>
+            <p>System</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>HQ</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Uganda</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Sierra Leone</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Nigeria</p>
+          </td>
+          <td>
+            <p>2NGA*</p>
+          </td>
+          <td>
+            <p>SUN</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Thailand</p>
+          </td>
+          <td>
+            <p>3THA*</p>
+          </td>
+          <td>
+            <p>SUN</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The following five sample scenarios are outlined in detail below.</p>
+  <p>HQ Integra (9IRC) to SUN office (2NGA)</p>
+  <p>SUN office (2NGA) to HQ Integra (Due from HQ)</p>
+  <p>Integra Office (2UGA) to SUN office (2NGA)</p>
+  <p>SUN office (2NGA) to Integra office (2UGA)</p>
+  <p>SUN office (2NGA) to SUN office (3THA)</p>
+  <h2 class="Heading2"><a id="HQ_Integra_(9IRC)_to_SUN_office_(2NGA)"></a>HQ Integra (9IRC) to SUN office (2NGA)</h2>
+  <p>The expense entry initiated at HQ (Integra) requires the following journals to be posted.</p>
+  <p>In 9IRC ledger in Integra, the Company field in the Vendor invoice journal screen, go to the General tab and then choose ICCO under ACCOUNT as the Company.</p>
+  <p>The first entry is to be posted in both ICCO and 9IRC companies (Integra) to charge 2NGA – Nigeria (SUN office) via an Intercompany entry and the second entry is to process the Vendor payment in 9IRC (Integra) i.e., Vendor Settlement. These entries are currently being posted by HQ AP staff, Regional Controllers and Finance Officers for RAI.</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:65.866666666666666666666666667px"/>
+        <col style="width:85px"/>
+        <col style="width:111.2px"/>
+        <col style="width:106.2px"/>
+        <col style="width:85px"/>
+        <col style="width:70.933333333333333333333333333px"/>
+        <col style="width:87.4px"/>
+        <col style="width:87.4px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Company</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Main Account</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Account Type</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>OD104</p>
+          </td>
+          <td>
+            <p>SAWP</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Vendor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="8">
+            <p>Vendor Settlement</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Vendor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>10001HQUSD</p>
+          </td>
+          <td>
+            <p>Bank</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>This intercompany entry will be sent from HQ to field offices on a monthly basis, similar to the ZHQ file and the 2NGA - Nigeria office will upload this file to the local instance of SUN and recode the original entry to add the T2/T3 and any other T codes, as necessary.</p>
+  <h2 class="Heading2"><a id="SUN_office_(2NGA)_to_HQ_Integra_(Due_from_HQ)"></a>SUN office (2NGA) to HQ Integra (Due from HQ)</h2>
+  <p>This intercompany entry will be first posted in 2NGA Nigeria’s SUN database to capture the expense transaction and payment as follows:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:68.266666666666666666666666667px"/>
+        <col style="width:70.2px"/>
+        <col style="width:107.53333333333333333333333333px"/>
+        <col style="width:93.13333333333333333333333333px"/>
+        <col style="width:53.733333333333333333333333333px"/>
+        <col style="width:51.733333333333333333333333333px"/>
+        <col style="width:50.266666666666666666666666667px"/>
+        <col style="width:65.133333333333333333333333333px"/>
+        <col style="width:70px"/>
+        <col style="width:72px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">SUN DB</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p style="color: #ffffff"><span style="color: #fff">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p style="color: #fff">T4</p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>29300</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>100xx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Once JV has been received from 2NGA – Nigeria office (SUN), the Regional Controller will use the information in the SUN Journal Voucher (including all the appropriate D codes), paste into a Dynad Journal and post the following journal in both 9IRC and ICCO companies in Integra:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:60.866666666666666666666666667px"/>
+        <col style="width:76.333333333333333333333333333px"/>
+        <col style="width:108.8px"/>
+        <col style="width:84.66666666666666666666666667px"/>
+        <col style="width:53.733333333333333333333333333px"/>
+        <col style="width:73.733333333333333333333333333px"/>
+        <col style="width:53.066666666666666666666666667px"/>
+        <col style="width:64.066666666666666666666666667px"/>
+        <col style="width:69.133333333333333333333333333px"/>
+        <col style="width:58.2px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Company</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p style="color: #fff">D6</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Project</p>
+          </td>
+          <td>
+            <p>U2020</p>
+          </td>
+          <td>
+            <p>72000.0.e</p>
+          </td>
+          <td>
+            <p>ZZZZ</p>
+          </td>
+          <td>
+            <p>AMBDU</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>GRNT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>29300</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2"><a id="Integra_Office_(2UGA)_to_SUN_office_(2NGA)"></a>Integra Office (2UGA) to SUN office (2NGA)</h2>
+  <p>The 2UGA – Uganda office will post the intercompany entry to the ICCO company to record the intercompany expense paid on behalf of 2NGA – Nigeria and will record the vendor payment in their 2UGA Integra company as follows:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:62.4px"/>
+        <col style="width:81.26666666666666666666666667px"/>
+        <col style="width:90.33333333333333333333333333px"/>
+        <col style="width:138px"/>
+        <col style="width:66px"/>
+        <col style="width:72px"/>
+        <col style="width:66px"/>
+        <col style="width:66px"/>
+        <col style="width:60px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Company</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p style="color: #fff"><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>ONPS</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Vendor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><br/>
+    ‎The 2NGA – Nigeria office (SUN) will receive this entry as part of their ZHQ file and will re-code to add T2/T3 (if these have been provided) and any other T codes as necessary.</p>
+  <h2 class="Heading2"><a id="SUN_office_(2NGA)_to_Integra_office_(2UGA)"></a>SUN office (2NGA) to Integra office (2UGA)</h2>
+  <p>The first entry is created in the SUN Database of 2NGA – Nigeria, using Main Account 29400 to easily identify this specific intercompany entry.</p>
+  <p>As soon as the 2NGA – Nigeria office (SUN) emails the 2UGA – Uganda office (Integra) that they have paid expenses on Uganda’s behalf, the 2UGA - Uganda office is required to post the second entry within the same period in Integra.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:702.0px">
+      <colgroup>
+        <col style="width:64.6px"/>
+        <col style="width:91.4px"/>
+        <col style="width:78px"/>
+        <col style="width:90px"/>
+        <col style="width:66px"/>
+        <col style="width:54px"/>
+        <col style="width:54px"/>
+        <col style="width:72px"/>
+        <col style="width:66px"/>
+        <col style="width:66px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Company</span></p>
+            <p><span style="color:#ffffff;">(SUN DB)</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>Bank</p>
+          </td>
+          <td>
+            <p>100xx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR/CR</p>
+          </td>
+          <td>
+            <p>Company</p>
+            <p>(INTEGRA)</p>
+          </td>
+          <td>
+            <p>Main Acct</p>
+          </td>
+          <td>
+            <p>Acct Type</p>
+          </td>
+          <td>
+            <p>D1</p>
+          </td>
+          <td>
+            <p>D2</p>
+          </td>
+          <td>
+            <p>D3</p>
+          </td>
+          <td>
+            <p>D4</p>
+          </td>
+          <td>
+            <p>D5</p>
+          </td>
+          <td>
+            <p>D6</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>7xxxx</p>
+          </td>
+          <td>
+            <p>Project</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>SARL</p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>**HQ International Finance will reconcile the 29400 Main Account in each SUN database on a monthly basis.<br/>
+    ‎</p>
+  <h2 class="Heading2"><a id="SUN_office_(2NGA)_to_SUN_office_(3THA)"></a>SUN office (2NGA) to SUN office (3THA)</h2>
+  <p>In this scenario, the Nigeria office is making a payment on behalf of the Thailand office. The first entry is how 2NGA – Nigeria office will record the intercompany entry and bank payment on behalf of 3THA in their SUN database.</p>
+  <p>Once the 3THA – Thailand office receives notification of this intercompany payment made on their behalf by 2NGA – Nigeria office, the Thailand office will record the second entry below to charge the appropriate T1 and all other relevant T codes and will book the credit to the Main Account 29400 in their SUN database.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:702.9px">
+      <colgroup>
+        <col style="width:67.2px"/>
+        <col style="width:86.4px"/>
+        <col style="width:86.4px"/>
+        <col style="width:66px"/>
+        <col style="width:72px"/>
+        <col style="width:54px"/>
+        <col style="width:58.4px"/>
+        <col style="width:67.2px"/>
+        <col style="width:57.6px"/>
+        <col style="width:87.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Company</span></p>
+            <p><span style="color:#ffffff;">SUN DB</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>THBNK</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>Bank</p>
+          </td>
+          <td>
+            <p>100xx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>GUxxx</p>
+          </td>
+          <td>
+            <p>AB01</p>
+          </td>
+          <td>
+            <p>OADM</p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>THBNK</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>3THA</p>
+          </td>
+          <td>
+            <p>THBNK</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>**HQ International Finance will reconcile the 29400 Main Account in each SUN database on a monthly basis.</p>
+  <h2 class="Heading2"><a id="Sample_End-state_Scenario"></a>Sample End-state Scenario</h2>
+  <h2 class="Heading2"><a id="Integra_office_(2SLE)_to_Integra_office_(2UGA)"></a>Integra office (2SLE) to Integra office (2UGA)</h2>
+  <p>In this scenario, the 2SLE – Sierra Leone office (Integra) has made a payment on behalf of the 2UGA – Uganda office (Integra).</p>
+  <p>As both offices are on Integra, the 2SLE – Sierra Leone office can directly charge the 2UGA – Uganda office legal entity on Integra. The first entry is the Sierra Leone office posting the intercompany journal directly to Uganda’s general ledger.</p>
+  <p>The second entry is the Sierra Leone office making the payment to the vendor.</p>
+  <p>The third entry is the Uganda office reversing the intercompany journal entry from their General Ledger in Integra and posting the entry to their Project in the Projects module in Integra and adding all relevant financial dimensions.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:707.7px">
+      <colgroup>
+        <col style="width:85.86666666666666666666666667px"/>
+        <col style="width:84.2px"/>
+        <col style="width:77.666666666666666666666666667px"/>
+        <col style="width:82.66666666666666666666666667px"/>
+        <col style="width:54.466666666666666666666666667px"/>
+        <col style="width:85.93333333333333333333333333px"/>
+        <col style="width:57px"/>
+        <col style="width:71.4px"/>
+        <col style="width:57px"/>
+        <col style="width:51.466666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Company</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Main Acct</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Acct Type</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>2SLE Entry</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>DF208</p>
+          </td>
+          <td>
+            <p>DF208xxx</p>
+          </td>
+          <td>
+            <p>HEHS</p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Vendor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>SLFRT</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10">
+            <p>Vendor Settlement by 2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Vendor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>SLFRT</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p>10xxx</p>
+          </td>
+          <td>
+            <p>Bank</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>SLFRT</p>
+          </td>
+          <td>
+            <p>2SLE</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>2UGA Entry</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Project</p>
+          </td>
+          <td>
+            <p>DF208</p>
+          </td>
+          <td>
+            <p>DF208xxx</p>
+          </td>
+          <td>
+            <p>HEHS</p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Ledger</p>
+          </td>
+          <td>
+            <p>DF208</p>
+          </td>
+          <td>
+            <p>DF208xxx</p>
+          </td>
+          <td>
+            <p>HEHS</p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>PRIM</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+  </div>
+
+</body></html>

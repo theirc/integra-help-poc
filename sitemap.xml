@@ -11,6 +11,12 @@
     </url>
   
     <url>
+      <loc>integra-help-staging.azurewebsites.net/Procurement_Approvals.htm</loc>
+      <lastmod>2021-07-08</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
       <loc>integra-help-staging.azurewebsites.net/Developing_Project_Budget_Templates.htm</loc>
       <lastmod>2021-07-08</lastmod>
       <changefreq>monthly</changefreq>
@@ -72,6 +78,12 @@
   
     <url>
       <loc>integra-help-staging.azurewebsites.net/Cash_and_Bank_Management.htm</loc>
+      <lastmod>2021-07-08</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
+      <loc>integra-help-staging.azurewebsites.net/Intercompany_Accounting.htm</loc>
       <lastmod>2021-07-08</lastmod>
       <changefreq>monthly</changefreq>
     </url>

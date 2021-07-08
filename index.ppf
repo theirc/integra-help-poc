@@ -3,42 +3,10 @@
   <contextmap>
     
   </contextmap>
-  <topiclist defaulttopic="Accounts_Receivable.htm">
+  <topiclist defaulttopic="Personalization_Overview.htm">
     
     <topic>
-      Accounts_Receivable.htm
-    </topic>
-    
-    <topic>
-      Accounts_Receivable.htm
-    </topic>
-    
-    <topic>
-      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
-    </topic>
-    
-    <topic>
-      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
-    </topic>
-    
-    <topic>
-      Business_Process_Information.htm
-    </topic>
-    
-    <topic>
-      Business_Process_Information.htm
-    </topic>
-    
-    <topic>
-      Cash_and_Bank_Management.htm
-    </topic>
-    
-    <topic>
-      CIK_Distribution_in_Integra_via_Expense_Journal.htm
-    </topic>
-    
-    <topic>
-      Developing_Project_Budget_Templates.htm
+      Personalization_Overview.htm
     </topic>
     
     <topic>
@@ -46,51 +14,15 @@
     </topic>
     
     <topic>
-      Intercompany_Accounting.htm
+      Setting_up_Clients_as_Vendors_in_Integra.htm
     </topic>
     
     <topic>
-      Inventory_Management_(RAI).htm
+      Setting_up_Clients_as_Vendors_in_Integra.htm
     </topic>
     
     <topic>
-      Journal_Entries_DynAD_Template_Upload.htm
-    </topic>
-    
-    <topic>
-      Journal_Entries_DynAD_Template_Upload.htm
-    </topic>
-    
-    <topic>
-      Key_Components_of_Inventory_Management.htm
-    </topic>
-    
-    <topic>
-      Milestone_Tracking_for_Projects_in_Integra.htm
-    </topic>
-    
-    <topic>
-      Month-End_Close_(RAI_US).htm
-    </topic>
-    
-    <topic>
-      Month-End_Close_(RAI_US).htm
-    </topic>
-    
-    <topic>
-      Personalization_Overview.htm
-    </topic>
-    
-    <topic>
-      Processing_AP_Invoices_–_Business_Process.htm
-    </topic>
-    
-    <topic>
-      Procure_to_Confirm.htm
-    </topic>
-    
-    <topic>
-      Procurement_Approvals.htm
+      CIK_Distribution_in_Integra_via_Expense_Journal.htm
     </topic>
     
     <topic>
@@ -98,7 +30,51 @@
     </topic>
     
     <topic>
-      Purchase_Order_Processing_(HQ).htm
+      Journal_Entries_DynAD_Template_Upload.htm
+    </topic>
+    
+    <topic>
+      Journal_Entries_DynAD_Template_Upload.htm
+    </topic>
+    
+    <topic>
+      Processing_AP_Invoices_–_Business_Process.htm
+    </topic>
+    
+    <topic>
+      Accounts_Receivable.htm
+    </topic>
+    
+    <topic>
+      Accounts_Receivable.htm
+    </topic>
+    
+    <topic>
+      Cash_and_Bank_Management.htm
+    </topic>
+    
+    <topic>
+      Intercompany_Accounting.htm
+    </topic>
+    
+    <topic>
+      Business_Process_Information.htm
+    </topic>
+    
+    <topic>
+      Business_Process_Information.htm
+    </topic>
+    
+    <topic>
+      Month-End_Close_(RAI_US).htm
+    </topic>
+    
+    <topic>
+      Month-End_Close_(RAI_US).htm
+    </topic>
+    
+    <topic>
+      Vendor_Record_Creation.htm
     </topic>
     
     <topic>
@@ -110,15 +86,11 @@
     </topic>
     
     <topic>
-      Receive,_Quality_Inspection,_Dispatch,_Transfers,_Returns_(CRRD).htm
+      Procurement_Approvals.htm
     </topic>
     
     <topic>
-      Receive,_Quality_Inspection,_Dispatch,_Transfers,_Returns_(CRRD).htm
-    </topic>
-    
-    <topic>
-      Receive_and_Dispatch_(RAI).htm
+      Procure_to_Confirm.htm
     </topic>
     
     <topic>
@@ -126,15 +98,11 @@
     </topic>
     
     <topic>
-      Setting_up_Clients_as_Vendors_in_Integra.htm
+      Receive_and_Dispatch_(RAI).htm
     </topic>
     
     <topic>
-      Setting_up_Clients_as_Vendors_in_Integra.htm
-    </topic>
-    
-    <topic>
-      Spending_Plans.htm
+      Inventory_Management_(RAI).htm
     </topic>
     
     <topic>
@@ -142,11 +110,19 @@
     </topic>
     
     <topic>
-      UG_PRJ_Project_Amendments_QA.htm
+      Receive,_Quality_Inspection,_Dispatch,_Transfers,_Returns_(CRRD).htm
     </topic>
     
     <topic>
-      UG_PRJ_Project_Amendments_QA.htm
+      Receive,_Quality_Inspection,_Dispatch,_Transfers,_Returns_(CRRD).htm
+    </topic>
+    
+    <topic>
+      Key_Components_of_Inventory_Management.htm
+    </topic>
+    
+    <topic>
+      Purchase_Order_Processing_(HQ).htm
     </topic>
     
     <topic>
@@ -154,11 +130,31 @@
     </topic>
     
     <topic>
-      Vendor_Record_Creation.htm
+      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
     </topic>
     
     <topic>
-      Vendor_Record_Creation.htm
+      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
+    </topic>
+    
+    <topic>
+      Developing_Project_Budget_Templates.htm
+    </topic>
+    
+    <topic>
+      UG_PRJ_Project_Amendments_QA.htm
+    </topic>
+    
+    <topic>
+      UG_PRJ_Project_Amendments_QA.htm
+    </topic>
+    
+    <topic>
+      Spending_Plans.htm
+    </topic>
+    
+    <topic>
+      Milestone_Tracking_for_Projects_in_Integra.htm
     </topic>
     
   </topiclist>

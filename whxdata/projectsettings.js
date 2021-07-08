@@ -2,12 +2,12 @@
 (function() {
 rh = window.rh;
 model = rh.model;
-var defaultTopic = "Beneficiary_(BENE)_Vendor_Creation_(RAI).htm";
+var defaultTopic = "Accounts_Receivable.htm";
 rh._.exports(defaultTopic);
-rh.consts('DEFAULT_TOPIC', encodeURI("Beneficiary_(BENE)_Vendor_Creation_(RAI).htm"));
+rh.consts('DEFAULT_TOPIC', encodeURI("Accounts_Receivable.htm"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', 'ea55ec4a-6490-47f1-ba6e-6766c7912569' || 'preview');
+rh.consts('HELP_ID', '698f0d69-5484-46fa-9540-de344a4f26a3' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

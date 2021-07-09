@@ -79,7 +79,7 @@
     <p> </p>
   </div>
   <div>
-  <h1 class="Heading1"><a id="Business_Process_OverviewProcess_Flow_DiagramJournal_Types_in_IntegraRefer_to_the_following_document_on_RescueNet_for_a_comprehensive_list_of_journal_types_and_their_usage:_Journal_Types_in_IntegraThe_DynAd_TemplateThe_DynAd_Template_is_a_tool_used_to_upload_mass_journal_entries_into_Integra.The_Dynad_Template_is_particularly_useful_when_Finance_needs_to_post_mass_entries_from_one_Integra_legal_entity_general_ledger_to_another.__It_also_facilitates_postings_between_different_modules_(sub_ledgers),_and_between_the_general_ledger_and_modules,_within_the_same_legal_entity._To/from_different_sub-ledger/modulesTo/from_general_ledgerTo_general_ledger_from_sub-ledger/modulesTo_sub-ledger/modules_from_general_ledgerGeneral_Rule:_Use_the_DynAd_Template_if_there_are_more_than_10_journal_entries_that_need_to_be_uploaded,_otherwise,_create_journal_entries_directly_in_Integra.The_table_below_provides_a_comprehensive_list_of_different_from/to_posting_scenarios_available_using_the_DynAd_Template:Module/AccountModule/Offset_AccountLedgerVendorLedgerBankLedgerLedgerProject_LedgerProjectVendorCustomerBankFixed_AssetsLedgerBankBankProjectBankBankVendorCustomer_CustomerProjectCustomerProject_ProjectVendorVendor_There_are_two_different_templates_available_to_accommodate_different_currencies:DynAd_Journal_Template_(used_for_USD/Base_currency_transactions)DynAd_Journal_Template_Other_Amount_(used_for_all_non-USD_currency_transactions)__The_difference_between_the_two_templates_above_is_that_there_are_two_additional_columns_in_the_non-USD/Base_version_to_account_for_the_exchange_rate_type_and_the_exchange_rate_used._Processing_Foreign_Currency_Journal_EntriesOn_Import_from_the_DynAd_Template:The_transaction_date_determines_which_exchange_rate_to_use,_if_re-classifying_an_entry_from/to_the_current_period.The_amount_in_transaction_currency_is_converted_using_the_Integra_rate_and_posted_to_the_base/accounting_currency_amount_field.Make_sure_the_exchange_rate_is_entered_as_a_factor_of_100._For_example,_an_exchange_rate_entered_as_1.1463_will_be_translated_to_114.63_in_the_upload_journal._Additionally,_currency_clearing_between_currencies_can_also_be_done_using_the_DynAd_journal._This_is_often_the_case_for_cash_receipt_accounts_for_funds_sent_from_HQ_but_received_in_local_currency._"></a>Business Process Overview</h1>
+  <h1 class="Heading1"><a id="Business_Process_Overview"></a>Business Process Overview</h1>
   <h2 class="Heading2"><a id="Process_Flow_Diagram"></a>Process Flow Diagram</h2>
   <p><img alt="Picture 5" height="196.5" src="assets/images/Journal Entries DynAD Template Upload_files/image1.png" width="633.7"/></p>
   <h2 class="Heading2"><a id="Journal_Types_in_Integra"></a>Journal Types in Integra</h2>
@@ -245,27 +245,27 @@
     <li>Financial dimensions are known</li>
   </ul>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Navigate modules to General ledger &gt; Journal entries &gt; General journals.</li>
   </ol>
   <p><img alt="Picture 61" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image2.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 1;" value="2">On the menu at the top, click New.</li>
   </ol>
   <p><img alt="Picture 236597765" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image3.png" style="cursor: nwse-resize;" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 2;" value="3">A row is added at the top of the table. In the Name field, click the drop-down arrow and select the relevant journal type from the selection list, e.g., JE (journal voucher); GL_IC (Intercompany transaction), etc.</li>
   </ol>
   <p><img alt="Picture 236597766" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image4.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">In the Description field, overwrite the default text with a meaningful description of the journal.</li>
   </ol>
   <p><img alt="Picture 236597768" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image5.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">On the menu at the top, click Lines.</li>
   </ol>
   <p><img alt="Picture 236597781" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image6.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 5;" value="6">Validate that a new journal line has been added to the table. (If not, click New just above the table grid to add a line.)</li>
     <li>Complete/validate the following fields on the journal voucher line: </li>
   </ol>
@@ -386,29 +386,29 @@
   </div>
   <p> </p>
   <p><img alt="Picture 236597783" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image7.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 7;" value="8">On the menu just above the table, click Financial dimensions and select Account from the drop-down selection list.</li>
   </ol>
   <p><img alt="Picture 236597784" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image8.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 8;" value="9">Complete the other required dimension field based on the IRC account structure. For example, a project transaction requires a D1-D2-D3-D4-D5-D6. The D7 is only required for salary and benefits.</li>
   </ol>
   <h6 class="Heading6">Note: There is only one account used for subsidiaries. All subsidiaries with charges must be listed as 786500.0.e for the D2 Project category.</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 9;" value="10">Close the financial dimensions window to return to the voucher lines screen.</li>
   </ol>
   <p><img alt="Picture 1" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image9.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 10;" value="11">To add the offset line, click New just above table grid.</li>
   </ol>
   <p><img alt="Picture 75" height="238.4" src="assets/images/Journal Entries DynAD Template Upload_files/image10.png" width="624.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 11;" value="12">Complete all required fields in the voucher line for the offset line.</li>
     <li>To enter financial dimensions for the offset line, click Financial dimensions and select Offset account.</li>
     <li>Complete the financial dimensions for the offset line(s).</li>
   </ol>
   <p><img alt="Picture 236597808" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image11.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 14;" value="15">On the menu at the top of page, click Validate and select Simulate posting.</li>
     <li>When posting simulation is confirmed, close the Journal voucher page to return to the Genera journals page.</li>
     <li>In the list of journals, select the journal just created and attach any supporting documentation. (Click the paperclip icon in the top-right corner)</li>
@@ -425,18 +425,18 @@
     <li>Financial dimensions are known.</li>
   </ul>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Navigate modules to General Ledger &gt; Journal entries &gt; Periodic journals.</li>
   </ol>
   <p><img alt="A screenshot of a computer
 Description automatically generated" height="296.9" src="assets/images/Journal Entries DynAD Template Upload_files/image12.png" width="624.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 1;" value="2">Click New and select PER_JE under the Name field.</li>
     <li>On the menu at the top, click Lines.</li>
   </ol>
   <p><img alt="A screenshot of a social media post
 Description automatically generated" height="194.6" src="assets/images/Journal Entries DynAD Template Upload_files/image13.png" width="624.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">In the Account type field, select the relevant option from the drop-down selection list.</li>
     <li>In the Account field, populate the field with the relevant entry.</li>
     <li>Enter a description in the Description field.</li>
@@ -445,37 +445,37 @@ Description automatically generated" height="194.6" src="assets/images/Journal E
   </ol>
   <p><img alt="A screenshot of a computer screen
 Description automatically generated" height="317.2" src="assets/images/Journal Entries DynAD Template Upload_files/image14.png" width="659.5"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 8;" value="9">Complete the relevant financial dimensions for the line and click OK.</li>
     <li>Save the periodic journal.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
   <p>You have created a periodic journal.</p>
   <h2 class="Heading2"><a id="Create_a_Journal_Entry_from_a_Periodic_Journal"></a>Create a Journal Entry from a Periodic Journal</h2>
-  <ol class="Decimal">
+  <ol>
     <li>To access the periodic journal you created previously, follow the steps below:</li>
     <li>Go to General ledger &gt; Journal entries &gt; General journals.</li>
   </ol>
   <p><img alt="A screenshot of a social media post
 Description automatically generated" height="213.2" src="assets/images/Journal Entries DynAD Template Upload_files/image15.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 2;" value="3">Click New.</li>
     <li>Click Lines at the top toolbar.</li>
   </ol>
   <p><img alt="A screenshot of a computer screen
 Description automatically generated" height="330.1" src="assets/images/Journal Entries DynAD Template Upload_files/image16.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">Click the Period journal drop down and select Retrieve journal.</li>
     <li>In the pop-up window, under periodic journal number, select your periodic journal number that you created previously.</li>
   </ol>
   <p><img alt="A screenshot of a computer
 Description automatically generated" height="302.2" src="assets/images/Journal Entries DynAD Template Upload_files/image17.png" width="664.5"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 5;" value="6">In the To date field, enter a date. This is the date when the journal is created.</li>
   </ol>
   <p><img alt="A screenshot of a computer
 Description automatically generated" height="261.3" src="assets/images/Journal Entries DynAD Template Upload_files/image18.png" width="659.5"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 6;" value="7">In the Copy or move journal field, select Copy.</li>
     <li>Click OK.</li>
     <li>Make any required changes, if applicable.</li>
@@ -489,26 +489,26 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>Use this procedure to correct errors on main account codes or financial dimensions.</p>
   <p>This procedure reserves the original posting and recreates new ones.</p>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Navigate to Project management and accounting &gt; Projects &gt; All projects.</li>
   </ol>
   <p><img alt="Picture 41" height="275.5" src="assets/images/Journal Entries DynAD Template Upload_files/image19.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 1;" value="2">Search for and select the relevant project line.</li>
     <li>On the menu at the top of page, click Manage, and select Posted transactions.</li>
   </ol>
   <p><img alt="Picture 46" height="274.1" src="assets/images/Journal Entries DynAD Template Upload_files/image20.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">Select the posted project transaction that requires adjustment and click Adjust accounting under the Process fast tab.</li>
   </ol>
   <p><img alt="Picture 47" height="300.9" src="assets/images/Journal Entries DynAD Template Upload_files/image21.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">A dialog box opens that displays the current accounting entries at the top section of dialog box. Review the current entries.</li>
     <li>In the bottom section, enter a new main account and/or financial dimensions to recode transaction, as required.</li>
     <li>Scroll down to bottom of the dialog box.</li>
   </ol>
   <p><img alt="Picture 51" height="299.7" src="assets/images/Journal Entries DynAD Template Upload_files/image22.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 7;" value="8">Click Preview to ensure all values are correct then click Post to post the recode transaction.</li>
     <li>In the that will allow you to see the current accounting entry and will also let you select the new account and dimensions.</li>
   </ol>
@@ -526,17 +526,17 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>Enter balance sheet account corrections</p>
   <p data-list-level="2">This is mainly used for correcting wrong account codes from the general ledger.</p>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Adjusting project transactions per project in Integra steps:</li>
     <li>Navigate to Project management and accounting &gt; Projects &gt; All projects</li>
     <li>Click Project ID, in the drop-down search for the project ID that you want to adjust (select “contains” for easy search).</li>
   </ol>
   <p><img alt="Picture 160" height="229.6" src="assets/images/Journal Entries DynAD Template Upload_files/image23.png" width="662.4"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">Under Manage &gt; Process, click Adjust transactions.</li>
   </ol>
   <p><img alt="Picture 162" height="159.7" src="assets/images/Journal Entries DynAD Template Upload_files/image24.png" width="662.4"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">On the menu at the top, click Select. A pop-up window will appear.</li>
     <li>In the pop-up window, make sure that expense, item and/or fee are marked to Yes depending on the transaction type that you are planning to adjust.</li>
     <li>Under Project Date, select or type From date and To date. This is the date range for which you want to extract your transaction for adjustment.</li>
@@ -545,18 +545,18 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>Click OK.</li>
   </ol>
   <p><img alt="Picture 164" height="291.6" src="assets/images/Journal Entries DynAD Template Upload_files/image25.png" width="662.4"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 10;" value="11">From the list of transactions, select those that you wish to adjust.</li>
   </ol>
   <p><img alt="Picture 169" height="156.2" src="assets/images/Journal Entries DynAD Template Upload_files/image26.png" width="662.2"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 11;" value="12">Click Adjust.</li>
     <li>In the popup window, under Project ID, type the project ID or D1 code where you wish to move the transaction.</li>
     <li>In the Category field, select the appropriate project category or D2 code that you want to adjust the transaction to.</li>
     <li>In the Line property, select billable or NonBill.</li>
   </ol>
   <h6 class="Heading6">Note: Billable is only for projects with fee (ICR) and that require revenue recognition such as grants and contracts or restricted. NonBill is used for those projects that do not require revenue recognition such as unrestricted and temporary restricted projects.</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 15;" value="16">If you wish to allocate to multiple D1 codes, insert additional lines and change the percent column to the appropriate allocation key. Otherwise, leave it at 100.</li>
     <li>In the Employee code, type the employee D7 code. This is only required if you are adjusting transactions related to personnel.</li>
     <li>In the Reason code field, select the corresponding code for your adjustment.</li>
@@ -567,7 +567,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>You will see a split screen showing the transactions that you are adjusting at the bottom.</p>
   <p><img alt="Picture 13" height="211.8" src="assets/images/Journal Entries DynAD Template Upload_files/image28.png" width="621.6"/></p>
   <p>At the top of those transactions that you want to adjust, you can verify the financial dimensions. The financial dimensions will be automatically populated based on the previous coding. Therefore, you can modify the financial dimensions accordingly for each line.</p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 20;" value="21">Click Post at the top.</li>
     <li>Click OK in the window that opens.</li>
   </ol>
@@ -578,22 +578,22 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>Use this procedure to reverse a general ledger (GL) entry in Integra.</p>
   <p>Reversals can be used to reverse wrong entries in the GL and to later record them to the correct entries.</p>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>After running the trial balance (see above), double-click the transaction in the Closing balance column that needs to be reversed.</li>
     <li>Click Reverse transaction.</li>
   </ol>
   <p><img alt="Picture 236597773" height="122.1" src="assets/images/Journal Entries DynAD Template Upload_files/image30.png" width="474.0"/><img alt="Picture 236597774" height="326.1" src="assets/images/Journal Entries DynAD Template Upload_files/image31.png" width="624.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 2;" value="3">On the Transaction reversal screen, enter the Reversal posting date.</li>
     <li>Click OK.</li>
   </ol>
   <p><img alt="Picture 236597775" height="203.6" src="assets/images/Journal Entries DynAD Template Upload_files/image32.png" width="288.6"/></p>
   <p>A message appears that the transaction has been reversed.</p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">Click Reversed tracing. The original and reversed transactions are displayed.</li>
   </ol>
   <h6 class="Heading6">IMPORTANT: Only General Ledger transactions can be reversed. Any transaction that was posted from a sub-ledger cannot be reversed in General Ledger.</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 5;" value="6">Close the transaction by selecting X at the top right of the screen when the review is completed.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
@@ -605,7 +605,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to populate the DynAd Template to upload mass transactions into various modules of Integra.</p>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Retrieve the most up-to-date version of the DynAd Template from Box.</li>
     <li>Carefully read all the following instructions embedded in the DynAd Template itself.</li>
     <li data-list-level="2">Field-specific instructions in the header section of the template</li>
@@ -623,16 +623,16 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>User knows how to add/move columns in a table grid. Refer to the following document for instructions:</li>
   </ul>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Navigate modules to General ledger &gt; Workspaces &gt; DynAd Journal Import.</li>
   </ol>
   <p><img alt="Picture 9" height="254.5" src="assets/images/Journal Entries DynAD Template Upload_files/image36.png" width="652.3"/></p>
   <h6 class="Heading6">Note: For files that have been successfully uploaded (with no errors) the options to Simulate posting and Simulate posting in batch are available under the Validate menu of the History and import results grid. There is also the ability to Post journal import files from this grid. Alternatively, the journal may be posted via General ledger &gt; Journal entries &gt; General journals navigation path.</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 1;" value="2">Select the tile on the left labeled, Import journal transactions.</li>
   </ol>
   <p><img alt="Picture 33" height="300.2" src="assets/images/Journal Entries DynAD Template Upload_files/image37.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 2;" value="3">Action the following fields/buttons:</li>
   </ol>
   <div align="left">
@@ -703,24 +703,24 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   </div>
   <p> </p>
   <p><img alt="Picture 36" height="208.9" src="assets/images/Journal Entries DynAD Template Upload_files/image41.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 3;" value="4">Validate the display of the message in the blue ribbon, “Batch import scheduled….”.</li>
   </ol>
   <p><img alt="Picture 37" height="299.5" src="assets/images/Journal Entries DynAD Template Upload_files/image42.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">Wait for the system to process the journal. An Infolog will appear in the top-right corner displays once the DynAd Journal import is completed.</li>
     <li>Close all messages.</li>
   </ol>
   <p><img alt="Picture 38" height="299.4" src="assets/images/Journal Entries DynAD Template Upload_files/image43.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 6;" value="7">On the menu options to the left of the results grid, select Import results.</li>
   </ol>
   <p><img alt="Picture 43" height="301.8" src="assets/images/Journal Entries DynAD Template Upload_files/image44.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 7;" value="8">Locate the relevant upload file and view the upload status under the Execution summary stats column.</li>
   </ol>
   <h6 class="Heading6">Notes:Filter with your name under the User ID field to only display files you have uploaded.</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 8;" value="9">To delete an upload file, select the line and click Delete.</li>
     <li>Determine next step:
       <ol class="LowerAlpha">
@@ -731,7 +731,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>Select the import line and on the menu above the grid, click Execution Details.</li>
   </ol>
   <p><img alt="Picture 56" height="272.9" src="assets/images/Journal Entries DynAD Template Upload_files/image45.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 11;" value="12">Review the status symbol displayed on page
       <ol class="LowerAlpha">
         <li data-list-level="2">Green checkmark = upload was successful.</li>
@@ -744,11 +744,11 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li data-list-level="2">The In staging column displays the number of records uploaded successfully.</li>
   </ol>
   <p><img alt="Picture 236597764" height="298.1" src="assets/images/Journal Entries DynAD Template Upload_files/image46.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 16;" value="17">Click View Staging Data to view details about errors in the journal lines.</li>
   </ol>
   <p><img alt="Picture 236597771" height="301.2" src="assets/images/Journal Entries DynAD Template Upload_files/image47.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 17;" value="18">On the menu at the top of page, click Validate all to see detailed error messages.</li>
     <li>Add the column Error message to the table and move it to a suitable/visible location in the grid.</li>
     <li>Review the grid to determine the completed lines and the lines with errors.</li>
@@ -756,22 +756,22 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   </ol>
   <h6 class="Heading6">NOTE: Any errors in the data can corrected in the original DynAd MS Excel Template and then re-uploaded the error-free data to Integra. Use the Export to Excel function accessed via the toolbar in the top-right corner of page.</h6>
   <p><img alt="Picture 236597812" height="114.3" src="assets/images/Journal Entries DynAD Template Upload_files/image48.png" width="589.9"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 21;" value="22">Click Save.</li>
     <li>Click Validate All to validate the lines following the modifications.</li>
     <li>Click Copy Data to Target to copy the corrected data to the associated journal.</li>
   </ol>
   <p><img alt="Picture 63" height="308.9" src="assets/images/Journal Entries DynAD Template Upload_files/image49.png" width="641.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 24;" value="25">On the Select a job ID to run form, select Criteria in the Run for field.</li>
   </ol>
   <h6 class="Heading6">Note: The interim solution is to select All in the Run for field as there is a technical issue with selecting Criteria whereby all the lines do not get populated in the journal. (as of Dec. 16, 2020)</h6>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 25;" value="26">Click OK.</li>
     <li>Review the data on the Target data execution grid.</li>
   </ol>
   <p><img alt="Picture 236597800" height="121.1" src="assets/images/Journal Entries DynAD Template Upload_files/image50.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 26;" value="27">Click X to close and return to the Execution summary view.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
@@ -795,11 +795,11 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <h3 class="Heading3">Prerequisites</h3>
   <p>The user must understand the usage of the different types of journals in Integra in order to post the transaction choosing the appropriate journal options and populating all required journal fields in Integra.</p>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Navigate modules to General ledger &gt; Journal setup &gt; Journal names.</li>
   </ol>
   <p><img alt="Picture 58" height="289.4" src="assets/images/Journal Entries DynAD Template Upload_files/image51.png" width="624.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 1;" value="2">Review the list of journal names in the tab on the left.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
@@ -808,33 +808,33 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>The data connector tool provides an alternative method for journal entry only when there are no project transactions. <a id="Use_the_most_recent_version_of_the_DynAd_Journal_Template_(download_the_most_recent_version_from_IRC_Master_folder_in_Box)."></a>Use the most recent version of the DynAd Journal Template (download the most recent version from IRC Master folder in Box).</p>
   <h6 class="Heading6">Note: This is only used to upload journals that DO NOT have project transactions. This process mainly refers to balance sheet accounts or expense/revenue accounts that do not touch the Projects module.</h6>
   <h3 class="Heading3">Steps</h3>
-  <ol class="Decimal">
+  <ol>
     <li>Ensure the data is ready in Excel before proceeding.</li>
     <li>Navigate modules to General ledger &gt; Journal entries &gt; General journals.</li>
     <li>Click New after selecting the appropriate journal Name ‘JE’ for example.</li>
     <li>Click on icon Open in Microsoft Office <img alt="Picture 2022645916" height="13.1" src="assets/images/Journal Entries DynAD Template Upload_files/image52.png" width="22.8"/>and click to open General journal line entry.</li>
   </ol>
   <p><img alt="Picture 49" height="197.4" src="assets/images/Journal Entries DynAD Template Upload_files/image53.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 4;" value="5">In the window that opens, click Download.</li>
     <li>Open the downloaded file in Excel.</li>
     <li>Wait for it to run until a pop-up message appears.</li>
   </ol>
   <p><img alt="Picture 2022645919" height="241.2" src="assets/images/Journal Entries DynAD Template Upload_files/image54.png" width="660.0"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 7;" value="8">Click Yes when prompted to confirm refresh.</li>
     <li>Additional processing will occur, and your journal will be ready to be populated.</li>
     <li>In column AG, hover on the blue line, drag it down to the expected number of lines in the journal. The two snapshots will show how column AG has changed.</li>
   </ol>
   <p><img alt="Picture 64" height="247.0" src="assets/images/Journal Entries DynAD Template Upload_files/image55.png" width="662.4"/></p>
   <p><img alt="Picture 71" height="245.4" src="assets/images/Journal Entries DynAD Template Upload_files/image56.png" width="662.4"/></p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 10;" value="11">Complete the Financial Dimensions based on the IRC Account structure.</li>
     <li>After populating the file, click Publish.</li>
   </ol>
   <p><img alt="Picture 81" height="223.3" src="assets/images/Journal Entries DynAD Template Upload_files/image57.png" width="351.1"/></p>
   <p>The file will run and will show data is refreshed at the bottom of the screen.</p>
-  <ol class="Decimal">
+  <ol>
     <li style="counter-reset: item1 12;" value="13">Go back to Integra, under General Ledger &gt; Journal Entries &gt; General Journals and click Show user-created only to locate the journal.</li>
     <li>Follow the same steps for attaching documents and submitting to workflow as explained for DynAd journal and Direct journal entries in Integra.</li>
   </ol>

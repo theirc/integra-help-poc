@@ -87,9 +87,9 @@
   <h2 class="Heading2"><a id="Business_Process_for_Receiving_and_Inspection_for_Stock_Products
 "></a>Business Process for Receiving and Inspection for Stock Products</h2>
   <p><img alt="Picture 1" height="281.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image1.png" width="681.6"/></p>
-  <h2 class="Heading2"><a id="Sequence_of_Procedures_for_Stocked_ItemsThe_procedures_below_specify_the_sequence_for_first_in_first_out_(FIFO)_and_first_expiry_first_out_(FEFO)_items_in_CRRD:_Receipt_list_–_Inventory_personnel_post_a_receipt_list_when_the_product_is_received_from_the_supplier._The_receipt_list_does_not_impact_neither_financial_nor_physical_inventory.Quality_order/quality_inspection_–_Once_the_receipt_list_is_posted,_the_quality_order_is_automatically_generated_and_available._A_quantity_inspection_is_performed_and_a_receipt_for_only_the_quantity_that_is_physically_received_is_posted._The_quality_inspection_is_performed_by_technical_personnel_and_the_requesting_department.Registration_–_If_the_products_received_are_FEFO_items,_registration_is_required_and_is_performed_by_Supply_Chain_personnel._Batch_controlled_items_such_as_pharmacy_and_food_items_with_an_expiry_date_are_registered;_pharmacy_items_are_assigned_vendor_batch_number_and_food_items_are_assigned_a_system_batch_number._Items_that_are_location_controlled_are_also_registered._Product_receipt_–_A_product_receipt_is_posted_and_is_a_prerequisite_to_invoice_posting_and_the_three-way_match_requirement._Posting_the_product_receipt_updates_both_the_financial_and_physical_inventory._Physical_inventory_is_updated_for_stock_material_but_not_nonstock_material.There_may_be_situations_where_products_are_shipped_by_the_vendor_to_a_port_of_entry._In_these_situations,_the_sequence_of_the_steps_performed_may_change:Receipt_list_–_the_IRC_performs_the_receipt_list_at_the_port_of_entryProduct_receipt_–_the_IRC_performs_the_product_receipt_at_the_port_of_entryQuality_order_–_Quality_inspection_is_performed_when_the_material_is_moved_from_the_port_of_entry_to_the_IRC_storage_facility.__When_the_quality_inspection_is_complete_the_quality_order_is_then_postedReceiving_–_General_Information_for_Stocked_ItemsAll_stocked_items_go_through_inspection_and_receipt_upon_arrival_at_an_IRC_location._They_will_be_quality_controlled_for_all_CRRD_legal_entities_and_some_RAI_entities._When_material_arrives_or_services_are_delivered_at_an_IRC_location,_Integra_must_be_updated_to_record_the_receipt_of_the_material.__The_receipt_record_is_a_prerequisite_to_invoice_payment._Stock_products_are_received_and_tracked_in_inventory._i.e.,_on-hand_balances_are_updated_with_each_product_receipt.A_partial_quantity_of_a_PO_may_be_received._In_these_situations,_the_PO_remains_open_until_all_items_are_received.Important:_Services_are_received_the_same_way_non-stock_items_are_received."></a>Sequence of Procedures for Stocked Items</h2>
+  <h2 class="Heading2"><a id="Sequence_of_Procedures_for_Stocked_Items"></a>Sequence of Procedures for Stocked Items</h2>
   <p>The procedures below specify the sequence for first in first out (FIFO) and first expiry first out (FEFO) items in CRRD:</p>
-  <ul class="Disc">
+  <ul>
     <li>Receipt list – Inventory personnel post a receipt list when the product is received from the supplier. The receipt list does not impact neither financial nor physical inventory.</li>
     <li>Quality order/quality inspection – Once the receipt list is posted, the quality order is automatically generated and available. A quantity inspection is performed and a receipt for only the quantity that is physically received is posted. The quality inspection is performed by technical personnel and the requesting department.</li>
     <li>Registration – If the products received are FEFO items, registration is required and is performed by Supply Chain personnel. Batch controlled items such as pharmacy and food items with an expiry date are registered; pharmacy items are assigned vendor batch number and food items are assigned a system batch number. Items that are location controlled are also registered.</li>
@@ -111,7 +111,7 @@
   <h6 class="Heading6">Note: Prior to beginning the procedure, first determine if the PO lines are for stocked or non-stocked products.</h6>
   <p>The receipts list is a system acknowledgement of accepting delivery and is akin to signing for a package. Entering the receipt list does not impact inventory balances.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Open Order</li>
     <li>Products have physically arrived at an IRC location or port of entry</li>
@@ -152,7 +152,7 @@
   <p><img alt="Picture 368781759" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image8.png" width="681.6"/></p>
   <p>On the PO note the info-message the receipts list posted and the quality order generated successfully.</p>
   <p>After the receipt list is posted, note the following:</p>
-  <ul class="Disc">
+  <ul>
     <li>Under the Quality management section, note Quality order is now available. A quality order is automatically generated when the receipt list is complete. Use this to complete the quality order for the product received against this purchase order.</li>
     <li>Under the Journal section, note the Receipts list journal is now available. View the products and quantities received on the receipt list and to print the receipt list here.</li>
   </ul>
@@ -172,7 +172,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to complete a quality inspection for all products arriving at an IRC location. The quality order is automatically generated and available for this PO once the receipt list is posted.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Open Order</li>
     <li>Products have physically arrived at an IRC location and the receipt list has been posted</li>
@@ -241,7 +241,7 @@
   <p>For items that are being stocked at an IRC location and not being held a port of entry, a receipt list has been posted, an inspection has been performed and quality order has been entered prior to performing this procedure.</p>
   <h6 class="Heading6">Note: For items that are being held at port of entry, in some instances, performing the registration and product receipt (this procedure) happens prior to the inspection and quality order. Entering the product receipt first ensures the three-way match happens and the vendor payment process can proceed.</h6>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Open Order</li>
     <li>Products have been physically received</li>
@@ -445,7 +445,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to dispatch material that has been received to generate a picking list for items that need to be issued to a beneficiary.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>Project ID is known and / or Purchase order number is known</li>
     <li>There is sufficient quantity of items available in warehouse for the dispatch requirements</li>
     <li>PO Approval status is Confirmed</li>
@@ -538,7 +538,7 @@
   <p>Use this procedure to generate a packing slip for items in the warehouse picked for issue.</p>
   <p>Posting the packing slip reduces on-hand physical inventory quantity and updates the inventory main account cost balance. The project expense is also updated.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>Picking list is posted and all available items have been picked.</li>
   </ul>
   <h3 class="Heading3">Steps</h3>
@@ -601,7 +601,7 @@
   <h3 class="Heading3">Sending Warehouse Enters Product Receipt for Receiving Warehouse</h3>
   <p>There are situations in which the sending warehouse performs the product receipt steps for the receiving warehouse in Integra. In these situations, follow the steps in the following procedure Receive Product on a Transfer Order prior to saving and closing the transfer order.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>There is enough on-hand quantity of item being transferred on hand to perform the transfer</li>
     <li>Physically checked and confirmed the quantity of item to be transferred is available in the storage location</li>
   </ul>
@@ -950,7 +950,7 @@
   <p>Reserve in the quantity of the item transferred from the sending warehouse on the project item requirements</p>
   <p>Performing this procedure works best using two concurrent sessions of Integra.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>Purchase order status is Shipped</li>
     <li>Products have been physically received at the receiving warehouse</li>
     <li>A copy of the picking list should be included from the sending warehouse; the picking list lists the transfer order number</li>
@@ -1062,7 +1062,7 @@
   <p>Note: Receipts are not entered for non-inventory CIK items as they are only tracked at the point of distribution.</p>
   <p> </p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>CIK item has been set up as an inventory item in Integra.</li>
   </ul>
   <h3 class="Heading3">Steps</h3>
@@ -1308,7 +1308,7 @@
   <p>You have recorded the receipt of CIK inventory items in Integra.</p>
   <h2 class="Heading2"><a id="Business_Process_–_Returns_and_Returned_Orders"></a>Business Process – Returns and Returned Orders</h2>
   <p>This section outlines key terms and business process steps for the following scenarios:</p>
-  <ul class="Disc">
+  <ul>
     <li>Refuse to Receive</li>
     <li>Invoiced Return</li>
     <li>Return to the Warehouse – Beneficiary Return</li>
@@ -1334,7 +1334,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to create a non-conformance on a quality order for items that failed inspection and Supply Chain personnel refuse to receive.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Open Order</li>
     <li>Products have physically arrived at an IRC location</li>
@@ -1375,7 +1375,7 @@
   <p><img alt="Picture 368781676" height="328.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image144.png" width="676.5"/></p>
   <p>On the PO note the info-message Posting Purchase order: POxxxxxxxx: Item number: xxxxxxQuality order QOxxxxxxx has been generated indicating the receipt list posted successfully.</p>
   <p>After the receipt list is posted, note the following:</p>
-  <ul class="Disc">
+  <ul>
     <li>Under the Quality management action pane, note Quality order is now available. A quality order is automatically generated when the receipt list is complete. Use this to complete the quality order for the product received against this purchase order.</li>
     <li>Under the Journal action pane, note the Receipts list journal is now available. View the products and quantities received on the receipt list and to print the receipt list here.</li>
   </ul>
@@ -1544,7 +1544,7 @@
   </ol>
   <h3 class="Heading3">Result</h3>
   <p>You have completed the refuse to receive return process and an invoice can now be created for the PO. This process included:</p>
-  <ul class="Disc">
+  <ul>
     <li>Posting a receipt list</li>
     <li>Completing the inspection with items that failed and the IRC is refusing to receive</li>
     <li>Posting a quality order</li>
@@ -1556,7 +1556,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to create a return purchase order to return products to the vendor and get a credit for the returned products.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Invoiced</li>
   </ul>
@@ -1750,7 +1750,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to dispatch items on a return purchase order that are defective and need to be returned to the vendor.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Open Order</li>
   </ul>
@@ -1826,7 +1826,7 @@
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to return items to inventory that have been returned from a beneficiary. To see the inventory in the warehouse, process the return with a negative item requirement.</p>
   <h3 class="Heading3">Prerequisites</h3>
-  <ul class="Disc">
+  <ul>
     <li>PO Approval status is Confirmed</li>
     <li>Purchase order status is Received</li>
     <li>Packing slip has been posted and the inventory is no longer on-hand</li>
@@ -1853,7 +1853,7 @@
   </ol>
   <h3 class="Heading3">Locate Data to Process the Return</h3>
   <p>There are two pieces of data required from the original item requirements transaction to process the return:</p>
-  <ul class="Disc">
+  <ul>
     <li>Lot ID</li>
     <li>Unit price</li>
   </ul>

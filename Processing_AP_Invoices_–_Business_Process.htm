@@ -99,7 +99,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to create a vendor invoice that references a purchase order.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Goods or services have been received</li>
       <li>PO number is known</li>
     </ul>
@@ -144,7 +144,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to create an invoice that does not reference a PO.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Vendor invoice has been received.</li>
       <li>It has been validated that a PO does not exist for the expenditure.</li>
       <li>Project ID and financial dimensions are known.</li>
@@ -337,7 +337,7 @@
     <p>Use this procedure to retrieve (copy) an existing periodic journal to process a new AP vendor journal.</p>
     <p>IRC uses periodic journals to process recurring bills such as rent, that occur every month. Periodic journals are sometimes called “recurring journals” because the amount, text, and other information are repeated each time the periodic journal is retrieved.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>An existing periodic journal exists that can be copied for the AP invoice.</li>
       <li>All financial dimensions are known.</li>
       <li>‎RAI: If processing a periodic invoice journal for client payments, ensure the Client ID (D9) entered on the project voucher line aligns with the vendor record entered on the corresponding vendor voucher line. Additionally, the Client ID (D9) program selected must match the D1 ETO program in order for the data to successfully flow back to ETO.</li>
@@ -422,7 +422,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to post an approved invoice.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice has status Approved.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -440,7 +440,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to print a vendor invoice that has been posted.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice has been posted.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -460,7 +460,7 @@
     <p>Use this procedure to record all invoices received by the IRC. The invoice register is managed by Accounts Payable designated staff.</p>
     <p>All invoices received by the IRC are recorded in Integra and processed from a central location by AP staff. This includes non-purchase order invoices(non-PO) together with the Accounts Payable voucher, purchase order (PO) invoices with purchase order numbers, cash transfer request from CRRD and RAI field offices, some credit and travel expense reports (TER) with intercompany charges.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice is received at IRC from the vendor by email or in the post.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -648,7 +648,7 @@
     <p>Use this procedure to use Microsoft’s Data Connector tool to update an invoice register approval journal.</p>
     <p>Use of the data connector tool makes data updates easier and faster when there are AP invoices that must be coded to multiple projects. </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice has been registered and posted in the system.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -689,7 +689,7 @@
     <p>Use this procedure to create a vendor payment journal.</p>
     <h6 class="Heading6">Note: For prepaid cards, the client’s date of birth is required. This can be found in the Direct assistance cases page in Integra. Navigate to Project management and accounting &gt; Projects &gt; Direct assistance cases. In the table, scroll to the right to find the Date of birth column.</h6>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>The invoice journal has been posted to the vendor account and is ready to be settled.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -906,7 +906,7 @@
       ‎</p>
     <h6 class="Heading6">Note: For details on automatic EFT processing, see notes at the end of this procedure. </h6>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>The Method of Payment and Bank Account must be configured for the vendor.</li>
       <li>Payment journal has been fully approved.</li>
     </ul>
@@ -951,7 +951,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to generate payment for several invoices at once.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>The invoice journals have been posted to the vendor account and are ready to be settled.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1070,7 +1070,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure generate payment for several invoices at once.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>The batch journal has been approved.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1087,7 +1087,7 @@
     <p>Use this procedure to reverse a vendor payment and clear it out from the project.</p>
     <p>Simply reversing the vendor payment does not reverse the expense; the transaction must also must be cleared out from the project to completely clear out the cost and remove any outstanding debt to the vendor.</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Vendor payment journal was posted.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1151,7 +1151,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to complete a one-time setup of a prepayment posting profile for a vendor group (based on IRC Vendor categorization).</p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>The prepayment posting profile for the vendor group does not already exist.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1438,7 +1438,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>When payroll journal is booked via general journal, the employee advance amount is subtracted from the payroll accrual balance and the vendor (set as employee) account is used on the journal line.  </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Salary advance payment was processed.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1472,7 +1472,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>To cover program expenses, program staff will often request advances that will be issued as Vendor prepayments. The purpose is to create a Vendor Payment journal to record the cash advance issued to the employee. </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>All supporting documentation is available.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1501,7 +1501,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Vendor invoice journal will be used to record program expenses incurred by employee that received program advance: </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>A program advance payment was processed.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
@@ -1551,7 +1551,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to process a bank return without a fee. </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice has been received from vendor.</li>
       <li>Payment has been sent to Bank by EFT.</li>
     </ul>
@@ -1599,7 +1599,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to process a bank return with a fee. </p>
     <h3 class="Heading3">Prerequisites</h3>
-    <ul class="Disc">
+    <ul>
       <li>Invoice has been received from vendor.</li>
       <li>Payment has been sent to Bank by EFT.</li>
     </ul>

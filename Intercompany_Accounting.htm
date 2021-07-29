@@ -80,41 +80,53 @@
   <div>
   <h1 class="Heading1"><a id="Business_Process_Overview"></a>Business Process Overview</h1>
   <p>Integra facilitates the ability to post journals between different reporting entities. This process is defined as intercompany accounting. The intercompany accounting process ensures that on a regular monthly basis, expenditures paid by one office on behalf of another office are booked to the correct Integra reporting entity/SUN database.</p>
-  <p>Until deployment of Integra to all offices is complete, there are two processes that will be followed: 1. End-state solution and 2. Interim solution.</p>
+  <p>Until deployment of Integra to all offices is complete, there are two processes that will be followed: <span style="font-weight:bold;">1. End-state solution</span> and <span style="font-weight:bold;">2. Interim solution</span>.</p>
   <h2 class="Heading2"><a id="End-state_solution"></a>End-state solution</h2>
   <p>The Integra solution for Intercompany Accounting was developed to achieve the following:</p>
-  <p>Streamline the intercompany process</p>
-  <p>Remove the need for too many staff members being involved in the process</p>
-  <p>Take advantage of Integra’s ability to allow a user with the correct security access to post directly to a different Integra legal entity.</p>
-  <h6 class="Heading6">The role responsible* for the executing office must always move the intercompany entry from the general ledger (GL) to the appropriate project (D1) in the Projects module (subledger). (local office CRRD Deputy Director Finance; RAI Finance Manager)</h6>
+  <ul>
+    <li>Streamline the intercompany process</li>
+    <li>Remove the need for too many staff members being involved in the process</li>
+    <li>Take advantage of Integra’s ability to allow a user with the correct security access to post directly to a different Integra legal entity.</li>
+  </ul>
+  <p class="Heading6"><span style="font-weight:normal;">The role responsible<span style="font-weight:bold;color:#FF0000">*</span> for the executing office must always move the intercompany entry from the general ledger (GL) to the appropriate project (D1) in the Projects module (subledger). </span></p>
+  <p class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">*</span> (local office CRRD Deputy Director Finance; RAI Finance Manager)</span></p>
   <p>This movement entry is necessary because posting these entries to the general ledger does not mean the entries automatically flow into the Projects module. If the entries remained in the general ledger the project budget balances in the Projects module would be incorrect. This would then have an impact on revenue recognition.</p>
   <p>As part of moving these transactions from the GL to the project, there is a requirement to ensure the correct project category (D2) and other financial dimensions have been coded in the original entry as there is no ability for one legal entity to charge another legal entity’s project module through the intercompany journal.</p>
   <p> </p>
   <h2 class="Heading2"><a id="End-state_Business_Process_Flow"></a>End-state Business Process Flow</h2>
+  <p><img src="assets/images/image3.png"/></p>
   <h3 class="Heading3">Interim Solution</h3>
   <p>Until IRC completes deployment of Integra to all offices, there is an interim period where some offices are using Integra and some offices are still using SUN.</p>
   <p>During this transitional state, there is a requirement to post entries into multiple databases in Integra.</p>
   <p>The databases involved in intercompany accounting are:</p>
-  <p>9IRC - the Integra reporting entity for HQ; it is where all the HQ and regional unit budgets are set up and it is the reporting entity where HQ staff transact daily.</p>
-  <p>ICCO - the Integra database that HQ and any office on Integra will post into for all entries paid for on behalf of another office that will need to be reflected in that office’s SUN database.</p>
-  <p>The postings to ICCO are converted into an output file with a format compatible with SUN Systems. This file is the equivalent of today’s HQ ZHQ File.<br/>
+  <ul>
+    <li><span style="font-weight:bold;">9IRC </span>- the Integra reporting entity for HQ; it is where all the HQ and regional unit budgets are set up and it is the reporting entity where HQ staff transact daily.</li>
+    <li><span style="font-weight:bold;">ICCO </span>- the Integra database that HQ and any office on Integra will post into for all entries paid for on behalf of another office that will need to be reflected in that office’s SUN database.</li>
+  </ul>
+  <p style="margin-left: 84px">The postings to ICCO are converted into an output file with a format compatible with SUN Systems. This file is the equivalent of today’s HQ ZHQ File.<br/>
     ‎Local Finance staff will continue to upload this file into their SUN database on a monthly basis.</p>
-  <p>ISUN - the Integra database that HQ will use to post all local SUN final monthly SAF files.<br/>
-    ‎The SAF files will be converted into a format compatible with Integra and mapped to financial dimensions in Integra.</p>
+  <ul>
+    <li><span style="font-weight:bold;">ISUN </span>- the Integra database that HQ will use to post all local SUN final monthly SAF files.‎The SAF files will be converted into a format compatible with Integra and mapped to financial dimensions in Integra.</li>
+  </ul>
   <p>Finance staff will continue to re-code their intercompany entries received by adding the T1, T2 codes and any other necessary T codes when they receive their intercompany entries via their ZHQ file and re-code to the appropriate T1.</p>
   <h2 class="Heading2"><a id="Interim-state_Business_Process_Flow"></a>Interim-state Business Process Flow</h2>
+  <p><img src="assets/images/image4.png"/></p>
   <h3 class="Heading3">Key Messages for Intercompany Accounting with Integra</h3>
-  <p>Both the interim and end-state solutions require intercompany postings to be re-coded to the relevant projects.</p>
-  <p>When the executing office is on Integra, but the requesting office is not, the executing office must post to the interim reporting entity ICCO.</p>
-  <p>ICCO is only used when the executing office is on Integra and the receiving office is still using SUN.</p>
-  <p>When the executing office is still using SUN and the requesting office is using Integra, the executing office codes transactions to their balance sheet under main account 29300 or 29400, per current process.</p>
-  <p>When both offices are on Integra, the posting is done directly between the two reporting entity codes in Integra; there is no need to post to ICCO or ISUN.</p>
-  <p>Reporting entities do not have access to each other’s sub-ledgers, therefore, intercompany transactions must be posted to the requesting office’s GL.</p>
-  <p>The requesting office must then reverse the charge from their GL and post it to the relevant sub-ledger, e.g., Project management and accounting module.</p>
+  <ul>
+    <li>Both the interim and end-state solutions require intercompany postings to be re-coded to the relevant projects.</li>
+    <li>When the executing office is on Integra, but the requesting office is not, the executing office must post to the interim reporting entity ICCO.</li>
+  </ul>
+  <p style="margin-left: 80px">ICCO is only used when the executing office is on Integra and the receiving office is still using SUN.</p>
+  <ul>
+    <li>When the executing office is still using SUN and the requesting office is using Integra, the executing office codes transactions to their balance sheet under main account 29300 or 29400, per current process.</li>
+    <li>When both offices are on Integra, the posting is done directly between the two reporting entity codes in Integra; there is no need to post to ICCO or ISUN.</li>
+    <li>Reporting entities do not have access to each other’s sub-ledgers, therefore, intercompany transactions must be posted to the requesting office’s GL.</li>
+  </ul>
+  <p style="margin-left: 88px">The requesting office must then reverse the charge from their GL and post it to the relevant sub-ledger, e.g., Project management and accounting module.</p>
   <h3 class="Heading3">IRC’s Intercompany Transactions</h3>
   <p>Outlined below are the various types of intercompany transactions that may be processed.</p>
   <div align="left">
-    <table border="0" cellspacing="0">
+    <table border="0" cellspacing="0" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
       <colgroup>
         <col style="width:221.66666666666666666666666667px"/>
         <col style="width:491.66666666666666666666666667px"/>
@@ -129,66 +141,66 @@
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <p>Interim State (used when one or more of the companies are not yet using Integra)</p>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Interim State (used when one or more of the companies are not yet using Integra)</strong></p>
           </td>
         </tr>
         <tr>
-          <td>
-            <p>HQ to SUN Office</p>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold"><strong style="font-weight: normal">HQ to SUN Office</strong></p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>HQ is paying for something on behalf of another office who is still on SUN.</p>
           </td>
         </tr>
         <tr>
-          <td>
-            <p>SUN office to HQ</p>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold"><strong style="font-weight: normal">SUN office to HQ</strong></p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>An office that is still on SUN is paying for something on behalf of HQ.</p>
           </td>
         </tr>
         <tr>
-          <td>
-            <p>Integra office to SUN office</p>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: normal">Integra office to SUN office</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>A non-HQ office that is on Integra is paying on behalf of another office who is still on SUN.</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SUN office to Integra office</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>An office that is still on SUN is paying for something on behalf of a non-HQ office that is on Integra.</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SUN office to SUN office</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>An office that is still on SUN is paying for something on behalf of another office that is still on SUN.</p>
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <p>End State (used when both companies are using Integra)</p>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>End State (used when both companies are using Integra)</strong></p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Integra office to Integra office</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>One legal entity on Integra is paying for something on behalf of another legal entity on Integra.</p>
           </td>
         </tr>
         <tr>
-          <td colspan="2">
-            <p>Example: HQ purchases and pays for goods on behalf of the Atlanta office. HQ uses the intercompany journal to post the expenditure to Atlanta’s GL. (Remember, they cannot charge it to a sub-ledger. Atlanta must then reverse it out of their GL and post it to their sub-ledger (typically to projects). There may be some instances where Atlanta will not need to reverse the amount to a sub-ledger, e.g., prepayments, as they always sit in the GL.</p>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Example</strong>: HQ purchases and pays for goods on behalf of the Atlanta office. HQ uses the intercompany journal to post the expenditure to Atlanta’s GL. (Remember, they cannot charge it to a sub-ledger. Atlanta must then reverse it out of their GL and post it to their sub-ledger (typically to projects). There may be some instances where Atlanta will not need to reverse the amount to a sub-ledger, e.g., prepayments, as they always sit in the GL.</p>
           </td>
         </tr>
       </tbody>
@@ -197,40 +209,58 @@
   <h2 class="Heading2"><a id="Process_Intercompany_Transaction_in_Integra"></a>Process Intercompany Transaction in Integra</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to process an intercompany transaction in Integra. This same procedure can be used for all scenarios where the executing office is using Integra. However, specific field information will vary depending on the scenario.</p>
-  <p>Refer to the scenarios in the appendix of this document for detailed guidance on accounting entries.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Refer to the scenarios in the appendix of this document for detailed guidance on accounting entries.</span></h6>
   <h3 class="Heading3">Steps</h3>
   <ol class="AlphaNumeric">
-    <li>From the Integra home page, navigate modules to General ledger à Journal entries à General journals.</li>
-    <li>On the menu at the top of page, click New.</li>
-    <li>A new journal row is added at the top of the table. In the Name field, click the drop-down arrow and select GL-IC.</li>
-    <li>In the Description field, overwrite the default text with a meaningful description for the intercompany transfer.</li>
-    <li>Select the new row and click Lines on the menu at the top of the page.</li>
-    <li>Complete the following fields for 1st line and 2nd (offset) line in the journal.
-      <ul class="Disc">
-        <li>Company</li>
-        <li>Account type</li>
-        <li>Account</li>
-        <li>Description</li>
-        <li>Debit/Credit</li>
-      </ul>
-    </li>
-    <li>Enter the required financial dimensions for each line.</li>
+    <li>From the Integra home page, navigate modules to <span style="font-weight:bold;">General ledger à Journal entries à General journals</span>.</li>
+  </ol>
+  <p><img src="assets/images/image5.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <span style="font-weight:bold;">New</span>.</li>
+  </ol>
+  <p><img src="assets/images/image6.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 2;" value="3">A new journal row is added at the top of the table. In the <span style="font-weight:bold;">Name </span>field, click the drop-down arrow and select <span style="font-weight:bold;">GL-IC</span>.</li>
+  </ol>
+  <p><img src="assets/images/image7.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 3;" value="4">In the <span style="font-weight:bold;">Description</span> field, overwrite the default text with a meaningful description for the intercompany transfer.</li>
+    <li>Select the new row and click <span style="font-weight:bold;">Lines </span>on the menu at the top of the page.</li>
+  </ol>
+  <p><img src="assets/images/image8.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 5;" value="6">Complete the following fields for 1st line and 2nd (offset) line in the journal.</li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li>Company</li>
+    <li>Account type</li>
+    <li>Account</li>
+    <li>Description</li>
+    <li>Debit/Credit</li>
+  </ul>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 6;" value="7">Enter the required financial dimensions for each line.</li>
     <li>Submit journal to workflow for approval.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
   <p>You have processed an intercompany transaction in Integra.</p>
   <h3 class="Heading3">Follow-on procedures</h3>
-  <p>Execute AP Payment Process</p>
-  <p>Finance Controller of the requesting office moves expense from General Ledger to Project<br/>
-    ‎</p>
+  <ul>
+    <li>Execute AP Payment Process</li>
+    <li>Finance Controller of the requesting office moves expense from General Ledger to Project</li>
+  </ul>
+  <p>‎</p>
   <h2 class="Heading2"><a id="View_Originating_Company_in_Voucher_Transactions_Report"></a>View Originating Company in Voucher Transactions Report</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure display the Voucher transactions inquiry and view originating office for intercompany transactions.</p>
   <h3 class="Heading3">Steps</h3>
   <ol class="Decimal">
-    <li>From the Integra home page, navigate modules to General ledger à Inquiries and reports à Voucher transactions.</li>
-    <li>Customize the table according to your filtering needs.</li>
-    <li>Click OK to proceed.</li>
+    <li>From the Integra home page, navigate modules to <span style="font-weight:bold;">General ledger à Inquiries and reports à Voucher transactions</span>.</li>
+  </ol>
+  <p><img src="assets/images/image9.png"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2">Customize the table according to your filtering needs.</li>
+    <li>Click <span style="font-weight:bold;">OK </span>to proceed.</li>
     <li>Review the list of results. Scroll to the right to the Originating company column.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
@@ -251,64 +281,64 @@
             <p><span style="color:#ffffff;">Office</span></p>
           </td>
           <td>
-            <p>Legal Entity</p>
+            <p><span style="color:#ffffff;">Le</span><span style="color:#ffffff;">gal Entity</span></p>
           </td>
           <td>
-            <p>System</p>
+            <p><span style="color:#ffffff;">Syste</span><span style="color:#ffffff;">m</span></p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>HQ</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>9IRC</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Integra</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Uganda</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Integra</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Sierra Leone</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Integra</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Nigeria</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA*</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SUN</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Thailand</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA*</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SUN</p>
           </td>
         </tr>
@@ -316,11 +346,13 @@
     </table>
   </div>
   <p>The following five sample scenarios are outlined in detail below.</p>
-  <p>HQ Integra (9IRC) to SUN office (2NGA)</p>
-  <p>SUN office (2NGA) to HQ Integra (Due from HQ)</p>
-  <p>Integra Office (2UGA) to SUN office (2NGA)</p>
-  <p>SUN office (2NGA) to Integra office (2UGA)</p>
-  <p>SUN office (2NGA) to SUN office (3THA)</p>
+  <ul>
+    <li>HQ Integra (9IRC) to SUN office (2NGA)</li>
+    <li>SUN office (2NGA) to HQ Integra (Due from HQ)</li>
+    <li>Integra Office (2UGA) to SUN office (2NGA)</li>
+    <li>SUN office (2NGA) to Integra office (2UGA)</li>
+    <li>SUN office (2NGA) to SUN office (3THA)</li>
+  </ul>
   <h2 class="Heading2"><a id="HQ_Integra_(9IRC)_to_SUN_office_(2NGA)"></a>HQ Integra (9IRC) to SUN office (2NGA)</h2>
   <p>The expense entry initiated at HQ (Integra) requires the following journals to be posted.</p>
   <p>In 9IRC ledger in Integra, the Company field in the Vendor invoice journal screen, go to the General tab and then choose ICCO under ACCOUNT as the Company.</p>
@@ -1085,162 +1117,162 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>29400</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>THBNK</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>CR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Bank</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>100xx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2NGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>NGABU</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>7xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>GUxxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>AB01</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>OADM</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>THBNK</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>CR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>29400</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>3THA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>THBNK</p>
           </td>
         </tr>
@@ -1302,263 +1334,263 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE Entry</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>7xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>HEHS</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>UAKAM</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>PRIM</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>CR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>21100</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Vendor</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SLFRT</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td colspan="10">
-            <p>Vendor Settlement by 2SLE</p>
+          <td colspan="10" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold">Vendor Settlement by 2SLE</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>21100</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Vendor</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SLFRT</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>CR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>10xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Bank</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>U1000</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>SLFRT</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2SLE</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA Entry</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p> </p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>7xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Project</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>HEHS</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>UAKAM</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>PRIM</p>
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>CR</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>7xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Ledger</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>DF208xxx</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>HEHS</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>UAKAM</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>2UGA</p>
           </td>
-          <td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>PRIM</p>
           </td>
         </tr>

@@ -38,7 +38,7 @@
 
     gRootRelPath = ".";
     gCommonRootRelPath = ".";
-    gTopicId = "4.4";
+    gTopicId = "4.3";
   
 //]]></script>
 
@@ -78,1473 +78,1498 @@
     <p> </p>
   </div>
   <div>
-  <div>
-    <h1 class="Heading1"><a id="Business_Process_Overvie"></a>Business Process Overview</h1>
-    <p>Accounts Receivable (AR) processing includes the following tasks:</p>
-    <ul>
-      <li>Adhoc receipt of daily checks, stocks or wires as donations from individuals (one-time gift)</li>
-      <li>Receipts of pledges (one-time gifts over a period of time)</li>
-      <li>Receipt of grants (grants seen on a daily basis from a country office)</li>
-      <li>All donor receipts and intercompany transfers must be entered in Integra. Once payment is entered in Integra, it is automatically posted to the general ledger.</li>
-      <li>A donor may pledge a commitment to multi-year payments.</li>
-    </ul>
-    <p>Rather than recording donor payments separately, a payment decrease can be applied to an account balance. Settlement within AR can occur between different transaction types that affect the customer balance, such as invoices and payments. Integra provides standard AR reporting functionality, such as customer aging and balance details. Accounts Receivable is also responsible to monitor and “draw down”.</p>
-    <h2 class="Heading2"><a id="Accounts_Receivable_Checklist"></a>Accounts Receivable Checklist</h2>
-    <h2 class="Heading2"><a id="Daily_Processing"></a>Daily Processing</h2>
-    <p>Salesforce journal uploads (including intercompany)</p>
-    <p>Cash receipts (in USD and foreign currencies)</p>
-    <h3>Month-End processing</h3>
-    <ul>
-      <li>Stock journals</li>
-      <li>Merchant fee bookings</li>
-      <li>IOM entries (International Organization for Migration)</li>
-      <li>Cash concentration entries</li>
-      <li>Bank fees and interest income</li>
-      <li>Administrative fees</li>
-      <li>AR reports</li>
-    </ul>
-    <h2 class="Heading2"><a id="Business_Process_Flow"></a>Business Process Flow</h2>
-    <h2 class="Heading2"><a id="The_Accounts_Receivable_Module_in_Integra"></a>Accounts Receivable Module</h2>
-    <p>The following information can be accessed via the Accounts receivable module:</p>
-    <ul>
-      <li>For customer information, navigate to Customers.</li>
-      <li>To enter or view invoices, navigate to Invoices.</li>
-      <li>To enter or view payment information, navigate to Payments.</li>
-      <li>For detailed customer history, navigate to Inquiries and reports.</li>
-    </ul>
-    <p><img alt="Picture 5" height="316.6" src="assets/images/Accounts Receivable_files/image1.png" width="650.9"/></p>
-    <h2 class="Heading2"><a id="Process Payment from a Donor"></a>Process Payment from a Donor</h2>
-    <p>Use this procedure to process a donor payment where the donor is already set up as a customer in Integra. This task typically occurs for donors who make monthly or annual donations.</p>
-    <h3 class="Heading3">Prerequisites</h3>
-    <ul>
-      <li>Donor is set up as a vendor in Integra</li>
-      <li>Supporting documentation is available to attach to payment journal</li>
-      <li>Financial dimensions are known</li>
-    </ul>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Payments &gt; Customer payment journal.</li>
-    </ol>
-    <p><img alt="Picture 59" height="204.5" src="assets/images/Accounts Receivable_files/image2.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the toolbar at the top, click New to add a new journal line.</li>
-    </ol>
-    <p><img alt="Picture 62" height="209.9" src="assets/images/Accounts Receivable_files/image3.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">In the Name field, enter or select CR (Cash Receipt).</li>
-    </ol>
-    <p><img alt="Picture 64" height="214.6" src="assets/images/Accounts Receivable_files/image4.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 3;" value="4">In the Description field, enter a meaningful description.</li>
-    </ol>
-    <p><img alt="Picture 65" height="216.5" src="assets/images/Accounts Receivable_files/image5.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click Lines.</li>
-    </ol>
-    <p><img alt="Picture 66" height="263.1" src="assets/images/Accounts Receivable_files/image6.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">Complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account</p>
-            </td>
-            <td>
-              <p>Enter or select the relevant customer account number.</p>
-              <p>Tip: If number unknown, click the drop-down to perform a search by Name.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account name</p>
-            </td>
-            <td>
-              <p>This field auto-populates after the customer account number is entered.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter a description for the receipt.</p>
-              <p>E.g., Billings for [month]</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Credit</p>
-            </td>
-            <td>
-              <p>Enter the amount being received.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Offset account</p>
-            </td>
-            <td>
-              <p>Select the relevant offset account from the drop-down selection list.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p><img alt="Picture 16" height="163.0" src="assets/images/Accounts Receivable_files/image7.png" width="628.3"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Click the Payment tab.</li>
-    </ol>
-    <p><img alt="Picture 20" height="188.4" src="assets/images/Accounts Receivable_files/image8.png" width="628.9"/></p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">In the Posting profile field, select GENAR – General AR Posting Profile.</li>
-      <li>Click the List tab.</li>
-    </ol>
-    <p><img alt="Picture 9" height="263.1" src="assets/images/Accounts Receivable_files/image9.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">On the menu above the Lines grid, click Financial dimensions and select Account.</li>
-    </ol>
-    <p><img alt="Picture 76" height="263.1" src="assets/images/Accounts Receivable_files/image10.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Enter the D1, D4, and D5 financial dimension codes.</li>
-      <li>Scroll down to the bottom of the financial dimensions pane and click OK.</li>
-    </ol>
-    <p><img alt="Picture 79" height="263.1" src="assets/images/Accounts Receivable_files/image11.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 12;" value="13">Again, on the menu above the Lines grid, click Financial dimensions but select Offset account this time.</li>
-    </ol>
-    <p><img alt="Picture 84" height="263.1" src="assets/images/Accounts Receivable_files/image12.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 13;" value="14">Enter the D1, D4, and D5 financial dimension codes for the offset account.</li>
-    </ol>
-    <h6 class="Heading6">Important: The D1 code for the offset account is the relevant project.</h6>
-    <ol>
-      <li style="counter-reset: item1 14;" value="15">Scroll down to the bottom of the financial dimensions pane and click OK.</li>
-    </ol>
-    <p><img alt="Picture 92" height="219.0" src="assets/images/Accounts Receivable_files/image13.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 15;" value="16">On the menu at the top of the page, click Validate and select Simulate posting.</li>
-    </ol>
-    <p><img alt="Picture 94" height="225.3" src="assets/images/Accounts Receivable_files/image14.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 16;" value="17">Validate the message Operation complete displays in a blue bar near the top of the page.</li>
-    </ol>
-    <p><img alt="Picture 52" height="136.7" src="assets/images/Accounts Receivable_files/image15.png" width="633.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 17;" value="18">Click Print &gt; Journal to view the accounting for this journal.</li>
-    </ol>
-    <p><img alt="Picture 55" height="305.7" src="assets/images/Accounts Receivable_files/image16.png" width="633.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 18;" value="19">Click OK on the Print journal form to generate the print preview.</li>
-    </ol>
-    <p><img alt="Picture 67" height="180.1" src="assets/images/Accounts Receivable_files/image17.png" width="644.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 19;" value="20">Review the Payment journal print preview. Note and validate the accounts used in the Ledger account column.</li>
-      <li>Click X in the top-right corner to close the print preview.</li>
-      <li>Click the X in the top-right corner to close the voucher page and return to the list of journals.</li>
-    </ol>
-    <p><img alt="Picture 95" height="203.6" src="assets/images/Accounts Receivable_files/image18.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 22;" value="23">Attach Donor Receipt to Journal Line</li>
-      <li>Select the relevant journal and click <img alt="Picture 93" height="28.0" src="assets/images/Accounts Receivable_files/image19.png" width="32.0"/> in the top-right corner of page.</li>
-    </ol>
-    <p><img alt="Picture 96" height="213.5" src="assets/images/Accounts Receivable_files/image20.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 24;" value="25">On the menu at the top, click New and select File.</li>
-    </ol>
-    <p><img alt="Picture 97" height="263.1" src="assets/images/Accounts Receivable_files/image21.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 25;" value="26">Click Browse and locate and upload the receipt file.</li>
-    </ol>
-    <p><img alt="Picture 100" height="263.1" src="assets/images/Accounts Receivable_files/image22.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 26;" value="27">Validate the attached file is displayed in the left-hand pane.</li>
-      <li>If applicable, in the Notes field, enter any additional/clarifying notes for the attachment.</li>
-      <li>Click the X in the top-right corner to close the attachments page and return to the list of journals.</li>
-    </ol>
-    <p><img alt="Picture 101" height="263.1" src="assets/images/Accounts Receivable_files/image23.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 29;" value="30">Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>The donor payment journal is posted.</p>
-    <h2 class="Heading2"><a id="Process_One-time_Payment_from_a_Donor"></a>Process One-time Payment from a Donor</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>Use this procedure to process a one-time donation from a person/organization. This task is performed when the donating person/organization is not set up as a customer in Integra. For a one-time donor, a vendor account number is not entered.</p>
-    <h3 class="Heading3">Prerequisites</h3>
-    <ul>
-      <li>Supporting documentation is available to attach to payment journal</li>
-      <li>Financial dimensions are known</li>
-    </ul>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Payments &gt; Customer payment journal.</li>
-    </ol>
-    <p><img alt="Picture 102" height="204.5" src="assets/images/Accounts Receivable_files/image24.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the toolbar at the top, click New to add a new journal line.</li>
-    </ol>
-    <p><img alt="Picture 104" height="209.9" src="assets/images/Accounts Receivable_files/image25.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">In the Name field, enter or select CR (Cash Receipt).</li>
-    </ol>
-    <p><img alt="Picture 105" height="214.6" src="assets/images/Accounts Receivable_files/image26.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 3;" value="4">In the Description field, enter a meaningful description.</li>
-    </ol>
-    <p><img alt="Picture 106" height="216.5" src="assets/images/Accounts Receivable_files/image27.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click Lines.</li>
-    </ol>
-    <p><img alt="Picture 121" height="225.3" src="assets/images/Accounts Receivable_files/image28.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">On the menu under Customer payments, click the General tab.</li>
-    </ol>
-    <p><img alt="Picture 122" height="263.1" src="assets/images/Accounts Receivable_files/image29.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">In the Account type field, change the value from Customer to Ledger.</li>
-    </ol>
-    <p><img alt="Picture 123" height="210.0" src="assets/images/Accounts Receivable_files/image30.png" width="623.9"/></p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">Click List to return to the journal lines view.</li>
-    </ol>
-    <p><img alt="Picture 107" height="194.6" src="assets/images/Accounts Receivable_files/image31.png" width="623.9"/></p>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Click in the Account field.</li>
-    </ol>
-    <p><img alt="Picture 124" height="255.3" src="assets/images/Accounts Receivable_files/image32.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Using the right-hand fields, enter the full financial dimension string, beginning with the Main Account field. Scroll down to see all required fields.</li>
-    </ol>
-    <h6 class="Heading6">Note: Required entries are Main account, D1, D4, D5, D11, and D12, e.g., 41300---TR131---UGAAT---6DAT---OMSC---DATL. The D11 and D12 will always be OMSC and DATL respectively.</h6>
-    <img alt="Picture 125" height="263.1" src="assets/images/Accounts Receivable_files/image33.png" width="624.0"/>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Click in the Description field.</li>
-    </ol>
-    <p><img alt="Picture 127" height="263.1" src="assets/images/Accounts Receivable_files/image34.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">Complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter text Unrestricted Donation.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Offset account</p>
-            </td>
-            <td>
-              <p>Select the relevant offset account from the drop-down selection list.</p>
-              <h6>Note: This must be entered before the Credit field is populated.</h6>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Credit</p>
-            </td>
-            <td>
-              <p>Enter the donation amount.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p><img alt="Picture 128" height="263.1" src="assets/images/Accounts Receivable_files/image35.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 12;" value="13">On the menu at the top of the page, click Validate and select Simulate posting.</li>
-    </ol>
-    <p><img alt="Picture 129" height="263.1" src="assets/images/Accounts Receivable_files/image36.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 13;" value="14">Validate the message Operation complete displays in a blue bar near the top of the page.</li>
-      <li>Click the X in the top-right corner to close the voucher page and return to the list of journals.</li>
-    </ol>
-    <p><img alt="Picture 130" height="263.1" src="assets/images/Accounts Receivable_files/image37.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 15;" value="16">Attach Donor Receipt to Journal Line</li>
-      <li>Select the journal line and click <img alt="Picture 137" height="29.0" src="assets/images/Accounts Receivable_files/image38.png" width="29.0"/> in the top-right corner of page.</li>
-    </ol>
-    <h6 class="Heading6">Note: The attachment can be a copy of the check or any document that confirms receipt.</h6>
-    <p><img alt="Picture 117" height="263.1" src="assets/images/Accounts Receivable_files/image39.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 17;" value="18">On the menu at the top, click New and select File.</li>
-    </ol>
-    <p><img alt="Picture 118" height="263.1" src="assets/images/Accounts Receivable_files/image40.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 18;" value="19">Click Browse and locate and upload the receipt file.</li>
-    </ol>
-    <p><img alt="Picture 119" height="263.1" src="assets/images/Accounts Receivable_files/image41.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 19;" value="20">Validate that the attached file is displayed in the left-hand pane.</li>
-      <li>If applicable, In the Notes box, enter any additional/clarifying notes for the attachment.</li>
-      <li>Click the X in the top-right corner to close the attachments page and return to the list of journals.</li>
-    </ol>
-    <p><img alt="Picture 120" height="263.1" src="assets/images/Accounts Receivable_files/image42.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 22;" value="23">Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.</li>
-    </ol>
-    <h3 class="Heading3"><br/>
-      ‎Result</h3>
-    <p>The one-time donor payment journal is posted.</p>
-    <h2 class="Heading2"><a id="Create_Fee_for_Service_Billing_using_a_Free_Text_Invoice"></a>Create Fee for Service Billing using a Free Text Invoice</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. These customers must be created if they have not been used before. Once the customer record is created, it remains in the system.</p>
-    <h6 class="Heading6">Example: IRC is working with a new hospital that is using our interpreter services.</h6>
-    <p>This procedure contains two tasks</p>
-    <p>Search to see if the customer already exists in Integra. If not, create the customer.</p>
-    <p>Create the free text invoice.</p>
-    <h3 class="Heading3">Steps</h3>
-    <h4 class="Heading4">Section 1: Search for Customer</h4>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Customers &gt; All customers.</li>
-    </ol>
-    <p><img alt="Picture 98" height="320.6" src="assets/images/Accounts Receivable_files/image43.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">In the Name column on the customer table grid, click the drop-down arrow to perform a search on the customer name.</li>
-    </ol>
-    <p><img alt="Picture 108" height="320.6" src="assets/images/Accounts Receivable_files/image44.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">If the customer is not found, click New on the menu at the top of page.</li>
-    </ol>
-    <h6 class="Heading6">Note: If the customer is found, proceed to Section 2 of this procedure.</h6>
-    <p><img alt="Picture 110" height="320.6" src="assets/images/Accounts Receivable_files/image45.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 3;" value="4">On the Create customer form, review/complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Customer account</p>
-            </td>
-            <td>
-              <p>Make note of the customer account number that was generated by the system.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Type</p>
-            </td>
-            <td>
-              <p>Select the relevant type of customer from the drop-down selection list. i.e., Person or Organization</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Name</p>
-            </td>
-            <td>
-              <p>Enter the name of the customer.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Customer group</p>
-            </td>
-            <td>
-              <p>Select FFS_ORG from the drop-down selection list.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Address section</p>
-            </td>
-            <td>
-              <p>Enter as much address information as is known. At a minimum, enter the country.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">Make note of the customer account number that was generated.</li>
-      <li>Once all information is entered, click Save.</li>
-      <li>Proceed to Section 2: Create Free Text Invoice.</li>
-    </ol>
-    <h4><br/>
-      ‎Section 2: Create Free Text Invoice</h4>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Invoices &gt; All free text invoices.</li>
-    </ol>
-    <p><img alt="Picture 112" height="320.6" src="assets/images/Accounts Receivable_files/image46.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New.</li>
-    </ol>
-    <p><img alt="Picture 115" height="320.6" src="assets/images/Accounts Receivable_files/image47.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">In the Customer account field, enter the customer account number or perform a search by clicking the drop-down arrow.</li>
-    </ol>
-    <p><img alt="Picture 116" height="320.6" src="assets/images/Accounts Receivable_files/image48.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 3;" value="4">On the right-hand side of page, at the top of the form, click Header.</li>
-    </ol>
-    <p><img alt="Picture 126" height="320.6" src="assets/images/Accounts Receivable_files/image49.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">Scroll down to the Financial dimensions fast tab and click to expand the section.</li>
-    </ol>
-    <p><img alt="Picture 131" height="320.6" src="assets/images/Accounts Receivable_files/image50.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">Enter all applicable financial dimensions. D1, D4, D5.</li>
-    </ol>
-    <h6 class="Heading6">Note: For the D1, enter the relevant project.</h6>
-    <p><img alt="Picture 132" height="320.6" src="assets/images/Accounts Receivable_files/image51.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">On the right-hand side of page, at the top of the form, click Lines and scroll down to the Invoice lines section.</li>
-    </ol>
-    <p><img alt="Picture 133" height="320.6" src="assets/images/Accounts Receivable_files/image52.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">In the first row of the Invoice lines section, complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter a meaningful description of the cash proceeds.</p>
-              <p>E.g., special donation</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Main account</p>
-            </td>
-            <td>
-              <p>Enter the relevant cash receipt account number.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Unit price</p>
-            </td>
-            <td>
-              <p>Enter the invoice (receipt) amount.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p><img alt="Picture 134" height="320.6" src="assets/images/Accounts Receivable_files/image53.png" width="700.8"/></p>
-    <h6 class="Heading6">Note: For project related service invoices, scroll down to the X, click the Project tab, and populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.</h6>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Click Line details to expand the section and scroll down page to view the available tabs.</li>
-    </ol>
-    <p><img alt="Picture 135" height="320.6" src="assets/images/Accounts Receivable_files/image54.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Click the Project tab.</li>
-    </ol>
-    <p><img alt="Picture 136" height="320.6" src="assets/images/Accounts Receivable_files/image55.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Enter the relevant project ID and Category (project category).</li>
-    </ol>
-    <p><img alt="Picture 140" height="320.6" src="assets/images/Accounts Receivable_files/image56.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">On the menu at the top, click Save.</li>
-      <li>To post the invoice, click Post on the menu at the top of page. The invoice can be printed.</li>
-    </ol>
-    <p><img alt="Picture 12" height="229.2" src="assets/images/Accounts Receivable_files/image57.png" width="679.9"/></p>
-    <ol>
-      <li style="counter-reset: item1 13;" value="14">Once the invoice has been saved and posted, the Save button becomes Edit, the Post button is no longer available, and the invoice number is generated and displays as an FTI number in the Invoice field.</li>
-      <li>Once posted, the FTI invoice can be settled to the customer account.</li>
-      <li>Settling a Fee for Service Billing Free Text Invoice</li>
-    </ol>
-    <p><img alt="Picture 21" height="223.6" src="assets/images/Accounts Receivable_files/image58.png" width="689.7"/></p>
-    <ol>
-      <li style="counter-reset: item1 15;" value="16">Click the Customer account number hyperlinked in the Customer account field to access the customer record.</li>
-      <li>You access the customer record.</li>
-    </ol>
-    <p><img alt="Picture 22" height="218.7" src="assets/images/Accounts Receivable_files/image59.png" width="677.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 17;" value="18">Click the Collect tab and follow the menu path: Settle &gt; Settle transactions.</li>
-    </ol>
-    <p><img alt="Picture 70" height="343.3" src="assets/images/Accounts Receivable_files/image60.png" width="676.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 18;" value="19">On the Settle transaction form for the customer, locate the posted FTI invoice to be settled in the list of invoices.</li>
-      <li>Click <img alt="Picture 24" height="20.0" src="assets/images/Accounts Receivable_files/image61.png" width="21.0"/> in the Mark column to mark the FTI invoice.</li>
-      <li>Locate the invoice that the FTI invoice is settled to and click <img alt="Picture 23" height="20.0" src="assets/images/Accounts Receivable_files/image62.png" width="21.0"/> in the Mark column.</li>
-      <li>Click Post to post the FTI invoice.</li>
-    </ol>
-    <p><img alt="Picture 75" height="224.5" src="assets/images/Accounts Receivable_files/image63.png" width="691.3"/></p>
-    <ol>
-      <li style="counter-reset: item1 22;" value="23">Once posted, the FTI invoice no longer displays in the list on the Settle transactions form. The invoice that the FTI invoice settled to is now updated with remaining balance.</li>
-      <li>Click X to close the customer record and return to the Free text invoice form.</li>
-      <li>Click X to close the Free text invoice form.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>A fee-for-service free text invoice has been created, posted, and then settled to the related customer invoice.</p>
-    <p>Once the invoice is posted and payment is received, a cash receipt is entered in Integra.</p>
-    <p>To view the invoice, navigate to Accounts receivable &gt; Invoices &gt; All free text invoices.</p>
-    <h2 class="Heading2"><a id="Create_Fee_for_Service_Billing_using_a_Free_Text_Invoice_–_CRRD_Scenario"></a>Create Fee for Service Billing using a Free Text Invoice – CRRD Scenario</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. </p>
-    <h3 class="Heading3">Customers</h3>
-    <p>Follow the steps in the previous procedure to search for the customer. If the customer does not exist, create the new customer, prior to executing the steps below to create the invoice.</p>
-    <h6 class="Heading6">Example: IRC is working with a new hospital that is using our interpreter services.</h6>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Invoices &gt; All free text invoices.</li>
-    </ol>
-    <p><img alt="Picture 25" height="320.6" src="assets/images/Accounts Receivable_files/image64.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New.</li>
-    </ol>
-    <p><img alt="Picture 28" height="320.6" src="assets/images/Accounts Receivable_files/image65.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">In the Customer account field, enter or search for the customer account number.<img alt="Picture 29" height="320.6" src="assets/images/Accounts Receivable_files/image66.png" width="700.8"/></li>
-      <li style="counter-reset: item1 3;" value="4">On the right-hand side of page, at the top of the form, click Header.</li>
-    </ol>
-    <p><img alt="Picture 30" height="320.6" src="assets/images/Accounts Receivable_files/image67.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">Scroll down to the Financial dimensions fast tab and click to expand the section.</li>
-    </ol>
-    <p><img alt="Picture 31" height="320.6" src="assets/images/Accounts Receivable_files/image68.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">Enter all applicable financial dimensions. D1, D4, D5, D10.</li>
-    </ol>
-    <h6 class="Heading6">Note: Always enter D1 U1000 for fee for service invoices.</h6>
-    <p><img alt="Picture 37" height="320.6" src="assets/images/Accounts Receivable_files/image69.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">On the right-hand side of page, at the top of the form, click Lines and scroll down to the Invoice lines section.</li>
-    </ol>
-    <p><img alt="Picture 44" height="320.6" src="assets/images/Accounts Receivable_files/image70.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">In the first row of the Invoice lines section, complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter a meaningful description of the cash proceeds.</p>
-              <p>E.g., special donation</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Main account</p>
-            </td>
-            <td>
-              <p>Enter the relevant cash receipt account number.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Unit price</p>
-            </td>
-            <td>
-              <p>Enter the invoice (receipt) amount.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p><img alt="Picture 45" height="320.6" src="assets/images/Accounts Receivable_files/image71.png" width="700.8"/></p>
-    <h6 class="Heading6">Note: For project related service invoices, scroll down to the Line details, click the Project tab , and populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.</h6>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Click Line details to expand the section and scroll down page to view the available tabs.</li>
-    </ol>
-    <p><img alt="Picture 47" height="320.6" src="assets/images/Accounts Receivable_files/image72.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Click the Project tab.</li>
-    </ol>
-    <p><img alt="Picture 48" height="320.6" src="assets/images/Accounts Receivable_files/image73.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Enter the relevant project ID and Category (project category).</li>
-    </ol>
-    <p><img alt="Picture 49" height="320.6" src="assets/images/Accounts Receivable_files/image74.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">On the menu at the top, click Save.</li>
-      <li>To post the invoice, click Post on the menu at the top of page. The invoice can be printed.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>A fee-for-service free text invoice has been created and posted.</p>
-    <p>Once the invoice is posted and payment is received, a cash receipt is entered in Integra.</p>
-    <p>To view the invoice, navigate to Accounts receivable &gt; Invoices &gt; All free text invoices.<a id="Create_Credit_Memo_using_a_Free_Text_InvoiceA_customer_credit_memo_can be_created_in Integra_using_a_free_text_invoice_form. To_create_a_credit_memo,_a_negative_quantity_should_be_entered_in_the_Quantity_field_in_a_free_text_invoice_line. Note:_Entry_of_a_negative_quantity_is_the_only_difference_for_the_free-text_credit_memo_creation_from_the_free-text-invoice_steps_in_the_previous_procedure. ResultYou_have_created_a_credit_memo_using_a_free-text_invoice.Create_Fee_for_Service_Cash_ReceiptIRC_has_some_“Fee_for_Service”_programs_that_operate_on_a_cash_basis._This_means_that_cash_or_payment_is_made_immediately_after_or_before_the_services_are_provided._Example:_Immigration_-_when_an_individual_comes_to_the_IRC_for_help_filling_out_and_filing_an_I-130_(officially_the_“Petition_for_Alien_Relative”)StepsNavigate_modules_to_Accounts_receivable_&gt;_Payments_&gt;_Customer_Payment_Journal.On_the_menu_at_the_top,_click_New._In_the_Name_field_name_select_the_journal_type_CR_–_Cash_Receipt.On_the_menu_at_the_top,_click_Lines.In_the_Account_field,_enter_the_customer_account_number.Click_on_the_Bank_tab.Enter_the_relevant_Bank_transaction_TypeClick_the_List_tab_and_enter_the_amount_(credit),_description_and_select_the_relevant_bank_account_in_the_Offset_account_field.Click_on_the_Financial_dimensions_tab_then_select_account_and_enter_all_the_required_financial_dimensions_and_click_OK.Exit_the_line_window_by_clicking_the_X_in_the_top_right_corner.Submit_the_journal_for_approval_by_clicking_on_the_workflow_buttonEnter_submission_instruction_and_click_on_submit.After_approval,_the_journal_can_be_posted.ResultYou_have_created_a_“Fee_for_Service”_cash_receipt."></a></p>
-    <h2 class="Heading2"><a id="Create_Credit_Memo_using_a_Free_Text_Invoice"></a>Create Credit Memo using a Free Text Invoice</h2>
-    <p>A customer credit memo can be created in Integra using a free text invoice form. </p>
-    <p>To create a credit memo, a negative quantity should be entered in the Quantity field in a free text invoice line.<br/>
-      ‎</p>
-    <p><img alt="C:\Users\DominicMu\Desktop\AP Reg\cm.PNG" height="170.7" src="assets/images/Accounts Receivable_files/image75.png" width="624.0"/> </p>
-    <h6 class="Heading6">Note: Entry of a negative quantity is the only difference for the free-text credit memo creation from the free-text-invoice steps in the previous procedure. </h6>
-    <h3 class="Heading3">Result</h3>
-    <p>You have created a credit memo using a free-text invoice.</p>
-    <h2 class="Heading2"><a id="Create_Fee_for_Service_Cash_Receipt"></a>Create Fee for Service Cash Receipt</h2>
-    <p>IRC has some “Fee for Service” programs that operate on a cash basis. This means that cash or payment is made immediately after or before the services are provided.</p>
-    <h6 class="Heading6">Example: Immigration - when an individual comes to the IRC for help filling out and filing an I-130 (officially the “Petition for Alien Relative”)</h6>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Payments &gt; Customer Payment Journal.</li>
-      <li>On the menu at the top, click New.</li>
-      <li>In the Name field name select the journal type CR – Cash Receipt.</li>
-      <li>On the menu at the top, click Lines.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Customer Select.PNG" height="135.1" src="assets/images/Accounts Receivable_files/image76.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">In the Account field, enter the customer account number.</li>
-      <li>Click on the Bank tab.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Bank Trans Type.PNG" height="201.8" src="assets/images/Accounts Receivable_files/image77.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Enter the relevant Bank transaction Type</li>
-      <li>Click the List tab and enter the amount (credit), description and select the relevant bank account in the Offset account field.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Bank Offset.PNG" height="131.0" src="assets/images/Accounts Receivable_files/image78.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Click on the Financial dimensions tab then select account and enter all the required financial dimensions and click OK.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\FD.PNG" height="325.5" src="assets/images/Accounts Receivable_files/image79.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Exit the line window by clicking the X in the top right corner.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\x.PNG" height="232.7" src="assets/images/Accounts Receivable_files/image80.png" width="603.2"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Submit the journal for approval by clicking on the workflow button</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Submit.PNG" height="217.3" src="assets/images/Accounts Receivable_files/image81.png" width="536.1"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">Enter submission instruction and click on submit.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Sub.PNG" height="343.4" src="assets/images/Accounts Receivable_files/image82.png" width="510.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 12;" value="13">After approval, the journal can be posted.</li>
-    </ol>
-    <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Post.PNG" height="124.7" src="assets/images/Accounts Receivable_files/image83.png" width="523.7"/></p>
-    <h3 class="Heading3">Result</h3>
-    <p>You have created a “Fee for Service” cash receipt.</p>
-    <h2 class="Heading2"><a id="Create_Customer_Payment_Journal_Entry"></a>Create Customer Payment Journal Entry</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>For most cash receipts, you can enter and post a customer payment without settling it against any invoices. This applies to the following situations:</p>
-    <p>Standard donor cash receipts</p>
-    <p>Prepayments</p>
-    <p>Intercompany cash receipts</p>
-    <p>Repayment of employee advance</p>
-    <p>Miscellaneous fees (bank fees, interest income, administrative fees, merchant fees, etc.)</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Payments &gt; Customer payment journal.</li>
-    </ol>
-    <p><img alt="Picture 2" height="240.0" src="assets/images/Accounts Receivable_files/image84.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New.</li>
-    </ol>
-    <p><img alt="Picture 36" height="248.9" src="assets/images/Accounts Receivable_files/image85.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">A new journal line is added at the top of the table grid.</li>
-      <li>In the Name field, enter or select CR.</li>
-      <li>In the Description field, enter a meaningful description for the journal.</li>
-    </ol>
-    <p><img alt="Picture 40" height="257.0" src="assets/images/Accounts Receivable_files/image86.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">On the menu at the top of page, click Lines.</li>
-    </ol>
-    <p><img alt="Picture 60" height="235.5" src="assets/images/Accounts Receivable_files/image87.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:680.7px">
-        <colgroup>
-          <col style="width:170.13333333333333333333333333px"/>
-          <col style="width:510.6px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account</p>
-            </td>
-            <td>
-              <p>Enter the vendor account number.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account name</p>
-            </td>
-            <td>
-              <p>This value defaults after the vendor account number is entered.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter a meaningful description for the journal line.</p>
-              <p>Example: Billings</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Credit</p>
-            </td>
-            <td>
-              <p>Enter the donation amount.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p> </p>
-    <p><img alt="Picture 63" height="320.6" src="assets/images/Accounts Receivable_files/image88.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">A warning message displays indicating that a bank transaction type is mandatory. Click the Bank tab just above the table grid to access the screen where this value is populated.</li>
-    </ol>
-    <p><img alt="Picture 56" height="320.6" src="assets/images/Accounts Receivable_files/image89.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">In the Bank transaction type field, select 187-CASHLC Cash Letter Credit from the drop-down selection list.</li>
-    </ol>
-    <p><img alt="Picture 68" height="320.6" src="assets/images/Accounts Receivable_files/image90.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Click List to return to the journal lines.</li>
-    </ol>
-    <p><img alt="Picture 69" height="320.6" src="assets/images/Accounts Receivable_files/image91.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">Scroll to the right to find the Offset account column. Select the relevant offset account from the drop-down selection list.</li>
-    </ol>
-    <p><img alt="Picture 73" height="227.1" src="assets/images/Accounts Receivable_files/image92.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">On the menu just above the table grid, click the Financial dimensions tab and select Account from the drop-down selection list.</li>
-    </ol>
-    <p><img alt="Picture 74" height="320.6" src="assets/images/Accounts Receivable_files/image93.png" width="700.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 12;" value="13">On the Enter account financial dimensions screen, enter the correct financial dimensions based on the IRC account structure. </li>
-    </ol>
-    <h6 class="Heading6">Note: Customer accounts require D, D4, D5. </h6>
-    <ol>
-      <li style="counter-reset: item1 13;" value="14">Click OK.</li>
-      <li>Click Financial dimensions &gt; Offset account.</li>
-      <li>On the Enter offset account financial dimensions screen, enter the correct financial dimensions based on the IRC account structure.</li>
-      <li>Click OK.</li>
-      <li>Click Save.</li>
-    </ol>
-    <p><img alt="Picture 1" height="119.4" src="assets/images/Accounts Receivable_files/image94.png" width="317.6"/></p>
-    <h6 class="Heading6">Note: The following three steps apply only if processing a cash receipt (prepayment) at HQ. Otherwise, proceed to step 18.</h6>
-    <ol>
-      <li style="counter-reset: item1 18;" value="19">Click the Payment tab.</li>
-      <li>Select Yes in the Prepayment journal voucher field.</li>
-      <li>Click Save.</li>
-      <li>Close the page by selecting X at the top right of the screen.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>The customer payment workflow is submitted for approval and needs to be approved.</p>
-    <p>Once approved, the customer payment journal can be posted.</p>
-    <h2 class="Heading2"><a id="Perform_Accounts_Receivable_Settlement"></a>Perform Accounts Receivable Settlement</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>Settlement involves the application of transactions from accounts to increase or decrease the balance of each account. Settlement within Accounts Receivable can occur between all transaction types that affect the customer balance, such as invoices and payments.</p>
-    <p>When Accounts Receivable records a customer payment, they mark the appropriate invoices for settlement, based on the information that is included with the donor&#39;s payment. The Settle transactions page is used to mark transactions for settlement. This page can be opened from any unposted invoice or payment. When the transaction is posted, the settlement is also posted.</p>
-    <p>As transactions are settled, the outstanding balance of each transaction increases or decreases as appropriate. In a typical scenario, where an invoice and payment are settled, the status and balance of each transaction is updated according to the following rules:</p>
-    <p>If the payment amount is more than the invoice amount, the invoice balance is reduced to 0.00, and the invoice is closed. The payment remains open, and the balance is the amount by which the payment exceeds the invoice amount.</p>
-    <p>If the payment amount is less than the invoice amount, the payment balance is reduced to 0.00, and the payment is closed. The invoice remains open, and the balance is the amount by which the payment underpaid the invoice.</p>
-    <p>If the payment amount equals the invoice amount, both the payment and the invoice are closed, and the balance of both is 0.00.</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Payments &gt; Customer payment journal.</li>
-      <li>Click New.</li>
-      <li>Enter Name and Description fields.</li>
-      <li>Click Lines.</li>
-      <li>Enter the customer Account, Account name,</li>
-      <li>Click Settle transactions.</li>
-      <li>Select the transaction to be settled.</li>
-    </ol>
-    <h6 class="Heading6">Note: The invoice column auto-populates the invoice you are settling against.</h6>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">Enter the description.</li>
-      <li>Choose the offset bank account.</li>
-      <li>Select financial dimensions for the account - D1-D4-D5. Select offset account D1, D4, D5.</li>
-      <li>Validate.</li>
-      <li>Attach documents.</li>
-      <li>Click Post.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>You have performed account settlement.</p>
-    <h2 class="Heading2"><a id="Reimburse_/_Reverse_a_Cash_Receipt"></a>Reimburse / Reverse a Cash Receipt</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>A donor may be reimbursed for their full balance amount using the procedure below. A credit note or accounts payable journal entry may also be entered in Integra.</p>
-    <p>If the customer has multiple projects and therefore multiple D1 codes, these D1 codes will have different associated balances with each D1 code. For this reason, the procedure outlined below must not be used for customers with multiple D1 codes. The reimburse function is only available for a customer with one project.</p>
-    <p>For customers with more than one project and multiple D1 codes, reimbursement is made using the GL function. Refer to the procedure Reimburse a Customer/Donor using the General Ledger.</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>On the Navigation Pane follow the menu path: Accounts receivable &gt; Customers &gt; All customers.</li>
-    </ol>
-    <p><img alt="Picture 178" height="230.4" src="assets/images/Accounts Receivable_files/image95.png" width="321.2"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">A list of customers is displayed on the All customers screen.</li>
-      <li>Select the customer account for the reversal.</li>
-      <li>Click Collect &gt; Customers balances &gt; Reimburse customer.</li>
-    </ol>
-    <p><img alt="Picture 179" height="197.0" src="assets/images/Accounts Receivable_files/image96.png" width="527.4"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">On the Reimbursement form, click OK.</li>
-    </ol>
-    <p><img alt="Picture 193" height="250.2" src="assets/images/Accounts Receivable_files/image97.png" width="271.3"/></p>
-    <h3 class="Heading3">Result</h3>
-    <p>The donor is fully reimbursed. The donor balance is moved to the corresponding donor account in the Accounts Payable module and the payment can be performed using the normal vendor payment process in AP.</p>
-    <p>Apply a Customer/Donor Write-Off (Single-Project Customer)</p>
-    <p>Use this procedure to apply a customer/donor write-off when the customer has a single project.</p>
-    <p>A donor balance write-off can be completed using the DynAd template or directly as a General Ledger entry. To write-off the amount, include the following required information in the journal entry:</p>
-    <p>The customer reference number</p>
-    <p>The applicable debit or credit to the customer depending on the amount to be written off</p>
-    <p>Enter the following financial dimensions - D1, D4 and D5</p>
-    <p>Use the Expense write-off account type for the offset line</p>
-    <h6 class="Heading6">Note: A donor write-off as documented in this procedure is only applicable to customers with only one project and one D1 code. If the customer/donor has multiple projects and therefore multiple D1 codes these steps cannot be used.</h6>
-    <p>Refer to the procedure Reimburse a Customer/Donor using the General Ledger (Multi-Project Customer).</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Log in Integra and click the Navigation Pane.</li>
-      <li>Go to Credit and Collections &gt; Customers &gt; All customers.</li>
-    </ol>
-    <p><img alt="picture" height="205.7" src="assets/images/Accounts Receivable_files/image98.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">Select the customer with a balance to write-off.</li>
-      <li>On the Collect tab, follow the menu path: Customer Balances&gt; Write Off.</li>
-    </ol>
-    <p><img alt="picture" height="217.0" src="assets/images/Accounts Receivable_files/image99.png" width="184.1"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">Validate the Write-off date field which defaults to today’s date.</li>
-      <li>Validate the Reason code which defaults to WRITEOFF.</li>
-      <li>The Description defaults to Write-off.</li>
-      <li>Click OK.</li>
-    </ol>
-    <p><img alt="picture" height="211.1" src="assets/images/Accounts Receivable_files/image100.png" width="589.6"/></p>
-    <p>A confirmation message displays The write off process is complete… A General journal has been created and it is now ready to be posted.</p>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Navigate to General Ledger &gt; Journal entries &gt; General Journals to locate the write off journal.</li>
-    </ol>
-    <p><img alt="picture" height="214.7" src="assets/images/Accounts Receivable_files/image101.png" width="594.5"/></p>
-    <p>The General Journal Ledger workflow is enabled for the Write-Off journal and it will go through the same level of review and approval that daily General Journals go through.</p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Review the Journal lines and submit to Workflow for review and approval.</li>
-    </ol>
-    <p><img alt="picture" height="160.1" src="assets/images/Accounts Receivable_files/image102.png" width="594.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">When the Write-off journal is approved, follow the steps to post a periodic journal. After the Write-off journal is posted the voucher transaction is displayed.</li>
-    </ol>
-    <p><img alt="picture" height="122.2" src="assets/images/Accounts Receivable_files/image103.png" width="591.7"/></p>
-    <h3 class="Heading3">Result</h3>
-    <p>You have processed a customer/donor write-off when the customer has a single project.</p>
-    <p>Reimburse a Customer/Donor Using a General Ledger Journal (Multi-Project Customer)</p>
-    <h3 class="Heading3">Purpose</h3>
-    <p>Use this procedure to process a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.</p>
-    <p>To determine all the D1 balances a customer has, follow the menu path Project management and accounting &gt; Projects &gt; All projects.</p>
-    <h6 class="Heading6">Note: You are not able to use the reimburse function because this reimburses the entire customer balance and for this scenario only a portion needs to be reimbursed to the specific project.</h6>
-    <p>To be able to reimburse a customer, the customer must exist as a vendor in Integra.</p>
-    <h3 class="Heading3">Prerequisites</h3>
-    <p>Prior to being able to reimburse funds as a result of an outstanding balance on a project, the following prerequisites must be met.</p>
-    <ul>
-      <li>To reimburse funds, first determine:</li>
-      <li>To which project is the money being reimbursed.</li>
-      <li>Once the project is known, which customer are the funds being reimbursed to.</li>
-      <li>If the customer also exists as a vendor. Follow the menu path: Organization administration &gt; Global address book &gt; global address book to determine if the customer is set up as a vendor to enable payment.</li>
-      <li>If the customer is not set up as a vendor, follow the established process and steps to add the vendor role to the customer.</li>
-    </ul>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate the modules to: General ledger &gt; Journal entries &gt; General journals.</li>
-    </ol>
-    <p><img alt="Picture 236597767" height="206.0" src="assets/images/Accounts Receivable_files/image104.png" width="666.3"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">Click New.</li>
-      <li>In the Name field, select your JE general voucher.</li>
-      <li>The description Journal Voucher defaults in the Description field.</li>
-    </ol>
-    <h6 class="Heading6">Note: Update the Description field to include a brief description of what the journal is for, e.g., Donor reimbursement GB751.</h6>
-    <ol>
-      <li style="counter-reset: item1 3;" value="4">This helps distinguish this journal from other journals which may be pending.</li>
-      <li>Click Lines on the menu at the top.</li>
-      <li>The journal lines open to populate based on the type of transaction you are booking.</li>
-    </ol>
-    <h6 class="Heading6">Note:The Date, Voucher, Company and Account type fields automatically default to today’s date, sequential voucher number, your legal entity and ledger. Each field except the Voucher can be modified by the user.</h6>
-    <p>If the entry is related to your current legal entity, do not change the company.</p>
-    <p><img alt="Picture 236597771" height="271.4" src="assets/images/Accounts Receivable_files/image105.png" width="594.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Update the Account type field to Customer, as the reimbursement is to the customer.</li>
-    </ol>
-    <p>The selection list in the drop-down depends on the Account Type that was previously selected.</p>
-    <ol>
-      <li style="counter-reset: item1 7;" value="8">If Customer was selected in the Account type field, the drop-down selection list in the Account are customer (donor) accounts.</li>
-    </ol>
-    <p><img alt="Picture 236597772" height="189.4" src="assets/images/Accounts Receivable_files/image106.png" width="624.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 8;" value="9">Enter a description in the Description field of the type of journal this is.</li>
-    </ol>
-    <p><img alt="Picture 236597761" height="288.8" src="assets/images/Accounts Receivable_files/image107.png" width="629.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Click Financial dimensions in the menu above the lines grid.</li>
-      <li>Select Account from the drop-down in the field.</li>
-      <li>Complete the following fields on the Enter account financial dimensions form:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:156px"/>
-          <col style="width:468px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Project ID (D1)</p>
-            </td>
-            <td>
-              <p>The project from which funds being reimbursed are associated.</p>
-              <p> </p>
-              <p>(e.g.) GB751 – FY2021 Reception and Placement.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Operating Unit (D4)</p>
-            </td>
-            <td>
-              <p>Operating Unit.</p>
-              <p>This entry is based on the location and legal entity.</p>
-              <p>(e.g.) UGAAT – Atlanta, GA.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Reporting Unit (D5)</p>
-            </td>
-            <td>
-              <p>This entry is based on the location and legal entity.</p>
-              <p>(e.g.) 6DAT – US, Atlanta.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p> </p>
-    <ol>
-      <li style="counter-reset: item1 12;" value="13">Scroll down the form and click OK.</li>
-    </ol>
-    <p><img alt="Picture 236597763" height="194.0" src="assets/images/Accounts Receivable_files/image108.png" width="624.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 13;" value="14">Enter the credit balance that is being reimbursed in the Debit field.</li>
-      <li>The debit/credit field depends on your Account type and nature of the entry selected.</li>
-    </ol>
-    <h6 class="Heading6">Note: It is recommended that the offset account NOT be used to keep the journal concise and avoid system errors due to wrong data inputs. It is recommended to use double-entry, a line for debit and a line for credit.</h6>
-    <ol>
-      <li style="counter-reset: item1 15;" value="16">Click New to add a second line.</li>
-      <li>Update the Account type field to Vendor.</li>
-    </ol>
-    <p>The selection list in the drop-down depends on the Account Type that was previously selected.</p>
-    <p><img alt="Picture 236597766" height="305.5" src="assets/images/Accounts Receivable_files/image109.png" width="660.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 17;" value="18">Click Financial dimensions in the menu above the lines grid.</li>
-      <li>Select Account from the drop-down in the field.</li>
-      <li>Complete the following fields on the Enter account financial dimensions form:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:156px"/>
-          <col style="width:468px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Project ID (D1)</p>
-            </td>
-            <td>
-              <p>The project from which funds being reimbursed are associated.</p>
-              <p> </p>
-              <p>(e.g.) U1000 – UNRESTRICTED FUNDS.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Operating Unit (D4)</p>
-            </td>
-            <td>
-              <p>This entry is based on the location and legal entity.</p>
-              <p>(e.g.) UGAAT – Atlanta, GA.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Reporting Unit (D5)</p>
-            </td>
-            <td>
-              <p>This entry is based on the location and legal entity.</p>
-              <p>(e.g.) 6DAT – US, Atlanta.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <ol>
-      <li style="counter-reset: item1 20;" value="21">Scroll down the form and click OK.</li>
-      <li>Complete the following fields on the second line:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:144px"/>
-          <col style="width:480px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account</p>
-            </td>
-            <td>
-              <p>This is the vendor number for the customer the funds are being reimbursed to.</p>
-              <p>Enter the customer’s vendor number.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Defaults from the previous line. Leave the default.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Credit</p>
-            </td>
-            <td>
-              <p>Enter the amount being reimbursed to the customer.</p>
-              <p>This is the same value being entered in the debit field on the previous line.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p> </p>
-    <p><img alt="Picture 236597769" height="201.7" src="assets/images/Accounts Receivable_files/image110.png" width="607.4"/></p>
-    <ol>
-      <li style="counter-reset: item1 22;" value="23">Click Validate &gt; Simulate posting to validate the entries.</li>
-      <li>Click X to close the journal.</li>
-      <li>Click <img alt="Picture 236597774" height="28.0" src="assets/images/Accounts Receivable_files/image111.png" width="31.0"/> to attach the relevant documentation that warrants a request for reimbursement.</li>
-      <li>Click Workflow &gt; Approve.</li>
-      <li>Click Approve.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>You have processed a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.</p>
-    <h2 class="Heading2"><a id="Cash_Return_from_Staff_in_Accounts_Receivable"></a>Cash Return from Staff in Accounts Receivable</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>Use this procedure to process a cash return when staff collects an advance for program activities, travel, or other purposes and there is a balance to return to the IRC.</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Follow the menu path: Accounts receivable &gt; Payments &gt; Customer payment journal.</li>
-    </ol>
-    <p><img alt="Picture 152" height="240.8" src="assets/images/Accounts Receivable_files/image112.png" width="653.3"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click New.</li>
-    </ol>
-    <p><img alt="Picture 86" height="197.9" src="assets/images/Accounts Receivable_files/image113.png" width="658.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">A new journal line is added at the top of the Customer payment journal grid.</li>
-      <li>In the Name field, enter or select CR – Cash Receipt.</li>
-      <li>In the Description field, Cash Receipt defaults. Enter a meaningful description for the journal (eg.) Cash receipt – From Staff.</li>
-      <li>On the menu at the top of page, click Lines.</li>
-    </ol>
-    <p><img alt="Picture 146" height="243.2" src="assets/images/Accounts Receivable_files/image114.png" width="649.1"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Click the General tab.</li>
-      <li>Select Vendor in the Account type field.</li>
-      <li>Click the List tab.</li>
-    </ol>
-    <p><img alt="Picture 155" height="136.5" src="assets/images/Accounts Receivable_files/image115.png" width="662.2"/></p>
-    <ol>
-      <li style="counter-reset: item1 9;" value="10">Complete the following fields:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:680.7px">
-        <colgroup>
-          <col style="width:170.13333333333333333333333333px"/>
-          <col style="width:510.6px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account</p>
-            </td>
-            <td>
-              <p>Enter the account number for the staff person returning the funds.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Account name</p>
-            </td>
-            <td>
-              <p>This value defaults from the Account field. Leave the default.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Description</p>
-            </td>
-            <td>
-              <p>Enter a meaningful description for the journal line.</p>
-              <p>(eg.) Cash return from staff</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Credit</p>
-            </td>
-            <td>
-              <p>Enter the cash return amount.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Offset account</p>
-            </td>
-            <td>
-              <p>Select the account where the funds are going.</p>
-              <p>(eg.) 10326ATUSD JPMorgan Chase Bank</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Method of payment</p>
-            </td>
-            <td>
-              <p>Select the method of payment from the staff person.</p>
-              <p>(eg.) Check Check Payment</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p> </p>
-    <h6 class="Heading6">Note: the funds being returned by staff may be the result of an advance.</h6>
-    <ol>
-      <li style="counter-reset: item1 10;" value="11">If this is the reason for this journal, complete steps #11-13.</li>
-    </ol>
-    <p><img alt="Picture 157" height="236.7" src="assets/images/Accounts Receivable_files/image116.png" width="644.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 11;" value="12">Click the Payment tab.</li>
-      <li>Complete the following fields:</li>
-      <li>Toggle Payment journal voucher to Yes.</li>
-      <li>Change the Posting profile to PROG ADV</li>
-      <li>Click the List tab to return to the journal lines.</li>
-    </ol>
-    <p><img alt="Picture 159" height="184.7" src="assets/images/Accounts Receivable_files/image117.png" width="664.8"/></p>
-    <ol>
-      <li style="counter-reset: item1 16;" value="17">Click Validate &gt; Simulate posting to validate the journal entry.</li>
-    </ol>
-    <p><img alt="Picture 162" height="178.7" src="assets/images/Accounts Receivable_files/image118.png" width="591.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 17;" value="18">The journal entry is successfully validated and the message Operation completed is displayed. The journal can be submitted to workflow for approval.</li>
-      <li>Click X to close the journal.</li>
-      <li>Click <img alt="Picture 161" height="28.0" src="assets/images/Accounts Receivable_files/image119.png" width="31.0"/> to attach the relevant documentation.</li>
-    </ol>
-    <p><img alt="Picture 165" height="279.8" src="assets/images/Accounts Receivable_files/image120.png" width="626.6"/></p>
-    <ol>
-      <li style="counter-reset: item1 20;" value="21">Click … on the top menu bar and select Workflow &gt; Submit.</li>
-      <li>Enter comments as necessary and click Submit.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>The journal is routed for approval. After approval, the Approver or the Finance Manager/Officer posts the journal.</p>
-    <h2 class="Heading2"><a id="Process_a_Currency_Revaluation"></a>Process a Currency Revaluation</h2>
-    <p>Use this procedure to process a currency revaluation. Currency revaluation is always performed at month-end when an office has grants in currencies other than USD. This procedure is executed by the Finance Manager, DDF, or other similar role.</p>
-    <h3 class="Heading3">Prerequisites</h3>
-    <ul>
-      <li>All month-end journal processing is complete</li>
-      <li>Revenue recognition is complete</li>
-    </ul>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Periodic tasks &gt; Foreign currency revaluation.</li>
-    </ol>
-    <p><img alt="Picture 236597779" height="310.3" src="assets/images/Accounts Receivable_files/image121.png" width="625.9"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">Click <img alt="Picture 236597775" height="29.0" src="assets/images/Accounts Receivable_files/image122.png" width="27.0"/> to select the line item to process the currency revaluation for.</li>
-      <li>Click Foreign currency revaluation on the toolbar at the top.</li>
-      <li>The Foreign currency revaluation form opens.</li>
-    </ol>
-    <p><img alt="Picture 236597780" height="307.4" src="assets/images/Accounts Receivable_files/image123.png" width="630.2"/></p>
-    <ol>
-      <li style="counter-reset: item1 4;" value="5">Complete the following fields in the Parameters section:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:624.0px">
-        <colgroup>
-          <col style="width:186px"/>
-          <col style="width:438px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Entry Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Method</p>
-            </td>
-            <td>
-              <p>Use Standard to post the foreign currency job no matter if there is a profit or a loss.</p>
-              <p>Use Minimum to post the revaluation only if it shows a loss.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Considered date</p>
-            </td>
-            <td>
-              <p>Uses the date the transactions are found. The exchange rate is for this date.</p>
-              <p>If a revaluation is run for an earlier date, the system will not go back to that date but will go to a more recent revaluation date.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Date of rate</p>
-            </td>
-            <td>
-              <p>This date determines the exchange rate that is used in the foreign currency revaluation. Integra uses the consider date to update GL.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Use posting profile from</p>
-            </td>
-            <td>
-              <p>Use Posting for the posting profile for the customer transactions.</p>
-              <p>Use Select to enter the posting profile in the Posting Profile field. If you choose Select the profile decides how the revaluation is carried out.</p>
-              <p> </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Posting profile</p>
-            </td>
-            <td>
-              <p>Select the posting profile GENAR or CR.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Dimension</p>
-            </td>
-            <td>
-              <p>Posting – Financial dimensions will be posted on the transactions. The process defaults to the financial dimensions from your original transaction&#39;s AR ledger account for the AR main account while it defaults to the original transaction&#39;s expense/asset/revenue ledger account for the unrealized gain/loss main account for revaluation transactions.</p>
-              <p>Select Posting from the drop-down.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p> </p>
-    <ol>
-      <li style="counter-reset: item1 5;" value="6">Click OK.</li>
-    </ol>
-    <p><img alt="Picture 236597776" height="116.9" src="assets/images/Accounts Receivable_files/image124.png" width="294.3"/></p>
-    <ol>
-      <li style="counter-reset: item1 6;" value="7">Click Yes to the pop-up message to proceed.</li>
-      <li>Click X to close the Foreign currency revaluation grid.</li>
-    </ol>
-    <h3 class="Heading3">Result</h3>
-    <p>You have processed a foreign currency revaluation.</p>
-    <h2 class="Heading2"><a id="Customer_Aging_Report"></a>Customer Aging Report</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>The customer aging report contains the calculated aged balances for a customer for a period. Each aging snapshot detail record contains the total amount of the transactions with dates that are in the aging period. Transactions are assigned to an aging period, such as 30 days past due. The date is relative to the Aging as of date that is specified when you create the aging snapshot.</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Credit and collections &gt; Inquiries and reports &gt; Customers &gt; Customer ageing report. </li>
-      <li>Enter the following fields in the Customer aging report:</li>
-    </ol>
-    <div align="left">
-      <table border="0" cellspacing="0" style="width:657.7px">
-        <colgroup>
-          <col style="width:157px"/>
-          <col style="width:500.73333333333333333333333333px"/>
-        </colgroup>
-        <tbody>
-          <tr>
-            <td>
-              <p><span style="color:#ffffff;">Field</span></p>
-            </td>
-            <td>
-              <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Aging as of</p>
-            </td>
-            <td>
-              <p>The date that is in the first period interval or ageing period to include on the report. </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Balance as of</p>
-            </td>
-            <td>
-              <p>The date in which to view the customer balances.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Criteria</p>
-            </td>
-            <td>
-              <p>Type of date selection:</p>
-              <p>Transaction date – The posting date of the transactions. For example, this might be an invoice date that is the basis for the calculation of the due date.</p>
-              <p>Due date – The due date of the transactions, based on the terms of payment.</p>
-              <p>Document date – A user-defined document date that is the basis for the calculation of the due date.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Aging period definition</p>
-            </td>
-            <td>
-              <p>Aging interval.</p>
-              <p>E.g., 30-60-90-120 (days)</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <ol>
-      <li style="counter-reset: item1 2;" value="3">In the Print aging period description field, select Yes. </li>
-      <li>Click OK.</li>
-    </ol>
-    <p><img alt="Picture 81" height="312.0" src="assets/images/Accounts Receivable_files/image125.png" width="340.3"/></p>
-    <h3 class="Heading3">Result</h3>
-    <p>The Customer Aging report is displayed with the reporting parameters indicated below.</p>
-    <p><img alt="Picture 184" height="251.9" src="assets/images/Accounts Receivable_files/image126.png" width="636.0"/></p>
-    <h2 class="Heading2"><a id="Donor_Balance"></a>Donor Balance</h2>
-    <h3 class="Heading3">Purpose</h3>
-    <p>The donor balance contains the calculated balances for a customer at a point in time. This information is accessible on the customer record.</p>
-    <h3 class="Heading3">Steps</h3>
-    <ol>
-      <li>Navigate modules to Accounts receivable &gt; Customers &gt; All customers.</li>
-    </ol>
-    <p><img alt="Picture 191" height="210.9" src="assets/images/Accounts Receivable_files/image127.png" width="294.0"/></p>
-    <ol>
-      <li style="counter-reset: item1 1;" value="2">A list of customers is displayed on the All Customers screen. Select the customer record for which the balance will be reviewed.</li>
-      <li>Click Balance. </li>
-    </ol>
-    <p> <img alt="Picture 87" height="187.7" src="assets/images/Accounts Receivable_files/image128.png" style="cursor: nesw-resize;" width="485.4"/></p>
-    <h3 class="Heading3">Result</h3>
-    <p>The customer’s balance is displayed.</p>
-    <p><img alt="Picture 88" height="255.5" src="assets/images/Accounts Receivable_files/image129.png" width="347.6"/></p>
+  <h1 class="Heading1"><a id="Business_Process_Overvie"></a>Business Process Overview</h1>
+  <p>Accounts Receivable (AR) processing includes the following tasks:</p>
+  <ul>
+    <li>Adhoc receipt of daily checks, stocks or wires as donations from individuals (one-time gift)</li>
+    <li>Receipts of pledges (one-time gifts over a period of time)</li>
+    <li>Receipt of grants (grants seen on a daily basis from a country office)</li>
+  </ul>
+  <p>All donor receipts and intercompany transfers must be entered in Integra. Once payment is entered in Integra, it is automatically posted to the general ledger.</p>
+  <p>A donor may pledge a commitment to multi-year payments.</p>
+  <p>Rather than recording donor payments separately, a payment decrease can be applied to an account balance. Settlement within AR can occur between different transaction types that affect the customer balance, such as invoices and payments. Integra provides standard AR reporting functionality, such as customer aging and balance details. Accounts Receivable is also responsible to monitor and “draw down”.</p>
+  <h2><a id="Accounts_Receivable_Checklist"></a>Accounts Receivable Checklist</h2>
+  <p class="Heading2"><span style="font-size:19pt;"><span style="font-weight:bold;font-size:13pt">Daily Processing</span></span></p>
+  <ul>
+    <li>Salesforce journal uploads (including intercompany)</li>
+    <li>Cash receipts (in USD and foreign currencies)</li>
+  </ul>
+  <h3><span style="font-size:13pt">Month-End Processing</span></h3>
+  <ul>
+    <li>Stock journals</li>
+    <li>Merchant fee bookings</li>
+    <li>IOM entries (International Organization for Migration)</li>
+    <li>Cash concentration entries</li>
+    <li>Bank fees and interest income</li>
+    <li>Administrative fees</li>
+    <li>AR reports</li>
+  </ul>
+  <h2 class="Heading2"><a id="Business_Process_Flow"></a>Business Process Flow</h2>
+  <p><img src="assets/images/image1.png"/></p>
+  <h2 class="Heading2"><a id="The_Accounts_Receivable_Module_in_Integra"></a>Accounts Receivable Module</h2>
+  <p>The following information can be accessed via the <span style="font-weight:bold;">Accounts receivable</span> module:</p>
+  <ul>
+    <li>For customer information, navigate to <span style="font-weight:bold;">Customers</span>.</li>
+    <li>To enter or view invoices, navigate to <span style="font-weight:bold;">Invoices</span>.</li>
+    <li>To enter or view payment information, navigate to <span style="font-weight:bold;">Payments</span>.</li>
+    <li>For detailed customer history, navigate to <span style="font-weight:bold;">Inquiries and reports</span>.</li>
+  </ul>
+  <p><img alt="Picture 5" height="316.6" src="assets/images/Accounts Receivable_files/image1.png" width="650.9"/></p>
+  <h2 class="Heading2"><a id="Process Payment from a Donor"></a>Process Payment from a Donor</h2>
+  <p>Use this procedure to process a donor payment where the donor is already set up as a customer in Integra. This task typically occurs for donors who make monthly or annual donations.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>Donor is set up as a vendor in Integra</li>
+    <li>Supporting documentation is available to attach to payment journal</li>
+    <li>Financial dimensions are known</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer payment journal</span>.</li>
+  </ol>
+  <p><img alt="Picture 59" height="204.5" src="assets/images/Accounts Receivable_files/image2.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the toolbar at the top, click <span style="font-weight:bold;">New </span>to add a new journal line.</li>
+  </ol>
+  <p><img alt="Picture 62" height="209.9" src="assets/images/Accounts Receivable_files/image3.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Name </span>field, enter or select <span style="font-weight:bold;">CR </span>(Cash Receipt).</li>
+  </ol>
+  <p><img alt="Picture 64" height="214.6" src="assets/images/Accounts Receivable_files/image4.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">In the <span style="font-weight:bold;">Description </span>field, enter a meaningful description.</li>
+  </ol>
+  <p><img alt="Picture 65" height="216.5" src="assets/images/Accounts Receivable_files/image5.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click <span style="font-weight:bold;">Lines</span>.</li>
+  </ol>
+  <p><img alt="Picture 66" height="263.1" src="assets/images/Accounts Receivable_files/image6.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter or select the relevant customer account number.</p>
+            <p><strong>Tip</strong>: If number unknown, click the drop-down to perform a search by Name.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account name</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This field auto-populates after the customer account number is entered.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter a description for the receipt.</p>
+            <p>E.g., Billings for [month]</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Credit</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the amount being received.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Offset account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the relevant offset account from the drop-down selection list.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <p><img alt="Picture 16" height="163.0" src="assets/images/Accounts Receivable_files/image7.png" width="628.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Click the <span style="font-weight:bold;">Payment </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 20" height="188.4" src="assets/images/Accounts Receivable_files/image8.png" width="628.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">In the <span style="font-weight:bold;">Posting profile</span> field, select <span style="font-weight:bold;"><span style="text-align:left;">GENAR </span></span><span style="font-weight:bold;">– General AR Posting Profile</span>.</li>
+    <li>Click the <span style="font-weight:bold;">List </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 9" height="263.1" src="assets/images/Accounts Receivable_files/image9.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">On the menu above the Lines grid, click <span style="font-weight:bold;">Financial dimensions</span> and select <span style="font-weight:bold;">Account</span>.</li>
+  </ol>
+  <p><img alt="Picture 76" height="263.1" src="assets/images/Accounts Receivable_files/image10.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Enter the <span style="font-weight:bold;">D1, D4,</span> and <span style="font-weight:bold;">D5 </span>financial dimension codes.</li>
+    <li>Scroll down to the bottom of the financial dimensions pane and click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 79" height="263.1" src="assets/images/Accounts Receivable_files/image11.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Again, on the menu above the Lines grid, click <span style="font-weight:bold;">Financial dimensions</span> but select <span style="font-weight:bold;">Offset account</span> this time.</li>
+  </ol>
+  <p><img alt="Picture 84" height="263.1" src="assets/images/Accounts Receivable_files/image12.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Enter the <span style="font-weight:bold;">D1, D4</span>, and <span style="font-weight:bold;">D5 </span>financial dimension codes for the offset account.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Important</span>: The D1 code for the offset account is the relevant project.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Scroll down to the bottom of the financial dimensions pane and click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 92" height="219.0" src="assets/images/Accounts Receivable_files/image13.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">On the menu at the top of the page, click <span style="font-weight:bold;">Validate </span>and select <span style="font-weight:bold;">Simulate posting</span>.</li>
+  </ol>
+  <p><img alt="Picture 94" height="225.3" src="assets/images/Accounts Receivable_files/image14.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Validate the message <span style="font-style:italic;">Operation complete </span>displays in a blue bar near the top of the page.</li>
+  </ol>
+  <p><img alt="Picture 52" height="136.7" src="assets/images/Accounts Receivable_files/image15.png" width="633.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Click <span style="font-weight:bold;">Print &gt; Journal </span>to view the accounting for this journal.</li>
+  </ol>
+  <p><img alt="Picture 55" height="305.7" src="assets/images/Accounts Receivable_files/image16.png" width="633.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Click <span style="font-weight:bold;">OK </span>on the <span style="font-weight:bold;">Print journal</span> form to generate the print preview.</li>
+  </ol>
+  <p><img alt="Picture 67" height="180.1" src="assets/images/Accounts Receivable_files/image17.png" width="644.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Review the <span style="font-weight:bold;">Payment journal</span> print preview. Note and validate the accounts used in the <span style="font-weight:bold;">Ledger account</span> column.</li>
+    <li>Close the print preview.</li>
+    <li>Close the voucher page and return to the list of journals.</li>
+  </ol>
+  <p><img alt="Picture 95" height="203.6" src="assets/images/Accounts Receivable_files/image18.png" width="624.0"/></p>
+  <p><span style="font-weight:bold;">Attach Donor Receipt to Journal Line</span></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Select the relevant journal and click the paperclip icon in the top-right corner of page.</li>
+  </ol>
+  <p><img alt="Picture 96" height="213.5" src="assets/images/Accounts Receivable_files/image20.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">On the menu at the top, click <span style="font-weight:bold;">New </span>and select <span style="font-weight:bold;">File</span>.</li>
+  </ol>
+  <p><img alt="Picture 97" height="263.1" src="assets/images/Accounts Receivable_files/image21.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Click <span style="font-weight:bold;">Browse </span>and locate and upload the receipt file.</li>
+  </ol>
+  <p><img alt="Picture 100" height="263.1" src="assets/images/Accounts Receivable_files/image22.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 25;" value="26">Validate the attached file is displayed in the left-hand pane.</li>
+    <li>If applicable, in the <span style="font-weight:bold;">Notes </span>field, enter any additional/clarifying notes for the attachment.</li>
+    <li>Close the attachments page and return to the list of journals.</li>
+  </ol>
+  <p><img alt="Picture 101" height="263.1" src="assets/images/Accounts Receivable_files/image23.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 29;" value="30">Finance posts the journal by clicking <span style="font-weight:bold;">Post </span>and selecting <span style="font-weight:bold;">Post </span>from the drop-down selection list.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>The donor payment journal is posted.</p>
+  <h2 class="Heading2"><a id="Process_One-time_Payment_from_a_Donor"></a>Process One-time Payment from a Donor</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to process a one-time donation from a person/organization. This task is performed when the donating person/organization is not set up as a customer in Integra. For a one-time donor, a vendor account number is not entered.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>Supporting documentation is available to attach to payment journal</li>
+    <li>Financial dimensions are known</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer payment journal</span>.</li>
+  </ol>
+  <p><img alt="Picture 102" height="204.5" src="assets/images/Accounts Receivable_files/image24.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the toolbar at the top, click <span style="font-weight:bold;">New </span>to add a new journal line.</li>
+  </ol>
+  <p><img alt="Picture 104" height="209.9" src="assets/images/Accounts Receivable_files/image25.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Name </span>field, enter or select <span style="font-weight:bold;">CR </span>(Cash Receipt).</li>
+  </ol>
+  <p><img alt="Picture 105" height="214.6" src="assets/images/Accounts Receivable_files/image26.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">In the <span style="font-weight:bold;">Description </span>field, enter a meaningful description.</li>
+  </ol>
+  <p><img alt="Picture 106" height="216.5" src="assets/images/Accounts Receivable_files/image27.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click <span style="font-weight:bold;">Lines</span>.</li>
+  </ol>
+  <p><img alt="Picture 121" height="225.3" src="assets/images/Accounts Receivable_files/image28.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">On the menu under <span style="font-weight:bold;">Customer payments</span>, click the <span style="font-weight:bold;">General </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 122" height="263.1" src="assets/images/Accounts Receivable_files/image29.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">In the <span style="font-weight:bold;">Account type</span> field, change the value from Customer to <span style="font-weight:bold;">Ledger</span>.</li>
+  </ol>
+  <p><img alt="Picture 123" height="210.0" src="assets/images/Accounts Receivable_files/image30.png" width="623.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Click <span style="font-weight:bold;">List </span>to return to the journal lines view.</li>
+  </ol>
+  <p><img alt="Picture 107" height="194.6" src="assets/images/Accounts Receivable_files/image31.png" width="623.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click in the <span style="font-weight:bold;">Account </span>field.</li>
+  </ol>
+  <p><img alt="Picture 124" height="255.3" src="assets/images/Accounts Receivable_files/image32.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Using the right-hand fields, enter all required financial dimensions and main account. Scroll down to see all required fields.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Required entries are Main account, D1, D4, D5, D11, and D12, For example: 41300---TR131---UGAAT---6DAT---OMSC---DATL. <span style="font-weight:bold;">The D11 and D12 will always be OMSC and DATL respectively.</span></span></h6>
+  <p><img alt="Picture 125" height="263.1" src="assets/images/Accounts Receivable_files/image33.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Click in the <span style="font-weight:bold;">Description </span>field.</li>
+  </ol>
+  <p><img alt="Picture 127" height="263.1" src="assets/images/Accounts Receivable_files/image34.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter text <strong>Unrestricted Donation</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Offset account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the relevant offset account from the drop-down selection list.</p>
+            <p><strong>Note</strong>: This must be entered before the <strong>Credit</strong> field is populated. </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Credit</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the donation amount.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Picture 128" height="263.1" src="assets/images/Accounts Receivable_files/image35.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">On the menu at the top of the page, click <span style="font-weight:bold;">Validate </span>and select <span style="font-weight:bold;">Simulate posting</span>.</li>
+  </ol>
+  <p><img alt="Picture 129" height="263.1" src="assets/images/Accounts Receivable_files/image36.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Validate the message <span style="font-style:italic;">Operation complete</span> displays in a blue bar near the top of the page.</li>
+    <li>Close the voucher page and return to the list of journals.</li>
+  </ol>
+  <p><img alt="Picture 130" height="263.1" src="assets/images/Accounts Receivable_files/image37.png" width="624.0"/></p>
+  <p><span style="font-weight:bold;">Attach Donor Receipt to Journal Line</span></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Select the journal line and click the paperclip icon in the top-right corner of page.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: The attachment can be a copy of the check or any document that confirms receipt.</span></h6>
+  <p><img alt="Picture 117" height="263.1" src="assets/images/Accounts Receivable_files/image39.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">On the menu at the top, click <span style="font-weight:bold;">New </span>and select <span style="font-weight:bold;">File</span>.</li>
+  </ol>
+  <p><img alt="Picture 118" height="263.1" src="assets/images/Accounts Receivable_files/image40.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Click <span style="font-weight:bold;">Browse </span>and locate and upload the receipt file.</li>
+  </ol>
+  <p><img alt="Picture 119" height="263.1" src="assets/images/Accounts Receivable_files/image41.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Validate that the attached file is displayed in the left-hand pane.</li>
+    <li>If applicable, In the <span style="font-weight:bold;">Notes </span>box, enter any additional/clarifying notes for the attachment.</li>
+    <li>Close the attachments page and return to the list of journals.</li>
+  </ol>
+  <p><img alt="Picture 120" height="263.1" src="assets/images/Accounts Receivable_files/image42.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 21;" value="22">Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.</li>
+  </ol>
+  <h3 class="Heading3"><br/>
+    ‎Result</h3>
+  <p>The one-time donor payment journal is posted.</p>
+  <h2 class="Heading2"><a id="Create_Fee_for_Service_Billing_using_a_Free_Text_Invoice"></a>Create Fee for Service Billing using a Free Text Invoice</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. These customers must be created if they have not been used before. Once the customer record is created, it remains in the system.</p>
+  <p><span style="font-weight:bold;">Example</span>: IRC is working with a new hospital that is using our interpreter services.</p>
+  <p>This procedure contains two sections</p>
+  <ul>
+    <li><span style="font-weight:bold;">Section 1: </span>Search to see if the customer already exists in Integra. If not, create the customer.</li>
+    <li><span style="font-weight:bold;">Section 2:</span> Create the free text invoice.</li>
+    <li><span style="font-weight:bold;">Section 3: </span>Settle fee for service billing</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <h4 class="Heading4">Section 1: Search for Customer</h4>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Customers &gt; All customers</span>.</li>
+  </ol>
+  <p><img alt="Picture 98" height="320.6" src="assets/images/Accounts Receivable_files/image43.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">In the <span style="font-weight:bold;">Name </span>column on the customer table grid, click the drop-down arrow to perform a search on the customer name.</li>
+  </ol>
+  <p><img alt="Picture 108" height="320.6" src="assets/images/Accounts Receivable_files/image44.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">If the customer is not found, click <span style="font-weight:bold;">New </span>on the menu at the top of page.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If the customer is found, proceed to Section 2 of this procedure.</span></h6>
+  <p><img alt="Picture 110" height="320.6" src="assets/images/Accounts Receivable_files/image45.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">On the<span style="font-weight:bold;"> Create custome</span>r form, review/complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Customer account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Make note of the customer account number that was generated by the system.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Type</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the relevant type of customer from the drop-down selection list. i.e., Person or Organization</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Name</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the name of the customer.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Customer group</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select FFS_ORG from the drop-down selection list.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Address section</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter as much address information as is known. At a minimum, enter the country.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Make note of the customer account number that was generated.</li>
+    <li>Once all information is entered, click <span style="font-weight:bold;">Save</span>.</li>
+    <li>Proceed to <span style="font-weight:bold;">Section 2: Create Free Text Invoice</span>.</li>
+  </ol>
+  <h4><br/>
+    ‎<span style="font-size:14pt">Section 2: Create Free Text Invoice</span></h4>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Invoices &gt; All free text invoices</span>.</li>
+  </ol>
+  <p><img alt="Picture 112" height="320.6" src="assets/images/Accounts Receivable_files/image46.png" style="border-width: 6px; border-color: rgba(0, 0, 0, 0.83);" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <span style="font-weight:bold;">New</span>.</li>
+  </ol>
+  <p><img alt="Picture 115" height="320.6" src="assets/images/Accounts Receivable_files/image47.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Customer account</span> field, enter the customer account number or perform a search by clicking the drop-down arrow.</li>
+  </ol>
+  <p><img alt="Picture 116" height="320.6" src="assets/images/Accounts Receivable_files/image48.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">On the right-hand side of page, at the top of the form, click <span style="font-weight:bold;">Header</span>.</li>
+  </ol>
+  <p><img alt="Picture 126" height="320.6" src="assets/images/Accounts Receivable_files/image49.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Scroll down to the <span style="font-weight:bold;">Financial dimensions </span>fast tab and click to expand the section.</li>
+  </ol>
+  <p><img alt="Picture 131" height="320.6" src="assets/images/Accounts Receivable_files/image50.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Enter all applicable financial dimensions. <span style="font-weight:bold;">D1, D4,</span> and <span style="font-weight:bold;">D5</span>.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: For the D1, enter the relevant project.</span></h6>
+  <p><img alt="Picture 132" height="320.6" src="assets/images/Accounts Receivable_files/image51.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">On the right-hand side of page, at the top of the form, click Lines and scroll down to the Invoice lines section.</li>
+  </ol>
+  <p><img alt="Picture 133" height="320.6" src="assets/images/Accounts Receivable_files/image52.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">In the first row of the Invoice lines section, complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter a meaningful description of the cash proceeds.</p>
+            <p>E.g., special donation</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Main account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the relevant cash receipt account number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Unit price</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the invoice (receipt) amount.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Picture 134" height="320.6" src="assets/images/Accounts Receivable_files/image53.png" width="700.8"/></p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: For project related service invoices, you must populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click <span style="font-weight:bold;">Line details </span>to expand the section and scroll down page to view the available tabs.</li>
+  </ol>
+  <p><img alt="Picture 135" height="320.6" src="assets/images/Accounts Receivable_files/image54.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Click the <span style="font-weight:bold;">Project </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 136" height="320.6" src="assets/images/Accounts Receivable_files/image55.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Enter the relevant <span style="font-weight:bold;">Project ID</span> and <span style="font-weight:bold;">Category </span>(project category).</li>
+  </ol>
+  <p><img alt="Picture 140" height="320.6" src="assets/images/Accounts Receivable_files/image56.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">On the menu at the top, click <span style="font-weight:bold;">Save</span>.</li>
+    <li>To post the invoice, click <span style="font-weight:bold;">Post </span>on the menu at the top of page. The invoice can be printed.</li>
+  </ol>
+  <p><img alt="Picture 12" height="229.2" src="assets/images/Accounts Receivable_files/image57.png" width="679.9"/></p>
+  <p>Once the invoice has been saved and posted, the <span style="font-weight:bold;">Post </span>button is no longer available and the invoice number is generated and displays as an <span style="font-weight:bold;">FTI</span> number in the <span style="font-weight:bold;">Invoice </span>field.</p>
+  <p>Once posted, the FTI invoice can be settled to the customer account.</p>
+  <p><span style="font-weight:bold;"><span style="font-size:14pt">Section 3: Settle Fee for Service Billing</span></span></p>
+  <p><img alt="Picture 21" height="223.6" src="assets/images/Accounts Receivable_files/image58.png" width="689.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 0;" value="1">Click the <span style="font-weight:bold;">Customer account </span>number hyperlinked in the Customer account field to access the customer record.</li>
+  </ol>
+  <p><img alt="Picture 22" height="218.7" src="assets/images/Accounts Receivable_files/image59.png" width="677.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Click the <span style="font-weight:bold;">Collect </span>tab and follow the menu path, <span style="font-weight:bold;">Settle &gt; Settle transactions</span>.</li>
+  </ol>
+  <p><img alt="Picture 70" height="343.3" src="assets/images/Accounts Receivable_files/image60.png" width="676.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">On the <span style="font-weight:bold;">Settle transaction</span> form for the customer, locate the posted FTI invoice to be settled in the list of invoices.</li>
+    <li>Apply a checkmark in the <span style="font-weight:bold;">Mark </span>column to mark the FTI invoice.</li>
+    <li>Locate the invoice that the FTI invoice is settled to and apply a checkmark in the <span style="font-weight:bold;">Mark </span>column.</li>
+    <li>Click <span style="font-weight:bold;">Post </span>to post the FTI invoice.</li>
+  </ol>
+  <p><img alt="Picture 75" height="224.5" src="assets/images/Accounts Receivable_files/image63.png" width="691.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Once posted, the FTI invoice no longer displays in the list on the <span style="font-weight:bold;">Settle transactions</span> form. The invoice that the FTI invoice settled to is now updated with remaining balance.</li>
+    <li>Close the customer record and return to the <span style="font-weight:bold;">Free text invoice</span> form.</li>
+    <li>Close the <span style="font-weight:bold;">Free text invoice</span> form.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <ul>
+    <li>A fee-for-service free text invoice has been created, posted, and then settled to the related customer invoice.</li>
+    <li>Once the invoice is posted and payment is received, a cash receipt is entered in Integra.</li>
+    <li>To view the invoice, navigate to <span style="font-weight:bold;">Accounts receivable &gt; Invoices &gt; All free text invoices</span>.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Create_Fee_for_Service_Billing_using_a_Free_Text_Invoice_–_CRRD_Scenario"></a>Create Fee for Service Billing using a Free Text Invoice – CRRD Scenario</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. </p>
+  <h3 class="Heading3">Customers</h3>
+  <p>Follow the steps in the previous procedure to search for the customer. If the customer does not exist, create the new customer, prior to executing the steps below to create the invoice.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Example</span>: IRC is working with a new hospital that is using our interpreter services.</span></h6>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Invoices &gt; All free text invoices</span>.</li>
+  </ol>
+  <p><img alt="Picture 25" height="320.6" src="assets/images/Accounts Receivable_files/image64.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <span style="font-weight:bold;">New</span>.</li>
+  </ol>
+  <p><img alt="Picture 28" height="320.6" src="assets/images/Accounts Receivable_files/image65.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Customer account</span> field, enter or search for the customer account number.<img alt="Picture 29" height="320.6" src="assets/images/Accounts Receivable_files/image66.png" width="700.8"/></li>
+    <li style="counter-reset: item1 3;" value="4">On the right-hand side of page, at the top of the form, click <span style="font-weight:bold;">Header</span>.</li>
+  </ol>
+  <p><img alt="Picture 30" height="320.6" src="assets/images/Accounts Receivable_files/image67.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Scroll down to the <span style="font-weight:bold;">Financial dimensions</span> fast tab and click to expand the section.</li>
+  </ol>
+  <p><img alt="Picture 31" height="320.6" src="assets/images/Accounts Receivable_files/image68.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Enter all applicable financial dimensions. <span style="font-weight:bold;">D1, D4, D5, and D10</span>.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Always enter D1 U1000 for fee for service invoices.</span></h6>
+  <p><img alt="Picture 37" height="320.6" src="assets/images/Accounts Receivable_files/image69.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">On the right-hand side of page, at the top of the form, click <span style="font-weight:bold;">Lines </span>and scroll down to the<span style="font-weight:bold;"> Invoice lines </span>section.</li>
+  </ol>
+  <p><img alt="Picture 44" height="320.6" src="assets/images/Accounts Receivable_files/image70.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">In the first row of the Invoice lines section, complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Description</p>
+          </td>
+          <td>
+            <p>Enter a meaningful description of the cash proceeds.</p>
+            <p>E.g., special donation</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Main account</p>
+          </td>
+          <td>
+            <p>Enter the relevant cash receipt account number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unit price</p>
+          </td>
+          <td>
+            <p>Enter the invoice (receipt) amount.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Picture 45" height="320.6" src="assets/images/Accounts Receivable_files/image71.png" style="cursor: nesw-resize;" width="700.8"/></p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: For project related service invoices, you must populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click <span style="font-weight:bold;">Line details</span> to expand the section and scroll down page to view the available tabs.</li>
+  </ol>
+  <p><img alt="Picture 47" height="320.6" src="assets/images/Accounts Receivable_files/image72.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Click the <span style="font-weight:bold;">Project </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 48" height="320.6" src="assets/images/Accounts Receivable_files/image73.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Enter the relevant <span style="font-weight:bold;">Project ID</span> and <span style="font-weight:bold;">Category </span>(project category).</li>
+  </ol>
+  <p><img alt="Picture 49" height="320.6" src="assets/images/Accounts Receivable_files/image74.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">On the menu at the top, click <span style="font-weight:bold;">Save</span>.</li>
+    <li>To post the invoice, click <span style="font-weight:bold;">Post </span>on the menu at the top of page. The invoice can be printed.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <ul>
+    <li>A fee-for-service free text invoice has been created and posted.</li>
+    <li>Once the invoice is posted and payment is received, a cash receipt is entered in Integra.</li>
+    <li>To view the invoice, navigate to <span style="font-weight:bold;">Accounts receivable &gt; Invoices &gt; All free text invoices</span>.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Create_Credit_Memo_using_a_Free_Text_Invoice"></a>Create Credit Memo using a Free Text Invoice</h2>
+  <p>A customer credit memo can be created in Integra using a free text invoice form. </p>
+  <p>To create a credit memo, simply enter a negative quantity in the <span style="font-weight:bold;">Quantity </span>field in the free text invoice line.<br/>
+    ‎</p>
+  <p><img alt="C:\Users\DominicMu\Desktop\AP Reg\cm.PNG" height="170.7" src="assets/images/Accounts Receivable_files/image75.png" width="624.0"/> </p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Entry of a negative quantity is the only difference for the free-text credit memo creation from the free-text-invoice steps in the previous procedure. </span></h6>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created a credit memo using a free-text invoice.</p>
+  <h2 class="Heading2"><a id="Create_Fee_for_Service_Cash_Receipt"></a>Create Fee for Service Cash Receipt</h2>
+  <p>IRC has some “Fee for Service” programs that operate on a cash basis. This means that cash or payment is made immediately after, or before, the services are provided.</p>
+  <p><span style="font-weight:bold;">Example</span>: Immigration - when an individual comes to the IRC for help filling out and filing an I-130 (officially the “Petition for Alien Relative”)</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer Payment Journal</span>.</li>
+    <li>On the menu at the top, click <span style="font-weight:bold;">New</span>.</li>
+    <li>In the Name field name select the journal type <span style="font-weight:bold;">CR – Cash Receipt</span>.</li>
+    <li>On the menu at the top, click <span style="font-weight:bold;">Lines</span>.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Customer Select.PNG" height="135.1" src="assets/images/Accounts Receivable_files/image76.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">In the <span style="font-weight:bold;">Account </span>field, enter the customer account number.</li>
+    <li>Click on the <span style="font-weight:bold;">Bank </span>tab.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Bank Trans Type.PNG" height="201.8" src="assets/images/Accounts Receivable_files/image77.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Select the relevant <span style="font-weight:bold;">Bank transaction type</span>.</li>
+    <li>Click the <span style="font-weight:bold;">List </span>tab and enter the amount (credit), description and select the relevant bank account in the <span style="font-weight:bold;">Offset account</span> field.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Bank Offset.PNG" height="131.0" src="assets/images/Accounts Receivable_files/image78.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click on the <span style="font-weight:bold;">Financial dimensions</span> tab then select account and enter all the required financial dimensions and click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\FD.PNG" height="325.5" src="assets/images/Accounts Receivable_files/image79.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Exit the line window by clicking the <span style="font-weight:bold;">X</span> in the top right corner.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\x.PNG" height="232.7" src="assets/images/Accounts Receivable_files/image80.png" width="603.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Submit the journal for approval by clicking on the <span style="font-weight:bold;">Workflow </span>button</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Submit.PNG" height="217.3" src="assets/images/Accounts Receivable_files/image81.png" width="536.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Enter submission instruction and click <span style="font-weight:bold;">Submit</span>.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Sub.PNG" height="343.4" src="assets/images/Accounts Receivable_files/image82.png" width="510.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">After approval, the journal can be posted.</li>
+  </ol>
+  <p><img alt="C:\Users\DominicMu\Desktop\AR Review\Post.PNG" height="124.7" src="assets/images/Accounts Receivable_files/image83.png" width="523.7"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created a “Fee for Service” cash receipt.</p>
+  <h2 class="Heading2"><a id="Create_Customer_Payment_Journal_Entry"></a>Create Customer Payment Journal Entry</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>For most cash receipts, you can enter and post a customer payment without settling it against any invoices. This applies to the following situations:</p>
+  <ul>
+    <li>Standard donor cash receipts</li>
+    <li>Prepayments</li>
+    <li>Intercompany cash receipts</li>
+    <li>Repayment of employee advance</li>
+    <li>Miscellaneous fees (bank fees, interest income, administrative fees, merchant fees, etc.)</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer payment journal</span>.</li>
+  </ol>
+  <p><img alt="Picture 2" height="240.0" src="assets/images/Accounts Receivable_files/image84.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <span style="font-weight:bold;">New</span>.</li>
+  </ol>
+  <p><img alt="Picture 36" height="248.9" src="assets/images/Accounts Receivable_files/image85.png" width="700.8"/></p>
+  <p>A new journal line is added at the top of the table grid.</p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Name</span> field, enter or select <span style="font-weight:bold;">CR</span>.</li>
+    <li>In the <span style="font-weight:bold;">Description </span>field, enter a meaningful description for the journal.</li>
+  </ol>
+  <p><img alt="Picture 40" height="257.0" src="assets/images/Accounts Receivable_files/image86.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click <span style="font-weight:bold;">Lines</span>.</li>
+  </ol>
+  <p><img alt="Picture 60" height="235.5" src="assets/images/Accounts Receivable_files/image87.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:680.7px">
+      <colgroup>
+        <col style="width:170.13333333333333333333333333px"/>
+        <col style="width:510.6px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the vendor account number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account name</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This value defaults after the vendor account number is entered.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter a meaningful description for the journal line.</p>
+            <p>Example: Billings</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Credit</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the donation amount.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Picture 63" height="320.6" src="assets/images/Accounts Receivable_files/image88.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">A warning message displays indicating that a bank transaction type is mandatory. Click the <span style="font-weight:bold;">Bank </span>tab just above the table grid to access the screen where this value is populated.</li>
+  </ol>
+  <p><img alt="Picture 56" height="320.6" src="assets/images/Accounts Receivable_files/image89.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">In the <span style="font-weight:bold;">Bank transaction type</span> field, select <span style="font-weight:bold;">187-CASHLC Cash Letter Credit</span> from the drop-down selection list.</li>
+  </ol>
+  <p><img alt="Picture 68" height="320.6" src="assets/images/Accounts Receivable_files/image90.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click <span style="font-weight:bold;">List </span>to return to the journal lines.</li>
+  </ol>
+  <p><img alt="Picture 69" height="320.6" src="assets/images/Accounts Receivable_files/image91.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Scroll to the right to find the <span style="font-weight:bold;">Offset account</span> column. Select the relevant offset account from the drop-down selection list.</li>
+  </ol>
+  <p><img alt="Picture 73" height="227.1" src="assets/images/Accounts Receivable_files/image92.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">On the menu just above the table grid, click the <span style="font-weight:bold;">Financial dimensions</span> tab and select <span style="font-weight:bold;">Account </span>from the drop-down selection list.</li>
+  </ol>
+  <p><img alt="Picture 74" height="320.6" src="assets/images/Accounts Receivable_files/image93.png" width="700.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">On the <span style="font-weight:bold;">Enter account financial dimensions</span> screen, enter the correct financial dimensions based on the IRC account structure. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Customer accounts require D1, D4, D5. </span></h6>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Click <span style="font-weight:bold;">OK</span>.</li>
+    <li>Click <span style="font-weight:bold;">Financial dimensions &gt; Offset account</span>.</li>
+    <li>On the <span style="font-weight:bold;">Enter offset account financial dimensions</span> screen, enter the correct financial dimensions based on the IRC account structure.</li>
+    <li>Click <span style="font-weight:bold;">OK</span>.</li>
+    <li>Click <span style="font-weight:bold;">Save</span>.</li>
+  </ol>
+  <p><img alt="Picture 1" height="119.4" src="assets/images/Accounts Receivable_files/image94.png" width="317.6"/></p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: The following three steps apply only if processing a cash receipt (prepayment) at HQ. Otherwise, proceed to step 18.</span></h6>
+  <ul>
+    <li style="counter-reset: item1 18;" value="19">Click the <span style="font-weight:bold;">Payment </span>tab.</li>
+    <li>Select <span style="font-weight:bold;">Yes </span>in the <span style="font-weight:bold;">Prepayment journal voucher</span> field.</li>
+    <li>Click <span style="font-weight:bold;">Save</span>.</li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Close the page by selecting <span style="font-weight:bold;">X</span> at the top right of the screen.</li>
+    <li style="">Submit the journal to <span style="font-weight:bold;">Workflow </span>for approval.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created a customer payment journal entry.</p>
+  <p>Once approved, the customer payment journal can be posted.</p>
+  <h2 class="Heading2"><a id="Perform_Accounts_Receivable_Settlement"></a>Perform Accounts Receivable Settlement</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Settlement involves the application of transactions from accounts to increase or decrease the balance of each account. Settlement within Accounts Receivable can occur between all transaction types that affect the customer balance, such as invoices and payments.</p>
+  <p>When Accounts Receivable records a customer payment, they mark the appropriate invoices for settlement, based on the information that is included with the donor&#39;s payment. The <span style="font-weight:bold;">Settle transactions</span> page is used to mark transactions for settlement. This page can be opened from any unposted invoice or payment. When the transaction is posted, the settlement is also posted.</p>
+  <p>As transactions are settled, the outstanding balance of each transaction increases or decreases as appropriate. In a typical scenario, where an invoice and payment are settled, the status and balance of each transaction is updated according to the following rules:</p>
+  <ul>
+    <li>If the payment amount is more than the invoice amount, the invoice balance is reduced to 0.00, and the invoice is closed. The payment remains open, and the balance is the amount by which the payment exceeds the invoice amount.</li>
+    <li>If the payment amount is less than the invoice amount, the payment balance is reduced to 0.00, and the payment is closed. The invoice remains open, and the balance is the amount by which the payment underpaid the invoice.</li>
+    <li>If the payment amount equals the invoice amount, both the payment and the invoice are closed, and the balance of both is 0.00.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer payment journal</span>.</li>
+    <li>Click <span style="font-weight:bold;">New</span>.</li>
+    <li>Enter <span style="font-weight:bold;">Name </span>and <span style="font-weight:bold;">Description </span>fields.</li>
+    <li>Click <span style="font-weight:bold;">Lines</span>.</li>
+    <li>Enter the customer <span style="font-weight:bold;">Account </span>and <span style="font-weight:bold;">Account name</span>.</li>
+    <li>Click <span style="font-weight:bold;">Settle transactions</span>.</li>
+    <li>Select the transaction to be settled.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: The invoice column auto-populates the invoice you are settling against.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Enter the description.</li>
+    <li>Choose the offset bank account.</li>
+    <li>Select financial dimensions for the account - D1-D4-D5. Select offset account D1, D4, D5.</li>
+    <li>Validate.</li>
+    <li>Attach documents.</li>
+    <li>Click <span style="font-weight:bold;">Post</span>.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have performed account settlement.</p>
+  <h2 class="Heading2"><a id="Reimburse_/_Reverse_a_Cash_Receipt"></a>Reimburse / Reverse a Cash Receipt</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>A donor may be reimbursed for their full balance amount using the procedure below. A credit note or accounts payable journal entry may also be entered in Integra.</p>
+  <p>If the customer has multiple projects and therefore multiple D1 codes, these D1 codes will have different associated balances with each D1 code. For this reason, the procedure outlined below must not be used for customers with multiple D1 codes. The reimburse function is only available for a customer with one project.</p>
+  <p>For customers with more than one project and multiple D1 codes, reimbursement is made using the GL function. Refer to the procedure Reimburse a Customer/Donor using the General Ledger.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to Accounts receivable &gt; Customers &gt; All customers.</li>
+  </ol>
+  <p><img alt="Picture 178" height="230.4" src="assets/images/Accounts Receivable_files/image95.png" width="321.2"/></p>
+  <p>A list of customers is displayed on the <span style="font-weight:bold;">All customers</span> screen.</p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Select the customer account for the reversal.</li>
+    <li>Click <span style="font-weight:bold;">Collect &gt; Customers balances &gt; Reimburse customer</span>.</li>
+  </ol>
+  <p><img alt="Picture 179" height="197.0" src="assets/images/Accounts Receivable_files/image96.png" width="527.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">On the <span style="font-weight:bold;">Reimbursement </span>form, click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 193" height="250.2" src="assets/images/Accounts Receivable_files/image97.png" width="271.3"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>The donor is fully reimbursed. The donor balance is moved to the corresponding donor account in the Accounts Payable module and the payment can be performed using the normal vendor payment process in AP.</p>
+  <h2 class="Heading2"><a id="Apply_a_Customer/Donor_Write-Off_(Single-Project_Customer)"></a>Apply a Customer/Donor Write-Off (Single-Project Customer)</h2>
+  <p>Use this procedure to apply a customer/donor write-off when the customer has a single project.</p>
+  <p>A donor balance write-off can be completed using the DynAd template or directly as a General Ledger entry. To write-off the amount, include the following required information in the journal entry:</p>
+  <ul>
+    <li>The customer reference number</li>
+    <li>The applicable debit or credit to the customer depending on the amount to be written off</li>
+    <li>Enter the following financial dimensions - D1, D4 and D5</li>
+    <li>Use the Expense write-off account type for the offset line</li>
+  </ul>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: A donor write-off as documented in this procedure is only applicable to customers with only one project and one D1 code. If the customer/donor has multiple projects and therefore multiple D1 codes, refer to the procedure <span style="font-style:italic;">Reimburse a Customer/Donor using the General Ledger (Multi-Project Customer)</span>.</span></h6>
+  <p> </p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Credit and Collections &gt; Customers &gt; All customers</span>.</li>
+  </ol>
+  <p><img alt="picture" height="205.7" src="assets/images/Accounts Receivable_files/image98.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Select the customer with a balance to write-off.</li>
+    <li>On the <span style="font-weight:bold;">Collect </span>tab, navigate to <span style="font-weight:bold;">Customer Balances &gt; Write Off</span>.</li>
+  </ol>
+  <p><img alt="picture" height="217.0" src="assets/images/Accounts Receivable_files/image99.png" width="184.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Validate the <span style="font-weight:bold;">Write-off</span> date field which defaults to today’s date.</li>
+    <li>Validate the <span style="font-weight:bold;">Reason code</span> which defaults to <span style="font-weight:bold;">WRITEOFF</span>.</li>
+    <li>Validate the <span style="font-weight:bold;">Description </span>field defaults to <span style="font-weight:bold;">Write-off</span>.</li>
+    <li>Click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="picture" height="211.1" src="assets/images/Accounts Receivable_files/image100.png" width="589.6"/></p>
+  <p>A confirmation message displays T<span style="font-weight:bold;">he write off process is complete…</span> A general journal has been created and it is now ready to be posted.</p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Navigate to <span style="font-weight:bold;">General Ledger &gt; Journal entries &gt; General Journals to locate the write off journal</span>.</li>
+  </ol>
+  <p><img alt="picture" height="214.7" src="assets/images/Accounts Receivable_files/image101.png" width="594.5"/></p>
+  <p>Approval workflow is enabled for the Write-Off journal and it will go through the same level of review and approval that daily general journals go through.</p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Review the journal lines and submit to <span style="font-weight:bold;">Workflow </span>for review and approval.</li>
+  </ol>
+  <p><img alt="picture" height="160.1" src="assets/images/Accounts Receivable_files/image102.png" width="594.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">When the write-off journal is approved, follow the steps to post a periodic journal. After the write-off journal is posted the voucher transaction is displayed.</li>
+  </ol>
+  <p><img alt="picture" height="122.2" src="assets/images/Accounts Receivable_files/image103.png" width="591.7"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a customer/donor write-off when the customer has a single project.</p>
+  <h2 class="Heading2"><a id="Reimburse_a_Customer/Donor_Using_a_General_Ledger_Journal_(Multi-Project_Customer)"></a>Reimburse a Customer/Donor Using a General Ledger Journal (Multi-Project Customer)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to process a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.</p>
+  <p>To determine all the D1 balances a customer has, navigate to <span style="font-weight:bold;">P</span><span style="font-weight:bold;">roject management and accounting &gt; Projects &gt; All projects</span>.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: You are not able to use the reimburse function because this reimburses the entire customer balance and for this scenario only a portion needs to be reimbursed to the specific project.</span></h6>
+  <p> </p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <p>Prior to being able to reimburse funds as a result of an outstanding balance on a project, the following prerequisites must be met.</p>
+  <ul>
+    <li>To be able to reimburse a customer, the customer must exist as a vendor in Integra.</li>
+    <li>Navigate to <span style="font-weight:bold;">Organization administration &gt; Global address book &gt; Global address book</span> to determine if the customer is set up as a vendor to enable payment.
+      <ul>
+        <li>If the customer is not set up as a vendor, follow the established process and steps to add the vendor role to the customer.</li>
+      </ul>
+    </li>
+    <li>Project is known</li>
+    <li>Customer is known.
+      <ul>
+      </ul>
+    </li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate the modules to <span style="font-weight:bold;">General ledger &gt; Journal entries &gt; General journals</span>.</li>
+  </ol>
+  <p><img alt="Picture 236597767" height="206.0" src="assets/images/Accounts Receivable_files/image104.png" width="666.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Click <span style="font-weight:bold;">New</span>.<br/>
+    </li>
+    <li>In the <span style="font-weight:bold;">Name </span>field, select <span style="font-weight:bold;">JE general voucher</span>.</li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Update the Description field to include a brief description of what the journal is for, e.g., Donor reimbursement GB751.This helps distinguish this journal from other journals which may be pending.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Click <span style="font-weight:bold;">Lines </span>on the menu at the top.</li>
+  </ol>
+  <p>The journal lines open to populate based on the type of transaction you are booking.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Notes</span>:<br/>
+      The <span style="font-weight:bold;">Date</span>, <span style="font-weight:bold;">Voucher</span>, <span style="font-weight:bold;">Company </span>and <span style="font-weight:bold;">Account type</span> fields automatically default to today’s date, sequential voucher number, your legal entity and ledger. Each field except the <span style="font-weight:bold;">Voucher </span>field can be modified by the user.<br/>
+      <br/>
+      If the entry is related to your current legal entity, do not change the Company.</span></h6>
+  <p><img alt="Picture 236597771" height="271.4" src="assets/images/Accounts Receivable_files/image105.png" width="594.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Update the <span style="font-weight:bold;">Account type</span> field to <span style="font-weight:bold;">Customer</span>, as the reimbursement is to the customer.The selection list in the drop-down depends on the Account Type that was previously selected.</li>
+  </ol>
+  <p style="margin-left: 40px">If <span style="font-weight:bold;">Customer </span>was selected in the <span style="font-weight:bold;">Account type</span> field, the drop-down selection list in the <span style="font-weight:bold;">Account </span>field are customer (donor) accounts.</p>
+  <p><img alt="Picture 236597772" height="189.4" src="assets/images/Accounts Receivable_files/image106.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Enter a description in the <span style="font-weight:bold;">Description </span>field of the type of journal this is.</li>
+  </ol>
+  <p><img alt="Picture 236597761" height="288.8" src="assets/images/Accounts Receivable_files/image107.png" width="629.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Click <span style="font-weight:bold;">Financial dimensions</span> in the menu above the lines grid.<br/>
+    </li>
+    <li>Complete the following fields on the Enter account financial dimensions form:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:156px"/>
+        <col style="width:468px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Project ID (D1)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>The project from which funds being reimbursed are associated.</p>
+            <p> </p>
+            <p>(e.g.) GB751 – FY2021 Reception and Placement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Operating Unit (D4)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Operating Unit.</p>
+            <p>This entry is based on the location and legal entity.</p>
+            <p>(e.g.) UGAAT – Atlanta, GA.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Reporting Unit (D5)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This entry is based on the location and legal entity.</p>
+            <p>(e.g.) 6DAT – US, Atlanta.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Scroll down the form and click <span id="" style="font-weight: bold">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 236597763" height="194.0" src="assets/images/Accounts Receivable_files/image108.png" width="624.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Enter the credit balance that is being reimbursed in the <span style="font-weight:bold;">Debit </span>field.</li>
+  </ol>
+  <p style="margin-left: 36px">The debit/credit field depends on the <span style="font-weight:bold;">Account type</span> and nature of the entry selected.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: It is recommended that the offset account NOT be used to keep the journal concise and avoid system errors due to wrong data inputs. It is recommended to use double-entry, a line for debit and a line for credit.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Click <span style="font-weight:bold;">New </span>to add a second line.<br/>
+    </li>
+    <li>Update the <span style="font-weight:bold;">Account type</span> field to <span style="font-weight:bold;">Vendor</span>.</li>
+  </ol>
+  <p>The selection list in the drop-down depends on the Account Type that was previously selected.</p>
+  <p><img alt="Picture 236597766" height="305.5" src="assets/images/Accounts Receivable_files/image109.png" width="660.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Click <span style="font-weight:bold;">Financial dimensions</span> in the menu above the lines grid.<br/>
+    </li>
+    <li>Select <span style="font-weight:bold;">Account </span>from the drop-down in the field.<br/>
+    </li>
+    <li>Complete the following fields on the <span style="font-weight:bold;">Enter account financial dimensions</span> form:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:156px"/>
+        <col style="width:468px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Project ID (D1)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>The project from which funds being reimbursed are associated.</p>
+            <p> </p>
+            <p>(e.g.) U1000 – UNRESTRICTED FUNDS.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Operating Unit (D4)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This entry is based on the location and legal entity.</p>
+            <p>(e.g.) UGAAT – Atlanta, GA.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Reporting Unit (D5)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This entry is based on the location and legal entity.</p>
+            <p>(e.g.) 6DAT – US, Atlanta.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Scroll down the form and click <span style="font-weight:bold;">OK</span>.<br/>
+    </li>
+    <li>Complete the following fields on the second line:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:144px"/>
+        <col style="width:480px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This is the vendor number for the customer the funds are being reimbursed to.</p>
+            <p>Enter the customer’s vendor number.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Defaults from the previous line. Leave the default.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Credit</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the amount being reimbursed to the customer.</p>
+            <p>This is the same value being entered in the debit field on the previous line.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Picture 236597769" height="201.7" src="assets/images/Accounts Receivable_files/image110.png" width="607.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Click <span style="font-weight:bold;">Validate &gt; Simulate posting </span>to validate the entries.<br/>
+    </li>
+    <li>Click <span style="font-weight:bold;">X </span>to close the journal.<br/>
+    </li>
+    <li>Click the paperclip icon to attach the relevant documentation that warrants a request for reimbursement.<br/>
+    </li>
+    <li>Click <span style="font-weight:bold;">Workflow &gt; Approve</span>.<br/>
+    </li>
+    <li>Click <span style="font-weight:bold;">Approve</span>.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.</p>
+  <h2 class="Heading2"><a id="Cash_Return_from_Staff_in_Accounts_Receivable"></a>Cash Return from Staff in Accounts Receivable</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to process a cash return when staff collects an advance for program activities, travel, or other purposes and there is a balance to return to the IRC.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Payments &gt; Customer payment journal</span>.</li>
+  </ol>
+  <p><img alt="Picture 152" height="240.8" src="assets/images/Accounts Receivable_files/image112.png" width="653.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <span style="font-weight:bold;">New</span>.</li>
+  </ol>
+  <p><img alt="Picture 86" height="197.9" src="assets/images/Accounts Receivable_files/image113.png" width="658.6"/></p>
+  <p>A new journal line is added at the top of the Customer payment journal grid.</p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Name </span>field, enter or select <span style="font-weight:bold;">CR – Cash Receipt</span>.</li>
+    <li>In the <span style="font-weight:bold;">Description </span>field, <span style="font-weight:bold;">Cash Receipt </span>defaults. Enter a meaningful description for the journal (eg.) Cash receipt – From Staff.</li>
+    <li>On the menu at the top of page, click <span style="font-weight:bold;">Lines</span>.</li>
+  </ol>
+  <p><img alt="Picture 146" height="243.2" src="assets/images/Accounts Receivable_files/image114.png" width="649.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Click the <span style="font-weight:bold;">General </span>tab.</li>
+    <li>Select <span style="font-weight:bold;">Vendor </span>in the <span style="font-weight:bold;">Account type</span> field.</li>
+    <li>Click the <span style="font-weight:bold;">List </span>tab.</li>
+  </ol>
+  <p><img alt="Picture 155" height="136.5" src="assets/images/Accounts Receivable_files/image115.png" width="662.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:680.7px">
+      <colgroup>
+        <col style="width:170.13333333333333333333333333px"/>
+        <col style="width:510.6px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the account number for the staff person returning the funds.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Account name</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This value defaults from the <strong>Account </strong>field. Leave the default.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter a meaningful description for the journal line.</p>
+            <p>E.g.,Cash return from staff</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Credit</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Enter the cash return amount.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Offset account</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the account where the funds are going.</p>
+            <p>E.g., 10326ATUSD JPMorgan Chase Bank</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Method of payment</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the method of payment from the staff person.</p>
+            <p>E.g., Check Check Payment</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If the funds being returned by staff is the result of an advance, complete steps 10 through 12; if not, proceed to step 13.  .</span></h6>
+  <p><img alt="Picture 157" height="236.7" src="assets/images/Accounts Receivable_files/image116.png" width="644.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Click the <span style="font-weight:bold;">Payment </span>tab.</li>
+    <li>Complete the following fields:</li>
+  </ol>
+  <ul>
+    <li>Toggle <span style="font-weight:bold;">Payment journal voucher</span> to <span style="font-weight:bold;">Yes</span>.</li>
+    <li>Change the <span style="font-weight:bold;">Posting profile</span> to <span style="font-weight:bold;">PROG ADV</span></li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Click the <span style="font-weight:bold;">List </span>tab to return to the journal lines.</li>
+  </ol>
+  <p><img alt="Picture 159" height="184.7" src="assets/images/Accounts Receivable_files/image117.png" width="664.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Click <span style="font-weight:bold;">Validate &gt; Simulate posting</span> to validate the journal entry.</li>
+  </ol>
+  <p><img alt="Picture 162" height="178.7" src="assets/images/Accounts Receivable_files/image118.png" width="591.0"/></p>
+  <p>The journal entry is successfully validated and the message Operation completed is displayed. The journal can be submitted to workflow for approval.</p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Click <span style="font-weight:bold;">X</span> to close the journal.</li>
+    <li>Click the paperclip icon to attach the relevant documentation.</li>
+  </ol>
+  <p><img alt="Picture 165" height="279.8" src="assets/images/Accounts Receivable_files/image120.png" style="cursor: nwse-resize;" width="626.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Click … on the top menu bar and select <span style="font-weight:bold;">Workflow &gt; Submit</span>.</li>
+    <li>Enter comments as necessary and click <span style="font-weight:bold;">Submit</span>.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>The journal is routed for approval. After approval, the approver or the Finance Manager/Officer <span style="font-weight:bold;">posts </span>the journal.</p>
+  <h2 class="Heading2"><a id="Process_a_Currency_Revaluation"></a>Process a Currency Revaluation</h2>
+  <p>Use this procedure to process a currency revaluation. Currency revaluation is always performed at month-end when an office has grants in currencies other than USD. This procedure is executed by the Finance Manager, DDF, or another similar role.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>All month-end journal processing is complete</li>
+    <li>Revenue recognition is complete</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Periodic tasks &gt; Foreign currency revaluation</span>.</li>
+  </ol>
+  <p><img alt="Picture 236597779" height="310.3" src="assets/images/Accounts Receivable_files/image121.png" width="625.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Select the line item for which to process the currency revaluation.</li>
+    <li>Click <span style="font-weight:bold;">Foreign currency revaluation</span> on the toolbar at the top.</li>
+  </ol>
+  <p>The Foreign currency revaluation form opens.</p>
+  <p><img alt="Picture 236597780" height="307.4" src="assets/images/Accounts Receivable_files/image123.png" width="630.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Complete the following fields in the <span style="font-weight:bold;">Parameters </span>section:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:624.0px">
+      <colgroup>
+        <col style="width:186px"/>
+        <col style="width:438px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Method</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Use <strong>Standard </strong>to post the foreign currency job no matter if there is a profit or a loss.</p>
+            <p>Use <strong>Minimum </strong>to post the revaluation only if it shows a loss.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Considered date</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Uses the date the transactions are found. The exchange rate is for this date.</p>
+            <p>If a revaluation is run for an earlier date, the system will not go back to that date but will go to a more recent revaluation date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Date of rate</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>This date determines the exchange rate that is used in the foreign currency revaluation. </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Use posting profile from</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Use <strong>Posting</strong> for the posting profile for the customer transactions.</p>
+            <p>Use <strong>Select </strong>to enter the posting profile in the <strong>Posting Profile </strong>field. If you choose <strong>Select </strong>the profile decides how the revaluation is carried out.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Posting profile</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Select the posting profile <strong>GENAR </strong>or <strong>CR</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dimension</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Posting </strong>– Financial dimensions will be posted on the transactions. The process defaults to the financial dimensions from your original transaction&#39;s AR ledger account for the AR main account while it defaults to the original transaction&#39;s expense/asset/revenue ledger account for the unrealized gain/loss main account for revaluation transactions.</p>
+            <p>Select <strong>Posting </strong>from the drop-down.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 236597776" height="116.9" src="assets/images/Accounts Receivable_files/image124.png" width="294.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">Yes </span>to the pop-up message to proceed.</li>
+    <li>Click <span style="font-weight:bold;">X </span>to close the <span style="font-weight:bold;">Foreign currency revaluation</span> grid.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a foreign currency revaluation.</p>
+  <h2 class="Heading2"><a id="Customer_Aging_Report"></a>Customer Aging Report</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>The customer aging report contains the calculated aged balances for a customer for a period. Each aging snapshot detail record contains the total amount of the transactions with dates that are in the aging period. Transactions are assigned to an aging period, such as 30 days past due. The date is relative to the<span style="font-weight:bold;"> Aging as of </span>date that is specified when you create the aging snapshot.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Credit and collections &gt; Inquiries and reports &gt; Customers &gt; Customer ageing report</span>. </li>
+    <li>Enter the following fields in the <span style="font-weight:bold;">Customer aging report</span>:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:657.7px">
+      <colgroup>
+        <col style="width:157px"/>
+        <col style="width:500.73333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Description and/or Action Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Aging as of</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>The date that is in the first period interval or ageing period to include on the report. </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Balance as of</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>The date in which to view the customer balances.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Criteria</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Type of date selection:</p>
+            <p>Transaction date – The posting date of the transactions. For example, this might be an invoice date that is the basis for the calculation of the due date.</p>
+            <p>Due date – The due date of the transactions, based on the terms of payment.</p>
+            <p>Document date – A user-defined document date that is the basis for the calculation of the due date.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Aging period definition</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Aging interval.</p>
+            <p>E.g., 30-60-90-120 (days)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">In the <span style="font-weight:bold;">Print aging period description</span> field, select <span style="font-weight:bold;">Yes</span>. </li>
+    <li>Click <span style="font-weight:bold;">OK</span>.</li>
+  </ol>
+  <p><img alt="Picture 81" height="312.0" src="assets/images/Accounts Receivable_files/image125.png" width="340.3"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed the Customer Aging report with the reporting parameters indicated below.</p>
+  <p><img alt="Picture 184" height="251.9" src="assets/images/Accounts Receivable_files/image126.png" width="636.0"/></p>
+  <h2 class="Heading2"><a id="Donor_Balance"></a>Donor Balance</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>The donor balance contains the calculated balances for a customer at a point in time. This information is accessible on the customer record.</p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to <span style="font-weight:bold;">Accounts receivable &gt; Customers &gt; All customers</span>.</li>
+  </ol>
+  <p><img alt="Picture 191" height="210.9" src="assets/images/Accounts Receivable_files/image127.png" width="294.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">A list of customers is displayed on the All Customers screen. Select the customer record for which the balance will be reviewed.</li>
+    <li>Click <span style="font-weight:bold;">Balance</span>. </li>
+  </ol>
+  <p> <img alt="Picture 87" height="187.7" src="assets/images/Accounts Receivable_files/image128.png" style="cursor: nesw-resize;" width="485.4"/></p>
+  <h3 class="Heading3">Result</h3>
+  <p>You have displayed a customer’s balance.</p>
+  <p><img alt="Picture 88" height="255.5" src="assets/images/Accounts Receivable_files/image129.png" width="347.6"/></p>
 
 </div>
   <div>

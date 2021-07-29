@@ -269,7 +269,8 @@ ol.Decimal {
 ul.Disc {
   list-style-type: disc;
 }
-span {}
+span {
+  color: #000000;}
 ol.AlphaNumeric {
   list-style: decimal;
 }
@@ -359,4 +360,13 @@ ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
 }
 ul.Circle {
   list-style-type: circle;
+}
+ol.UpperRoman {
+  list-style-type: upper-roman;
+}
+ul.Square {
+  list-style-type: square;
+}
+ol.UpperAlpha {
+  list-style-type: upper-alpha;
 }

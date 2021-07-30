@@ -28,7 +28,7 @@ var backgroundColor = "#509de6";
   model.publish(rh.consts('KEY_SEARCH_BG_COLOR'), "#FCFF00");
 	model.publish('l.desktop_sidebar_visible', true);	
 	model.publish('l.mobile_header_visible', false);
-	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [])
+	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"0","key":"696","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;","title":"Print","image":"print_desktop.png"}])
 	model.publish(rh.consts('KEY_DO_NOT_PRESERVE_AR'), true);
 	model.publish(rh.consts('KEY_IS_RESPONSIVE'), true);
 	

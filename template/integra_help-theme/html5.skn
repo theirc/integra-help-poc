@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+  <layout>home_page</layout>
+  <name>Indigo</name>
+  <version>2020.5.0</version>
+  <variables>
+    <css>
+      <back_to_top_image>top.png</back_to_top_image>
+      <topic_page_bgcolor>#F5F5F4</topic_page_bgcolor>
+      <topic_page_buttons_bgcolor>#ffc429</topic_page_buttons_bgcolor>
+      <topic_page_next_button_image>theme-1-arrow-next.png</topic_page_next_button_image>
+      <topic_page_next_button_hover_image>theme-1-arrow-next-over.png</topic_page_next_button_hover_image>
+      <topic_page_previous_button_image>theme-1-arrow-prev.png</topic_page_previous_button_image>
+      <topic_page_previous_button_hover_image>theme-1-arrow-prev-over.png</topic_page_previous_button_hover_image>
+      <topic_page_favorites_button_image>theme-1-bookmarks.png</topic_page_favorites_button_image>
+      <topic_page_favorites_button_hover_image>theme-1-bookmarks-over.png</topic_page_favorites_button_hover_image>
+      <topic_page_favorites_add_button_image>theme-1-bookmark-add.png</topic_page_favorites_add_button_image>
+      <topic_page_favorites_add_button_hover_image>theme-1-bookmark-add-over.png</topic_page_favorites_add_button_hover_image>
+      <minitoc_item_text_hover_color>#ffc429</minitoc_item_text_hover_color>
+      <minitoc_selected_item_button_image>theme-1-topic-active.png</minitoc_selected_item_button_image>
+      <functionbar_button_text_color>#343330</functionbar_button_text_color>
+      <functionbar_button_bgcolor>#F5F5F4</functionbar_button_bgcolor>
+      <functionbar_button_hover_bgcolor>#FFBA0A</functionbar_button_hover_bgcolor>
+      <toc_tile_text_color>#343330</toc_tile_text_color>
+      <toc_tile_bgcolor>#ffc429</toc_tile_bgcolor>
+      <toc_tile_hover_bgcolor>#FFBA0A</toc_tile_hover_bgcolor>
+      <toc_tile_book_image>theme-1-toc-book.png</toc_tile_book_image>
+      <toc_tile_book_hover_image>theme-1-toc-book-over.png</toc_tile_book_hover_image>
+      <toc_tile_topic_image>theme-1-toc-topic.png</toc_tile_topic_image>
+      <toc_tile_topic_hover_image>theme-1-toc-topic-over.png</toc_tile_topic_hover_image>
+      <toc_tile_remote_url_image>theme-1-toc-external.png</toc_tile_remote_url_image>
+      <toc_tile_remote_url_hover_image>theme-1-toc-external-over.png</toc_tile_remote_url_hover_image>
+      <toc_tile_back_image>theme-1-toc-back.png</toc_tile_back_image>
+      <toc_tile_back_hover_image>theme-1-toc-back-over.png</toc_tile_back_hover_image>
+      <sidebar_bgcolor>#343330</sidebar_bgcolor>
+      <sidebar_menu_color>#eeeeee</sidebar_menu_color>
+      <sidebar_menu_hover_color>#ffffff</sidebar_menu_hover_color>
+      <sidebar_divider_color>#ffc429</sidebar_divider_color>
+      <sidebar_footer_button_color>#353431</sidebar_footer_button_color>
+      <sidebar_footer_button_bgcolor>#ffc429</sidebar_footer_button_bgcolor>
+      <sidebar_footer_button_hover_color>#343330</sidebar_footer_button_hover_color>
+      <sidebar_footer_button_hover_bgcolor>#FFBA0A</sidebar_footer_button_hover_bgcolor>
+      <sidebar_close_button_image>theme-1-cross-overlay.png</sidebar_close_button_image>
+      <sidebar_close_button_hover_image>theme-1-cross-overlay-over.png</sidebar_close_button_hover_image>
+      <sidebar_toc_tablet_item_selected_image>theme-1-topic-active-overlay.png</sidebar_toc_tablet_item_selected_image>
+      <search_box_mobile_options_checkbox_image>theme-1-check-box.png</search_box_mobile_options_checkbox_image>
+      <search_box_mobile_options_checkbox_selected_image>theme-1-check-box-selected.png</search_box_mobile_options_checkbox_selected_image>
+      <sidebar_search_box_image>theme-1-search.png</sidebar_search_box_image>
+      <sidebar_autocomplete_item_color>#343330</sidebar_autocomplete_item_color>
+      <sidebar_autocomplete_item_bgcolor>#F5F5F4</sidebar_autocomplete_item_bgcolor>
+      <sidebar_autocomplete_item_hover_color>#ffc429</sidebar_autocomplete_item_hover_color>
+      <sidebar_autocomplete_seperator_color>#ffc429</sidebar_autocomplete_seperator_color>
+      <search_box_mobile_field_bgcolor>#9C9990</search_box_mobile_field_bgcolor>
+      <sidebar_toc_mobile_item_drill_down_image>theme-1-arrow-toc-drill-down.png</sidebar_toc_mobile_item_drill_down_image>
+      <sidebar_toc_mobile_item_drill_down_hover_image>theme-1-arrow-toc-drill-down-over.png</sidebar_toc_mobile_item_drill_down_hover_image>
+      <sidebar_toc_mobile_item_back_image>theme-1-arrow-toc-back.png</sidebar_toc_mobile_item_back_image>
+      <sidebar_toc_mobile_item_back_hover_image>theme-1-arrow-toc-back-over.png</sidebar_toc_mobile_item_back_hover_image>
+      <search_results_message_border_color>#ffc429</search_results_message_border_color>
+      <search_results_topic_image>theme-1-search-results-topics.png</search_results_topic_image>
+      <search_results_document_image>theme-1-search-results-documents.png</search_results_document_image>
+      <search_results_presentation_image>theme-1-search-results-presentations.png</search_results_presentation_image>
+      <search_results_spreadsheet_image>theme-1-search-results-spreadsheets.png</search_results_spreadsheet_image>
+      <search_results_text_file_image>theme-1-search-results-text-files.png</search_results_text_file_image>
+      <search_results_pdf_image>theme-1-search-results-pdfs.png</search_results_pdf_image>
+      <search_button_image>theme-1-search-desktop.png</search_button_image>
+      <autocomplete_remove_image>theme-1-search-remove.png</autocomplete_remove_image>
+      <page_bgcolor>#F5F5F4</page_bgcolor>
+      <loading_image>loading.gif</loading_image>
+      <index_hover_color>#343330</index_hover_color>
+      <index_hover_bgcolor>#ffc429</index_hover_bgcolor>
+      <index_search_bcolor>#9C9990</index_search_bcolor>
+      <home_page_title_color>#343330</home_page_title_color>
+      <header_bgcolor>#343330</header_bgcolor>
+      <logo>integra-logo-stacked-wyob.png</logo>
+      <menu_image>integra-logo-stacked-wyob.png</menu_image>
+      <breadcrumb_bgcolor>#FFC429</breadcrumb_bgcolor>
+      <glossary_term_hover_color>#343330</glossary_term_hover_color>
+      <glossary_term_hover_bgcolor>#ffc429</glossary_term_hover_bgcolor>
+      <glossary_definition_color>#9C9990</glossary_definition_color>
+      <glossary_search_text_bgcolor>#9C9990</glossary_search_text_bgcolor>
+      <filter_group_border_color>#343330</filter_group_border_color>
+      <filter_reset_button_color>#343330</filter_reset_button_color>
+      <filter_reset_button_bgcolor>#C14953</filter_reset_button_bgcolor>
+      <filter_reset_button_hover_bgcolor>#98343C</filter_reset_button_hover_bgcolor>
+      <filter_applied_image>theme-1-tick-overlay.png</filter_applied_image>
+      <filter_active_checkbox_image>theme-1-check-box-selected.png</filter_active_checkbox_image>
+      <filter_inactive_checkbox_image>theme-1-check-box.png</filter_inactive_checkbox_image>
+      <filter_radio_image>theme-1-radio-button-selected.png</filter_radio_image>
+      <filter_incative_radio_image>theme-1-radio-button.png</filter_incative_radio_image>
+      <favorites_item_bgcolor>#ffc429</favorites_item_bgcolor>
+      <favorites_label_bgcolor>#ffc429</favorites_label_bgcolor>
+      <favorites_delete_button_image>theme-1-bin-overlay.png</favorites_delete_button_image>
+      <favorites_delete_button_hover_image>theme-1-bin-overlay-over.png</favorites_delete_button_hover_image>
+      <topic_page_next_search_page_image>theme-1-arrow-next.png</topic_page_next_search_page_image>
+      <topic_page_prev_search_page_image>theme-1-arrow-prev.png</topic_page_prev_search_page_image>
+      <custom_button_image_0>toc_desktop.png</custom_button_image_0>
+      <custom_button_image_1>remove_hightlight.png</custom_button_image_1>
+      <custom_button_image_2>print_desktop.png</custom_button_image_2>
+    </css>
+    <html>
+      <do_not_preserve_ar type="boolean">true</do_not_preserve_ar>
+      <search_results_highlight_color>#000000</search_results_highlight_color>
+      <search_results_highlight_bgcolor>#FCFF00</search_results_highlight_bgcolor>
+      <use_and_search type="boolean">false</use_and_search>
+      <custom_buttons type="array">
+        <custom_buttonsitem>
+          <image>toc_desktop.png</image>
+          <name>Expand/Collapse All</name>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_EXPAND_COLLAPSE_ALL&#39;));return false;</onclick>
+          <title>Expand/Collapse All</title>
+          <id>0</id>
+          <key>734</key>
+        </custom_buttonsitem>
+        <custom_buttonsitem>
+          <image>remove_hightlight.png</image>
+          <name>RemoveHighlight</name>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
+          <title>Remove Highlight</title>
+          <id>1</id>
+          <key>735</key>
+        </custom_buttonsitem>
+        <custom_buttonsitem>
+          <image>print_desktop.png</image>
+          <name>Print</name>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_PRINT_TOPIC&#39;));return false;</onclick>
+          <title>Print</title>
+          <id>2</id>
+          <key>736</key>
+        </custom_buttonsitem>
+      </custom_buttons>
+    </html>
+  </variables>
+</skin>

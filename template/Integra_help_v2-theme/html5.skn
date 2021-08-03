@@ -121,10 +121,16 @@
         <custom_buttonsitem>
           <name>Print</name>
           <id>0</id>
-          <key>696</key>
+          <key>79</key>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_PRINT_TOPIC&#39;));return false;</onclick>
           <title>Print</title>
           <image>print_desktop.png</image>
+        </custom_buttonsitem>
+        <custom_buttonsitem>
+          <name>RemoveHighlight</name>
+          <id>1</id>
+          <key>80</key>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
         </custom_buttonsitem>
       </custom_buttons>
       <use_facebook type="boolean">false</use_facebook>

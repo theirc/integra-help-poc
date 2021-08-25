@@ -3,7 +3,11 @@
   <contextmap>
     
   </contextmap>
-  <topiclist defaulttopic="Personalization_Overview.htm">
+  <topiclist defaulttopic="About_Integra.htm#About_Integra">
+    
+    <topic>
+      About_Integra.htm
+    </topic>
     
     <topic>
       Personalization_Overview.htm
@@ -50,10 +54,6 @@
     </topic>
     
     <topic>
-      Month-End_Close_(RAI_US).htm
-    </topic>
-    
-    <topic>
       Procure_to_Confirm.htm
     </topic>
     
@@ -75,6 +75,10 @@
     
     <topic>
       Key_Components_of_Inventory_Management.htm
+    </topic>
+    
+    <topic>
+      Process_Flow_Diagram.htm
     </topic>
     
     <topic>
@@ -103,6 +107,10 @@
     
     <topic>
       Milestone_Tracking_for_Projects_in_Integra.htm
+    </topic>
+    
+    <topic>
+      About_Integra.htm#About_Integra
     </topic>
     
   </topiclist>

@@ -5,6 +5,12 @@
 
   
     <url>
+      <loc>integra-help-staging.azurewebsites.net/About_Integra.htm</loc>
+      <lastmod>2021-09-01</lastmod>
+      <changefreq>monthly</changefreq>
+    </url>
+  
+    <url>
       <loc>integra-help-staging.azurewebsites.net/Milestone_Tracking_for_Projects_in_Integra.htm</loc>
       <lastmod>2021-09-01</lastmod>
       <changefreq>monthly</changefreq>

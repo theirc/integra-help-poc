@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"Personalizing Table Grids in Integra","type":"book","tilePath":"","description":"","url":"Personalization_Overview.htm","key":"toc2"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"About Integra","type":"item","tilePath":"","description":"","url":"About_Integra.htm#About_Integra"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

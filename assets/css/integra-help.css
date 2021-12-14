@@ -87,7 +87,7 @@ h6.Heading6 {
   border-top-style: solid;
   border-bottom-style: solid;
   letter-spacing: 1px;
-  line-height: 2;
+  line-height: 1.25;
   background-color: rgba(128, 128, 128, 0.25);
   padding-top: 0.5em;
   padding-right: 0.5em;
@@ -104,6 +104,7 @@ h6.Heading6 {
   border-bottom-right-radius: 1em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
+  font-weight: normal;
 }
 body {
   counter-reset: Numbering31 0 pnormal1 0;
@@ -270,7 +271,8 @@ ul.Disc {
   list-style-type: disc;
 }
 span {
-  color: #000000;}
+  color: #000000;
+}
 ol.AlphaNumeric {
   list-style: decimal;
 }

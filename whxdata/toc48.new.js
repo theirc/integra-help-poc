@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Business Process Information","type":"book","tilePath":"","description":"","url":"UG_Item_Forecasting_to_Purchase_Order_Creation_QA.htm#Business_Process_Information","key":"toc49"},{"name":"Procedures","type":"book","tilePath":"","key":"toc50"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

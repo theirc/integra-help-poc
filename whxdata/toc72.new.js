@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"About_Integra","type":"item","tilePath":"","description":"","url":"About_Integra.htm#About_Integra"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

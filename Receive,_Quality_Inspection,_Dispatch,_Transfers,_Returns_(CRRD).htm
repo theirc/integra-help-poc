@@ -38,7 +38,7 @@
 
     gRootRelPath = ".";
     gCommonRootRelPath = ".";
-    gTopicId = "6.4";
+    gTopicId = "8";
   
 //]]></script>
 
@@ -75,19 +75,27 @@
 
 
   <div>
-    <p> </p>
+    <p><br/>
+      
+    </p>
   </div>
   <div>
-  <h1 class="Heading1">Business Process Overview</h1>
-  <h2 class="Heading2"><a id="Receiving_and_Quality_Inspection"></a>Receiving and Quality Inspection</h2>
-  <p>This section outlines key terms and business process steps for the following scenarios:</p>
+  <h1 class="Heading1">Business Process Information</h1>
+  <ul>
+  </ul>
+  <h2 class="Heading2"><a id="General_Information_for_Receipt_and_Inspection_of_Stocked_Items"></a>Product Receipt and Inspection - General Information</h2>
+  <p>This section outlines business process information for the following scenarios:</p>
   <ul>
     <li>Receipt of FIFO stock products</li>
     <li>Receipt of FEFO stock products</li>
   </ul>
-  <h2 class="Heading2"><a id="Business_Process_for_Receiving_and_Inspection_for_Stock_Products"></a>Business Process for Receiving and Inspection for Stock Products</h2>
+  <p>All stocked items go through inspection and receipt upon arrival at an IRC location. They will be quality controlled for all CRRD legal entities and some RAI entities. When material arrives or services are delivered at an IRC location, Integra must be updated to record the receipt of the material. The receipt record is a prerequisite to invoice payment.</p>
+  <p>Stock products are received and tracked in inventory. i.e., on-hand balances are updated with each product receipt.</p>
+  <p>A partial quantity of a PO may be received. In these situations, the PO remains open until all items are received.</p>
+  <p><strong>Important</strong>: Services are received the same way non-stock items are received.</p>
+  <h2 class="Heading2"><a id="Business_Process_for_Receiving_and_Inspection_for_Stock_Products"></a>Product Receipt and Inspection - Business Process Flow</h2>
   <p><img alt="Picture 1" height="281.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image1.png" width="681.6"/></p>
-  <h2 class="Heading2"><a id="Sequence_of_Procedures_for_Stocked_Items"></a>Sequence of Procedures for Stocked Items</h2>
+  <h2 class="Heading2"><a id="Sequence_of_Procedures_for_Stocked_Items"></a>Step Details for Receiving  Stocked Items</h2>
   <p>The procedures below specify the sequence for first in first out (FIFO) and first expiry first out (FEFO) items in CRRD:</p>
   <ol class="Decimal">
     <li><strong>Receipt list</strong> – Inventory personnel post a receipt list when the product is received from the supplier. The receipt list does not impact neither financial nor physical inventory.</li>
@@ -101,16 +109,10 @@
     <li><strong>Product receipt</strong> – the IRC performs the product receipt at the port of entry</li>
     <li><strong>Quality order</strong> – Quality inspection is performed when the material is moved from the port of entry to the IRC storage facility. When the quality inspection is complete the quality order is then posted</li>
   </ul>
-  <h2 class="Heading2"><a id="Receiving_-_General_Information_for_Stocked_Items"></a>Receiving - General Information for Stocked Items</h2>
-  <p>All stocked items go through inspection and receipt upon arrival at an IRC location. They will be quality controlled for all CRRD legal entities and some RAI entities. When material arrives or services are delivered at an IRC location, Integra must be updated to record the receipt of the material. The receipt record is a prerequisite to invoice payment.</p>
-  <p>Stock products are received and tracked in inventory. i.e., on-hand balances are updated with each product receipt.</p>
-  <p>A partial quantity of a PO may be received. In these situations, the PO remains open until all items are received.</p>
-  <p><strong>Important</strong>: Services are received the same way non-stock items are received.<br/>
-     </p>
   <h2 class="Heading2"><a id="Enter_Receipt_List"></a>Enter Receipt List</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to create a receipt list for stocked products received at an IRC location.</p>
-  <h6 class="Heading6">Note: Prior to beginning the procedure, first determine if the PO lines are for stocked or non-stocked products.</h6>
+  <h6 class="Heading6"><span style="font-weight:bold;">Note</span>: Prior to beginning the procedure, first determine if the PO lines are for stocked or non-stocked products.</h6>
   <p>The receipts list is a system acknowledgement of accepting delivery and is akin to signing for a package. Entering the receipt list does not impact inventory balances.</p>
   <h3 class="Heading3">Prerequisites</h3>
   <ul>
@@ -126,7 +128,7 @@
   <ol>
     <li style="counter-reset: item1 1;" value="2">Find the relevant purchase order and click the PO number to open the PO form.</li>
   </ol>
-  <h6 class="Heading6">Note: There are various search filters that can be used to find the PO number. Refer to the Navigate Integra eLearning and Process a Purchase Order eLearning for filtering and filtering to find a purchase order.</h6>
+  <h6 class="Heading6"><span style="font-weight:bold;">Note</span>: There are various search filters that can be used to find the PO number. Refer to the Navigate Integra eLearning and Process a Purchase Order eLearning for filtering and filtering to find a purchase order.</h6>
   <p><img alt="Picture 27" height="325.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image3.png" width="660.0"/></p>
   <ol>
     <li style="counter-reset: item1 2;" value="3">Review the information on the PO lines to ensure the correct PO was selected.</li>
@@ -437,11 +439,7 @@
     </li>
     <li>If you need to print/reprint the product receipt document, select Product receipt under the Journals action pane; select the relevant receipt document; click Preview/Print tab and select Copy preview. Then select the printer icon to output to printer or PDF.</li>
   </ul>
-  <h2 class="Heading2"><a id="Business_Process_-_Product_Dispatch"></a>Business Process - Product Dispatch</h2>
-  <p>This section outlines key terms and business process steps for dispatching products from the warehouse.</p>
-  <h2 class="Heading2"><a id="Business_Process_Flow_-_Dispatch_Products_CRRD"></a>Business Process Flow - Dispatch Products CRRD</h2>
-  <p><img alt="Picture 10" height="318.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image45.png" width="707.0"/></p>
-  <h2 class="Heading2"><a id="Dispatching_-_General_Information"></a>Dispatching - General Information</h2>
+  <h2 class="Heading2"><a id="Dispatching_-_General_Information"></a>Product Dispatch - General Information</h2>
   <p>The IRC uses the Integra pick/pack function for the following tasks:</p>
   <ul>
     <li>Distributing material from the IRC warehouse to a beneficiary</li>
@@ -449,6 +447,7 @@
   </ul>
   <p>The pick/pack function is triggered by either a transfer order or project consumption of items. Each of these actions automatically generate picking instructions for Supply Chain to review. Warehouse personnel print the picking list for the items to be shipped.</p>
   <p>The picking list is used to go through the warehouse for picking the item quantities. Packing lists for item requirements are posted in order to distribute inventory. When a packing list is posted, inventory is reduced from both financial and physical inventory. The financial inventory is the inventory main account cost balance and physical inventory is the on-hand list quantity. The project expense is also posted.</p>
+  <h2 class="Heading2"><a id="Business_Process_Flow_-_Dispatch_Products_CRRD"></a>Product Dispatch - Business Process Flow <img alt="Picture 10" height="318.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image45.png" style="cursor: nwse-resize;" width="707.0"/></h2>
   <h2 class="Heading2"><a id="Generate_a_Picking_List"></a>Generate a Picking List</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to dispatch material that has been received to generate a picking list for items that need to be issued to a beneficiary.</p>
@@ -1310,14 +1309,13 @@
   </ol>
   <h3 class="Heading3">Result</h3>
   <p>You have recorded the receipt of CIK inventory items in Integra.</p>
-  <h2 class="Heading2"><a id="Business_Process_-_Returns_and_Returned_Orders"></a>Business Process - Returns and Returned Orders</h2>
+  <h2 class="Heading2"><a id="Business_Process_Flows_-_Returns_and_Returned"></a>Business Process Flows - Returns and Returned</h2>
   <p>This section outlines key terms and business process steps for the following scenarios:</p>
   <ul>
     <li>Refuse to Receive</li>
     <li>Invoiced Return</li>
     <li>Return to the Warehouse – Beneficiary Return</li>
   </ul>
-  <h2 class="Heading2"><a id="Business_Process_Flows_-_Returns_and_Returned"></a>Business Process Flows - Returns and Returned</h2>
   <h2 class="Heading2"><a id="Refuse_to_Receive"></a>Refuse to Receive</h2>
   <p><img alt="Picture 368781638" height="257.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image134.png" width="567.9"/></p>
   <p>If a quality order fails, IRC does not accept the failed quantity into inventory. A non-conformance is created in Integra for the reason and quantity of product that failed.</p>
@@ -2189,7 +2187,19 @@
 
 </div>
   <div>
-    <p style="text-align: right;">                                                                                                      rescuenet.rescue.org/i/integra-support</p>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
   </div>
 
 </body></html>

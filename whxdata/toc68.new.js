@@ -1,1 +1,1 @@
-(function() {    var toc =  [{"name":"Business Process Information","type":"book","tilePath":"","key":"toc69"},{"name":"Procedures","type":"book","tilePath":"","key":"toc70"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();
+(function() {    var toc =  [{"name":"Amendment Types and Process Steps in Integra","type":"item","tilePath":"","description":"","url":"UG_PRJ_Project_Amendments_QA.htm#Amendment_Types_and_Process_Steps_in_Integra"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

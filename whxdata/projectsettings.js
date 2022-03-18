@@ -7,7 +7,7 @@ rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("About_Integra.htm#About_Integra"));
 rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
 rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '9267322c-de1c-4a02-a12d-f71fda6697e3' || 'preview');
+rh.consts('HELP_ID', 'af6fca15-d791-4ff7-9f04-0d27a880e80e' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

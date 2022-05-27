@@ -1,44 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ppfml version="2.00" project="robohelp_import" type="4">
+<ppfml version="2.00" project="integra-help" type="4">
   <contextmap>
     
   </contextmap>
   <topiclist defaulttopic="About_Integra.htm#About_Integra">
     
     <topic>
+      Business_Process_Overview\RAI_Finance_Quick_Reference_Guides.htm
+    </topic>
+    
+    <topic>
       About_Integra.htm
-    </topic>
-    
-    <topic>
-      Frequently_Asked_Questions.htm
-    </topic>
-    
-    <topic>
-      RAI_Finance.htm
-    </topic>
-    
-    <topic>
-      RAI_Report_FAQ_Sheets.htm
-    </topic>
-    
-    <topic>
-      Expense_Management.htm
-    </topic>
-    
-    <topic>
-      Setting_up_Clients_as_Vendors_in_Integra.htm
-    </topic>
-    
-    <topic>
-      CIK_Distribution_in_Integra_via_Expense_Journal.htm
-    </topic>
-    
-    <topic>
-      Journal_Entries_DynAD_Template_Upload.htm
-    </topic>
-    
-    <topic>
-      Processing_AP_Invoices_–_Business_Process.htm
     </topic>
     
     <topic>
@@ -46,7 +18,7 @@
     </topic>
     
     <topic>
-      Cash_and_Bank_Management.htm
+      Beneficiary_(BENE)_Vendor_Creation_(RAI).htm
     </topic>
     
     <topic>
@@ -54,11 +26,55 @@
     </topic>
     
     <topic>
+      Cash_and_Bank_Management.htm
+    </topic>
+    
+    <topic>
+      CIK_Distribution_in_Integra_via_Expense_Journal.htm
+    </topic>
+    
+    <topic>
+      Developing_Project_Budget_Templates.htm
+    </topic>
+    
+    <topic>
+      Expense_Management.htm
+    </topic>
+    
+    <topic>
+      Frequently_Asked_Questions.htm
+    </topic>
+    
+    <topic>
       Intercompany_Accounting.htm
     </topic>
     
     <topic>
+      Journal_Entries_DynAD_Template_Upload.htm
+    </topic>
+    
+    <topic>
+      Key_Components_of_Inventory_Management.htm
+    </topic>
+    
+    <topic>
+      Milestone_Tracking_for_Projects_in_Integra.htm
+    </topic>
+    
+    <topic>
       Month-End_Close_(RAI_US).htm
+    </topic>
+    
+    <topic>
+      Personalization_Overview.htm
+    </topic>
+    
+    <topic>
+      Process_Flow_Diagram.htm
+    </topic>
+    
+    <topic>
+      Processing_AP_Invoices_–_Business_Process.htm
     </topic>
     
     <topic>
@@ -70,7 +86,11 @@
     </topic>
     
     <topic>
-      UG_Item_Forecasting_to_Purchase_Order_Creation_QA.htm
+      RAI_Finance.htm
+    </topic>
+    
+    <topic>
+      RAI_Report_FAQ_Sheets.htm
     </topic>
     
     <topic>
@@ -82,23 +102,7 @@
     </topic>
     
     <topic>
-      Inventory_Management_(RAI).htm
-    </topic>
-    
-    <topic>
-      Key_Components_of_Inventory_Management.htm
-    </topic>
-    
-    <topic>
-      Process_Flow_Diagram.htm
-    </topic>
-    
-    <topic>
-      Developing_Project_Budget_Templates.htm
-    </topic>
-    
-    <topic>
-      UG_PRJ_Project_Amendments_QA.htm
+      Setting_up_Clients_as_Vendors_in_Integra.htm
     </topic>
     
     <topic>
@@ -106,7 +110,15 @@
     </topic>
     
     <topic>
-      Milestone_Tracking_for_Projects_in_Integra.htm
+      UG_Item_Forecasting_to_Purchase_Order_Creation_QA.htm
+    </topic>
+    
+    <topic>
+      UG_PRJ_Project_Amendments_QA.htm
+    </topic>
+    
+    <topic>
+      Vendor_Creation_-_Trade-Cash-PFS.htm
     </topic>
     
     <topic>

@@ -38,7 +38,7 @@
 
     gRootRelPath = ".";
     gCommonRootRelPath = ".";
-    gTopicId = "2.1";
+    gTopicId = "15";
   
 //]]></script>
 
@@ -58,7 +58,7 @@
 </head>
 
 <body>
-  <div class="topic-header rh-hide" id="rh-topic-header" onclick="rh._.goToFullLayout()">
+  <div class="topic-header rh-hide" id="rh-topic-header">
     <div class="logo">
     </div>
     <div class="nav">
@@ -66,7 +66,7 @@
         <span>Personalize Table Grid Layouts</span>
       </div>
       <div class="gotohome" title="Click here to see this page in full context">
-        <span>Click here to see this page in full context</span>
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
       </div>
     </div>
   </div>
@@ -75,11 +75,13 @@
 
 
   <div>
-    <p> </p>
+    <p><br/>
+      
+    </p>
   </div>
   <div>
   <div class="position-relative">
-    <h1 class="Heading1"><a id="Personalization_Overview"></a><span style="color:#ffc000;">Personalization </span>Overview</h1>
+    <h1 class="Heading1"><a id="Personalization_Overview"></a><span style="color:#ffc000;">Personalizing Table Grids in Integra</span></h1>
     <p>The Integra system has many tabular grid screens for viewing and entering information. Some examples are, <span style="font-style:italic;">All purchase orders</span> grid, <span style="font-style:italic;">Vouchers</span> grid, <span style="font-style:italic;">All projects</span> grid. There are default grid layouts automatically applied by the Integra system but often these default layouts contain columns that are not applicable to a user or they may be missing columns that would be valuable for a user. As such, the system allows a user to customize the grid layout to suit their personal needs. This document contains the following step-by-step procedures for customizing a grid layout.</p>
     <ul>
       <li>Adding and hiding columns</li>
@@ -89,7 +91,7 @@
       <li>Setting a layout as the default display each time the screen is accessed.</li>
     </ul>
     <p>Using the <span style="font-style:italic;">All projects</span> grid as a sample, the screenshot below identifies access points to the personalization features.</p>
-    <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTML5e8183db.PNG" height="301.3" src="assets/images/Personalize Views_files/image2.png" width="696.0"/></p>
+    <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTML5e8183db.PNG" height="301.3" src="assets/images/Personalize Views_files/image2.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <h3 class="Heading3">Additional Notes</h3>
     <p>A personalized layout can be saved with any name. It defaults to “My view” but this text can be overwritten with any text. An asterisk next to the view name indicates a change has been made to the layout currently displayed. The change must be saved in order to have the changes available for future use. Columns widths can be changed by dragging the double-sided arrow that appears when you hover the mouse on the border between two column headers <img alt="Picture 68" height="22.0" src="assets/images/Personalize Views_files/image3.png" style="vertical-align: middle;" width="47.0"/>. This is useful to see full descriptions when the default width is too small.</p>
     <h6 class="Heading6"><span style="font-weight:normal"><span style="font-weight:bold;">Note</span>: The screenshots depicted in the following procedures use select table grids as examples but the steps are valid for most table grids in Integra. You must save any changes to a grid layout before exiting the page if you want them to remain active each time you access the table grid. This is done by selecting the drop-down arrow next to the view name, e.g., “Standard view” or “My view”.</span></h6>
@@ -100,26 +102,26 @@
       <li>Click the drop-down arrow next to the current view (e.g., <span style="font-weight:bold;">Standard view</span>).</li>
     </ol>
     <p><img alt="Graphical user interface, application
-Description automatically generated" height="150.7" src="assets/images/Personalize Views_files/image4.png" width="192.0"/></p>
+Description automatically generated" height="150.7" src="assets/images/Personalize Views_files/image4.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="192.0"/></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">Select the new view to display from the list (e.g., Purchase Order List Page).</li>
     </ol>
     <p><img alt="Graphical user interface, text, application
-Description automatically generated" height="157.4" src="assets/images/Personalize Views_files/image5.png" width="192.0"/></p>
+Description automatically generated" height="157.4" src="assets/images/Personalize Views_files/image5.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="192.0"/></p>
     <p style="text-indent: 14px">The page refreshes to display the selected view.</p>
     <ol>
       <li style="counter-reset: item1 3;" value="4">Click the drop-down arrow next to the current view (e.g., <span style="font-weight:bold;">Purchase Order List Page</span>).</li>
     </ol>
     <p><img alt="Graphical user interface, application
-Description automatically generated" height="145.9" src="assets/images/Personalize Views_files/image6.png" width="192.0"/></p>
+Description automatically generated" height="145.9" src="assets/images/Personalize Views_files/image6.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="192.0"/></p>
     <ol>
       <li style="counter-reset: item1 4;" value="5">Click the ellipsis icon (....) in the bottom right corner.</li>
       <li>Click <span style="font-weight:bold;">Pin as default</span>.</li>
     </ol>
     <p><img alt="Graphical user interface, application
-Description automatically generated" height="187.2" src="assets/images/Personalize Views_files/image7.png" width="192.0"/></p>
+Description automatically generated" height="187.2" src="assets/images/Personalize Views_files/image7.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="192.0"/></p>
     <p style="counter-reset: item1 7;"><span style="font-weight:bold;">Note</span>: The <img alt="Picture 36" height="27.0" src="assets/images/Personalize Views_files/image8.png" style="vertical-align: middle;" width="29.0"/>pin icon now indicates that the selected view is the default.</p>
-    <p><img alt="Picture 37" height="169.9" src="assets/images/Personalize Views_files/image9.png" width="192.0"/></p>
+    <p><img alt="Picture 37" height="169.9" src="assets/images/Personalize Views_files/image9.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="192.0"/></p>
     <h3 class="Heading3">Result</h3>
     <p>You have selected a default view to display each time you return to this form.</p>
     <h2 class="Heading2"><a id="Add_a_Column_in_a_Table_Grid_Layout"></a>Add a Column in a Table Grid Layout</h2>
@@ -127,11 +129,11 @@ Description automatically generated" height="187.2" src="assets/images/Personali
     <ol>
       <li>Display the table grid screen.</li>
     </ol>
-    <p><img alt="Picture 9" height="270.6" src="assets/images/Personalize Views_files/image10.png" width="695.9"/></p>
+    <p><img alt="Picture 9" height="270.6" src="assets/images/Personalize Views_files/image10.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="695.9"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Right-click on any column heading and select <span style="font-weight:bold;">Add columns</span> from the drop-down menu.</li>
     </ol>
-    <p><img alt="Picture 16" height="318.4" src="assets/images/Personalize Views_files/image11.png" width="696.0"/></p>
+    <p><img alt="Picture 16" height="318.4" src="assets/images/Personalize Views_files/image11.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">A pop-up window appears that displays all the available columns to add. Search for and select the checkbox next to the applicable column(s) to add and then click <span style="font-weight:bold;">Insert</span>.</li>
     </ol>
@@ -140,7 +142,7 @@ Description automatically generated" height="187.2" src="assets/images/Personali
       <li style="counter-reset: item1 3;" value="4"><span style="font-weight:bold;">Optional</span>: To hide a column, right-click on the specific column heading to hide and select <span style="font-weight:bold;">Hide this column</span>.</li>
       <li>To save the changes so they stay active each time you access the grid, click the drop-down next to the view title, e.g., Standard view or My view, then click <span style="font-weight:bold;">Save</span> or <span style="font-weight:bold;">Save as…</span>. button. (See screenshot below.) If you don’t do this, the changes made will not be saved for the next time.</li>
     </ol>
-    <p><img alt="Picture 15" height="318.4" src="assets/images/Personalize Views_files/image13.png" width="696.0"/></p>
+    <p><img alt="Picture 15" height="318.4" src="assets/images/Personalize Views_files/image13.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: An asterisk displayed next to the view title is an alert that a change has been made to the grid layout in the current visit to the page and changes should be saved, if required.</span></h6>
     <h3 class="Heading3">Result</h3>
     <p>You have personalized a grid table layout by adding a column(s) to the table.</p>
@@ -149,12 +151,12 @@ Description automatically generated" height="187.2" src="assets/images/Personali
     <ol>
       <li>Display the table grid screen.</li>
     </ol>
-    <p><img alt="Picture 27" height="318.4" src="assets/images/Personalize Views_files/image14.png" width="696.0"/></p>
+    <p><img alt="Picture 27" height="318.4" src="assets/images/Personalize Views_files/image14.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Right click on the specific column header to be hidden and select <span style="font-weight:bold;">Hide this column</span> from the drop-down menu.</li>
       <li>To save the changes so they stay active each time you access the grid, click the drop-down next to the view title, e.g., Standard view or My view, then click <span style="font-weight:bold;">Save </span>or <span style="font-weight:bold;">Save as…</span>. button. (See screenshot below.) If you don’t do this, the changes made will not be saved for the next time.</li>
     </ol>
-    <p><img alt="Picture 22" height="318.4" src="assets/images/Personalize Views_files/image15.png" width="696.0"/></p>
+    <p><img alt="Picture 22" height="318.4" src="assets/images/Personalize Views_files/image15.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: <span style="font-family:Arial;">An asterisk displayed next to the view title is an alert that a change has been made to the grid layout in the current visit to the page and changes should be saved, if required.</span></span></h6>
     <h3 class="Heading3">Result</h3>
     <p>You have personalized the table layout by hiding a column in the table.</p>
@@ -163,17 +165,17 @@ Description automatically generated" height="187.2" src="assets/images/Personali
     <ol>
       <li>Display the table grid screen.</li>
     </ol>
-    <p><img alt="Picture 29" height="210.4" src="assets/images/Personalize Views_files/image16.png" width="696.0"/></p>
+    <p><img alt="Picture 29" height="210.4" src="assets/images/Personalize Views_files/image16.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Hover the mouse on the column until you see four dots on the left of the header.</li>
       <li>Move the mouse to the four dots until a four-sided arrow appears. <img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTML45adb9e2.PNG" height="40.8" src="assets/images/Personalize Views_files/image17.png" width="124.7"/>. This is the “move” indicator. Click and hold the four sided arrow and drag and drop the column to its new location.</li>
     </ol>
-    <p><img alt="Picture 33" height="219.2" src="assets/images/Personalize Views_files/image18.png" width="695.9"/></p>
+    <p><img alt="Picture 33" height="219.2" src="assets/images/Personalize Views_files/image18.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="695.9"/></p>
     <ol>
       <li style="counter-reset: item1 3;" value="4">Validate the column has been moved to its new location.</li>
       <li>To save the changes so they stay active each time you access the grid, click the drop-down next to the view title, e.g., Standard view or My view, then click <span style="font-weight:bold;">Save </span>or <span style="font-weight:bold;">Save as…. </span>button. (See screenshot below.) If you don’t do this, the changes made will not be saved for the next time.</li>
     </ol>
-    <p><img alt="Picture 28" height="318.4" src="assets/images/Personalize Views_files/image19.png" width="696.0"/></p>
+    <p><img alt="Picture 28" height="318.4" src="assets/images/Personalize Views_files/image19.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <h6 class="Heading6" style="font-weight: normal"><span style="font-weight:bold;">Note</span>: An asterisk displayed next to the view title is an alert that a change has been made to the grid layout in the current visit to the page and changes should be saved, if required.</h6>
     <h3 class="Heading3">Result</h3>
     <p>You have personalized a table layout by moving a column to a new location in the table.</p>
@@ -188,15 +190,15 @@ Description automatically generated" height="187.2" src="assets/images/Personali
     <ol>
       <li>Display the table grid screen.</li>
     </ol>
-    <p><img alt="Picture 5" height="276.5" src="assets/images/Personalize Views_files/image20.png" width="696.0"/></p>
+    <p><img alt="Picture 5" height="276.5" src="assets/images/Personalize Views_files/image20.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Right click on any column header and select <span style="font-weight:bold;">Show footer</span> from the drop-down menu.</li>
     </ol>
-    <p><img alt="Picture 6" height="318.4" src="assets/images/Personalize Views_files/image21.png" width="696.0"/></p>
+    <p><img alt="Picture 6" height="318.4" src="assets/images/Personalize Views_files/image21.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">For any columns that contain number values, a plus sign is displayed. Click the plus sign to ‘show totals’ for that column.</li>
     </ol>
-    <p><img alt="Picture 19" height="318.4" src="assets/images/Personalize Views_files/image23.png" width="696.0"/></p>
+    <p><img alt="Picture 19" height="318.4" src="assets/images/Personalize Views_files/image23.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 3;" value="4">Validate the total has displayed.</li>
     </ol>
@@ -212,17 +214,17 @@ Description automatically generated" height="187.2" src="assets/images/Personali
     <ol>
       <li>Display a table grid screen.</li>
     </ol>
-    <p><img alt="Picture 21" height="318.6" src="assets/images/Personalize Views_files/image24.png" width="696.0"/></p>
+    <p><img alt="Picture 21" height="318.6" src="assets/images/Personalize Views_files/image24.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Make changes to a table grid layout using the steps provided in previous sections, then click the drop-down arrow next to<span style="font-weight:bold;"> Standard view</span>.</li>
     </ol>
-    <p><img alt="Picture 24" height="318.4" src="assets/images/Personalize Views_files/image25.png" width="696.0"/></p>
+    <p><img alt="Picture 24" height="318.4" src="assets/images/Personalize Views_files/image25.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">In the pop-up window, click <span style="font-weight:bold;">Save as</span>.</li>
     </ol>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If you are making changes to an existing personalized view, Click <span style="font-weight:bold;">Save</span> (not “Save as”) and it will automatically save the changes to your existing personalized view.</span></h6>
     <p> </p>
-    <p><img alt="Picture 26" height="318.4" src="assets/images/Personalize Views_files/image26.png" width="696.0"/></p>
+    <p><img alt="Picture 26" height="318.4" src="assets/images/Personalize Views_files/image26.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 3;" value="4">In the <span style="font-weight:bold;">Name</span> field, enter any name for the new layout. (This field defaults to “My view” but can be overwritten with any text).</li>
     </ol>
@@ -237,18 +239,19 @@ Description automatically generated" height="187.2" src="assets/images/Personali
 
 </div>
   <div>
-    <p style="text-align: right;">                                                                                        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-2"></script>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
 <script>//<![CDATA[
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-84485875-2');
+  gtag('config', 'UA-84485875-1');
 
-//]]></script>
-               rescuenet.rescue.org/i/integra-support</p>
-          </div>
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
 
 </body></html>

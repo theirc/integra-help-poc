@@ -28,7 +28,7 @@ var backgroundColor = "#509de6";
   model.publish(rh.consts('KEY_SEARCH_BG_COLOR'), "#FCFF00");
 	model.publish('l.desktop_sidebar_visible', true);	
 	model.publish('l.mobile_header_visible', false);
-	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"0","key":"79","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;","title":"Print","image":"print_desktop.png"},{"name":"RemoveHighlight","id":"1","key":"80","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
+	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"English","id":"2","key":"1057","href":"https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra","title":"ENGLISH","image":"EN.png","selected_image":"5s911lu0d1d0xncs9mypr4kr93to2ig1.png"},{"name":"Spanish","id":"4","key":"1061","title":"ESPAÑOL","href":"https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra","image":"ES.png"},{"name":"French","id":"3","key":"1058","title":"FRANÇAIS","href":"https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra","image":"FR.png"},{"name":"Print","id":"0","key":"1059","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;","title":"Print","image":"print_desktop.png"},{"name":"RemoveHighlight","id":"1","key":"1060","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
 	model.publish(rh.consts('KEY_DO_NOT_PRESERVE_AR'), true);
 	model.publish(rh.consts('KEY_IS_RESPONSIVE'), true);
 	

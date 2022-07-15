@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "2_2";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Gestión bancaria y de efectivo</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Gestión bancaria y de efectivo">
+        <span>Gestión bancaria y de efectivo</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1">Información de proceso empresarial</h1>
+  <h2 class="Heading2">Actividades empresariales implicadas en la Gestión bancaria y de efectivo</h2>
+  <p><img alt="Imagen 30" height="234.9" src="assets/images/Cash and Bank Management_files/image1.png" width="650.8"/></p>
+  <p>IRC tiene aproximadamente 200 cuentas bancarias en todo el planeta. Cada cuenta bancaria está asignada a una cuenta principal para simplificar la conciliación bancaria. Se pueden configurar grupos bancarios para supervisar la actividad bancaria basada en el grupo.</p>
+  <p>El <span style="font-weight:bold;">Espacio de trabajo de la descripción general de efectivo</span>proporciona una descripción general del efectivo en las diversas cuentas bancarias. También tiene una previsión de flujos de efectivo en la que cada entidad jurídica puede ver el Libro general, Cuentas por pagar, Cuentas por cobrar, Elaboración de presupuestos y Saldos de inventario. Esto ayuda a proporcionar información mejorada y exacta para iniciar la planificación de efectivo mensual/las previsiones para el mes o meses venideros.</p>
+  <p>IRC utiliza un producto llamado <span style="font-weight:bold;">Treasury Automation Suite (TAS)</span> que facilita la capacidad de automatizar el proceso de reconciliación bancaria de IRC. Este paquete de programas es una integración directa al sistema Integra.</p>
+  <p>Una vez que se crea un registro bancario en el módulo <span style="font-weight:bold;">Gestión bancaria y de efectivo</span> de Integra, la cuenta bancaria está disponible para moverse al TAS. </p>
+  <p>Todas las cuentas bancarias se concilian mensualmente por medio de TAS. El proceso de conciliación electrónica dentro de Integra importa extractos bancarios y los concilia con las transacciones contabilizadas en Integra. Integra relaciona los tipos de transacciones y sus cuentas de libro mayor (GL) asociadas con códigos de transacciones de cuentas bancarias para identificar cada tipo de transacción bancaria.</p>
+  <p>Si un banco no es capaz de enviar su extracto como archivo, Integra permite la conciliación de la cuenta bancaria compensando manualmente las transacciones en Integra. Este proceso se completa revisando y marcando coincidencias automáticas válidas y procesando coincidencias abiertas mediante <span style="font-weight:bold;">el área de trabajo Click-and-match</span>.</p>
+  <h2 class="Heading2">Tipos de transacciones bancarias</h2>
+  <p>Los tipos de transacciones bancarias se han creado en Integra para registrar los diferentes tipos de transacciones bancarias que proceden de un banco. Los tipos de diarios también se han asignado a las transacciones bancarias y se ha creado una regla para no permitir ninguna contabilización a una cuenta bancaria sin un tipo de transacción bancaria. A continuación, hay una lista de los tipos de transacciones bancarias en Integra:</p>
+  <p><img alt="Imagen 58" height="517.2" src="assets/images/Cash and Bank Management_files/image2.png" width="371.0"/></p>
+  <h2 class="Heading2">Gestión de efectivo y transferencias</h2>
+  <h3 class="Heading3">Proceso de efectivo en la oficina</h3>
+  <p>Algunas oficinas operan con efectivo en una caja fuerte para hacer frente a las siguientes situaciones:</p>
+  <ul>
+    <li> Pago a proveedores que solo aceptan pagos en efectivo </li>
+    <li> Pago de anticipos de nómina a personal expatriado </li>
+    <li> Desembolsos en zonas en las que no existen bancos </li>
+    <li> Efectivo de emergencia con fines de seguridad </li>
+    <li> Caja menor para el pago de gastos rutinarios y más pequeños </li>
+  </ul>
+  <h2 class="Heading2">Consultas de gestión bancaria y de efectivo</h2>
+  <h2 class="Heading2">Mostrar saldos de cuentas bancarias a través del espacio de trabajo de gestión bancaria</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para mostrar un resumen de los saldos en las diversas cuentas bancarias. El espacio de trabajo de gestión bancaria le permite ver información en diferentes formatos y a diferentes niveles. Puede ver tendencias para un periodo específico, etc.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <p>Las cuentas deben existir en una entidad jurídica.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="Decimal">
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Espacios de trabajo &gt; Gestión bancaria</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402967" height="286.5" src="assets/images/Cash and Bank Management_files/image3.png" width="624.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2"> En <span style="font-weight:bold;">Cuentas bancarias</span>, vea los saldos bancarios mostrados en cada icono de cuenta bancaria. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha mostrado un resumen de los saldos en diversas cuentas bancarias.</p>
+  <h2 class="Heading2">Mostrar saldos de cuentas bancarias actuales (cuentas bancarias individuales)</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para ver los saldos de cuentas bancarias en el sistema.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Cuentas bancarias</span>. </li>
+  </ol>
+  <p><img alt="Imagen 75" height="286.3" src="assets/images/Cash and Bank Management_files/image4.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Seleccione su cuenta bancaria y haga clic en <span style="font-weight:bold;">Saldo </span>en el menú de la parte superior de la página.
+      <br/>
+    </li>
+    <li> Revise el saldo.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK </span>para cerrar la ventana de saldo. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha visto los saldos bancarios.</p>
+  <h2 class="Heading2">Mostrar saldos de efectivo disponibles por cuenta principal</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para ver los saldos de efectivo de una cuenta principal específica.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Libro mayor &gt; Tabla de cuentas &gt; Cuentas &gt; Cuentas principales</span>. </li>
+  </ol>
+  <p><img alt="Imagen 123" height="297.0" src="assets/images/Cash and Bank Management_files/image5.png" width="639.2"/></p>
+  <ol>
+    <li> En el panel del lado izquierdo, busque la cuenta de efectivo (12500).
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Extractos de cuenta</span>.
+      <br/>
+    </li>
+    <li> Deje los valores predeterminados como se muestra anteriormente.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha visto los saldos de efectivo disponibles por cuenta principal.</p>
+  <h2 class="Heading2">Mostrar detalles de transacciones bancarias para un periodo o una cuenta especificados</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para ver detalles de transacciones bancarias para un periodo especificado.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <p>No aplicable.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Consultas e informes &gt; Transacciones bancarias</span>. </li>
+  </ol>
+  <p><img alt="Imagen 13" height="315.7" src="assets/images/Cash and Bank Management_files/image6.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Introduzca los criterios correspondientes, p. ej., número de cuenta bancaria y/o fecha/intervalos de fechas.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK</span> para recuperar los resultados. </li>
+  </ol>
+  <p><img alt="Imagen 18" height="315.7" src="assets/images/Cash and Bank Management_files/image7.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Revise los resultados. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Consejo</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Las columnas pueden ordenarse según criterios específicos.</span></h6>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha mostrado transacciones bancarias para un periodo o una cuenta especificados.</p>
+  <h2 class="Heading2">Mostrar el espacio de trabajo de la descripción general de efectivo (estado de efectivo global)</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para ver el estado de efectivo global. Este procedimiento lo realiza Tesorería.</p>
+  <p>El Espacio de trabajo de la descripción general de efectivo proporciona una descripción general del efectivo en las diversas cuentas bancarias. También tiene una previsión de flujos de efectivo en la que cada entidad jurídica puede ver el Libro general, Cuentas por pagar, Cuentas por cobrar, Elaboración de presupuestos y Saldos de inventario. Esto ayuda a proporcionar información mejorada y exacta para iniciar la planificación de efectivo mensual/las previsiones para el mes o meses venideros.</p>
+  <h2 class="Heading2">Requisitos previos</h2>
+  <ul>
+    <li> Todas las cuentas de efectivo y bancarias deben estar creadas en la entidad jurídica. </li>
+  </ul>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Vaya a <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Espacios de trabajo &gt; Descripción general de efectivo – Todas las empresas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 17" height="301.0" src="assets/images/Cash and Bank Management_files/image8.png" width="658.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Haga clic en las siguientes cuatro pestañas para ver los detalles:
+      <ul>
+        <li> Descripción general de efectivo </li>
+        <li> Previsión de flujos de efectivo </li>
+        <li> Previsión de divisas </li>
+        <li> Saldos bancarios </li>
+      </ul>
+    </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha mostrado el espacio de trabajo de la descripción general de efectivo para ver el estado de efectivo global.</p>
+  <h2 class="Heading2">Procedimientos de transferencia</h2>
+  <h2 class="Heading2">Transferir fondos de HQ a la oficina del país o la oficina RAI</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Que Tesorería pueda utilizar efectivo en la función en tránsito para transferir fondos de HQ a una oficina de país u oficina RAI.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <ul>
+    <li> Solicitud de la oficina del país o la ubicación RAI </li>
+    <li> La transferencia debe ser parte de la planificación mensual y/o debe haberse justificado la solicitud </li>
+  </ul>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Transferencias de cuentas bancarias</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402973" height="406.6" src="assets/images/Cash and Bank Management_files/image9.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Nuevo </span>para crear una entrada de diario nueva. Se rellena previamente una nueva línea de diario general con un número de lote de diario.
+      <br/>
+    </li>
+    <li> En el campo <span style="font-weight:bold;">Nombre</span>, seleccione <span style="font-weight:bold;">CT (transferencia de efectivo a HQ)</span> de la lista de selección desplegable.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Líneas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 19" height="315.7" src="assets/images/Cash and Bank Management_files/image10.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Introduzca la siguiente información para la primera línea del comprobante: </li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:171.06666666666666666666666667px"/>
+        <col style="width:518.93333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Campo</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Se requiere descripción y/o acción</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca/seleccione <strong>Banco</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione la cuenta bancaria específica para la transferencia.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el código de la entidad jurídica de la empresa desde la cual se transfieren los fondos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Descripción</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca una descripción de la transferencia de efectivo.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Débito</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dimensiones financieras</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Haga clic en la pestaña Dimensiones financieras sobre la tabla de cuadrícula para completar las dimensiones requeridas (D01, D04, D05).</p>
+            <p>P. ej., para la cuenta bancaria 9IRC (D01=U1000; D04=ZZGEN; D05=9IRC)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> Haga clic en <span style="font-weight:bold;">Nuevo </span>para añadir una segunda línea de comprobante para la cuenta de contrapartida.
+      <br/>
+    </li>
+    <li> Introduzca la siguiente información para la primera línea del comprobante de contrapartida: </li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:647.1px">
+      <colgroup>
+        <col style="width:195.06666666666666666666666667px"/>
+        <col style="width:452px"/>
+        <col style="width:452px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000"> Campo </td>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000"> Se requiere descripción y/o acción </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Debe ser ICCO o la empresa adónde los fondos se transfieren.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca/seleccione <strong>Libro mayor</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca la cuenta principal (12510) y las dimensiones financieras (D01, D04, D05) para la entidad jurídica que recibe los fondos.</p>
+            <p>P. ej., (D01=U1000; D04=SLFRT; D05=2SLE)</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Crédito</p>
+          </td>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Imagen 1" height="152.2" src="assets/images/Cash and Bank Management_files/image11.png" width="649.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Validar </span>y seleccione <span style="font-weight:bold;">Simular contabilización</span>.
+      <br/>
+    </li>
+    <li> Haga clic en la X en la esquina superior derecha de la pantalla para cerrar la página de comprobante de diario y volver a la página <span style="font-weight:bold;">Diarios generales</span>.
+      <br/>
+    </li>
+    <li> Asegúrese de que la línea de diario esté seleccionada.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Flujo de trabajo &gt; Enviar</span> para enviar la entrada de diario para su aprobación. </li>
+  </ol>
+  <p><img alt="Imagen 12" height="177.1" src="assets/images/Cash and Bank Management_files/image12.png" width="273.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13"> En caso necesario, introduzca información adicional en el campo <span style="font-weight:bold;">Comentario</span>.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">Enviar</span>. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha transferido efectivo de HQ a una oficina de campo.</p>
+  <h3 class="Heading3">Tareas de continuación</h3>
+  <p>Una vez aprobado, el diario de facturas puede contabilizarse.</p>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Libro mayor &gt; Entradas de diario &gt; Diarios generales</span>. </li>
+    <li> Localice y abra la entrada de diario aprobada. </li>
+    <li> Haga clic en <span style="font-weight:bold;">Contabilizar </span>para contabilizar el diario. </li>
+  </ol>
+  <h2 class="Heading2">Procesar recepción de efectivo de HQ</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para procesar una recepción de efectivo de HQ y compensar la cuenta de efectivo en tránsito.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <ul>
+    <li> La transferencia de efectivo debe haberse procesado. </li>
+    <li> El banco debe haber confirmado la recepción de los fondos. </li>
+  </ul>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Transferencias de cuentas bancarias</span>.
+      <br/>
+    </li>
+    <li> Seleccione el nombre de diario <span style="font-weight:bold;">Otras recepciones de efectivo</span>.
+      <br/>
+    </li>
+    <li> Rellene/valide los siguientes campos en las líneas del comprobante. </li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:592.9px">
+      <colgroup>
+        <col style="width:156.73333333333333333333333333px"/>
+        <col style="width:436.13333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Campo</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Se requiere descripción y/o acción</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione <strong>Banco </strong>para la cuenta que ha recibido los fondos</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione la cuenta bancaria específica para la recepción</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione la empresa que recibe los fondos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Descripción</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca una descripción de la transferencia de efectivo</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Crédito</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia recibido</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dimensiones financieras</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Complete las dimensiones financieras requeridas: ID de proyecto (D1), unidad de operaciones (D4) y entidad informadora (D5)</p>
+            <p>P. ej., para una cuenta bancaria 2SLE D1=U1000; D4=ZZGEN; D5=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;font-weight: bold">
+            <p>Cuenta de contrapartida</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;font-weight: bold">
+            <p>Añada una línea de comprobante nueva para la cuenta de contrapartida.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca una entidad jurídica para la empresa que recibe los fondos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione <strong>Libro mayor</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca la cuenta principal (12510, cuenta de transferencia de efectivo) y las dimensiones financieras requeridas (D01, D04, D05) para la entidad jurídica que recibe los fondos.</p>
+            <p>P. ej., D01=U1000; D04=SLFRT; D05=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Débito</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia recibido</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Enviar a <span style="font-weight:bold;">Flujo de trabajo</span>.
+      <br/>
+    </li>
+    <li> Una vez aprobado, <span style="font-weight:bold;">contabilice </span>el diario. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha procesado una recepción de efectivo de otra entidad jurídica y ha compensado la cuenta de efectivo en tránsito.</p>
+  <h2 class="Heading2">Transferir efectivo a oficinas locales dentro de la misma entidad jurídica</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para registrar una transferencia de efectivo a las oficinas de campo para sus operaciones</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <ul>
+    <li> La solicitud de transferencia de efectivo se ha validado. </li>
+  </ul>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="Decimal">
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Transferencias de cuentas bancarias</span>. </li>
+  </ol>
+  <p style="margin-left: 36px">Aparece una lista de entradas de diario aparece en la pantalla de diarios generales.</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2"> Haga clic en <span style="font-weight:bold;">Nuevo </span>para crear una nueva entrada de diario. </li>
+  </ol>
+  <p style="margin-left: 40px">Se rellena automáticamente una nueva línea de diario general con un número de lote de diario.</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 2;" value="3"> En el campo <span style="font-weight:bold;">Nombre</span>, seleccione <span style="font-weight:bold;">CT (transferencia de efectivo)</span>.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">Líneas </span>para acceder a la página de comprobante de diario.
+      <br/>
+    </li>
+    <li> Complete los siguientes campos para la primera línea del comprobante. </li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:592.9px">
+      <colgroup>
+        <col style="width:344.66666666666666666666666667px"/>
+        <col style="width:344.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Campo</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Se requiere descripción y/o acción</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione Banco.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione la cuenta bancaria específica para la transferencia.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Seleccione la empresa desde la cual se transfieren los fondos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Descripción</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca una descripción de la transferencia de efectivo</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Débito</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dimensiones financieras</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Haga clic en la pestaña Dimensiones financieras sobre la tabla de cuadrícula para completar las dimensiones requeridas (D01, D04, D05).</p>
+            <p>P. ej., (D01, D04, D05) para la cuenta bancaria 2SLE (D01=U1000; D04=ZZGEN; D05=2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta de contrapartida</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Añada una línea de comprobante nueva para la cuenta de contrapartida.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Empresa</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca la empresa adónde se transfieren los fondos.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tipo de cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca/seleccione Libro mayor.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Cuenta</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca la cuenta principal y las dimensiones financieras.</p>
+            <p>Debería ser la cuenta principal (12515) y la secuencia de dimensiones (D01, D04, D05) para la oficina de campo que recibe los fondos. Por ejemplo, (D01=U1000; D04=SLBOF; D05=2SLE)</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Crédito</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Introduzca el importe de la transferencia</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> Envíelo a <span style="font-weight:bold;">Flujo de trabajo </span>para su aprobación.
+      <br/>
+    </li>
+    <li> Una vez aprobado, <span style="font-weight:bold;">contabilice </span>el diario. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha procesado una recepción de efectivo de HQ y ha compensado la cuenta de efectivo en tránsito.</p>
+  <h2 class="Heading2">Transferir efectivo a otra cuenta bancaria en divisa local (cambio de efectivo)</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para cambiar efectivo a divisas locales.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <p>Una cuenta extranjera que tiene efectivo debe estar disponible/configurada.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Transferencias de cuentas bancarias</span>. Esta ruta le llevará a la página <span style="font-style:italic;">Diarios generales</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402976" height="259.5" src="assets/images/Cash and Bank Management_files/image13.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Haga clic en <span style="font-weight:bold;">Nuevo</span>.
+      <br/>
+    </li>
+    <li> En el campo <span style="font-weight:bold;">Nombre</span>, seleccione CT (transferencia de efectivo). </li>
+  </ol>
+  <p><img alt="Imagen 15402978" height="255.7" src="assets/images/Cash and Bank Management_files/image14.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Líneas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402980" height="271.8" src="assets/images/Cash and Bank Management_files/image15.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> En el campo <span style="font-weight:bold;">Tipo de cuenta</span>, seleccione <span style="font-weight:bold;">Banco</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402981" height="342.5" src="assets/images/Cash and Bank Management_files/image16.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> En el campo <span style="font-weight:bold;">Cuenta</span>, seleccione la cuenta bancaria extranjera correspondiente. La cuenta bancaria extranjera siempre está introducida en la primera línea de diario. </li>
+  </ol>
+  <p><img alt="Imagen 15402982" height="128.1" src="assets/images/Cash and Bank Management_files/image17.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"> En el campo <span style="font-weight:bold;">Descripción</span>, introduzca una descripción significativa.
+      <br/>
+    </li>
+    <li> En el campo <span style="font-weight:bold;">Crédito</span>, introduzca la cantidad vendida en divisa extranjera. </li>
+  </ol>
+  <p><img alt="Imagen 15402983" height="129.9" src="assets/images/Cash and Bank Management_files/image18.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9"> Introduzca la tasa de cambio de venta bancaria en la línea si es distinta a la tasa de cambio de Integra.
+      <br/>
+    </li>
+    <li> Haga clic en la pestaña <span style="font-weight:bold;">General</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402985" height="297.2" src="assets/images/Cash and Bank Management_files/image19.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11"> En el campo <span style="font-weight:bold;">Tasa de cambio</span>, actualice también la tasa de cambio a la tasa de cambio de venta bancaria.
+      <br/>
+    </li>
+    <li> Haga clic en la pestaña <span style="font-weight:bold;">Lista </span>para volver a las líneas de comprobante. </li>
+  </ol>
+  <p><img alt="Imagen 9" height="126.4" src="assets/images/Cash and Bank Management_files/image20.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13"> Haga clic en <span style="font-weight:bold;">Nuevo </span>para añadir una segunda línea de comprobante.
+      <br/>
+    </li>
+    <li> En el campo <span style="font-weight:bold;">Tipo de cuenta</span>, seleccione <span style="font-weight:bold;">Banco</span>.
+      <br/>
+    </li>
+    <li> En el campo <span style="font-weight:bold;">Cuenta</span>, seleccione <span style="font-weight:bold;">Cuenta bancaria USD.</span> </li>
+  </ol>
+  <p><img alt="Imagen 99" height="133.7" src="assets/images/Cash and Bank Management_files/image21.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16"> Calcule manualmente el equivalente en USD de las GBP vendidas a la tasa de venta bancaria en línea 1: 10 000 GBP x 1,2843=12 843 USD.
+      <br/>
+    </li>
+    <li> Introduzca la cantidad calculada en el campo <span style="font-weight:bold;">Débito </span>en la línea de diario. </li>
+  </ol>
+  <p><img alt="Imagen 100" height="119.6" src="assets/images/Cash and Bank Management_files/image22.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18"> Haga clic en la pestaña Dimensiones financieras e introduzca dimensiones para las dos líneas de diario.
+      <br/>
+    </li>
+    <li> Una vez completadas las líneas de diario, en el menú de la parte superior, haga clic en <span style="font-weight:bold;">Validar &gt; Simular contabilización</span>.
+      <br/>
+    </li>
+    <li> Una vez validado el diario, cierre la página de las líneas de comprobante de diario para volver a la lista de diarios.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">Flujo de trabajo &gt; Enviar</span> para enviar el diario para su aprobación. </li>
+  </ol>
+  <p style="margin-left: 40px">El diario irá al aprobador adecuado.</p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23"> Una vez aprobado el diario, haga clic en <span style="font-weight:bold;">Contabilizar </span>para contabilizar el diario. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha cambiado efectivo a divisas locales.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Para verificar el comprobante contabilizado, vaya a las líneas de diario y haga clic en la pestaña </span><span style="font-weight:normal;"><span style="font-weight:bold;">Comprobante</span></span><span style="font-weight:normal;">.</span></h6>
+  <h2 class="Heading2">Procedimientos de conciliación bancaria</h2>
+  <h2 class="Heading2">Conciliar cuenta bancaria</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para conciliar una cuenta bancaria.</p>
+  <p>Integra puede leer un archivo que se transmite desde un banco e importar una lista de transacciones para ajustarse con las transacciones ya procesadas en el sistema.</p>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <ul>
+    <li> El archivo debe haberse transmitido desde el banco. </li>
+  </ul>
+  <h3 class="Heading3">Pasos</h3>
+  <h3 class="Heading3"><span style="font-weight:bold;font-style:italic">Valide el archivo bancario que se ha importado a Integra.</span></h3>
+  <ol>
+    <li> Navegar a través de los módulos <span style="font-weight:bold;">Treasury Automation Suite &gt; Consultas &gt; Banco &gt; Archivos bancarios importados</span>. </li>
+  </ol>
+  <p><img alt="Imagen 23" height="238.6" src="assets/images/Cash and Bank Management_files/image23.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> En la lista, busque y seleccione el archivo bancario correcto.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Transacciones importadas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402988" height="254.0" src="assets/images/Cash and Bank Management_files/image24.png" width="667.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Revise los detalles del archivo mostrados en la pantalla <span style="font-weight:bold;">Archivo de conciliación bancaria electrónico importado</span><span style="font-weight:bold;">Detalles</span>.
+      <br/>
+    </li>
+    <li> Cierre las páginas abiertas y vuelva a la página de inicio de Integra. </li>
+  </ol>
+  <h3 class="Heading3">
+    <br/>
+    <span style="font-style:italic;">‎Realizar conciliación</span>
+  </h3>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> Navegue a través de los módulos Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Cuentas bancarias. </li>
+  </ol>
+  <p><img alt="Imagen 22" height="315.7" src="assets/images/Cash and Bank Management_files/image25.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"> De la lista de cuentas bancarias, seleccione la cuenta bancaria que se debe conciliar.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Conciliar </span>y, a continuación, seleccione la opción <span style="font-weight:bold;">Conciliación de cuentas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 24" height="236.4" src="assets/images/Cash and Bank Management_files/image26.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9"> En la lista de extractos bancarios, seleccione el extracto bancario que se va a conciliar.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Transacciones</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402990" height="241.0" src="assets/images/Cash and Bank Management_files/image27.png" width="687.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11"> En la pantalla <span style="font-style:italic;">Conciliación de cuentas (no conciliada)</span>, haga clic en <span style="font-weight:bold;">trans. importadas eBankRec</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\davidt\AppData\Local\Temp\SNAGHTML6b4af07f.PNG" height="244.0" src="assets/images/Cash and Bank Management_files/image28.png" width="689.4"/></p>
+  <p>Aparece la pantalla <span style="font-weight:bold;">Treasury Automation Suite – Transacciones importadas</span>. Esta «área de trabajo» permite seleccionar manualmente el sistema y las transacciones importadas para conciliar.
+    <br/>
+  </p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Área de trabajo Click-n-match</span>. </li>
+  </ol>
+  <p><img alt="Imagen 51" height="293.4" src="assets/images/Cash and Bank Management_files/image29.png" style="cursor: nesw-resize;" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13"> Revise la información del área de trabajo. </li>
+  </ol>
+  <p style="margin-left: 40px">El área de trabajo muestra transacciones no conciliadas en la parte superior y las transacciones importadas en la parte inferior.</p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14"> En la lista, busque y seleccione los registros que coinciden entre ellos de cada selección.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Guardar</span>.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">OK</span>. </li>
+  </ol>
+  <p style="margin-left: 40px">Las transacciones conciliadas se muestran con su número de transacción.</p>
+  <p><img alt="Imagen 52" height="59.2" src="assets/images/Cash and Bank Management_files/image30.png" width="710.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17"> Vuelva a la página de inicio de Integra. </li>
+  </ol>
+  <h3 class="Heading3"><span style="font-style:italic;">Introducir saldo final para extracto bancario</span></h3>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Cuentas bancarias</span>. </li>
+  </ol>
+  <p><img alt="Imagen 27" height="315.7" src="assets/images/Cash and Bank Management_files/image31.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19"> De la lista de cuentas bancarias, seleccione la cuenta bancaria que se debe conciliar.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Conciliar </span>y, a continuación, seleccione la opción <span style="font-weight:bold;">Conciliación de cuentas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 32" height="310.9" src="assets/images/Cash and Bank Management_files/image32.png" width="685.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21"> En la página<span style="font-style:italic;"> Extracto bancario</span>, introduzca el <span style="font-weight:bold;">Saldo final</span> para el extracto bancario correspondiente.
+      <br/>
+    </li>
+    <li> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Guardar</span>.
+      <br/>
+    </li>
+    <li> Repita los pasos <span style="font-weight:bold;">9</span> a <span style="font-weight:bold;">22</span> anteriores para cada extracto bancario que deba conciliarse. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>La cuenta bancaria se ha conciliado.</p>
+  <h2 class="Heading2">Mostrar resumen de conciliación</h2>
+  <p>Al cerrar y volver a la pantalla de conciliación de cuentas, la transacción se compensará. También hay disponible un resumen de las transacciones compensadas. Todas las transacciones necesarias deben ajustarse y compensarse, la cuenta puede conciliarse para el extracto.</p>
+  <p>Puede mostrarse un resumen de conciliación o imprimirse para confirmar la conciliación siguiendo los siguientes pasos:</p>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Cuentas bancarias &gt; Cuentas bancarias</span>.
+      <br/>
+    </li>
+    <li> Seleccione la cuenta bancaria correspondiente
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">Conciliar &gt; Conciliación de cuentas</span>.
+      <br/>
+    </li>
+    <li> En la pantalla <span style="font-style:italic;">Conciliación de cuentas</span>, haga clic en <span style="font-weight:bold;">Imprimir &gt; Resumen de conciliación</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402992" height="368.0" src="assets/images/Cash and Bank Management_files/image33.png" width="356.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> En el campo <span style="font-weight:bold;">Fecha de comprobación</span>, introduzca una fecha.
+      <br/>
+    </li>
+    <li> Seleccione <span style="font-weight:bold;">Sí </span>en el campo <span style="font-weight:bold;">Detalle de transacción compensada</span>.
+      <br/>
+    </li>
+    <li> Seleccione <span style="font-weight:bold;">Sí </span>en el campo <span style="font-weight:bold;">Resumen de conciliación</span>.
+      <br/>
+    </li>
+    <li> Seleccione <span style="font-weight:bold;">Sí</span> en el campo <span style="font-weight:bold;">Detalle de transacción no compensada</span>.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402993" height="323.7" src="assets/images/Cash and Bank Management_files/image34.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10"> Revise el informe.
+      <br/>
+    </li>
+    <li> Cierre el formulario de informe de resumen. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha mostrado el resumen de conciliación.</p>
+  <h2 class="Heading2">Realizar conciliaciones bancarias manuales</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para crear y ver una extracto de conciliación bancaria. Este proceso se utiliza si las transmisiones bancarias no están disponibles y debe realizarse una conciliación bancaria utilizando un extracto en papel o un archivo Excel descargado.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Si la entidad jurídica no tiene una transmisión bancaria par los extractos bancarios que se van a importar a Integra, deberá realizarse la conciliación bancaria manual mensualmente.</span></h6>
+  <h3 class="Heading3">Requisitos previos</h3>
+  <p>Si se ejecuta una conciliación bancaria automática, las transacciones restantes deben ajustarse manualmente.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Navegue a través de los módulos <span style="font-weight:bold;">Gestión bancaria y de efectivo &gt; Conciliación de extractos bancarios &gt; Cuentas bancarias</span>. </li>
+  </ol>
+  <p><img alt="Imagen 15402994" height="258.8" src="assets/images/Cash and Bank Management_files/image35.png" width="624.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Conciliar </span>y, a continuación, seleccione la opción <span style="font-weight:bold;">Conciliación de cuentas</span>. </li>
+  </ol>
+  <p><img alt="Imagen 120" height="149.0" src="assets/images/Cash and Bank Management_files/image36.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Haga clic en <span style="font-weight:bold;">Nuevo </span>para crear un nuevo extracto y especifique la fecha del extracto, el nombre del extracto, la divisa y el saldo final especificado en el extracto bancario. </li>
+  </ol>
+  <p><img alt="Imagen 119" height="134.8" src="assets/images/Cash and Bank Management_files/image37.png" width="550.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Guarde el extracto y haga clic en <span style="font-weight:bold;">Transacciones </span>en el menú de la parte superior de la página. </li>
+  </ol>
+  <p><img alt="Imagen 116" height="142.4" src="assets/images/Cash and Bank Management_files/image38.png" width="534.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> Seleccione manualmente la transacción que se va a compensar para la conciliación. </li>
+  </ol>
+  <p><img alt="Imagen 114" height="27014" src="assets/images/Cash and Bank Management_files/image39.png" width="89953"/></p>
+  <p>Ahora que se han compensado las transacciones correctas, puede conciliarse el extracto.</p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Conciliar cuenta</span>. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Este botón se pondrá en gris si el importe no conciliado destacado anteriormente no es igual a cero.</span></h6>
+  <p><img alt="Imagen 113" height="115.0" src="assets/images/Cash and Bank Management_files/image40.png" width="514.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"> Haga clic en <span style="font-weight:bold;">Imprimir &gt; Resumen de conciliación</span>. </li>
+  </ol>
+  <p><img alt="Imagen 112" height="299.2" src="assets/images/Cash and Bank Management_files/image41.png" width="330.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8"> Especificar la fecha del resumen para ver, así como los detalles que se incluirán, si se trata solo del resumen o de los detalles de las transacciones compensada y no compensadas.
+      <br/>
+    </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+  </ol>
+  <p><img alt="Imagen 111" height="394.0" src="assets/images/Cash and Bank Management_files/image42.png" width="531.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10"> Revise el informe de resumen. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha creado y visto un extracto de conciliación bancaria.</p>
+  <h2 class="Heading2">Apéndice</h2>
+  <h2 class="Heading2">Tipos de transacciones bancarias que vinculan extractos electrónicos a cuentas bancarias</h2>
+  <p>El tipo de transacción <span style="font-weight:bold;">eBankRec </span>es una configuración en TAS que ayuda a vincular tipos de transacciones bancarias de extractos electrónicos a cuentas bancarias en Integra. El <span style="font-weight:bold;">tipo File tran</span> es el código que procede del banco que, de forma predeterminada, se asigna a un <span style="font-weight:bold;">Grupo coincidente</span> (véase la siguiente tabla). El grupo coincidente predeterminado es lo que utiliza IRC para conciliar transacciones con el extracto bancarios con las reglas requeridas. Una vez establecidas, todas las transacciones tendrán un tipo de transacción bancaria asociado que coincidirá con el tipo file trans del banco para conciliar las transacciones automáticamente.</p>
+  <p><img alt="Imagen 71" height="507.9" src="assets/images/Cash and Bank Management_files/image43.png" width="604.5"/></p>
+  <h2 class="Heading2">Grupo coincidente de conciliación bancaria electrónica, eBank Rec</h2>
+  <p>IRC ha habilitado el ajuste PREDETERMINADO para crear reglas para conciliar. Todas las conciliaciones bancarias electrónicas, eBank, se configuran en el grupo predeterminado. Sin este grupo, no habrá reglas y los tipos de transacción bancaria no se conectarán con el extracto electrónico. A continuación se muestra donde se sitúa en Integra:</p>
+  <p><img alt="Imagen 15402945" height="192.0" src="assets/images/Cash and Bank Management_files/image44.png" width="650.4"/></p>
+  <h2 class="Heading2">Reglas de coincidencia</h2>
+  <p>IRC ha diseñado las transacciones para que coincidan según tres reglas predeterminadas (y algunas extensiones).</p>
+  <p><span style="font-weight:bold;">REGLA PREDETERMINADA 1</span><span style="font-weight:bold;">- </span><span style="font-weight:bold;">Número de referencia e importe</span>: Este regla contrasta la referencia de pago con el número de referencia del cliente del extracto electrónico, lo vincula al importe y concilia con tolerancia cero respecto a la fecha y confianza al 100 %.</p>
+  <p><img alt="Imagen 15402946" height="381.7" src="assets/images/Cash and Bank Management_files/image45.png" width="467.0"/></p>
+  <p><span style="font-weight:bold;">REGLA PREDETERMINADA 2 - Número de referencia e importe:</span> como la regla número 1, esta contrasta el número de cheque depositado de Integra con la misma referencia en el extracto electrónico para ver si la referencia y el importe coinciden. </p>
+  <p><img alt="Imagen 15402947" height="463.1" src="assets/images/Cash and Bank Management_files/image46.png" width="548.0"/></p>
+  <p><span style="font-weight:bold;">REGLA PREDETERMINADA 3 - Fecha e importe:</span> como las otras reglas, esta contrasta el número de cheque de Integra con la misma referencia en el extracto electrónico para ver si la fecha y el importe coinciden. </p>
+  <p><img alt="Imagen 15402948" height="407.2" src="assets/images/Cash and Bank Management_files/image47.png" width="508.0"/></p>
+  <p><span style="font-weight:bold;">REGLA PREDETERMINADA 4 - Fecha e importe: </span>Esta regla es una extensión de la regla 3 con una tolerancia de 1 día en la fecha del cheque.</p>
+  <p><img alt="Imagen 15402949" height="411.0" src="assets/images/Cash and Bank Management_files/image48.png" width="508.0"/></p>
+  <p><span style="font-weight:bold;">REGLA PREDETERMINADA 5 - Fecha e importe</span>: Esta es otra extensión de regla 3 con una tolerancia del cheque de 5 días. Para esta regla, se recomienda que el usuario consulte la transacción conciliada mediante esta regla y verifique que la conciliación es exacta.</p>
+  <p><img alt="Imagen 77" height="293.7" src="assets/images/Cash and Bank Management_files/image49.png" width="694.1"/></p>
+  <p><span style="font-weight:bold;">Reglas adicionales:</span> para que la conciliación bancaria sea más exacta, el responsable de Finanzas debe ejecutar una conciliación bancaria diariamente e identificar las tendencias de las transacciones comunes que puedan ajustarse si se crea una nueva regla o paso.</p>
+  <p>Esto llevará a una capa adicional para ayudar a conciliar transacciones idénticas. El personal de Finanzas debe también establecer los saldos cada día para ayudar a Cuentas por cobrar a registrar recepciones que no se han registrado en diarios.</p>
+  <p>Se recomienda que haya una comunicación coherente entre el responsable de Finanzas y Cuentas por cobrar para registrar las recepciones en diarios antes de fin de mes.</p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

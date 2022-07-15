@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "4_8";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Diagrama de flujo de procesos</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Diagrama de flujo de procesos">
+        <span>Diagrama de flujo de procesos</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h1 class="Heading1">Diagrama de flujo de procesos</h1>
+    <p><img alt="Imagen 1" height="298.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image2.png" width="637.8"/></p>
+    <p class="Numbering1 CommentSubjectChar">Al recibir los productos, el personal necesita gestionar el inventario disponible.</p>
+    <p class="Numbering1 CommentSubjectChar">Todas las tareas se gestionan en Integra excepto el recuento de inventario físico. Una vez que el recuento físico se ha completado, el diario de recuento se envía y los resultados se registran en Integra.</p>
+    <p class="Numbering1 CommentSubjectChar">El recuento físico puede ser una función segregada del registro y la contabilización de los resultados de recuento.
+      <br/>
+      ‎
+    </p>
+    <h2 class="Heading2">Crear un diario de recuento – Recuento anual</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear un nuevo diario de recuento para un recuento de inventario anual en Integra. Es importante señalar que, si se crea un diario de recuento para un recuento anual, el diario bloquea el inventario en el sistema y no lo puede recoger/empaquetar ni añadir a un diario/una transacción diferente hasta que el diario de recuento se haya completado y contabilizado.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering2 CommentSubjectChar">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p><img alt="Imagen 30" height="181.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image3.png" width="624.4"/></p>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image4.png" width="65.1"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 35" height="283.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image5.png" width="596.3"/></p>
+    <p class="Numbering2 CommentSubjectChar">Rellene/seleccione los siguientes campos/botones:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de descripción general</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Descripción</p>
+            </td>
+            <td>
+              <p>Actualice la descripción al tipo de diario de recuento que sea (p. ej.) Diario de recuento de inventario anual</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Seleccione el emplazamiento de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Seleccione el almacén de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de recuento por</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Almacén</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Ubicación</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Lote</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón ID de proyecto</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image6.png" width="60.9"/> para continuar.</p>
+    <p><img alt="Imagen 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image7.png" width="661.1"/></p>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 1" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image8.png" width="102.0"/><span></span> Disponible en el menú de la parte superior de la página.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 8" height="329.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image9.png" width="689.5"/></p>
+    <p class="Numbering2 CommentSubjectChar">En el formulario Crear diario de recuento disponible, deje el campo No contado desde en blanco.</p>
+    <p class="Numbering2 CommentSubjectChar">Desplácese hacia abajo y expanda la pestaña Registros que incluir.</p>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 86" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image10.png" width="62.0"/>.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 89" height="337.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image11.png" width="666.0"/></p>
+    <p class="Numbering2 CommentSubjectChar">En la pestaña Gama, haga clic en <img alt="Imagen 87" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image12.png" width="25.0"/> a la izquierda de los artículos para incluirlos en la consulta.</p>
+    <p class="Numbering2 CommentSubjectChar">Verifique que los valores Sitio y Almacén tengan los valores predeterminados del sitio y el almacén correctos para el recuento.</p>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 88" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image13.png" width="61.0"/> para cerrar el filtro de recuento de artículos.</p>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en <img alt="Imagen 90" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image14.png" width="61.0"/> para cerrar el formulario Crear diario de recuento disponible.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 10" height="275.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image15.png" width="688.7"/></p>
+    <p class="Numbering2 CommentSubjectChar">Revise el mensaje de información de Operación completada correctamente.</p>
+    <p class="Numbering2 CommentSubjectChar">Revise los resultados. Desplácese hacia abajo en la lista según se requiera.</p>
+    <h6 class="Heading6">Nota: Las líneas de diario muestran todos los artículos y sus recuentos disponibles asociados en los almacenes.</h6>
+    <p class="Numbering2 CommentSubjectChar">Haga clic en la X para cerrar el INVxxxxxxx: Diario de recuento de inventario.</p>
+    <p class="CommentSubjectChar">El diario de recuento de inventario se muestra a continuación.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 72" height="166.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image16.png" width="689.5"/></p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un diario de recuento de inventario para un recuento anual.</p>
+    <p>El diario de recuento puede imprimirse ahora para preparar la realización del recuento real.</p>
+    <h2 class="Heading2">Imprimir un diario de recuento</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para generar una lista de recuento con el fin de realizar un recuento de inventario. Eso se podría necesitar para un recuento anual, recuento periódico o recuento de final de donación.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>El diario de recuento de inventario debe haberse creado en Integra.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering4 CommentSubjectChar">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 91" height="151.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image17.png" width="666.0"/></p>
+    <p class="Numbering4 CommentSubjectChar">En la lista, seleccione el diario de inventario haciendo clic en el número de diario.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 93" height="252.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image18.png" width="682.1"/></p>
+    <p class="Numbering4 CommentSubjectChar">Haga clic en <img alt="Imagen 92" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image19.png" width="63.0"/><span></span> Lista de recuento.</p>
+    <p class="CommentSubjectChar"> </p>
+    <p class="Numbering4 CommentSubjectChar">Deje Imprimir disponible cambiado a No.</p>
+    <h6 class="Heading6">Nota: La mejor práctica para el recuento de almacén es proporcionar una lista de recuento no sesgada. Por este motivo, deje Imprimir disponible cambiado a No para que la hoja de recuento no influya en el recuento con valores de recuento disponible impresos.</h6>
+    <p class="Numbering4 CommentSubjectChar">En la sección Destino, el valor predeterminado es Pantalla. Para imprimir la pantalla, deje el valor predeterminado.</p>
+    <p class="CommentSubjectChar">Opción: Para imprimir una hoja de recuento en una impresora, haga clic en <img alt="Imagen 96" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image20.png" width="77.0"/>.</p>
+    <p class="CommentSubjectChar">Haga clic en <img alt="Imagen 97" height="24.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image21.png" width="63.9"/>.</p>
+    <p class="CommentSubjectChar">Haga clic en el menú desplegable en el campo Nombre y seleccione la impresora deseada.</p>
+    <p class="Numbering4 CommentSubjectChar">Expanda la sección Registros que incluir y valide según se requiera.</p>
+    <p class="Numbering4 CommentSubjectChar">Haga clic en <img alt="Imagen 95" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image22.png" width="61.0"/> para cerrar el formulario Lista de recuento.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 100" height="328.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image23.png" width="674.8"/></p>
+    <p class="Numbering4 CommentSubjectChar">Revise los resultados de la lista de recuento.</p>
+    <p class="Numbering4 CommentSubjectChar">Para exportar la lista, haga clic en Exportar y, a continuación, seleccione la opción preferida. P. ej., PDF, Excel, etc.</p>
+    <p class="CommentSubjectChar"> </p>
+    <p class="Numbering4 CommentSubjectChar">Haga clic en <img alt="Imagen 102" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image24.png" width="27.0"/> para imprimir la lista de recuento.</p>
+    <p class="Numbering4 CommentSubjectChar">Haga clic en la X para cerrar la vista previa de la Lista de recuento.</p>
+    <p class="Numbering4 CommentSubjectChar">Haga clic en la X para cerrar el Diario de recuento de inventario.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Has imprimido el diario de recuento.</p>
+    <p>Imprima múltiples copias según se requiera.</p>
+    <p>El personal de almacén realiza el recuento de inventario en el almacén utilizando el diario de recuento impreso.</p>
+    <p>Una vez completado, el diario de recuento se envía al supervisor.</p>
+    <h2 class="Heading2">Realizar un recuento de inventario físico</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p class="margin-left-0">Utilizar este procedimiento para realizar el recuento físico de inventario.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p class="Numbering8 Numbering51">La lista de recuento debe haberse generado e impreso.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering5 CommentSubjectChar">El personal recupera una copia en papel de la lista de recuento.</p>
+    <p class="Numbering5 CommentSubjectChar">El personal cuenta físicamente todos los artículos de cada número de línea y registra el recuento en la lista de recuento, en la columna Ahora contado.</p>
+    <p class="Numbering5 CommentSubjectChar">El personal envía o presenta la lista de recuento completada al personal de la cadena de suministro en ejercicio o al jefe del almacén.
+      <br/>
+      ‎<span>
+        <br/>
+      </span><span> ‎</span>
+    </p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha realizado el recuento de inventario físico y ha registrado los resultado en la lista de recuento en papel.</p>
+    <p>Los resultado del recuento de inventario se pueden introducir ahora en Integra.</p>
+    <h2 class="Heading2">Registrar los resultados de recuento</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p class="margin-left-0">Utilizar este procedimiento para registrar el recuento físico en Integra y comparar los resultados con el inventario disponible registrado.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p class="Numbering8 Numbering51">El recuento físico debe haberse completado y los resultados deben haberse registrado en la hoja de recuento.
+      <br/>
+      ‎
+    </p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering6 CommentSubjectChar">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 103" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image25.png" width="666.0"/></p>
+    <p class="Numbering6 CommentSubjectChar">En la lista, seleccione el diario de inventario deseado haciendo clic en el número de diario.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 18" height="242.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image26.png" width="656.4"/></p>
+    <p class="Numbering6 CommentSubjectChar">Haga clic en <img alt="Imagen 104" height="30.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image27.png" width="55.0"/> en el menú de la parte superior de la página.</p>
+    <p class="CommentSubjectChar">Como supervisor, la columna Disponible es visible para usted y estos valores se rellenan.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 19" height="245.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image28.png" width="689.5"/></p>
+    <p class="Numbering6 CommentSubjectChar">En la columna Contado, introduzca el número contado físicamente para cada artículo como lo ha registrado el personal del almacén en el diario de recuento.</p>
+    <h6 class="Heading6">Nota: No rellene los valores en el campo Cantidad. El sistema calcula el valor para esta columna y la actualiza automáticamente.</h6>
+    <h6 class="Heading6">Nota: Si el número es inferior al disponible esperado, la columna Cantidad muestra un valor negativo. Si la cantidad contada es superior a la cantidad disponible, el campo Cantidad muestra un valor positivo.</h6>
+    <h3 class="Heading3">Discrepancia en los valores contados</h3>
+    <p class="CommentSubjectChar">Si hay una discrepancia entre los valores disponible y contado, la mejor práctica es realizar un segundo recuento. El segundo recuento es un proceso manual, se realiza fuera del sistema y no lo realiza la misma persona que realizó el recuento original. El personal del almacén envía los valores del segundo recuento al supervisor. El supervisor introduce el valor del segundo recuento en la columna Contado, y este es el recuento final.</p>
+    <p class="Numbering6 CommentSubjectChar">En la columna Trabajador, para cada artículo contado, introduzca el número de personal del miembro del personal que ha realizado el recuento.</p>
+    <h6 class="Heading6">Nota: Haga clic en el menú desplegable y busque a la persona utilizando su nombre. Haga clic en <img alt="Imagen 105" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image29.png" width="60.0"/> y su número de personal se rellenará en el campo Trabajador.</h6>
+    <p class="CommentSubjectChar"><img alt="Imagen 109" height="258.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image30.png" width="666.0"/></p>
+    <p class="Numbering6 CommentSubjectChar">Haga clic en <img alt="Imagen 107" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image31.png" width="61.0"/> cuando se hayan introducido todos los valores Contados.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 111" height="318.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image32.png" width="666.0"/></p>
+    <p class="Numbering6 CommentSubjectChar">Haga clic en <img alt="Imagen 110" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image33.png" width="59.0"/>.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 112" height="270.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image34.png" width="666.0"/></p>
+    <p class="Numbering6 CommentSubjectChar">Revise el mensaje de información que indica que el diario de recuento se ha validado correctamente.</p>
+    <p class="Numbering6 CommentSubjectChar">Haga clic en <img alt="Imagen 106" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image35.png" width="64.0"/> en la barra de herramientas de la parte superior de la página.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha registrado los resultados del recuento en Integra.</p>
+    <p>Si han habido discrepancias, las ha justificado y ha realizado e introducido un segundo recuento.</p>
+    <p>Los resultados del recuento pueden contabilizarse ahora.
+      <br/>
+      ‎
+    </p>
+    <h2 class="Heading2">Contabilizar los resultados de recuento</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento par contabilizar los resultados del recuento.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>El recuento físico de los artículos debe haberse registrado en Integra.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering7 CommentSubjectChar">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 114" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image36.png" width="666.0"/></p>
+    <p class="Numbering7 CommentSubjectChar">En la lista, seleccione el diario de inventario deseado haciendo clic en el número de diario.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 21" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image37.png" width="689.5"/></p>
+    <p class="Numbering7 CommentSubjectChar">Haga clic en <img alt="Imagen 113" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image38.png" width="41.0"/> en el menú de la parte superior de la página.</p>
+    <p class="CommentSubjectChar"><img alt="Imagen 117" height="317.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image39.png" width="666.0"/></p>
+    <p class="Numbering7 CommentSubjectChar">Haga clic en <img alt="Imagen 116" height="30.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image40.png" width="60.0"/>.</p>
+    <p class="CommentSubjectChar"> </p>
+    <p class="Numbering7 CommentSubjectChar">Seleccione entre lo siguiente:</p>
+    <div align="left">
+      <table border="0" cellspacing="0" class="Heading7Char Heading7Char oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:335.66666666666666666666666667px"/>
+          <col style="width:305.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="CommentSubjectChar">Si</p>
+            </td>
+            <td>
+              <p class="CommentSubjectChar">Entonces</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="CommentSubjectChar">El diario se ha contabilizado</p>
+            </td>
+            <td>
+              <p class="CommentSubjectChar">Revise el mensaje de información que indica que el diario de recuento se ha contabilizado correctamente.</p>
+              <p class="CommentSubjectChar">Haga clic en la X para cerrar el diario de recuento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="CommentSubjectChar">Recibe el siguiente mensaje de error,</p>
+              <p class="CommentSubjectChar"><img alt="Imagen 36" height="49.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image41.png" width="323.1"/></p>
+            </td>
+            <td>
+              <p>1. Revise los detalles del mensaje de error.</p>
+              <p>2. Para cada artículo en el diario de recuento con una discrepancia de recuento, desplácese hacia abajo hasta Detalles de línea y actualice las dimensiones financieras D1, D4 y D5.</p>
+              <p>3. Haga clic en <img alt="Imagen 368781633" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image42.png" width="56.0"/>.</p>
+              <p>4. Continúe hasta el siguiente procedimiento Ajustar una reserva de inventario para procesar un ajuste de inventario para reservar o cancelar la reserva de cantidades para cada artículo en el diario de recuento con una discrepancia de recuento.</p>
+              <p>5. Cuando se haya completado el procedimiento de reservas, vuelva aquí al paso 3 de esta transacción para contabilizar el diario de recuento.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p>Revise el mensaje de información que indica que el diario de recuento se ha contabilizado correctamente.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha contabilizado los resultados de recuento.
+      <br/>
+      ‎
+    </p>
+    <h2 class="Heading2">Ajustar una reserva de inventario para procesar un ajuste de inventario</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>El inventario está reservado para un proyecto. Para ajustar el saldo de inventario de un artículo en stock, primero debe cancelarse la reserva en caso de discrepancia negativa (-) o reservarse en caso de discrepancia positiva (+).</p>
+    <p>Utilizar este procedimiento para cancelar la reserva de un artículo con una discrepancia negativa (-) o reservar un artículo con una discrepancia positiva (+) respecto al proyecto para el que está reservado.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>Haber recibido un mensaje de error en una transacción de ajuste de inventario como:</p>
+    <p><img alt="Imagen 29" height="67.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image43.png" width="485.9"/></p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering11 ListParagraph">Abra una sesión duplicada de Integra.</p>
+    <p class="Numbering11 ListParagraph">Navegue a través de los módulos <span>Gestión de proyectos y contabilidad </span>Proyectos <span></span> Todos los proyectos.</p>
+    <p><img alt="Imagen 30" height="327.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image44.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">En la cuadrícula Todos los proyectos, en el campo Filtro, introduzca el ID de proyecto para buscar el proyecto al que está asociado el artículo.</p>
+    <p class="Numbering11 ListParagraph">Haga clic en <img alt="Imagen 368781636" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image45.png" width="29.0"/> a la izquierda de la línea para seleccionar el proyecto.</p>
+    <p><img alt="Imagen 368781634" height="144.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image46.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">En el menú de la parte superior, haga clic en la pestaña Plan.</p>
+    <p class="Numbering11 ListParagraph">En la sección Requerimientos de artículo, haga clic en Requerimientos de artículo.</p>
+    <p><img alt="Imagen 31" height="251.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image47.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Haga clic con el botón derecho en el encabezado de la columna y seleccione Insertar columnas…. para añadir la columna Ubicación a la pantalla.</p>
+    <h6 class="Heading6">Consejo: Haga clic en <img alt="Imagen 368781644" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image48.png" width="84.0"/><span></span> para no tener que añadir esta columna cada vez.</h6>
+    <p><img alt="Imagen 34" height="319.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image49.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Desplácese por la lista y haga clic en <img alt="Imagen 32" height="17.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image50.png" width="19.0"/> a la izquierda de Ubicación – Dimensiones de inventario.</p>
+    <p class="Numbering11 ListParagraph">Haga clic en <img alt="Imagen 33" height="32.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image51.png" width="71.0"/>.</p>
+    <h6 class="Heading6">Nota: Añadir la columna Ubicación le permite ver la ubicación específica desde la cual debería estar reservado o no reservado el inventario. Se añade en el extremo derecho de la pantalla como última columna.</h6>
+    <p><img alt="Imagen 35" height="120.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image52.png" width="566.4"/></p>
+    <p>Opción: Para facilitar la referencia, haga clic en el encabezado de la columna Ubicación y arrástrelo a la derecha de la columna número de artículo.</p>
+    <p class="Numbering11 ListParagraph">En la lista de requerimientos de artículos, localice el número de artículo, la ubicación y la fecha de recepción solicitada para el artículo para reservar/cancelar la reserva.</p>
+    <p><img alt="Imagen 73" height="216.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image53.png" width="666.0"/></p>
+    <p class="Numbering11 ListParagraph">Haga clic en <img alt="Imagen 368781712" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image54.png" width="21.0"/> a la izquierda del artículo para cancelar la reserva/reservar.</p>
+    <p class="Numbering11 ListParagraph">En la pestaña Gestionar, haga clic en <img alt="Imagen 368781639" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image55.png" width="75.0"/><span></span> Reserva.</p>
+    <p><img alt="Imagen 368781731" height="194.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image56.png" width="681.6"/></p>
+    <p class="Numbering11 ListParagraph">Haga clic en el campo Reserva y actualice el valor.</p>
+    <h6 class="Heading6">Nota: Para cancelar la reserva de un artículo con una discrepancia negativa (-), actualice la cantidad reduciéndola en el número de artículos que se deben ajustar.</h6>
+    <p>Por ejemplo, en el recuento de ciclo anual, el valor contado es 139,00, pero la cantidad en la columna de disponible es 140,00, reduzca el valor de reserva en 1 a 139,00.</p>
+    <h6 class="Heading6">Nota: Para reservar un artículo con una discrepancia positiva (+), actualice la cantidad aumentándola en el número de artículos que se deben ajustar después de contabilizar el diario de recuento.</h6>
+    <p>Por ejemplo, en el recuento de ciclo anual, el valor contado es 141,00, pero la cantidad en la columna de disponible es 140,00, aumente el valor de reserva en 1 a 141,00.</p>
+    <p>Una vez actualizado el valor en el campo Reserva, el proceso de cancelar una reserva/reservar se ha completado.</p>
+    <h6 class="Heading6">Nota: Este proceso no requiere validar ni guardar.</h6>
+    <p class="Numbering11 ListParagraph">Haga clic en la X para cerrar el formulario de Reserva y volver a la cuadrícula de Requerimientos de artículo.</p>
+    <p class="Numbering11 ListParagraph">Vuelva o continúe hasta la transacción de ajuste de inventario en la que recibió el mensaje de error de inventario.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha cancelado la reserva/reservado la cantidad de un artículo reservado para un proyecto.</p>
+    <h2 class="Heading2">Crear un diario de recuento – Recuento de final de donación</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear un nuevo diario de recuento para un recuento de final de donación en Integra.</p>
+    <p>Este proceso es muy similar al proceso de diario de recuento para el recuento anual, pero algunos de los criterios han cambiado para el recuento de final de donación.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering12 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p><img alt="Imagen 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image57.png" width="624.4"/></p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image58.png" width="65.1"/> en la barra de herramientas de la parte superior de la página.</p>
+    <p><img alt="Imagen 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image59.png" width="594.1"/></p>
+    <p class="Numbering12 ListParagraph">Rellene/seleccione los siguientes campos/botones:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de descripción general</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Descripción</p>
+            </td>
+            <td>
+              <p>El campo Descripción tiene predeterminada la última descripción introducida.</p>
+              <p>Actualice la descripción con un identificador significativo para este diario de recuento. (p. je.) Final de donación + ID de proyecto + Recuento de inventario</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Seleccione el emplazamiento de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Seleccione el almacén de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de recuento por</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Almacén</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Ubicación</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón ID de proyecto</p>
+            </td>
+            <td>
+              <p>Para el recuento de final de donación, el ID de proyecto es obligatorio.</p>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image60.png" width="60.9"/> para continuar.</p>
+    <p><img alt="Imagen 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image61.png" width="661.1"/></p>
+    <p class="Numbering12 ListParagraph">En la barra de herramientas de la parte superior de la página, haga clic en <img alt="Imagen 20" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image62.png" width="102.0"/><span></span> Disponible.</p>
+    <p><img alt="Imagen 120" height="305.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image63.png" width="643.7"/></p>
+    <p class="Numbering12 ListParagraph">Rellene/seleccione los siguientes campos/botones:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de parámetros</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Grupo de recuento</p>
+            </td>
+            <td>
+              <p>Deje este campo en blanco. Para el recuento de final de donación, se cuenta todo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Active el código de recuento</p>
+            </td>
+            <td>
+              <p>Asegúrese de que está cambiado a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Incluya los artículos con nada disponible</p>
+            </td>
+            <td>
+              <p>Asegúrese de que está cambiado a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Almacén</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Estado del inventario</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Ubicación</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Lote</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de recuento por</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón ID de proyecto</p>
+            </td>
+            <td>
+              <p>Para el recuento de final de donación, el ID de proyecto es obligatorio.</p>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering12 ListParagraph">En el formulario Crear diario de recuento disponible, desplácese hacia abajo y expanda la pestaña Registros que incluir.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 94" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image64.png" width="62.0"/>.</p>
+    <p><img alt="Imagen 22" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image65.png" width="666.0"/></p>
+    <p class="Numbering12 ListParagraph">En la sección de recuento de artículos, haga clic en <img alt="Imagen 101" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image66.png" width="25.0"/> a la izquierda de los artículos para incluir en la consulta.</p>
+    <p class="Numbering12 ListParagraph">Verifique que los valores de Sitio, Almacén y ID de proyecto/donación tengan los valores predeterminados del sitio, almacén e ID de proyecto correctos para el recuento.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 108" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image67.png" width="61.0"/> para cerrar el filtro de recuento de artículos.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 115" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image68.png" width="61.0"/> para cerrar el formulario Crear diario de recuento disponible.</p>
+    <p><img alt="Imagen 118" height="252.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image69.png" width="688.7"/></p>
+    <p class="Numbering12 ListParagraph">Revise el mensaje de información de Operación completada correctamente.</p>
+    <p class="Numbering12 ListParagraph">Revise las líneas añadidas al diario. Desplácese hacia abajo en la lista según se requiera.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 121" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image70.png" width="129.0"/> en la pestaña desplegable Líneas de diario para añadir dimensiones a la pantalla.</p>
+    <p><img alt="Imagen 124" height="317.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image71.png" width="664.7"/></p>
+    <p class="Numbering12 ListParagraph">Haga clic en la <img alt="Imagen 122" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image72.png" width="19.0"/> a la izquierda de las dimensiones para añadirlas a la pantalla.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 123" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image73.png" width="58.0"/>.</p>
+    <p><img alt="Imagen 98" height="228.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image74.png" width="666.0"/></p>
+    <p class="Numbering12 ListParagraph">Visualice las dimensiones añadidas a la pantalla. Desplácese hacia la derecha según se requiera.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en <img alt="Imagen 125" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image75.png" width="57.0"/> para guardar el diario.</p>
+    <p class="Numbering12 ListParagraph">Haga clic en la X para cerrar el INVxxxxxxx: Diario de recuento de inventario.</p>
+    <p>El diario de recuento de inventario se muestra a continuación.</p>
+    <p><img alt="Imagen 119" height="166.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image76.png" width="689.5"/></p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un diario de recuento de inventario para un recuento final de donación.</p>
+    <p>El diario de recuento puede imprimirse ahora para preparar la realización del recuento real.</p>
+    <p>Para completar el proceso, consulte los procedimientos previos para:</p>
+    <p class="Numbering8 ListParagraph">Imprimir un diario de recuento</p>
+    <p class="Numbering8 ListParagraph">Realizar un recuento de inventario físico</p>
+    <p class="Numbering8 ListParagraph">Registrar los resultados de recuento</p>
+    <p class="Numbering8 ListParagraph">Contabilizar los resultados de recuento</p>
+    <h2 class="Heading2">Crear un diario de recuento – Recuento del 20 %</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear un nuevo diario de recuento para un recuento de inventario del 20 % en Integra.</p>
+    <p>Este proceso es muy similar al proceso de diario de recuento para el recuento anual, pero algunos de los criterios han cambiado para el 20 %. Este diario de recuento registra todos los artículos en el almacén en el grupo de recuento del 20 % que se contará y reduce manualmente el recuento al 20 %.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>n/a</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering13 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Recuento de artículos <span></span> Recuento.</p>
+    <p><img alt="Imagen 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image77.png" width="624.4"/></p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 33" height="30.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image78.png" width="65.1"/> en la barra de herramientas de la parte superior de la página.</p>
+    <p><img alt="Imagen 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image79.png" width="593.5"/></p>
+    <p class="Numbering13 ListParagraph">Rellene/seleccione los siguientes campos/botones:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de descripción general</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Descripción</p>
+            </td>
+            <td>
+              <p>El campo Descripción tiene predeterminada la última descripción introducida.</p>
+              <p>Actualice la descripción con un identificador significativo para este diario de recuento. (p. je.) 20% + Almacén + Recuento de inventario</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Seleccione el emplazamiento de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Seleccione el almacén de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de recuento por</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Almacén</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Ubicación</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Lote</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón ID de proyecto</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 32" height="29.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image80.png" width="60.9"/> para continuar.</p>
+    <p><img alt="Imagen 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image81.png" width="585.6"/></p>
+    <p class="Numbering13 ListParagraph">En la barra de herramientas de la parte superior de la página, haga clic en <img alt="Imagen 131" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image82.png" width="102.0"/><span></span> Disponible.</p>
+    <p><img alt="Imagen 368781635" height="541.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image83.png" width="384.0"/></p>
+    <p class="Numbering13 ListParagraph">Rellene/seleccione los siguientes campos/botones:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de parámetros</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Fecha de recuento</p>
+            </td>
+            <td>
+              <p>Tiene predeterminada la fecha de hoy. Dejar el valor predeterminado.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>No contado desde</p>
+            </td>
+            <td>
+              <p>Seleccione siempre la fecha de mañana como No contado desde. Esto garantiza que todos los artículos en el almacén se registren e incluyan en el recuento.</p>
+              <p>Haga clic en el calendario y seleccione la fecha de mañana.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Fecha de recuento</p>
+            </td>
+            <td>
+              <p>Tiene predeterminada la fecha de hoy. Dejar el valor predeterminado.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>No contado desde</p>
+            </td>
+            <td>
+              <p>Seleccione siempre la fecha de mañana como No contado desde. Esto garantiza que todos los artículos en el almacén se registren e incluyan en el recuento.</p>
+              <p>Haga clic en el calendario y seleccione la fecha de mañana.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Grupo de recuento</p>
+            </td>
+            <td>
+              <p>Identifica si el artículo es parte del recuento de ciclo. Cuando se crean artículos FIFO o FEFO, se asigna un grupo de recuento par indicar que este artículo se incluirá en el recuento de ciclo. Cada dos meses se cuenta el 20 % del inventario.</p>
+              <p>Haga clic en el menú desplegable y seleccione 20.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Active el código de recuento</p>
+            </td>
+            <td>
+              <p>Verifique que esté cambiado a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Incluya los artículos con nada disponible</p>
+            </td>
+            <td>
+              <p>Verifique que esté cambiado a No.</p>
+              <p>Esto garantiza que no haya líneas en blanco incluidas en el diario de recuento.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Almacén</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Estado del inventario</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Ubicación</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón Lote</p>
+            </td>
+            <td>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de recuento por</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Botón ID de proyecto</p>
+            </td>
+            <td>
+              <p>Para el recuento de final de donación, el ID de proyecto es obligatorio.</p>
+              <p>Cambie a Sí.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering13 ListParagraph">En el formulario Crear diario de recuento disponible, desplácese hacia abajo y expanda la pestaña Registros que incluir.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 133" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image84.png" width="62.0"/>.</p>
+    <h6 class="Heading6">Nota: Es importante revisar siempre los filtros y validar/actualizar los valores.</h6>
+    <p><img alt="Imagen 134" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image85.png" width="656.6"/></p>
+    <p class="Numbering13 ListParagraph">En la sección de recuento de artículos, haga clic en <img alt="Imagen 135" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image86.png" width="25.0"/> a la izquierda de los artículos para incluir en la consulta.</p>
+    <p class="Numbering13 ListParagraph">Verifique que los valores Sitio y Almacén tengan los valores predeterminados del sitio y el almacén correctos para el recuento.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 136" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image87.png" width="61.0"/> para cerrar el filtro de recuento de artículos.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 137" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image88.png" width="61.0"/> para cerrar el formulario Crear diario de recuento disponible.</p>
+    <p><img alt="Imagen 138" height="268.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image89.png" width="688.7"/></p>
+    <p class="Numbering13 ListParagraph">Revise el mensaje de información de Operación completada correctamente.</p>
+    <p class="Numbering13 ListParagraph">Revise las líneas añadidas al diario. Desplácese hacia abajo en la lista según se requiera.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 139" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image90.png" width="129.0"/> en la pestaña desplegable Líneas de diario para añadir dimensiones a la cuadrícula de la pantalla.</p>
+    <p><img alt="Imagen 140" height="302.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image91.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Haga clic en la <img alt="Imagen 141" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image92.png" width="19.0"/> a la izquierda de las dimensiones para añadirlas a la pantalla.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 142" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image93.png" width="58.0"/>.</p>
+    <p><img alt="Imagen 145" height="216.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image94.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Desplácese hacia la derecha para revisar las líneas y las dimensiones añadidas. Desplácese hacia abajo para ver las líneas del diario de recuento.</p>
+    <h4 class="Heading4">Determinar el 20 % de líneas que contar</h4>
+    <p class="Numbering13 ListParagraph">Una vez creadas las líneas en el diario de recuento con el grupo de recuento 20, que incluye todos los artículos FIFO y FEFO, el supervisor o jefe deciden qué artículos de la lista se van a contar. A continuación, el jefe elimina manualmente los artículos que no se contarán y, por consiguiente, no se incluirán en el diario de recuento que se imprimirá para el recuento físico.</p>
+    <p><img alt="Imagen 149" height="242.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image95.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Para mostrar el número total de líneas en el diario, haga clic en <img alt="Imagen 148" height="29.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image96.png" width="16.5"/> (la elipsis) en la esquina superior derecha de la pestaña desplegable Líneas de diario.</p>
+    <p><img alt="Imagen 150" height="120.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image97.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Seleccione Mostrar pie de página para mostrar un pie de página en la parte inferior de la cuadrícula con el número total de filas.</p>
+    <p class="Numbering13 ListParagraph">Vea el número total de filas mostradas en el pie de página. A continuación, determine las líneas que se van a eliminar.</p>
+    <p><img alt="Imagen 153" height="258.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image98.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 132" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image99.png" width="22.0"/> junto a las líneas que no están incluidas en el recuento del 20 %.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 147" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image100.png" width="72.0"/> para eliminar las líneas del diario de recuento.</p>
+    <h6 class="Heading6">Nota: Asegúrese de utilizar la función <img alt="Imagen 151" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image101.png" width="72.0"/> en la pestaña desplegable Lineas de diario para eliminar las línea de recuento y no la función <img alt="Imagen 152" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image102.png" width="72.0"/> en la barra de menú en la parte superior de la página, ya que esta última elimina todo el diario.</h6>
+    <p><img alt="Imagen 154" height="112.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image103.png" width="293.2"/></p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 155" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image104.png" width="56.0"/> para eliminar todos los registros marcados.</p>
+    <p class="Numbering13 ListParagraph">Repita los pasos de selección y eliminación para todas las líneas que deben eliminarse del diario de recuento.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 156" height="25.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image105.png" width="59.0"/>.<img alt="Imagen 157" height="318.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image106.png" width="666.0"/></p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 158" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image107.png" width="62.0"/>.</p>
+    <p class="Numbering13 ListParagraph">Revise el mensaje de información que indica que el diario es correcto.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en <img alt="Imagen 146" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image108.png" width="62.0"/>.</p>
+    <p class="Numbering13 ListParagraph">Haga clic en la X para cerrar el INVxxxxxxx: Diario de recuento de inventario.</p>
+    <p class="Numbering13 ListParagraph">El diario de recuento de inventario se muestra a continuación con el número de líneas reducido al 20 % para el recuento del 20 %.</p>
+    <p><img alt="Imagen 143" height="135.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image109.png" width="689.5"/></p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un diario de recuento de inventario para un recuento de ciclo del 20 %.</p>
+    <p>El diario de recuento puede imprimirse ahora para preparar la realización del recuento real.</p>
+    <p>Para completar el proceso, consulte los procedimientos previos para:</p>
+    <p class="Numbering14 ListParagraph">Imprimir un diario de recuento</p>
+    <p class="Numbering14 ListParagraph">Realizar un recuento de inventario físico</p>
+    <p class="Numbering14 ListParagraph">Registrar los resultados de recuento</p>
+    <p class="Numbering14 ListParagraph">Contabilizar los resultados de recuento
+      <br/>
+      ‎
+    </p>
+    <h2 class="Heading2">Mostrar el inventario disponible</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para verificar el inventario disponible asociado a cada producto en stock recibido en el inventario.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>El artículo debe estar configurado como un artículo de inventario en Integra.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering15 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Consultas e informes <span></span> Lista disponible.</p>
+    <p><img alt="Imagen 24" height="291.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image110.png" width="598.0"/></p>
+    <p class="Numbering15 ListParagraph">Aplique alguno o todos los siguientes filtros seleccionando la lista desplegable para obtener más opciones de filtrado:</p>
+    <p class="Numbering8 ListParagraph">Número de artículo</p>
+    <p class="Numbering8 ListParagraph">Sitio</p>
+    <p class="Numbering8 ListParagraph">Almacén</p>
+    <p class="Numbering8 ListParagraph">ID de proyecto</p>
+    <h6 class="Heading6">Nota: Si se necesitan filtros adicionales, haga clic en<img alt="Imagen 159" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image111.png" width="47.0"/> para seleccionar otros valores como ID de proyecto o Ubicación.</h6>
+    <p class="Numbering15 ListParagraph">Haga clic en Dimensiones en el menú de la parte superior de la página para añadir valores de dimensiones de inventario adicionales a la pantalla de consulta disponible.</p>
+    <p><img alt="Imagen 161" height="316.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image112.png" width="666.0"/></p>
+    <p class="Numbering15 ListParagraph">Haga clic en la <img alt="Imagen 162" height="21.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image113.png" width="23.0"/> junto a las dimensiones para mostrarlas en las secciones correspondientes. P. ej., Sitio, Almacén, Ubicación, ID de proyecto y Número de artículo.</p>
+    <p class="Numbering15 ListParagraph">Haga clic en <img alt="Imagen 163" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image114.png" width="61.0"/> para continuar.</p>
+    <p><img alt="Imagen 1" height="304.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image115.png" width="627.2"/></p>
+    <p class="Numbering15 ListParagraph">Haga clic en <img alt="Imagen 164" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image116.png" width="57.0"/> en el panel Filtros del lado izquierdo para recuperar los resultados.</p>
+    <p><img alt="Imagen 166" height="323.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image117.png" width="666.0"/></p>
+    <p class="Numbering15 ListParagraph">Revise los resultados del inventario disponible mostrado en la cuadrícula Disponible.</p>
+    <h6 class="Heading6">Nota: Utilice <img alt="Imagen 165" height="27.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image118.png" width="37.7"/> en el panel de Filtro para contraer o expandir el panel según se requiera.</h6>
+    <p class="Numbering15 ListParagraph">Haga clic en la X para cerrar el informe Inventario disponible una vez completada la revisión.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha visualizado la cantidad disponible de los artículos de inventario por sitio y almacén.</p>
+    <h2 class="Heading2">Crear un diario de ajuste de inventario</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear un diario de ajuste par registrar las discrepancias del inventario.</p>
+    <p>Los diarios de ajuste de inventario se utilizan para ajustar la enajenación de inventario, incluidos los artículos caducados, dañados y robados. Un ajuste también se utiliza para ajustar un inventario que se encuentra, pero que, actualmente, no forma parte del inventario disponible.</p>
+    <p>Nota: Este tipo de diario no se utiliza para un ajuste como resultado de un recuento de ciclo. Los ajustes de recuento de ciclo se realizan en el diario de recuento de ciclo.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p>Debe haberse determinado que se requiere un ajuste de inventario.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering16 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Artículo <span></span> Ajuste de inventario.</p>
+    <p><img alt="Imagen 25" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image119.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 26" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image120.png" width="54.0"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 160" height="311.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image121.png" width="652.5"/></p>
+    <p class="Numbering16 ListParagraph">Rellene los siguientes campos:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de descripción general</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Nombre</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado INV_ADJ.</p>
+              <p>Deje el valor predeterminado para un diario de ajuste.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Descripción</p>
+            </td>
+            <td>
+              <p>El campo Descripción tiene predeterminada la última descripción introducida.</p>
+              <p>Actualice la descripción con un identificador significativo para este diario de ajuste. (p. je.) Motivo + Diario de ajuste de inventario</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Seleccione el emplazamiento de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Seleccione el almacén de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 28" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image122.png" width="58.0"/> para continuar.</p>
+    <p><img alt="Imagen 168" height="251.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image123.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">En la sección Líneas de diario, haga clic en <img alt="Imagen 167" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image124.png" width="53.0"/> para introducir una nueva línea en el diario.</p>
+    <p><img alt="Imagen 169" height="316.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image125.png" width="650.0"/></p>
+    <p class="Numbering16 ListParagraph">Complete los siguientes campos en la nueva línea:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de parámetros</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Número de artículo</p>
+            </td>
+            <td>
+              <p>Introduzca o haga clic en el menú desplegable y busque el artículo que se debe ajustar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Nombre del producto</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el número de artículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cantidad</p>
+            </td>
+            <td>
+              <p>Identifica el número o la cantidad del artículo que se está ajustando. Si el ajuste es para una eliminación o enajenación, introduzca un valor negativo (-).</p>
+              <p>Introduzca la cantidad del ajuste.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Precio de coste</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el número de artículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Importe de coste</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el número de artículo.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering16 ListParagraph">Desplácese hacia abajo hasta la sección Detalles de línea.</p>
+    <p class="Numbering16 ListParagraph">Haga clic en la pestaña Dimensiones de inventario.</p>
+    <p><img alt="Imagen 170" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image126.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">En la pestaña Dimensiones de inventario, complete los siguientes campos:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>ID de proyecto</p>
+            </td>
+            <td>
+              <p>Introduzca o haga clic en el menú desplegable y busque el proyecto para el que se ajusta el artículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el encabezado, pero puede cambiarse a nivel de línea según se requiera.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el encabezado, pero puede cambiarse a nivel de línea según se requiera.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Ubicación</p>
+            </td>
+            <td>
+              <p>Identifica desde dónde se está ajustando el artículo.</p>
+              <p>Introduzca o haga clic en el menú desplegable y busque la ubicación.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Lote</p>
+            </td>
+            <td>
+              <p>Si el artículo introducido es un artículo controlado por lote, el número de lote es obligatorio.</p>
+              <p>Introduzca o haga clic en el menú desplegable y busque el número de lote.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="Numbering16 ListParagraph">Haga clic en la pestaña Dimensiones financieras.</p>
+    <p><img alt="Imagen 173" height="300.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image127.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Complete las dimensiones financieras D1 a D6.</p>
+    <h6 class="Heading6">Nota: Póngase en contacto con su equipo de Finanzas para obtener orientación par seleccionar las dimensiones correctas.</h6>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 171" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image128.png" width="54.0"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 175" height="318.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image129.png" width="666.0"/></p>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 172" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image130.png" width="59.0"/>.</p>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 174" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image131.png" width="59.0"/> para continuar.</p>
+    <p class="Numbering16 ListParagraph">Revise el mensaje de información que indica que el diario es correcto.</p>
+    <p class="Numbering16 ListParagraph">Haga clic en <img alt="Imagen 177" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image132.png" width="54.0"/> en el menú de la parte superior de la página.</p>
+    <p class="Numbering16 ListParagraph">Haga clic en la X para cerrar el diario de ajuste.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un diario de ajuste de inventario.</p>
+    <p>Ahora GSC puede contabilizar el diario de ajuste. El ajuste de inventario se contabiliza automáticamente en una cuenta de amortización pendiente de inventario gestionada por Finanzas basándose en la documentación adjunta al diario de ajuste de inventario.</p>
+    <h2 class="Heading2">Contabilizar diario de ajuste de inventario</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p class="margin-left-0text-indent-0-25in">Utilizar este procedimiento para contabilizar un diario de ajuste de inventario.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p class="Numbering9 Numbering61">Se ha creado un diario de ajuste.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering17 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Artículo <span></span> Ajuste de inventario.</p>
+    <p><img alt="Imagen 192" height="205.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image133.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">En la lista, seleccione el diario de ajuste que se va a contabilizar.</p>
+    <p><img alt="Imagen 194" height="241.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image134.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">Revise la línea de diario y la pestaña desplegable Detalles de línea.</p>
+    <p class="Numbering17 ListParagraph">Haga clic en <img alt="Imagen 193" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image135.png" width="39.0"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 195" height="316.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image136.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">En el formulario Contabilizar diario, haga clic en <img alt="Imagen 368781632" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image137.png" width="59.0"/> para continuar.</p>
+    <p><img alt="Imagen 196" height="253.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image138.png" width="666.0"/></p>
+    <p class="Numbering17 ListParagraph">Valide el mensaje de información que indica que el diario se ha contabilizado correctamente.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha contabilizado un diario de ajuste de inventario.</p>
+    <h2 class="Heading2">Crear y contabilizar un diario de ajuste de inventario – Muestra de productos</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear un diario de ajuste para registrar las muestras de proveedores adquiridas mediante el proceso de RFP/RFQ.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p class="Numbering3 Numbering21">El producto nuevo debe haberse creado como un artículo en Integra.</p>
+    <p class="Numbering3 Numbering21">Si el artículo no existe, trabaje con el equipo MDM para coordinar la creación del nuevo producto.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering18 ListParagraph">Desde la página de inicio de Integra, navegue a través de los módulos Gestión del inventario <span></span> Entradas de diario <span></span> Artículo <span></span> Ajuste de inventario.</p>
+    <p><img alt="Imagen 178" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image139.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 179" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image140.png" width="54.0"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 197" height="316.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image141.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Rellene los siguientes campos:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p>Sección de descripción general</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Nombre</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado INV_ADJ.</p>
+              <p>Deje el valor predeterminado para un diario de ajuste.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Descripción</p>
+            </td>
+            <td>
+              <p>El campo Descripción tiene predeterminada la última descripción introducida.</p>
+              <p>Actualice la descripción con un identificador significativo para este diario de ajuste. (p. je.) Diario de ajuste RFP#22122</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Seleccione el emplazamiento de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Seleccione el almacén de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 181" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image142.png" width="58.0"/> para continuar.</p>
+    <p><img alt="Imagen 199" height="245.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image143.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">En la sección Líneas de diario, haga clic en <img alt="Imagen 183" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image144.png" width="53.0"/> para introducir una nueva línea en el diario.</p>
+    <p><img alt="Imagen 204" height="317.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image145.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 200" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image146.png" width="129.0"/> en la pestaña desplegable Líneas de diario para añadir dimensiones a la pantalla.</p>
+    <p class="Numbering18 ListParagraph">Haga clic en la <img alt="Imagen 202" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image147.png" width="19.0"/> a la izquierda de las dimensiones para añadirlas a la pantalla.</p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 203" height="27.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image148.png" width="58.0"/>.</p>
+    <p><img alt="Imagen 205" height="323.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image149.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Complete los siguientes campos en la nueva línea:</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Campo/Botón</p>
+            </td>
+            <td>
+              <p>Entrada/Selección obligatoria</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Número de artículo</p>
+            </td>
+            <td>
+              <p>Introduzca o haga clic en el menú desplegable y busque el artículo que se debe ajustar.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Nombre del producto</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el número de artículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>ID de proyecto</p>
+            </td>
+            <td>
+              <p>Cada entidad informadora tiene un proyecto llamado MUESTRA para registrar y seguir las muestras de proveedores. No hay ningún presupuesto asociado a este proyecto.</p>
+              <p>Introduzca MUESTRA.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Sitio</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el encabezado, pero puede cambiarse a nivel de línea según se requiera.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Almacén</p>
+            </td>
+            <td>
+              <p>Tiene predeterminado el encabezado, pero puede cambiarse a nivel de línea según se requiera.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Lote</p>
+            </td>
+            <td>
+              <p>Si el artículo introducido es un artículo controlado por lote, el número de lote es obligatorio.</p>
+              <p>Introduzca o haga clic en el menú desplegable y busque el número de lote.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Ubicación</p>
+            </td>
+            <td>
+              <p>Identifica la ubicación de almacenamiento donde está la muestra.</p>
+              <p>Introduzca o haga clic en el menú desplegable y busque la ubicación.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Cantidad</p>
+            </td>
+            <td>
+              <p>Introduzca el número de muestras de proveedor para este artículo.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Precio de coste</p>
+            </td>
+            <td>
+              <p>No hay ningún coste asociado al producto.</p>
+              <p>Introduzca 0,00 para poner a cero el coste.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="Numbering18 ListParagraph">Desplácese hacia abajo hasta la sección Detalles de línea para revisar y validar.</p>
+    <h6 class="Heading6">Nota: Las dimensiones financieras no se requieren en las muestras y se añadieron a la línea.</h6>
+    <p><img alt="Imagen 206" height="317.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image150.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 189" height="23.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image151.png" width="59.0"/>.</p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 190" height="26.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image152.png" width="59.0"/> para continuar.</p>
+    <p><img alt="Imagen 207" height="249.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image153.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Revise el mensaje de información que indica que el diario es correcto.</p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 187" height="24.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image154.png" width="54.0"/> en el menú de la parte superior de la página.</p>
+    <p><img alt="Imagen 208" height="250.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image155.png" width="666.0"/></p>
+    <p class="Numbering18 ListParagraph">Haga clic en <img alt="Imagen 209" height="29.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image156.png" width="41.0"/> para contabilizar el diario.</p>
+    <p class="Numbering18 ListParagraph">Revise el mensaje de información que indica que el diario se ha contabilizado correctamente.</p>
+    <p class="Numbering18 ListParagraph">Haga clic en la X para cerrar el diario de ajuste.</p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado y contabilizado un diario de ajuste de inventario para un producto de muestra proporcionado por un proveedor.</p>
+    <h2 class="Heading2">Adjuntar un documento a un diario de ajuste de inventario</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para adjuntar un archivo o documentación complementaria a un diario de ajuste.</p>
+    <p>En integra,son los pasos estándar para añadir documentación a un registro y pueden utilizarse en otras transacciones y procesos.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <p class="Numbering19 ListParagraph">Haga clic en <img alt="Imagen 368781660" height="33.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image157.png" width="28.0"/> en la esquina superior derecha de la pantalla para adjuntar un documento.</p>
+    <p><img alt="Imagen 368781666" height="254.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image158.png" width="666.0"/></p>
+    <p class="Numbering19 ListParagraph">En el menú de la parte superior de la página, haga clic en <img alt="Imagen 368781798" height="22.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image159.png" width="69.0"/> &gt; Archivo de la lista de selección desplegable.</p>
+    <p><img alt="Imagen 368781668" height="260.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image160.png" width="666.0"/></p>
+    <p class="Numbering19 ListParagraph">En el panel del lado derecho, haga clic en Examinar.</p>
+    <p class="Numbering19 ListParagraph">Localice y seleccione el documento correspondiente, según que la funcionalidad de examinar estándar de Windows. (Pueden pasar algunos segundos hasta que se complete la carga).</p>
+    <p><img alt="Imagen 368781799" height="248.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image161.png" width="602.0"/></p>
+    <p class="Numbering19 ListParagraph">Verifique que el adjunto esté en la lista del panel del lado izquierdo.</p>
+    <p class="Numbering19 ListParagraph">Haga clic en la pestaña desplegable Vista previa para obtener visualizar previamente el adjunto.</p>
+    <p class="Numbering19 ListParagraph">Haga clic en la X en la esquina superior derecha de la página para cerrar la vista de impresión y volver al formulario.</p>
+    <h6 class="Heading6">Nota: el <img alt="Imagen 368781800" height="28.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image162.png" width="26.0"/> (icono de sujetapapeles) muestra ahora un número 1 que indica que se ha adjuntado un documento al PO.</h6>
+    <p class="Numbering19 ListParagraph">En función del diario o formulario en el que está trabajando, ejecute una de las siguientes acciones:</p>
+    <div align="left">
+      <table border="0" cellspacing="0" class="Heading7Char Heading7Char oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:335.66666666666666666666666667px"/>
+          <col style="width:305.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p>Si</p>
+            </td>
+            <td>
+              <p>Entonces</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Necesita continuar trabajando en el diario</p>
+            </td>
+            <td>
+              <p>Vuelva a las pestañas desplegables Líneas de diario y Detalles de línea y continúe.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>El recuento o el diario de inventario se ha completado</p>
+              <p class="CommentSubjectChar"> </p>
+            </td>
+            <td>
+              <p>Haga clic en <img alt="Imagen 368781649" height="22.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image163.png" width="57.8"/> y <img alt="Imagen 368781650" height="20.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image164.png" width="41.0"/> según requiera.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Necesita salir del diario</p>
+            </td>
+            <td>
+              <p>Haga clic en la X en la esquina superior derecha de la página para cerrar y volver al recuento o a la cuadrícula de ajuste de inventario.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha adjuntado un documento a un ajuste de inventario o diario de recuento.</p>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

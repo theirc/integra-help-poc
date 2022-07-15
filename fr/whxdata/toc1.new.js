@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"À propos d’Integra.","type":"item","tilePath":"","description":"","url":"About_Integra.htm"},{"name":"Frequently Asked Questions","type":"book","tilePath":"","description":"","url":"Frequently_Asked_Questions.htm","key":"toc2"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

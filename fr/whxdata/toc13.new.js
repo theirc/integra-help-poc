@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"Record CIK Distribution in Integra","type":"item","tilePath":"","description":"","url":"CIK_Distribution_in_Integra_via_Expense_Journal.htm#Process_Steps_for_Recording_CIK_Distribution_in_Integra_(Some_steps_may_vary_from_office_to_office)"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

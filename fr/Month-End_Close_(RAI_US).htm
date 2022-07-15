@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "5.7";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Clôture en fin de mois (RAI États-Unis)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Clôture en fin de mois (RAI États-Unis)">
+        <span>Clôture en fin de mois (RAI États-Unis)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1">Informations sur le processus opérationnel</h1>
+  <h2 class="Heading2">Messages clés</h2>
+  <ul>
+    <li> Le Journal Dynad permet de renseigner et télécharger des écritures de journal en masse dans Integra.
+      <ul>
+        <li> Les exemples de journaux téléchargés en masse incluent l’allocation de la paie, les sous-attributions/dépenses, le reclassement des écritures et les saisies d’allocation de coût de programme partagé. </li>
+        <li> Il est essentiel de sélectionner le nom de journal adéquat dans le Journal Dynad pour s’assurer que les données sont traitées correctement dans Integra.
+          <ul>
+            <li> Chaque nom de journal correspond à un code systématique, c.-à-d., des profiles de diffusions, qui met à jour le système d’Integra de manière adéquate. </li>
+            <li> Consultez l’annexe à la fin de ce guide pour obtenir une liste complète des noms de journaux et utilisations. </li>
+          </ul>
+        </li>
+        <li> Si vous avez moins de dix (10) lignes, nous vous recommandons de créer des écritures de journal directement dans Integra. </li>
+      </ul>
+    </li>
+    <li> Pour la plupart des tâches commerciales, les transactions sont diffusées à des livres auxiliaires (et non au Grand livre).
+      <ul>
+        <li> Toutefois, certaines transactions sont diffusées directement au Grand livre. </li>
+      </ul>
+    </li>
+    <li> Les statuts de période permettent de contrôler l’accès pour les diffusions au livre et aux livres auxiliaires.
+      <ul>
+        <li> Par exemple, les journaux de factures/paiements des livres auxiliaires des comptes fournisseurs (AP) et clients (AR) doivent tous être diffusés avant le sixième jour ouvré de la clôture de fin de mois. Pour empêcher les utilisateurs de diffuser des livres auxiliaires AR/AP après le sixième jour ouvré, vous pouvez « clore » la diffusion des livres auxiliaires en modifiant le statut de module sur En attente. </li>
+      </ul>
+    </li>
+  </ul>
+  <h2 class="Heading2">Tâches de clôture en fin de mois (Niveau élevé)</h2>
+  <ol class="AlphaNumeric">
+    <li> Fermez/ouvrez les périodes de diffusion fiscale
+      <ul>
+        <li> Ce processus a lieu à des moments précis du mois par les employés désignés du département Finances. </li>
+      </ul>
+    </li>
+    <li> Assurez-vous que toutes les transactions « quotidiennes » ont été diffusées dans la bonne période fiscale. </li>
+    <li> Transactions intersociétés. </li>
+    <li> Diffuser des journaux à la fin du mois.
+      <ul>
+        <li> Ce processus désigne les écritures de journal traitées en fin de mois uniquement </li>
+      </ul>
+    </li>
+    <li> Calculer l’ICR et préparer le journal de frais </li>
+    <li> Exécuter des rapprochements et des analyses
+      <ul>
+        <li> Ce processus implique d’utiliser les transactions/fonctionnalités standards suivantes dans Integra pour identifier et corriger les écarts
+          <ul>
+            <li> Balance générale des comptes </li>
+            <li> Transactions de pièces </li>
+            <li> Explorateur de comptabilité source </li>
+            <li> Suivi des écritures initiales </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> Générer des rapports
+      <ul>
+        <li> De nombreux rapports sont disponibles pour être analysés dans Integra et Power BI. </li>
+      </ul>
+    </li>
+  </ol>
+  <h4 class="Heading4">Liste de vérification de clôture en fin de mois</h4>
+  <p>Consultez la liste de vérification dans l’annexe à ce document. Cette liste de vérification existe également dans RescueNet.</p>
+  <h4 class="Heading4">Note importante concernant ce guide :</h4>
+  <p>Pour de nombreuses tâches commerciales de fin de mois, les procédures étapes par étapes sont documentées dans d’autres sections étant donné qu’il s’agit de transactions standards utilisées pour les tâches commerciales quotidiennes. Dans ce cas, une référence à la section/procédure applicable est incluse dans ce document.</p>
+  <p>Cette section inclut des procédures détaillées concernant les tâches ne figurant pas dans un autre guide d’utilisation.</p>
+  <h2 class="Heading2">Ouverture et clôture de périodes de diffusion de livre</h2>
+  <h2 class="Heading2">Ouvrir et clôturer une période d’exercice financier</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour ouvrir ou clôturer une période fiscale.</p>
+  <p>Une fois la période actuelle fermée, la nouvelle période doit être ouverte immédiatement pour s’assurer que les utilisateurs peuvent effectuer des transactions dès le premier jour de la période suivante.</p>
+  <p>Un groupe de sécurité personnalisé « Clôture de période » (<span style="font-weight:bold;">PrdCls</span>) a été défini pour permettre aux utilisateurs désignés du département Finances de traiter des transactions périodiques une fois que la période est clôturée et ne peut être modifiée par un utilisateur.</p>
+  <p>Les « statuts » de la période suivante permettent d’ouvrir et de clôturer des périodes fiscales.</p>
+  <ul>
+    <li> <strong>Ouvert</strong> : ouvrez tous les utilisateurs admissibles à la diffusion de transactions.  </li>
+    <li> <strong>En attente</strong> : les transactions ne peuvent pas être diffusées pendant la période. Toutefois, certains utilisateurs du département Finances peuvent diffuser des transactions pour les rapprochements en fin de mois. </li>
+    <li> <strong>Définitivement clôturé</strong> : ce statut n’est pas utilisé actuellement ; une fois une période définitivement clôturée, vous ne pouvez plus la rouvrir. </li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Dans le tableau de bord d’Integra, accédez à <span style="font-weight:bold;">Grand livre &gt; Calendriers &gt; Calendriers du livre</span>.   </li>
+    <li> Dans le panneau à gauche de l’écran, Cliquez sur la période à modifier. </li>
+    <li> Dans la colonne <span style="font-weight:bold;">Entité juridique</span>, sélectionnez l’entité juridique à mettre à jour.  </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">après avoir sélectionné l’entité juridique, vous pouvez définir les niveaux d’accès à des modules spécifiques.</span></h6>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> En haut à gauche de la page, cliquez sur <span style="font-weight:bold;">Éditer</span>. </li>
+    <li> Sélectionnez <span style="font-weight:bold;">Mettre à jour le statut de la période</span>.  </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Éditer </span>en haut à droite pour pouvoir modifier le statut de la période.  </li>
+    <li> Dans le menu déroulant du champ <span style="font-weight:bold;">Statut de la période</span>, sélectionnez <span style="font-weight:bold;">En attente/Ouvert</span> pour la période clôturée ou ouverte.    </li>
+    <li> Dans la colonne <span style="font-weight:bold;">Livre</span>, sélectionnez <span style="font-weight:bold;">PrdCls</span>. </li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li> La colonne Livre fait référence au Grand livre </li>
+    <li> PrdCls est un groupe de sécurité personnalisé créé pour des employés spécifiques du département Finances afin qu’ils puissent diffuser une transaction une fois le statut de la période mis à jour sur En attente. </li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9"> En cas d’ouverture ou de clôture d’un livre auxiliaire, cliquez sur <span style="font-weight:bold;">Mettre à jour l’accès au module</span>. </li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li> Pour mettre à jour l’accès à un module, accédez au module à mettre à jour.  </li>
+    <li> Sélectionnez dans le menu déroulant si vous voulez restreindre un module ou un groupe d’utilisateurs. Si vous sélectionnez « Aucun », cela signifie qu’aucune diffusion ne peut être faite à ce livre auxiliaire.  Par ailleurs, si vous sélectionnez des niveaux d’accès, cela supprime le statut de la période.   </li>
+    <li> Tous les ajustements nécessaires des écritures et des reclassements sont effectués à ce stade.  </li>
+  </ul>
+  <p>‎ </p>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C380B253.tmp" height="232.1" src="assets/images/Month-End Close (RAI US)_files/image2.png" width="597.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15"> Cliquez sur <span style="font-weight:bold;">Sauvegarder</span>. </li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez ouvert ou clôturé une période de diffusion fiscale.</p>
+  <p> </p>
+  <h2 class="Heading2">Transactions intersociétés</h2>
+  <p>Consultez la section <span style="font-weight:bold;font-style:italic">Comptabilité intersociétés </span>pour connaître les procédures étapes par étapes spécifiques de diffusion de journaux intersociétés.</p>
+  <p>L’annexe à cette section inclut des exigences d’écriture comptable spécifiques en fonction du type de transaction intersociétés traitée.</p>
+  <h2 class="Heading2">Journaux généraux en fin de mois</h2>
+  <h2 class="Heading2">Journaux périodiques de diffusion</h2>
+  <p class="Heading3">Les journaux périodiques permettent de diffuser des frais mensuels, tels que le loyer prépayé, l’assurance prépayée, etc.</p>
+  <p>Consultez la section Saisie et téléchargement de journal et connaître les procédures étapes par étapes spécifiques de diffusion de journaux.</p>
+  <p>Il existe différents noms de journaux pour les différents frais périodiques. Consultez le tableau Nom de journal dans le modèle du Journal Dynad pour voir la bonne sélection.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">vous n’avez pas besoin d’attendre la fin du mois pour saisir/diffuser des frais périodiques, c.-à-d., si vous connaissez l’allocation mensuelle, vous pouvez la saisir avant la fin du mois.</span></h6>
+  <h3 class="Heading3"> </h3>
+  <h2 class="Heading2">Diffuser des saisies d’allocation d’amortissement</h2>
+  <p class="Heading3"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Consultez la section suivante pour connaître les procédures étape par étape de diffusion de journaux.</span></span></span></p>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Téléchargement et écritures du journal</b></span></span></span></p>
+  <ul>
+    <li> <span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b style="margin-left: 0px">Procédure : </b></span></span></span></span><span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Utilisation du modèle de Journal Dynad pour télécharger des écritures de journal</span></span></span></span> </li>
+    <li> <span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Procédure : </b></span></span></span></span><span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Journaux périodiques de diffusion</span></span></span></span> </li>
+  </ul>
+  <h2 class="Heading2">Diffuser les écrites d’allocation de paie</h2>
+  <p class="Heading3"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Consultez la section suivante pour connaître les procédures étape par étape de diffusion de journaux.</span></span></span></p>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Téléchargement et écritures du journal</b></span></span></span></p>
+  <ul>
+    <li> <span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b style="margin-left: 0px">Procédure : </b></span></span></span></span><span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Utilisation du modèle de Journal Dynad pour télécharger des écritures de journal</span></span></span></span> </li>
+  </ul>
+  <h2 class="Heading2">Diffuser les saisies d’allocation de coût de programme partagé</h2>
+  <p class="Heading3"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Consultez la section suivante pour connaître les procédures étape par étape de diffusion de journaux.</span></span></span></p>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Téléchargement et écritures du journal</b></span></span></span></p>
+  <ul>
+    <li> <span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b style="margin-left: 0px">Procédure : </b></span></span></span></span><span style="margin-left:0px;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Utilisation du modèle de Journal Dynad pour télécharger des écritures de journal</span></span></span></span> </li>
+  </ul>
+  <h2 class="Heading2">Ajustements en fin de mois</h2>
+  <h2 class="Heading2">Annuler une écriture de GL</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour annuler des écritures erronées dans le GL et les enregistrer dans les écritures adéquates. </p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">seules les transactions provenant du GL peuvent être annulées dans le GL ; les transactions diffusées à un livre auxiliaire doivent être annulées dans ce livre auxiliaire.</span></h6>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Après avoir exécuté la balance générale des comptes, double-cliquez sur la transaction dans la colonne Solde de clôture à annuler. </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Annuler la transaction</span>. </li>
+  </ol>
+  <p><img alt="Photo 19" height="338.8" src="assets/images/Month-End Close (RAI US)_files/image3.png" width="696.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Dans l’écran <span style="font-weight:bold;">Annulation de transaction</span>, saisissez la <span style="font-weight:bold;">Date de diffusion d’annulation</span> </li>
+    <li> Cliquez sur <span style="font-weight:bold;">OK</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\257AB711.tmp" height="207.9" src="assets/images/Month-End Close (RAI US)_files/image4.png" width="292.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Cliquez sur <span style="font-weight:bold;">Suivi annulé</span>. Les transactions initiales et annulées s’affichent. </li>
+    <li> Fermez la transaction en sélectionnant <span style="font-weight:bold;">X</span> en haut à droite de l’écran une fois l’examen terminé. </li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>La transaction est annulée et examinée. </p>
+  <p><img alt="Photo 20" height="379.5" src="assets/images/Month-End Close (RAI US)_files/image6.png" width="696.0"/></p>
+  <h2 class="Heading2">Diffuser les écritures d’ajustement de projet</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour recoder une transaction d’un projet à un autre.</p>
+  <p>Le fait d’ajuster les transactions de projet dans le livre auxiliaire du projet ajuste automatiquement la diffusion du grand livre correspondant.</p>
+  <p>Il existe deux méthodes pour ajuster les transactions de projet dans Integra.</p>
+  <ol>
+    <li> En ajustant les transactions par projet. </li>
+    <li> En ajustant les transactions par lot. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">seuls les utilisateurs ayant l’accès de sécurité adéquat peuvent utiliser le formulaire d’ajustement de projet dans Integra. </span><span style="font-weight:normal;">Cela est dû au fait que l’ajustement de projet n’a aucun flux de travail.</span></h6>
+  <p class="Heading3">Consultez la section suivante pour connaître les procédures étape par étape de diffusion de journaux.</p>
+  <ul>
+    <li> <span style="font-weight:bold;">Téléchargement et écritures du journal</span>
+      <ul>
+        <li> <span style="font-weight:bold;">Procédure</span> : Utilisation du modèle Dynad pour télécharger des écritures de journal </li>
+        <li> <span style="font-weight:bold;">Procédure</span> : Enregistrement des écritures de journal </li>
+      </ul>
+    </li>
+  </ul>
+  <h2 class="Heading2">Diffuser les ajustements de stocks</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour allouer des valeurs d’ajustement de stocks afin de mettre à jour les comptes pertinents du grand livre.</p>
+  <p>Par exemple, un ajustement des stocks déjà effectué par la chaîne logistique pour des stocks endommagés doit être alloué à un compte de GL d’assurance.</p>
+  <p>Consultez le guide d’utilisation suivant pour connaître les procédures étape par étape de diffusion de journaux.</p>
+  <ul>
+    <li> <span style="font-weight:bold;">Téléchargement et écritures du journal</span>
+      <ul>
+        <li> <span style="font-weight:bold;">Procédure</span> : Utilisation du modèle Dynad pour télécharger des écritures de journal </li>
+      </ul>
+    </li>
+  </ul>
+  <h2 class="Heading2">Vérifier les journaux non diffusés pour la période de livre en cours</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour afficher les journaux non diffusés à examiner et traiter, selon les besoins. P. ex., diffuser les journaux applicables.</p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Dans le tableau de bord d’Integra, accédez à <span style="font-weight:bold;">Grand livre &gt; Écritures de journal &gt; Journaux généraux</span>. </li>
+  </ol>
+  <p><img alt="Photo 5" height="254.7" src="assets/images/Month-End Close (RAI US)_files/image7.png" width="696.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Sous l’en-tête <span style="font-weight:bold;">Afficher</span>, la valeur par défaut est <span style="font-weight:bold;">Non diffusé</span>. Ce sont les valeurs à examiner pour déterminer ce qui aurait été diffusé au cours du mois clôturé. </li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li> Cette valeur peut être modifiée sur Diffusé ou Tout en cliquant sur la flèche du menu déroulant. </li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Pour déterminer la date de saisie d’un journal, personnalisez la grille du tableau en ajoutant la colonne <span style="font-weight:bold;">Date et heure de création</span>. </li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li> Effectuez un clic droit sur n’importe quel en-tête de colonne et sélectionnez <span style="font-weight:bold;">Ajouter des colonnes</span>. </li>
+    <li> Dans le filtre, saisissez <span style="font-weight:bold;">Créé</span>. </li>
+    <li> Sélectionnez <span style="font-weight:bold;">Date et heure de création</span> dans la liste de sélection et insérez cette valeur dans le tableau. La colonne sera ajoutée à la fin des colonnes actuelles. </li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Examinez la liste des journaux non diffusés pendant la période en cours et agissez selon les besoins, p. ex., diffuser les journaux applicables. </li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez identifié les journaux non diffusés pour la période de clôture en fin de mois.</p>
+  <h2 class="Heading2">Comptabilisation de revenu (département Finances du siège social uniquement)</h2>
+  <p>La comptabilisation de revenu est réalisée par le siège social. Les bureaux de la RAI sont responsables de calculer l’ICR (recouvrement des coûts indirects), de préparer le journal des frais et de soumettre le journal au siège social afin qu’il soit téléchargé et diffusé.</p>
+  <p>L’ICR est calculé et préparé dans un modèle de frais hors d’Integra. Vous pouvez télécharger ce modèle à l’endroit suivant.</p>
+  <p>Deux méthodes sont disponibles pour télécharger les écritures d’ICR :</p>
+  <ol>
+    <li> en téléchargeant des écritures en masse à l’aide du Connecteur de données (recommandé lorsqu’il y a plus de 10 écritures. </li>
+    <li> en saisissant des écritures d’ICR directement dans Integra (option à utiliser lorsqu’il y a moins de 10 écritures) </li>
+  </ol>
+  <h2 class="Heading2">Télécharger des écritures en masse du modèle de journal d’ICR via le Connecteur de données (département Finances du siège social uniquement)</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour utiliser le Connecteur de données afin de télécharger en masse des écritures d’ICR dans Integra.</p>
+  <p>Cela est uniquement effectué par le département Finances du siège social.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <p>Le modèle de frais d’ICR a été complété.</p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez aux modules <span style="font-weight:bold;">Gestion de projet et comptabilité &gt; Journaux &gt; Frais</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C874A6C6.tmp" height="283.4" src="assets/images/Month-End Close (RAI US)_files/image8.png" width="675.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Dans le menu en haut, cliquez sur <span style="font-weight:bold;">Ouvrir dans Excel</span> et cliquez sur <span style="font-weight:bold;">OK</span>. </li>
+    <li> Cliquez sur le fichier Excel pour l’ouvrir.   </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">si vous utilisez le Connecteur de données pour la première fois, vous devrez installer l’application dans votre navigateur. </span><span style="font-weight:normal;">Vous devrez aussi vous connecter à l’aide de vos identifiants de connexion à l’IRC.</span></h6>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\865AA6C4.tmp" height="327.1" src="assets/images/Month-End Close (RAI US)_files/image9.png" width="675.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Activez le nombre de lignes requises pour copier les données depuis le Modèle de frais d’ICR.   </li>
+  </ol>
+  <p><img alt="Photo 77" height="308.4" src="assets/images/Month-End Close (RAI US)_files/image10.png" width="684.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Allez à droite du bord, maintenez enfoncé et faites glisser vers le bas à l’aide du bouton gauche de votre souris. Relâchez la bouton gauche de la souris. Toutes les lignes devraient être activées. Cela signifie que vous pouvez accéder à certaines données directement depuis Integra en cliquant dans une cellule activée.  </li>
+    <li> Dans les cellules actives, copiez et collez la « valeur spéciale » dans chaque colonne correspondante.  </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Publier</span>.   </li>
+  </ol>
+  <p><img alt="Photo 79" height="326.1" src="assets/images/Month-End Close (RAI US)_files/image11.png" width="681.1"/> ‎</p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8"> Accédez aux modules <span style="font-weight:bold;">Gestion de projet et comptabilité &gt; Journaux &gt; Frais</span>. </li>
+  </ol>
+  <p><img alt="Photo 74" height="308.6" src="assets/images/Month-End Close (RAI US)_files/image12.png" width="689.0"/> ‎</p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9"> Sélectionnez votre journal et cliquez sur <span style="font-weight:bold;">Lignes </span>en haut pour afficher les détails des lignes.  </li>
+    <li> Dans le menu en haut, cliquez sur <span style="font-weight:bold;">Valider</span> pour vérifier s’il y a des erreurs. </li>
+    <li> Dans la fenêtre contextuelle <span style="font-weight:bold;">Vérifier le journal</span>, cliquez sur <span style="font-weight:bold;">OK </span>pour continuer.  </li>
+  </ol>
+  <p><img alt="Photo 76" height="274.4" src="assets/images/Month-End Close (RAI US)_files/image13.png" width="694.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12"> S’il n’y a pas d’erreurs, un message s’affiche dans un ruban bleu en haut de la page.  </li>
+    <li> Dans le menu en haut de la page, cliquez sur <span style="font-weight:bold;">Diffuser</span>. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Notes</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">
+      <br/>
+    </span><span style="font-weight:normal;"> lorsque vous diffusez un journal de frais, il n’est pas diffusé au Grand livre, mais à un livre auxiliaire. </span><span style="font-weight:normal;">Le journal de frais sera diffusé au Grand livre lors de la comptabilisation du revenu. </span><span style="font-weight:normal;">
+      <br/>
+    </span><span style="font-weight:normal;">
+      <br/>
+    </span><span style="font-weight:normal;"> Le journal de frais n’utilise pas de flux de travail ; il est basé sur l’accès de sécurité attribué à un individu dans le système. </span></h6>
+  <p> </p>
+  <h2 class="Heading2">Saisir le Journal de frais d’ICR directement dans Integra (département Finances du siège social uniquement)</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour saisir des journaux de frais individuels dans Integra.</p>
+  <p>Cela est uniquement effectué par le département Finances du siège social.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <p>Le modèle de frais d’ICR a été complété.</p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez aux modules <span style="font-weight:bold;">Gestion de projet et comptabilité &gt; Journaux &gt; Frais</span>. </li>
+  </ol>
+  <p><img alt="Photo 23" height="309.0" src="assets/images/Month-End Close (RAI US)_files/image14.png" width="690.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Dans le menu en haut de la page, cliquez sur <span style="font-weight:bold;">Nouveau</span>. </li>
+  </ol>
+  <p>‎
+    <br/>
+    ‎
+  </p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Sélectionnez la nouvelle ligne ajoutée et cliquez sur <span style="font-weight:bold;">Lignes</span> dans le menu en haut de la page. </li>
+  </ol>
+  <p><img alt="Photo 37" height="236.2" src="assets/images/Month-End Close (RAI US)_files/image18.png" width="689.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Dans le menu en haut de la page, cliquez sur <span style="font-weight:bold;">Nouveau </span>pour ajouter des lignes au journal. </li>
+  </ol>
+  <p><img alt="Photo 45" height="239.7" src="assets/images/Month-End Close (RAI US)_files/image20.png" width="693.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Renseignez les champs suivants de la ligne de facture fournisseur :  </li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:695.3px">
+      <colgroup>
+        <col style="width:138px"/>
+        <col style="width:557.33333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Date du projet</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Sélectionnez la date de diffusion.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>ID de projet</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Saisissez le code de projet D1.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Catégorie</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Saisissez le code D2 (catégorie de projet) correspondant au code D1.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ressource</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ne renseignez pas ce champ.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Description</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Saisissez une description.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Devise des ventes</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ne modifiez pas ce champ.</p>
+            <p>Cette valeur indique automatiquement par défaut la devise contractuelle du projet lorsque vous sélectionnez votre ID de projet.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Prix de vente</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Saisissez le montant des frais.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Propriété de la ligne</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>La valeur par défaut est Facturable.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Objectif</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ne renseignez pas ce champ.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p><img alt="Photo 48" height="307.3" src="assets/images/Month-End Close (RAI US)_files/image21.png" width="696.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> Dans le menu en haut de la page, cliquez sur <span style="font-weight:bold;">Aspects financiers.</span> </li>
+  </ol>
+  <p><img alt="Photo 49" height="266.0" src="assets/images/Month-End Close (RAI US)_files/image22.png" width="696.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"> Renseignez les aspects financiers requis et cliquez sur <span style="font-weight:bold;">OK</span>. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">certains aspects financiers peuvent être indiqués par défaut en fonction des paramètres appliqués dans le formulaire du projet.</span></h6>
+  <p><img alt="Photo 50" height="213.0" src="assets/images/Month-End Close (RAI US)_files/image23.png" width="682.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8"> Dans le menu en haut, cliquez sur <span style="font-weight:bold;">Valider</span> pour vérifier s’il y a des erreurs. </li>
+  </ol>
+  <p><img alt="Photo 55" height="307.3" src="assets/images/Month-End Close (RAI US)_files/image24.png" width="686.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9"> Dans la fenêtre contextuelle <span style="font-weight:bold;">Vérifier le journal</span>, cliquez sur <span style="font-weight:bold;">OK </span>pour continuer.  </li>
+  </ol>
+  <p><img alt="Photo 63" height="275.0" src="assets/images/Month-End Close (RAI US)_files/image25.png" width="696.0"/></p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">s’il n’y a pas d’erreurs, un message s’affiche dans un ruban bleu en haut de la page. </span></h6>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10"> Dans le menu en haut de la page, cliquez sur <span style="font-weight:bold;">Diffuser</span>. </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">lorsque vous diffusez un journal de frais, il n’est pas diffusé au Grand livre, mais à un livre auxiliaire. </span><span style="font-weight:normal;">Il sera diffusé au Grand livre lors de la comptabilisation du revenu. </span><span style="font-weight:normal;">Le journal de frais n’utilise pas de flux de travail ; il est basé sur l’accès de sécurité attribué à un individu dans le système.. </span></h6>
+  <h3 class="Heading3"> </h3>
+  <h2 class="Heading2">Rapports de rapprochement</h2>
+  <p>Le rapprochement inclut trois étapes clés.</p>
+  <ol>
+    <li> Exécution de rapports de rapprochement pour identifier les écarts. </li>
+    <li> Utilisation d’outils d’analyse d’Integra pour trouver la cause de l’écart. </li>
+    <li> Traiter les écritures de journal pour corriger les écarts. </li>
+  </ol>
+  <p>Ce thème identifie les rapports de rapprochement disponibles dans Integra, PowerBI ou Excel.</p>
+  <h2 class="Heading2">Tableau de référence des rapports de rapprochement</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour exécuter différents rapports de rapprochement afin d’identifier les écarts.</p>
+  <p>Les écarts sont souvent dus à une transaction diffusée au Grand livre au lieu du livre auxiliaire. Indiquez la date de début et la date de fin et assurez-vous de sélectionner la devise de comptabilité dans le champ Devise. Exécutez le rapport et examinez la colonne des écarts. Elle doit toujours indiquer zéro. Si ce n’est pas le cas, découvrez la raison et diffusez les écritures d’ajustement nécessaires. </p>
+  <p>Voici une liste des rapports de rapprochement disponibles dans Integra, PowerBI ou Excel et les chemins d’accès au module correspondant.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:719.7px">
+      <colgroup>
+        <col style="width:231.73333333333333333333333333px"/>
+        <col style="width:487.93333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Rapport de rapprochement</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Chemin d’accès</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Client/livre</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Comptes clients <span>&gt;</span> Questions et rapports <span>&gt;</span> Clients <span>&gt;</span> Rapport de rapprochement client/livre</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Fournisseur/livre</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Comptes fournisseurs <span>&gt;</span> Questions et rapports <span>&gt;</span> Rapports fournisseur <span>&gt;</span> Rapprochements fournisseur/livre</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Projet/livre</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Grand livre <span>&gt;</span> Questions et rapports <span>&gt;</span> Rapports de consolidation <span>&gt;</span> Rapprochements GL/projet </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Banque/livre</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Suite d’automatisation de trésorerie <span>&gt;</span> Questions <span>&gt;</span> Banque <span>&gt;</span> Rapprochements de relevés Banque/GL</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Banque automatisée/manuelle</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Comptes clients <span>&gt;</span> Questions et rapports <span>&gt;</span> Clients <span>&gt;</span> Rapport de rapprochement client/livre</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Rapprochements de bilan (pour les comptes de solde n’appartenant à aucun livre auxiliaire)</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+            <p>Consultez la liste des comptes principaux dans la Liste de vérification de clôture en fin de mois</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>% d’allocations d’avantages sociaux au personnel – Charges salariales</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ce rapport est disponible dans PowerBI.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <h2 class="Heading2">Questions et rapports d’analyse des écarts</h2>
+  <p>Les questions principales suivantes sont utilisées de façon répétitive et itérative dans Integra pour analyser les données et corriger les écarts à des fins de clôture en fin de mois. Les données peuvent être exportées vers Excel à partir de ces questions pour faciliter l’investigation.</p>
+  <ul>
+    <li> Balance générale des comptes </li>
+    <li> Transactions de pièces </li>
+    <li> Explorateur de comptabilité source (ASE) </li>
+    <li> Piste d’audit </li>
+    <li> Retrouver les écritures initiales </li>
+  </ul>
+  <h2 class="Heading2">Exécuter un rapport de balance générale des comptes</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>La balance générale des comptes est une page de listes montrant tous les soldes d’un compte et/ou les aspects financiers sur une période donnée. Lorsque la balance générale des comptes est ouverte pour la première fois, elle est rafraîchie avec les soldes correspondant aux dates et propriétés configurées dans les paramètres. Les propriétés pouvant être modifiées dans les paramètres incluent les dates, la couche de diffusion, le mode d’affichage d’ouverture des soldes, et les types de transaction de clôture à afficher. </p>
+  <p>Lorsque vous modifiez les paramètres, les soldes sont rafraîchis. Vous pouvez aussi choisir les aspects pour lesquels vous voulez afficher les soldes et d’afficher chacun des aspects dans une colonne distincte. Vous pouvez aussi explorer les soldes pour voir les transactions composant le solde. </p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez à <span style="font-weight:bold;">Grand livre &gt; Questions et rapports &gt; Balance générale des comptes</span>.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\DD3EEEA9.tmp" height="207.9" src="assets/images/Month-End Close (RAI US)_files/image26.png" width="462.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Dans le champ <span style="font-weight:bold;">Date de début</span>, saisissez la date de début du solde mensuel.  </li>
+    <li> Dans le champ <span style="font-weight:bold;">Date de fin</span>, saisissez la date de fin du solde mensuel.  </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Calculer les soldes</span>.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\1061AF9F.tmp" height="358.1" src="assets/images/Month-End Close (RAI US)_files/image27.png" width="478.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Une fois la balance générale des comptes terminée, vous pouvez double-cliquer sur les soldes pour voir les transactions composant le solde.  </li>
+    <li> Fermez la transaction en sélectionnant <span style="font-weight:bold;">X</span> en haut à droite de l’écran une fois l’examen terminé. </li>
+  </ol>
+  <p><img alt="Photo 29" height="397.6" src="assets/images/Month-End Close (RAI US)_files/image29.png" width="696.0"/></p>
+  <p><img alt="Photo 30" height="180.0" src="assets/images/Month-End Close (RAI US)_files/image30.png" width="696.0"/></p>
+  <h3 class="Heading3">Résultat</h3>
+  <p>La balance générale des comptes a été générée. </p>
+  <h2 class="Heading2">Exportez la balance générale des comptes vers Microsoft Excel </h2>
+  <ol class="Decimal">
+    <li> Dans l’écran <span style="font-weight:bold;">Balance générale des comptes</span>, cliquez sur le bouton Microsoft et sélectionnez <span style="font-weight:bold;">EXPORTER VERS EXCEL &gt; Balance générale des comptes</span>.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\160C63FD.tmp" height="97.7" src="assets/images/Month-End Close (RAI US)_files/image31.png" width="627.7"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2"> Cliquez sur <span style="font-weight:bold;">Ouvrir </span>pour ouvrir le fichier Excel sur votre ordinateur ou cliquez sur <span style="font-weight:bold;">Sauvegarder </span>pour le sauvegarder dans votre ordinateur.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\9C8E5413.tmp" height="70.1" src="assets/images/Month-End Close (RAI US)_files/image32.png" width="627.7"/></p>
+  <p>La balance générale des comptes peut être analysée dans Excel. Elle répertorie le nom de chaque compte de grand livre nominal et la valeur de ce solde nominal de grand livre nominal, avec un solde débiteur ou créditeur, ainsi qu’un solde de clôture :  </p>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\996DBA99.tmp" height="239.3" src="assets/images/Month-End Close (RAI US)_files/image33.png" width="627.7"/></p>
+  <h2 class="Heading2">Afficher des transactions de pièces</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Pour obtenir des détails sur les transactions affichées dans le système, nous utilisons des transactions de pièce dans le Grand livre. Cela extrait toutes les transactions que vous pouvez filtrer par date, journal, numéro de pièce et compte principal. Les transactions de pièce peuvent être extraites, quelle que soit la plage de dates.  </p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez aux modules <span style="font-weight:bold;">Grand livre &gt; Questions et rapports &gt; Transactions de pièces</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\179F41DD.tmp" height="236.3" src="assets/images/Month-End Close (RAI US)_files/image34.png" width="577.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2"> Si vous voulez extraire toutes les transactions, ne renseignez aucun champ. Sinon, renseignez un détail spécifique dans la colonne des critères que vous connaissez concernant la transaction à télécharger.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\173F4CF3.tmp" height="368.1" src="assets/images/Month-End Close (RAI US)_files/image35.png" width="508.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Résultats d’examen. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\C2B28679.tmp" height="270.5" src="assets/images/Month-End Close (RAI US)_files/image36.png" width="620.3"/></p>
+  <h2 class="Heading2">Exécuter un Explorateur de comptabilité source</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Une autre méthode utilisée pour obtenir les détails d’une transaction à partir du système consiste à utiliser l’explorateur de comptabilité source. Tout comme la balance générale des comptes, cela affiche les transactions uniquement limitées à une année civile.   </p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez aux modules <span style="font-weight:bold;">Grand livre &gt; Questions et rapports &gt; Explorateur de comptabilité source</span>. </li>
+    <li> Dans le menu <span style="font-weight:bold;">Mettre à jour</span>, sélectionnez la plage de dates.  </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Mettre à jour</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\F9BFA7EF.tmp" height="288.0" src="assets/images/Month-End Close (RAI US)_files/image37.png" width="600.2"/></p>
+  <p>Les transactions sont affichées automatiquement en fonction du paramètre par défaut dans le champ Aspects financiers.  </p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Cliquez sur le champ <span style="font-weight:bold;">Aspects financiers</span> pour sélectionner la combination d’aspects concernés. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\F54126D5.tmp" height="202.0" src="assets/images/Month-End Close (RAI US)_files/image38.png" width="564.3"/></p>
+  <p>Vous pouvez exporter vers Excel comme indiqué précédemment dans l’exemple de balance générale des comptes. </p>
+  <h2 class="Heading2">Voir le rapport de piste d’audit dans le Grand livre</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour voir la personne ayant diffusé une transaction spécifique.</p>
+  <p>Integra a la capacité, à tout moment, de savoir que vous avez diffusé la transaction dans le système. Il existe deux méthodes pour qui a diffusé la transaction :  </p>
+  <ol>
+    <li> le rapport de piste d’audit dans le module Grand livre </li>
+    <li> la méthode de transaction  </li>
+  </ol>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span></span><span style="font-weight:normal;"> : </span><span style="font-weight:normal;">vous pouvez aussi voir la piste d’audit depuis la balance générale des comptes transaction en cliquant sur le menu Piste d’audit en haut de la page.</span></h6>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Accédez à <span style="font-weight:bold;">Grand livre &gt; Questions et rapports &gt; Piste d’audit</span>.  </li>
+    <li> Un liste des enregistrements s’ouvre. La colonne <span style="font-weight:bold;">Créé par </span>montre qui a diffusé la transaction.  </li>
+  </ol>
+  <p>‎</p>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\AEDD8E7F.tmp" height="272.1" src="assets/images/Month-End Close (RAI US)_files/image39.png" width="621.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3"> Si vous voulez voir les détails des transactions, sélectionnez une seule transaction.  </li>
+    <li> Cliquez sur <span style="font-weight:bold;">Transactions de pièces</span>.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\A45A1BE5.tmp" height="246.3" src="assets/images/Month-End Close (RAI US)_files/image40.png" width="531.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"> Résultats d’examen. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\8EB41C3B.tmp" height="182.0" src="assets/images/Month-End Close (RAI US)_files/image41.png" width="551.8"/></p>
+  <h2 class="Heading2">Retrouver les documents initiaux et les pièces associées des écritures initiales</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Dans Integra, vous pouvez retrouver la documentation initiale et les pièces associées d’une transaction.</p>
+  <p>Vous pouvez visualiser les écritures de journal initiales via les transactions suivantes :</p>
+  <ul>
+    <li> Transactions de pièces </li>
+    <li> Explorateur de comptabilité source </li>
+    <li> Balance générale des comptes </li>
+  </ul>
+  <p>
+    <br/>
+    ‎La fonction de pièces associées permet de retrouver l’origine de transactions intersociétés. Cela vous permet de voir l’entité juridique d’origine d’une écriture.
+  </p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li> Connectez-vous à Integra et accédez à <span style="font-weight:bold;">Transactions de pièces</span> dans le module <span style="font-weight:bold;">Grand livre</span>.  </li>
+    <li> Dans l’écran qui s’ouvre, sélectionnez la transaction dont vous voulez retrouver l’origine.  </li>
+    <li> Examinez la barre d’outils pour trouver les fonctions de suivi.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\BB6DDD5F.tmp" height="279.7" src="assets/images/Month-End Close (RAI US)_files/image42.png" width="617.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"> Cliquez sur le document initial dans les fonctions susmentionnées.   </li>
+    <li> Dans la fenêtre qui s’affiche, cliquez sur <span style="font-weight:bold;">Voir les détails</span>. </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\2CF6ADC5.tmp" height="246.3" src="assets/images/Month-End Close (RAI US)_files/image43.png" width="591.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"> La fenêtre qui s’ouvre affiche une pièce de journal en ligne. Cliquez sur <span style="font-weight:bold;">Pièce </span>pour voir le journal complet des écritures  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\B7CE91B.tmp" height="167.8" src="assets/images/Month-End Close (RAI US)_files/image44.png" width="525.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"> Voir l’écriture initiale.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\E43CFCE1.tmp" height="210.3" src="assets/images/Month-End Close (RAI US)_files/image45.png" width="490.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 7;" value="8"> Pour savoir si la transaction provient d’une autre entité juridique, la fonction Pièces associées doit être active. Après avoir sélectionné une transaction, examinez la barre d’outils pour voir si la fonction <span style="font-weight:bold;">Pièces associées</span> est active. Sinon, cliquez dessus pour ouvrir un tableau.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\1F753297.tmp" height="256.3" src="assets/images/Month-End Close (RAI US)_files/image46.png" width="564.3"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 8;" value="9"> Le tableau qui s’ouvre affiche toutes les entités juridiques listées. Si vous voulez voir la pièce de journal, cliquez sur <span style="font-weight:bold;">Pièce</span>.  </li>
+  </ol>
+  <p><img alt="C:\Users\shannont\AppData\Local\Microsoft\Windows\INetCache\Content.MSO\84AE0FBD.tmp" height="283.8" src="assets/images/Month-End Close (RAI US)_files/image47.png" width="620.3"/></p>
+  <h2 class="Heading2">Tableau de référence des rapports de clôture en fin de mois</h2>
+  <p>Les rapports suivants doivent être générés une fois la clôture en fin de mois terminée.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:683.7px">
+      <colgroup>
+        <col style="width:231.73333333333333333333333333px"/>
+        <col style="width:451.93333333333333333333333333px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Rapport</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Lieu</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Balance générale des comptes finale</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dans Integra, accédez à Grand livre <span>&gt;</span> Questions et rapports <span>&gt;</span> Balance générale des comptes.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Rapport des revenus et des dépenses</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ce rapport existe dans PowerBI.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Projet BvA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ces rapports existent dans PowerBI.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Rapport FM01 équivalent</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Ce rapport existe dans PowerBI.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2">Annexe</h2>
+  <h2 class="Heading2">Noms et utilisation du journal Integra</h2>
+  <p>Des notes supplémentaires ont été ajoutées à certains noms de journal à des fins de clarification.</p>
+  <p>Insérez le tableau une fois finalisé.</p>
+  <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTMLf648ca3.PNG" height="575.1" src="assets/images/Month-End Close (RAI US)_files/image48.png" width="696.0"/></p>
+  <h2 class="Heading2">Liste de vérification de clôture en fin de mois (Bureaux RAI États-Unis)</h2>
+  <p>Cette liste de vérification indique les tâches clés et les dates requises de la clôture financière en fin de mois. Pour obtenir des instructions détaillées sur l’exécution des transactions système, consultez le guide de formation suivant sur RescueNet :</p>
+  <ul>
+    <li> Clôture en fin de mois (RAI) </li>
+  </ul>
+  <p><span style="font-weight:bold;">Dates d’échéance mensuelles</span></p>
+  <p>Le tableau suivant répertorie les dates d’échéance des tâches de clôture en fin de mois. Des détails supplémentaire à ce sujet sont indiqués après le tableau.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:654.0px">
+      <colgroup>
+        <col style="width:192px"/>
+        <col style="width:462px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Date d’échéance</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tâche</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Dernier jour de chaque mois</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Diffusions de livres auxiliaires</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Le 8e jour de chaque mois</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tâches de clôture intersociétés</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Le 12e jour de chaque mois</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Diffusions mensuelles de journaux généraux</p>
+            <p>Note : certains de ces journaux peuvent être diffusés au cours du mois.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h4 class="Heading4">Diffuser des transactions dans des modules de livres auxiliaires</h4>
+  <ul>
+    <li> <span style="font-weight:bold;">Gestion des dépenses </span>- traiter et diffuser l’ensemble des avances sur frais de déplacement et des rapports de dépenses approuvés (y compris les liquidations de carte de crédit et les TER) </li>
+    <li> <span style="font-weight:bold;">Comptes fournisseurs</span> - Traiter l’ensemble des factures et paiements fournisseur. </li>
+    <li> <span style="font-weight:bold;">Comptes clientes </span>- Comptabiliser l’ensemble des reçus et dépôts de fonds. </li>
+    <li> <span style="font-weight:bold;">Gestion des comptes de caisse et bancaires </span>– Diffuser les frais directs, passez en écritures les transactions bancaires non diffusées en fonction des rapprochements bancaires complets mensuels précédents. </li>
+    <li> <span style="font-weight:bold;">Immobilisations </span>– Générer une proposition d’amortissement </li>
+    <li> <span style="font-weight:bold;">Gestion des stocks</span> – Toutes les transactions de prélèvement, d’emballage et d’expédition (à l’exception des contributions « en nature ») </li>
+  </ul>
+  <h4 class="Heading4">Réaliser une comptabilité intersociétés</h4>
+  <ul>
+    <li> Diffuser des écritures intersociétés à A/c 29400 avant le 8e jour de chaque mois pour les bureaux RAI utilisant toujours SUN </li>
+    <li> Diffuser des écritures intersociétés au siège social – 9IRC </li>
+    <li> Déplacer des écritures intersociétés au cours de la période actuelle entre le Grand livre et les projets pertinents </li>
+    <li> Préparer et diffuser les journaux généraux mensuels Diffuser le loyer prépayé, l’assurance prépayée, les charges reportées, etc. </li>
+    <li> Diffuser les charges à payer (au besoin) </li>
+    <li> Diffuser une allocation d’amortissement. </li>
+    <li> Diffuser une contribution en nature </li>
+    <li> Diffuser des ajustements de stocks (au besoin) </li>
+    <li> Diffuser les écritures d’ajustement de projet requises </li>
+  </ul>
+  <h4 class="Heading4">Diffuser des journaux d’allocation</h4>
+  <ul>
+    <li> Diffuser des écritures d’allocation de paie </li>
+    <li> Diffuser des écritures d’allocation de coût de programme partagé </li>
+  </ul>
+  <h4 class="Heading4">Vérifier l’exécution des tâches</h4>
+  <ul>
+    <li> Tous les journaux standards sont diffusés </li>
+    <li> Tous les journaux non requis sont supprimés </li>
+    <li> Tous les journaux non diffusés en cours sont examinés, modifiés et/ou diffusés. </li>
+  </ul>
+  <h4 class="Heading4">Calculer les écritures d’ICR, diffuser un journal et le soumettre au siège social pour qu’il soit téléchargé</h4>
+  <ul>
+    <li> Une fois toutes les tâches précédentes susmentionnées exécutées, calculez les écritures d’ICR et renseignez le journal </li>
+    <li> Soumettez le journal au département Finances du siège social pour qu’il soit téléchargé </li>
+  </ul>
+  <h4 class="Heading4">Effectuer des rapprochement entre le livre auxiliaire et le grand livre</h4>
+  <ul>
+    <li> Générer un rapport de rapprochement entre le client et le grand livre. </li>
+    <li> Générer un rapport de rapprochement entre le fournisseur et le grand livre. </li>
+    <li> Générer un rapport de rapprochement entre le projet et le grand livre. </li>
+    <li> Générer un rapport de rapprochement entre la banque et le grand livre. </li>
+    <li> Diffuser toutes les écritures d’ajustement pour s’assurer que les soldes du livre auxiliaire et du grand livre sont égaux </li>
+  </ul>
+  <h4 class="Heading4">Réaliser tous les autres rapprochements de comptes</h4>
+  <ul>
+    <li> Réaliser des rapprochements bancaires automatisés ou manuels entre des comptes bancaires. </li>
+    <li> Réaliser des rapprochements de bilans et diffuser toutes les écritures d’ajustement à rapprocher. </li>
+    <li> Calculer et rapprocher le % d’allocations d’avantages sociaux au personnel – Charges salariales </li>
+  </ul>
+  <h4 class="Heading4">Générer des rapports une fois la clôture en fin de mois terminée</h4>
+  <ul>
+    <li> Générer une balance générale des comptes finale </li>
+    <li> Générer un rapport des revenus et des dépenses </li>
+    <li> Générer tous les rapports de projet BvA </li>
+    <li> Générer des états financiers finaux à l’aide d’un rapport financier </li>
+    <li> Rapport FM01 équivalent </li>
+  </ul>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

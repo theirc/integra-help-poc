@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "8_1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Previsión de artículos para la creación de pedidos (CRRD)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Previsión de artículos para la creación de pedidos (CRRD)">
+        <span>Previsión de artículos para la creación de pedidos (CRRD)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h1 class="Heading1">Información de proceso empresarial</h1>
+    <ul>
+      <li class="ListParagraph"> CRRD utiliza la previsión de artículos para toda la planificación de adquisición relacionada con el proyecto. </li>
+      <li class="ListParagraph"> Cada proyecto tiene su propia previsión de artículos. </li>
+      <li class="ListParagraph"> Se requiere un línea de previsión de artículos para cada producto (artículos y servicios) que IRC espera adquirir y distribuir durante la vida de un proyecto. </li>
+      <li class="ListParagraph"> Después de la primera carga de la versión en Excel de la previsión de artículos en Integra, los cambios en curso se realizan directamente en Integra. </li>
+      <li class="ListParagraph"> La previsión de artículos es un «documento abierto»; Programas y Cadena de suministro crean y mantienen este documento en colaboración. </li>
+    </ul>
+    <h2 class="Heading2" style="text-align: left">Etapa de aprobación de propuesta/proyecto</h2>
+    <p>Independientemente de la etapa de aprobación de una propuesta/un proyecto, los pasos para rellenar la Plantilla de previsión de artículos son los mismos; la diferencia reside en «cuándo» lo realiza.</p>
+    <ol class="Decimal">
+      <li class="ListParagraph"> <span style="font-weight:bold;">Propuesta enviada a un donante y a la espera de la aprobación del proyecto (muy probable)</span> </li>
+    </ol>
+    <ul class="Decimal" style="margin-left: 40px;">
+      <li class="ListParagraph"> Notificación o carta de intención por escrito recibida del donante </li>
+      <li class="ListParagraph"> Se aplica a proyectos de continuación que se renuevan anualmente (en los que se asigna un nuevo D1 cada año)
+        <ul>
+          <li class="ListParagraph"> Podría ser potencialmente un proyecto de no continuación en el que el donante ha proporcionado notificación verbal. </li>
+        </ul>
+      </li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Se asigna un ID de proyecto/D1, pero no se puede empezar a gastar hasta que se haya recibido la aprobación de la financiación del donante y/o IRC (y el proyecto se haya activado en Integra). </li>
+    </ul>
+    <ol class="Decimal">
+      <li style="counter-reset: item1 1;" value="2"> <span style="font-weight:bold;">El donante ha aprobado la concesión</span> </li>
+    </ol>
+    <ul class="Decimal" style="margin-left: 40px;">
+      <li style="counter-reset: item1 1;" value="2"> Puede haber recibido o no acuerdo de concesión </li>
+    </ul>
+    <h2 class="Heading2">Flujo de procesos - Previsión de artículos a Requerimientos de artículos</h2>
+    <p>A continuación se describen los pasos clave de la previsión de artículos hasta la creación de requerimientos de artículo. Las funciones responsables de cada paso se indican sobre el número del paso.</p>
+    <p><img alt="Imagen 4" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image1.png" width="711.8"/></p>
+    <h2 class="Heading2">Procesamiento de pedidos desde Requerimientos de artículos</h2>
+    <ol class="Decimal">
+      <li class="ListParagraph"> Antes de crear un pedido (PO), Cadena de suministro debe validar que no hay suficiente cantidad disponible<span style="font-weight:bold;color:#FF0000">*</span> (reservada para el proyecto) para satisfacer la cantidad del requerimiento del artículo. <span style="font-weight:bold;color:#FF0000">*</span> </li>
+      <li class="ListParagraph"> Cadena de suministro asigna un proveedor a cada línea de pedido de venta y crea los PO desde las líneas de pedido de venta. (El sistema Integra genera automáticamente una línea de pedido de venta para cada línea de requerimiento de artículo). </li>
+    </ol>
+    <p><span style="font-weight:bold;color:#FF0000">*</span> Si hay exceso de inventario de un artículo que se necesita en otro proyecto, se puede cancelar la reserva de estos artículos en el proyecto con exceso de inventario y transferirse al proyecto que necesita los artículos.</p>
+    <ul>
+      <li> Para obtener las instrucciones para transferir inventario de un proyecto a otro, consulte la sección Gestión del inventario (CRRD). </li>
+    </ul>
+    <h2 class="Heading2">Artículos no adquiridos con la previsión de artículos</h2>
+    <p class="margin-left-0-06in">Los siguientes artículos se adquieren con solicitudes de compra, no con la previsión de artículos.</p>
+    <ul>
+      <li> Activos fijos capitalizados </li>
+      <li> Artículos con fondos no restringidos </li>
+      <li> Costes de programa compartidos. </li>
+    </ul>
+    <p>Para obtener instrucciones sobre cómo procesar este tipo de compras, consulte las siguientes secciones:</p>
+    <ul>
+      <li> <span style="font-style:italic;">Adquisición para confirmar (PR-PO)</span> </li>
+      <li> <span style="font-style:italic;">Gestión de activos fijos</span> </li>
+    </ul>
+    <h2 class="Heading2">Rellenar la plantilla de previsión de artículos</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para recuperar y rellenar la plantilla de previsión de artículos (en formato Excel).</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El proyecto debe haberse aprobado o debe ser «muy probable» que se apruebe. </li>
+      <li class="ListParagraph"> La Alta Dirección debe haber dado el «visto bueno» para comenzar a rellenar la plantilla. </li>
+      <li class="ListParagraph"> Debe haber disponible una copia del presupuesto con las dimensiones financieras correctas. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Recupere la plantilla de previsión de artículos más actual de Box. </li>
+      <li class="ListParagraph"> Rellene todas las columnas obligatorias en la hoja tituladas <span style="font-weight:bold;">Previsiones de artículos</span>. </li>
+    </ol>
+    <p><span style="font-weight:bold;">Aspectos importantes que recordar al rellenar la plantilla:</span></p>
+    <ul>
+      <li class="ListParagraph"> Un usuario debe recuperar siempre la versión más reciente de la plantilla de previsión de artículos. </li>
+      <li class="ListParagraph"> Si hay múltiples fechas «Requerido por» para un producto dado, se crea una línea de previsión de artículos para cada «Requerido por fecha» diferente. </li>
+      <li class="ListParagraph"> Si hay múltiples combinaciones de valores de dimensiones financieras para un producto dado, debe crearse una línea de previsión de artículos para cada combinación diferente de valores de dimensiones financieras. </li>
+      <li class="ListParagraph"> Utilice las listas de selección desplegables para seleccionar datos, si están disponibles. </li>
+      <li class="ListParagraph"> El campo <span style="font-weight:bold;">Nombre de producto</span> contiene un máximo de 100 caracteres. Si se requieren más de 100 caracteres, introduzca la descripción completa en la columna <span style="font-weight:bold;">Descripción </span>. </li>
+      <li class="ListParagraph"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Puede modificar la columna «Precio» para que refleje su precio estimado más reciente para el producto (el equipo de Cadena de suministro puede ofrecer orientación sobre el precio estimado)</span></span></span> </li>
+      <li class="ListParagraph"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">No cambie el valor predeterminado en el </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>campo</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> Unidad de medida de ventas.</span></span></span> </li>
+      <li class="ListParagraph"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Si no se conoce el número de artículo, introduzca </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>999999999</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> como marcador de posición de presupuesto.</span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="color:#c00000">*</span></span></span></span> </li>
+      <li class="ListParagraph"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="margin-left:4px;">Seleccione </span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="margin-left:4px;"><b>999999999</b></span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="margin-left:4px;"> en el campo ID de producto.</span></span></span></span> </li>
+    </ul>
+    <ol>
+      <li class="ListParagraph"> <span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;">Escriba una descripción en el </span></span></span></span></span><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;"><b>campo</b></span></span></span></span></span><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;"> Descripción.</span></span></span></span></span> </li>
+      <li class="ListParagraph"> <span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Introduzca la unidad de medida y precio y otra información obligatoria.</span></span></span></span></span> </li>
+      <li class="ListParagraph"> <span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Pida a sus compañeros de Cadena de suministro que soliciten la creación del nuevo producto  </span></span></span></span></span> </li>
+      <li class="ListParagraph"> <span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:110%"><span style="font-family:Arial,sans-serif">No pueden crearse requerimientos para el artículo 999999999, por lo que este campo necesita actualizarse en un momento dado con el ID de producto real (o múltiples ID de producto en caso necesario).</span></span></span></span></span> </li>
+    </ol>
+    <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:12.0pt; margin-left:63.0pt; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:110%"><span style="font-family:Arial,sans-serif"><span style="color:#c00000">*  </span></span></span></span><span style="font-size:12pt"><span style="line-height:110%"><span style="font-family:Arial,sans-serif"><i style="text-indent: 0px">De forma alternativa, deje esta línea fuera de la plantilla Previsión de artículos hasta el momento en el que haya un número de productos disponible O el personal de Programa tenga información más específica de los productos que desean adquirir.</i></span></span></span></p>
+    <ul>
+      <li> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">La convención de nomenclatura para realizar una carga correcta es </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Previsión de artículos</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>[ID de proyecto]_[entidad informadora]</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">. </span></span></span> </li>
+    </ul>
+    <p style="margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-weight:bold;">Algunos ejemplos son: </span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> «Previsión de artículos DF119_2SLE», «Previsión de artículos DF129_2KEN»</span></span></span></p>
+    <ul>
+      <li> <span style="font-size:12pt"><span style="line-height:110%"><span style="font-family:Arial,sans-serif">Se han desarrollado convenciones de nomenclatura estandarizadas para los productos con el fin de facilitar la búsqueda y la elaboración de informes de forma uniforme.  </span></span></span> </li>
+      <li> <span style="font-size:12pt"><span style="line-height:110%"><span style="font-family:Arial,sans-serif">La creación y actualización de la previsión de artículos normalmente es un proceso iterativo, lo que significa que evolucionará a medida que se identifiquen más detalles sobre las necesidades de adquisición</span></span></span> </li>
+    </ul>
+    <h3 class="Heading3">Resultado</h3>
+    <p>La plantilla de previsión de artículos se ha completado y está lista para cargarse en Integra.</p>
+    <h2 class="Heading2">Cargar la plantilla de previsión de artículos en Box</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para cargar la previsión de artículos completada en Integra.</p>
+    <p>Cadena de suministro realiza este procedimiento.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> Todos los campos obligatorios de la plantilla deben haberse rellenado correctamente </li>
+      <li class="ListParagraph"> La plantilla debe estar guardada en la unidad local </li>
+      <li class="ListParagraph"> El proyecto debe existir en Integra </li>
+      <li class="ListParagraph"> El archivo de la plantilla debe tener un nombre correcto para que pueda cargarse, es decir, con un sufijo de la entidad informadora.
+        <ul>
+          <li class="ListParagraph"> P. ej., «Previsión de artículos DF119_2SLE», «Previsión de artículos DF129_2KEN» </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Abra la página de Box de destino. </li>
+      <li class="ListParagraph"> Copie/cargue el archivo en la ubicación de Box según los procedimientos de carga en Box estándar. </li>
+      <li class="ListParagraph"> Copie/cargue la plantilla completada en el archivo de Box de destino. </li>
+    </ol>
+    <ul style="margin-left: 40px;">
+      <li class="ListParagraph"> Importación previsión artículos ABC_2KEN </li>
+    </ul>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> Verifique que la plantilla se haya cargado correctamente en Integra. </li>
+      <li class="ListParagraph"> Al cabo de unos minutos, verifique que el archivo haya desparecido de la ubicación de Box. Esto indicará que el archivo se ha cargado en Integra. </li>
+      <li class="ListParagraph"> Se enviará un correo electrónico similar al que se muestra a continuación indicando que la carga se ha realizado correctamente. (Y, del mismo, modo si ha fallado.) </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p>La previsión de artículos se ha cargado en Integra, en el módulo de Gestión de proyectos y contabilidad.</p>
+    <h3 class="Heading3">Próximos pasos</h3>
+    <p>Cadena de suministro valida las líneas de previsión de artículos cargadas contrastando con la tabla de restricciones del donante.</p>
+    <p> </p>
+    <h2 class="Heading2">Validar las líneas de previsión de artículos cargadas contrastando con los artículos restringidos del donante</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para validar las líneas de previsión de artículos cargadas contrastando con la tabla de restricciones del donante.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> La plantilla de previsión de artículos debe haberse cargado en Integra o debe haberse añadido manualmente una línea nueva. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión y contabilidad de proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 7" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image2.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el formulario del proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 9" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image3.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 10" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image4.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En la pestaña desplegable <span style="font-weight:bold;">Previsión</span>, haga clic en <span style="font-weight:bold;">Previsiones de artículos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 20" height="301.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image5.png" width="714.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> En el menú sobre la cuadrícula de tabla, haga clic en <span style="font-weight:bold;">Validar líneas</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 40" height="152.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image6.png" width="713.8"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Revise los mensajes de restricciones del donante y aplique las medidas adecuadas. </li>
+    </ol>
+    <p class="Heading6"><span style="font-weight:bold;">Notas: </span></p>
+    <ul>
+      <li class="Heading6"> Las líneas con problemas muestran una X roja o un signo de exclamación amarillo debajo de la columna de verificación Validación. </li>
+      <li class="Heading6"> Si hay restricciones, se mostrará uno de los siguientes dos mensajes en la parte superior de la página. </li>
+    </ul>
+    <p class="margin-left-0-25in"><img alt="Imagen 15" height="65.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image7.png" width="697.1"/></p>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="ListParagraph">Ha validad las líneas de previsión de artículos contrastando con la tabla de restricciones del donante.</p>
+    <h2 class="Heading2">Aprobar líneas de previsión de artículos</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para aprobar las líneas de previsión de artículos. Esta acción representa una aprobación para continuar con la adquisición del artículo o servicio.</p>
+    <ul>
+      <li class="ListParagraph"> Programas debe hacer clic en <span style="font-weight:bold;">Flujo de trabajo &gt; Enviar</span> para activar la aprobación. Al cabo de un periodo de tiempo breve (normalmente menos de un minuto), el sistema aprueba la línea automáticamente siempre que las líneas se hayan validado sin errores. </li>
+      <li class="ListParagraph"> Una vez aprobada una línea de previsión de artículos, se crea una línea de requerimiento de artículo en el proyecto. </li>
+    </ul>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El estado de la línea de previsión de artículos debe ser «Borrador». </li>
+      <li class="ListParagraph"> Las líneas con estado Borrador deben haberse validado sin errores. </li>
+      <li class="ListParagraph"> Todas las líneas de marcador de posición deben haberse eliminado. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión y contabilidad de proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 2" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image8.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el formulario del proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 5" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image9.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 6" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image10.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En la pestaña desplegable <span style="font-weight:bold;">Previsión</span>, haga clic en <span style="font-weight:bold;">Previsiones de artículos</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Se muestra una lista de las líneas de previsión de artículos existentes para el proyecto.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 14" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image11.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Haga clic en el círculo de selección junto a la líneas que requieren aprobación. Pueden seleccionarse múltiples líneas a la vez. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">Consejo</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Filtre en el campo Estado para mostrar solo líneas de previsión de artículos con estado Borrador.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> En el menú de la parte superior de la página, haga clic en los tres puntos y seleccione <span style="font-weight:bold;">Flujo de trabajo &gt; Enviar</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Si los tres puntos no se muestran,haga clic en Flujo de trabajo del menú de la parte superior de la página para realizar la misma acción.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 23" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image12.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> Confirme que el estado de las líneas ha cambiado a <span style="font-weight:bold;">En revisión</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Estas líneas se aprobarán automáticamente en el transcurso de un minuto (aproximadamente).</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 7;" value="8"> Confirme que el estado de la(s) línea(s) de previsión de artículos haya cambiado a <span style="font-weight:bold;">Aprobado</span>. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="ListParagraph">Ha aprobado una o varias líneas de previsión de artículos y se han creado requerimientos de artículos para cada línea aprobada para que Cadena de suministro las procese posteriormente.</p>
+    <h2 class="Heading2">Cree una línea de previsión de artículos directamente en Integra</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para añadir manualmente una línea a la previsión de artículos en Integra.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> Debe haberse verificado que no exista ya una línea de previsión de artículos para el requerimiento. </li>
+      <li class="ListParagraph"> Las dimensiones financieras deben conocerse. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión y contabilidad de proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 28" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image13.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el formulario del proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 29" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image14.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 30" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image15.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En la pestaña desplegable <span style="font-weight:bold;">Previsión</span>, haga clic en <span style="font-weight:bold;">Previsiones de artículos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 24" height="328.9" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image16.png" width="714.0"/></p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Se muestra una lista de las líneas de previsión de artículos existentes para el proyecto.</span></h6>
+    <p class="margin-left-0-25in"><span style="font-weight:bold;color:#FF0000">Consejos de navegación:</span></p>
+    <ul>
+      <li class="margin-left-0-25in"> Para ver más líneas de previsión de artículos, arrastre las barras dobles hacia abajo para expandir la vista. </li>
+      <li class="margin-left-0-25in"> Oculte columnas ajenas haciendo clic con el botón derecho en el encabezado de la columna y seleccionando <span style="font-weight:bold;">Ocultar esta columna</span>. Guarde cualquier cambio en el diseño como una vista personalizada. </li>
+    </ul>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Para añadir una nueva línea de previsión de artículos, en el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Nuevo</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 60" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image17.png" width="697.9"/></p>
+    <p>Se añade una nueva línea con estado Borrador a la tabla.</p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Rellene los siguientes campos para la nueva línea de previsión de artículos: </li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:695.3px">
+        <colgroup>
+          <col style="width:186px"/>
+          <col style="width:509.33333333333333333333333333px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Campo</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entrada obligatoria</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Modelo</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Asegúrese que <strong>Obligatorio </strong>esté predeterminado en este campo. Si no, selecciónelo de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Fecha de recepción solicitada </p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Seleccione la fecha en la que el artículo necesita recibirse en el inventario de IRC.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Fecha de envío solicitada</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Seleccione la fecha en la que el artículo se distribuirá a los beneficiarios.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Número de artículo</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Introduzca el número de producto par el artículo o servicio.</p>
+              <p style="margin-bottom:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Arial,sans-serif"><span style="color:black">Si no conoce el número, haga clic en el menú desplegable para realizar una búsqueda y filtrar por «Nombre de producto». </span></span></span></span></span><span style="font-size:12pt"><span style="background:white"><span style="line-height:normal"><span style="font-family:Arial,sans-serif"><span style="color:black"> Si el producto requerido no puede encontrarse, pida a su Cadena de suministro que le ayude o solicite la creación del nuevo producto</span></span></span></span></span></p>
+              <p style="margin-bottom:0in; margin:0in 0in 10pt"></p>
+              <p><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black">Si la información que hay predeterminada en el campo Nombre de producto no incluye suficiente detalle, añada más información en el </span></span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black"><b>campo</b></span></span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black"> Texto debajo de la </span></span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black"><strong>pestaña </strong></span></span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:black">General.</span></span></span></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Sitio</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Seleccione el sitio correspondiente de la lista de selección desplegable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Almacén</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Seleccione el almacén de almacenamiento de destino.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Cantidad de ventas</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Introduzca la cantidad de pedido requerida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Precio de coste</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Introduzca el precio del artículo/servicio, si no hay ninguno predeterminado.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Precio de venta</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Introduzca o verifique que el precio de venta sea correcto. Consulte con Finanzas el precio de venta correcto.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <p class="margin-left-0-25in"><img alt="Imagen 61" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image18.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> Haga clic en la pestaña <span style="font-weight:bold;">Proyecto</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 48" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image19.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 7;" value="8"> En el campo <span style="font-weight:bold;">Categoría</span>, introduzca/seleccione la categoría de proyecto correcta para el artículo/servicio. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913857" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image20.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 8;" value="9"> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Guardar</span>. Esta acción copiará el valor de la categoría de proyecto en la subsiguiente categoría de proyecto (dimensión financiera D2). </li>
+      <li class="ListParagraph"> Haga clic en la pestaña <span style="font-weight:bold;">Dimensiones de inventario</span>.<img alt="Imagen 45" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image21.png" width="697.9"/> </li>
+      <li class="ListParagraph"> En el campo <span style="font-weight:bold;">Ubicación</span>, haga clic en la flecha desplegable y seleccione la ubicación correspondiente. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Notas</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">
+        <br/>
+      </span><span style="font-weight:normal;"> En caso necesario, este valor puede cambiarse en el momento de la recepción. </span><span style="font-weight:normal;">
+        <br/>
+      </span><span style="font-weight:normal;"> Para servicios, seleccione siempre la ubicación </span><span style="font-weight:normal;"><span style="font-weight:bold;">Sin stock</span></span><span style="font-weight:normal;">.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 63" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image22.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 11;" value="12"> Haga clic en la pestaña <span style="font-weight:bold;">Dimensiones financieras</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913856" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image23.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 12;" value="13"> Valide/complete todas las dimensiones financieras requeridas para la línea de previsión de artículos. </li>
+    </ol>
+    <ul style="margin-left: 40px;">
+      <li class="ListParagraph" style="" value="13"> Los campos ID de proyecto (D1), Categoría de proyecto (D2) y Entidad informadora (D5) deben tener los valores predeterminados basados en las entradas anteriores. </li>
+      <li class="ListParagraph" style="counter-reset: item1 14;" value="15"> Rellene los campos de Área de programa (D3), Unidad de operaciones (D4) y Área funcional (D6). </li>
+    </ul>
+    <p class="margin-left-0-25in"><img alt="Imagen 55" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image24.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 15;" value="16"> Haga clic en la pestaña <span style="font-weight:bold;">Descripción general </span>para volver a la lista de líneas de previsión de artículos. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913858" height="294.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image25.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 16;" value="17"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Guardar</span>. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un borrador de línea de previsión de artículos directamente en Integra.</p>
+    <h3 class="Heading3">Próximos pasos</h3>
+    <p>Programas debe aprobar la(s) línea(s) de previsión de artículos. Consulte el procedimiento <span style="font-style:italic;">Aprobar líneas de previsión de artículos</span> para obtener orientación.</p>
+    <h2 class="Heading2">Actualizar la previsión de artículos en Integra</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para realizar actualizaciones a la previsión de artículos después de la carga inicial de la plantilla de Excel.</p>
+    <p>Puesto que IRC carga la previsión de artículos al comienzo de un proyecto, es probable que necesiten realizarse cambios. P. ej., dividir líneas de previsión de artículos, cambiar la cantidad, eliminar líneas, etc.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> La plantilla de previsión de artículos debe haberse cargado en Integra. </li>
+      <li class="ListParagraph"> El estado de la(s) línea(s) de previsión de artículos debe ser «Borrador». </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión y contabilidad de proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 31" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image26.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el formulario del proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 34" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image27.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 35" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image28.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En la pestaña desplegable <span style="font-weight:bold;">Previsión</span>, haga clic en <span style="font-weight:bold;">Previsiones de artículos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 36" height="283.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image29.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Realice las actualizaciones necesarias en las líneas de previsión de artículos. </li>
+      <li class="ListParagraph"> Guarde los cambios. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha actualizado la previsión de artículos en Integra.</p>
+    <h2 class="Heading2">Mostrar el inventario disponible</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p class="margin-left-0-13in">Utilizar este procedimiento para ver cantidades de inventario disponible.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El artículo debe estar configurado como un artículo de inventario en Integra. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Desde la página de inicio de Integra, navegue a través de los módulos <span style="font-weight:bold;">Gestión del inventario &gt; Consultas e informes &gt; Lista disponible</span>. </li>
+    </ol>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Imagen 19" height="291.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image30.png" width="598.0"/></p>
+    <ol class="AlphaNumeric">
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Aplique alguno o todos los siguientes filtros seleccionando la lista desplegable para obtener más opciones de filtrado:
+        <ul>
+          <li class="ListParagraph" style="" value="2"> Número de artículo </li>
+          <li class="ListParagraph" style="" value="2"> Sitio </li>
+          <li class="ListParagraph" style="" value="2"> Almacén </li>
+          <li class="ListParagraph" style="" value="2"> ID de proyecto </li>
+        </ul>
+      </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Si se necesitan filtros adicionales, haga clic en Añadir para seleccionar otros valores como ID de proyecto o Ubicación.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> Haga clic en <span style="font-weight:bold;">Dimensiones </span>en el menú de la parte superior de la página para añadir valores de dimensiones de inventario adicionales a la pantalla de consulta disponible. </li>
+    </ol>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Imagen 161" height="316.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image31.png" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> Seleccione el cuadro junto a todas las dimensiones correspondientes para mostrar. P. ej., Sitio, Almacén, Ubicación, ID de proyecto y Número de artículo. </li>
+      <li class="ListParagraph"> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+    </ol>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Imagen 1" height="304.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image32.png" width="627.2"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Haga clic en <span style="font-weight:bold;">Aplicar </span>en el panel <span style="font-weight:bold;">Filtros </span>del lado izquierdo para recuperar los resultados. </li>
+    </ol>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Imagen 166" height="323.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image33.png" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> Revise los resultados del inventario disponible mostrado en la cuadrícula <span style="font-weight:bold;">Disponible</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Utilice el Filtro en el panel de Filtro para contraer o expandir el panel según se requiera.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 7;" value="8"> Haga clic en la <span style="font-weight:bold;">X</span> para cerrar el informe<span style="font-weight:bold;">Inventario disponible</span> una vez completada la revisión. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="margin-left-0-13in">Ha visto las cantidades de inventario disponible.</p>
+    <h2 class="Heading2">Revisar y/o actualizar requerimiento(s) de artículos en el proyecto</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para revisar o actualizar los requerimientos de artículos que se han generado a partir de las líneas de previsión de artículos liberadas.</p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Solo Cadena de suministro puede realizar cambios en una línea de requerimiento de artículo.</span></h6>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <p class="ListParagraph">Programas debe haber liberado la línea de previsión de artículos.</p>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión de proyectos y contabilidad &gt; Proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 38" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image34.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el formulario del proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 39" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image35.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 41" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image36.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En la pestaña desplegable <span style="font-weight:bold;">Requerimientos de artículo</span>, haga clic en<span style="font-weight:bold;"> Requerimientos de artículo</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 44" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image37.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Revise la lista de requerimientos de artículos para el proyecto. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Consejo</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Añada la columna «Número de referencia» a la cuadrícula de tabla para ver los números de pedido asociados. </span><span style="font-weight:normal;">Este campo también está disponible en la pestaña Otros. </span><span style="font-weight:normal;">Si se añade una columna, guárdelo como vista personalizada.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Haga clic en <span style="font-weight:bold;">Editar </span>para actualizar las líneas de requerimientos de artículos en caso necesario. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha revisado los requerimientos de artículos para un proyecto.</p>
+    <p>Se ha creado una línea de pedido de venta para cada línea de requerimiento de artículo.</p>
+    <h2 class="Heading2">Crear un pedido del pedido de venta</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para crear pedidos para artículos/servicios que son parte de la previsión de artículos.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> Cadena de suministro debe haber confirmado que no hay suficiente stock disponible para satisfacer la cantidad del requerimiento del artículo. Para obtener instrucciones sobre cómo ver el inventario disponible, consulte la guía de usuario de formación, Gestión del inventario. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión de proyectos y contabilidad &gt; Proyectos &gt; Todos los proyectos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913892" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image38.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Busque y abra el proyecto de destino. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 1" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image39.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior del formulario del proyecto, haga clic en <span style="font-weight:bold;">Plan</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 26" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image40.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En el panel de acciones, haga clic en <span style="font-weight:bold;">Requerimientos de artículo</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913870" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image41.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Gestionar</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913871" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image42.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Haga clic en <span style="font-weight:bold;">Consultas </span>y seleccione <span style="font-weight:bold;">Pedido de venta</span> de la lista de selección desplegable. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913872" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image43.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> Anote o copie el número de pedido de venta. </li>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Adquisiciones y abastecimiento &gt; Pedidos &gt; Todos los pedidos.</span> </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913873" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image44.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 8;" value="9"> En el menú de la parte superior de la página, haga clic en<span style="font-weight:bold;">Pedido</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913874" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image45.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 9;" value="10"> En el panel de acciones <span style="font-weight:bold;">Nuevo</span>, haga clic en <span style="font-weight:bold;">Desde un pedido de venta</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913875" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image46.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 10;" value="11"> En la sección <span style="font-weight:bold;">Líneas</span>, haga clic en <span style="font-weight:bold;">Seleccionar</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913876" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image47.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 11;" value="12"> En la fila que muestra <span style="font-weight:bold;">Pedido de venta</span>, introduzca el número de pedido de venta en el campo <span style="font-weight:bold;">Criterios</span>. </li>
+      <li class="ListParagraph"> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913879" height="321.4" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image48.png" width="704.4"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 13;" value="14"> Seleccione la casilla de verificación en la columna <span style="font-weight:bold;">Incluir </span>para el artículo/servicio que se va adquirir. </li>
+      <li class="ListParagraph"> En el campo <span style="font-weight:bold;">Cuenta de proveedor</span>, introduzca el número de proveedor desde cual se comprará el artículo/servicio. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913881" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image49.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 15;" value="16"> Haga clic en <span style="font-weight:bold;">OK</span> para continuar. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913882" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image50.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 16;" value="17"> Haga clic en el número de PO que se acaba de crear para abrir el formulario de PO. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Los PO nuevos se muestran normalmente en la parte inferior de la página Lista de pedidos.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913886" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image51.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 17;" value="18"> Haga clic en la pestaña <span style="font-weight:bold;">Encabezado</span> y desplácese hacia abajo hasta la sección Configuración del encabezado. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913889" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image52.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 18;" value="19"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Editar</span>. </li>
+      <li class="ListParagraph"> En el campo <span style="font-weight:bold;">Solicitante</span>, introduzca el nombre del solicitante. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Importante</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Este nombre determina la persona a quien se envía el PO para la aprobación del flujo de trabajo. </span><span style="font-weight:normal;">Introducir un nombre de solicitante en el encabezado del PO hará que se aplique dicho solicitante a todas las líneas en el PO. </span><span style="font-weight:normal;">En caso de que el solicitante sea diferente en algunas líneas, el solicitante deberá añadirse a nivel de línea.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913890" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image53.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 20;" value="21"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Flujo de trabajo </span>y envíe el PO para su aprobación. </li>
+      <li class="ListParagraph"> Una vez aprobado, confirme y transmita el PO al proveedor. Consulte el procedimiento en esta guía de usuario titulado Confirma PO y transmitirlo al proveedor. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p>Ha creado un PO para un servicio/artículo identificado en la previsión de artículos.</p>
+    <h2 class="Heading2">Revisar el borrador del pedido y enviarlo para su aprobación</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para enviar un PO para su aprobación.</p>
+    <p>Si la entrega inicial se va a realizar a una ubicación distinta a la ubicación de almacén final, p. ej., un punto de entrada, actualice el campo de dirección de entrega para que refleje la ubicación de entrega e incluya una nota indicando que los artículos deben transferirse del punto de entrada a la ubicación de almacén final.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El PO debe tener el estado «Borrador». </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Desde la página de inicio de Integra, navegue a través de los módulos <span style="font-weight:bold;">Adquisiciones y abastecimiento &gt; Pedidos &gt; Todos los pedidos</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">También puede accederse a los PO del proyecto desde dentro del mismo proyecto. </span><span style="font-weight:normal;">Consulte el siguiente procedimiento en esta guía de usuario para obtener instrucciones: </span><span style="font-weight:normal;"><span style="font-style:italic;">Ver los pedidos de un proyecto</span></span><span style="font-weight:normal;">.</span></h6>
+    <p class="ListParagraph margin-left-0-25in"><img alt="Imagen 62" height="318.0" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image54.png" width="697.3"/></p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Asegúrese de que la vista </span><span style="font-weight:normal;"><span style="font-weight:bold;">Lista de pedidos</span></span><span style="font-weight:normal;"> esté activa. </span><span style="font-weight:normal;">Si no, haga clic en la flecha desplegable para seleccionarla y anclarla como su vista predeterminada. </span><span style="font-weight:normal;">Esta vista se ha personalizado para los usuarios de Integra.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Localice y haga clic en el número de PO correspondiente para abrir el formulario de PO. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 21" height="325.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image55.png" width="714.0"/></p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Asegúrese de que la vista </span><span style="font-weight:normal;"><span style="font-weight:bold;">Lista de pedidos </span></span><span style="font-weight:normal;">esté activa. </span><span style="font-weight:normal;">Si no, haga clic en la flecha desplegable para seleccionarla y anclarla como su vista predeterminada. </span><span style="font-weight:normal;">Esta vista se ha personalizado para los usuarios de Integra.</span></h6>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> Verifique que los siguientes campos en cada línea sean precisos y estén completos. </li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:696.0px">
+        <colgroup>
+          <col style="width:174px"/>
+          <col style="width:522px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p class="PGNormal"><span style="color:#ffffff;">Campo</span></p>
+            </td>
+            <td>
+              <p class="PGNormal"><span style="color:#ffffff;">Entrada obligatoria</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Número de artículo</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Confirme que el número identificador del producto esté asociado a un Nombre de producto en Integra.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Nombre del producto</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Confirme que se esté pidiendo el producto correcto.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Cantidad</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Confirme que la cantidad sea correcta.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Cuenta/nombre de proveedor</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Confirme o introduzca el número de cuenta de proveedor.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Cuenta</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="PGNormal">Revise la cadena de cuenta para asegurarse de que la cuenta principal y todos los códigos D sean correctos para el gasto.</p>
+              <p class="PGNormal">Consejo: Haga clic en este campo para activar una ventana emergente con los detalles de los códigos de las cuentas.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> Desplácese hacia abajo hasta la sección <span style="font-weight:bold;">Detalles de línea</span> del formulario de PO y haga clic en la pestaña <span style="font-weight:bold;">Dirección</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 32" height="317.5" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image56.png" width="699.2"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Si los artículos se van a entregar inicialmente a una ubicación distinta al almacén de IRC de destino, p. ej., un aeropuerto de punto de entrada, seleccione la ubicación de la lista de selección desplegable en el campo <span style="font-weight:bold;">Dirección de entrega</span>. De forma adicional, en el cuadro de texto debajo de Información de advertencia, introduzca un nota que identifique la ubicación de destino final. </li>
+      <li class="ListParagraph" style=""> Haga clic en la pestaña <span style="font-weight:bold;">Encabezado</span> y desplácese hacia abajo hasta la sección Configuración del encabezado. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 37" height="315.9" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image57.png" width="697.3"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Editar</span>. </li>
+      <li class="ListParagraph"> En el campo <span style="font-weight:bold;">Solicitante</span>, introduzca el nombre del solicitante. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">Importante</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Este nombre determina la persona a quien se envía el PO para la aprobación del flujo de trabajo. </span><span style="font-weight:normal;">Introducir un nombre de solicitante en el encabezado del PO hará que se aplique dicho solicitante a todas las líneas en el PO. </span><span style="font-weight:normal;">En caso de que el solicitante sea diferente en algunas líneas, el solicitante deberá añadirse a nivel de línea.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 58" height="318.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image58.png" width="697.3"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 8;" value="9"> En la barra de herramientas en la parte superior de la página, haga clic en <span style="font-weight:bold;">Flujo de trabajo</span> y haga clic en <span style="font-weight:bold;">Enviar</span>. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="ListParagraph">Ha revisado y enviado un PO al flujo de trabajo para su aprobación.</p>
+    <h3 class="Heading3">Próximos pasos...</h3>
+    <p class="ListParagraph">Una vez aprobado el PO, se debe confirmar y transmitir al proveedor.</p>
+    <h2 class="Heading2">Confirmar PO y transmitirlo al proveedor</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para confirmar un PO que se ha aprobado completamente.</p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Importante</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Se requiere el paso de confirmación antes de que se pueda transmitir el PO al proveedor.</span></h6>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El PO debe tener el estado <span style="font-weight:bold;">Aprobado</span> </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Desde la página de inicio de Integra, navegue a través de los módulos <span style="font-weight:bold;">Adquisiciones y abastecimiento &gt; Pedidos &gt; Todos los pedidos</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 12" height="310.5" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image59.png" width="680.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2"> Localice el PO correspondiente y haga clic en el número de PO para abrir el formulario de PO. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913865" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image60.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Compra</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913866" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image61.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En el panel de acciones <span style="font-weight:bold;">Actualizar</span>, haga clic en <span style="font-weight:bold;">Detalles de confirmación de</span><span style="font-weight:bold;">pedido</span>. </li>
+    </ol>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Este paso permite la selección de parámetros que determina qué información se mostrará en el PO. </span><span style="font-weight:normal;">P. ej., Términos y condiciones.</span></h6>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913867" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image62.png" width="697.9"/></p>
+    <ol class="Decimal">
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> En el campo <span style="font-weight:bold;">Informe de confirmación</span>, seleccione la opción correspondiente de la lista de selección desplegable. </li>
+    </ol>
+    <p><span style="font-weight:bold;">Notas sobre los Términos y condiciones:</span></p>
+    <p style="margin-left:3.0pt; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Los Términos y condiciones son textos estándar que se aplican a todos los pedidos de IRC</span></span></span></p>
+    <ul>
+      <li style="list-style-type:none"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Para los PO que </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><u>no</u></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> hacen referencia a un contrato de compraventa, seleccione la última opción, </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Pedido sin términos y condiciones.</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> Esta acción garantizará que el PO se transmita al proveedor con los términos y condiciones que se muestran en la salida de PO.</span></span></span> </li>
+      <li style="list-style-type:none"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Para los PO de servicios que </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><u>no</u></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> hacen referencia a un contrato de compraventa, seleccione uno de:</span></span></span> </li>
+      <li style="margin:0in 0in 0in 0.5in"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Pedido de servicios inferior a 2500 $ con términos y condiciones</b></span></span></span> </li>
+      <li style="margin:0in 0in 0in 0.5in"> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Pedido de servicios superior a 2500 $ con términos y condiciones</b></span></span></span> </li>
+      <li> <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Para los PO de artículos que se crearon con referencia a un contrato de compraventa, seleccione </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Compra sin términos y condiciones.</b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">. </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">(Los términos y condiciones tomarán los valores predeterminados del contrato)</span></span></span> </li>
+    </ul>
+    <ol class="AlphaNumeric">
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6"> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 519913869" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image63.png" style="cursor: nesw-resize;" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 6;" value="7"> En el panel de acciones <span style="font-weight:bold;">Generar</span>, haga clic en <span style="font-weight:bold;">Confirmar</span>. </li>
+      <li class="ListParagraph"> Para ver el PO, haga clic en <span style="font-weight:bold;">Confirmación de pedido</span> en la pestaña desplegable <span style="font-weight:bold;">Diarios</span>. </li>
+      <li class="ListParagraph"> En caso necesario, exporte el PO a formato PDF haciendo clic en <span style="font-weight:bold;">Exportar &gt; PDF</span>. </li>
+    </ol>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="ListParagraph">Ha confirmado un PO y lo ha transmitido al proveedor.</p>
+    <h2 class="Heading2">Informes/Consultas</h2>
+    <p>Los siguientes informes están disponibles para gestionar los activos fijos.</p>
+    <h2 class="Heading2">Ver los pedidos de un proyecto</h2>
+    <h3 class="Heading3">Objetivo</h3>
+    <p>Utilizar este procedimiento para ver todos los pedidos que se han creado para un proyecto.</p>
+    <h3 class="Heading3">Requisitos previos</h3>
+    <ul>
+      <li class="ListParagraph"> El pedido planificado debe haberse convertido en un pedido de compra. </li>
+    </ul>
+    <h3 class="Heading3">Pasos</h3>
+    <ol>
+      <li class="ListParagraph"> Navegue a través de los módulos <span style="font-weight:bold;">Gestión de proyectos y contabilidad &gt; Proyectos &gt; Todos los proyectos</span>. </li>
+      <li class="ListParagraph"> Abra el formulario del proyecto. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 16" height="322.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image64.png" width="704.2"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3"> En el menú de la parte superior, haga clic en <span style="font-weight:bold;">Gestionar</span>. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 47" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image65.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4"> En <span style="font-weight:bold;">Información relacionada</span>, haga clic en <span style="font-weight:bold;">Tareas de artículo</span> y seleccione <span style="font-weight:bold;">Pedidos</span> de la lista de selección desplegable. </li>
+    </ol>
+    <p class="margin-left-0-25in"><img alt="Imagen 54" height="219.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image66.png" width="697.9"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5"> Revise la lista de pedidos que se han generado para el proyecto. Desplácese hacia la derecha para ver más información. </li>
+    </ol>
+    <ul style="margin-left: 40px;">
+      <li class="ListParagraph"> Para abrir el PO real, haga clic en el número de PO. </li>
+    </ul>
+    <h3 class="Heading3">Resultado</h3>
+    <p class="ListParagraph">Ha mostrado una lista de todos los pedidos vinculados a un proyecto.</p>
+    <h2 class="Heading2">Apéndice</h2>
+    <h2 class="Heading2">Condiciones de Superado/No superado al aprobar líneas de previsión de artículos</h2>
+    <p class="margin-left-0-06in">Hay un flujo de trabajo personalizado que comprueba las condiciones establecidas para cada línea de previsión de artículos. Si alguna de las condiciones siguientes existe, la línea de previsión de artículos se rechazará y no se generará un requerimiento de artículo para dicha línea. A continuación se indican los detalles de las condiciones del flujo de trabajo que causarán el rechazo de una línea de previsión de artículos.</p>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow" style="width:697.9px">
+        <colgroup>
+          <col style="width:113.66666666666666666666666667px"/>
+          <col style="width:593.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Condición</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Motivo de rechazo</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>1</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si el artículo es un «marcador de posición», la línea se rechazará.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>2</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si el artículo «no cumple los requisitos», la línea se rechazará.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>3</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si la fecha solicitada es anterior a mañana, la línea se rechazará.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>4</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si el modelo de previsión «estimada» se introduce en la columna <strong>Modelo</strong>, la línea se rechazará. Se debe introducir el valor «obligatorio».</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>5</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si el estado de emergencia es X...</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>6</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="margin-left-0-06in">Si falta alguna dimensión financiera, la línea se rechazará.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

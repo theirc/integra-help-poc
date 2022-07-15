@@ -1,0 +1,374 @@
+h1.Heading1 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-family: Arial Black;
+  font-size: 20pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #FFC000;
+  padding-top: 0.25em;
+  padding-right: 0px;
+  padding-bottom: 0.25em;
+  padding-left: 0em;
+}
+h2.Heading2 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 18pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #A85402;
+  padding-top: 0.5em;
+  padding-right: 0px;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
+}
+h3.Heading3 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 16pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #002060;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-right: 0px;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
+}
+h4.Heading4 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 14pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #191919;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-right: 0px;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
+}
+h5.Heading5 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-family: 'Arial', 'sans-serif';
+  font-size: 12pt;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #000000;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-right: 0px;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
+}
+h6.Heading6 {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Arial;
+  text-decoration: none;
+  color: #000;
+  font-size: 11pt;
+  border-width: 1px;
+  border-color: transparent;
+  border-left-width: 1px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  border-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  letter-spacing: 1px;
+  line-height: 1.25;
+  background-color: rgba(128, 128, 128, 0.25);
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  vertical-align: middle;
+  clear: both;
+  display: inline-block;
+  border-left-style: solid;
+  border-left-color: transparent;
+  border-right-style: solid;
+  border-right-color: transparent;
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  font-weight: normal;
+}
+body {
+  counter-reset: Numbering31 0 pnormal1 0;
+  line-height: 1.5;
+  font-family: Arial;
+  font-size: 11pt;
+  text-decoration: none;
+  color: #000000;
+}
+table {
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 1.5;
+  border-collapse: collapse;
+  width: 100%;
+  content: "";
+  vertical-align: middle;
+}
+table td {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #373031;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #373031;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #373031;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #373031;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #373031;
+}
+table tr:first-child td {
+  font-family: Arial;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #373031;
+}
+p {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 11pt;
+  color: #000000;
+  line-height: 1.5;
+  text-align: left;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+ol {
+  counter-reset: item1;
+  list-style: none;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol>li {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 11pt;
+}
+ol>li:before {
+  counter-increment: item1;
+  content: counter(item1, decimal)".";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Arial;
+  color: #000000;
+  text-decoration: none;
+  font-size: 11pt;
+}
+ul {
+  counter-reset: item1;
+  list-style: none;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ul>li {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+ul>li:before {
+  counter-increment: item1;
+  content: counter(item1, disc);
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 11pt;
+  color: #000000;
+}
+div {
+  padding-top: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 0.25em;
+  vertical-align: top;
+  clear: both;
+}
+img {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  clear: both;
+  display: inline-block;
+}
+a {
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.5;
+  border-width: 0px;
+  border-color: transparent;
+  border-left-width: 0px;
+  border-left-color: transparent;
+  border-top-width: 0px;
+  border-top-color: transparent;
+  border-right-width: 0px;
+  border-right-color: transparent;
+  border-bottom-width: 0px;
+  border-bottom-color: transparent;
+  background-size: 0 0;
+  background-image: url('');
+}
+a:hover {
+  border-width: 1px;
+  border-color: transparent;
+  border-left-width: 1px;
+  border-left-color: transparent;
+  border-top-width: 1px;
+  border-top-color: transparent;
+  border-right-width: 1px;
+  border-right-color: transparent;
+  border-bottom-width: 1px;
+  border-bottom-color: transparent;
+  border-top-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  background-color: rgba(255, 207, 105, 0.50);
+}
+ol.Decimal {
+  list-style-type: decimal;
+}
+ul.Disc {
+  list-style-type: disc;
+}
+span {
+  color: #000000;
+}
+ol.AlphaNumeric {
+  list-style: decimal;
+}
+ol.AlphaNumeric>li>ol {
+  list-style: lower-alpha;
+}
+ol.AlphaNumeric>li>ol>li>ol {
+  list-style: lower-roman;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol {
+  counter-reset: item4;
+  list-style: none;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item4;
+  content: "("counter(item4, decimal)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  counter-reset: item5;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item5;
+  content: "("counter(item5, lower-alpha)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: none;
+  counter-reset: item6;
+  padding-left: 40px;
+  margin-left: 0px;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li:before {
+  counter-increment: item6;
+  content: "("counter(item6, lower-roman)")";
+  text-align: right;
+  position: absolute;
+  left: -44px;
+  margin-right: 4px;
+  width: 40px;
+  overflow: hidden;
+}
+ol.AlphaNumeric>li>ol>li>ol>li>ol>li>ol>li>ol>li {
+  position: relative;
+}
+ol.LowerAlpha {
+  list-style-type: lower-alpha;
+}
+ol.RoundSquare {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol {
+  list-style: circle;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol {
+  list-style: disc;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol {
+  list-style: square;
+}
+ol.RoundSquare>li>ol>li>ol>li>ol>li>ol>li>ol {
+  list-style: circle;
+}
+ul.Circle {
+  list-style-type: circle;
+}
+ol.UpperRoman {
+  list-style-type: upper-roman;
+}
+ul.Square {
+  list-style-type: square;
+}
+ol.UpperAlpha {
+  list-style-type: upper-alpha;
+}

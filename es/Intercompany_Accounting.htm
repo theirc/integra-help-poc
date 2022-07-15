@@ -1,0 +1,1624 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "4_1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Contabilidad de empresas vinculadas</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Contabilidad de empresas vinculadas">
+        <span>Contabilidad de empresas vinculadas</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1">Descripción general de los procesos empresariales</h1>
+  <p>Integra facilita la capacidad de contabilizar diarios entre diferentes entidades informadoras. Este proceso se define como contabilidad de empresas vinculadas. El proceso de contabilidad de empresas vinculadas asegura que, de forma regular todos los meses, los gastos pagados por una oficina en nombre de otra oficina se registren en la base de datos correcta de la entidad informadora/SUN de Integra.</p>
+  <p>Hasta que se complete la implementación de Integra en todas las oficinas, se seguirán dos procesos: <span style="font-weight:bold;">1. </span><span style="font-weight:bold;">Solución con estado final</span> y <span style="font-weight:bold;">2. </span><span style="font-weight:bold;">Solución provisional</span>.</p>
+  <h2 class="Heading2">Solución con estado final</h2>
+  <p>La solución de Integra para la contabilidad de empresas vinculadas se ha desarrollado para lograr lo siguiente:</p>
+  <ul>
+    <li> Agilizar el proceso de empresas vinculadas </li>
+    <li> Eliminar la necesidad de que tengan que implicarse demasiados miembros del personal en el proceso </li>
+    <li> Aprovechar la capacidad de Integra de permitir a un usuario con el acceso de seguridad correcto contabilizar directamente en una entidad jurídica de Integra distinta. </li>
+  </ul>
+  <p class="Heading6"><span style="font-weight:normal;">La función responsable</span><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">*</span></span><span style="font-weight:normal;"> de la oficina ejecutora debe trasladar siempre la entrada de empresas vinculadas del Libro mayor (GL) al proyecto adecuado (D1) en el módulo Proyectos (libro auxiliar). </span></p>
+  <p class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">*</span></span><span style="font-weight:normal;"> (Director adjunto de Finanzas CRRD de la oficina local; Director de Finanzas RAI)</span></p>
+  <p>Este traslado de entradas es necesario porque contabilizar estas entradas en el Libro general no implica que las entradas fluyan automáticamente al módulo Proyectos. Si las entradas se mantuvieran en el Libro general, los saldos presupuestarios del proyecto en el módulo Proyectos serían incorrectos. Con lo que tendría un impacto en el reconocimiento de ingresos.</p>
+  <p>Como parte del traslado de estas transacciones del GL al proyecto, hay un requisito para garantizar que la categoría del proyecto (D2) sea correcta y que otras dimensiones financieras se hayan codificado en la entrada original, ya que no una entidad jurídica no puede cargar otro módulo de proyectos de la entidad jurídica a través del diario de empresas vinculadas.</p>
+  <p> </p>
+  <h2 class="Heading2">Flujo de procesos empresariales con estado final</h2>
+  <p><img src="assets/images/image3.png"/></p>
+  <h2 class="Heading2">Solución provisional</h2>
+  <p>Hasta que IRC complete la implementación de Integra en todas las oficinas, hay un periodo provisional en el que algunas oficinas utilizan Integra y otras todavía utilizan SUN.</p>
+  <p>Durante este estado de transición, hay un requisito de contabilizar las entradas en múltiples bases de datos en Integra.</p>
+  <p>Las bases de datos implicadas en la contabilidad de empresas vinculadas son:</p>
+  <ul>
+    <li> <span style="font-weight:bold;">9IRC </span>- la entidad informadora de Integra para HQ; es en la que se configuran todos los presupuestos de HQ y las unidades regionales y la entidad informadora en la que el personal de HQ realiza transacciones diariamente. </li>
+    <li> <span style="font-weight:bold;">ICCO </span>- la base de datos en la que HQ y cualquier oficina que está en Integra contabilizarán todas las entradas pagadas en nombre de otra oficina que tendrán que reflejarse en la base de datos SUN de dicha oficina. </li>
+  </ul>
+  <p style="margin-left: 84px">Las contabilizaciones en ICCO se convierten en un archivo de salida con un formato compatible con los sistemas SUN. Este archivo es equivalente al archivo ZHQ de HQ actual. . ‎El personal de Finanzas local continuará cargando este archivo en su base de datos SUN mensualmente.</p>
+  <ul>
+    <li> <span style="font-weight:bold;">ISUN </span>- la base de datos de Integra que HQ utilizará para contabilizar mensualmente todos los archivos SAF finales de SUN.‎Los archivos SAF se convertirán a un formato compatible con Integra y se asignarán a las dimensiones financieras en Integra. </li>
+  </ul>
+  <p>El personal de Finanzas continuará recodificando sus entradas de empresas vinculadas recibidas añadiendo los códigos T1, T2 y otros códigos T necesarios cuando reciban entradas de empresas vinculadas a través de su archivo ZHQ y recodificando al T1 adecuado.</p>
+  <h2 class="Heading2">Flujo de procesos empresariales con estado provisional</h2>
+  <p><img src="assets/images/image4.png"/></p>
+  <h2 class="Heading2">Mensajes clave para la contabilidad de empresas vinculadas con Integra</h2>
+  <ul>
+    <li> Las soluciones con estado tanto provisional como final requieren que las contabilizaciones entre empresas vinculadas se recodifiquen en los proyectos correspondientes. </li>
+    <li> Cuando la oficina ejecutora está en Integra, pero la oficina solicitante no, la oficina ejecutora debe contabilizar en la entidad informadora provisional ICCO. </li>
+  </ul>
+  <p style="margin-left: 80px">ICCO solo se utiliza cuando la oficina ejecutora está en Integra y la oficina receptora todavía utiliza SUN.</p>
+  <ul>
+    <li> Cuando la oficina ejecutora todavía utiliza SUN y la oficina solicitante utiliza Integra, la oficina ejecutora codifica las transacciones en su balance general en la cuenta principal 29300 o 29400, por proceso actual. </li>
+    <li> Cuando las dos oficinas están en Integra, la contabilización se realiza directamente entre los dos códigos de entidad informadora; no hay necesidad de contabilizar en ICCO o ISUN. </li>
+    <li> Las entidades informadoras no tienen acceso al libro auxiliar de la otra; por consiguiente, las transacciones entre empresas vinculadas deben contabilizarse en el GL de la oficina solicitante. </li>
+  </ul>
+  <p style="margin-left: 88px">A continuación, la oficina solicitante debe revertir el cargo de su GL y contabilizarlo en el libro auxiliar correspondiente, p. ej., el módulo Gestión de proyectos y contabilidad.</p>
+  <h2 class="Heading2">Transacciones entre empresas vinculadas de IRC</h2>
+  <p>A continuación se describen los diversos tipos de transacciones entre empresas vinculadas que pueden procesarse.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+      <colgroup>
+        <col style="width:221.66666666666666666666666667px"/>
+        <col style="width:491.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">De/A oficina</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Detalles</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Estado provisional (utilizado cuando una o más de las empresas todavía no utilizan Integra)</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold"><strong style="font-weight: normal">HQ a oficina SUN</strong></p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>HQ paga por algo en nombre de otra oficina que todavía está en SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold"><strong style="font-weight: normal">Oficina SUN a HQ</strong></p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Una oficina que todavía está en SUN paga por algo en nombre de HQ.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: normal">Oficina Integra a oficina SUN</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Una oficina no HQ que está en Integra paga por algo en nombre de otra oficina que todavía está en SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Oficina SUN a oficina Integra</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Una oficina que todavía está en SUN paga por algo en nombre de una oficina no HQ que todavía está en Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Oficina SUN a oficina SUN</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Una oficina que todavía está en SUN paga por algo en nombre de otra oficina que todavía está en SUN.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Estado final (utilizado cuando las dos empresas utilizan Integra)</strong></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Oficina Integra a oficina Integra</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Una entidad jurídica en Integra para por algo en nombre de otra entidad jurídica en Integra.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p><strong>Ejemplo</strong>: HQ compra y paga por productos en nombre de la oficina de Atlanta. HQ utiliza el diario entre empresas vinculadas para contabilizar el gasto en el GL de Atlanta. (Recuerde que no pueden cargarlo en el libro auxiliar. A continuación, Atlanta debe revertirlo de su GL y contabilizarlo en su libro auxiliar (normalmente en proyectos). Puede haber algunos casos en los que Atlanta no necesitará revertir el importe a un libro auxiliar, p. ej., los prepagos, ya que siempre se asientan en el GL.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2">Procesar una transacción de empresas vinculadas en Integra</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para procesar una transacción de empresas vinculadas en Integra. Este mismo procedimiento puede utilizarse para todos los escenarios en los que la oficina ejecutora utiliza Integra. No obstante, alguna información de campo específica variará en función del escenario.</p>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Nota</span></span><span style="font-weight:normal;">: </span><span style="font-weight:normal;">Consulte los escenarios en el apéndice de este documento para obtener orientación detallada sobre las entradas de contabilidad.</span></h6>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="AlphaNumeric">
+    <li> Desde la página de inicio de Integra, navegue a través de los módulos <span style="font-weight:bold;">Libro general &gt; Entradas de diario &gt; Diarios generales</span>. </li>
+  </ol>
+  <p><img src="assets/images/image5.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 1;" value="2"> En el menú de la parte superior de la página, haga clic en <span style="font-weight:bold;">Nuevo</span>. </li>
+  </ol>
+  <p><img src="assets/images/image6.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 2;" value="3"> Se añade una nueva fila de diario en la parte superior de la tabla. En el campo <span style="font-weight:bold;">Nombre</span>, haga clic en la flecha desplegable y seleccione <span style="font-weight:bold;">GL-IC</span>. </li>
+  </ol>
+  <p><img src="assets/images/image7.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 3;" value="4"> En el campo <span style="font-weight:bold;">Descripción</span>, sobrescriba el texto predeterminado con una descripción significativa para la transferencia entre empresas vinculadas. </li>
+    <li> Seleccione la nueva fila y haga clic en <span style="font-weight:bold;">Líneas </span>en el menú de la parte superior de la página. </li>
+  </ol>
+  <p><img src="assets/images/image8.png"/></p>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 5;" value="6"> Rellene los siguientes campos para la primera y segunda líneas (contrapartida) en el diario. </li>
+  </ol>
+  <ul style="margin-left: 40px;">
+    <li> Empresa </li>
+    <li> Tipo de cuenta </li>
+    <li> Cuenta </li>
+    <li> Descripción </li>
+    <li> Débito/Crédito </li>
+  </ul>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 6;" value="7"> Introduzca las dimensiones financieras requeridas para cada línea. </li>
+    <li> Envíe el diario al flujo de trabajo para su aprobación. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha procesado una transacción de empresas vinculadas en Integra.</p>
+  <h3 class="Heading3">Procedimientos de continuación</h3>
+  <ul>
+    <li> Ejecutar el proceso de pago de AP </li>
+    <li> El interventor financiero de la oficina solicitante traslada el gasto del Libro mayor al Proyecto </li>
+  </ul>
+  <p>‎</p>
+  <h2 class="Heading2">Ver la empresa de origen en el informe de transacciones con comprobantes</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para mostrar la consulta de transacciones con comprobantes y ver la oficina de origen para las transacciones de empresas vinculadas.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="Decimal">
+    <li> Desde la página de inicio de Integra, navegue a través de los módulos <span style="font-weight:bold;">Libro mayor &gt; Consultas e informes &gt; Transacciones con comprobantes</span>. </li>
+  </ol>
+  <p><img src="assets/images/image9.png"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 1;" value="2"> Personalice la tabla de acuerdo con sus necesidades de filtrado. </li>
+    <li> Haga clic en <span style="font-weight:bold;">OK </span>para continuar. </li>
+    <li> Revise la lista de resultados. Desplácese hacia la derecha de la columna Empresa de origen. </li>
+  </ol>
+  <h3 class="Heading3">Resultado</h3>
+  <p>Ha mostrado la consulta de transacciones con comprobantes para ver la empresa de origen de la transacción entre empresas vinculadas.</p>
+  <h2 class="Heading2">Apéndice</h2>
+  <h2 class="Heading2">Escenarios provisionales de ejemplo</h2>
+  <p>La siguiente tabla identifica los códigos dela entidad jurídica y el sistema operativo de las oficinas a las que se hace referencia en los escenarios de contabilidad de empresas vinculadas de continuación.</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:107.66666666666666666666666667px"/>
+        <col style="width:144px"/>
+        <col style="width:144px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Oficina</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Entidad </span><span style="color:#ffffff;">jurídica</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Siste</span><span style="color:#ffffff;">ma</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>HQ</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>9IRC</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Uganda</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Sierra Leona</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Integra</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Nigeria</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA*</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>SUN</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Tailandia</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA*</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>SUN</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Los siguientes cinco escenarios de ejemplo se describen en detalle a continuación.</p>
+  <ul>
+    <li> HQ Integra (9IRC) a oficina SUN (2NGA) </li>
+    <li> Oficina SUN (2NGA) a HQ Integra (Vencimiento desde HQ) </li>
+    <li> Oficina Integra (2UGA) a oficina SUN (2NGA) </li>
+    <li> Oficina SUN (2NGA) a oficina Integra (2UGA) </li>
+    <li> Oficina SUN (2NGA) a oficina SUN (3THA) </li>
+  </ul>
+  <h2 class="Heading2">HQ Integra (9IRC) a oficina SUN (2NGA)</h2>
+  <p>La entrada de gasto iniciada en HQ (Integra) requiere que se contabilicen los siguientes diarios.</p>
+  <p>En el libro mayor 9IRC en Integra, el campo Empresa en la pantalla Diario de facturas de proveedor, vaya a la pestaña General y, a continuación, elija ICCO en CUENTA como la Empresa.</p>
+  <p>La primera entrada debe contabilizarse tanto en la empresa ICCO como 9IRC (Integra) para cargar 2NGA – Nigeria (oficina SUN) a través de una entrada de empresas vinculadas y la segunda entrada es para procesar el pago del Proveedor en 9IRC (Integra), es decir, Liquidación de proveedor. Estas entradas actualmente las contabiliza el personal de AP de HQ, los interventores regionales y los responsables de Finanzas de RAI.</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:65.866666666666666666666666667px"/>
+        <col style="width:85px"/>
+        <col style="width:111.2px"/>
+        <col style="width:106.2px"/>
+        <col style="width:85px"/>
+        <col style="width:70.933333333333333333333333333px"/>
+        <col style="width:87.4px"/>
+        <col style="width:87.4px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Empresa</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td style="color: #fff">
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>OD104</p>
+          </td>
+          <td>
+            <p>SAWP</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Proveedor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="8">
+            <p>Liquidación proveedor</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Proveedor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>10001HQUSD</p>
+          </td>
+          <td>
+            <p>Banco</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>ZZGEN</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Esta entrada de empresas vinculadas será enviada desde HQ a las oficinas de campo mensualmente, similar al archivo ZHQ y 2NGA - La oficina de Nigeria cargará este archivo a la instancia local de SUN y recodificará la entrada original para añadir T2/T3 y cualquier otro código T según sea necesario.</p>
+  <h2 class="Heading2">Oficina SUN (2NGA) a HQ Integra (Vencimiento desde HQ)</h2>
+  <p>Esta entrada de empresas vinculadas se contabilizará primero en la base de datos SUN de Nigeria 2NGA para registrar la transacción de gasto y pago del siguiente modo:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:68.266666666666666666666666667px"/>
+        <col style="width:70.2px"/>
+        <col style="width:107.53333333333333333333333333px"/>
+        <col style="width:93.13333333333333333333333333px"/>
+        <col style="width:53.733333333333333333333333333px"/>
+        <col style="width:51.733333333333333333333333333px"/>
+        <col style="width:50.266666666666666666666666667px"/>
+        <col style="width:65.133333333333333333333333333px"/>
+        <col style="width:70px"/>
+        <col style="width:72px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">SUN DB</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p style="color: #ffffff"><span style="color: #fff">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p style="color: #fff">T4</p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>29300</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>100xx</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Una vez se ha recibido JV de 2NGA – Oficina de Nigeria (SUN), el interventor regional utilizará la información en el comprobante de diario SUN (incluidos los códigos D adecuados), la pegará en un diario Dynad y contabilizará el siguiente diario tanto en la empresa 9IRC como ICCO en Integra:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:60.866666666666666666666666667px"/>
+        <col style="width:76.333333333333333333333333333px"/>
+        <col style="width:108.8px"/>
+        <col style="width:84.66666666666666666666666667px"/>
+        <col style="width:53.733333333333333333333333333px"/>
+        <col style="width:73.733333333333333333333333333px"/>
+        <col style="width:53.066666666666666666666666667px"/>
+        <col style="width:64.066666666666666666666666667px"/>
+        <col style="width:69.133333333333333333333333333px"/>
+        <col style="width:58.2px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Empresa</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p style="color: #fff">D6</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Proyecto</p>
+          </td>
+          <td>
+            <p>U2020</p>
+          </td>
+          <td>
+            <p>72000.0.e</p>
+          </td>
+          <td>
+            <p>ZZZZ</p>
+          </td>
+          <td>
+            <p>AMBDU</p>
+          </td>
+          <td>
+            <p>9IRC</p>
+          </td>
+          <td>
+            <p>GRNT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>29300</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h2 class="Heading2">Oficina Integra (2UGA) a oficina SUN (2NGA)</h2>
+  <p>La oficina 2UGA – Uganda contabilizará la entrada de empresas vinculadas en la empresa ICCO para registrar el gasto de empresas vinculadas pagado en nombre de 2NGA – Nigeria y registrará el pago del proveedor en su empresa de Integra 2UGA del siguiente modo:</p>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:62.4px"/>
+        <col style="width:81.26666666666666666666666667px"/>
+        <col style="width:90.33333333333333333333333333px"/>
+        <col style="width:138px"/>
+        <col style="width:66px"/>
+        <col style="width:72px"/>
+        <col style="width:66px"/>
+        <col style="width:66px"/>
+        <col style="width:60px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Empresa</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p style="color: #fff"><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>ICCO</p>
+          </td>
+          <td>
+            <p>7xxx</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>ONPS</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>21100</p>
+          </td>
+          <td>
+            <p>Proveedor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    <br/>
+    ‎La oficina 2NGA – Nigeria (SUN) recibirá esta entrada como parte de su archivo ZHQ y recodificará para añadir T2/T3 (si dichos códigos se han proporcionado) y cualquier otro código T según sea necesario.
+  </p>
+  <h2 class="Heading2">Oficina SUN (2NGA) a oficina Integra (2UGA)</h2>
+  <p>La primera entrada se crea en la base de datos SUN de 2NGA – Nigeria, con la cuenta principal 29400 para identificar fácilmente esta entrada específica de empresas vinculadas.</p>
+  <p>En cuanto la oficina 2NGA – Nigeria (SUN) envía un correo electrónico a la oficina 2UGA – Uganda (Integra) notificando el pago de gastos en nombre de Uganda, la oficina 2UGA - Uganda debe contabilizar la segunda entrada dentro del mismo periodo en Integra.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:702.0px">
+      <colgroup>
+        <col style="width:64.6px"/>
+        <col style="width:91.4px"/>
+        <col style="width:78px"/>
+        <col style="width:90px"/>
+        <col style="width:66px"/>
+        <col style="width:54px"/>
+        <col style="width:54px"/>
+        <col style="width:72px"/>
+        <col style="width:66px"/>
+        <col style="width:66px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Empresa</span></p>
+            <p><span style="color:#ffffff;">(SUN DB)</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>Banco</p>
+          </td>
+          <td>
+            <p>100xx</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>2NGA</p>
+          </td>
+          <td>
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR/CR</p>
+          </td>
+          <td>
+            <p>Empresa</p>
+            <p>(INTEGRA)</p>
+          </td>
+          <td>
+            <p>Cuenta principal</p>
+          </td>
+          <td>
+            <p>Tipo de cuenta</p>
+          </td>
+          <td>
+            <p>D1</p>
+          </td>
+          <td>
+            <p>D2</p>
+          </td>
+          <td>
+            <p>D3</p>
+          </td>
+          <td>
+            <p>D4</p>
+          </td>
+          <td>
+            <p>D5</p>
+          </td>
+          <td>
+            <p>D6</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>DR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>7xxxx</p>
+          </td>
+          <td>
+            <p>Proyecto</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>DFxxx</p>
+          </td>
+          <td>
+            <p>SARL</p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>CR</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p>29400</p>
+          </td>
+          <td>
+            <p>Libro mayor</p>
+          </td>
+          <td>
+            <p>U1000</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+          <td>
+            <p>UAKAM</p>
+          </td>
+          <td>
+            <p>2UGA</p>
+          </td>
+          <td>
+            <p> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>**Finanzas Internacional de HQ conciliará la cuenta principal 29400 en cada base de datos SUN mensualmente.
+    <br/>
+    ‎
+  </p>
+  <h2 class="Heading2">Oficina SUN (2NGA) a oficina SUN (3THA)</h2>
+  <p>En este escenario, la oficina de Nigeria realiza un pago en nombre de la oficina de Tailandia. La primera entrada es cómo la oficina 2NGA – Nigeria registrará la entrada de empresas vinculadas y el pago bancario en nombre de 3THA en su base de datos SUN.</p>
+  <p>Una vez que la oficina 3THA – Tailandia recibe la notificación de este pago de empresas vinculadas realizado en su nombre por la oficina 2NGA – Nigeria, la oficina de Tailandia registrará la segunda entrada debajo para cargar el T1 adecuado y todos los otros códigos T pertinentes y registrará el crédito en la cuenta principal 29400 en su base de datos SUN.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:702.9px">
+      <colgroup>
+        <col style="width:67.2px"/>
+        <col style="width:86.4px"/>
+        <col style="width:86.4px"/>
+        <col style="width:66px"/>
+        <col style="width:72px"/>
+        <col style="width:54px"/>
+        <col style="width:58.4px"/>
+        <col style="width:67.2px"/>
+        <col style="width:57.6px"/>
+        <col style="width:87.66666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Empresa</span></p>
+            <p><span style="color:#ffffff;">SUN DB</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">T6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>29400</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>THBNK</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>CR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Banco</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>100xx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2NGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>NGABU</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>7xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>GUxxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>AB01</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>OADM</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>THBNK</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>CR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>29400</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>3THA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>THBNK</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>**Finanzas Internacional de HQ conciliará la cuenta principal 29400 en cada base de datos SUN mensualmente.</p>
+  <h2 class="Heading2">Escenario con estado final de ejemplo</h2>
+  <h2 class="Heading2">Oficina Integra (2SLE) a oficina Integra (2UGA)</h2>
+  <p>En este escenario, la oficina 2SLE – Sierra Leona (Integra) ha realizado un pago en nombre de la oficina 2UGA – Uganda (Integra).</p>
+  <p>Puesto que las dos oficinas están en Integra, la oficina 2SLE – Sierra Leona puede cargar directamente la entidad jurídica de la oficina 2UGA – Uganda en Integra. La primera entrada es la oficina de Sierra Leona contabilizando el diario de empresas vinculadas directamente en el Libro mayor de Uganda.</p>
+  <p>La segunda entrada es la oficina de Sierra Leona realizando el pago al proveedor.</p>
+  <p>La tercera entrada es la oficina de Uganda revirtiendo la entrada de diario de empresas vinculadas del Libro mayor en Integra y contabilizando la entrada en su Proyecto y módulo de Proyectos en Integra y añadiendo todas las dimensiones financieras correspondientes.</p>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:707.7px">
+      <colgroup>
+        <col style="width:85.86666666666666666666666667px"/>
+        <col style="width:84.2px"/>
+        <col style="width:77.666666666666666666666666667px"/>
+        <col style="width:82.66666666666666666666666667px"/>
+        <col style="width:54.466666666666666666666666667px"/>
+        <col style="width:85.93333333333333333333333333px"/>
+        <col style="width:57px"/>
+        <col style="width:71.4px"/>
+        <col style="width:57px"/>
+        <col style="width:51.466666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">DR/CR</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Empresa</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Tipo de cuenta</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D1</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D2</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D3</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D4</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D5</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">D6</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Entrada 2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>7xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>HEHS</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>UAKAM</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>CR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>21100</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Proveedor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>SLFRT</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="10" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p style="font-weight: bold">Liquidación proveedor por 2SLE</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>21100</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Proveedor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>SLFRT</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>CR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>10xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Banco</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>U1000</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>SLFRT</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2SLE</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Entrada 2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p> </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>7xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Proyecto</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>HEHS</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>UAKAM</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>PRIM</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>CR</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>7xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>Libro mayor</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>DF208xxx</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>HEHS</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>UAKAM</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>2UGA</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <p>PRIM</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

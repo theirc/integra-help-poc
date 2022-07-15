@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "3_1";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Desarrollo de plantillas de presupuestos de proyectos</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Desarrollo de plantillas de presupuestos de proyectos">
+        <span>Desarrollo de plantillas de presupuestos de proyectos</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1">Información de proceso empresarial</h1>
+  <p>Esta sección describe los términos clave y proporciona la información sobre los procesos empresariales para desarrollar plantillas de presupuesto de proyectos para Integra.</p>
+  <h2 class="Heading2">Flujo de procesos de configuración de proyectos</h2>
+  <h2><img alt="Imagen 65" height="327.9" src="assets/images/Developing Project Budget Templates_files/image1.png" style="cursor: nwse-resize;" width="678.0"/></h2>
+  <h6 class="Heading6">Nota: En función de la ubicación, el paso n.º 2 puede ser realizado por Finanzas, los propietarios de presupuesto (o designado), o Programas.</h6>
+  <h2 class="Heading2">Directrices generales para el desarrollo de presupuestos</h2>
+  <p><strong>- </strong>Los titulares y designados de presupuestos tienen la responsabilidad de proporcionar presupuestos a Finanzas. Son responsables de rellenar la plantilla de desarrollo de presupuesto estándar con toda la información requerida del presupuesto.</p>
+  <p><strong>- </strong>Los presupuestos de proyectos están sujetos a la aprobación del flujo de trabajo.</p>
+  <ul>
+    <li data-list-level="3"> Para proyectos restringidos en HQ, todos los presupuestos enviados al flujo de trabajo son aprobados por el grupo de Apoyo PQU en Finanzas. </li>
+    <li data-list-level="3"> Para todos los proyectos no restringidos y los restringidos temporalmente en HQ gestionados por FP&amp;A, FP&amp;A enviá todos los presupuestos al flujo de trabajo dentro de su grupo. Los flujos de trabajo de presupuestos son aprobados por la Alta dirección, Planificación financiera y Análisis. </li>
+    <li data-list-level="3"> Para el resto de proyectos restringidos temporales en HQ gestionados por el grupo de Apoyo PQU - Finanzas, todos los presupuestos enviados al flujo de trabajo son aprobados por este grupo. </li>
+    <li data-list-level="3"> Para CRRD y RAI, Finanzas envía presupuestos al flujo de trabajo y estos son aprobados por el interventor financiero o designado. </li>
+  </ul>
+  <p><strong>- </strong>Los límites de financiación no son aplicables a proyectos no restringidos y restringidos temporalmente.</p>
+  <h2 class="Heading2">Subproyectos</h2>
+  <p>Integra utiliza subproyectos de las dos siguientes maneras:</p>
+  <ol class="Decimal">
+    <li> Para identificar subproyectos con subconcesión </li>
+    <li> Para identificar subproyectos sin subconcesión </li>
+  </ol>
+  <p>Ambos tipos de subproyectos se asignan automáticamente al código de extensión D1 (un valor numérico etiquetado al final del ID de proyecto). El ejemplo siguiente destaca la convención de nomenclatura relativa al ID de proyecto/D1.</p>
+  <p><img alt="Imagen 68" height="80.9" src="assets/images/Developing Project Budget Templates_files/image2.png" width="463.7"/></p>
+  <p>Los dos tipos de subproyecto se crean en Integra como se describe a continuación:</p>
+  <ul>
+    <li> Se crea un código de extensión D1 de subproyecto con subconcesión de forma centralizada en OTIS y fluye automáticamente a Integra a través de la interfaz OTIS/Integra.
+      <ul>
+        <li> Se requiere una extensión D1 para todos los subproyectos con subconcesión, independientemente del valor de presupuesto de la subconcesión. </li>
+      </ul>
+    </li>
+    <li> Se crea un código de extensión D1 de subproyecto con subconcesión manualmente en la correspondiente entidad informadora de Integra. </li>
+  </ul>
+  <h6 class="Heading6">Importante: Como Integra solo permite una convención de nomenclatura, los equipos de Finanzas deben asegurarse de que la descripción del subproyecto distingue claramente entre el nombre de una organización y un sitio de campo o sector del programa.</h6>
+  <h2 class="Heading2">Desarrollo de líneas de presupuesto de activos</h2>
+  <p>Todos los activos fijos que se registran como gastos en un proyecto deben asignarse a una categoría de proyecto que esté vinculada a un «Grupo de activos de donante». Esto se realiza durante la configuración del proyecto, cuando las categorías de proyecto se asignan (categorías estándar) o se crean (categorías únicas). El proceso alcanza los mismos objetivos y asigna un grupo de activos de donante a una categoría de proyecto específico. No obstante, los pasos para asignar el grupo de activos de donante difieren para la <em>Plantilla de desarrollo de presupuesto de proyecto con categoría única</em> y la <em>Plantilla de desarrollo de presupuesto de proyecto con categoría estándar</em>.</p>
+  <p><strong>Plantilla de desarrollo de presupuesto de proyecto con categoría única:</strong> esta plantilla se utiliza principalmente en CRRD cuando los formatos de los informes del donante están determinados por el mismo. .La <em>Plantilla de desarrollo de presupuesto de proyecto con categoría única</em></p>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="caption-side: top">
+      <caption> <strong style="font-size: 22px">Tabla de grupo de activos</strong> </caption>
+      <colgroup>
+        <col style="width:120px"/>
+        <col style="width:248.86666666666666666666666667px"/>
+        <col style="width:182.46666666666666666666666667px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Descripción de cuenta principal</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Grupo de activos</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74101</p>
+          </td>
+          <td>
+            <p>&lt; 5 mil $ Equipos TI</p>
+          </td>
+          <td>
+            <p>DITUNDR5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74102</p>
+          </td>
+          <td>
+            <p>&lt; 5 mil $ Otros equipos</p>
+          </td>
+          <td>
+            <p>DOTUNDR5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74103</p>
+          </td>
+          <td>
+            <p>&gt;= 5 mil $ Equipos y mobiliario</p>
+          </td>
+          <td>
+            <p>DEQFOVER5K</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>74130</p>
+          </td>
+          <td>
+            <p>Compra de vehículos</p>
+          </td>
+          <td>
+            <p>DVEHICLES</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>85000</p>
+          </td>
+          <td>
+            <p>Activo CIK (no amortizable)</p>
+          </td>
+          <td>
+            <p>CIKASSETNO</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <p>Las categorías de proyecto etiquetadas con el «Grupo de activos de donante» (de la tabla anterior) se cargarán en Integra. Se selecciona la categoría de proyecto correspondiente en el momento de adquirir el activo y la etiqueta del activo (de la tabla Grupo de activos anterior) en la categoría del proyecto fluirá hasta el pedido.</p>
+  <p>Una vez se haya recibido el activo y la recepción del producto se haya registrado en Integra, el sistema creará automáticamente el registro de activo en el módulo Activos fijos y asignará un valor de un penique al activo.
+    <br/>
+    ‎
+  </p>
+  <h2 class="Heading2">Funciones y responsabilidades</h2>
+  <h2 class="Heading2"><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTMLe621b66.PNG" height="550.1" src="assets/images/Developing Project Budget Templates_files/image3.png" width="678.0"/></h2>
+  <h2 class="Heading2">Plantilla de desarrollo de presupuesto</h2>
+  <p><strong>- </strong>La plantilla de desarrollo de presupuesto es una plantilla estandarizada que se utiliza para desarrollar y enmendar presupuestos de proyecto.</p>
+  <p><strong>- </strong>La plantilla de desarrollo de presupuesto tiene numerosos macros y fórmulas que agilizan el rellenado de las plantillas del proyecto que se cargan en Integra.</p>
+  <p><strong>- </strong>Asegúrese de que lee TODA la información en la hoja de instrucciones de la plantilla. (primera pestaña en el archivo)</p>
+  <ul>
+    <li data-list-level="2"> También hay otras instrucciones de usuario integradas en cada columna de las hojas que deben rellenarse. </li>
+  </ul>
+  <p><strong>- </strong>Hay dos carpetas de plantillas de desarrollo de presupuesto de Integra en Box:</p>
+  <ol class="Decimal">
+    <li> Plantilla de categoría de proyecto estándar </li>
+    <li> Plantilla de categoría de proyecto única </li>
+  </ol>
+  <p><strong>- </strong>¡Asegúrese de que está utilizando la plantilla correcta!</p>
+  <ul>
+    <li> Todos los proyectos no restringidos utilizan categorías de proyecto estándar </li>
+    <li> Los restringidos temporalmente pueden utilizar categorías estándar o únicas; la decisión se basa en el proyecto específico. </li>
+    <li> Los proyectos no restringidos pueden utilizar categorías de proyecto únicas o estándar. A continuación se enumeran ejemplos de cuándo se utilizaría cada una.
+      <ul>
+        <li> Gob. EE. UU. – utiliza categorías de proyecto estándar </li>
+        <li> Europeo (financiación ECHO) - utiliza categorías de proyecto únicas </li>
+      </ul>
+    </li>
+  </ul>
+  <p> </p>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento par extraer las líneas de presupuesto de donante requeridas para la plantilla de presupuesto de Integra. El proceso se facilita con el uso de la función copiar/pegar para rellenar la plantilla de forma eficiente.</p>
+  <p><strong>- </strong>Para proyectos que utilizan categorías de proyecto estándar, los presupuestos de donante se presentan al donante en el formato de presupuesto interno de IRC. Al rellenar la plantilla de presupuesto de proyecto, resulta fácil copiar/pegar para asignar las categorías de proyecto estándar porque todo está en el mismo formato. </p>
+  <p><strong>- </strong>Para proyectos que utilizan categorías únicas, el presupuesto original está siempre preparado en la plantilla de presupuesto interno de IRC. Estas líneas de presupuesto se asignan posteriormente al formato de presupuesto del donante, que normalmente refleja el formato de los informes del donante.  En estas situaciones, el rellenado de la plantilla de desarrollo del proyecto no debería seguir el formato de IRC porque dicho formato no sigue el formato requerido para la elaboración de presupuestos/informes del donante.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="Decimal">
+    <li> Descargue el presupuesto del donante aprobado de OTIS. </li>
+    <li> Copie y pegue todas las líneas del presupuesto del donante en una nueva hoja de Excel en blanco. </li>
+    <li> En la nueva hoja de Excel, elimine todas las columnas y filas del presupuesto del donante que no se necesitan para la plantilla de desarrollo de presupuesto de Integra. A continuación, hay varios ejemplos de filas que hay que eliminar: </li>
+  </ol>
+  <ul>
+    <li> Filas con títulos de encabezado </li>
+    <li> Filas con información subtotal </li>
+    <li> Filas sin importes en dólares </li>
+    <li> Filas no requeridas para los requisitos de informes del donante </li>
+    <li> Cualquier otra fila ajena no requerida para la plantilla de desarrollo de presupuesto de Integra. </li>
+  </ul>
+  <h3 class="Heading3">Fin del procedimiento
+    <br/>
+    ‎
+  </h3>
+  <h2 class="Heading2">Rellenar la plantilla de desarrollo de presupuesto</h2>
+  <h2 class="Heading2">Objetivo</h2>
+  <p>Utilizar este procedimiento para rellenar el archivo de plantilla de presupuesto. Este archivo tiene diversas fórmulas y macros integrados que permiten un rellenado eficiente y exacto de todos los archivos de carga requeridos.</p>
+  <p><strong>Requisitos y recomendaciones de Excel:</strong></p>
+  <p><strong>- </strong>NO modifique ni elimine ninguno de los encabezados de las filas y columnas en la Plantilla de desarrollo de presupuesto.</p>
+  <p><strong>- </strong>Habilite siempre los macros en la plantilla.</p>
+  <p><strong>- </strong>Apague la opción de cálculo automático. En la barra de herramientas de Excel, navegue hasta <strong>Fórmulas </strong><strong><span>&gt;</span></strong><strong> Opciones para el cálculo </strong>y seleccione <strong>Manual</strong>.</p>
+  <h6 class="Heading6">Nota: Esto acelera mucho el rellenado de la plantilla. De lo contrario, el archivo «da vueltas» durante un periodo de tiempo prolongado después de cada entrada/actualización. Cuando haya finalizado de realizar los cambios en una hoja, vuelva al modo automático para aplicar las actualizaciones a las hojas correlacionadas.</h6>
+  <p><strong>- </strong>La entrada de datos solo se requiere en las hojas de trabajo con pestañas rojas del archivo.</p>
+  <p><strong>- </strong>Solo pueden rellenarse los campos destacados en amarillo.</p>
+  <ul>
+    <li> Hay instrucciones de rellenado para cada uno de estos campos cuando se pasa el ratón por el encabezado de la columna. </li>
+  </ul>
+  <p><strong>- </strong>Una vez completados todos los campos en amarillo correspondientes en una hoja, siga las instrucciones en las flechas azules para continuar con las hojas del archivo.</p>
+  <p><strong>- </strong>Si/al copiar y pegar información de un archivo distinto, utilice la opción «pegado especial» para que los datos se copien en estado sin formatear.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Descargue la plantilla de desarrollo de presupuesto correspondiente de la ubicación de Box. </li>
+    <li> Rellene la plantilla de desarrollo de presupuesto según las instrucciones insertadas en el archivo de plantilla real. </li>
+  </ol>
+  <h3 class="Heading3">Fin del procedimiento
+    <br/>
+    ‎
+  </h3>
+  <h2 class="Heading2">Prepare y cambie el nombre de los archivos de carga para Integra (solo función Finanzas)</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para preparar y poner nombre a los archivos de carga que se han rellenado automáticamente de la plantilla de desarrollo de presupuesto.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol class="AlphaNumeric">
+    <li> Abra las plantillas de carga desde la unidad local. </li>
+    <li> Valide los archivos de carga que se han abierto y rellenado del archivo fuente de la plantilla de desarrollo de presupuesto. </li>
+  </ol>
+  <ul class="AlphaNumeric">
+    <li> Después de haber abierto los archivos, al hacer clic en el botón de acción gris dentro de cada una de las hojas, debería activarse el rellenado automático de datos del archivo fuente. </li>
+  </ul>
+  <ol class="AlphaNumeric">
+    <li style="counter-reset: item1 1;" value="2"> «Limpie» el archivo eliminando las filas y columnas ajenas. </li>
+    <li> Guarde todos los archivos de nuevo en la ubicación del disco duro de destino utilizando los siguientes requisitos de convención de nomenclatura. (Sin corchetes).
+      <ul>
+        <li> <strong>[ID de proyecto] [Nombre de archivo de carga]-[Entidad jurídica].xlsx</strong> </li>
+      </ul>
+    </li>
+  </ol>
+  <p>Ejemplos de convención de nomenclatura requerida para que funcionen las cargas:</p>
+  <ul>
+    <li> EX102 ProjectCategory-9IRC.xlsx </li>
+    <li> EX102 BudgetRegister-9IRC.xlsx </li>
+    <li> EX102 FundingLimit-9IRC.xlsx </li>
+  </ul>
+  <h6 class="Heading6">Importante: El guion y la entidad jurídica deben estar al final del nombre, sin espacios entre la descripción y el guion (y más allá) para que funcione la carga.</h6>
+  <h3 class="Heading3">Fin del procedimiento
+    <br/>
+  </h3>
+  <h2 class="Heading2">Cargar plantillas de proyecto completado en Integra (solo función Finanzas)</h2>
+  <h3 class="Heading3">Objetivo</h3>
+  <p>Utilizar este procedimiento para cargar las plantillas completadas en Box.</p>
+  <h3 class="Heading3">Pasos</h3>
+  <ol>
+    <li> Utilice la función de carga de archivo estándar en Box, cargue la plantilla completada en la ubicación de Box de destino. </li>
+    <li> Valide que el archivo ha desaparecido de la carpeta de Box. Esto indica que se ha realizado la carga. </li>
+    <li> Revise el correo electrónico enviado que indica si la carga se ha realizado correctamente o no. </li>
+    <li> Vea/valide la información cargada en Integra. </li>
+  </ol>
+  <p> </p>
+  <h3 class="Heading3">Fin del procedimiento</h3>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

@@ -1,0 +1,1 @@
+(function() {    var toc =  [{"name":"RAI Finance Quick Reference Guides","type":"book","tilePath":"","description":"","url":"Business_Process_Overview/RAI_Finance_Quick_Reference_Guides.htm","key":"toc2"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

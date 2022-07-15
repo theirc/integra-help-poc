@@ -114,8 +114,8 @@
       <prev_search_page_image>previous.png</prev_search_page_image>
       <custom_button_image_0>EN.png</custom_button_image_0>
       <custom_button_selected_image_0>5s911lu0d1d0xncs9mypr4kr93to2ig1.png</custom_button_selected_image_0>
-      <custom_button_image_1>ES.png</custom_button_image_1>
-      <custom_button_image_2>FR.png</custom_button_image_2>
+      <custom_button_image_1>FR.png</custom_button_image_1>
+      <custom_button_image_2>ES.png</custom_button_image_2>
       <custom_button_image_3>print_desktop.png</custom_button_image_3>
     </css>
     <html>
@@ -125,32 +125,32 @@
         <custom_buttonsitem>
           <name>English</name>
           <id>2</id>
-          <key>1057</key>
+          <key>252</key>
           <href>https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra</href>
           <title>ENGLISH</title>
           <image>EN.png</image>
           <selected_image>5s911lu0d1d0xncs9mypr4kr93to2ig1.png</selected_image>
         </custom_buttonsitem>
         <custom_buttonsitem>
-          <name>Spanish</name>
-          <id>4</id>
-          <key>1061</key>
-          <title>ESPAÑOL</title>
-          <href>https://integra-help.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra</href>
-          <image>ES.png</image>
-        </custom_buttonsitem>
-        <custom_buttonsitem>
           <name>French</name>
           <id>3</id>
-          <key>1058</key>
+          <key>354</key>
           <title>FRANÇAIS</title>
           <href>https://integra-help.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra</href>
           <image>FR.png</image>
         </custom_buttonsitem>
         <custom_buttonsitem>
+          <name>Spanish</name>
+          <id>4</id>
+          <key>453</key>
+          <title>ESPAÑOL</title>
+          <href>https://integra-help.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra</href>
+          <image>ES.png</image>
+        </custom_buttonsitem>
+        <custom_buttonsitem>
           <name>Print</name>
           <id>0</id>
-          <key>1059</key>
+          <key>055</key>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_PRINT_TOPIC&#39;));return false;</onclick>
           <title>Print</title>
           <image>print_desktop.png</image>
@@ -158,7 +158,7 @@
         <custom_buttonsitem>
           <name>RemoveHighlight</name>
           <id>1</id>
-          <key>1060</key>
+          <key>156</key>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
         </custom_buttonsitem>
       </custom_buttons>

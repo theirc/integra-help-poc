@@ -28,7 +28,7 @@ var backgroundColor = "#509de6";
   model.publish(rh.consts('KEY_SEARCH_BG_COLOR'), "#FCFF00");
 	model.publish('l.desktop_sidebar_visible', true);	
 	model.publish('l.mobile_header_visible', false);
-	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"EN","id":"2","key":"510","image":"EN.png","title":"ENGLISH","href":"https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra"},{"name":"FR","id":"3","key":"511","image":"FR.png","title":"FRANÇAIS"},{"name":"ES","id":"4","key":"514","image":"ES.png","title":"ESPAÑOL"},{"name":"Print","id":"0","key":"512","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;","title":"Print","image":"print_desktop.png"},{"name":"RemoveHighlight","id":"1","key":"513","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
+	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"EN","id":"2","key":"510","image":"EN.png","title":"ENGLISH","href":"https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra"},{"name":"FR","id":"3","key":"511","image":"FR.png","title":"FRANÇAIS","href":"https://integra-help.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra"},{"name":"ES","id":"4","key":"514","image":"ES.png","title":"ESPAÑOL","href":"https://integra-help.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra"},{"name":"Print","id":"0","key":"512","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;","title":"Print","image":"print_desktop.png"},{"name":"RemoveHighlight","id":"1","key":"513","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
 	model.publish(rh.consts('KEY_DO_NOT_PRESERVE_AR'), true);
 	model.publish(rh.consts('KEY_IS_RESPONSIVE'), true);
 	

@@ -127,7 +127,7 @@
           <key>91</key>
           <title>ENGLISH</title>
           <image>EN.png</image>
-          <href>https://integra-help.azurewebsites.net/#t=About_Integra.htm%23About_Integra</href>
+          <href>https://integra-help-staging.azurewebsites.net/#t=About_Integra.htm%23About_Integra</href>
         </custom_buttonsitem>
         <custom_buttonsitem>
           <name>FR</name>
@@ -135,14 +135,14 @@
           <key>95</key>
           <image>FR.png</image>
           <title>FRANÇAIS</title>
-          <href>https://integra-help.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra</href>
+          <href>https://integra-help-staging.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra</href>
         </custom_buttonsitem>
         <custom_buttonsitem>
           <name>ES</name>
           <id>3</id>
           <key>92</key>
           <image>ES.png</image>
-          <href>https://integra-help.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra</href>
+          <href>https://integra-help-staging.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra</href>
           <title>ESPAÑOL</title>
         </custom_buttonsitem>
         <custom_buttonsitem>

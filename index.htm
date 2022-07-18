@@ -29,6 +29,35 @@
 			gCommonRootRelPath = ".";
 	
 //]]></script>
+	
+	<style>
+		
+		.header{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+		
+		@media (min-width: 200px) {
+			  .lang {
+				display: flex; 
+				flex-direction: row; 
+				align-content:center;
+				justify-content:center;
+				width: 80%; 
+				font-size: 16px;
+				}
+			}
+		@media (min-width: 1000px) {
+			  .lang {
+				display: flex; 
+				flex-direction: row; 
+				justify-content: flex-end;
+				width: 80%; 
+				font-size: 16px;
+				}
+			}
+	</style>
 	</head>
 
 	<body class="hide-children loading" data-rhwidget="Basic" data-class="media-desktop: KEY_SCREEN_DESKTOP; media-landscape: KEY_SCREEN_TABLET; media-mobile: KEY_SCREEN_PHONE; ios: KEY_SCREEN_IOS" data-controller="ModernLayoutController: mc; JsLoadingController" data-attr="dir:KEY_DIR">
@@ -41,7 +70,7 @@
 			 <span class="rh-hide" aria-hidden="true" data-html="@KEY_LNG.HomeButton"></span>
 				</div>
 			</a>
-			<div class="title">
+			<div class="title" style="width: 33%">
 				<a data-click="$hc.goToHome()" data-attr="title:@KEY_LNG.HomeButton; href: rh.model.get(rh.consts(&#39;KEY_LOGO_URL&#39;)) || rh.consts(&#39;DEFAULT_TOPIC&#39;)" tabindex="0">
 					Integra Help
 				</a>
@@ -57,8 +86,23 @@
 					<span style="color:transparent; display: none;" data-html="@KEY_LNG.Next"></span>
 				</a>
 			</div>
+				
 			</div>
+			<div class = "lang" align="right">
+					<a href="https://integra-help-staging.azurewebsites.net/#t=About_Integra.htm%23About_Integra" target="_blank"> 
+						<span style="color:white; text-decoration: none;">ENGLISH</span>
+					</a>
+					&nbsp;
+					<a href="https://integra-help-staging.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra" target="_blank"> 
+						<span style="color:white; text-decoration: none;">FRANÇAIS</span>
+					</a>
+					&nbsp;
+					<a href="https://integra-help-staging.azurewebsites.net/es/#t=About_Integra.htm%23About_Integra" target="_blank"> 
+						<span style="color:white; text-decoration: none;">ESPAÑOL</span>
+					</a>
+				</div>
 		</div>
+		
 		<!-- Function bar with TOC/IDS/GLO/FILTER/FTS buttons -->
 		<div class="functionbar" data-css="width: sidebar_width | screen: &#39;desktop&#39;" data-class="sidebar-opened: $mc.isSidebarTab(@KEY_ACTIVE_TAB); desktop-sidebar-hidden: @.l.desktop_sidebar_visible == false || @.l.desktop_sidebar_available === false; mobile-header-visible: @.l.mobile_header_visible">
 			<div class="nav" role="tablist" aria-label="Navigation">

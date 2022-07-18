@@ -656,7 +656,7 @@ body.media-landscape div.header div.custom-button-1 {
 
 .custom-button-2 a {
   background-image: url("custom_button_place_holder.png");
-  background-image: url(ES.png);
+  background-image: url(print_desktop.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain; }
@@ -670,7 +670,7 @@ body.media-landscape div.header div.custom-button-2 {
 
 .custom-button-3 a {
   background-image: url("custom_button_place_holder.png");
-  background-image: url(print_desktop.png);
+  background-image: undefined;
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain; }

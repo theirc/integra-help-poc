@@ -628,7 +628,7 @@ div.topic-state.loading {
 
 .custom-button-0 a {
   background-image: url("custom_button_place_holder.png");
-  background-image: url(EN.png);
+  background-image: url(print_desktop.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain; }
@@ -642,7 +642,7 @@ body.media-landscape div.header div.custom-button-0 {
 
 .custom-button-1 a {
   background-image: url("custom_button_place_holder.png");
-  background-image: url(FR.png);
+  background-image: url(remove_hightlight.png);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain; }

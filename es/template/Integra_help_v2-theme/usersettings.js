@@ -28,7 +28,7 @@ var backgroundColor = "#509de6";
   model.publish(rh.consts('KEY_SEARCH_BG_COLOR'), "#FCFF00");
 	model.publish('l.desktop_sidebar_visible', true);	
 	model.publish('l.mobile_header_visible', false);
-	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"2","key":"62","title":"ENGLISH","image":"EN.png","href":"https://integra-help-staging.azurewebsites.net/#t=About_Integra.htm%23About_Integra"},{"name":"RemoveHighlight","id":"4","key":"63","image":"FR.png","title":"FRANÇAIS","href":"https://integra-help-staging.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra"}])
+	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"2","key":"62","title":"Impresión","image":"print_desktop.png","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;"},{"name":"RemoveHighlight","id":"4","key":"63","image":"remove_hightlight.png","title":"quitar resaltado","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
 	model.publish(rh.consts('KEY_DO_NOT_PRESERVE_AR'), true);
 	model.publish(rh.consts('KEY_IS_RESPONSIVE'), true);
 	

@@ -112,8 +112,8 @@
       <social_media_close_image>social_close_ltr.png</social_media_close_image>
       <next_search_page_image>next.png</next_search_page_image>
       <prev_search_page_image>previous.png</prev_search_page_image>
-      <custom_button_image_0>EN.png</custom_button_image_0>
-      <custom_button_image_1>FR.png</custom_button_image_1>
+      <custom_button_image_0>print_desktop.png</custom_button_image_0>
+      <custom_button_image_1>remove_hightlight.png</custom_button_image_1>
     </css>
     <html>
       <page_font_family>Arial</page_font_family>
@@ -123,17 +123,17 @@
           <name>Print</name>
           <id>2</id>
           <key>63</key>
-          <image>EN.png</image>
-          <title>ENGLISH</title>
-          <href>https://integra-help-staging.azurewebsites.net/#t=About_Integra.htm%23About_Integra</href>
+          <image>print_desktop.png</image>
+          <title>Imprimer</title>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_PRINT_TOPIC&#39;));return false;</onclick>
         </custom_buttonsitem>
         <custom_buttonsitem>
           <name>RemoveHighlight</name>
           <id>3</id>
           <key>64</key>
-          <image>FR.png</image>
-          <title>FRANÇAIS</title>
-          <href>https://integra-help-staging.azurewebsites.net/fr/#t=About_Integra.htm%23About_Integra</href>
+          <image>remove_hightlight.png</image>
+          <title>Supprimer la surbrillance</title>
+          <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
         </custom_buttonsitem>
       </custom_buttons>
       <use_facebook type="boolean">false</use_facebook>

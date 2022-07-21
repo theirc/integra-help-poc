@@ -28,7 +28,7 @@ var backgroundColor = "#509de6";
   model.publish(rh.consts('KEY_SEARCH_BG_COLOR'), "#FCFF00");
 	model.publish('l.desktop_sidebar_visible', true);	
 	model.publish('l.mobile_header_visible', false);
-	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"2","key":"63","image":"print_desktop.png","title":"Imprimer","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;"},{"name":"RemoveHighlight","id":"3","key":"64","image":"remove_hightlight.png","title":"Supprimer la surbrillance","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
+	model.publish(rh.consts('KEY_CUSTOM_BUTTONS_CONFIG'), [{"name":"Print","id":"2","key":"63","image":"print_desktop.png","title":"Imprimer","onclick":"rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;"},{"name":"RemoveHighlight","id":"3","key":"64","image":"removesearch_mark.svg","title":"Supprimer la surbrillance","onclick":"rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;"}])
 	model.publish(rh.consts('KEY_DO_NOT_PRESERVE_AR'), true);
 	model.publish(rh.consts('KEY_IS_RESPONSIVE'), true);
 	

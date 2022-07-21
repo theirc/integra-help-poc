@@ -642,7 +642,7 @@ body.media-landscape div.header div.custom-button-0 {
 
 .custom-button-1 a {
   background-image: url("custom_button_place_holder.png");
-  background-image: url(remove_hightlight.png);
+  background-image: url(removesearch_mark.svg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: contain; }

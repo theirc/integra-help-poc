@@ -113,7 +113,7 @@
       <next_search_page_image>next.png</next_search_page_image>
       <prev_search_page_image>previous.png</prev_search_page_image>
       <custom_button_image_0>print_desktop.png</custom_button_image_0>
-      <custom_button_image_1>remove_hightlight.png</custom_button_image_1>
+      <custom_button_image_1>removesearch_mark.svg</custom_button_image_1>
     </css>
     <html>
       <page_font_family>Arial</page_font_family>
@@ -131,7 +131,7 @@
           <name>RemoveHighlight</name>
           <id>3</id>
           <key>64</key>
-          <image>remove_hightlight.png</image>
+          <image>removesearch_mark.svg</image>
           <title>Supprimer la surbrillance</title>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
         </custom_buttonsitem>

@@ -1,1 +1,0 @@
-(function() {    var toc =  [{"name":"Business Process Information","type":"book","tilePath":"","description":"","url":"Procure_to_Confirm.htm","key":"toc44"},{"name":"Procedures","type":"book","tilePath":"","key":"toc45"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

@@ -1,0 +1,2173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "14";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Transferts et retours de stocks (Inventory Transfers and Returns)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Transferts et retours de stocks (Inventory Transfers and Returns)">
+        <span>Transferts et retours de stocks (Inventory Transfers and Returns)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+      
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1">Aperçu des processus commerciaux</h1>
+  <h2 class="Heading2"><a id="Réception_et_inspection_de_la_qualité"></a>Réception et inspection de la qualité</h2>
+  <p>Cette section indique les termes clés et les étapes principales des processus commerciaux dans les scénarios suivants :</p>
+  <ul>
+    <li>Réception de produits en stock FIFO</li>
+    <li>Réception de produits en stock FEFO</li>
+  </ul>
+  <h2 class="Heading2"><a id="Processus_opérationnels_de_réception_et_d’inspection_des_produits_en_stock"></a>Processus opérationnels de réception et d’inspection des produits en stock</h2>
+  <p><img alt="Photo 1" height="281.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image1.png" width="681.6"/></p>
+  <h2 class="Heading2"><a id="Séquence_de_procédures_concernant_les_articles_en_stock"></a>Séquence de procédures concernant les articles en stock</h2>
+  <p>Les procédures ci-dessous précisent la séquence concernant les articles FIFO (premier entré, premier sorti) et FEFO (premier expiré, premier sorti) dans la CRRD :</p>
+  <ol class="Decimal">
+    <li><strong>Liste de réception</strong> – Le personnel d’inventaire diffuse une liste de réception lors de la réception du produit de la part du fournisseur. La liste de réception n’a aucun impact sur l’inventaire financier ou physique.</li>
+    <li><strong>Ordre de qualité/inspection de la qualité</strong> – Une fois la liste de réception diffusée, l’ordre de qualité est automatiquement généré et disponible. Une inspection de la quantité est réalisée et un reçu de la quantité physiquement reçue uniquement est diffusé. L’inspection de la qualité est réalisée par le personnel technique et le département concerné.</li>
+    <li><strong>Enregistrement</strong> – Si les produits reçus sont des articles FEFO, l’enregistrement est requis et réalisé par le personnel de la chaîne d&#39;approvisionnement personnel. Les articles contrôlés par lot tels que les produits pharmaceutiques et alimentaires ayant une date d’expiration sont enregistrés ; les produits pharmaceutiques reçoivent un numéro de lot de fournisseur et les produits alimentaires reçoivent un numéro de lot de système. Les articles contrôlés par lieu sont également enregistrés.</li>
+    <li><strong>Réception de produit</strong> – La réception de produit est diffusée et est une condition préalable à l’émission de la facture et à l’exigence de triple association. La diffusion de la réception de produit met à jour l’inventaire financier et physique. L’inventaire physique est mis à jour en termes de matériel en stock, et non pour les matériels non stockés.</li>
+  </ol>
+  <p>Dans certains cas, les produits sont expédiés par le fournisseur à un point d’entrée. Dans ces situations, la séquence des étapes réalisées peut changer :</p>
+  <ul>
+    <li><strong>Liste de réception</strong> – l’IRC dresse la liste de réception au point d’entrée</li>
+    <li><strong>Réception de produit</strong> – l’IRC dresse la réception de produit au point d’entrée</li>
+    <li><strong>Ordre de qualité</strong> – L’inspection de la qualité est réalisée lorsque le matériel est transféré du point d’entrée à l’installation de stockage de l’IRC. Une fois l’inspection de la qualité terminée, l’ordre de qualité est diffusé</li>
+  </ul>
+  <h2 class="Heading2"><a id="Réception_–_Informations_générales_concernant_les_articles_en_stock"></a>Réception – Informations générales concernant les articles en stock</h2>
+  <p>Tous les articles stockés sont inspectés et reçus lors de leur arrivée dans les locaux de l’IRC. Leur qualité sera contrôlée pour toutes les entités juridiques de la CRRD et certaines entités du RAI. Lorsque le matériel arrive ou que les services sont livrés à une adresse de l’IRC, Integra doit être mis à jour pour enregistrer la réception du matériel. L’enregistrement de la réception est une condition préalable au paiement des factures.</p>
+  <p>Les produits en stock sont reçus et suivis dans l’inventaire. c.-à-d., les soldes disponibles sont mis à jour lors de chaque réception de produit.</p>
+  <p>Une quantité de PO peut être reçue partiellement. Dans ces situations, le PO reste ouvert jusqu’à la réception de tous les articles.</p>
+  <p><strong>Important</strong> : les services sont reçus de la même manière que les articles non stockés.</p>
+  <h2 class="Heading2"><a id="Saisir_une_liste_de_réception"></a>Saisir une liste de réception</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour créer une liste de réception des produits stockés reçus à une adresse de l’IRC.</p>
+  <h6 class="Heading6">Note : avant de commencer la procédure, déterminez d’abord si les lignes du PO concernent des produits stockés ou non stockés.</h6>
+  <p>La liste de réception est une confirmation par le système de l’acceptation de la livraison et s&#39;apparente à la signature de réception d’un colis. La saisie de la liste de réception n’affecte pas les soldes de stocks.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation de PO est « Confirmé »</li>
+    <li>Le statut du bon de commande est « Ordre ouvert »</li>
+    <li>Les produits sont arrivés physiquement à une adresse de l’IRC ou à un point d’entrée</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 13" height="340.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image2.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le bon de commande pertinent et cliquez sur le numéro de PO pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <h6 class="Heading6">Note : différentes filtres de recherche peuvent être utilisés pour trouver le numéro de PO. Consultez les cours en ligne Naviguer dans Integra et Traiter un bon de commande pour appliquer des filtres et trouver un bon de commande.</h6>
+  <p><img alt="Photo 27" height="325.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image3.png" width="660.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+    <li>Avant de continuer, assurez-vous que les articles figurant sur le PO sont des articles en stock.</li>
+    <li>Dans le menu en haut de la page, cliquez sur Recevoir.</li>
+  </ol>
+  <p><img alt="Photo 28" height="323.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image4.png" width="663.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Dans le volet d’action <strong>Générer</strong>, cliquez sur <strong>Listes de réception</strong>.</li>
+  </ol>
+  <p><img alt="Photo 38" height="345.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image5.png" width="680.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Dans l’onglet <strong>Paramètres</strong>, configurez Imprimer les listes de réception sur <strong>Oui</strong> pour imprimer la liste de réception, au besoin. <strong>Note :</strong> la liste de réception peut être imprimée et signée par l’IRC et remise au conducteur afin de s’assurer de recevoir les produits figurant sur la liste.</li>
+  </ol>
+  <p><img alt="Photo 23" height="343.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image6.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Faites défiler jusqu’à l’onglet <strong>Lignes</strong>. (Vous devrez peut-être cliquer sur la <strong>flèche vers le bas </strong>pour développer Lignes.)</li>
+    <li>Sur la ligne de réception, mettez à jour le champ <strong>Quantité</strong> avec la quantité réellement livrée. <strong>Note</strong> : la quantité est configurée par défaut sur la quantité du PO mais une quantité partielle peut être saisie si la quantité livrée est inférieure à la quantité figurant sur le PO. Le PO restera ouvert jusqu’à réception de la quantité totale figurant sur le PO.</li>
+    <li style="counter-reset: item1 9;" value="10">Cliquez sur <strong>OK</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781759" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image8.png" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 10;" value="11">Sur le PO, notez l’info-message, la liste de réception diffusée et l’ordre de qualité généré avec succès.<br/>
+      Une fois la liste de réception diffusée, notez ce qui suit :</li>
+  </ol>
+  <ul>
+    <li>Dans la section <strong>Gestion de la qualité</strong>, notez que l’<strong>Ordre de qualité</strong> est maintenant disponible. Une fois la liste de réception terminée, un ordre de qualité est généré automatiquement. Utilisez-le pour compléter l’ordre de qualité concernant le produit reçu par rapport à ce bon de commande.</li>
+    <li>Dans la section <strong>Journal</strong>, notez que le journal de la <strong>Liste de réceptions</strong> est maintenant disponible. Affichez les produits et les quantités reçus sur la liste de réception et imprimez la liste de réception ici.</li>
+  </ul>
+  <p><img alt="Photo 22" height="152.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image9.png" width="577.5"/></p>
+  <p>Sur l’affichage <strong>En-tête</strong> et dans l’onglet <strong>Général</strong>, le statut du document est mis à jour sur <strong>Liste de réceptions</strong>.</p>
+  <p><img alt="Photo 45" height="328.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image10.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Validez le statut du PO qui reste sur <strong>Ordre ouvert</strong>. <strong>Note :</strong> le fait de compléter la liste de réception ne modifie pas le statut du PO.</li>
+    <li style="counter-reset: item1 9;" value="10">Cliquez sur <strong>X</strong> en haut à droite pour fermer le PO.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez diffusé la liste de réception des produits stockés livrés à une adresse de l’IRC. Vous pouvez maintenant saisir un ordre de qualité ou une réception de produit.</p>
+  <h2 class="Heading2"><a id="Exécuter_un_ordre_de_qualité_après_l’inspection"></a>Exécuter un ordre de qualité après l’inspection</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour inspecter la qualité de tous les produits arrivant à une adresse de l’IRC. L’ordre de qualité est généré automatiquement et disponible pour ce PO une fois la liste de réception diffusée.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation de PO est « Confirmé »</li>
+    <li>Le statut du bon de commande est « Ordre ouvert »</li>
+    <li>Les produits sont arrivés physiquement à une adresse de l’IRC et la liste de réception a été diffusée</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>. <strong>Note :</strong> le personnel du département Programmes peut accéder directement à cette transaction pour surveiller la liste des ordres de qualité concernant les articles requérant une action de la manière suivante : .</li>
+  </ol>
+  <p><img alt="Photo 9" height="340.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image11.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le PO pertinent et cliquez sur le <strong>Numéro de</strong><strong>PO</strong> pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <h6 class="Heading6">Note : différentes filtres de recherche peuvent être utilisés pour trouver le numéro de PO.</h6>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+  </ol>
+  <p><img alt="Photo 15" height="325.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image12.png" width="660.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Dans le menu en haut de la page, cliquez sur l’onglet Recevoir.</li>
+    <li>Dans la section <strong>Gestion de la qualité</strong>, cliquez sur <strong>Ordres de qualité</strong>. <strong>Note</strong> : L’<strong>Ordre de qualité</strong> est uniquement disponible une fois une liste de réception diffusée. Tous les ordres de qualité concernant ce produit et le bon de commande s’affichent. S’il existe plusieurs listes de réception, plusieurs ordres de qualité peuvent être générés.</li>
+  </ol>
+  <p><img alt="Photo 31" height="329.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image13.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Cliquez sur <strong>Résultats</strong> dans la section en bas de l’écran.</li>
+    <li>Cliquez sur <strong>Éditer</strong> dans le formulaire <strong>Résultats de ligne d’ordre de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 47" height="336.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image14.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Saisissez le nombre d’articles ayant réussi l’inspection dans le champ <strong>Quantité de résultat</strong>.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Résultat</strong> et sélectionnez <strong>Réussite</strong>.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> pour ajouter une nouvelle ligne.</li>
+  </ol>
+  <h6 class="Heading6">Note : Si tous les articles ont réussi l’inspection, et aucun n’a échoué, il n’y a aucune raison d’ajouter une nouvelle ligne. Validez la ligne.</h6>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Saisissez le nombre d’articles ayant échoué l’inspection dans le champ <strong>Quantité de résultat</strong>.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Résultat</strong> et sélectionnez <strong>Échec</strong>.</li>
+    <li>Cliquez sur <strong>Valider</strong> pour valider vos saisies.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire <strong>Résultats de ligne d’ordre de qualité</strong> et revenir au formulaire <strong>Ordres de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 48" height="330.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image15.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Examinez la ligne d’inspection avec les résultats de test.</li>
+  </ol>
+  <h6 class="Heading6">Note : Le <img alt="Photo 49" height="21.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image16.png" width="20.6"/> dans la ligne d’inspection indique que cette tâche a été exécutée. Cela n’indique pas la réussite ou l’échec d’un produit.</h6>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Cliquez sur <strong>Valider</strong> pour ouvrir le formulaire <strong>Valider l’ordre de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 51" height="331.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image17.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Cliquez sur <strong>OK</strong> pour capturer les résultats sur l’ordre de qualité.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire <strong>Ordres de qualité</strong> et revenir au formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 26" height="250.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image18.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Sur l’onglet <strong>Lignes du bon de commande</strong>, faites défiler vers la droite pour afficher le <strong>Statut de l’ordre de qualité</strong> mis à jour sur <strong>Ordre de qualité fermé</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : Le statut Ordre de qualité fermé dans les lignes du PO indique qu’il y avait une inspection et un ordre de qualité à exécuter et que cette tâche a été exécutée.</h6>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez effectué l’inspection et l’ordre de qualité requis pour ce bon de commande.</p>
+  <ul>
+    <li>Le statut du bon de commande reste « Ordre ouvert » et le statut du document reste « Liste de réceptions » une fois l’ordre de qualité achevé.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Saisir_un_reçu_de_produit_concernant_des_articles_stockés,_y_compris_l’enregistrement_de_produit"></a>Saisir un reçu de produit concernant des articles stockés, y compris l’enregistrement de produit</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour enregistrer la réception d’un produit.</p>
+  <p>Concernant les articles stockés à une adresse de l’IRC et non détenus à un point d’entrée, une liste de réception a été diffusée, une inspection a eu lieu et un ordre de qualité a été saisi avant d’exécuter cette procédure.</p>
+  <h6 class="Heading6"><strong>Note</strong> : concernant les articles détenus à un point d’entrée, dans certains cas, l’enregistrement et la réception de produit (cette procédure) ont lieu avant l’inspection et l’ordre de qualité. Le fait de saisir la réception de produit en premier garantit la triple association et le processus de paiement du fournisseur peut avoir lieu.</h6>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le <strong>Status d’approbation</strong> du PO est confirmé</li>
+    <li>Le <strong>statut du bon de commande</strong></li>
+    <li>Les produits ont été reçus physiquement</li>
+    <li>Le document de livraison du fournisseur confirmant l’expédition/la réception a été reçu pour les articles</li>
+    <li>La liste de réception a été diffusée</li>
+    <li>L’inspection a peut-être eu lieu et l’ordre de qualité a peut-être été saisi</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Avant de démarrer les étapes de saisie de réception de produit, prenez le temps de confirmer que toutes les conditions préalables susmentionnées ont été satisfaites.</li>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 16" height="299.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image19.png" width="630.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Trouvez le PO pertinent et cliquez sur le Numéro de PO pour ouvrir le formulaire du PO. <strong>Note</strong> : différentes filtres de recherche peuvent être utilisés pour trouver le numéro de PO.</li>
+    <li style="counter-reset: item1 3;" value="4">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+  </ol>
+  <p><img alt="Photo 53" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image20.png" width="671.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans le menu en haut de la page, cliquez sur <strong>Recevoir</strong>.</li>
+  </ol>
+  <p><img alt="Photo 21" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image21.png" width="625.2"/></p>
+  <h4 class="Heading4">Saisissez la réception du produit</h4>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Dans la section <strong>Générer</strong>, cliquez sur <strong>Réception de produit</strong>. <strong>Note</strong> : utilisez toujours la réception de produit, même si vous recevez des services.</li>
+  </ol>
+  <p><img alt="Photo 19" height="301.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image22.png" width="660.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"><strong>En option</strong> : Dans <strong>OPTIONS D’IMPRESSION</strong>, cliquez sur l’indicateur <strong>Imprimer la réception de produit</strong> afin qu’il affiche <strong>Oui</strong> (l’indicateur devient bleu). Cela permet d’imprimer la réception.</li>
+    <li>Dans la section <strong>Aperçu</strong>, et dans le champ <strong>Réception de produit</strong>, saisissez l’identifiant unique de réception de produit. P. ex., un numéro de lettre de transport, un certificat d’exécution de service, etc. S’il n’existe aucun équivalent, saisissez le numéro de PO. <strong>Comme ce champ est obligatoire, une valeur </strong><strong><u>doit être</u></strong><strong> saisie</strong>.</li>
+    <li>Utilisez la barre de défilement à droite pour faire défiler jusqu’à la section <strong>Lignes</strong>. (Vous pouvez aussi cliquer sur <strong>Lignes</strong> pour développer la section).</li>
+  </ol>
+  <p><img alt="Photo 29" height="303.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image23.png" width="623.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Sur la ligne de réception, mettez à jour le champ <strong>Quantité</strong> avec la quantité réellement reçue.  Si le PO contient plusieurs lignes, mettez à jour le champ <strong>Quantité</strong> de chaque ligne avec la quantité réellement reçue.<br/>
+      <strong>Note</strong> : la quantité est configurée par défaut sur la quantité du PO mais une quantité partielle peut être saisie si la quantité livrée est inférieure à la quantité figurant sur le PO. Le PO reste ouvert jusqu’à réception de la quantité totale du PO.<br/>
+      <strong>Note</strong> : si des articles ont été endommagés et n’ont pas réussi l’inspection et l’ordre de qualité, vous pouvez aussi saisir une quantité partielle. La gestion de ce scénario est abordée dans la section Retours et ordres retournés de ce document.
+    </li>
+  </ol>
+  <p><img alt="Photo 368781648" height="327.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image24.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Cliquez sur <strong>Ligne de bon de commande &gt; Dimensions</strong> pour ajouter les dimensions adéquates du produit. Les dimensions adéquates à ajouter sont basées sur l’article reçu dans l’inventaire.</li>
+  </ol>
+  <p><img alt="Photo 368781650" height="327.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image25.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Sélectionnez la <strong>case à cocher</strong> pour ajouter chaque <strong>dimension</strong> applicable.</li>
+    <li>Cliquez sur <strong>OK</strong> dans le formulaire <strong>Affichage des dimensions</strong> pour revenir au PO.</li>
+    <li>Examinez la valeur dans le champ <strong>Lieu</strong> et, au besoin, mettez-la à jour avec le lieu de stockage du matériel.<br/>
+      <strong>Note</strong> : la saisie du lieu adéquat de l’entrepôt où le matériel est stocké constitue une étape clé de la réception de produit. S’il n’est pas saisi ici, le lieu indiqué par défaut est celui saisi par le personnel du département Programmes lors de la création de l’ordre initial, et ce lieu est incorrect.<br/>
+      <strong>Note</strong> : concernant tous les produits stockés, exécutez les étapes d’enregistrement du produit.
+    </li>
+  </ol>
+  <h3 class="Heading3">Enregistrement du produit</h3>
+  <p>Tous les articles en stock et contrôlés par lot sont enregistrés en saisissant les informations de lot et les dates d’expiration lors de la réception du produit.</p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Cliquez sur <strong>Mettre à jour la ligne &gt; Enregistrement</strong> pour enregistrer le produit.</li>
+  </ol>
+  <p><img alt="Photo 17" height="314.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image27.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Dans le formulaire <strong>Enregistrement</strong>, cliquez sur <strong>Ajouter une ligne d’enregistrement</strong> dans l’onglet <strong>Transactions</strong>.</li>
+  </ol>
+  <p><img alt="Photo 72" height="312.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image28.png" width="662.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Faites défiler jusqu’à l’onglet <strong>Lignes d’enregistrement</strong> et effectuez un clic droit sur le champ <strong>Numéro de lot</strong> et sélectionnez <strong>Voir les détails</strong>.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> pour saisir un nouveau numéro de lot pour le produit reçu.</li>
+  </ol>
+  <p><img alt="Photo 75" height="298.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image29.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Dans le champ <strong>Numéro de lot</strong>, saisissez le numéro de lot du fournisseur associé au produit.</li>
+    <li>Cliquez sur l’onglet <strong>Réinitialiser</strong> et dans la section <strong>Réinitialiser</strong>, cliquez sur <strong>Réinitialiser les détails de lot du fournisseur</strong>.</li>
+  </ol>
+  <p><img alt="Photo 76" height="325.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image30.png" width="679.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 20;" value="21">Dans le champ <strong>Modifier un ou détails plusieurs dans le formulaire de lot d’inventaire</strong>, saisissez la date de fabrication dans le champ <strong>Date de lot du fournisseur</strong>. <strong>Note</strong> : il s’agit de la date de fabrication du produit fournie par le fournisseur. S’il n’y a aucune date de fabrication, utilisez la date du lot.</li>
+    <li style="counter-reset: item1 21;" value="22">Configurez <strong>Utiliser une date de fabrication</strong> sur <strong>Oui</strong> (le curseur devient bleu).</li>
+    <li>Saisissez la date d’expiration dans le champ <strong>Date d’expiration du fournisseur</strong>. <strong>Note</strong> : en général, la date d’expiration est indiquée sur le produit. Si elle est indisponible, contactez le fournisseur afin de déterminer la date d’expiration des produits pharmaceutiques.</li>
+    <li style="counter-reset: item1 23;" value="24">Cliquez sur <strong>OK</strong> pour fermer le formulaire et retourner au nouveau formulaire <strong>Lots</strong>.</li>
+  </ol>
+  <p><img alt="Photo 78" height="295.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image31.png" style="cursor: nesw-resize;" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Validez les saisies dans les onglets <strong>Propriétés et lot du fournisseur</strong>.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder les nouvelles saisies de lot.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le nouveau formulaire <strong>Lots</strong>.</li>
+  </ol>
+  <p><img alt="Photo 80" height="232.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image32.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 27;" value="28">Localisez le nouveau numéro de lot créé dans la grille <strong>Affichage standard de lots</strong>.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder le nouveau numéro de lot créé.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer la grille <strong>Affichage standard de lots</strong>.</li>
+  </ol>
+  <p><img alt="Photo 82" height="314.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image33.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 30;" value="31">Dans le formulaire <strong>Enregistrement</strong>, cliquez sur le menu déroulant dans le champ Numéro de lot dans la section <strong>Lignes d’enregistrement</strong>.</li>
+    <li>Sélectionnez le nouveau numéro de lot créé dans le menu déroulant.</li>
+    <li>Dans le champ <strong>Lieu</strong>, saisissez ou mettez à jour le lieu où le produit sera stocké, selon les besoins.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder votre saisie.</li>
+    <li>Cliquez sur <strong>Confirmer l’enregistrement</strong> pour valider l’enregistrement de produit. Vous revenez au formulaire <strong>Détails de lot du fournisseur</strong>.</li>
+  </ol>
+  <p><img alt="Photo 85" height="274.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image34.png" width="567.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 35;" value="36">Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder votre saisie.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le formulaire <strong>Détails de lot du fournisseur</strong>.<br/>
+      Vous revenez au formulaire <strong>Enregistrement</strong>.</li>
+  </ol>
+  <p><img alt="Photo 87" height="314.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image35.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 37;" value="38">Validez le <strong>Numéro de lot</strong> indiquant le nouveau numéro de lot créé pour le produit. <strong>Note</strong> : si l’ordre que vous avez reçu contenait plusieurs produits ou plusieurs numéros de lot pour le même produit, vous devrez peut-être répéter ces étapes pour le nombre de numéros de lot requis. <strong>Note</strong> : il est important de joindre les documents justificatifs à l’enregistrement. Consultez les étapes : <em>Joindre les documents au bon de commande</em>.</li>
+    <li style="counter-reset: item1 38;" value="39">L’enregistrement du produit est terminé. Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder votre saisie.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le formulaire <strong>Enregistrement</strong>.<br/>
+      Vous revenez au formulaire <strong>Diffusion de la réception de produit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 89" height="343.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image36.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 40;" value="41">Faites défiler jusqu’à l’onglet <strong>Lignes</strong> et examinez la ligne.<br/>
+      <strong>Note</strong> : même si vous avez enregistré le produit et créé le nouveau numéro de lot, cela ne s’affichera pas dans le champ <strong>Numéro de lot</strong>. Toutefois, le numéro de lot est enregistré pour ce produit.<br/>
+      Si le champ <strong>Numéro de lot</strong> n’est pas affiché, cliquez sur <strong>Ligne du bon de commande &gt; Dimensions</strong> et ajoutez le champ à l’affichage.<br/>
+      <strong>En option</strong> : pour valider et confirmer le numéro de lot de ce produit, accédez à : <strong>Modules &gt; Gestion d’inventaire &gt; Inventaire disponible</strong> et localisez le projet, le numéro d’article, le lieu et le numéro de lot que vous venez d’enregistrer.
+    </li>
+    <li>Cliquez sur <strong>OK</strong> dans le formulaire <strong>Diffusion de la réception de produit</strong> pour revenir au PO.</li>
+  </ol>
+  <p><img alt="Photo 368781652" height="313.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image37.png" style="cursor: nwse-resize;" width="637.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 42;" value="43">Confirmez l’info-message <strong>Opération terminée</strong> indiquant que la réception a été traitée avec succès.</li>
+  </ol>
+  <ul>
+    <li>Si l’option d’impression a déjà été sélectionnée, l’affichage d’impression de la réception de produit sera automatiquement affichée.</li>
+    <li>Pour imprimer la réception, cliquez sur l’<strong>icône de l’imprimante</strong> et sélectionnez la destination d’impression.</li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 43;" value="44">Vérifiez que le statut du bon de commande est mis à jour sur <strong>Reçu</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Joignez la documentation au bon de commande</h3>
+  <p>Suivez ces étapes pour ajouter le document de livraison du fournisseur confirmant que l’expédition/la réception a été reçue pour les articles. Pour pouvoir ajouter des documents à un bon de commande, le statut d’approbation du bon de commande doit être Confirmé.</p>
+  <p>Dans Integra, ce sont des étapes standards pour ajouter des documents à un enregistrement. Utilisez ces étapes pour joindre des documents justificatifs à d’autres transactions et processus.</p>
+  <ol>
+    <li>Cliquez sur <strong>Demander une modification</strong> dans l’onglet <strong>Bon de commande</strong>. Le statut d’approbation est à nouveau <strong><em>Brouillon</em></strong>.</li>
+    <li>Cliquez sur l’icône du <strong>trombone </strong>dans l’angle supérieur droit de l’écran pour joindre un document au bon de commande.</li>
+  </ol>
+  <p><img alt="Photo 368781666" height="254.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image40.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Dans le menu en haut de la page, cliquez sur <strong>Nouveau &gt; Fichier</strong> dans la liste de sélection du menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 368781668" height="260.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image41.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans le panneau à droite, cliquez sur <strong>Naviguer</strong>.</li>
+    <li>Localisez et sélectionnez le document concerné, conformément à la fonctionnalité de navigation standard dans Windows. (Le téléchargement peut durer quelques secondes)</li>
+  </ol>
+  <p><img alt="Photo 368781799" height="214.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image42.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Vérifiez que la pièce jointe est listée dans le panneau à gauche.</li>
+    <li>Cliquez sur l’onglet <strong>Aperçu</strong> pour prévisualiser la pièce jointe.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer l’affichage d’impression et revenir au formulaire du PO.<br/>
+      <strong>Note</strong> : l’icône du <strong>trombone</strong> affiche le nombre 1, ce qui indique qu’un document est joint au PO.
+    </li>
+    <li style="counter-reset: item1 9;" value="10">Cliquez sur <strong>Flux de travail &gt; Valider</strong> pour soumettre à nouveau le PO au flux de travail.</li>
+    <li>Cliquez sur <strong>Valider</strong>.<br/>
+      <strong>Note</strong> : comme l’unique modification apportée consistait à joindre un document, le flux de travail approuve automatiquement le PO qui est Confirmé.
+    </li>
+  </ol>
+  <p><img alt="Photo 34" height="250.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image44.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Si le montant total du PO a été reçu, vérifiez que le statut du PO a été mis à jour sur <em><strong>Reçu</strong></em>.</li>
+    <li>Si un montant partiel du PO a été reçu, vérifiez que le statut de ce PO est toujours configuré sur <em><strong>Ouvrir l’ordre</strong></em>.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez enregistré le produit stocké contrôlé par lot avec un nouveau numéro de lot et enregistré la Réception des produits. Vous avez joint des documents justificatifs. Vous pouvez maintenant créer une facture pour le PO.</p>
+  <ul>
+    <li>Pour voir une liste de toutes les réceptions diffusées par rapport au PO, sélectionnez Réception de produit dans la section Journaux.</li>
+    <li>Pour imprimer/réimprimer le document de réception de produit :
+      <ul>
+        <li>sélectionnez Réception de produit dans la section Journaux</li>
+        <li>Sélectionnez le document de réception concerné</li>
+        <li>Cliquez sur l’onglet Aperçu/Imprimer et sélectionnez Aperçu de copie.</li>
+        <li>Sélectionnez sur l’icône de l’imprimante pour sélectionner l’impression ou le format PDF.</li>
+      </ul>
+    </li>
+    <li>Si vous devez imprimer/réimprimer le document de réception de produit, sélectionnez Réception de produit dans le volet d’action Journaux ; sélectionnez le document de réception concerné ; cliquez sur l’onglet Aperçu/Imprimer et sélectionnez Aperçu de copie. Ensuite, sélectionnez l’icône de l’imprimante pour sélectionner l’impression ou le format PDF.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Processus_opérationnel_–_Expédition_de_produit"></a>Processus opérationnel – Expédition de produit</h2>
+  <p>Cette section indique les termes clés et les étapes principales du processus opérationnel pour expédier les produits à partir de l’entrepôt.</p>
+  <h2 class="Heading2"><a id="Flux_de_processus_opérationnel_–_CRRD_d’expédition_de_produits"></a>Flux de processus opérationnel – CRRD d’expédition de produits</h2>
+  <p><img alt="Photo 10" height="318.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image45.png" width="707.0"/></p>
+  <h2 class="Heading2"><a id="Expédition_–_Informations_générales"></a>Expédition – Informations générales</h2>
+  <p>L’IRC utilise la fonction prélever/emballer d’Integra pour exécuter les tâches suivantes :</p>
+  <ul>
+    <li>Distribution du matériel depuis l’entrepôt de l’IRC à un bénéficiaire</li>
+    <li>Transfert des matériaux entre un entrepôt/dispensaire de l’IRC et un autre entrepôt/dispensaire de l’IRC</li>
+  </ul>
+  <p>La fonction prélever/emballer est déclenché par un ordre de transfert ou la consommation d’articles d’un projet. Chacune de ces actions génère automatiquement des instructions de prélèvement devant être examinées par la chaîne d&#39;approvisionnement. Le personnel de l’entrepôt imprime la liste de prélèvement concernant les articles à expédier.</p>
+  <p>La liste de prélèvement est utilisée dans l’entrepôt pour prélever les quantités d’articles. Les listes de prélèvement avec exigences concernant les articles sont diffusées afin de distribuer l’inventaire. Lorsqu’une liste d’emballage est diffusée, l’inventaire est réduit à partir de l’inventaire financier et de l’inventaire physique. L’inventaire financier correspond au solde de coût du compte principal de l’inventaire et l’inventaire physique désigne la quantité disponible. Les dépenses du projet sont également diffusées.</p>
+  <h2 class="Heading2"><a id="Générer_une_liste_de_prélèvement"></a>Générer une liste de prélèvement</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour expédier du matériel reçu pour générer une liste de prélèvement concernant les articles devant être émis à un bénéficiaire.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>L’ID de projet est connu et/ou le numéro de bon de commande est connu</li>
+    <li>La quantité d’articles disponibles est suffisante dans l’entrepôt pour les exigences d’expédition</li>
+    <li>Le statut d’approbation du PO est <em><strong>Confirmé</strong></em></li>
+    <li>Le statut du bon de commande est <em><strong>Reçu</strong></em></li>
+    <li>La liste de réception est diffusée</li>
+    <li>L’ordre de qualité est diffusé</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 37" height="190.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image46.png" width="646.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Dans la grille <strong>Tous les projets</strong>, recherchez le projet à partir duquel les articles seront expédiés.</li>
+    <li>Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne pour sélectionner la ligne.</li>
+  </ol>
+  <p><img alt="Photo 368781697" height="170.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image48.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Dans le menu en haut, cliquez sur l’onglet <strong>Plan</strong> et dans la section <strong>Exigences concernant les articles</strong>, et cliquez sur <strong>Exigences concernant les articles</strong>.</li>
+  </ol>
+  <p><img alt="Photo 42" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image49.png" width="620.7"/><br/>
+    <strong>Note</strong> : pour effectuer une recherche plus rapide et plus efficace sur cet écran, ajoutez une colonne intitulée Référence. La colonne <strong>Référence</strong> contient le numéro de PO associé à l’exigence concernant les articles. Ajoutez le <strong>Lieu</strong> et l’<strong>Entrepôt</strong> (dimensions d’inventaire) à la grille également à titre de commodité.
+  </p>
+  <p><strong>Note</strong> : Consultez <a href="https://rescue.box.com/s/49k6zoy7memlhb18nrb7kycli66bl3vk">Personnaliser la configuration de la grille du tableau</a> dans Integra pour obtenir des instructions supplémentaires sur la personnalisation du tableau.</p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Sur l’écran de liste des exigences, effectuez un clic droit sur la ligne d’en-tête de la colonne.</li>
+  </ol>
+  <p><img alt="Photo 368781778" height="268.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image50.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Sélectionnez <strong>Insérer des colonnes…</strong> dans le menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 368781794" height="323.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image51.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Cliquez sur la <strong>case à cocher</strong> à côté de <strong>Référence (Lignes d’ordre)</strong>.</li>
+    <li>Cliquez sur <strong>Mettre à jour</strong> pour ajouter la colonne à l’affichage.</li>
+    <li>Faites passer le curseur sur l’en-tête de la colonne <strong>Référence</strong> et sur les points à gauche du <strong>R</strong> jusqu’à ce que le curseur devienne une flèche quadruple. Ensuite, cliquez et faites glisser la colonne <strong>Référence</strong> immédiatement à droite de la colonne <strong>Numéro d’article</strong>. <strong>Note</strong> : à titre de commodité, cliquez sur le menu déroulant <strong>Mon affichage</strong> et sauvegardez cet affichage. Cela vous permet de ne pas devoir répéter les étapes pour ajouter à nouveau la colonne.</li>
+  </ol>
+  <p><img alt="Photo 368781795" height="329.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image53.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Dans la liste des exigences concernant les articles, cliquez sur la <strong>case à cocher</strong> à gauche de l’article pour lequel générer la liste de prélèvement. <strong>Note</strong> : vous pouvez sélectionner plusieurs lignes pour un prélèvement.</li>
+    <li style="counter-reset: item1 10;" value="11">Examinez la quantité de la ligne sélectionnée.</li>
+    <li>Dans le menu en haut, cliquez sur <strong>Gérer</strong>.</li>
+  </ol>
+  <p><img alt="Photo 39" height="299.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image55.png" width="612.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Dans le volet d&#39;action, cliquez sur <strong>Diffusion &gt; Liste de prélèvement</strong> dans la liste du menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 44" height="298.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image56.png" width="583.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Développez la section <strong><span>PARAMÈTRE</span></strong> (si cela n’est pas déjà fait).</li>
+    <li>Dans la section <strong>PARAMÈTRE</strong>, examinez le champ <strong>Quantité</strong>. Il est paramétré par défaut sur <strong>Tout</strong> mais mettez-le à jour au besoin.</li>
+    <li>Paramétrez <strong>Imprimer la liste de prélèvement</strong> sur <strong>Oui</strong> (l’indicateur devient bleu).</li>
+    <li>Faites défiler jusqu’à la section <strong>Lignes</strong>.</li>
+  </ol>
+  <p><img alt="Photo 55" height="299.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image57.png" width="580.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Dans le champ <strong>Mettre à jour</strong>, saisissez la quantité qui sera prélevée. <strong>Note</strong> : au besoin, la quantité peut être remplacée pour prélever une quantité partielle.</li>
+  </ol>
+  <p> </p>
+  <h6 class="Heading6">Important : la quantité affichée dans le champ disponible représente l’inventaire actuellement disponible. La quantité dans le champ Mettre à jour représente le montant spécifié dans les exigences concernant les articles du projet. Si la quantité disponible n’est pas suffisante, le champ Mettre à jour doit être modifié pour représenter l’inventaire disponible à prélever.</h6>
+  <p>Vous ne pouvez pas saisir de quantité supérieure à la quantité disponible affichée.</p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 57" height="318.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image58.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Cliquez sur <strong>Oui</strong> lorsque vous voyez un message d’avertissement.</li>
+  </ol>
+  <p><img alt="Photo 368781634" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image59.png" width="666.0"/></p>
+  <h6 class="Heading6">Note : un aperçu d’impression de la liste de prélèvement s’affiche. L’écran d’impression identifie le lieu de l’entrepôt à partir duquel les articles sont prélevés. Vérifiez que l’entrepôt affiché est correct en fonction de l’exigence.</h6>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Pour imprimer la liste de prélèvement, cliquez sur l’icône de l’<strong>imprimante</strong>.</li>
+    <li>Pour exporter le formulaire de la liste de prélèvement dans un format différent, cliquez sur <strong>Exporter</strong> et sélectionnez le format, p. ex., <strong>PDF</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer l’affichage d’impression et revenir à la liste d’exigences concernant les articles.</li>
+  </ol>
+  <p><img alt="Photo 368781632" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image61.png" width="631.3"/></p>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez généré la liste de prélèvement des produits et quantités à prélever à partir de certains lieux.</p>
+  <p>Une fois la liste de prélèvement diffusée pour une exigence concernant les articles en termes de quantité totale, la <strong>liste de prélèvement</strong> n’est plus disponible dans la section <strong>Diffusion</strong>.</p>
+  <ul>
+    <li>Le personnel de l’entrepôt utilise cette liste de prélèvement dans l’entrepôt pour prélever les articles à expédier et les préparer à l’expédition</li>
+    <li>Une fois tous les articles prélevés, le personnel de l’entrepôt diffuse un bon de livraison pour enregistrer la distribution des articles aux clients.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Diffuser_un_bon_de_livraison"></a>Diffuser un bon de livraison</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour générer un bon de livraison pour les articles prélevés dans l’entrepôt à expédier.</p>
+  <p>La diffusion du bon de livraison réduit la quantité de l’inventaire physique disponible et met à jour le solde de coûts du compte principal de l’inventaire. Les dépenses du projet sont également mises à jour.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>La liste de prélèvement est diffusée et tous les articles disponibles sont prélevés.</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781714" height="190.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image62.png" width="646.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Dans la grille <strong>Tous les projets</strong>, recherchez le projet dont les articles doivent être emballés.</li>
+    <li>Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne pour sélectionner la ligne.</li>
+  </ol>
+  <p><img alt="Photo 368781716" height="170.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image64.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Dans le menu en haut, cliquez sur <strong>Plan</strong> et cliquez sur <strong>Exigences concernant les articles</strong> dans la section <strong>Exigences concernant les articles</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781717" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image65.png" width="620.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans la liste des exigences concernant les articles, cliquez sur la <strong>case à cocher</strong> à gauche de l’article pour lequel générer le bon de livraison.</li>
+    <li>Examinez la quantité de la ligne sélectionnée.</li>
+    <li>Dans le menu en haut, cliquez sur <strong>Gérer</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781719" height="298.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image67.png" width="612.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Dans le volet d&#39;action, cliquez sur <strong>Diffusion &gt; Bon de livraison</strong> dans la liste du menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 368781721" height="331.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image68.png" width="679.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Dans le formulaire <strong>Diffusion du bon de livraison</strong> et dans le champ <strong>Quantité</strong>, sélectionnez <strong>Prélevé</strong> dans la liste de sélection du menu déroulant.</li>
+    <li>Faites défiler jusqu’à l’onglet <strong>Lignes</strong> et examinez les lignes listées.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 368781641" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image69.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Cliquez sur <strong>Oui</strong> lorsque vous voyez un message d’avertissement.</li>
+  </ol>
+  <p><img alt="Photo 368781723" height="326.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image70.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Dans le formulaire <strong>Afficher le bon de livraison</strong>, cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 368781642" height="304.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image71.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Vérifiez l’exactitude du bon de livraison. La valeur dans le champ <strong>Nombre</strong> correspond au numéro du bon de livraison. Notez-le à titre de référence. <strong>Note</strong> : le personnel de l’entrepôt examine la liste d’emballage pour vérifier le contenu expédié.</li>
+    <li style="counter-reset: item1 14;" value="15">Pour imprimer le bon de livraison, cliquez sur l’icône de l’<strong>imprimante</strong>.</li>
+    <li>Pour exporter le formulaire du bon de livraison dans un format différent, cliquez sur <strong>Exporter</strong> et sélectionnez le format, p. ex., <strong>PDF</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite pour fermer l’écran d’impression et revenir à la grille des exigences concernant les articles.</li>
+  </ol>
+  <p><img alt="Photo 368781644" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image73.png" width="658.1"/></p>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez généré et diffusé un bon de livraison à inclure avec les articles expédiés. La diffusion de la liste d’emballage supprime la quantité prélevée de l’inventaire et déduit cette quantité du projet.</p>
+  <h2 class="Heading2"><a id="Créer_un_ordre_de_transfert"></a>Créer un ordre de transfert</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour créer un ordre de transfert afin de déplacer l’inventaire d’un entrepôt à un autre au sein du même projet Integra.</p>
+  <p>Ce processus inclut deux étapes :</p>
+  <ol class="Decimal">
+    <li>Annulez la réservation de la quantité de l’article transféré depuis l’entrepôt source afin qu’elle soit disponible pour le transfert</li>
+    <li>Créez un ordre de transfert pour déplacer l’inventaire de l’entrepôt source à l’entrepôt destinataire</li>
+  </ol>
+  <p>Cette procédure fonctionne mieux en utilisant deux sessions simultanées d’Integra. Pour cela, suivez les étapes de la procédure.</p>
+  <p><span style="font-size:13pt;"><span style="font-weight: bold;font-size: 14pt">L’entrepôt expéditeur saisit la réception de produit pour l’entrepôt destinataire</span></span></p>
+  <p>Il arrive que l’entrepôt expéditeur exécute les étapes de réception de produit pour l’entrepôt destinataire dans Integra. Dans ce cas, suivez les étapes de la procédure Recevoir un produit sur un ordre de transfert avant de sauvegarder et de fermer l’ordre de transfert.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>La quantité disponible d’articles transférés est suffisante pour exécuter le transfert</li>
+    <li>La quantité d’articles à transférer vérifiée et confirmée physiquement est disponible dans le lieu de stockage</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <p><span style="font-size:14pt;"><span style="font-weight:bold;">Annulez la réservation de la quantité d’articles à transférer</span></span></p>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781635" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image74.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Dans la grille <strong>Tous les projets</strong> et le champ <strong>Filtrer</strong>, saisissez l’ID de projet pour rechercher le projet auquel l’article est associé.</li>
+    <li>Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne pour sélectionner le projet.</li>
+    <li>Dans le menu en haut, cliquez sur l’onglet <strong>Plan</strong> et dans la section <strong>Exigences concernant les articles</strong>, cliquez sur <strong>Exigences concernant les articles</strong>.</li>
+    <li>Dans la liste des exigences concernant les articles, cliquez sur la <strong>case à cocher</strong> à gauche de l’article transféré.</li>
+    <li>Dans l’onglet <strong>Gérer</strong>, cliquez sur <strong>Inventaire &gt; Réservation</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781731" height="260.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image78.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Cliquez sur le champ <strong>Réservation</strong> et mettez à jour la valeur. <strong>Note</strong> : la valeur mise à jour soustrait le nombre d’articles transférés de la valeur dans le champ Réservation. Par exemple, 5 articles sont transférés, et la réservation actuelle est de 50. Par conséquent, la valeur mise à jour sera de 45.</li>
+  </ol>
+  <p><img alt="Photo 368781729" height="288.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image79.png" width="678.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Cliquez sur <strong>Afficher les dimensions</strong> pour ajouter les dimensions de l’inventaire à l’affichage.</li>
+  </ol>
+  <p><img alt="Photo 368781728" height="327.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image80.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur la <strong>case à cocher </strong>à côté de chaque dimension à ajouter.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <h6 class="Heading6">Note : une fois les dimensions d’affichage ajoutées, localisez à nouveau la réservation d’article.</h6>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Filtrez l’affichage par <strong>ID de projet</strong>.</li>
+    <li>Localisez la réservation d’article dans la grille et sélectionnez-la pour vous y référer facilement.</li>
+  </ol>
+  <p><span style="font-size:14pt;font-weight:bold">Créer un ordre de transfert</span></p>
+  <p>Il s’agit de la deuxième phase de la procédure de création d’un ordre de transfert. Cette partie de la procédure utilise une deuxième session simultanée d’Integra.</p>
+  <p><img alt="Photo 368781733" height="303.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image82.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Ouvrez une deuxième session d’Integra en effectuant un clic droit sur l’onglet Integra et en sélectionnant <strong>Dupliquer</strong>.</li>
+    <li>Dans la deuxième session d’Integra, accédez aux modules <strong>Gestion de l’inventaire &gt; Ordres sortants &gt; Ordre de transfert</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781735" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image83.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Cliquez sur <strong>Nouveau</strong> pour créer un nouvel ordre.</li>
+  </ol>
+  <p><img alt="Photo 368781736" height="299.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image84.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Dans l’onglet <strong>En-tête de l’ordre de transfert</strong> et dans la section <strong>Aperçu</strong>, complétez les champs suivants :</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Depuis l’entrepôt</p>
+          </td>
+          <td>
+            <p>Cliquez sur the menu déroulant et sélectionnez l’entrepôt source.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Vers l’entrepôt</p>
+          </td>
+          <td>
+            <p>Cliquez sur the menu déroulant et sélectionnez l’entrepôt destinataire.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date d’expédition</p>
+          </td>
+          <td>
+            <p>Indique la date du jour par défaut.</p>
+            <p>Cliquez sur le calendrier et sélectionnez la date d’expédition du transfert.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date de réception</p>
+          </td>
+          <td>
+            <p>Indique la date du jour par défaut.</p>
+            <p>Cliquez sur le calendrier et sélectionnez la date à laquelle le transfert est censé être reçu.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <h6 class="Heading6">Notez que le statut de transfert de l’ordre est Créé.</h6>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Dans l’onglet <strong>Lignes de l’ordre de transfert</strong>, cliquez sur <strong>Ajouter</strong> pour ajouter une ligne.</li>
+  </ol>
+  <p><img alt="Photo 368781738" height="330.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image85.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Examinez/complétez les champs suivants :</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Numéro d’article</p>
+          </td>
+          <td>
+            <p>Saisissez ou recherchez le numéro d’article transféré.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantité de transfert</p>
+          </td>
+          <td>
+            <p>Saisissez la quantité de l’article transféré.</p>
+            <p>Elle correspond au même montant que celui dont la réservation a été annulée.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date d’expédition</p>
+          </td>
+          <td>
+            <p>Validez la valeur par défaut à partir de la saisie dans l’aperçu.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date de réception</p>
+          </td>
+          <td>
+            <p>Validez la valeur par défaut à partir de la saisie dans l’aperçu.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Faites défiler et développez l’onglet <strong>Détails de la ligne</strong>.</li>
+    <li>Cliquez sur l’onglet <strong>Dimensions</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781740" height="299.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image86.png" width="602.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Examinez/complétez les champs suivants : <strong>Note</strong> : consultez la première session d’Integra exécutée simultanément pour déterminer les données à saisir dans l’onglet Dimensions, y compris : Numéro de lot, Lieu</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet</p>
+          </td>
+          <td>
+            <p>Saisissez l’ID de projet ID auquel les articles sont associés.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Site</p>
+          </td>
+          <td>
+            <p>Indique la valeur par défaut de la saisie précédente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Entrepôt</p>
+          </td>
+          <td>
+            <p>Indique la valeur par défaut de la saisie précédente.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Numéro de lot</p>
+          </td>
+          <td>
+            <p>Identifie le numéro de lot des articles FIFO ou FEFO.</p>
+            <p>Cliquez sur the menu déroulant et sélectionnez le numéro de lot de l’article transféré, au besoin.</p>
+            <p>ASTUCE : n’oubliez pas, vous pouvez le trouver dans l’écran Réservation dans une session simultanée.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Lieu</p>
+          </td>
+          <td>
+            <p>Identifie le lieu dans lequel cet article est stocké dans l’entrepôt expéditeur.</p>
+            <p>Cliquez sur the menu déroulant et sélectionnez Lieu pour l’article transféré.</p>
+            <p>ASTUCE : n’oubliez pas, vous pouvez le trouver dans l’écran Réservation dans une session simultanée.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">Cliquez sur <strong>Sauvegarder</strong>. <strong>Note</strong> : le statut de l’ordre de transfert est Créé.<br/>
+      <strong>Note</strong> : si plusieurs articles sont transférés, exécutez ces étapes pour chaque article. 
+    </li>
+  </ol>
+  <p><span style="font-weight:bold;font-size:14pt">Diffuser une liste de prélèvement</span></p>
+  <p><img alt="Photo 368781725" height="334.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image87.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Cliquez sur l’onglet <strong>Expédier</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : hors d’Integra, vous devez prélever et emballer physiquement le matériel transféré à l’entrepôt destinataire.</h6>
+  <ol>
+    <li style="counter-reset: item1 25;" value="26">Dans la section <strong>Opérations</strong>, cliquez sur <strong>Générer une liste de prélèvement</strong> .</li>
+  </ol>
+  <p><img alt="Photo 368781742" height="325.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image88.png" width="681.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 26;" value="27">Examinez la ligne de transfert du prélèvement.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Mettre à jour</strong> et sélectionnez <strong>Tout</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : le fait de sélectionner Tout indique que toute la quantité non réservée et saisie en tant que quantité de transfert dans l’ordre de transfert est prélevée pour l’expédition.</h6>
+  <p><img alt="Photo 368781743" height="676.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image89.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 28;" value="29">Confirmez la <strong>Quantité à prélever</strong> dans la section <strong>Lignes</strong>.</li>
+    <li>Cliquez sur l’onglet <strong>Général</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781744" height="631.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image90.png" width="629.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 30;" value="31">Paramétrez <strong>Imprimer la liste de prélèvement</strong> sur <strong>Oui</strong>.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 368781745" height="277.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image91.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 32;" value="33">Vérifiez l’info-message Opération terminée avec succès.</li>
+    <li>Dans la section <strong>Affichage</strong>, cliquez sur <strong>Liste de prélèvement</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781748" height="325.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image92.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 34;" value="35">Cliquez sur <strong>Aperçu/Imprimer &gt; Aperçu d’origine</strong> pour voir la liste de prélèvement.</li>
+    <li>Examinez le formulaire de la Liste de prélèvement.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 368781750" height="244.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image93.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 37;" value="38">Examinez l’aperçu d’impression de la liste de prélèvement.</li>
+    <li>Pour imprimer la liste de prélèvement, cliquez sur l’icône de l’<strong>imprimante</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite pour fermer l’écran d’impression et revenir à l’écran <strong>Aperçu d’impression</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite pour fermer l’écran d’impression et revenir à l’écran <strong>Ordre de transfert</strong>.</li>
+  </ol>
+  <p><span class="Heading3" style="font-weight: bold;font-size: 14pt">Enregistrement de la liste de prélèvement</span></p>
+  <p>Les articles FIFO ou FEFO doivent être enregistrés après le prélèvement. Cette étape confirme que les articles ont été prélevés et que cette étape est terminée.</p>
+  <p><img alt="Photo 368781752" height="245.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image95.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 41;" value="42">Dans la section <strong>Opérations</strong>, cliquez sur <strong>Enregistrement de la liste de prélèvement</strong>.</li>
+    <li>Sur l’écran <strong>Enregistrement de la liste de prélèvement</strong>, faites défiler jusqu’à l’onglet <strong>Lignes</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781755" height="270.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image96.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 43;" value="44">Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne pour la sélectionner. Notez que le statut de Manutention de la ligne sélectionnée est Activé.</li>
+    <li>Cliquez sur <strong>Fonctions &gt; Mettre à jour</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781757" height="290.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image98.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 45;" value="46">Confirmez/validez que le <strong>Statut de manutention</strong> est mis à jour sur <strong>Terminé</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer l’écran <strong>Enregistrement de la liste de prélèvement</strong> et revenir à l’écran <strong>Ordre de transfert</strong>.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> sur l’écran de l’ordre de transfert.</li>
+  </ol>
+  <h6 class="Heading6">Note : une fois l’enregistrement de la liste de prélèvement terminé et sauvegardé, la section Expédier l’ordre de transfert dans les opérations est disponible pour exécuter le processus.</h6>
+  <p>Hors d’Integra, l’ordre est emballé et préparé pour l’expédition.</p>
+  <p><span style="font-weight:bold;font-size:14pt">Expédier l’ordre de transfert</span></p>
+  <ol>
+    <li style="counter-reset: item1 48;" value="49">Dans la section <strong>Opérations</strong>, cliquez sur <strong>Expédier l’ordre de transfert</strong>.</li>
+    <li>Examinez la ligne de transfert à expédier.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Mettre à jour</strong> et sélectionnez <strong>Tout</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : le fait de sélectionner Tout indique que toute la quantité non réservée et saisie en tant que quantité de transfert dans l’ordre de transfert est expédiée.</h6>
+  <p><img alt="Photo 368781763" height="343.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image99.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 51;" value="52">Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne dans la section Inventaire.</li>
+    <li>Confirmez la <strong>Quantité à expédier</strong> dans la section <strong>Lignes</strong>.</li>
+    <li>Cliquez sur l’onglet <strong>Général</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781764" height="338.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image101.png" width="662.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 54;" value="55">Si vous avez un ID de suivi pour l’expédition, saisissez-le dans le champ <strong>ID de suivi</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781760" height="530.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image102.png" width="528.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 55;" value="56">Cliquez sur <strong>OK</strong> pour continuer.</li>
+    <li>Vérifiez l’info-message <strong>Opération terminée</strong> avec succès.</li>
+  </ol>
+  <p><img alt="Photo 368781766" height="326.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image103.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 57;" value="58">Vérifiez que le status de l’ordre de transfert est mis à jour sur <strong>Expédié</strong>.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder les modifications.</li>
+  </ol>
+  <h6 class="Heading6">Note : pendant que le produit est physiquement transféré à l’entrepôt destinataire, le déplace le produit vers l’entrepôt de transit.</h6>
+  <ol>
+    <li style="counter-reset: item1 59;" value="60">Cliquez sur <strong>X</strong> pour fermer l’<strong>Ordre de transfert : </strong><strong>ITRXXXXXX</strong> et revenir à la grille <strong>Ordres de transfert</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez créé un ordre de transfert pour expédier le produit au sein du même projet depuis un entrepôt expéditeur de l’IRC vers un entrepôt destinataire de l’IRC. Dans cette procédure, vous avez annulé la réservation de quantité pour qu’elle puisse être expédiée. Vous avez diffusé une liste de prélèvement et enregistré une liste de prélèvement pour confirmer ce qui a été prélevé. Vous avez expédié l’ordre de transfert à l’entrepôt destinataire.</p>
+  <ul>
+    <li>Pour voir l’expédition dans l’entrepôt de transit avant l’arrivée dans l’entrepôt destinataire, accédez à : Gestion de l&#39;inventaire &gt; Questions et rapports &gt; Rapports disponibles &gt; Inventaire disponible. Filtrer en fonction de l’entrepôt de transit dans lequel vous pensez voir le produit en transit.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Recevoir_un_produit_figurant_sur_un_ordre_de_transfert"></a>Recevoir un produit figurant sur un ordre de transfert</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour enregistrer la Réception du produit transféré à partir d’un entrepôt d’expédition de l’IRC lors de la réception dans l’entrepôt destinataire.</p>
+  <p>Ce processus inclut deux étapes :</p>
+  <ol class="Decimal">
+    <li>Saisissez la réception de produit concernant l’article reçu depuis l’entrepôt expéditeur</li>
+    <li>Réservez la quantité de l’article transféré depuis l’entrepôt expéditeur dans les exigences concernant les articles du projet</li>
+  </ol>
+  <p>Cette procédure fonctionne mieux en utilisant deux sessions simultanées d’Integra.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li><strong>Le statut du bon de commande</strong> est Expédié</li>
+    <li>Les produits ont été physiquement reçus dans l’entrepôt destinataire</li>
+    <li>Une copie de la liste de prélèvement doit être inclue par l’entrepôt expéditeur ; cette liste de prélèvement indique le numéro d’ordre de transfert</li>
+    <li>La lettre de transport (générée hors d’Integra) doit également accompagner l’expédition de l’ordre de transfert étant donné que ce document est requis pour le transport terrestre.</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion de l’inventaire &gt; Ordres sortants &gt; Ordre de transfert</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781780" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image104.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez l’ordre de transfert concerné et cliquez sur le numéro de l’ordre de transfert pour ouvrir le formulaire.</li>
+  </ol>
+  <h6 class="Heading6">Note : différentes filtres de recherche peuvent être utilisés pour trouver l’ordre de transfert.</h6>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes de l’ordre de transfert pour vous assurer que le bon ordre a été sélectionné.</li>
+  </ol>
+  <p><img alt="Photo 368781781" height="331.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image105.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Dans le menu en haut de la page, cliquez sur <strong>Recevoir</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781769" height="332.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image106.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans la section <strong>Opérations</strong>, cliquez sur <strong>Recevoir</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781782" height="321.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image107.png" width="637.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Dans l’onglet <strong>Aperçu</strong> et dans le champ <strong>Mettre à jour</strong>, cliquez sur le menu déroulant et sélectionnez <strong>Tout</strong>.</li>
+    <li>Faites défiler jusqu’à la section <strong>Lignes</strong>. (Vous pouvez aussi cliquer sur <strong>Lignes</strong> pour développer la section).</li>
+    <li>Sélectionnez la ligne de réception et mettez à jour le champ <strong>Quantité</strong> avec la quantité <u>réellement</u> reçue. </li>
+  </ol>
+  <h6 class="Heading6">Note : la quantité est configurée par défaut sur la quantité de l’ordre de transit, mais une quantité partielle peut être saisie si la quantité livrée est inférieure à la quantité transférée. L’ordre de transit reste ouvert jusqu’à réception de la quantité de transfert totale.</h6>
+  <p><img alt="Photo 368781783" height="343.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image108.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur <strong>Inventaire &gt; Afficher les dimensions</strong> pour ajouter les dimensions adéquates du produit.</li>
+  </ol>
+  <h6 class="Heading6">Note : les dimensions adéquates à ajouter sont basées sur l’article reçu dans l’inventaire.</h6>
+  <p><img alt="Photo 368781784" height="344.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image109.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Cliquez sur la <strong>case à cocher</strong> pour sélectionner les dimensions à ajouter.</li>
+    <li>Cliquez sur OK dans le formulaire <strong>Affichage les dimensions</strong> pour revenir au transfert.</li>
+  </ol>
+  <h6 class="Heading6">Note : les colonnes sont ajoutées à l’affichage des lignes d’inventaire.</h6>
+  <p><img alt="Photo 368781785" height="342.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image111.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Sélectionnez la ligne et <strong>Inventaire &gt; Enregistrement</strong> pour enregistrer les détails du produit.</li>
+  </ol>
+  <p><img alt="Photo 368781787" height="324.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image112.png" width="668.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Dans le formulaire <strong>Enregistrement</strong>, cliquez sur <strong>Ajouter une ligne d’enregistrement</strong> dans l’onglet <strong>Transactions</strong>.</li>
+    <li>Dans l’onglet <strong>Lignes d’enregistrement</strong>, visualisez les détails provenant par défaut de l’ordre de transfert.</li>
+    <li>Mettez à jour le champ <strong>Lieu</strong> en indiquant le lieu de l’entrepôt destinataire où sera stocké le produit.</li>
+    <li>Cliquez sur <strong>Confirmer l’enregistrement</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781791" height="314.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image113.png" style="cursor: nwse-resize;" width="681.6"/></p>
+  <p style="margin-left: 28px">Une fois la ligne confirmée, elle n’est plus disponible dans l’onglet <strong>Lignes d&#39;enregistrement</strong> et s’affiche dans l’onglet <strong>Transactions</strong>.</p>
+  <p style="margin-left: 28px">Le <strong>Statut de réception</strong> est mis à jour sur <strong>Enregistré</strong>.</p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder la ligne d’enregistrement.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le formulaire d’enregistrement et revenir au formulaire Recevoir.</li>
+  </ol>
+  <p><img alt="Photo 368781792" height="340.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image114.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 368781793" height="268.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image115.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Confirmez l’info-message <strong>Opération terminée</strong> avec succès.</li>
+    <li>Vérifiez que le statut de l’ordre de transfert est mis à jour sur <em><strong>Reçu</strong></em>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour la fermer.</li>
+  </ol>
+  <p><span style="font-size:14pt;font-weight:bold">Réservez la Quantité d’articles à transférer</span></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Accédez aux modules <strong>Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 12" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image116.png" width="681.6"/></p>
+  <p>Dans la grille <strong>Tous les projets</strong> et le champ <strong>Filtrer</strong>, saisissez l’ID de projet pour rechercher le projet auquel l’article est associé.</p>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne pour sélectionner le projet.</li>
+    <li>Dans le menu en haut, cliquez sur l’onglet <strong>Plan</strong> et dans la section Exigences concernant les articles, cliquez sur Exigences concernant les articles. <img alt="Photo 33" height="329.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image118.png" width="681.6"/></li>
+    <li>Dans la liste des exigences concernant les articles, cliquez sur la <strong>case à cocher</strong> à gauche de l’article transféré.</li>
+    <li>Dans l’onglet <strong>Gérer</strong>, cliquez sur <strong>Inventaire &gt; Réservation</strong>.</li>
+  </ol>
+  <p><img alt="Photo 54" height="260.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image120.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 27;" value="28">Cliquez sur le champ <strong>Réservation</strong> et mettez à jour la valeur.</li>
+  </ol>
+  <h6 class="Heading6">Note : la valeur mise à jour ajoute le nombre d’articles transférés à la valeur dans le champ Réservation. Par exemple, 5 articles sont transférés, et la réservation actuelle est de 45. Par conséquent, la valeur mise à jour sera de 50.</h6>
+  <p><img alt="Photo 58" height="288.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image121.png" width="678.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 28;" value="29">Cliquez sur <strong>Afficher les dimensions</strong> pour ajouter les dimensions de l’inventaire à l’affichage.</li>
+  </ol>
+  <p><img alt="Photo 60" height="327.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image122.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 29;" value="30">Cliquez sur la <strong>case à cocher </strong>à côté de chaque dimension à ajouter.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <h6 class="Heading6">Note : une fois les dimensions d’affichage ajoutées, localisez à nouveau la réservation d’article.</h6>
+  <p><img alt="Photo 93" height="270.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image124.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 31;" value="32">Validez la saisie de réservation.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire de réservation et revenir à la grille <strong>Tous les projets</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez enregistré la Réception de produit transféré à l’entrepôt destinataire dans un ordre de transfert et réservé l’article dans le projet.</p>
+  <ul>
+    <li>Pour voir le produit reçu dans l’entrepôt destinataire, accédez à : <strong>Gestion de l&#39;inventaire &gt; Questions et rapports &gt; Rapports disponibles &gt; Inventaire disponible</strong>. Appliquez le filtre à l’entrepôt destinataire et visualisez la quantité transférée dans le rapport.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Recevoir_des_articles_CIK_stockés"></a>Recevoir des articles CIK stockés</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour enregistrer la Réception d’articles CIK dans l’inventaire. Cela s’applique uniquement aux articles CIK suivis dans l’inventaire. P. ex., les articles volumineux et/ou de grande valeur.</p>
+  <p><strong>Note</strong> : les réceptions ne sont pas saisies pour les articles CIK non stockés car ils sont uniquement suivis au point de distribution.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>L’article CIK a été configuré en tant qu’article d’inventaire dans Integra.</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion d’inventaire &gt; Saisies du journal &gt; Articles &gt; Déplacement</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="301.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image125.png" width="657.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Dans le menu en haut, cliquez sur <strong>Nouveau</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="305.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image126.png" width="667.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Dans le champ <strong>Nom</strong>, sélectionnez <strong>CIK_In_Mov</strong> dans la liste de sélection du menu déroulant.</li>
+  </ol>
+  <h6 class="Heading6">Note : lorsque CIK_INV_MO est sélectionné, le champ Compte de compensation est automatiquement renseigné avec le compte 41600.</h6>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 1" height="308.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image127.png" width="673.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans la section <strong>Lignes du journal</strong>, cliquez sur <strong>Nouveau</strong> pour ajouter une nouvelle ligne de journal.</li>
+  </ol>
+  <p><img alt="Photo 1" height="308.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image128.png" width="674.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Complétez les champs suivants pour la ligne du journal :</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:672.0px">
+      <colgroup>
+        <col style="width:150px"/>
+        <col style="width:522px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie/Sélection requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date</p>
+          </td>
+          <td>
+            <p>Indique la date du jour par défaut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Numéro d’article</p>
+          </td>
+          <td>
+            <p>Saisissez le numéro d’article CIK ou cliquez sur la flèche du menu déroulant pour rechercher l’article.</p>
+            <p><strong>Note</strong>: veillez à ce que la description de l’article commence par CIK.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Nom de produit</p>
+          </td>
+          <td>
+            <p>La valeur est indiquée par défaut une fois le numéro d’article saisi.</p>
+            <p><strong>Note</strong> : Les articles CIK commencent par « CIK » dans la description de produit.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantité</p>
+          </td>
+          <td>
+            <p>Saisissez la quantité reçue.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Prix coûtant</p>
+          </td>
+          <td>
+            <p>Saisissez le prix de l’article CIK reçu.</p>
+            <p><strong>Notes supplémentaires :</strong></p>
+            <p>Le prix coûtant doit être saisi en fonction du prix indiqué par le donateur.</p>
+            <p>Si le donateur n’a pas indiqué de prix, l’IRC devra calculer la juste valeur marchande. La valeur marchande sera calculée conformément aux politiques internes de l’IRC.</p>
+            <p>Le prix coûtant est toujours indiqué dans la devise comptable de l’entité juridique qui est l’USD pour toutes les entités. La valeur marchande sera calculée conformément aux politiques internes de l’IRC.</p>
+            <p>Si la juste valeur marchande est indiquée à l’IRC dans une devise différente, il convient de faire un calcul manuel pour la convertir en USD.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Coût indiqué</p>
+          </td>
+          <td>
+            <p>Cette valeur est indiquée par défaut en fonction du calcul automatique de la quantité X au prix coûtant.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Faites défiler jusqu’à la section <strong>Détails de la ligne</strong> et cliquez sur l’onglet <strong>Aspect financier</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="301.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image129.png" width="657.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Saisissez/validez les champs suivants des aspects financiers.</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:672.0px">
+      <colgroup>
+        <col style="width:244.8px"/>
+        <col style="width:427.2px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie/Sélection requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet (D1)</p>
+          </td>
+          <td>
+            <p>Si les articles reçus concernant un projet spécifique, saisissez l’ID spécifique au projet D01. Sinon, saisissez CK001.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unité opérationnelle (D4)</p>
+          </td>
+          <td>
+            <p>Saisissez le code D4 pertinent.</p>
+            <p>P. ex., UGAAT</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Entité comptable (D5)</p>
+          </td>
+          <td>
+            <p>Cette valeur est indiquée par défaut en fonction de l’entité juridique.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Source de revenus (D11)</p>
+          </td>
+          <td>
+            <p>Sélectionnez <strong>OMSC - Divers</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Crédit de financement (D12)</p>
+          </td>
+          <td>
+            <p>Sélectionnez le code D12 pertinent en fonction du lieu.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p> </p>
+  <h6 class="Heading6">Note : L’ID de client (D9) n’est pas requis lors de la réception de l’inventaire CIK ; il est uniquement saisi au point de distribution.</h6>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur l’onglet <strong>Dimensions de l’inventaire</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="275.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image130.png" width="674.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Complétez les champs suivants :</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:672.0px">
+      <colgroup>
+        <col style="width:162px"/>
+        <col style="width:510px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie/Sélection requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet</p>
+          </td>
+          <td>
+            <p>Saisissez l’ID du projet.</p>
+            <p>Il doit correspondre à la valeur saisie dans le champ D1 sur l’onglet Aspects financiers.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Site</p>
+          </td>
+          <td>
+            <p>Cette valeur est indiquée par défaut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Entrepôt</p>
+          </td>
+          <td>
+            <p>Sélectionnez l’entrepôt concerné dans la liste de sélection du menu déroulant.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Lieu</p>
+          </td>
+          <td>
+            <p>Sélectionnez le lieu concerné dans la liste de sélection du menu déroulant.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Vérifiez que le champ <strong>Prix coûtant</strong> dans la section Lignes du journal reflète le prix déjà saisi.</li>
+    <li>En haut du menu, cliquez sur <strong>Sauvegarder</strong> pour vérifier s’il y a des erreurs.</li>
+  </ol>
+  <p><img alt="Photo 1" height="288.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image131.png" width="666.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">En haut du menu, cliquez sur <strong>Diffuser</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="305.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image132.png" width="667.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Cliquez sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 1" height="307.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image133.png" width="672.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Vérifiez que le message de diffusion réussie s’affiche. (Il s’affiche dans une barre bleu clair à côté du haut de la page.)</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez enregistré la réception des articles CIK en stock dans Integra.</p>
+  <h2 class="Heading2"><a id="Processus_commercial_-_Retours_et_commandes_retournées"></a>Processus commercial - Retours et commandes retournées</h2>
+  <p>Cette section indique les termes clés et les étapes principales des processus commerciaux dans les scénarios suivants :</p>
+  <ul>
+    <li>Refus de réception</li>
+    <li>Retour facturé</li>
+    <li>Retour à l’entrepôt – Retour du bénéficiaire</li>
+  </ul>
+  <h2 class="Heading2"><a id="Flux_de_processus_commercial_-_Retours_et_commandes_retournées"></a>Flux de processus commercial - Retours et commandes retournées</h2>
+  <h2 class="Heading2"><a id="Refus_de_réception"></a>Refus de réception</h2>
+  <p><img alt="Photo 368781638" height="257.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image134.png" width="567.9"/></p>
+  <p>Si un ordre de qualité échoue, l’IRC n’accepte pas la quantité erronée en stock. Une non-conformité est créée dans Integra concernant le motif et la quantité du produit non accepté.</p>
+  <p>La chaîne d&#39;approvisionnement surveille la liste des non-conformités pour déterminer ce qui doit être renvoyé au fournisseur. Une fois les produits rejetés renvoyés au fournisseur, la chaîne d&#39;approvisionnement indique que la non-conformité est fermée. Si le département Programmes rejette un ordre de qualité et ne s’attend pas à ce que le fournisseur remplace les produits, le bon de commande est mis à jour avec la quantité acceptée. Si l’IRC s’attend à ce que le fournisseur remplace les produits reçus, la réception de produit est diffusée avec une quantité acceptée. Une fois que le fournisseur a envoyé les produits de rechange, la Réception peut être diffusée pour la quantité restante du bon de commande. La chaîne d&#39;approvisionnement diffuse uniquement la réception de produit pour la quantité acceptée.</p>
+  <h2 class="Heading2"><a id="Retour_facturé"></a>Retour facturé</h2>
+  <h2 class="Heading2"><img alt="Photo 368781646" height="266.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image135.png" width="566.9"/></h2>
+  <p>Une fois une facture diffusée correspondant à un PO, un bon de commande de retour est créé pour retourner les produits reçus et obtenir un avoir pour l’inventaire retourné.</p>
+  <p>Les bons de commande de retour sont similaires aux bons de commande mais utilisent un type de PO différent et la quantité saisie est une valeur négative.</p>
+  <h2 class="Heading2"><a id="Retour_bénéficiaire_à_l’IRC_(Retour_à_l’entrepôt)"></a>Retour bénéficiaire à l’IRC (Retour à l’entrepôt)</h2>
+  <p><img alt="Photo 368781653" height="249.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image136.png" width="592.9"/></p>
+  <p>Parfois, les articles distribués aux bénéficiaires sont retournés à l’entrepôt de l’IRC. Comme un bon de livraison a été diffusé, la projet est passé en charge et l’inventaire n’est plus disponible. Pour voir les articles en stock dans l’entrepôt, un retour est traité. Les retours du bénéficiaire sont traités avec une exigence négative concernant les articles.</p>
+  <p>Lorsqu’une quantité négative est saisie dans une exigence concernant les articles, le champ d’ID du lot de retour est utilisé pour sélectionner le bon de livraison associé pour le retour. Une fois le bon de livraison diffusé, les produits sont renvoyés dans l’inventaire et la dépense est inversée. Si le revenu a déjà été comptabilisé pour cette distribution d’exigence concernant les articles, lors de la prochaine proposition de facture, un crédit sera généré et le revenu sera inversé. Cet inventaire est diffusé en créant une autre exigence concernant les articles pour traiter la diffusion.</p>
+  <h2 class="Heading2"><a id="Refuser_de_recevoir_les_articles_ayant_échoué_à_l’inspection_de_qualité"></a>Refuser de recevoir les articles ayant échoué à l’inspection de qualité</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour créer une non-conformité dans un ordre de qualité concernant les articles ayant échoué l’inspection et que le personnel de la chaîne d&#39;approvisionnement refuse de recevoir.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation du PO est <em><strong>Confirmé</strong></em></li>
+    <li>Le statut du bon de commande est <em><strong>Ordre ouvert</strong></em></li>
+    <li>Les produits sont arrivés physiquement à une adresse de l’IRC</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781669" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image137.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le bon de commande pertinent et cliquez sur le numéro de PO pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <h6 class="Heading6">Note : différentes filtres de recherche peuvent être utilisés pour trouver le numéro de PO.</h6>
+  <p><img alt="Photo 368781670" height="325.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image138.png" width="662.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+    <li>Dans le menu en haut de la page, cliquez sur <strong>Recevoir</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781671" height="232.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image139.png" width="663.8"/></p>
+  <h3 class="Heading3"><span style="color:#000000;"><span style="font-size:14pt;font-weight:bold;">Saisissez la liste de réception</span></span></h3>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans la section <strong>Générer</strong>, cliquez sur <strong>Listes de réception</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781672" height="345.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image140.png" width="680.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Dans l’onglet <strong>Paramètres</strong>, configurez <strong>Imprimer les listes de réception</strong> sur <strong>Oui</strong> pour imprimer la liste de réception, au besoin. </li>
+  </ol>
+  <h6 class="Heading6">Note : la liste de réception peut être imprimée et signée par l’IRC et remise au conducteur afin de s’assurer de recevoir les produits figurant sur la liste.</h6>
+  <p><img alt="Photo 368781673" height="343.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image141.png" width="677.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Faites défiler jusqu’à l’onglet <strong>Lignes</strong>. (Vous devrez peut-être cliquer sur la <strong>flèche vers le bas </strong>pour développer <strong>Lignes</strong>.)</li>
+    <li>Sur la ligne de réception, mettez à jour le champ <strong>Quantité</strong> avec la quantité réellement livrée. </li>
+  </ol>
+  <h6 class="Heading6">Note : la quantité est configurée par défaut sur la quantité du PO mais une quantité partielle peut être saisie si la quantité livrée est inférieure à la quantité figurant sur le PO. Le PO restera ouvert jusqu’à réception de la quantité totale figurant sur le PO.</h6>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur <strong>OK</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781676" height="328.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image144.png" width="676.5"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 9;" value="10">Sur le PO, notez l’info-message <strong>Diffusion du bon de commande : </strong><strong>POxxxxxxxx : </strong><strong>numéro d’article : xxxxxxOrdre de qualité QOxxxxxxx a été généré</strong> indiquant que la liste de réception a été diffusée avec succès.</li>
+    <li style="counter-reset: item1 10;" value="11">Une fois la liste de réception diffusée, notez ce qui suit :</li>
+  </ol>
+  <ul>
+    <li>Dans le volet d’action <strong>Gestion de la qualité</strong>, notez que l’<strong>Ordre de qualité</strong> est maintenant disponible. Une fois la liste de réception terminée, un ordre de qualité est généré automatiquement. Utilisez-le pour compléter l’ordre de qualité concernant le produit reçu par rapport à ce bon de commande.</li>
+    <li>Dans le volet d’action <strong>Journal</strong>, notez que le journal de la <strong>Liste de réceptions</strong> est maintenant disponible. Affichez les produits et les quantités reçus sur la liste de réception et imprimez la liste de réception ici.</li>
+  </ul>
+  <p><img alt="Photo 368781677" height="153.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image145.png" style="cursor: nwse-resize;" width="581.2"/></p>
+  <p>Sur l’affichage <strong>En-tête</strong> et dans l’onglet <strong>Général</strong>, le statut du document est mis à jour sur <strong>Liste de réceptions</strong>.</p>
+  <h3><span style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;font-size:15pt;font-weight:bold;">Complétez l’ordre de qualité</span></h3>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Dans le volet d’action <strong>Gestion de la qualité</strong>, cliquez sur <strong>Ordres de qualité</strong>. Cela permet d’accéder à l’ordre de qualité via le bon de commande. Sinon, une fois l’ordre de qualité généré, vous pouvez accéder à l’ordre de qualités via le chemin de menu : <strong>Gestion de l’inventaire &gt; Tâches périodiques &gt; Gestion de la qualité &gt; Ordres de qualité</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : Tous les ordres de qualité concernant ce produit et le bon de commande s’affichent. S’il existe plusieurs listes de réception, plusieurs ordres de qualité peuvent être générés.</h6>
+  <p><img alt="Photo 368781681" height="329.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image146.png" width="678.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Cliquez sur <strong>Résultats</strong> dans la section en bas de l’écran.</li>
+    <li>Cliquez sur <strong>Éditer</strong> dans le formulaire <strong>Résultats de ligne d’ordre de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781684" height="336.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image147.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Saisissez le nombre d’articles ayant réussi l’inspection dans le champ <strong>Quantité de résultat</strong>.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Résultat</strong> et sélectionnez <strong>Réussite</strong>.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> pour ajouter une nouvelle ligne.</li>
+    <li>Saisissez le nombre d’articles ayant échoué l’inspection dans le champ <strong>Quantité de résultat</strong>.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Résultat</strong> et sélectionnez <strong>Échec</strong>.</li>
+    <li>Cliquez sur <strong>Valider</strong> pour valider vos saisies. <strong>Note</strong> : les lignes peuvent être annulées après avoir cliqué sur <strong>Valider</strong>.</li>
+    <li style="counter-reset: item1 20;" value="21">Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire <strong>Résultats de ligne d’ordre de qualité</strong> et revenir au formulaire <strong>Ordres de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781687" height="330.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image148.png" style="cursor: nesw-resize;" width="680.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Examinez la ligne d’inspection avec les résultats de test. <strong>Note</strong> : Le <img height="20" src="assets/images/image10.png" style="vertical-align: bottom; border-width: 1px; border-color: rgb(0, 0, 0);" width="22"/> dans la ligne d’inspection indique que cette tâche a été exécutée. Cela n’indique pas la réussite ou l’échec d’un produit.</li>
+    <li style="counter-reset: item1 21;" value="22">Cliquez sur <strong>Valider</strong> pour ouvrir le formulaire <strong>Valider l’ordre de qualité</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781690" height="331.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image150.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Examinez le formulaire <strong>Valider l’ordre de qualité</strong>.</li>
+    <li>Cliquez sur <strong>OK</strong> pour diffuser les résultats de l’ordre de qualité.</li>
+  </ol>
+  <p><img alt="Photo 368781693" height="274.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image151.png" width="566.4"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 24;" value="25">Vérifiez l’info-message <strong>Opération terminée</strong> avec succès.</li>
+  </ol>
+  <p><span style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;font-size:15pt;font-weight:bold;">Saisissez les échecs d’inspection de la qualité</span></p>
+  <ol>
+    <li style="counter-reset: item1 25;" value="26">Cliquez sur <strong>Questions &gt; Non-conformités</strong> pour capturer l’émission avec les articles ayant échoué à l’inspection.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> dans le formulaire <strong>Non-conformités</strong> pour saisir les détails.</li>
+  </ol>
+  <p><img alt="Photo 368781695" height="344.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image152.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 27;" value="28">Dans le formulaire <strong>Créer une non-conformité</strong>, cliquez sur le menu déroulant dans le champ <strong>Type de problème</strong> et sélectionnez le motif pour lequel le produit a échoué à l’inspection.</li>
+    <li>Mettez à jour le champ <strong>Quantité défectueuse</strong> avec le nombre d’articles ayant échoué l’inspection.</li>
+  </ol>
+  <h6 class="Heading6">Note : ce champ indique par défaut la quantité totale de cet article sur le bon de commande et doit être mise à jour avec le nombre d’articles ayant échoué.</h6>
+  <ol>
+    <li style="counter-reset: item1 29;" value="30">Cliquez sur <strong>OK</strong> pour diffuser les non-conformités.</li>
+  </ol>
+  <p><img alt="Photo 368781680" height="145.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image153.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 30;" value="31">Cliquez sur <strong>Sauvegarder</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire <strong>Non-conformités</strong> et revenir à l’ordre de qualité.</li>
+  </ol>
+  <p><img alt="Photo 193" height="182.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image154.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 32;" value="33">Vérifiez l’info-message <strong>Opération terminée</strong> avec succès et que les non-conformités ont été diffusées.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer le formulaire <strong>Ordres de qualité</strong> et revenir au formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 368781692" height="250.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image155.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 33;" value="34">Sur l’onglet <strong>Lignes du bon de commande</strong>, faites défiler vers la droite pour afficher le <strong>Statut de l’ordre de qualité</strong> mis à jour sur <strong>Ordre de qualité fermé</strong>. <strong>Note</strong> : le statut Fermé de l’ordre de qualité dans les Lignes du PO indique qu’il y avait une inspection et un ordre de qualité à exécuter et que cette tâche a été exécutée.</li>
+    <li style="counter-reset: item1 34;" value="35">Sélectionnez parmi les propositions suivantes :</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0">
+      <colgroup>
+        <col style="width:326.33333333333333333333333333px"/>
+        <col style="width:330.6px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Si</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Alors</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Les produits endommagés/défectueux doivent être remplacés</p>
+          </td>
+          <td>
+            <p>Contactez le fournisseur et indiquez-lui que les produits endommagés/défectueux doivent être remplacés.</p>
+            <p>Lorsque les articles de rechange arrivent, répétez les étapes ci-dessus pour :</p>
+            <p>saisir la liste de réception</p>
+            <p>exécuter l’inspection</p>
+            <p>compléter l’ordre de qualité</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Les produits endommagés/défectueux n’ont pas besoin d’être remplacés</p>
+          </td>
+          <td>
+            <p>Mettez à jour la quantité sur le bon de commande avec le nombre d’articles ayant réussi l’inspection.</p>
+            <p>Soumettez à nouveau le PO au flux de travail et une fois approuvé, reconfirmez le PO.</p>
+            <p>Passez à l’étape ci-dessous pour mettre à jour le bon de commande.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><span style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;font-size:15pt;font-weight:bold">Mettez à jour la quantité du bon de commande</span></p>
+  <ol>
+    <li style="counter-reset: item1 35;" value="36">Cliquez sur l’onglet <strong>Bon de commande</strong> dans le menu en haut.</li>
+  </ol>
+  <p><img alt="Photo 196" height="236.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image156.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 36;" value="37">Dans la section <strong>Conserver</strong>, cliquez sur <strong>Demander une modification</strong> pour modifier l’ordre.</li>
+  </ol>
+  <h6 class="Heading6">Note : une fois que vous avez cliqué sur Demander une modification pour un ordre dont le statut est Confirmé, le statut revient sur Brouillon.</h6>
+  <ol>
+    <li style="counter-reset: item1 37;" value="38">Cliquez sur <strong>Éditer</strong> pour modifier la quantité.</li>
+    <li>Dans le champ <strong>Quantité</strong>, mettez à jour la quantité avec le nombre d’articles ayant réussi l’inspection.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder la mise à jour.</li>
+    <li>Cliquez sur <strong>Flux de travail &gt; Valider</strong> pour soumettre à nouveau le bon de commande à l’approbation.</li>
+  </ol>
+  <h6 class="Heading6">Note : une fois le bon de commande approuvé, il doit être à nouveau confirmé. Cette étape est exécutée par la chaîne d&#39;approvisionnement. Le statut de l’ordre sera Ouvert et le statut d’approbation reviendra sur Confirmé.</h6>
+  <h3><span style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;font-size:15pt;font-weight:bold;">T</span><span style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;font-size:15pt;font-weight:bold;">erminez la réception de produit</span></h3>
+  <ol>
+    <li style="counter-reset: item1 41;" value="42">Ouvrez le bon de commande et cliquez sur l’onglet <strong>Recevoir</strong>.</li>
+  </ol>
+  <p><img alt="Photo 210" height="226.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image157.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 42;" value="43">Dans la section <strong>Générer</strong>, cliquez sur <strong>Réception de produit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 197" height="301.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image158.png" width="635.3"/></p>
+  <ol>
+    <li style="counter-reset: item1 43;" value="44"><strong>En option</strong> : Dans la section <b><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="font-variant:small-caps">Options d’impression</span></span></span></span></b>, cliquez sur l’indicateur <strong>Imprimer la réception de produit</strong> afin qu’il affiche <strong>Oui</strong> (l’indicateur devient bleu). Cela permet d’imprimer la réception.</li>
+    <li>Dans la section <strong>Aperçu</strong>, et dans le champ <strong>Réception de produit</strong>, saisissez l’identifiant unique de réception de produit.</li>
+  </ol>
+  <ul>
+    <li>P. ex., un numéro de lettre de transport, un certificat d’exécution de service, etc. S’il n’existe aucun équivalent, saisissez le numéro de PO. Comme ce champ est obligatoire, une valeur doit être saisie.</li>
+  </ul>
+  <ol>
+    <li style="counter-reset: item1 45;" value="46">Utilisez la barre de défilement à droite pour faire défiler jusqu’à la section <strong>Lignes</strong>.</li>
+  </ol>
+  <p><img alt="Photo 201" height="303.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image159.png" width="602.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 46;" value="47">Dans la ligne Réception, validez le champ <strong>Quantité</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : la valeur par défaut est la quantité mise à jour dans l’ordre d’inspection et de qualité.</h6>
+  <p><img alt="Photo 202" height="327.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image160.png" width="649.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 47;" value="48">Cliquez sur <strong>OK</strong> dans le formulaire <strong>Diffusion de la réception de produit</strong> pour revenir au PO.</li>
+  </ol>
+  <p><img alt="Photo 207" height="333.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image161.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 48;" value="49">Confirmez l’info-message <strong>Opération terminée</strong> indiquant que la réception a été traitée avec succès.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer l’affichage d’impression et revenir au formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 209" height="250.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image162.png" width="666.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 50;" value="51">Si le montant total du PO est reçu, vérifiez que le statut du PO a été mis à jour sur <strong> Reçu</strong>.</li>
+    <li>Si un montant partiel du PO a été reçu, vérifiez que le statut de ce PO est toujours configuré sur <strong> Ouvrir l’ordre</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez terminé le refus de réception du processus de retour et vous pouvez maintenant créer une facture pour le PO. Ce processus inclut :</p>
+  <ul>
+    <li>diffuser une liste de réception</li>
+    <li>terminer l’inspection d’articles défaillants que l’IRC refuse de recevoir</li>
+    <li>diffuser un ordre de qualité</li>
+    <li>mettre à jour la quantité sur le bon de commande pour indiquer le nombre d’articles ayant échoué à l’inspection mais ne devant pas être remplacés</li>
+    <li>diffuser la réception de produit</li>
+    <li>Pour voir une liste de tous les journaux diffusés correspondant au PO dans ce processus, examinez la section <strong>Journaux</strong> dans l’onglet <strong>Recevoir</strong>.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Retourner_les_articles_facturés"></a>Retourner les articles facturés</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour créer un bon de commande de retour pour renvoyer des produits au fournisseur et obtenir un avoir pour les produits retournés.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation du PO est <em><strong>Confirmé</strong></em></li>
+    <li>Le statut du bon de commande est <em><strong>Facturé</strong></em></li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 212" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image163.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le bon de commande facturé correspondant au produit retourné et cliquez sur le numéro du PO pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 213" height="322.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image164.png" width="659.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+    <li>Notez ou copiez le numéro du bon de commande.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> pour créer un nouveau bon de commande.</li>
+  </ol>
+  <p><img alt="Photo 204" height="326.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image165.png" style="cursor: nwse-resize;" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Complétez/validez les champs suivants dans le formulaire <strong>Créer un bon de commande</strong> :</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Compte fournisseur</p>
+          </td>
+          <td>
+            <p>Saisissez le compte fournisseur sur lequel le produit a été acheté et pour lequel vous demandez le formulaire de retour.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Type de tarification</p>
+          </td>
+          <td>
+            <p>Devis par défaut. Ne pas modifier la valeur par défaut</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Nom de livraison</p>
+          </td>
+          <td>
+            <p>Indique par défaut le nom du fournisseur saisi dans le champ <strong>Compte fournisseur</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Adresse</p>
+          </td>
+          <td>
+            <p>Indique par défaut l’adresse du fournisseur saisie dans le champ <strong>Compte fournisseur</strong>.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Bon de commande</p>
+          </td>
+          <td>
+            <p>Indique par défaut le nouveau numéro de bon de commande généré automatiquement.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Type d’achat</p>
+          </td>
+          <td>
+            <p>Cliquez sur the menu déroulant et sélectionnez <strong>Ordre retourné</strong>.</p>
+            <p><strong>Important</strong> : ce type d’ordre crée le retour et doit être sélectionné pour traiter ce retour.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Site</p>
+          </td>
+          <td>
+            <p>Sélectionnez le site à partir duquel le retour est effectué.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Entrepôt</p>
+          </td>
+          <td>
+            <p>Sélectionnez l’entrepôt à partir duquel le retour est traité.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date de comptabilisation</p>
+          </td>
+          <td>
+            <p>Indique la date du jour par défaut. Laisser la valeur par défaut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Date de livraison</p>
+          </td>
+          <td>
+            <p>Indique la date du jour par défaut. Laisser la valeur par défaut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Numéro RMA</p>
+          </td>
+          <td>
+            <p>Si vous recevez un numéro d&#39;autorisation de retour (RMA) de la part du fournisseur, saisissez-le ici.</p>
+            <p>Sinon, saisissez le <strong>numéro du bon de commande </strong>(celui que vous avez copié/noté) en tant que numéro RMA à utiliser comme référence.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet</p>
+          </td>
+          <td>
+            <p>Saisissez l’ID de projet auquel le projet a été imputé.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Demandeur</p>
+          </td>
+          <td>
+            <p>Saisissez le nom du <strong>Demandeur</strong>. Il peut être identique ou différent de celui de l’Auteur de la commande.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Cliquez sur <strong>OK</strong> pour continuer.</li>
+    <li>Répondez <strong>Oui</strong> au message <strong>Aspects financiers par défaut du projet</strong>.</li>
+  </ol>
+  <p><img alt="Photo 214" height="237.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image166.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur <strong>Éditer</strong>.</li>
+    <li>Dans l’onglet <strong>Lignes du bon de commande</strong>, cliquez sur <strong>Ligne du bon de commande &gt; Note de crédit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 218" height="345.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image167.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Dans le formulaire <strong>Copier à partir d’autres documents</strong> cliquez sur la <strong>case à cocher</strong> de l’onglet <strong>Factures</strong> (vous devrez peut-être le développer) et sélectionnez la facture pour laquelle obtenir un crédit.</li>
+  </ol>
+  <h6 class="Heading6">Note : vous pouvez sélectionner plusieurs factures diffusées correspondant au bon de commande pour lequel vous souhaitez obtenir un avoir.</h6>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Vous pouvez aussi sélectionner plusieurs lignes dans la section <strong>Lignes</strong> si le bon de commande contenait plusieurs lignes.</li>
+    <li>Cliquez sur <strong>OK</strong> pour continuer.</li>
+    <li>Vérifiez l’info-message <strong>Opération terminée</strong> avec succès.</li>
+  </ol>
+  <p><img alt="Photo 219" height="341.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image169.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Examinez les lignes ajoutées au bon de commande. <strong>Note</strong> : le signe négatif associé à la quantité commandée indique qu’il s’agit d’un retour. La quantité indique par défaut le montant total de la facture. Ajustez la quantité au besoin. <strong>Important</strong> : si vous ajustez la quantité, n’oubliez pas de laisser le (-) avant le nombre d’articles retournés.</li>
+    <li style="counter-reset: item1 15;" value="16">Faites défiler jusqu’à l’onglet <strong>Détails de la ligne</strong> et cliquez sur l’onglet <strong>Configurer</strong>.</li>
+    <li>Cliquez sur the menu déroulant dans le champ <strong>Action de retour</strong> et sélectionnez le motif de retour du produit.</li>
+  </ol>
+  <p><img alt="Photo 222" height="330.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image170.png" width="671.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Cliquez sur <strong>Sauvegarder</strong>.</li>
+    <li>Cliquez sur <strong>Flux de travail &gt; Valider</strong>.</li>
+  </ol>
+  <p><img alt="Photo 228" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image171.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Dans le formulaire <strong>Flux de travail du bon de commande – Valider</strong>, saisissez un commentaire nécessaire pour les retours.</li>
+    <li>Cliquez sur <strong>Valider</strong> pour soumettre le bon de commande de retour à l’approbation du flux de travail. </li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez créé un bon de commande de retour pour renvoyer un produit au fournisseur. Le personnel de la chaîne d&#39;approvisionnement suit les étapes d’approbation et de confirmation du bon de commande. Une fois approuvé et confirmé, ce bon de commande de retour est prêt pour le retour au fournisseur.</p>
+  <h2 class="Heading2"><a id="Expédier_les_articles_à_retourner_au_fournisseur"></a>Expédier les articles à retourner au fournisseur</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour expédier des articles sur un bon de commande de retour défectueux et devant être retournés au fournisseur.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation du PO est <strong><em>Confirmé</em></strong></li>
+    <li>Le statut du bon de commande est <em><strong>Ordre ouvert</strong></em></li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 230" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image172.png" width="669.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le bon de commande de retour correspondant au produit retourné et cliquez sur le numéro du PO pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 231" height="321.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image173.png" width="659.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO pour vous assurer que le bon PO a été sélectionné.</li>
+  </ol>
+  <p><img alt="Photo 233" height="320.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image174.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Sur l’onglet Ligne du bon de commande, cliquez sur <strong>Mettre à jour la ligne &gt; Prélever</strong>.</li>
+    <li>Dans le formulaire <strong>Prélever</strong>, cliquez sur <strong>Ajouter une ligne de prélèvement</strong> pour ajouter une ligne de prélèvement.</li>
+  </ol>
+  <p><img alt="Photo 237" height="331.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image175.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Examinez la ligne saisie dans la section <strong>Lignes de prélèvement</strong> et validez la quantité dans le champ <strong>Quantité prélevée</strong>. Ces données sont indiquées par défaut à partir du bon de commande.</li>
+    <li>Cliquez sur <strong>Confirmer prélever tout</strong> pour confirmer la ligne de prélèvement. <strong>Note</strong> : One fois la ligne de prélèvement confirmée, la ligne n’est plus affichée.</li>
+    <li style="counter-reset: item1 7;" value="8">Cliquez sur <strong>Sauvegarder</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le formulaire <strong>Prélever</strong> et revenir au bon de commande.</li>
+  </ol>
+  <p><img alt="Photo 239" height="335.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image176.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Dans l’onglet <strong>Recevoir</strong>, cliquez sur <strong>Réception de produit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 242" height="343.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image178.png" width="681.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Dans le formulaire <strong>Posting réception de produit</strong>, saisissez le numéro de PO correspondant au produit retourné dans <strong>Réception de produit</strong>. Il s’agit d’une référence croisée.</li>
+    <li>Cliquez sur <strong>OK</strong>.</li>
+  </ol>
+  <p><img alt="Photo 243" height="325.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image179.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Vérifiez l’info-message <strong>Opération terminée</strong> avec succès. La <strong>Réception de produit</strong> est maintenant disponible dans la section <strong>Journaux</strong>.</li>
+    <li>Vérifiez que le statut du bon de commande est mis à jour sur <strong>Reçu</strong>.</li>
+    <li>Cliquez sur l’onglet <strong>Facture</strong>.</li>
+  </ol>
+  <p><img alt="Photo 245" height="170.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image180.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Dans la section <strong>Générer</strong>, cliquez sur <strong>Facture</strong> pour générer la facture et traiter le retour au fournisseur.</li>
+  </ol>
+  <p><img alt="Photo 249" height="290.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image181.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Dans le champ <strong>Numéro</strong>, saisissez le numéro du bon de commande original.</li>
+    <li>Dans le champ <strong>Description de la facture</strong>, saisissez une brève description de la facture.</li>
+    <li>Cliquez sur le calendrier dans le champ <strong>Date de la facture</strong> et sélectionnez la date de la facture.</li>
+    <li>Cliquez sur <strong>Associer les réceptions de produit</strong> pour localiser et associer la réception de produit.</li>
+  </ol>
+  <p><img alt="Photo 250" height="343.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image182.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Dans le formulaire <strong>Associer les réceptions de produits à une facture</strong>, valider la ligne de réception de produit.</li>
+    <li>Cliquez sur <strong>OK</strong>.</li>
+    <li>Cliquez sur <strong>Diffuser</strong>.</li>
+  </ol>
+  <p><img alt="Photo 252" height="331.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image183.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 21;" value="22">Validez l’info-message indiquant que le processus est terminé et que la facture POxxxxxx est générée.</li>
+    <li>Dans la section <strong>Journal</strong>, vous pouvez maintenant valider la facture.</li>
+    <li>Vérifiez que le statut du bon de commande est mis à jour sur <strong>Facturé</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Sur un bon de commande de retour, vous avez des articles expédiés défectueux et retournés au fournisseur. La liste de prélèvement a été générée et la réception de produit a été diffusée. Enfin, le bon de commande de retour a été facturé. Une fois le matériel physiquement emballé pour être retourné au fournisseur, la facture est incluse dans le colis.</p>
+  <p>Pour imprimer la facture, cliquez sur Facture dans l’onglet Facture, dans la section Journaux. Cliquez sur Imprimer/Aperçu &gt; Facture originale. Une fois la facture affichée, cliquez sur l’<strong>icône de l’imprimante</strong> pour l’imprimée.</p>
+  <h2 class="Heading2"><a id="Retours_d’articles_du_bénéficiaire_à_l’IRC"></a>Retours d’articles du bénéficiaire à l’IRC</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour retourner des articles en stock qui ont été renvoyés par un bénéficiaire. Pour voir le stock dans l’entrepôt, traitez le retour avec une exigence négative concernant les articles.</p>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <ul>
+    <li>Le statut d’approbation de PO est « Confirmé »</li>
+    <li>Le statut du bon de commande est Reçu</li>
+    <li>Le bon de livraison a été diffusé et l’inventaire n’est plus disponible</li>
+  </ul>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>À partir de la page d’accueil d’Integra, accédez aux modules <strong>Approvisionnement et achats &gt; Bons de commande &gt; Tous les bons de commande</strong>.</li>
+  </ol>
+  <p><img alt="Photo 254" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image185.png" width="669.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Trouvez le bon de commande original correspondant au produit retourné et cliquez sur le numéro du PO pour ouvrir le formulaire du PO.</li>
+  </ol>
+  <p><img alt="Photo 255" height="319.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image186.png" width="659.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Examinez les informations dans les lignes du PO, y compris la quantité, pour vous assurer que le bon PO a été sélectionné.</li>
+    <li>Notez ou copiez le <strong>numéro du bon de commande</strong>.</li>
+    <li>Notez l’<strong>ID de projet</strong> auquel ce bon de commande est associé.</li>
+    <li>Pour traiter le retour du bénéficiaire, accédez au projet associé via le chemin de menu <strong>Modules &gt; Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 208" height="175.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image187.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Dans le champ <strong>Filtre</strong>, saisissez l’<strong>ID de projet</strong> pour rechercher le projet auquel le bon de commande est associé et appuyez sur <strong>ENTRÉE</strong> sur votre clavier.</li>
+    <li style="">Cliquez sur l’<strong>ID de projet</strong> pour ouvrir le projet.</li>
+  </ol>
+  <h3 class="Heading3">Localiser les données pour traiter le retour</h3>
+  <p>Deux types de données sont requis à partir de la transaction originale des exigences concernant les articles pour traiter le retour :</p>
+  <ul>
+    <li><strong>ID de lot</strong></li>
+    <li><strong>Prix unitaire</strong></li>
+  </ul>
+  <p>L’<strong>ID de lot</strong> identifie la ligne d’exigence concernant les articles et est créé pour chaque ligne d’exigence concernant les articles. Le prix unitaire correspond au montant initialement payé pour le produit par le fournisseur. Le retour doit être traité avec le prix unitaire correspondant à la date d’achat de l’article. Le prix coûtant est particulièrement important si la devise du coût est en USD et la devise du donateur n’est pas l’USD, étant donné qu’un taux de change est associé. Comme le produit a été acheté à un prix spécifique et au taux de change en vigueur à cette date, il doit être retourné au même prix et avec le taux de change original. Avant de commencer le retour, trouvez d’avoir le prix unitaire pour faciliter le traitement.</p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Dans l’onglet <strong>Plan</strong> et dans la section Exigences concernant les articles, cliquez sur Exigences concernant les articles.</li>
+    <li>La grille <strong>Nom de produit</strong> contient la liste de toutes les exigences associées à ce projet. Trouvez la ligne du bon de commande original de l’article retourné.</li>
+  </ol>
+  <p><img alt="Photo 234" height="335.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image188.png" width="681.6"/></p>
+  <h6 class="Heading6">Note : pour faciliter les choses, ajoutez la colonne Numéro de référence à la grille. La colonne Numéro de référence affiche le numéro de bon de commande dans lequel les lignes du bon de commande sont saisies.</h6>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Cliquez sur la <strong>case à cocher</strong> à gauche de la ligne d’exigence concernant les articles et cliquez sur <strong>Configurer</strong>.</li>
+  </ol>
+  <p><img alt="Photo 246" height="206.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image190.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Dans l’onglet <strong>Configurer</strong>, notez le numéro d’<strong>ID de lot</strong> dans la section <strong>INVENTAIRE</strong>.</li>
+  </ol>
+  <h6 class="Heading6">Note : notez le numéro d’ID de Lot pour plus de commodité lorsque vous traitez le retour.</h6>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Cliquez sur l’onglet <strong>Projet</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781699" height="261.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image191.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Dans la section <strong>PRIX DE VENTE</strong>, notez le prix unitaire dans le champ <strong>Prix unitaire</strong>. Notez le prix unitaire pour plus de commodité lorsque vous traitez le retour.</li>
+    <li style="counter-reset: item1 14;" value="15">Cliquez sur l’onglet <strong>Lignes</strong>. La ligne d’exigence concernant les articles initialement sélectionnée reste sélectionnée.</li>
+  </ol>
+  <p><img alt="Photo 368781701" height="328.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image192.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Dans la colonne <strong>Numéro d’article</strong>, notes le <strong>Numéro d’article</strong> de l’article retourné en stock.</li>
+    <li>Cliquez sur <strong>Nouveau</strong> pour créer une nouvelle ligne d’exigence concernant les articles afin de retourner les articles en stock.  La nouvelle ligne vide est ajoutée directement sous la ligne.</li>
+  </ol>
+  <p><img alt="Photo 368781702" height="331.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image193.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Dans le champ <strong>Numéro d’article</strong>, saisissez le numéro d’article retourné en stock.</li>
+    <li>Dans le champ <strong>Quantité</strong>, à l’aide d’un signe négatif (-), saisissez the quantité of articles retournés en stock.</li>
+    <li>La quantité négative indique au système qu’il s’agit d’un retour et que les articles sont retournés en stock. L’inventaire disponible est mis à jour.</li>
+    <li>Cliquez sur la <strong>case à cocher</strong> pour sélectionner la nouvelle ligne d’exigences concernant les articles en cours.</li>
+    <li>Cliquez sur l’onglet <strong>Configurer</strong>.</li>
+  </ol>
+  <p><img alt="Photo 216" height="202.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image195.png" width="535.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Dans la section <strong>RETOUR</strong>, cliquez sur le menu déroulant et sélectionnez l’ID de lot associé dans le champ <strong>ID de lot de retour</strong>. <strong>Note</strong> : l’<strong>ID de lot</strong> est le type de données recherché au début de la procédure. Consultez l’<strong>ID de lot</strong> que vous avez noté. Il s’agit de l’<strong>ID de lot</strong> que vous sélectionnerez dans le menu déroulant de ce champ.</li>
+    <li style="counter-reset: item1 23;" value="24">Cliquez sur l’onglet <strong>Projet</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781696" height="268.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image196.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Dans le champ <strong>Catégorie de projet</strong>, cliquez sur the menu déroulant et sélectionnez la catégorie de projet correspondant à cette exigence concernant les articles. Cette catégorie de projet est identique à l’exigence originale concernant les articles.</li>
+    <li>Cliquez sur l’onglet <strong>Dimensions du produit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781704" height="153.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image197.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 26;" value="27">Cliquez sur le menu déroulant dans le champ <strong>Site</strong> et saisissez le site.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Entrepôt</strong> et saisissez l’entrepôt.</li>
+    <li>Cliquez sur le menu déroulant dans le champ <strong>Lieu</strong> et saisissez le lieu du bac dans lequel le matériel sera placé.</li>
+    <li>Cliquez sur l’onglet <strong>Aspects financiers</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781705" height="281.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image198.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 30;" value="31">Complétez les Aspects financiers <strong>D2 – D6</strong>. Ils doivent être identiques aux aspects financiers utilisés dans les exigences originales concernant les articles et le bon de commande.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder la nouvelle ligne négative (-) d’exigences concernant les articles.</li>
+  </ol>
+  <p><img alt="Photo 368781706" height="287.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image199.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 32;" value="33">Vérifiez que le message d’avertissement suivant s’affiche : <strong>« L’exigence concernant les articles est négative. </strong><strong>Cela indique un ordre de retour. </strong><strong>Veuillez mettre à jour le montant de la vente dans l’onglet du projet. </strong><strong>Enregistrez le montant de la vente dans la devise du donateur. </strong><strong>Il s’agit du montant du revenu à annuler. »</strong></li>
+  </ol>
+  <p>Ce message d’avertissement vous rappelle de vérifier le prix unitaire dans l’onglet <strong>Projet</strong>. Comme il s’agit d’un retour, cela a un impact sur la comptabilisation des revenus. Le prix unitaire du retour doit correspondre au prix unitaire provenant des exigences originales concernant les articles et du bon de commande original.</p>
+  <p><img alt="Photo 368781707" height="266.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image200.png" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 33;" value="34">Cliquez sur l’onglet <strong>Projet</strong> et examinez le champ <strong>Prix unitaire</strong> dans la section <strong>PRIX DE VENTE</strong>. <strong>Note</strong> : examinez le prix unitaire que vous avez déjà noté dans le cadre de cette procédure. N’oubliez pas que vous avez consultez cette information sur la ligne d’exigence originale concernant les articles dans l’onglet Projet. Le prix unitaire original doit être identique au prix unitaire de la nouvelle ligne exigence négative concernant les articles.</li>
+    <li style="counter-reset: item1 34;" value="35">Au besoin, mettez à jour la valeur du <strong>Prix unitaire</strong> pour correspondre au <strong>Prix unitaire</strong> original.</li>
+    <li>Cliquez sur <strong>Sauvegarder</strong> pour sauvegarder la nouvelle ligne négative (-) d’exigences concernant les articles.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer le message d’avertissement.</li>
+    <li>Cliquez sur <strong>X</strong> pour fermer la nouvelle ligne négative d’exigences concernant les articles et revenir au projet.</li>
+    <li>Dans la section <strong>Exigences concernant les articles</strong>, cliquez sur <strong>Exigences concernant les articles</strong>.</li>
+  </ol>
+  <p><img alt="Photo 368781708" height="332.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image201.png" width="681.6"/></p>
+  <p>Faites défiler la liste des exigences concernant les articles jusqu’en bas pour vérifier que l’exigence négative concernant les articles que vous avez créée s’affiche.</p>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez traité le retour d’un bénéficiaire pour retourner des articles en stock. Vous avez saisi une exigence négative concernant les articles avec une quantité négative.</p>
+  <p>Pour diffuser le bon de livraison, sélectionnez la ligne d’exigence négative concernant les articles, accédez à <strong>Gérer &gt; Diffusion &gt; Bon de livraison</strong></p>
+  <h2 class="Heading2"><a id="Annexe"></a>Annexe</h2>
+  <h2 class="Heading2">Distribuer des articles CIK en stock</h2>
+  <h3 class="Heading3">Objectif</h3>
+  <p>Utilisez cette procédure pour enregistrer la distribution d’articles CIK en stock aux clients.</p>
+  <h6 class="Heading6">Note : pour obtenir des consignes sur la manière de distribuer des articles CIK non stockés, veuillez consulter le guide formation suivant sur RescueNet : UG_Distribution CIK dans Integra via le Journal des dépenses</h6>
+  <h3 class="Heading3">Conditions préalables</h3>
+  <p>La quantité disponible dans l’entrepôt est suffisante pour satisfaire les exigences de distribution.</p>
+  <p>Pour déterminer la quantité actuellement disponible d’un article, consultez la procédure dans ce guide intitulé <em><strong>Afficher l’inventaire disponible</strong></em>.</p>
+  <h3 class="Heading3">Étapes</h3>
+  <ol>
+    <li>Dans la page d’accueil d’Integra, accédez aux modules <strong>Gestion de projet et comptabilité &gt; Projets &gt; Tous les projets</strong>.</li>
+  </ol>
+  <p><img alt="Photo 9" height="225.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image202.png" width="639.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Dans la liste de projets, trouvez le projet CIK concerné et cliquez sur le numéro d’<strong>ID de projet</strong> pour ouvrir le formulaire du projet.</li>
+  </ol>
+  <p><img alt="Photo 5" height="234.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image203.png" width="631.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Dans le menu en haut de la page, cliquez sur <strong>Plan</strong> et sélectionnez <strong>Exigences concernant les articles</strong>.</li>
+  </ol>
+  <p><img alt="Photo 12" height="192.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image204.png" width="636.9"/></p>
+  <h6 class="Heading6">Note : vous pouvez voir une liste des exigences concernant les articles déjà créées dans le Tableau de lignes.</h6>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Dans le menu en haut de la page, cliquez sur <strong>Nouveau</strong></li>
+  </ol>
+  <p><img alt="Photo 1" height="212.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image205.png" width="667.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Dans la nouvelle ligne d’exigence concernant les articles, complétez/valider les champs suivants pour tous les articles distribués :</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:672.0px">
+      <colgroup>
+        <col style="width:126px"/>
+        <col style="width:546px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie/Sélection requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet</p>
+          </td>
+          <td>
+            <p>Cette valeur provient par défaut du projet sélectionné.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Nom de produit</p>
+          </td>
+          <td>
+            <p>La valeur est indiquée par défaut une fois le numéro d’article saisi.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Numéro d’article</p>
+          </td>
+          <td>
+            <p>Saisissez le numéro de l’article distribué.</p>
+            <p><strong>Note</strong> : veillez à ce que la description de l’article commence par CIK. P. ex., CIK Matelas - Complet</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Quantité</p>
+          </td>
+          <td>
+            <p>Saisissez la quantité distribuée.</p>
+            <p><strong>Important</strong> : la valeur par défaut est « 1 ». Assurez-vous qu’elle est mise à jour pour refléter la quantité réellement distribuée.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Propriété de la ligne</p>
+          </td>
+          <td>
+            <p>La valeur par défaut provenant de la configuration de projet est NonBill. Laissez la valeur par défaut.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Catégorie</p>
+          </td>
+          <td>
+            <p>Sélectionnez la catégorie de projet adéquate dans la liste de sélection du menu déroulant.</p>
+            <p>P. ex., 75000.0.i Fournitures et matériel du programme</p>
+            <p><strong>Note</strong> : vous devrez peut-être faire défiler vers la droite pour voir ce champ.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Photo 1" height="180.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image206.png" width="667.8"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Dans le menu au-dessus de la grille, cliquez sur <strong>Aspects financiers</strong>.</li>
+    <li>Dans le menu en haut de la page, cliquez sur <strong>Sauvegarder</strong>. (Cela récupère le code D2 déjà saisi dans le champ <strong>Catégorie</strong>).</li>
+  </ol>
+  <p><img alt="Photo 1" height="268.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image207.png" width="585.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Complétez les champs suivants des aspects financiers :</li>
+  </ol>
+  <div align="left">
+    <table border="1.3" cellspacing="0" style="width:672.0px">
+      <colgroup>
+        <col style="width:244.8px"/>
+        <col style="width:427.2px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p><span style="color:#ffffff;">Champ/Bouton</span></p>
+          </td>
+          <td>
+            <p><span style="color:#ffffff;">Saisie/Sélection requise</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet correspondant (D0)</p>
+          </td>
+          <td>
+            <p style="color: #ffffff">Pour le RAI, le cas échéant, saisissez l’ID de projet de subvention correspondant. P. ex., GH938 –FY2019 Programme de subvention correspondant.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>ID de projet (D1)</p>
+          </td>
+          <td>
+            <p>Cette valeur est indiquée par défaut en fonction du projet sélectionné au début de la transaction.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Catégorie de projet (D2)</p>
+          </td>
+          <td>
+            <p>Saisissez le code D2 concerné.</p>
+            <p><strong>Note</strong> : cette valeur doit être indiquée par défaut si vous avez cliqué sur Sauvegarder après avoir rempli le champ Catégorie dans la section Lignes ci-dessus.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Zone de programme (D3)</p>
+          </td>
+          <td>
+            <p>Saisissez le code D3 pertinent.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Unité opérationnelle (D4)</p>
+          </td>
+          <td>
+            <p>Saisissez le code D4 pertinent.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Entité comptable (D5)</p>
+          </td>
+          <td>
+            <p>Cette valeur est indiquée par défaut en fonction de l’entité juridique.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>Secteur fonctionnel (D6)</p>
+          </td>
+          <td>
+            <p>Saisissez le code D6 pertinent.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><img alt="Photo 1" height="225.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image208.png" width="674.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Cliquez sur <strong>Lignes</strong> pour revenir à l’affichage de la ligne d’article.</li>
+  </ol>
+  <p><img alt="Photo 1" height="238.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image209.png" width="682.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Cliquez sur l’onglet <strong>Dimensions du produit</strong>.</li>
+  </ol>
+  <p><img alt="Photo 1" height="246.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image210.png" width="687.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Renseignez les champs <strong>Entrepôt</strong> et <strong>Lieu</strong> pour identifier le lieu depuis lequel les articles sont distribués.</li>
+  </ol>
+  <h6 class="Heading6">Note : l’inventaire disponible doit être suffisant dans le lieu spécifique sélectionné.</h6>
+  <p><img alt="Photo 1" height="249.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image211.png" width="696.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Cliquez sur <strong>Lignes</strong> pour retenir à l’affiche de ligne d’article.</li>
+  </ol>
+  <p><img alt="Photo 1" height="209.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image212.png" width="696.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Dans le menu en haut de la page, cliquez sur <strong>Gérer</strong></li>
+  </ol>
+  <p><img alt="Photo 1" height="253.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image213.png" width="696.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Dans le volet d&#39;action, cliquez sur <strong>Inventaire</strong> et sélectionnez <strong>Marquage</strong> dans la liste de sélection du menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 1" height="307.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image214.png" width="669.5"/></p>
+  <h6 class="Heading6">Note : il est possible que le même type d’article ait été donné avec différentes justes valeurs marchandes. Pour s’assurer d’avoir diffusé le prix coûtant adéquat, « marquage » est utilisé avant la diffusion du bon de livraison. Le marquage vous permet de contourner les coûts FIFO.</h6>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Examinez les lignes pour identifier l’enregistrement avec le prix coûtant adéquat.</li>
+  </ol>
+  <h6 class="Heading6">Note : les lignes s’affichent pour tout l’inventaire disponible pour ce site, cet entrepôt et ce lieu. Chaque ligne représente une transaction différente (journal des mouvements) à travers laquelle l’inventaire a été reçu.</h6>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Pour marquer l’enregistrement pertinent, sélectionnez la <strong>case à cocher</strong> dans la colonne Définir la marque maintenant.</li>
+  </ol>
+  <p><img alt="Photo 1" height="308.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image215.png" width="672.0"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Dans la section <strong>Marquage de transaction</strong> (en haut), validez le champ <strong>Marquer maintenant</strong> contenant la quantité distribuée.</li>
+    <li>Dans le coin inférieur droit de la page, cliquez sur <strong>Appliquer</strong> puis sur <strong>OK</strong> pour continuer.</li>
+  </ol>
+  <p><img alt="Photo 1" height="220.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image216.png" width="676.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Dans le menu en haut de la page, cliquez sur <strong>Gérer</strong></li>
+  </ol>
+  <p><img alt="Photo 1" height="217.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image217.png" width="669.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Dans le volet d&#39;action, cliquez sur <strong>Diffusion</strong> et sélectionnez <strong>Bon de livraison</strong> dans la liste de sélection du menu déroulant.</li>
+  </ol>
+  <p><img alt="Photo 368781639" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image218.png" width="666.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Dans le champ <strong>Quantité</strong>, sélectionnez <strong>Tout </strong>dans la liste de sélection du menu déroulant.</li>
+    <li>Cliquez sur l’<strong>Indicateur de diffusion</strong> pour afficher <strong>Oui</strong>.</li>
+    <li>Vérifiez que l’indicateur <strong>Imprimer le bon de livraison</strong> affiche <strong>Oui</strong>.</li>
+    <li>Cliquez sur <strong>OK</strong> pour diffuser le bon de livraison.</li>
+  </ol>
+  <p><img alt="Photo 368781642" height="304.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image219.png" width="666.1"/></p>
+  <h6 class="Heading6">Note : l’action de diffusion supprime l’article CIK de l’inventaire et le passe en charges dans le compte principal 85000.</h6>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Pour imprimer la liste de prélèvement, cliquez sur l’icône de l’<strong>imprimante</strong>.</li>
+    <li>Pour exporter le formulaire de réception dans un format différent, cliquez sur <strong>Exporter</strong> et sélectionnez le format, p. ex., <strong>PDF</strong>.</li>
+    <li>Cliquez sur <strong>X</strong> en haut à droite de la page pour fermer l’affichage d’impression et revenir à la liste d’exigences concernant les articles.</li>
+    <li>Obtenez la signature du client sur le bon de livraison imprimé.</li>
+    <li>Scannez et sauvegardez le bon de livraison signé.</li>
+    <li>Incluez le numéro de l’ordre de vente dans le nom du fichier téléchargé.</li>
+    <li>Joignez le bon de livraison signé à l’enregistrement fournisseur du client.</li>
+  </ol>
+  <h3 class="Heading3">Résultat</h3>
+  <p>Vous avez enregistré la distribution des articles CIK en stock à un client et avez obtenu la signature du client sur le bon de livraison au format papier</p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

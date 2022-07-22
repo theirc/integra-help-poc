@@ -1,1 +1,0 @@
-(function() {    var toc =  [{"name":"Business Process Information","type":"book","tilePath":"","description":"","url":"Developing_Project_Budget_Templates.htm#Business_Process_Information","key":"toc63"},{"name":"Procedures","type":"book","tilePath":"","key":"toc64"}];    window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });    })();

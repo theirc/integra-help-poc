@@ -114,6 +114,7 @@
       <prev_search_page_image>previous.png</prev_search_page_image>
       <custom_button_image_0>print_desktop.png</custom_button_image_0>
       <custom_button_image_1>removesearch_mark.svg</custom_button_image_1>
+      <custom_button_selected_image_1>removesearch_mark.svg</custom_button_selected_image_1>
     </css>
     <html>
       <page_font_family>Arial</page_font_family>
@@ -121,19 +122,19 @@
       <custom_buttons type="array">
         <custom_buttonsitem>
           <name>Print</name>
-          <id>2</id>
-          <key>62</key>
-          <title>Impresión</title>
-          <image>print_desktop.png</image>
+          <id>0</id>
+          <key>79</key>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_PRINT_TOPIC&#39;));return false;</onclick>
+          <title>Print</title>
+          <image>print_desktop.png</image>
         </custom_buttonsitem>
         <custom_buttonsitem>
           <name>RemoveHighlight</name>
-          <id>4</id>
-          <key>63</key>
-          <image>removesearch_mark.svg</image>
-          <title>quitar resaltado</title>
+          <id>1</id>
+          <key>80</key>
           <onclick>rh.model.publish(rh.consts(&#39;EVT_REMOVE_HIGHLIGHT&#39;));return false;</onclick>
+          <image>removesearch_mark.svg</image>
+          <selected_image>removesearch_mark.svg</selected_image>
         </custom_buttonsitem>
       </custom_buttons>
       <use_facebook type="boolean">false</use_facebook>

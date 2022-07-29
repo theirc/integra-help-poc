@@ -647,7 +647,7 @@ body.media-landscape div.header div.custom-button-0 {
   background-position: left top;
   background-size: contain; }
   .custom-button-1 a:focus {
-    background-image: url(removesearch_mark.svg); }
+    background-image: undefined; }
 
 body.media-landscape div.header div.custom-button-1 {
   float: right;

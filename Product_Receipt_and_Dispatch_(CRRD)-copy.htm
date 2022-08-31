@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "47";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Inventory Transfers and Returns (CRRD)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Inventory Transfers and Returns (CRRD)">
+        <span>Inventory Transfers and Returns (CRRD)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+    </p>
+  </div>
+  <div>
+  <h1 class="Heading1"> </h1>
+  <h2 class="Heading2"><a id="Create_a_Transfer_Order"></a>Transfer Inventory between Warehouses</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a transfer order to transfer inventory from one IRC warehouse to another IRC warehouse, within the same Integra project.</p>
+  <p>This is a two-step process:</p>
+  <ol class="Decimal">
+    <li>Unreserve the quantity of the item being transferred from the sending warehouse to make it available for transfer</li>
+    <li>Create a transfer order to ship inventory from the sending warehouse to the receiving warehouse</li>
+  </ol>
+  <p><strong style="color: #FF0000">Important Tip:</strong> Performing this procedure works best with two concurrent sessions of Integra open.</p>
+  <p><span style="font-size:13pt;"><span style="font-weight: bold;font-size: 14pt">Sending Warehouse Enters Product Receipt for Receiving Warehouse</span></span></p>
+  <p>There are situations in which the sending warehouse performs the product receipt steps for the receiving warehouse in Integra. In these situations, follow the steps in the following procedure Receive Product on a Transfer Order prior to saving and closing the transfer order.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>There is enough on-hand quantity of item being transferred to perform the transfer</li>
+    <li>It has been confirmed that the quantity of product to be transferred is available in the sending storage location</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <p><span style="font-size:14pt;"><span style="font-weight:bold;">Unreserve the Quantity of Product to Transfer</span></span></p>
+  <ol>
+    <li>From the Integra Home page, navigate the modules to <strong>Project management and accounting &gt; Projects &gt; All Projects</strong>.
+      <p><img alt="Picture 368781635" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image74.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+    </li>
+    <li>On the <strong>All projects</strong> grid, in the <strong>Filter</strong> field, enter the project ID to which the item is associated.</li>
+    <li>Click the <strong>checkbox</strong> to the left of the line to select the project.</li>
+    <li>On the menu at the top, click <strong>Plan </strong>tab and under the <strong>Item requirements</strong> section, click <strong>Item requirements</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781637" height="329.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image76.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">In the list of item requirements, click the <strong>checkbox</strong> to the left of the item being transferred.</li>
+    <li>On the menu at the top of the page, click <strong>Manage </strong>and then click <strong>Inventory &gt; Reservation</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781731" height="260.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image78.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Click the <strong>Reservation</strong> field  and reduce the value by the quantity being transferred. a</li>
+  </ol>
+  <p style="margin-left: 40px"><strong>For example</strong>, if the current reservation reflects a quantity of 50, and 5 items are being transferred to another warehouse, the value in the <strong>Reservation </strong>field should be updated to <strong>45</strong>.</p>
+  <p><strong></strong><img alt="Picture 368781729" height="288.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image79.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="678.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Click <strong>Display dimensions</strong> to add inventory dimensions to the display.</li>
+  </ol>
+  <p><img alt="Picture 368781728" height="327.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image80.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click the <strong>checkbox </strong>next to each dimension to add.</li>
+    <li>Click <strong>OK</strong> to proceed.</li>
+    <li style="counter-reset: item1 10;" value="11">Filter the display by the <strong>Project ID</strong>.</li>
+    <li>Locate the item reservation in the grid and select it for easy reference.</li>
+  </ol>
+  <p><span style="font-size:14pt;font-weight:bold">Create Transfer Order</span></p>
+  <p><strong>Note</strong>: Use a second concurrent session of Integra to perform this step by right clicking on the Integra internet tab and selecting <strong>Duplicate </strong>(per screenshot below).</p>
+  <p><img alt="Picture 368781733" height="303.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image82.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">In the second session of Integra navigate the modules to <strong>Inventory management &gt; Outbound orders &gt; Transfer order</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781735" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image83.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">On the menu at the top of pagae, click <strong>New</strong> to create a new order.</li>
+  </ol>
+  <p><img alt="Picture 368781736" height="299.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image84.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">In the <strong>Transfer order header</strong> section, in the <strong>OVERVIEW</strong> section, complete the following fields:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>From warehouse</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Click the drop-down arrow and select the source warehouse.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>To warehouse</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Click the drop-down arrow and select the receiving warehouse.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Ship date</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Defaults to today’s date.</p>
+            <p>Click the calendar and select the date the transfer will be shipped.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Receipt date</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Defaults to today’s date.</p>
+            <p>Click the calendar and select the date the transfer is expected to be received.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">In the <strong>Transfer order lines</strong> section, click <strong>Add</strong> to add a line.</li>
+  </ol>
+  <p><img alt="Picture 368781738" height="330.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image85.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Review/complete the following fields:</li>
+  </ol>
+  <div align="left" style="border-width: 1px;border-style: none;border-color: #000000;border-left-width: 1px;border-left-style: none;border-left-color: #000000;border-top-width: 1px;border-top-style: none;border-top-color: #000000;border-right-width: 1px;border-right-style: none;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: none;border-bottom-color: #000000">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Item number</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Enter or search for the item number being transferred.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Transfer quantity</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Enter the quantity of item being transferred.</p>
+            <p><strong>Note</strong>: This is the same amount that was unreserved previously.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Ship date</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Validate that the same value defaults as what was previously entered in the overview section.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Receipt date</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Validate that the same value defaults as what was previously entered in the overview section.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Scroll down and expand the <strong>Line details</strong> section.</li>
+    <li style="" value="18">Click the <strong>Dimensions </strong>tab.</li>
+  </ol>
+  <p><img alt="Picture 368781740" height="299.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image86.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="602.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Complete/review the following fields:</li>
+  </ol>
+  <p style="margin-left: 36px"><strong>Note</strong>: Reference the first Integra session to determine data to enter on the <strong>Dimensions </strong>tab.</p>
+  <div align="left" style="border-width: 1px;border-style: none;border-color: #000000;border-left-width: 1px;border-left-style: none;border-left-color: #000000;border-top-width: 1px;border-top-style: none;border-top-color: #000000;border-right-width: 1px;border-right-style: none;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: none;border-bottom-color: #000000">
+    <table border="0" cellspacing="0" style="width:690.0px">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Project ID</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Enter the project ID the items are associated with.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Site</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Defaults from the previous entry.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Warehouse</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Defaults from the previous entry.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Batch number</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Identifies the batch number for FIFO or FEFO items.</p>
+            <p>Click the drop-down arrow and select the batch number for the item being transferred, if required.</p>
+            <p><strong>TIP</strong>: You can also find this on the <strong>Reservation </strong>screen in a concurrent Integra session or in the <strong>On-hand list </strong>report.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Location</p>
+          </td>
+          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
+            <p>Identifies the location this item is stored in the sending warehouse.</p>
+            <p>Click the drop-down arrow and select the location of the item being transferred.</p>
+            <p><strong>TIP</strong>: You can also find this on the <strong>Reservation </strong>screen in a concurrent Integra session or in the <strong>On-hand list </strong>report.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">On the menu at the top of page, click <strong>Save</strong>.</li>
+  </ol>
+  <p style="counter-reset: item1 20; counter-set: item1 21;"><br/>
+    <strong>Note</strong>:If there is more than one item being transferred, perform steps 16 through 21 above for each item being transferred. 
+  </p>
+  <p><span style="font-weight:bold;font-size:14pt">Post Picking List</span></p>
+  <p><img alt="Picture 368781725" height="334.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image87.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 21;" value="22">Click the <strong>Ship </strong>tab.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: Outside of Integra, the items being transferred are physically picked and packed.</h6>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">In the <strong>Operations </strong>section, near the top of the page, click <strong>Generate picking list</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781742" height="325.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image88.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">Under the <strong>Overview </strong>tab, click the drop-down arrow in the <strong>Update</strong> field and select <strong>All </strong>from the selection list.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: Selecting <strong>All </strong>indicates all the quantity unreserved and entered as the transfer quantity in the transfer order are being picked for shipping.</h6>
+  <p><img alt="Picture 368781744" height="631.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image90.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="629.9"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">Under the <strong>Lines </strong>section, confirm the value in the <strong>Pick quantity</strong> field.</li>
+    <li>Click the <strong>General</strong> tab.</li>
+    <li>Toggle <strong>Print picking list</strong> to <strong>Yes</strong>.</li>
+    <li>Click <strong>OK</strong> to proceed.</li>
+  </ol>
+  <p><img alt="Picture 368781745" height="277.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image91.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 28;" value="29">Validate that the info-message <em><strong>Operation completed </strong></em>displays.</li>
+    <li>On the <strong>Transfer order</strong> page, under the <strong>View</strong> section, click <strong>Picking list</strong>.</li>
+  </ol>
+  <p><img src="assets/images/image424.png"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 30;" value="31">On the menu at the top of the click <strong>Preview/Print  &gt; Original preview</strong> to view the picking list parameters window.</li>
+  </ol>
+  <p><img alt="Picture 368781748" height="325.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image92.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 31;" value="32">Click <strong>OK</strong> to proceed.</li>
+  </ol>
+  <p><img alt="Picture 368781750" height="244.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image93.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 32;" value="33">Review the picking list print preview.</li>
+    <li>To print the picking list, click the <strong>printer</strong> icon.</li>
+    <li>Click the <strong>X</strong> in the top right corner to close the print view and return to <strong>Print preview</strong> screen.</li>
+    <li>Click the <strong>X</strong> in the top right corner to close the print view screen and return to the <strong>Transfer order</strong> screen.</li>
+  </ol>
+  <p><span class="Heading3" style="font-weight: bold;font-size: 14pt">Picking List Registration</span></p>
+  <p>Items that are FIFO or FEFO must be registered after picking. This step confirms the items have been picked and this step is complete.</p>
+  <p><img alt="Picture 368781752" height="245.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image95.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 36;" value="37">In the <strong>Operations</strong> section, click <strong>Picking list registration</strong>.</li>
+    <li>On the <strong>Picking list registration</strong> screen, scroll down to the <strong>Lines</strong> section.</li>
+  </ol>
+  <p><img alt="Picture 368781755" height="270.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image96.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 38;" value="39">Under the Select column, click the <strong>checkbox</strong> to the left of the line to select it. Note the <strong>Handling status</strong> of the selected line is <strong>Activated</strong>.</li>
+    <li>Click <strong>Functions </strong>and select <strong>Update</strong> <strong>selected</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781757" height="290.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image98.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 40;" value="41">Confirm that the <strong>Handling status</strong> is updated to <strong>Completed</strong>.</li>
+    <li>Click <strong>X</strong> to close the <strong>Picking list registration</strong> screen and return to the <strong>Transfer order</strong> screen.</li>
+  </ol>
+  <h6 class="Heading6">Once the picking list registration is complete and saved, the <strong>Ship transfer order </strong>option in the Operations section becomes available to proceed with the process.<br/>
+    <br/>
+    <strong>Note</strong>: You may need to refresh the page to activate the Ship transfer order button.<br/>
+    <br/>
+    Outside of Integra, the order is packed and prepared for shipping.
+  </h6>
+  <p><span style="font-weight:bold;font-size:14pt">Ship Transfer Order</span></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 42;" value="43">Under the <strong>Operations</strong> section, click <strong>Ship transfer order</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781763" height="343.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image99.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 43;" value="44">Review the transfer line for shipping.</li>
+    <li>Click the drop-down arrow in the <strong>Update</strong> field and select <strong>All</strong>.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: Selecting <strong>All </strong>indicates that all the unreserved quantity and the quantity entered as the transfer quantity is being shipped.</h6>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 45;" value="46">Under the <strong>Inventory </strong>section of page, click the <strong>checkbox</strong> to the left of the line.</li>
+    <li>Confirm the <strong>Ship quantity</strong>.</li>
+    <li>Click the <strong>General</strong> tab (in the upper left section of page).</li>
+  </ol>
+  <p><img alt="Picture 368781764" height="338.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image101.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="662.0"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 48;" value="49">If you have a tracking ID for the shipment, enter it in the <strong>Tracking ID</strong> field.</li>
+  </ol>
+  <p><img alt="Picture 368781760" height="530.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image102.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="528.8"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 49;" value="50">Click <strong>OK</strong> to proceed.</li>
+    <li>Validate that the info-message <em><strong>Operation completed</strong></em> displays.</li>
+  </ol>
+  <p><img alt="Picture 368781766" height="326.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image103.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 51;" value="52">Review the status of the transfer order is updated to <strong>Shipped</strong>.</li>
+  </ol>
+  <p style="margin-left: 40px"><strong>Note</strong>: While the product is physically in transit to the receiving warehouse, the system moves the  product to a &quot;transit&quot; warehouse. </p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 52;" value="53">On the menu at the top of the page, click <strong>Save</strong>.</li>
+    <li style="">Click <strong>X </strong>to cose the <strong>Transfer order</strong> page and return to the list of transfer orders. .</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created a transfer order to ship inventory from one IRC warehouse to another IRC warehouse, within the same  project.</p>
+  <p>Within this procedure you have done the following:<span style="font-family:Arial,sans-serif"> </span></p>
+  <ol class="Decimal">
+    <li>Unreserved the quantity of product being transferred from the sending warehouse to make it available for transfer</li>
+    <li>Created a transfer order used to ship/track inventory from the sending warehouse to the receiving warehouse</li>
+    <li>Generated a picking list for product (and registered FEFO or FIFO items)</li>
+    <li>Shipped transfer order</li>
+  </ol>
+  <h2 class="Heading2"><a id="Receive_Product_on_a_Transfer_Order"></a>Receive Inventory on a Transfer Order</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this to procedure to record the receipt of product being transferred from an IRC sending warehouse when received at the receiving warehouse.</p>
+  <p>This is a two-step process:</p>
+  <ol class="Decimal">
+    <li>Enter the product receipt for the item received from the sending warehouse</li>
+    <li>Reserve in the quantity of the item transferred from the sending warehouse on the project&#39;s item requirements</li>
+  </ol>
+  <p>Performing this procedure works best using two concurrent sessions of Integra.</p>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><strong>Sending Warehouse Enters Product Receipt for Receiving Warehouse</strong></p>
+  <p>There are situations in which the sending warehouse performs the product receipt steps for the receiving warehouse in Integra. In these situations, follow the steps in the following procedure <strong>Receive Product on a Transfer Order</strong> prior to saving and closing the transfer order.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li><strong>Purchase order status</strong> is <strong>Shipped</strong></li>
+    <li>Products have been physically received at the receiving warehouse</li>
+    <li>A copy of the picking list should be included from the sending warehouse; the picking list identifies the transfer order number</li>
+    <li>The waybill (generated outside of Integra) should also accompany the transfer order shipment as the document is required on ground transfer.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>From the Integra Home page, navigate modules to <strong>Inventory management &gt; Outbound orders &gt; Transfer order</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781780" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image104.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Find the relevant transfer order and click the transfer order number to open the form.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: There are various search filters that can be used to find the transfer order.</h6>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Review the information on the transfer order lines to ensure the correct order was selected.</li>
+  </ol>
+  <p><img alt="Picture 368781781" height="331.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image105.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">On the menu at the top of the page, click <strong>Receive</strong>.</li>
+  </ol>
+  <p><img src="assets/images/image426.png"/></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Under the <strong>Operations</strong> section, click <strong>Receive</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781782" height="321.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image107.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="637.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">On the <strong>Overview</strong> tab, in the <strong>Update</strong> field, click the drop-down and select <strong>All</strong>.</li>
+    <li>Scroll down to the <strong>Lines</strong> section. </li>
+    <li>Select the receipt line and update the <strong>Receive </strong><strong>Quantity</strong> field with the <u>actual</u> quantity received.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: The quantity defaults to the quantity on transfer order but a partial quantity may be entered if the delivered quantity is less than transfer quantity. The transfer order remains open until the full transfer quantity is received.</h6>
+  <p><img alt="Picture 368781783" height="343.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image108.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click <strong>Inventory &gt; Display</strong> dimensions to add the appropriate dimensions for the product.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: The appropriate dimensions to include depend on the item being received into inventory.</h6>
+  <p><img alt="Picture 368781784" height="344.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image109.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Click the <strong>checkbox</strong> to select the dimensions to add.</li>
+    <li>Click <strong>OK </strong>on the <strong>Dimensions display</strong> form to return to the transfer.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: The columns are added to the inventory line display.</h6>
+  <p><img alt="Picture 368781785" height="342.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image111.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Select the line and click <strong>Inventory &gt; Registration</strong> to register the product details.</li>
+  </ol>
+  <p><img alt="Picture 368781787" height="324.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image112.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="668.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">On the <strong>Registration</strong> form, under the <strong>Transactions</strong> section, click <strong>Add registration line</strong>.</li>
+    <li>Under the <strong>Registration lines</strong> section, view the details that default from the transfer order.</li>
+    <li>Update the <strong>Location</strong> field to the location in the receiving warehouse where the product will be stored.</li>
+    <li>Validate that the Batch number is correct. If not, update with the correct number.</li>
+    <li>Click <strong>Confirm Registration</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781791" height="314.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image113.png" style="cursor: nwse-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <p style="margin-left: 28px">When the line is confirmed, it is no longer available in the <strong>Registration lines</strong> section and displays under the <strong>Transactions</strong> section in top section of page.</p>
+  <p style="margin-left: 28px">The <strong>Receipt status</strong> is updated to <strong>Registered</strong>.</p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">Click <strong>Save</strong> to save the registration line.</li>
+    <li>Click <strong>X</strong> to close the <strong>Registration </strong>form and return to the <strong>Receive </strong>form.</li>
+  </ol>
+  <p><img alt="Picture 368781792" height="340.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image114.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Click <strong>OK</strong> to proceed.</li>
+  </ol>
+  <p><img alt="Picture 368781793" height="268.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image115.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Confirm the info-message the <strong>Operation completed</strong> successfully.</li>
+    <li>Validate the transfer order status is updated to <strong>Received</strong>.</li>
+    <li>Click the <strong>X</strong> in the top right corner of page to close it.</li>
+  </ol>
+  <p><span style="font-size:14pt;font-weight:bold">Reserve the Transferred Quantity</span></p>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">Navigate the modules to <strong>Project management and accounting &gt; Projects &gt; All Projects</strong>.</li>
+  </ol>
+  <p><img alt="Picture 12" height="329.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image116.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">On the <strong>All projects</strong> grid, in the <strong>Filter </strong>field, enter the project ID to search for the project the item is associated to.</li>
+    <li style="" value="25">Click the <strong>checkbox</strong> to the left of the line to select the project.</li>
+    <li style="" value="25">On the menu at the top, on the <strong>Plan</strong> tab, under the Item requirements section, click <strong>Item requirements</strong>.</li>
+  </ol>
+  <p><img alt="Picture 33" height="329.2" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image118.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 27;" value="28">In the list of item requirements, click the <strong>checkbox</strong> to the left of the item that was transferred.</li>
+    <li style="" value="28">On the <strong>Manage</strong> tab, click <strong>Inventory &gt; Reservation</strong>.</li>
+  </ol>
+  <p><img alt="Picture 54" height="260.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image120.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 29;" value="30">Click the <strong>Reservation</strong> field and update the value.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: The updated value is <strong>adding </strong>the number of items being transferred into the value in the <strong>Reservation </strong>field.<br/>
+    <br/>
+    For example, if 5 items are being transferred in, and the current reservation is 45, the updated value will be 50.
+  </h6>
+  <p><img alt="Picture 58" height="288.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image121.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="678.5"/></p>
+  <ol>
+    <li style="counter-reset: item1 30;" value="31">Click <strong>Display dimensions</strong> to add inventory dimensions to the display.</li>
+  </ol>
+  <p><img alt="Picture 60" height="327.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image122.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 31;" value="32">Click the <strong>checkbox</strong> next to each dimension to add.</li>
+    <li>Click <strong>OK</strong> to proceed.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: Once the display dimensions are added, locate the item reservation again.</h6>
+  <p><img alt="Picture 93" height="270.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image124.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 33;" value="34">Validate the reservation entry.</li>
+    <li>Click the <strong>X</strong> in the top right corner of page to close the <strong>Reservation </strong>form and return to the <strong>All projects</strong> grid.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have recorded the receipt of product transferred into the receiving warehouse on a transfer order and reserved the item to the new warehouse.</p>
+  <h2 class="Heading2"><a id="Transfer_Inventory_from_Location_to_Location_(within_the_same_IRC_warehouse)"></a>Transfer Inventory from Location to Location (within the same IRC warehouse)</h2>
+  <h3 class="Heading3" style="margin: 0in 0in 10pt;">Purpose<span style="font-size:12pt"><span style="line-height:107%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b><span style="font-size:13.0pt"><span style="line-height:107%"><span style="color:#a85402"></span></span></span></b></span></span></span></span></h3>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif">Use this procedure to transfer inventory between locations within the same warehouse. </span></span></span></span></p>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif">These types of transfers use a <b>Transfer journal</b> in Integra.    </span></span></span></span></p>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"></span></span></span></span></p>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><strong>Example</strong>: </span></span></span></span></p>
+  <p style="margin: 0in 0in 10pt;">Transfer inventory from a Port-of-Entry location to the IRC warehouse location where the item has been received.</p>
+  <h3 class="Heading3" style="margin: 0in 0in 10pt;">Prerequisites<span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><span style="line-height:107%"></span><span style="line-height:107%"></span></span></span></span></h3>
+  <ul>
+    <li style="margin: 0in 0in 10pt;">A product receipt has been posted in the Integra system at the sending location.</li>
+    <li style="margin: 0in 0in 10pt;">The quantity being transferred has been unreserved in the item requirement line of the project .
+      <ul>
+        <li style="margin: 0in 0in 10pt;">Refer to the procedure, <em>Reserve or Unreserve Quantity of Product</em><em> in a Project</em> for guidance. (<strong style="color: #FF0000">Tip</strong>: After unreserving the quantity, view the on-hand list to validate that the quanitity has been reduced by the unreserved quantity under the <strong>Physical reserved</strong> column.)</li>
+      </ul>
+    </li>
+  </ul>
+  <h3 class="Heading3" style="margin: 0in 0in 10pt;">Steps</h3>
+  <ol>
+    <li style="counter-reset: item1 0;" value="1"><span style="counter-reset:item1 33;"> </span>Navigate to <strong>Inventory management &gt; Journal entries &gt; Items &gt; Transfer</strong>.</li>
+  </ol>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" height="55292" id="Picture_x0020_71" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image427.png" style="width: 511.5pt; height: 153pt;" width="55292"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <strong>New</strong>.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
+Description automatically generated" id="Picture_x0020_94" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image428.png" style="width: 510.75pt; height: 249pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Validate/complete the following fields:<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></li>
+  </ol>
+  <table class="MsoTableGrid" style="width:517.5pt; margin-left:17.75pt; border-collapse:collapse; border:solid windowtext 1.0pt" width="690">
+    <thead>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; background:#373031; width:1.25in; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:white">Field </span></span></b></span></span></span></span></p>
+        </td>
+        <td style="border:solid windowtext 1.0pt; background:#373031; width:427.5pt; border-left:none; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:white">Entry Required</span></span></b></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Name</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This field defaults to <b>INV_TRAN</b>. Do not change default</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the sending warehouse.</span></span></span></span></span></p>
+        </td>
+      </tr>
+    </thead>
+  </table>
+  <p style="margin: 0in 0in 10pt;"> </p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span><span style="counter-reset:item1 1;"> </span>Click <strong>OK </strong>to proceed.<span style="counter-reset:item1 1;"></span></li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_102" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image429.png" style="width: 511.5pt; height: 187.5pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Under the <strong>Journal lines</strong> section, click <strong>New </strong>to create a new line.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_105" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image430.png" style="width: 512.25pt; height: 198pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Enter the item number for the item being transferred.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_116" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image431.png" style="width: 510.75pt; height: 220.5pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Update the <strong>Quantity </strong>field with the quantity being transferred. (This defaults to a negative value because it is a transfer. This value should always be a negative value).</li>
+    <li style="" value="7">Scroll down to the <strong>Line details</strong> section.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_118" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image432.png" style="width: 511.5pt; height: 251.25pt;"/> </span></span></span></p>
+  <p style="margin: 0in 0in 10pt;"><span style="margin:0in 0in 10pt;"><span style="counter-reset:item1 33;"><strong>Note</strong>: Under the General tab, the Cost price value displayed is the price used on the purchase order. </span></span></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">Click the <strong>Inventory dimensions</strong> tab.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated with medium confidence" id="Picture_x0020_119" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image433.png" style="width: 510.75pt; height: 248.25pt; cursor: nesw-resize;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">Complete the following fields:</li>
+  </ol>
+  <table class="MsoTableGrid" style="width:510.7pt; margin-left:22.25pt; border-collapse:collapse; border:solid windowtext 1.0pt" width="681">
+    <tbody>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:112.5pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="color:black">Field</span></b></span></span></span></p>
+        </td>
+        <td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:398.2pt; border-left:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="color:black">Entry Required</span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border:solid windowtext 1.0pt; width:510.7pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="681">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="font-variant:small-caps"><span style="color:#002060">From inventory dimensions</span></span></span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Project ID</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter the project ID to which items were received.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant warehouse.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Location</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the specific location from where the items are being transferred.</span></span></span></span></span></p>
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:#c00000">Tip</span></span></b><span style="line-height:115%">: Validate the location in the <b><i>On-hand list</i></b> report.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border:solid windowtext 1.0pt; width:510.7pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="681">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="font-variant:small-caps"><span style="color:#002060">to inventory dimensions</span></span></span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Project ID</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter the project ID to which items were received.</span></span></span></span></p>
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">This must be the same project ID that was previously entered in the <b><span style="font-variant:small-caps">from inventory dimensions</span></b> section. </span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant warehouse.</span></span></span></span></p>
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%">Note</span></b><span style="line-height:115%">: This should be <u>the same warehouse</u> as entered in the <b><span style="font-variant:small-caps">from inventory</span></b> <b><span style="font-variant:small-caps">dimensions</span></b>. If transfer to a different warehouse is required, a subsequent <b>Transfer order</b> should be processed to ensure picking/packing/receiving steps are accurately tracked for the movement between warehouses.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Location</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the specific location to where the items are being transferred.</span></span></span></span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin: 0in 0in 10pt;"> </p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span><span style="counter-reset:item1 33;"> </span>Scroll back up to the <strong>Journal lines</strong> section.<span style="counter-reset:item1 33;"></span></li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application, email
+Description automatically generated" id="Picture_x0020_127" o:borderbottomcolor="#7f7f7f" o:borderleftcolor="#7f7f7f" o:borderrightcolor="#7f7f7f" o:bordertopcolor="#7f7f7f" src="assets/images/image434.png" style="width: 511.5pt; height: 195.75pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Click <strong>Save</strong>, then click <strong>Validate</strong>.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_128" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image435.png" style="width: 510.75pt; height: 249pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Click <strong>OK </strong>on <strong>Check journal</strong> pane to proceed.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_129" o:borderbottomcolor="#7f7f7f" o:borderleftcolor="#7f7f7f" o:borderrightcolor="#7f7f7f" o:bordertopcolor="#7f7f7f" src="assets/images/image436.png" style="width: 515.25pt; height: 212.25pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Confirm that message “Journal is OK” is displayed.</li>
+    <li style="" value="14">Click <strong>Post </strong>to post the transfer journal and then click <strong>OK</strong> again when prompted on the <strong>Post journal</strong> pane.</li>
+  </ol>
+  <p style="margin: 0in 0in 10pt;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" height="55292" id="Picture_x0020_130" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image437.png" style="width: 510.75pt; height: 186.75pt;" width="55292"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Confirm that message “Journal has been posted” is displayed.</li>
+    <li style="" value="16">Display the On-hand list to validate the accuracy of the inventory quantities after the transfer is complete.</li>
+    <li style="" value="16">Reserve the transferred quantity back to the project.</li>
+  </ol>
+  <ul>
+    <li>Refer to the procedure, <em>Reserve or Unreserve Quantity of Product</em><em> in a Project</em> for guidance. (<strong style="color: #FF0000">Tip</strong>: After reserving the quantity, view the on-hand list to validate that the quanitity has been increased by the reserved quantity under the <strong>Physical reserved</strong> column.)</li>
+  </ul>
+  <h3 class="Heading3" style="margin: 0in 0in 10pt;">Result</h3>
+  <p style="margin: 0in 0in 10pt;"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;">You have transferred inventory between locations within the same warehouse.</span></p>
+  <h2 class="Heading2" style="margin: 0in 0in 10pt;"><a id="Transfer_Inventory_from_Project_to_Project"></a>Transfer Inventory from Project to Project</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt">Use this procedure to transfer inventory from one project to another, within the same reporting entity and same warehouse.</p>
+  <ul>
+    <li>For projects that are closed, the project must be reopened to enable the transfer.</li>
+    <li>A partial quantity or full quantity of inventory can be transferred to another project.</li>
+    <li>Once transferred, the transferred quantity must be reserved to the new project.</li>
+  </ul>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b></b></span></span></span></span></p>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><strong>Example scenario</strong>: There is excess inventory left on an end-of-grant project that will be transferred to another project.  </p>
+  <p style="margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="color:#c00000"></span></b></span></span></span></p>
+  <p><strong style="color: #FF0000">IMPORTANT</strong>: Check on the <strong>On-Hand list</strong> continuously throughout this procedure to validate the movement of the inventory from one project to another.</p>
+  <h3 class="Heading3">Prerequisites<span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><span style="line-height:107%"></span><span style="line-height:107%"></span></span></span></span></h3>
+  <ul>
+    <li>You have confirmed, via the <strong>On-hand List</strong>, that there is sufficient quantity of inventory on the sending project to transfer. 
+      <ul>
+        <li>View the quantities under columns <strong>Physical inventory</strong> and <strong>Physical reserved</strong> and validate the <strong>Location </strong>in which the item is stored.</li>
+      </ul>
+    </li>
+    <li class="Heading3">The PO on which the items were originally purchased has been fully received and invoiced. This ensures that costs appear correctly on the transfer journal.</li>
+    <li class="Heading3">Financial dimensions from originating PO are known.</li>
+  </ul>
+  <h3 class="Heading3">Full and Partial Quantity Transfer Scenarios<span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:107%"></span></b></span></span></span></h3>
+  <p style="margin-top:0in; margin-right:0in; margin-bottom:8.0pt; margin-left:.25in; margin:0in 0in 10pt"><strong><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;">1. Transfer Full Quantity of Inventory from Sending Project</span></strong></p>
+  <p style="margin-top:0in; margin-right:0in; margin-bottom:8.0pt; margin-left:.25in; margin:0in 0in 10pt"><span style="margin:0in 0in 10pt;">When transferring the full quantity of inventory from one project to another, the delivery remainder quantity on the sales order must be <strong>cancelled </strong>to make the quantity available for reservation on a different project. This is done by performing the following steps:</span></p>
+  <ul>
+    <li style="margin-bottom:8.0pt; margin:0in 0in 0in 0.5in"><span style="margin:0in 0in 10pt;">On the <strong>Item requirements</strong> page, click <strong>Manage &gt; Inquiries &gt; Sales order</strong>. </span></li>
+    <li style="margin-bottom:8.0pt; margin:0in 0in 0in 0.5in"><span style="margin:0in 0in 10pt;">Under the <strong>Sales order lines</strong> section, locate and select the relevant line item and click <strong>Update line &gt; Deliver remainder</strong>. </span></li>
+    <li style="margin-bottom:8.0pt; margin:0in 0in 0in 0.5in"><span style="margin:0in 0in 10pt;">On the <strong>Deliver remainder</strong> pane, click <strong>Cancel quantity</strong>.</span></li>
+  </ul>
+  <p><strong><span style="margin:0in 0in 10pt;">2. Transfer Partial Quantity of Inventory <span style="font-weight:lighter;">(when some inventory has already been distributed)</span></span></strong></p>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:.25in; margin:0in 0in 10pt"><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;">A quantity of the inventory has already been distributed and there is a remaining quantity available to be transferred. In this case, <u>complete the same steps above</u> for cancelling quantity of delivery remainder in sales order.</span></p>
+  <p><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;"><strong style="color: #FF0000">Tip</strong>: To determine whether any inventory for a specific product has already been distributed for a project click the Transactions tab for the item in the On hand list.</span><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:107%"></span></b></span></span></span></p>
+  <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:.25in; margin:0in 0in 10pt"><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;">3. <strong>Transfer Partial Quantity of Inventory</strong> (where no inventory has been distributed)</span></p>
+  <p><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;">In this case, the quantity to be transferred must be <u>unreserved </u>in the item requirements of the sending project (instead of cancelling the deliver remainder quantity on the sales order because the inventory is yet to be distributed.) This is done by performing the following steps:</span></p>
+  <ul>
+    <li style="margin-bottom:8.0pt; margin:0in 0in 10pt 0.5in"><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;">On the sending project, navigate to <strong>Item requirements &gt; Manage &gt; Inventory &gt; Reservation</strong>.</span></li>
+    <li style="margin-bottom:8.0pt; margin:0in 0in 10pt 0.5in"><span style="margin-bottom:8.0pt;margin-left:.25in;margin-right:0in;margin-top:0in;margin:0in 0in 10pt;">On the relevant reservation line, reduce the quantity under the <strong>Reservation </strong>column by the quantity to be transferred.</span></li>
+  </ul>
+  <h2 class="Heading2" style="margin: 0in 0in 10pt;">Steps</h2>
+  <ol>
+    <li style="counter-reset: item1 0;" value="1"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"> </span>Per the three scenarios listed above, either cancel the delivery remainder quantity on the sales order or unreserve the inventory on the item requirement line.</li>
+    <li style="" value="1">Navigate to <strong>Inventory management &gt; Journal entries &gt; Items &gt; Transfer</strong>.</li>
+  </ol>
+  <p><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_111" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image438.png" style="width: 511.5pt; height: 153pt;"/> </span></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">On the menu at the top of page, click New.</li>
+  </ol>
+  <p><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"><img alt="Graphical user interface, application
+Description automatically generated" id="Picture_x0020_112" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image439.png" style="width: 510.75pt; height: 249pt;"/> </span></p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"> </span>Validate/complete the following fields:<span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"> </span></li>
+  </ol>
+  <table class="MsoTableGrid" style="width:517.5pt; margin-left:17.75pt; border-collapse:collapse; border:solid windowtext 1.0pt" width="690">
+    <thead>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; background:#373031; width:1.25in; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:white">Field </span></span></b></span></span></span></span></p>
+        </td>
+        <td style="border:solid windowtext 1.0pt; background:#373031; width:427.5pt; border-left:none; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:white">Entry Required</span></span></b></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="tab-stops:63.0pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Name          </span></span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This field defaults to <b>INV_TRAN</b>. </span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Description</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This field defaults to <b>Inventory Transfer Journal</b>. However, this is a free-text field so you can overwrite the default text or add additional information to clarify the transfer, e.g., identify the projects involved in the transfer.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:1.25in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="120">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:427.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="570">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant warehouse.</span></span></span></span></span></p>
+        </td>
+      </tr>
+    </thead>
+  </table>
+  <p style="margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"> </span>Click <strong>OK </strong>to proceed.<span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"></span></li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" height="705" id="Picture_x0020_113" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image440.png" style="width: 511.5pt; height: 187.5pt;" width="1927"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"> </span>Under the <strong>Journal lines</strong> section, click <strong>New </strong>to create a new line.<span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"></span></li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_114" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image441.png" style="width: 512.25pt; height: 198pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7"><span style="font-family:Arial,sans-serif"> </span>Enter the item number for the item being transferred.<span style="font-family:Arial,sans-serif"></span></li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_115" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image442.png" style="width: 510.75pt; height: 220.5pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Update the <strong>Quantity </strong>field with the quantity being transferred. (This defaults to a negative value because it is a transfer. This value should always be a negative value).</li>
+    <li style="" value="8">Scroll down to the<strong> Line details</strong> section.</li>
+  </ol>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_117" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image443.png" style="width: 511.5pt; height: 251.25pt;"/> </span></span></span></p>
+  <p style="margin:0in 0in 10pt"><span style="margin-bottom:6.0pt;margin-left:0in;margin-right:0in;margin-top:6.0pt;margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;"><strong>Note</strong>: The<strong> Cost price</strong> value displayed is the cost of the invoiced purchase order.</span></span></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10"><span style="font-family:Arial,sans-serif;"> </span>Click the <strong>Inventory dimensions</strong> tab.<span style="font-family:Arial,sans-serif;"></span></li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated with medium confidence" id="Picture_x0020_123" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image444.png" style="width: 510.75pt; height: 248.25pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11"><span style="font-family:Arial,sans-serif;"> </span>Complete the following fields:<span style="font-family:Arial,sans-serif;"> </span></li>
+  </ol>
+  <table class="MsoTableGrid" style="width:510.7pt; margin-left:22.25pt; border-collapse:collapse; border:solid windowtext 1.0pt" width="681">
+    <tbody>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:112.5pt; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="color:black">Field</span></b></span></span></span></p>
+        </td>
+        <td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:398.2pt; border-left:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="color:black">Entry Required</span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border:solid windowtext 1.0pt; width:510.7pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="681">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="font-variant:small-caps"><span style="color:#002060">From inventory dimensions</span></span></span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Project ID</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter the project ID of the sending project.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site. This value is your legal entity and should default in this field.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant warehouse.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Location</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the specific location from where the items are being transferred.</span></span></span></span></span></p>
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="color:#c00000">Tip</span></span></b><span style="line-height:115%">: Validate the location in the <b><i>On-hand list</i></b> report.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Batch number</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">If FEFO item, enter batch number.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border:solid windowtext 1.0pt; width:510.7pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="681">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%"><span style="font-variant:small-caps"><span style="color:#002060">to inventory dimensions</span></span></span></b></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Project ID</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter the project ID of <u>the receiving project</u>.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Site</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant site. This value is your legal entity and should default in this field.</span></span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Warehouse</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the relevant warehouse.</span></span></span></span></p>
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%">Note</span></b><span style="line-height:115%">: This should be <u>the same warehouse</u> as entered in the <b><span style="font-variant:small-caps">from inventory</span></b> <b><span style="font-variant:small-caps">dimensions</span></b>. If transfer to a different warehouse is required, a subsequent <b>Transfer order</b> should be processed to ensure picking/packing/receiving steps are accurately tracked for the movement between warehouses.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Location</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter/select the specific location to where the items are being transferred. </span></span></span></span></p>
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%">Note</span></b><span style="line-height:115%">: This should be the same location as entered in the <b><span style="font-variant:small-caps">from inventory</span></b> <b><span style="font-variant:small-caps">dimensions</span></b>.</span></span></span></span></p>
+        </td>
+      </tr>
+      <tr>
+        <td style="border:solid windowtext 1.0pt; width:112.5pt; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="150">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Batch number</span></span></span></span></p>
+        </td>
+        <td style="border-bottom:solid windowtext 1.0pt; width:398.2pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="531">
+          <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">If FEFO item, enter batch number.</span></span></span></span></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_122" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image445.png" style="width: 511.5pt; height: 249pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">Click the <strong>Financial dimensions</strong> tab.</li>
+  </ol>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Word
+Description automatically generated" id="Picture_x0020_125" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image446.png" style="width: 511.5pt; height: 244.5pt;"/></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Complete all required financial dimensions in the <strong>From Dimension</strong> section, i.e., D1 through D6.</li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;"><strong style="color: #FF0000">Important</strong>: These values should match the financial dimensions on the originating PO (or from the item requirement line).</span></span></p>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
+Description automatically generated" id="Picture_x0020_126" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image447.png" style="width: 510.75pt; height: 246.75pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14"><span style="font-family:Arial,sans-serif;"> </span>Scroll back up to the <strong>Journal lines</strong> section.</li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application, email
+Description automatically generated" id="Picture_x0020_368781633" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image448.png" style="width: 511.5pt; height: 249pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15"><span style="font-family:Arial,sans-serif;"> </span>Click <strong>Save</strong>, then click <strong>Validate</strong>.<span style="font-family:Arial,sans-serif;"></span></li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_368781654" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image449.png" style="width: 510.75pt; height: 249pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Click <strong>OK </strong>to proceed.</li>
+  </ol>
+  <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_368781655" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image450.png" style="width: 510.75pt; height: 204pt;"/></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">Confirm that message “Journal is OK” is displayed.</li>
+    <li style="" value="16">Click <strong>Post </strong>to post the transfer journal and then click <strong>OK </strong>again when prompted on the Post journal pane.</li>
+  </ol>
+  <p style="margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, text, application
+Description automatically generated" id="Picture_x0020_368781656" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image451.png" style="width: 510.75pt; height: 186.75pt; cursor: nwse-resize;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Confirm that message “Journal has been posted” is displayed.</li>
+    <li style="" value="19">Display the <strong>On-hand list</strong> to validate the accuracy of the inventory quantities after the transfer is complete.</li>
+    <li style="" value="19">Create an item forecast line in the new project for each item transferred and “mark’ each item requirement line that gets created.</li>
+  </ol>
+  <p><span style="margin-left:.25in;margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;"><strong style="color: #FF0000">IMPORTANT</strong>: This step is mandatory in order to perform the subsequent distribution of the transferred items. Refer to the following procedures in the <em><strong>Item Forecasting to PO Creation</strong></em> section for guidance on completing these transactions.</span></span></p>
+  <ul>
+    <li><span style="margin-left:.25in;margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;">Create an Item Forecast Line Directly in Integra </span></span></li>
+    <li><span style="margin-left:.25in;margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;">Perform “Marking” for an Item Requirement Line</span></span></li>
+  </ul>
+  <p><span style="margin-left:.25in;margin:0in 0in 10pt;"><span style="font-family:Arial,sans-serif;margin-left:68px">- For FEFO (batch controlled items), the batch number should be assigned on the item requirement line under the <strong>Product Dimensions</strong> tab.</span></span></p>
+  <h1 class="Heading1"><a id="Product_Returns_-_Business_Process_Information"></a>Product Returns - Business Process Information</h1>
+  <p> </p>
+  <h2 class="Heading2"><a id="Invoiced_Return"></a>Process Flow - Create Return PO for Vendor (to obtain credit)</h2>
+  <h2 class="Heading2"><img alt="Picture 368781646" height="266.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image135.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="566.9"/></h2>
+  <p>Once an invoice is posted against a PO, a return purchase order is created to return the received products to obtain a credit for the returned inventory.</p>
+  <p>Return purchase orders are similar to purchase orders but use a different purchase order <strong>type </strong>and the quantity entered is a negative value.</p>
+  <h2 class="Heading2"><a id="Beneficiary_Return_to_IRC_(Return_to_Warehouse)"></a>Process Flow - Beneficiary Returns to IRC Warehouse</h2>
+  <p><img alt="Picture 368781653" height="249.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image136.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="592.9"/></p>
+  <p>On occasion, items distributed to beneficiaries are returned to the IRC warehouse. Since a packing slip has been posted, the project has been expensed and the inventory is no longer available on-hand. To see the items in inventory in the warehouse, a return is processed. Beneficiary returns are processed with a negative item requirement.</p>
+  <p>When a negative quantity is entered on an item requirement, the return lot ID field is used to select the related packing slip for the return. Once the packing slip is posted, products are received back into inventory and the expense is reversed. If revenue had already been recognized for this item requirement distribution, upon next invoice proposal, a credit will be generated and the revenue will be reversed. That inventory is released by creating another item requirement to process the release.</p>
+  <h2 class="Heading2"><a id="Return_Invoiced_Items"></a>Create a Return Order for Invoiced Items (to obtain credit from vendor)</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to create a return purchase order for products that were already invoiced by the vendor and get a credit for the returned products.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>The <strong>Approval status</strong> on original purchase order is <em><strong>Confirmed</strong></em></li>
+    <li>The <strong>Purchase order status</strong> on original purchase order is <em><strong>Invoiced</strong></em></li>
+    <li>The <strong>RMA </strong>(Return Merchandise Authorization) number is known or original purchase order number known</li>
+    <li>For stock items, &quot;unreserve&quot; the quantity being returned 
+      <ul>
+        <li>Refer to the procedure, <em><strong>Reserve or Unreserve Quantity of Product in a Project</strong></em></li>
+      </ul>
+    </li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>From the Integra Home page, navigate modules to <strong>Procurement and sourcing &gt; Purchase orders &gt; All purchase orders</strong>.</li>
+  </ol>
+  <p><img alt="Picture 212" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image163.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Find the invoiced purchase order on which the product is being returned and click the purchase order number to open the purchase order form.</li>
+  </ol>
+  <p><img alt="Picture 213" height="322.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image164.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="659.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Review the information on the PO lines to ensure the correct PO was selected.</li>
+  </ol>
+  <p style="margin-left: 40px"><span style="color:#ff0000;"><strong style="color: #000000">Tip</strong></span>: Add the inventory dimensions to the table by clicking, <strong>Purchase order line &gt; Display &gt; Dimensions</strong>.</p>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">Take note of, or copy, the purchase order number.</li>
+  </ol>
+  <p><strong style="margin-left: 44px">Tip</strong>: Duplicate the session to display the initial purchase order for easy access to all the required information .</p>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Click <strong>New</strong> to create a new purchase order.</li>
+  </ol>
+  <p><img alt="Picture 204" height="326.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image165.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Complete /validate the following fields on the <strong>Create purchase order</strong> form:</li>
+  </ol>
+  <div align="left">
+    <table border="0" cellspacing="0" style="width:690.0px;border-width:1px;border-style:none;border-color:#000000;border-left-width:1px;border-left-style:none;border-left-color:#000000;border-top-width:1px;border-top-style:none;border-top-color:#000000;border-right-width:1px;border-right-style:none;border-right-color:#000000;border-bottom-width:1px;border-bottom-style:none;border-bottom-color:#000000">
+      <colgroup>
+        <col style="width:174px"/>
+        <col style="width:516px"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p><span style="color:#ffffff;">Field</span></p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p><span style="color:#ffffff;">Entry Required</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000"><em><strong>Vendor </strong></em>section</td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Vendor account</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Enter the vendor account the product was purchased from and you are requesting the return from.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Pricing type</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Default to Quote. Do not change the default</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000"><em><strong>General </strong></em>section</td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">Purchase order</td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">Defaults to the auto-generated new purchase order number.</td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Purchase type</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Click the drop-down and selected <strong>Returned order</strong>.</p>
+            <p><span style="color:#ff0000;"><strong>Important</strong></span>: This order type creates the return and must be selected to process the return.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Site</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Select the site the return is being processed from.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Warehouse</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Select the warehouse the return is being processed from.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>RMA number</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>If you received Return Merchandise Authorization number (RMA) number from the vendor, enter it here.</p>
+            <p>If not, enter the <strong>purchase order number </strong>(the one you copied / took note of) as the RMA number to use as a reference.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Project ID</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Enter the project ID that the project was charged to.</p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000"><em><strong>Administration </strong></em>section</td>
+        </tr>
+        <tr>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Requester</p>
+          </td>
+          <td style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000">
+            <p>Enter the name of the <strong>Requester</strong>. This may be the same as the Orderer or may be different.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">Click <strong>OK</strong> to proceed.</li>
+    <li>Click <strong>Yes</strong> when prompted to the <strong>Default financial dimensions from project</strong> message.</li>
+  </ol>
+  <p><img alt="Picture 214" height="237.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image166.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">On the <strong>Purchase order lines</strong> section, click <strong>Purchase order line &gt; Credit note</strong>.</li>
+  </ol>
+  <p><img alt="Picture 218" height="345.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image167.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 9;" value="10">On the <strong>Copy from other documents</strong> form, under the <strong>Invoices</strong> section (you may need to expand) click the <strong>checkbox</strong> and select the invoice to get the credit for.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: You can select multiple invoices that have been posted against the purchase order for which you want to receive credit.</h6>
+  <ol>
+    <li style="counter-reset: item1 10;" value="11">Click <strong>OK</strong> to proceed.</li>
+    <li>Review the info-message the <strong>Operation completed</strong> successfully.</li>
+  </ol>
+  <p><img alt="Picture 219" height="341.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image169.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">Review the lines added to the purchase order.<br/>
+      <strong>Note</strong>: The negative sign on the order quantity indicates this is a return. The quantity defaults to the full amount of the invoice. Adjust the quantity as necessary. 
+    </li>
+  </ol>
+  <p><span style="color:#ff0000;"><strong style="margin-left: 40px">Important</strong></span>: If you adjust the quantity, remember to leave the (-) before the number of items being returned.</p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Scroll down to the <strong>Lines details</strong> section and click the <strong>Setup</strong> tab.</li>
+    <li>Click the drop-down in the <strong>Return action</strong> field and select the reason the product is being returned.</li>
+  </ol>
+  <p><img alt="Picture 222" height="330.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image170.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="671.4"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Click <strong>Save</strong>.</li>
+    <li>Click <strong>Workflow &gt; Submit</strong>.</li>
+  </ol>
+  <p><img alt="Picture 228" height="332.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image171.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 17;" value="18">On the <strong>Purchase order workflow – Submit</strong> form, enter a comment as necessary for the returns.</li>
+    <li>Click <strong>Submit</strong> to submit the return purchase order to workflow for approval. </li>
+    <li>Supply Chain personnel follow steps to approve, confirm and receive the purchase order.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have created a return purchase order to return product to the vendor. Supply Chain personnel follow steps to approve and confirm the purchase order. Once approved and confirmed, this return purchase order is ready for picking to return to the vendor.</p>
+  <p><strong>Note</strong>: The picking/packing step <u>is not required</u> when returning non-stock products.</p>
+  <h2 class="Heading2"><a id="Dispatch_Items_to_Return_to_the_Vendor"></a>Dispatch Items to Return to the Vendor</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to dispatch items on a return purchase order that are defective and need to be returned to the vendor.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>A <strong>r</strong><strong>eturn purchase order </strong>was created.</li>
+    <li>The return order <strong>Approval status</strong> is <strong><em>Confirmed</em></strong></li>
+    <li>The <strong>Purchase order status</strong> is <em><strong>Open Order</strong></em></li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>From the Integra Home page, navigate modules to <strong>Procurement and sourcing &gt; Purchase orders &gt; All purchase orders</strong>.</li>
+  </ol>
+  <p><img alt="Picture 230" height="328.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image172.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="669.7"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">Find the return purchase order the product is being returned against and click the PO number to open the PO form.</li>
+  </ol>
+  <p><img alt="Picture 231" height="321.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image173.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="659.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 2;" value="3">Review the information on the PO lines to ensure the correct PO was selected.</li>
+  </ol>
+  <p style="margin-left: 36px"><strong style="color: #FF0000">Tip</strong>: Add the inventory dimensions to the table by clicking, <strong>Purchase order line &gt; DISPLAY &gt; Dimensions</strong>.</p>
+  <p><img alt="Picture 233" height="320.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image174.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 3;">Proceed with the relevant option:</li>
+  </ol>
+  <table border="1" cellpadding="1" cellspacing="1" style="border-collapse: collapse; width: 707px;">
+    <colgroup>
+      <col style="width: 236px;"/>
+      <col style="width: 448px;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td>If</td>
+        <td style="">Then</td>
+      </tr>
+      <tr>
+        <td>Item is a stock item...</td>
+        <td style="">Proceed to step <strong>5</strong>.</td>
+      </tr>
+      <tr>
+        <td>Item is a non-stock item...</td>
+        <td style="">Proceed to step <strong>12</strong>.</td>
+      </tr>
+    </tbody>
+  </table>
+  <ol>
+    <li style="counter-reset: item1 4;" value="5">Select the purchase order line and click <strong>Update line &gt; Pick</strong>.</li>
+    <li>On the <strong>Pick</strong> form click <strong>Add picking line</strong> to add a picking line.</li>
+  </ol>
+  <p><img alt="Picture 237" height="331.0" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image175.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;">Click <strong>Display dimensions</strong> and add all the necessary inventory dimensoins, e.g., <strong>Location</strong>, <strong>Batch</strong>, etc. Update the dimensions as required to ensure items are being dispatched from the correct dimensions.</li>
+    <li style="" value="7">Review the line entered on the <strong>Picking lines</strong> section and validate the quantity in the <strong>Picked quantity</strong> field. This data defaults from the purchase order.</li>
+    <li>Click <strong>Confirm pick all</strong> to confirm the picking line. <strong>Note</strong>: Once the picking line is confirmed, the line no longer displays.</li>
+    <li style="counter-reset: item1 9;" value="10">Click <strong>Save</strong>.</li>
+    <li>Click <strong>X</strong> to close the <strong>Pick</strong> form and return to the purchase order.</li>
+  </ol>
+  <p><img alt="Picture 239" height="335.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image176.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 11;" value="12">On the <strong>Receive</strong> tab, click <strong>Product Receipt</strong>.</li>
+  </ol>
+  <p><img alt="Picture 242" height="343.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image178.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.2"/></p>
+  <ol>
+    <li style="counter-reset: item1 12;" value="13">On the <strong>Posting product receipt</strong> form, in the <strong>Product receipt</strong> field, enter the purchase order number the product is being returned against. This is as a cross-reference.</li>
+    <li style="">Under the Lines section, update the Quantity field. This value should match the quantity on the return purchase order, i.e., it should be a <u>negative </u>quantity. </li>
+    <li>Click <strong>OK</strong> to proceed.</li>
+  </ol>
+  <p><img alt="Picture 243" height="325.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image179.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Validate that the info-message<em> <strong>Operation completed</strong></em> displays. Under the <strong>Journals</strong> section, <strong>Product receipt</strong> is now available.</li>
+    <li>Validate that the purchase order status is updated to <strong>Received</strong>.</li>
+    <li>Communicate to Finance that hte return purchase order needs to be invoiced. The outcome of invoicing a return order is a credit note.</li>
+  </ol>
+  <p><strong>Finance Steps</strong></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Click the <strong>Invoice tab</strong>.</li>
+  </ol>
+  <p><img alt="Picture 245" height="170.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image180.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Under the <strong>Generate</strong> section, click <strong>Invoice</strong> to generate the invoice and process the return to the vendor.</li>
+  </ol>
+  <p><img alt="Picture 249" height="290.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image181.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">In the <strong>Number</strong> field, enter the original purchase order number.</li>
+    <li>In the <strong>Invoice description</strong> field, enter a brief description of what the invoice is for.</li>
+    <li>Click the calendar in the <strong>Invoice date</strong> field and select the date of the invoice.</li>
+    <li>Click <strong>Match Product Receipts</strong> to locate and match the product receipt.</li>
+  </ol>
+  <p><img alt="Picture 250" height="343.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image182.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 24;" value="25">On the <strong>Match product receipts to invoice</strong> form, validate the product receipt line.</li>
+    <li>Click <strong>OK </strong>to proceed.</li>
+    <li>Submit the invoice to workflow for approval.</li>
+    <li>Once approved, <strong>post </strong>the invoice.</li>
+  </ol>
+  <p><img alt="Picture 252" height="331.3" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image183.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 28;" value="29">Validate the info-message that indicates the process is complete and the invoice POxxxxxx is generated.</li>
+    <li>Under the <strong>Journal</strong> section, validate the Invoice is now available.</li>
+    <li>Confirm the purchase order status is now updated to <strong>Invoiced</strong>.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have dispatched items on a return purchase order that are defective and are being returned to the vendor. The picking list was generated and the product receipt was posted. Finally, the return purchase order was invoiced. When the material is physically packed for return to the vendor, the invoice is included in the package.</p>
+  <ul>
+    <li>To print the invoice, on the <strong>Invoice </strong>tab, under the <strong>Journals </strong>section, click <strong>Invoice</strong>. Click <strong>Print/Preview &gt; Original invoice</strong>. When the invoice displays, click the <strong>printer icon</strong> to print.</li>
+  </ul>
+  <h2 class="Heading2"><a id="Beneficiary_Item_Returns_to_IRC"></a>Return Dispatched Beneficiary Items to IRC Warehouse</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p>Use this procedure to return items to inventory that have been returned to an IRC warehouse from a beneficiary.</p>
+  <h3 class="Heading3">Prerequisites</h3>
+  <ul>
+    <li>Packing slip was posted when items were distributed to beneficiary</li>
+    <li>Information from original item requirement line is known
+      <ul>
+        <li>If the full quanity of an item requirement line was already distributed/invoiced, it will not display in the default layout of the item requirements table grid. To retrieve these lines in the item requirments page, under the <strong>Line status</strong> column, clear the filter so it shows both <strong>Open </strong>and <strong>Invoiced </strong>lines.</li>
+      </ul>
+    </li>
+    <li>In a duplicate session of Integra, display the On-hand list (with all relevant dimensions) to display stock levels.</li>
+  </ul>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li>Navigate modules to<strong> Project Management and accounting &gt; Projects &gt; All projects</strong>.</li>
+  </ol>
+  <p><img alt="Picture 208" height="175.6" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image187.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 1;" value="2">In the <strong>Filter</strong> field, enter the <strong>Project ID</strong> to search for the project the purchase order is associated with and press <strong>ENTER</strong> on your keyboard.</li>
+    <li style="">Click the <strong>Project ID</strong> to open the project.</li>
+  </ol>
+  <h3 class="Heading3">Locate Data to Process the Return</h3>
+  <ol>
+    <li style="counter-reset: item1 3;" value="4">On the <strong>Plan</strong> tab, under the <strong>Item requirements</strong> section, click <strong>Item requirements</strong>.</li>
+    <li style="">In the list of item requirements, locate the original item requirement line for the item being returned. Ensure the <strong>Reference number</strong> column has been added to the grid so the original purchase order number is visible.</li>
+  </ol>
+  <h6 class="Heading6"><strong style="color: #FF0000">Important note</strong>: If the full quantity of an item requirement line was already distributed/invoiced, it will not display in the default layout of the item requirements table grid. To retrieve these lines in the item requirements page, under the <strong>Line status </strong>column, <u><strong>Clear </strong></u>the filter so it shows both <strong>Open </strong>and <strong>Invoiced </strong>lines.</h6>
+  <p><img alt="Picture 234" height="335.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image188.png" style="font-size: 11pt; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); cursor: nwse-resize;" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 5;" value="6">Click the <strong>checkbox</strong> to the left of the item requirement line and click <strong>Setup</strong>.</li>
+  </ol>
+  <p><img alt="Picture 246" height="206.7" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image190.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 6;" value="7">On the <strong>Setup</strong> tab, under the <strong>INVENTORY</strong> section, note the <strong>Lot ID</strong> number.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note:</strong> Make note of the <strong>Lot ID</strong> number for easier reference when you are processing the return.</h6>
+  <ol>
+    <li style="counter-reset: item1 7;" value="8">Click the <strong>Lines </strong>tab to return to the  list of item requirements. The item requirement line initially selected is still selected.</li>
+  </ol>
+  <p><img src="assets/images/image453.png"/></p>
+  <ol>
+    <li style="counter-reset: item1 8;" value="9">In the <strong>Item number</strong> column, note the item number for the item being returned to inventory.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Tip</strong>: Duplicate the Integra session to display the same item requirements page as it will be much easier to reference the original requirement line for required information.</h6>
+  <ol>
+    <li style="counter-reset: item1 9;">In the duplicate session of the item requirements page, click New to create a new item requirement lin to return the items back to inventory.</li>
+    <li style=""><img src="assets/images/image454.png"/></li>
+    <li style="">In the <strong>Item number </strong>field, enter the item number being returned to inventory.</li>
+    <li style="">In the <strong>Quantity </strong>field, enter the quantity of items (as a <u>negative </u>value) being returned to inventory. </li>
+  </ol>
+  <p>The negative quantity indicates to the system that this is a return and items are going back in to inventory. The on-hand quantity of inventory is updated as a result.</p>
+  <ol>
+    <li style="counter-reset: item1 13;" value="14">Click the <strong>Setup</strong> tab.</li>
+  </ol>
+  <p><img alt="Picture 216" height="202.4" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image195.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="535.1"/></p>
+  <ol>
+    <li style="counter-reset: item1 14;" value="15">Under the <strong>RETURN</strong> section, in the <strong>Return lot ID</strong> field, click the drop-down and select the associated Lot ID.<br/>
+      <strong></strong>
+    </li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: The <strong>Lot ID</strong> is one piece of data that you searched for at the beginning of the procedure. Refer to the <strong>Lot ID</strong> that you took note of. This is the <strong>Lot ID</strong> you will select from the drop-down in this field.</h6>
+  <ol>
+    <li style="counter-reset: item1 15;" value="16">Click the <strong>Project</strong> tab.</li>
+  </ol>
+  <p><img alt="Picture 368781696" height="268.8" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image196.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 16;" value="17">In the <strong>Project category</strong> field, click the drop-down and select the project category for this item requirement. This project category is the same as the original item requirement.</li>
+    <li>Click the <strong>Product dimensions</strong> tab.</li>
+  </ol>
+  <p><img alt="Picture 368781704" height="153.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image197.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 18;" value="19">Enter/select the <strong>Site</strong>, <strong>Warehouse</strong>, and <strong>Location </strong>to which the product is being returned.</li>
+  </ol>
+  <h6 class="Heading6"><strong>Note</strong>: If items are FEFO (batch controlled), enter the batch number.</h6>
+  <ol>
+    <li style="counter-reset: item1 19;" value="20">Click the <strong>Financial dimensions</strong> tab.</li>
+  </ol>
+  <p><img alt="Picture 368781705" height="281.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image198.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 20;" value="21">Complete the <strong>D2 – D6</strong> financial dimensions. These must be the same financial dimensions used on the original item requirements and purchase order.</li>
+    <li>Click <strong>Save</strong> to save the new negative (-) item requirements line.</li>
+  </ol>
+  <p><img alt="Picture 368781706" height="287.5" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image199.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 22;" value="23">Review the info-warning message <strong>“The item requirement is negative. This indicates a return order. Please update the sales amount on the Project tab. Record the sales amount in the donor’s currency. This is the amount of revenue to be reversed.”</strong></li>
+  </ol>
+  <h6 class="Heading6">This warning message is a reminder to check the unit price on the <strong>Project</strong> tab. Because this is a return, this impacts the revenue recognition. The unit price on the return must match the unit price from the original item requirements and original purchase order.</h6>
+  <p><img alt="Picture 368781707" height="266.1" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image200.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="681.6"/></p>
+  <ol>
+    <li style="counter-reset: item1 23;" value="24">Click <strong>Save</strong> to save the new negative (-) item requirements line.</li>
+    <li>Click <strong>X</strong> to close the info-warning message.</li>
+    <li>Click <strong>X</strong> to close the new negative item requirements line and return to the project.</li>
+    <li>Under the <strong>Item Requirements</strong> section, click <strong>Item requirements</strong>.</li>
+  </ol>
+  <p><img alt="Picture 368781708" height="332.9" src="assets/images/Receive, Quality Inspection, Dispatch, Transfers, Returns (CRRD)_files/image201.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); cursor: nwse-resize;" width="681.6"/></p>
+  <ol class="Decimal">
+    <li style="counter-reset: item1 27;" value="28">Scroll to the bottom of the item requirements list to confirm the negative item requirement you created is displayed.</li>
+    <li style="">Create an item forecast line for each returned item and perform &quot;marking&quot; for each item requirement line that gets created.</li>
+  </ol>
+  <p><strong style="color: #FF0000">Important</strong>: The step above is mandatory in order to perform the subsequent distribution of the items. Refer to the following procedures in the Item Forecasting to PO Creation section for guidance on completing these transactions.  </p>
+  <ul>
+    <li><em><strong>Create an Item Forecast Line Directly in Integra</strong></em>
+      <ul>
+        <li>If items are going to various locations, a separate item forecast line must be created for each location.</li>
+      </ul>
+    </li>
+    <li><em><strong>Perform &quot;Marking&quot; for an Item Requirement Line</strong></em>
+      <ul>
+        <li><strong style="color: #FF0000">Important</strong>: If items are FEFO, before marking the item, update the Batch number field on the Product dimensions tab of the item forecast line.</li>
+      </ul>
+    </li>
+  </ul>
+  <h3 class="Heading3">Result</h3>
+  <p>You have processed a beneficiary return to return items to inventory. </p>
+  <ul>
+    <li>To post the packing slip, select the negative item requirement line, navigate to <strong>Manage &gt; Posting &gt; Packing slip</strong></li>
+  </ul>
+  <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+  <h2 class="Heading2"><a id="Unreserve_Quantity_of_Product_from_a_Project"></a>Unreserve Quantity of Product from a Project</h2>
+  <h3 class="Heading3">Purpose</h3>
+  <p style="margin-top:12.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:-.25in; margin:0in 0in 10pt"><span class="position-relative">Use this procedure to unreserve a quantity of product from a project. </span></p>
+  <h3 class="Heading3">Steps</h3>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 0;" value="1">Navigate the modules to <strong>Project management and accounting &gt; Projects &gt; All projects</strong>.</li>
+  </ol>
+  <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt 0.5in"><span class="position-relative"><img alt="Graphical user interface, application
+Description automatically generated" height="941" src="assets/images/image339.png" style="width: 668px; height: 283px; border-color: rgb(0, 0, 0); border-width: 0px 1px 0px 0px;" width="1915"/></span></p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 1;" value="2"><span style="line-height:115%;"> <span style="display: none;"> </span></span>On the <strong>All projects</strong> grid, in the <strong>Filter </strong>field, enter the project ID to search for the project the item is associated to. </li>
+    <li class="ListParagraph"><span style="font-size:12pt;"><span style="line-height:115%;"><span style="font-family:Arial,sans-serif;"> Click the checkmark to the left of the line to select the project. </span></span></span></li>
+  </ol>
+  <p class="ListParagraph"><img src="assets/images/image355.png"/><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 3;" value="4">On the menu at the top, click the <strong>Plan </strong>tab.</li>
+    <li class="ListParagraph" style="" value="4">Under the <strong>Item requirements</strong> section, click <strong>Item requirements</strong>.</li>
+    <li class="ListParagraph" style="" value="4">Add the <strong>Location </strong>column to the table grid. This enables you to view the specific location the inventory should be unreserved/reserved from.  It is added on the far-right of the display as the last column. For easier reference, click the <strong>Location </strong>column heading and drag it to the right of the <strong>Item number</strong> column.</li>
+  </ol>
+  <p style="margin-left:0in; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><s><span style="color:#c00000"><img alt="Graphical user interface
+Description automatically generated with low confidence" src="assets/images/image342.png" style="width: 569px; height: 123px;"/></span><span style="color:#c00000"></span></s></span></span></span></p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 6;" value="7"><span style="font-family:Arial,sans-serif"> </span>In the list of item requirements, locate the item number, location, and requested receipt date for the item to unreserve/ reserve.<span style="font-family:Arial,sans-serif"></span></li>
+  </ol>
+  <p style="margin-left:0in; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><s><span style="color:#c00000"><img alt="Graphical user interface
+Description automatically generated" src="assets/images/image343.png" style="width: 669px; height: 219px;"/></span><span style="color:#c00000"></span></s></span></span></span></p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 7;" value="8">Click the checkmark to the left of the item to unreserve/reserve.</li>
+    <li class="ListParagraph" style="" value="8">On the <strong>Manage </strong>tab, click<strong> Inventory &gt; Reservation</strong>.</li>
+  </ol>
+  <p><img src="assets/images/image346.png" style="width: 683px; height: 196px;"/></p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 9;" value="10">In the <strong>On-hand quantities</strong> section, click the <strong>Reservation </strong>field and update the value.</li>
+  </ol>
+  <p><strong>Examples</strong>: </p>
+  <ul>
+    <li>If quantity in <strong>Reservation </strong>field is 2 and 5 are being unreserved, update the Reservation value to 15.</li>
+    <li>If quantity has been transferred to a new location, increate the Reservation quantity to the amount that has been transferred to new location.</li>
+  </ul>
+  <p><span style="font-family: Arial; font-size: 11pt;">Once the value is updated in the</span><strong style="font-size: 11pt;"> Reservation</strong><span style="font-family: Arial; font-size: 11pt;"> field, the reserve/</span><span style="font-family: Arial; font-size: 11pt;">unreserve</span><span style="font-family: Arial; font-size: 11pt;"> process is complete.</span></p>
+  <p><strong>Note</strong>: This process does not require a validate or save.</p>
+  <ol>
+    <li class="ListParagraph" style="counter-reset: item1 10;" value="11">Click <strong>X</strong> to close the reservation form and return to the Item requirements grid.ield and update the value.</li>
+  </ol>
+  <h3 class="Heading3">Result</h3>
+  <p>You have unreserved a quantity of product on a project.</p>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

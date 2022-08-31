@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "37";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Inventory Management (RAI)</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+  <meta http-equiv="Content-Language" content="en-US"/>
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Inventory Management (RAI)">
+        <span>Inventory Management (RAI)</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+    </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h2 class="Heading2"><a id="Key_Components_of_Inventory_Management"></a>Key Components of Inventory Management</h2>
+    <p>The diagram below highlights the key areas that compose Inventory Management in Integra</p>
+    <p><img alt="Picture 1" height="308.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image1.png" style="cursor: nwse-resize;" width="623.6"/></p>
+    <p>IRC uses both counting journals and inventory adjustments to make the proper adjustments to on-hand inventory. All inventory journals are posted by authorized staff; this can be in-office Supply Chain or a warehouse manager.</p>
+    <p><strong>Note</strong>: A counting journal is also used to account for breakage, theft, or loss of inventory.</p>
+    <p><span style="font-size:15pt;"><span style="font-weight: bold;font-size: 15pt">Physical Inventory Counts</span></span></p>
+    <p>IRC has three different scheduled times where cycle counts are performed. These scenarios apply to CIK inventory as well.</p>
+    <p><strong>Periodic inventory count </strong>50% count on March 31 and September 31<strong>.</strong></p>
+    <p><strong>Annual inventory count </strong>(100% count): A full inventory count is performed at the end of the year and warehouses are locked from 1-3 days, depending on the office.</p>
+    <p><strong>End of grant count</strong> (100% count): Two months before a grant ends, all remaining products procured for a grant that are counted. </p>
+    <p><strong>Note</strong>: A counting journal is also used to account for breakage, theft, or loss of inventory.</p>
+    <p><span style="font-weight:bold;font-size:15pt">Inventory Adjustments</span></p>
+    <p>Inventory adjustments are made upon discovery of discrepancies; not just when the annual cycle count is completed. Adjustments may be required for the following scenarios:</p>
+    <ul class="null">
+      <li><span style="font-weight:normal;">Items are expired or damaged</span></li>
+      <li><span style="font-weight:normal;">It is discovered that inventory is missing</span></li>
+    </ul>
+    <p>If an inventory adjustment is substantial, there is the potential for an insurance claim to be made to help recoup the cost of the inventory loss/adjustment.</p>
+    <p>All inventory journals such as adjustments and counting journals are posted by Supply Chain to a holding account. Supply Chain will attach proof for the adjustment, where applicable.</p>
+    <p><span style="font-size:12.0pt"><span style="line-height:115%"></span></span><span class="position-relative">Finance, in coordination with in-office Supply Chain or equivalent, executive director, etc., account for any adjustments in inventory that will have a financial impact to the organization (i.e., spoilage </span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">u</span></span></span><span class="position-relative">ncovered during cycle count.)</span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"></span></span></span></p>
+    <h2 class="Heading2"><a id="Process_Flow_Diagram"></a>Process Flow Diagram</h2>
+    <p><img src="assets/images/image334.png"/></p>
+    <ul class="null">
+      <li>Upon receipt of products, staff need to manage the on-hand inventory.</li>
+      <li>All tasks are managed in Integra except for the physical inventory count. </li>
+      <li>The physical count may be a segregated function from the recording and posting of the count results.</li>
+    </ul>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_-_Annual_Count"></a>Create Counting Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for an annual inventory count in Integra.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>Not applicable.</p>
+    <h3 class="Heading3">Steps</h3>
+    <ol class="null">
+      <li>From the Integra Home page, navigate modules to <b><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Inventory management </span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings">à</span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"> Journal entries </span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings">à</span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"> Item counting </span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings">à</span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"> Counting</span></span></span></b>.<br/>
+        <img alt="Picture 30" height="181.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image3.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.4"/>
+      </li>
+      <li>Click <strong>New</strong> on the menu at the top of the page.<br/>
+        <img alt="Picture 35" height="283.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image5.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="596.3"/>
+      </li>
+      <li>Complete/select the following fields/buttons:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td>
+              <p style="color: #ffffff">Field / Button</p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Description</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter a meaningful description to reflect the type of counting journal being created.</p>
+              <p>E.g., <span style="font-style:italic;">Annual Inventory Count - Sept. 2022</span>.</p>
+            </td>
+          </tr>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the relevant site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the relevant warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle selector button to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle selector button to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">Toggle selector button to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li style="counter-reset: item1 3;">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image7.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="661.1"/></p>
+    <ol>
+      <li style="counter-reset: item1 4;" value="5">On the menu at the top of page, click <strong>Create Lines </strong>and select <strong>On-hand</strong> from the drop-down selection list.</li>
+    </ol>
+    <p><img alt="Picture 8" height="329.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image9.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="689.5"/></p>
+    <ol>
+      <li style="counter-reset: item1 5;" value="6">In the <strong>Create on-hand counting journal</strong> form, scrol down and expand the <strong>Records to include</strong> tab and click <strong>Filter</strong>.</li>
+    </ol>
+    <p><img src="assets/images/image89.png"/></p>
+    <ol>
+      <li style="counter-reset: item1 6;" value="7">On the <em>Item counting</em> page, select the appropriate query and then click <strong>OK</strong>.</li>
+      <li style="">Click <strong>OK</strong> again to close the <span style="font-style:italic;">Create on-hand counting journ<em>a</em></span><em>l</em> form.</li>
+    </ol>
+    <p><img alt="Picture 10" height="275.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image15.png" style="cursor: nwse-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="688.7"/></p>
+    <ol>
+      <li style="counter-reset: item1 8;" value="9">Review the results. Note that the journal lines display all items and associated on-hand count for items received into the warehouses.</li>
+    </ol>
+    <p class="Heading6"><strong>Note</strong>: The journal lines display all items and their associated on-hand counts in the selected warehouse/location.</p>
+    <ol>
+      <li style="counter-reset: item1 9;" value="10">Click <strong>X</strong> to close the inventory counting journal and return to the list of journals.</li>
+    </ol>
+    <p><img alt="Picture 72" height="166.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image16.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="689.5"/></p>
+    <ol>
+      <li style="counter-reset: item1 10;" value="11">Validate that the newly created journal is displayed in the list of journals.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for an annual count.</p>
+    <p>The counting journal can now be printed in preparation to perform the actual count.</p>
+    <h2 class="Heading2"><a id="Print_Counting_Journal"></a>Print Counting Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to generate a counting list for the purpose of performing an inventory count. This could be required for an annual count, periodic count, or end-of-grant count.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The inventory counting journal has been created in Integra.</p>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li>From the Integra home page, navigate the modules to <strong>Inventory management <span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings"><span style="color:black">à</span></span></span></span> Journal entries <span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings"><span style="color:black">à</span></span></span></span> Item counting <span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:Wingdings"><span style="color:black">à</span></span></span></span> Counting</strong>.</li>
+    </ol>
+    <p><img alt="Picture 91" height="151.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image17.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li style="counter-reset: item1 1;" value="2">In the list, select the inventory journal by clicking the journal number.</li>
+    </ol>
+    <p><img alt="Picture 93" height="252.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image18.png" style="cursor: nesw-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="682.1"/></p>
+    <ol>
+      <li style="counter-reset: item1 2;" value="3">Click <strong>Print &gt; Counting list</strong>.</li>
+    </ol>
+    <p><img src="assets/images/image336.png"/></p>
+    <ol>
+      <li style="counter-reset: item1 3;" value="4">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 100" height="328.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image23.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="674.8"/></p>
+    <ol>
+      <li style="counter-reset: item1 4;" value="5">Review the results of the counting list.</li>
+      <li>Click the <strong>print</strong> icon to print the counting list.<br/>
+        <strong>Optional:</strong> To export the list, click <strong>Export</strong> then select the preferred option, e.g., PDF, Excel, etc.
+      </li>
+      <li>Click <strong>X</strong> to close the <strong>Counting list</strong> preview.</li>
+      <li>Click <strong>X</strong> to close the <strong>Inventory Counting Journal</strong>.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have printed the counting journal.</p>
+    <ul>
+      <li>Print multiple copies, as required.</li>
+      <li>Warehouse personnel perform the inventory count in the warehouse using the printed Counting Journal.</li>
+      <li>Upon completion, counting journal is submitted to the Supervisor.</li>
+    </ul>
+    <h2 class="Heading2"><a id="Perform_Physical_Inventory_Count"></a>Perform Physical Inventory Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0">Use this procedure to perform the physical count of inventory.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering8 Numbering51">The counting list has been generated and printed.</p>
+    <h3 class="Heading3" style="color: #002060">Steps</h3>
+    <ol>
+      <li>Staff retrieves hardcopy of counting list.</li>
+      <li>Staff physically counts all the items for each line number and records the count on the counting list in the <strong>Now Counted</strong> column.</li>
+      <li>Staff send or submit the completed counting list to the in-office supply chain staff or warehouse manager.</li>
+    </ol>
+    <p><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><img id="_x0000_i1025" o:borderbottomcolor="#80ff00 pure" o:borderleftcolor="#80ff00 pure" o:borderrightcolor="#80ff00 pure" o:bordertopcolor="#80ff00 pure" src="" style="width: 516.75pt; height: 293.25pt;"/> </span></span></span></p>
+    <h3 class="Heading3"><span class="position-relative"><br/>
+        ‎</span><span><span class="position-relative" style="color: #002060">Result</span></span></h3>
+    <p>You have performed the physical inventory count and recorded results on paper counting list. The inventory count results can now be entered in Integra.</p>
+    <h2 class="Heading2"><a id="Record_Counting_Results"></a>Record Counting Results</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0">Use this procedure to record the physical count in Integra and compare results with recorded on-hand inventory.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul>
+      <li class="Numbering8 Numbering51">Physical count has been completed and results recorded on counting sheet.</li>
+    </ul>
+    <p class="Numbering8 Numbering51"> </p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <ol>
+      <li class="Numbering6 Numbering171">From the Integra Home page, navigate the modules to <strong>Inventory management <span>&gt;</span> Journal entries <span>&gt;</span> Item counting <span>&gt;</span> Counting</strong>.</li>
+    </ol>
+    <p><img alt="Picture 103" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image25.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering6 Numbering171" style="counter-reset: item1 1;" value="2">In the list, open the relevant inventory journal by clicking the journal number.</li>
+    </ol>
+    <p><img alt="Picture 18" height="242.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image26.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="656.4"/></p>
+    <ol>
+      <li class="Numbering6 Numbering171" style="counter-reset: item1 2;" value="3">Click <strong>Edit</strong> on the menu at the top of page.<br/>
+         </li>
+    </ol>
+    <p><img alt="Picture 19" height="245.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image28.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="689.5"/></p>
+    <ol>
+      <li class="Numbering6 Numbering171" style="counter-reset: item1 3;" value="4">Under the <strong>Counted</strong> column, enter the number physically counted for each item as recorded on the <strong>counting journa</strong>l by the warehouse personnel.<br/>
+        <strong></strong><br/>
+        <strong>Note:</strong>
+      </li>
+    </ol>
+    <ul>
+      <li>If the number is less than the expected on-hand, the <strong>Quantity</strong> column displays a negative value. If the counted quantity is greater than the on-hand quantity, the <strong>Quantity</strong> field displays a positive value</li>
+    </ul>
+    <p> </p>
+    <ol>
+      <li class="Numbering6 Numbering171" style="counter-reset: item1 4;" value="5">Click <strong>Save</strong> on the menu at the top of page..</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have recorded the counting results in Integra.</p>
+    <ul>
+      <li>The counting results can now be posted.</li>
+    </ul>
+    <p>‎</p>
+    <h2 class="Heading2"><a id="Post_Counting_Results"></a>Post Counting Results</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to post the counting results.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <ul>
+      <li>Physical count of items has been recorded in Integra.<span style="font-size:12pt"><span style="font-family:Arial,sans-serif"><span style="color:black"></span></span></span></li>
+      <li><span style="font-size:12pt"><span style="font-family:Arial,sans-serif"><span style="color:black">If counted quantity for an item was less than system quantity (negative discrepancy), the difference in quantity for that item must be “unreserved” from the project before posting the counting journal. Refer to the following procedure for guidance: </span></span></span><i><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Unreserve Quantity of Product from a Project</span></span></span></i></li>
+    </ul>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <ol>
+      <li class="Numbering7 Numbering161">From the Integra Home page, navigate the modules to <strong>Inventory management <span>&gt;</span> Journal entries <span>&gt;</span> Item counting <span>&gt;</span> Counting</strong>.</li>
+    </ol>
+    <p><img alt="Picture 114" height="319.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image36.png" style="cursor: nesw-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering7 Numbering161" style="counter-reset: item1 1;" value="2">In the list, select the relevant inventory journal by clicking the journal number.</li>
+    </ol>
+    <p><img alt="Picture 21" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image37.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="689.5"/></p>
+    <ol>
+      <li class="Numbering7 Numbering161" style="counter-reset: item1 2;" value="3">Click <strong>Post</strong> on the menu at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 117" height="317.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image39.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering7 Numbering161" style="counter-reset: item1 3;" value="4">Click <strong>OK </strong>to proceed.</li>
+    </ol>
+    <p><img src="assets/images/image337.png"/><img src="assets/images/image338.png"/></p>
+    <ol>
+      <li class="Numbering7 Numbering161" style="counter-reset: item1 4;" value="5">Validate that an info message displays indicating that the counting journal posted successfully.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have posted the counting results.</p>
+    <h5 style="margin-top:12.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:-22.5pt; margin:10pt 0in 0in"> </h5>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_-_End-of-Grant_Count"></a>Create Counting Journal - End-of-Grant Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for an end-of-grant inventory count in Integra.</p>
+    <p>This process is very similar to the counting journal process for the annual count but some of the criteria is changed for the end-of-grant count.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>Not applicable.</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <ol>
+      <li class="Numbering12 ListParagraph">From the Integra Home page, navigate modules to <strong>Inventory management &gt; Journal entries <span>&gt;</span> Item counting <span>&gt;</span> Counting</strong>.</li>
+    </ol>
+    <p><img alt="Picture 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image57.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.4"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 1;" value="2">Click <strong>New</strong> on the toolbar at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image59.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="594.1"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 2;" value="3">Complete/select the following fields/buttons:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Overview Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Description</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this counting journal. (e.g.) <strong>End Grant + Project ID + Inventory Count</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Counting by Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>For the end of grant count, the <strong>Project ID</strong> is required.</p>
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 3;" value="4">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image61.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="661.1"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 4;" value="5">On the toolbar at the top of page, click <strong>Create Lines &gt; On-hand</strong>.</li>
+    </ol>
+    <p><img alt="Picture 120" height="305.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image63.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="643.7"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 5;" value="6">Complete/select the following fields/buttons:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Parameters Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Counting group</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Leave this field blank. For the end-of-grant count, everything is counted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Activate counting code</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Ensure this is toggles to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Include items with nothing on hand</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Ensure this is toggles to <strong>No</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Inventory status</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Batch number</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Counting by Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>For the end of grant count, the <strong>Project ID</strong> is required.</p>
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 6;" value="7">Scroll down and expand the <strong>Records to include</strong> tab.</li>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 7;" value="8">Click <strong>Filter</strong>.</li>
+    </ol>
+    <p><img alt="Picture 22" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image65.png" width="666.0"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 8;" value="9">In the Items counting section, click <strong>the checkbox</strong> to the left of the items to include in the query.</li>
+      <li class="Numbering12 ListParagraph">Validate the entered criteria.</li>
+      <li class="Numbering12 ListParagraph">Click <strong>OK</strong> to close the <strong>Item counting</strong> filter.</li>
+      <li class="Numbering12 ListParagraph">Click <strong>OK</strong> to close the <strong>Create on-hand counting journal</strong> form.</li>
+    </ol>
+    <p><img alt="Picture 118" height="252.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image69.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="688.7"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 12;" value="13">Review the info-message the <strong>Operation completed</strong> successfully.</li>
+      <li class="Numbering12 ListParagraph">Review the lines added to the journal. Scroll down the list as required.</li>
+      <li class="Numbering12 ListParagraph">On the journal lines lines table, click <strong>Display Dimensions.</strong>.</li>
+    </ol>
+    <p><img alt="Picture 124" height="317.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image71.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="664.7"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 15;" value="16">Click <strong>the checkbox</strong> to the left of the dimensions to add them to the display.</li>
+      <li class="Numbering12 ListParagraph">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 98" height="228.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image74.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 17;" value="18">View the dimensions added to the display. Scroll to the right, if required.</li>
+      <li class="Numbering12 ListParagraph" style="counter-reset: item1 18;" value="19">Click <strong>Save</strong> to save the journal.</li>
+      <li class="Numbering12 ListParagraph">Click <strong>X</strong> to close the counting journal ad return to the list of counting journals.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for an end-of-grant count. The counting journal can now be printed in preparation to perform the actual count.</p>
+    <h2 class="Heading2"><a id="Create_Counting_Journal_-_20%_Count"></a>Create Counting Journal - 50% Count</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create a new counting journal for a 50% inventory count in Integra.</p>
+    <p>This process is very similar to the counting journal process for the annual count but some of the criteria is changed for the 20%. This counting journal captures all the items in the warehouse in the 20% counting group to be counted and manually reduces the count to 20%.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>Not applicable.</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <ol>
+      <li class="Numbering13 ListParagraph">From the Integra Home page, navigate modules to <strong>Inventory management <span>&gt;</span> Journal entries <span>&gt;</span> Item counting <span>&gt;</span> Counting</strong>.</li>
+    </ol>
+    <p><img alt="Picture 30" height="143.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image77.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.4"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 1;" value="2">Click <strong>New</strong> on the toolbar at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 35" height="283.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image79.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="593.5"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 2;" value="3">Complete/select the following fields/buttons:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Overview Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Description</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>The <strong>Description</strong> field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this counting journal. (e.g.) 5<strong>0% + Warehouse + Inventory Count</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Counting by Section</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Batch number</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 3;" value="4">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 36" height="244.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image81.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="585.6"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 4;" value="5">On the toolbar at the top of page, click <strong>Create Lines &gt; On-hand</strong>.</li>
+    </ol>
+    <p><img alt="Picture 368781635" height="541.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image83.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="384.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 5;" value="6">Complete/select the following fields/buttons:</li>
+    </ol>
+    <div align="left"> </div>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Counting date</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults to today’s date. Leave the default.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Not counted since</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the date of the previous 50% count.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Counting group</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Click the drop-down and select <strong>50</strong>.</p>
+              <p>A 50% count is performed on March 31 and September 31.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Activate counting code</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Validate this is toggled to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Include items with nothing on hand</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Validate this is toggled to <strong>No</strong>.</p>
+              <p>This ensures no blank lines are included in the counting journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Inventory status</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location button</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Batch number</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Toggle to <strong>Yes</strong>.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 6;" value="7">Scroll down and expand the <strong>Records to include</strong> tab.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>Filter</strong>.</li>
+    </ol>
+    <h6 class="Heading6"><strong>Note</strong>: It is important to always review the filters and validate/update the values.</h6>
+    <p><img alt="Picture 134" height="338.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image85.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="656.6"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 8;" value="9">Validate the <strong>Site</strong> and <strong>Warehouse</strong> values default to the correct site and warehouse to be counted.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>OK</strong> to close the <strong>Item counting</strong> filter.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>OK</strong> to close the <strong>Create on-hand counting journal</strong> form.</li>
+    </ol>
+    <p><img alt="Picture 138" height="268.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image89.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="688.7"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 11;" value="12">Review the info-message the <strong>Operation completed </strong>successfully.</li>
+      <li class="Numbering13 ListParagraph">Review the lines added to the journal. Scroll down the list as required.</li>
+      <li class="Numbering13 ListParagraph">In the journal lines section, click <strong>Display Dimensions</strong> to add dimensions to the display grid.</li>
+    </ol>
+    <p><img alt="Picture 140" height="302.0" src="assets/images/CRRD UG_Inventory Management_QA_files/image91.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 14;" value="15">Click <strong>the checkbox</strong> to the left of the dimensions to add them to the display.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>OK </strong>to proceed.</li>
+    </ol>
+    <p><img alt="Picture 145" height="216.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image94.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 16;" value="17">Scroll to the right to review the lines and the dimensions added. Scroll down to view all the lines on the counting journal.</li>
+    </ol>
+    <h3><span style="font-size:15pt">Determining the 50% Lines to Count</span></h3>
+    <p>Once the lines are created in the counting journal using the counting group 50, which includes all FIFO and FEFO items, the supervisor or manager then decides which items in the list to count. The manager then manually deletes the items not being counted and therefore not being included on the counting journal to be printed for the physical count.</p>
+    <p><img alt="Picture 149" height="242.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image95.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 17;" value="18">To display the total number of lines in the journal, click the vertical ellipsis icon in the upper right-hand corner of the <strong>Journal lines</strong> table and select <strong>Show footer. </strong>The footer at the bottom of the the grid displays the total number of rows.</li>
+    </ol>
+    <p><img alt="Picture 150" height="120.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image97.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 18;" value="19">View the total number of rows displayed in the footer. Then manually determine the lines to be deleted.</li>
+    </ol>
+    <p><img alt="Picture 153" height="258.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image98.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 19;" value="20">Click <strong>the checkbox</strong> next to the lines that are not being included in the 20% count.</li>
+      <li class="Numbering13 ListParagraph" style="">Click <strong>Delete</strong> to delete the lines from the counting journal.<br/>
+        <strong><br/>
+          <span style="color:#ff0000;">Important</span></strong>: Be sure to use the <strong>Delete</strong> button for the <strong>Journal lines</strong> table to delete the counting lines and <span style="text-decoration:underline;">not </span>the <strong>Delete</strong> button on the menu bar at the top of the page as this deletes the entire journal.
+      </li>
+      <li class="Numbering13 ListParagraph" style="counter-reset: item1 21;" value="22">Click <strong>Yes</strong> when prompted to delete all marked records.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>Save </strong>on the menu at the top of the page.</li>
+      <li class="Numbering13 ListParagraph">Click <strong>X</strong> to close the inventory counting journal and return to the list of journals.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory counting journal for a 20% cycle count.The counting journal can now be printed in preparation to perform the actual count.</p>
+    <h2 class="Heading2"><a id="Display_On-hand_Inventory"></a>Display On-hand Inventory</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to verify on-hand inventory associated with each stocked product received and managed in inventory.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <p>The item has been set up as an inventory item in Integra.</p>
+    <h3 class="Heading3">Steps<span class="FollowedHyperlink"> </span></h3>
+    <ol>
+      <li class="Numbering15 ListParagraph">From the Integra Home page, navigate the modules to <strong>Inventory management <span>&gt;</span> Inquiries and reports <span>&gt;</span> On-hand list</strong>.</li>
+    </ol>
+    <p><img alt="Picture 24" height="291.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image110.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="598.0"/></p>
+    <ol class="AlphaNumeric">
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 1;" value="2">In the left-hand filter pane, enter one or more filters to narrow down display results.</li>
+    </ol>
+    <p><strong>Note</strong>: If additional filters are needed, click <strong>Add</strong> to select other values.</p>
+    <ol>
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 2;" value="3">Click <strong>Dimensions</strong> on the menu at the top of the page to add additional inventory dimension columns to the on-hand inquiry table.</li>
+    </ol>
+    <p style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000"><img alt="Picture 161" height="316.1" src="assets/images/CRRD UG_Inventory Management_QA_files/image112.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 3;" value="4">Click <strong>the checkbox</strong> next to the dimensions to display in the relevant selections. E.g., <strong>Site</strong>, <strong>Warehouse</strong>, <strong>Location</strong> <strong>Project ID</strong>, <strong>Item number </strong>and <strong>Lot number</strong>.</li>
+      <li class="Numbering15 ListParagraph">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 1" height="304.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image115.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="627.2"/></p>
+    <ol>
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 5;" value="6">On the left-hand filters pane, click <strong>Apply</strong> to retrieve results.</li>
+    </ol>
+    <p><img alt="Picture 166" height="323.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image117.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 6;" value="7">Review the results of on-hand inventory displayed in the On-hand grid.</li>
+    </ol>
+    <p class="Numbering15 ListParagraph">Tips:</p>
+    <p class="Numbering15 ListParagraph">Click the filter icon in the Filter pane to collapse or expand the pane.</p>
+    <p class="Numbering15 ListParagraph">For a list of descriptions of each column, refer to the article, <strong style="font-style: italic">On-hand List - Column Descriptions</strong>.</p>
+    <ol>
+      <li class="Numbering15 ListParagraph" style="counter-reset: item1 7;" value="8">Click <strong>X</strong> to close the <strong>On-hand inventory</strong> report when reviewing is complete.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have viewed the on-hand quantity for inventory items.</p>
+    <h2 class="Heading2"><a id="Create_an_Inventory_Adjustment_Journal"></a>Create an Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create an adjustment journal to record inventory discrepancies.</p>
+    <p>Inventory adjustment journals are used to <strong>&quot;adjust out&#39; </strong>the disposal of inventory including expired, damaged, and stolen items negative adjustment).</p>
+    <p>An adjustment is also used to <strong>&quot;adjust in&quot;</strong> inventory that is found but is not currently part of the on-hand inventory.(positive adjustment)</p>
+    <p><strong>Note</strong>: This type of journal is not used for cycle count discrepancies.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul>
+      <li>It has been determined that an inventory adjustment is required.</li>
+      <li>Required financial dimensions are known.</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="Numbering16 ListParagraph">From the Integra Home page, navigate the modules to <strong>Inventory management &gt;Journal entries &gt; Item <span>&gt;</span> Inventory adjustment</strong>.</li>
+    </ol>
+    <p><img alt="Picture 25" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image119.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 1;" value="2">Click <strong>New</strong> on the menu at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 160" height="311.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image121.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="652.5"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 2;" value="3">Complete the following fields:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Name</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults to <strong>INV_ADJ</strong>.</p>
+              <p>Leave the default for an adjustment journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Description</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this adjustment journal. (e.g.) <strong>Reason + Inventory Adjustment Journal</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 3;" value="4">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 168" height="251.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image123.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 4;" value="5">Under <strong>Journal lines</strong> section, click <strong>New</strong> to enter a new line in the journal.</li>
+    </ol>
+    <p><img alt="Picture 169" height="316.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image125.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="650.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 5;" value="6">Complete the following fields in the new line:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Item number</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter or click the drop-down and search for the item to be adjusted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Product name</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Quantity</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter the quantity of the adjustment.</p>
+              <p><strong>Note</strong>: If the adjustment is for removal or disposal, enter a negative quantity (-).</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Cost price</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Cost amount</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 6;" value="7">Scroll down to the <strong>Line details</strong> section.</li>
+      <li class="Numbering16 ListParagraph">Click the <strong>Inventory dimensions</strong> tab.</li>
+    </ol>
+    <p><img alt="Picture 170" height="249.6" src="assets/images/CRRD UG_Inventory Management_QA_files/image126.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 8;" value="9">On the <strong>Inventory dimensions</strong> tab and complete the following fields:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter or click the drop-down and search for the project the item is being adjusted for.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Identifies where the item is being adjusted from.</p>
+              <p>Enter or click the drop-down and search for the location.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Batch</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>If the item entered is a batch-controlled item the batch number is required.</p>
+              <p>Enter or click the drop-down and search for the batch number.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 9;" value="10">Click the <strong>Financial dimensions</strong> tab.</li>
+    </ol>
+    <p><img alt="Picture 173" height="300.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image127.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 10;" value="11">Complete the <strong>D1</strong> through <strong>D6</strong> financial dimensions. (For CIK  items, the D11 and D12 are also required)</li>
+    </ol>
+    <h6 class="Heading6"><strong>Note</strong>: Contact your Finance team for guidance on selecting the correct dimensions.</h6>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 11;" value="12">On the menu at the top of page, click <strong>Save</strong>.</li>
+    </ol>
+    <p><img alt="Picture 175" height="318.7" src="assets/images/CRRD UG_Inventory Management_QA_files/image129.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering16 ListParagraph" style="counter-reset: item1 12;" value="13">On the menu at the top of page, click <strong>Validate</strong> to validate the entries.</li>
+      <li class="Numbering16 ListParagraph">Click <strong>OK</strong> to proceed.</li>
+      <li class="Numbering16 ListParagraph">Review the info-message that the <strong>Journal is OK</strong>.</li>
+      <li class="Numbering16 ListParagraph">Click <strong>X</strong> to close the adjustment journal.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created an inventory adjustment journal.</p>
+    <h2 class="Heading2"><a id="Post_Inventory_Adjustment_Journal"></a>Post Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p class="margin-left-0text-indent-0-25in">Use this procedure to post an inventory adjustment journal.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <p class="Numbering9 Numbering61">Adjustment journal has been created.</p>
+    <p class="Numbering9 Numbering61">If inventory was &quot;adjusted out&quot; (negative adjustment), the negative quantity of product must be &quot;unreserved&quot; from the project before posting the adjustment journal. Refer to the following procedure for guidance:</p>
+    <ul>
+      <li class="Numbering9 Numbering61"><span style="font-style:italic;">Unreserve Quantity of Product from a Project</span></li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="Numbering17 ListParagraph">From the Integra Home page, navigate the modules to <strong>Inventory management <span>&gt;</span> Journal entries <span>&gt;</span> Item <span>&gt;</span> Inventory adjustment</strong>.</li>
+    </ol>
+    <p><img alt="Picture 192" height="205.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image133.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering17 ListParagraph" style="counter-reset: item1 1;" value="2">In the list, select the adjustment journal to be posted.</li>
+    </ol>
+    <p><img alt="Picture 194" height="241.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image134.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="Numbering17 ListParagraph" style="counter-reset: item1 2;" value="3">Review the journal line and the <strong>Line details</strong> section.</li>
+      <li class="Numbering17 ListParagraph">Click <strong>Post</strong> on the menu at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 195" height="316.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image136.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="Numbering17 ListParagraph" style="counter-reset: item1 4;" value="5">On the <strong>Post journal</strong> form, click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 196" height="253.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image138.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="Numbering17 ListParagraph" style="counter-reset: item1 5;" value="6">Validate that an info-message displays indicating that the journal has been posted.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have posted an inventory adjustment jou</p>
+    <h3 class="Heading3">Follow-on Tasks</h3>
+    <p> </p>
+    <p style="margin-left:-22.5pt; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If inventory was “adjusted in” (positive adjustment), an item forecast line must be created and “marking” must be performed for the subsequent item requirement line in order to be able to successfully pick and pack items for future distribution. Refer to the following procedures in the <i>Item Forecasting to Purchase Order Creation</i> user guide: </span></span></span></p>
+    <ul>
+      <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 0in 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Create an Item Forecast Line Directly in Integra</span></span></span></li>
+      <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Perform Marking for an Item Requirement Line</span></span></span></li>
+    </ul>
+    <p><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">For FEFO items – after the item requirement line is auto-created from the item forecast line, enter the <b>Batch number</b> under the <b>Product dimensions</b> tab of the item requirement line.</span></span></span></p>
+    <h2 class="Heading2"><a id="Create_and_Post_an_Inventory_Adjustment_Journal_-_Product_Sample"></a>Create and Post an Inventory Adjustment Journal - Product Sample</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to create an adjustment journal to record vendor samples acquired through the RFP / RFQ process.</p>
+    <h3 class="Heading3">Prerequisites<span class="FollowedHyperlink"> </span></h3>
+    <ul>
+      <li class="Numbering3 Numbering21">The new product has been created as an item in Integra.</li>
+      <li class="Numbering3 Numbering21">If the item does not exist, work with the MDM team to coordinate new product creation.</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="ListParagraph">From the Integra Home page, navigate the modules to <strong>Inventory management <span>&gt;</span> Journal entries <span>&gt;</span> Item <span>&gt;</span> Inventory adjustment</strong>.</li>
+    </ol>
+    <p><img alt="Picture 178" height="197.5" src="assets/images/CRRD UG_Inventory Management_QA_files/image139.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Click <strong>New</strong> on the menu at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 197" height="316.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image141.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">Complete the following fields:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddRows evenRows firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Name</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults to <strong>INV_ADJ</strong>.</p>
+              <p>Leave the default for an adjustment journal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Description</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>The description field defaults from the last description entered.</p>
+              <p>Update the description to a meaningful identifier for this adjustment journal. (e.g.) <strong>RFP#22122 Adjustment Journal</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the site from the drop-down selection list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Select the warehouse from the drop-down selection list.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 199" height="245.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image143.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Under <strong>Journal lines</strong> section, click <strong>New</strong> to enter a new line in the journal.</li>
+    </ol>
+    <p><img alt="Picture 204" height="317.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image145.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">In the Journal lines section, click <strong>Display Dimensions</strong> to add dimensions to the display.</li>
+      <li class="ListParagraph">Click <strong>the checkbox</strong> to the left of the dimensions to add them to the display.</li>
+      <li class="ListParagraph">Click <strong>OK </strong>to proceed.</li>
+    </ol>
+    <p><img alt="Picture 205" height="323.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image149.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 8;" value="9">Complete the following fields in the new line:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="oddCols evenCols firstCol firstRow" style="width:672.0px">
+        <colgroup>
+          <col style="width:179.33333333333333333333333333px"/>
+          <col style="width:492.66666666666666666666666667px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Field / Button</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Entry/Selection Required</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Item number</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter or click the drop-down and search for the item to be adjusted.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Product name</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the item number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Project ID</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Each reporting entity has a project called <strong>SAMPLE</strong> to record and track vendor samples. There is no budget associated with this project.</p>
+              <p>Enter <strong>SAMPLE</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Site</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Warehouse</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Defaults from the header but can be changed at the line level, as required.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Batch</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>If the item entered is a batch-controlled item the batch number is required.</p>
+              <p>Enter or click the drop-down and search for the batch number.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Location</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Identifies the bin where the sample is held.</p>
+              <p>Enter or click the drop-down and search for the location.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Quantity</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Enter the number of vendor samples for this item.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>Cost price</p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p>This is no cost associated with the product.</p>
+              <p>Enter 0.00 to zero out the cost.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 9;" value="10">Scroll down to the <strong>Line details</strong> section to review and validate.</li>
+    </ol>
+    <h6 class="Heading6"><strong>Note</strong>: Financial dimensions are not required on samples and the inventory dimensions were added to the line.</h6>
+    <p><img alt="Picture 206" height="317.3" src="assets/images/CRRD UG_Inventory Management_QA_files/image150.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 10;" value="11">Click <strong>Validate</strong>.</li>
+      <li class="ListParagraph">Click <strong>OK</strong> to proceed.</li>
+    </ol>
+    <p><img alt="Picture 207" height="249.2" src="assets/images/CRRD UG_Inventory Management_QA_files/image153.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 12;" value="13">Review the info-message that the <strong>Journal is OK</strong>.</li>
+      <li class="ListParagraph">Click <strong>Save</strong> on the menu at the top of the page.</li>
+    </ol>
+    <p><img alt="Picture 208" height="250.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image155.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 14;" value="15">Click <strong>Post</strong> to post the journal.</li>
+      <li class="ListParagraph">Review the info-message that the journal posted successfully.</li>
+      <li class="ListParagraph">Click <strong>X</strong> to close the adjustment journal.</li>
+    </ol>
+    <h3 class="Heading3">Result</h3>
+    <p>You have created and posted an inventory adjustment journal for a sample product provided by a vendor.</p>
+    <h2 class="Heading2"><a id="Attach_a_Document_to_an_Inventory_Adjustment_Journal"></a>Attach a Document to an Inventory Adjustment Journal</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to attach a file or supporting documentation to an adjustment journal.</p>
+    <p>In Integra, these are standard steps to add a documentation to a record and can be used in other transactions and processes.</p>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="ListParagraph">Click the paperclip icon in the top right corner of the screen to attach a document.</li>
+    </ol>
+    <p><img alt="Picture 368781666" height="254.8" src="assets/images/CRRD UG_Inventory Management_QA_files/image158.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">On the menu at the top of page, click <strong>New &gt; File</strong> from the drop-down selection list.</li>
+    </ol>
+    <p><img alt="Picture 368781668" height="260.9" src="assets/images/CRRD UG_Inventory Management_QA_files/image160.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">In the right-hand panel, click <strong>Browse</strong>.</li>
+      <li class="ListParagraph">Locate and select relevant document, as per standard Windows browsing functionality. (It may take a few seconds for upload to complete).</li>
+    </ol>
+    <p><img alt="Picture 368781799" height="248.4" src="assets/images/CRRD UG_Inventory Management_QA_files/image161.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0); cursor: nesw-resize;" width="602.0"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Validate that the attachment is listed in the left-hand panel.</li>
+      <li class="ListParagraph">Click the <strong>Preview</strong> tab to preview the attachment.</li>
+      <li class="ListParagraph">Click the <strong>X</strong> in the top right corner of page to close the print view and return to the form.</li>
+    </ol>
+    <h6 class="Heading6"><strong>Note</strong>: the <img alt="Picture 368781800" height="16" src="assets/images/CRRD UG_Inventory Management_QA_files/image162.png" width="16"/> (paperclip icon) now displays a number 1 indicating one document is attached to the PO.</h6>
+    <p> </p>
+    <h3 class="Heading3">Result</h3>
+    <p>You have attached a document to an inventory adjustment or counting journal.</p>
+    <h2 class="Heading2"><a id="On-hand_List_-_Column_Descriptions"></a>On-hand List - Column Descriptions</h2>
+    <table border="1" cellpadding="1" cellspacing="1" style="border-collapse:collapse; width:100%">
+      <colgroup>
+        <col style="width:50%"/>
+        <col style="width:50%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>Column Name</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Physical inventory</td>
+          <td>Total on-hand quantity</td>
+        </tr>
+        <tr>
+          <td>Physical reserved</td>
+          <td>Total on-hand reserved quantity</td>
+        </tr>
+        <tr>
+          <td>Available physical</td>
+          <td>Quantity available in stock but not reserved</td>
+        </tr>
+        <tr>
+          <td>Ordered in total</td>
+          <td>Total quantity awaiting to be received</td>
+        </tr>
+        <tr>
+          <td>On order</td>
+          <td>Quantity on an item requirement line or on a journal but not ordered/posted yet</td>
+        </tr>
+        <tr>
+          <td>Ordered reserved</td>
+          <td>Quantity ordered through a PO but not yet received, however, reserved to the SO</td>
+        </tr>
+        <tr>
+          <td>Available for reservation</td>
+          <td>The sum of ordered, on order, and received quantitites not reserved to a sales order. </td>
+        </tr>
+        <tr>
+          <td>Total available</td>
+          <td>Quantity available physical + Ordered quantity</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

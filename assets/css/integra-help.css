@@ -271,7 +271,8 @@ ul.Disc {
   list-style-type: disc;
 }
 span {
-  color: #000000;
+  color: black;
+  font-family: Arial,sans-serif;
 }
 ol.AlphaNumeric {
   list-style: decimal;
@@ -371,4 +372,16 @@ ul.Square {
 }
 ol.UpperAlpha {
   list-style-type: upper-alpha;
+}
+table.borderonly {
+  border-collapse: collapse;
+}
+table.borderonly td {
+  padding-top: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bfbfbf;
 }

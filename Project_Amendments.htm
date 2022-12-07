@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+  <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+    function reDo() {
+      if (innerWidth != origWidth || innerHeight != origHeight)
+        location.reload();
+    }
+    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+      origWidth = innerWidth;
+      origHeight = innerHeight;
+      onresize = reDo;
+    }
+    onerror = null;
+  //]]>
+  </script>
+  <style type="text/css">/*<![CDATA[*/
+
+    < !-- div.WebHelpPopupMenu {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 4;
+      visibility: hidden;
+    }
+
+    p.WebHelpNavBar {
+      text-align: right;
+    }
+
+    -->
+  
+/*]]>*/</style>
+
+  <script type="text/javascript">//<![CDATA[
+
+    gRootRelPath = ".";
+    gCommonRootRelPath = ".";
+    gTopicId = "27";
+  
+//]]></script>
+
+  <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/common.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
+  <script type="text/javascript" src="./template/scripts/topicwidgets.min.js"></script>
+<script type="text/javascript" src="./whxdata/projectsettings.js"></script>
+  <link rel="stylesheet" type="text/css" href="./template/styles/topic.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./template/Integra_help_v2-theme/topicheader.css"/>
+  <meta name="topic-status" content="Draft"/>
+<link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
+  <meta charset="UTF-8"/>
+  <title>Project Amendments</title>
+  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  
+</head>
+
+<body>
+  <div class="topic-header rh-hide" id="rh-topic-header">
+    <div class="logo">
+    </div>
+    <div class="nav">
+      <div class="title" title="Project Amendments">
+        <span>Project Amendments</span>
+      </div>
+      <div class="gotohome" title="Click here to see this page in full context">
+        <a href="#" onclick="rh._.goToFullLayout()">Click here to see this page in full context</a>
+      </div>
+    </div>
+  </div>
+  <div class="topic-header-shadow rh-hide" id="rh-topic-header-shadow"></div>
+
+
+
+  <div>
+    <p><br/>
+    </p>
+  </div>
+  <div>
+  <div class="position-relative">
+    <h1 class="Heading1">Business Process Information</h1>
+    <h2 class="Heading2"><a id="Key_Messages"></a>Key Messages</h2>
+    <ul>
+      <li>
+        <p>All budget amendments, whether they require donor approval or not, and regardless of the value and complexity, are processed in Integra</p>
+      </li>
+      <li>
+        <p>Budget holders play an important role in the budget revision process</p>
+      </li>
+      <li>
+        <p>There is a standardized Budget Template used for preparing and amending Integra budget upload files</p>
+      </li>
+      <li>
+        <p>All budget revisions are submitted to workflow for approval</p>
+      </li>
+      <li>
+        <p>After workflow approval is complete, Finance posts all amended budgets to the budget register in Integra.</p>
+      </li>
+    </ul>
+    <h2 class="Heading2"><a id="Roles_and_Responsibilities_Matrix"></a>Roles and Responsibilities Matrix</h2>
+    <p><img alt="C:\Users\shannont\AppData\Local\Temp\SNAGHTMLd6f4cfbf.PNG" height="531.0" src="assets/images/UG_PRJ_Project Amendments_QA_files/image1.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="673.7"/></p>
+    <h2 class="Heading2"><a id="Amendments_Initiated_in_OTIS"></a>Amendments Initiated in OTIS</h2>
+    <p class="ListParagraph"><strong>- </strong>The OTIS process for D1 updates is the same as before Integra</p>
+    <p class="ListParagraph"><strong>- </strong>Amendments typically initiated in OTIS include:</p>
+    <ul>
+      <li class="ListParagraph"><strong>Restricted Projects</strong> where the change requires donor approval.</li>
+      <li class="ListParagraph"><strong>Temporary Restricted Projects</strong> where there is a change in the receiving unit (D4 – HQ Unit/D5 – CRRD/RAI field legal entity) regardless of whether donor approval is required or not.</li>
+      <li class="ListParagraph"><strong>Multi-entity Projects</strong> (Restricted and Temporary restricted funding) regardless of whether donor approval is required or not, particularly when there is a change in the receiving unit (D4 – HQ Unit/D5 – CRRD/RAI field legal entity). This ensures that the updated award/obligated amounts are reflected accurately in each Integra entity.</li>
+      <li class="ListParagraph"><strong>Sub award sub projects</strong> where a new sub award is added to the parent project or there is an amendment to sub award budgets. This would apply to all sub award sub projects regardless of the funding source and whether donor approval is required or not.</li>
+    </ul>
+    <p class="ListParagraph"><strong>- </strong>For amendments processed in OTIS, the following fields on the D1 overview page transfer to Integra:</p>
+    <ul>
+      <li class="ListParagraph">End date</li>
+      <li class="ListParagraph">Total obligated amount</li>
+      <li class="ListParagraph">Total award amount</li>
+      <li class="ListParagraph">Receiving units (D4 and/or D5 financial dimension).
+        <ul>
+          <li class="ListParagraph">The D5 receiving unit determines the Integra legal entity to which the project information from the OTIS interface is sent.</li>
+          <li class="ListParagraph">The D4 receiving unit determines which HQ D4, within the HQ Integra legal entity, is allocated funds for the project. It is important to note that while OTIS holds each budget allocation by D4, Integra only brings over the Total budget amount.</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="ListParagraph"><strong>- </strong>For sub award sub projects initiated in OTIS, the following fields from the sub award D1 extension page transfer to Integra:</p>
+    <ul>
+      <li class="ListParagraph">D1 Extension/Sub-Project ID</li>
+      <li class="ListParagraph">Legal Entity/Company</li>
+      <li class="ListParagraph">Project Name and Sub-award Vendor</li>
+      <li class="ListParagraph">Actual Start Date </li>
+      <li class="ListParagraph">Actual End Date </li>
+      <li class="ListParagraph">Total Award Amount </li>
+      <li class="ListParagraph">Obligated Amount </li>
+    </ul>
+    <p class="ListParagraph"><strong>- </strong>Change in project stage</p>
+    <ul>
+      <li class="ListParagraph">When the budget revision checkbox is flagged on the D1 update in OTIS, there is an automatic update to the project stage in Integra (from ‘Active’ to ‘Budget Revision’). The change in the project stage alerts Finance that a project budget revision has been processed in OTIS and is ready to be updated in Integra.</li>
+      <li class="ListParagraph">When Finance finalizes the posting of the revised budget register entry, adds new project categories (if applicable) and amends the funding limits (if applicable), the project stage must be changed back to ‘Active’.</li>
+      <li class="ListParagraph">If a project amendment does not include a change in the budget, the project stage remains ‘Active’ in Integra.</li>
+    </ul>
+    <p class="ListParagraph">‎</p>
+    <h6 class="Heading6"><span style="font-weight:bold;">Note</span>: When a project was created in OTIS with the <span style="text-decoration:underline;">incorrect</span> legal entity, and the correction is made in OTIS, the correction <span style="text-decoration:underline;">does no</span>t flow through to Integra. Therefore, Integra must be manually updated to remove the wrong project from Integra.</h6>
+    <h2 class="Heading2"><a id="Amendments_Not_Initiated_in_OTIS"></a>Amendments Not Initiated in OTIS</h2>
+    <p class="ListParagraph"><strong>- </strong>Budget re-alignments not requiring donor approval are not typically managed in OTIS. These would include:</p>
+    <ul>
+      <li class="ListParagraph">Restricted Projects – those single entity projects where, if required and approved, the same process is followed in Integra as other amendment types, however, they are not typically initiated in OTIS. E.g., an office has a USAID grant and they want to move budget lines between Health and Protection or from one field site to another field site.</li>
+      <li class="ListParagraph">Temporary Restricted Projects – those projects in one D4 and/or D5 that have a budget change not requiring donor approval.</li>
+      <li class="ListParagraph">Unrestricted Projects – managed by the FP&amp;A unit directly in Integra.</li>
+      <li class="ListParagraph">Multi- Entity Projects –whilst these projects are implemented in multiple legal entities, when there is a change to a single entity budget that does not require donor approval and does not change budget allocations per receiving unit i.e D5 and/or D4.</li>
+    </ul>
+    <h6 class="Heading6"><span style="font-weight:bold;">Note</span>: Finance still needs to approve all internal amendments to any budget and its funding limits before uploading to Integra.</h6>
+    <h2 class="Heading2"><a id="The_Budget_Development_Template"></a>Using the Budget Template</h2>
+    <p class="ListParagraph">The <em>Budget Template</em> is a standardized template used to develop and amend project budgets.</p>
+    <p class="ListParagraph">The <em>Budget Template</em> is used for amending all project budgets - restricted, unrestricted, and temporary restricted.</p>
+    <p class="ListParagraph">There are two Integra budget development template folders available on Box:</p>
+    <ol class="Decimal">
+      <li class="ListParagraph">Standard Project Category Template</li>
+      <li class="ListParagraph">Unique Project Category Template</li>
+    </ol>
+    <p class="ListParagraph">Ensure you are using the correct template!</p>
+    <ul>
+      <li class="ListParagraph">All unrestricted projects use standard project categories</li>
+      <li class="ListParagraph">Temporary restricted may use either standard or unique project categories; this is a judgment call based on the specific project.</li>
+      <li class="ListParagraph">Restricted projects may use unique or standard project categories. Examples of when each would be used are listed below.
+        <ul>
+          <li class="ListParagraph">US Gov – use standard project categories</li>
+          <li class="ListParagraph">European (ECHO funding) - use unique project categories</li>
+        </ul>
+      </li>
+    </ul>
+    <p class="ListParagraph">The main types of budget revisions done in the <span style="font-style:italic;">Budget Template </span>include the following:</p>
+    <ul>
+      <li class="ListParagraph">Adding or removing budget lines (project categories)</li>
+      <li class="ListParagraph">Re-allocating budget amounts between existing budget lines</li>
+      <li class="ListParagraph">Adding or removing a sub-project</li>
+      <li class="ListParagraph">The revised budget information provided to Finance is captured within the Input tab sheet and the Data Source sheet of the <em>Budget Development Template</em>.</li>
+    </ul>
+    <h2 class="Heading2"><a id="Addition_of_Sub-award_Sub-project_as_Amendment"></a>Addition of Subaward Sub-project as Amendment</h2>
+    <p class="ListParagraph">When a sub award was not final when the parent project was initially set up, but details are now known, the parent project requires an amendment to include the sub-award sub-project budget at the level of detail required.</p>
+    <p class="ListParagraph">Once sub award budget details are known, the sub award agreement has been processed and the D1 extension code has been issued in OTIS, a sub-project is created in Integra with sub award information from OTIS. The partner name assigned to the sub award in OTIS is linked to the sub-awardee vendor name in Integra.</p>
+    <p class="ListParagraph">At this point, finance needs to reverse the placeholder lump sum budget line out of the parent project and add detailed budget lines to the sub project</p>
+    <ul>
+      <li class="ListParagraph">Main account 76000 is used for sub-awards totaling less than $25,000.00.</li>
+      <li class="ListParagraph">Main account 76001 is used for sub-awards totaling greater than $25,000.00</li>
+    </ul>
+    <p class="ListParagraph">When setting up the sub award budget as part of the sub project (D1_extension), the sub award budget in Integra should reflect the actual detailed sub award budget.</p>
+    <p class="ListParagraph">In most cases, the detailed sub award budget follows the IRC budget categories and these should also be used to distinguish between sub award salaries, benefits, travel, equipment, program supplies, administrative costs etc.</p>
+    <h2 class="Heading2"><a id="Populate_the_Budget_Development_Template_for_Amendment_1"></a>Populate the Budget Development Template for an Amendment</h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to enter amendment information into the <em>Budget Template</em>.</p>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul>
+      <li class="ListParagraph">All required amendment information is known.</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="ListParagraph"><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Create a copy of the original completed <i>Budget Template</i> and save it in an “Amendments” folder on local drive or Box drive.</span></span></span></li>
+      <li class="ListParagraph"><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Open the copy of the <i>Budget Template </i>and make/save changes.</span></span></span></li>
+    </ol>
+     
+    <h3 class="Heading3">Next Steps</h3>
+    <ul>
+      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span>Finance<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> uploads amended budgets to Integra.</span></span></span></li>
+    </ul>
+    <p> </p>
+    <h2 class="Heading2"><a id="Upload_Project_Templates_to_Integra"></a>Upload Amended Project Templates to Integra </h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Use this procedure to upload amended Project Category, Budget Register, and Funding Limit templates to Integra.</p>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li class="ListParagraph">Using the standard file upload function in Box, upload the completed template to the target Box location.</li>
+      <li class="ListParagraph">Validate the file has disappeared from the Box folder. This indicates the upload has taken place.</li>
+      <li class="ListParagraph">Review the email sent that indicates if the upload was successful or not.</li>
+      <li class="ListParagraph">View/validate the uploaded information in Integra.</li>
+    </ol>
+    <h3 class="Heading3">Next Steps</h3>
+    <ul>
+      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Up</span></span></span>date information in Integra, as required.</li>
+      <li class="ListParagraph">Sub<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">mit amended budget for approval by Finance using Workflow.<b></b></span></span></span></li>
+    </ul>
+    <h2 class="Heading2"><a id="Update_Project_Information_in_Integra_(Finance_Function_Only)"></a>Update Project Information in Integra </h2>
+    <h3 class="Heading3">Purpose</h3>
+    <p>Finance uses this procedure to identify and complete any required updates directly in the Integra project form. Depending on the amendment, the following tasks may need to be done to complete the amendment.</p>
+    <ul>
+      <li class="ListParagraph">Submit budget to workflow for approval and repost to General Ledger.</li>
+      <li class="ListParagraph">Change the project stage back to “Active”</li>
+      <li class="ListParagraph">Remove preaward classification</li>
+      <li class="ListParagraph">Change the emergency classification.</li>
+      <li class="ListParagraph">Invalidate project categories.</li>
+    </ul>
+    <h3 class="Heading3">Prerequisites</h3>
+    <ul>
+      <li class="ListParagraph">Amended templates have been uploaded to Integra. E.g., Budget Register, Project Category, and Funding Limits (if applicable)</li>
+    </ul>
+    <h3 class="Heading3">Steps</h3>
+    <ol>
+      <li>As required, complete the following tasks in the project form:</li>
+    </ol>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:191.66666666666666666666666667px"/>
+          <col style="width:457.4px"/>
+        </colgroup>
+        <tbody>
+          <tr style="color: #fff">
+            <td style="font-size: 11pt;font-family: Arial;text-decoration: none;font-weight: bold;color: #FFFFFF">
+              <p><span style="color:#ffffff;">If you need to…</span></p>
+            </td>
+            <td style="font-size: 11pt;font-family: Arial;text-decoration: none;font-weight: bold;color: #FFFFFF">
+              <p><span style="color:#ffffff;">Then…</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Submit amended budget to workflow for approval…</strong></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="ListParagraph">From Integra home page, navigate <strong>Modules <span>&gt;</span> Budgeting <span>&gt;</span> Budget register entries</strong>.</p>
+              <p class="ListParagraph">Locate and click the relevant budget entry number.</p>
+              <p class="ListParagraph">On the top menu, click <strong>Workflow</strong> and select <strong>Submit</strong> .</p>
+              <p class="ListParagraph">In the Comment box, enter a comment and click <strong>Submit</strong>.</p>
+              <p class="ListParagraph">Once approved, repeat step 1 and 2 above and click <strong>Update Budget Balances</strong> on the top menu.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Update the project stage back to “Active”.</strong></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="ListParagraph">From Integra home page, navigate to <strong>Project management and accounting <span>&gt;</span> All projects</strong>.</p>
+              <p class="ListParagraph">Search for and open the target project.</p>
+              <p class="ListParagraph">Under the <strong>MAINTAIN</strong> section of the action pane, click <strong>Project stage</strong> and select <strong>Active</strong>.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Remove pre-award classification …</strong></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="ListParagraph">From Integra home page, navigate to <strong>Project management and accounting <span>&gt;</span> All projects</strong>.</p>
+              <p class="ListParagraph">Search for and open the target project.</p>
+              <p class="ListParagraph">Scroll down to the <strong>Sorting fields</strong> section of the project form.</p>
+              <p class="ListParagraph">in the <strong>Sort field 2</strong> field delete the entry if not applicable.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Change the emergency classification for the project….</strong></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="ListParagraph">From Integra home page, navigate to <strong>Project management and accounting <span>&gt;</span> All projects</strong>.</p>
+              <p class="ListParagraph">Search for and open the target project.</p>
+              <p class="ListParagraph">Scroll down to the <strong>Sorting fields</strong> section of the project form.</p>
+              <p class="ListParagraph">in the <strong>Sort field 1</strong> field select the relevant option from the drop-down list.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p><strong>Invalidate project categories…</strong></p>
+            </td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+              <p class="ListParagraph">From Integra home page, navigate to <strong>Project management and accounting &gt; All projects</strong>.</p>
+              <p class="ListParagraph">Search for and open the target project.</p>
+              <p class="ListParagraph">Click <strong>PLAN</strong> on the action menu at the top.</p>
+              <p class="ListParagraph">Under the VALIDATION section of action pane, click <strong>Assign</strong> categories.</p>
+              <p class="ListParagraph">In the SELECTED CATEGORIES list on the right, select the <strong>checkbox</strong> next to any project categories that represent restricted costs. </p>
+              <p class="ListParagraph">Click the <strong>back arrow</strong> to move the category(s) to the REMAINING CATEGORIES list on the left.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+    <h3 class="Heading3">Next Steps</h3>
+    <p>n/a</p>
+    <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+    <h2 class="Heading2"><a id="Amendment_Types_and_Process_Steps_in_Integra"></a>Amendment Types and Process Steps in Integra</h2>
+    <div align="left">
+      <table border="1.3" cellspacing="0" class="TableGrid TableGrid oddRows evenRows firstCol firstRow">
+        <colgroup>
+          <col style="width:317.66666666666666666666666667px"/>
+          <col style="width:702px"/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>
+              <p><span style="color:#ffffff;">Amendment Type</span></p>
+            </td>
+            <td>
+              <p><span style="color:#ffffff;">Process Steps in Integra</span></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="margin-left-0"><strong>Donor-approved No Cost Extension (NCE)</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="ListParagraph">Change in end date</li>
+                <li class="ListParagraph">No change to total budget amount</li>
+                <li class="ListParagraph">There may be budget re-alignment between existing budget lines</li>
+              </ul>
+            </td>
+            <td>
+              <p class="ListParagraph">1.The end date in Integra is automatically updated via OTIS interface.</p>
+              <p class="ListParagraph">2.If there is realignment of budget amounts, the budget revision box is selected in OTIS and the project stage in Integra is automatically updated to “Budget revision” via OTIS interface</p>
+              <ul>
+                <li class="ListParagraph">If there is no change to budget, project stage remains “Active”.</li>
+              </ul>
+              <p class="ListParagraph">3. Amend the <em>Budget Development Template</em> and send to Finance</p>
+              <ul>
+                <li class="ListParagraph">Add new project categories and re-calculate project category group totals, if applicable</li>
+                <li class="ListParagraph">Revise funding limits, if applicable</li>
+              </ul>
+              <p class="ListParagraph">4.Amend the Project Summary form and submit to Finance.</p>
+              <p class="ListParagraph">5. Once <em>Budget Development Template</em> is approved/edited by Finance, upload the completed project templates to Integra.</p>
+              <p class="ListParagraph">6. Finance submits revised budget to workflow in Integra.</p>
+              <p class="ListParagraph">7. Once approved in workflow, Finance posts revised budget to the General Ledger</p>
+              <p class="ListParagraph">8. Finance completes related fields for amendment in Integra and changes project stage back to &quot;Active&quot;</p>
+              <p class="ListParagraph">9.  Finance informs budget owner/Programs/Grants that amendment is complete.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="margin-left-0"><strong>Donor-approved Cost Extension / Funding Increase (On Estimated and/or Obligated Budget)</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="ListParagraph">Change or no change in end date</li>
+                <li class="ListParagraph">Total estimated and/or obligated budget increased</li>
+                <li class="ListParagraph">Amounts added to existing budget lines and/or new budget lines added</li>
+              </ul>
+              <p> </p>
+            </td>
+            <td>
+              <p class="ListParagraph">1. The end date in Integra is automatically updated via OTIS interface.</p>
+              <p class="ListParagraph">2. Total award amount and/or obligated amount is automatically updated via OTIS interface.</p>
+              <p class="ListParagraph">3. The budget revision box is checked in OTIS and the project stage in Integra is automatically updated to “Budget revision” via OTIS interface</p>
+              <p class="ListParagraph">4. Revise the <em>Budget Development Template</em> and send to Finance</p>
+              <ul>
+                <li class="ListParagraph">Add new project categories and re-calculate project category group totals, if applicable</li>
+                <li class="ListParagraph">Revise funding limits, if applicable</li>
+              </ul>
+              <p class="ListParagraph">5. Revise the <em>Project Summary</em> form and email to Finance.</p>
+              <p class="ListParagraph">6. Once the revised <em>Budget Development Template</em> is approved/edited by Finance, upload the completed project templates to Integra.</p>
+              <p class="ListParagraph">7. Finance submits revised budget to workflow in Integra.</p>
+              <p class="ListParagraph">8. Once approved in workflow, Finance posts revised budget to the General Ledger</p>
+              <p class="ListParagraph">9. Finance completes related fields for amendment in Integra and changes project stage back to &quot;Active&quot;</p>
+              <p class="ListParagraph">10. Finance informs budget owner/Programs/Grants that amendment is complete.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p><strong>Donor approved Budget Revision</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="ListParagraph">No change to end date</li>
+                <li class="ListParagraph">No change to total budget amount</li>
+                <li class="ListParagraph">Budget re-alignment between budget lines without changing the total budget</li>
+              </ul>
+            </td>
+            <td>
+              <p class="ListParagraph">1. The budget revision box is checked in OTIS and the project stage in Integra is automatically updated to “Budget revision” via OTIS interface</p>
+              <p class="ListParagraph">2. Revise the <em>Budget Development Template</em> and email to Finance.</p>
+              <ul>
+                <li class="ListParagraph">Add new project categories and re-calculate project category group totals, if applicable</li>
+                <li class="ListParagraph">Revise funding limits, if applicable</li>
+              </ul>
+              <p class="ListParagraph">3. Revise the <em>Project Summary</em> form and email to Finance.</p>
+              <p class="ListParagraph">4. Once the revised <em>Budget Development Template</em> is approved/edited by Finance, upload the completed project templates to Integra.</p>
+              <p class="ListParagraph">5. Finance submits revised budget to workflow in Integra.</p>
+              <p class="ListParagraph">6. Once approved in workflow, Finance posts revised budget to the General Ledger</p>
+              <p class="ListParagraph">7. Finance completes related fields for amendment in Integra and changes project stage back to &quot;Active&quot;</p>
+              <p class="ListParagraph">8. Finance informs budget owner/Programs/Grants that amendment is complete.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p class="margin-left-0"><strong>Addition of Sub Award</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="ListParagraph">Sub award added to parent project</li>
+                <li class="ListParagraph">Main account 76000 is used for sub-awards totaling &gt;$25,000.00</li>
+                <li class="ListParagraph">Main account 76001 is used for sub-awards totaling &lt;$25,000.00.</li>
+              </ul>
+              <p> </p>
+            </td>
+            <td>
+              <p class="ListParagraph">1. Sub-award sub project is automatically created in Integra via the OTIS interface.</p>
+              <p class="ListParagraph"><strong>Note:</strong> The project stage does not get updated in Integra from the OTIS interface for sub-awards.</p>
+              <p class="ListParagraph">2. Revise the <em>Budget Development Template</em> to remove sub award amount from parent project categories.</p>
+              <p class="ListParagraph">3. Add new sub project and all related project categories with designated amounts.</p>
+              <p class="ListParagraph">4. Apply funding limits to sub project, if applicable.</p>
+              <p class="ListParagraph">5. Email revised <em>Budget Development Template</em> to Finance for review.</p>
+              <p class="ListParagraph">6. Once the revised <em>Budget Development Template</em> is approved/edited by Finance, Finance upload the completed project templates to Integra.</p>
+              <p class="ListParagraph">7. Finance submits revised budget to workflow in Integra.</p>
+              <p class="ListParagraph">8. Once approved in workflow, Finance posts revised budget to the General Ledger</p>
+              <p class="ListParagraph">9. Finance informs budget owner/Programs/Grants that amendment is complete.</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p><strong>Internal Budget Re-alignment (not requiring donor approval)</strong></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li class="ListParagraph"><strong>Field Single Legal Entity project</strong><br/>
+                  Budget re-alignment between budget lines/ categories without changing the total budget and where donor approval is not required.</li>
+                <li class="ListParagraph"><strong>HQ Single Legal Entity project</strong><br/>
+                  Budget amounts re-allocated from one receiving unit (HQ D4) to another receiving unit (HQ D4), within the same HQ legal entity without changing the total budget OR changes to one HQ D4 budget lines without changing the total D4 allocation.</li>
+                <li class="ListParagraph"><strong>Multi Legal entity project</strong><br/>
+                  Budget amounts re-allocated from one receiving unit (D5) to another receiving unit without changing the total budget OR budget lines changed within the one receiving unit (D5) without changing allocations per receiving unit..</li>
+              </ul>
+            </td>
+            <td>
+              <p>1.<strong> </strong>Revise the <em>Budget Development Template</em> to reflect the budget revision</p>
+              <ul>
+                <li>Add new project categories and re-calculate project category group totals, if applicable</li>
+                <li>Revise funding limits if applicable</li>
+              </ul>
+              <p>2. Send revised <em>Budget Development Template</em> to Finance for review.</p>
+              <p>3. Once the revised <em>Budget Development Template</em> is approved/edited by Finance, upload the completed project templates to Integra.</p>
+              <p>4.  Finance submits revised budget to workflow in Integra.</p>
+              <p>5. Once approved in workflow, Finance posts revised budget to the General Ledger</p>
+              <p>6. Finance informs budget owner/Programs/Grants that amendment is complete.</p>
+              <p><strong>Additional Notes:</strong></p>
+              <p class="ListParagraph"><strong>- </strong>For multi HQ unit projects within the one HQ legal entity, the revised funding amounts per receiving unit (D4) are updated in OTIS. However, only the total award amount is brought over to Integra.</p>
+              <p class="ListParagraph"><strong>- </strong>For multi legal entity projects, the revised funding amounts per receiving unit (D5) are updated in OTIS. The revised total award amount per D5 is brought over to Integra.</p>
+              <p class="ListParagraph"><strong>- </strong>Other internal budget revisions are processed directly in Integra</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p> </p>
+  </div>
+
+</div>
+  <div>
+    <p style="text-align: right;">                                                                                       
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-84485875-1"></script>
+<script>//<![CDATA[
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-84485875-1');
+
+//]]></script>            <a href="https://rescuenet.rescue.org/i/integra-support" title="Integra Support on RescueNet">rescuenet.rescue.org/i/integra-support</a>
+    </p>
+  </div>
+
+</body></html>

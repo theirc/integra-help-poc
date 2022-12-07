@@ -1,0 +1,41 @@
+{
+  "recent-files::internal:document": [{
+    "title": "fr_FR",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/settings/translation/fr_FR.locz",
+    "pinned": false,
+    "time": "Mar 31, 7:36 PM"
+  }, {
+    "title": "es_ES",
+    "path": "C:/Users/it_comms/Box/IT Operations/Communications/Development/Robohelp/Integra/Project Files/settings/translation/es_ES.locz",
+    "pinned": false,
+    "time": "Mar 11, 10:34 AM"
+  }, {
+    "title": "fr_FR",
+    "path": "C:/Users/it_comms/Box/IT Operations/Communications/Development/Robohelp/Integra/Project Files/settings/translation/fr_FR.locz",
+    "pinned": false,
+    "time": "Feb 11, 4:45 PM"
+  }, {
+    "title": "Integra Help",
+    "path": "C:/Users/it_comms/Box/IT Operations/Communications/Development/Robohelp/Integra/Project Files/publish/presets/Integra Help.preset",
+    "pinned": false,
+    "time": "Feb 11, 1:31 PM"
+  }],
+  "generate.outputs": {
+    "C:/Users/it_comms/Box/IT Operations/Communications/Development/Robohelp/Integra/Project Files/publish/presets/Integra Help.preset": {
+      "exists": true,
+      "path": "C:/Users/it_comms/Documents/My RoboHelp Projects/outputs/robohelp_import/Integra Help/index.htm",
+      "time": "2022-02-11T13:39:46-05:00",
+      "logFile": "C:/Users/it_comms/AppData/Local/Temp/RHTMP/Integra Help.ehtml"
+    }
+  },
+  "translation_topics:columns": {
+    "File Name": true,
+    "Title": false,
+    "Topic Status": false,
+    "Author": false,
+    "TOC": false,
+    "Folder": false,
+    "Last Modified": true,
+    "Translation Status": true
+  }
+}

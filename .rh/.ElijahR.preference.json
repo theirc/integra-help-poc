@@ -1,0 +1,119 @@
+{
+  "recent-files::internal:document": [{
+    "title": "Integra Help",
+    "path": "C:/Users/ElijahR/Documents/My RoboHelp Projects/el_GR/integra/publish/presets/Integra Help.preset",
+    "pinned": false,
+    "time": "Oct 6, 3:39 PM"
+  }, {
+    "title": "Default",
+    "path": "C:/Users/ElijahR/Documents/My RoboHelp Projects/el_GR/integra/toc/Default.toc",
+    "pinned": false,
+    "time": "Oct 6, 3:39 PM"
+  }, {
+    "title": "Default",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/toc/Default.toc",
+    "pinned": false,
+    "time": "Oct 6, 3:26 PM"
+  }, {
+    "title": "Integra Help",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/publish/presets/Integra Help.preset",
+    "pinned": false,
+    "time": "Oct 6, 3:22 PM"
+  }, {
+    "title": "html5",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/publish/skins/integra_help-theme/html5.skn",
+    "pinned": false,
+    "time": "Oct 6, 3:16 PM"
+  }, {
+    "title": "html5",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/publish/skins/Integra_help_v2-theme/html5.skn",
+    "pinned": false,
+    "time": "Oct 6, 3:16 PM"
+  }, {
+    "title": "Organization",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/publish/variablesets/Organization.var",
+    "pinned": false,
+    "time": "Jul 15, 1:33 PM"
+  }, {
+    "title": "book",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/assets/masterpages/book.htt",
+    "pinned": false,
+    "time": "Jul 15, 11:51 AM"
+  }, {
+    "title": "About_Integra",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/About_Integra.htm",
+    "pinned": false,
+    "time": "Jul 15, 11:08 AM"
+  }, {
+    "title": "RAI_Finance_Quick_Reference_Guides",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/Business_Process_Overview/RAI_Finance_Quick_Reference_Guides.htm",
+    "pinned": false,
+    "time": "Jul 15, 11:07 AM"
+  }, {
+    "title": "Responsive HTML5",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/publish/presets/Responsive HTML5.preset",
+    "pinned": false,
+    "time": "Jul 15, 10:25 AM"
+  }, {
+    "title": "integra-rh_template",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/assets/css/integra-rh_template.css",
+    "pinned": false,
+    "time": "Jul 15, 10:24 AM"
+  }, {
+    "title": "Developing_Project_Budget_Templates",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/Developing_Project_Budget_Templates.htm",
+    "pinned": false,
+    "time": "May 26, 2:40 PM"
+  }, {
+    "title": "Accounts_Receivable",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/Accounts_Receivable.htm",
+    "pinned": false,
+    "time": "May 26, 2:37 PM"
+  }, {
+    "title": "Beneficiary_(BENE)_Vendor_Creation_(RAI)",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/Beneficiary_(BENE)_Vendor_Creation_(RAI).htm",
+    "pinned": false,
+    "time": "May 26, 1:47 PM"
+  }, {
+    "title": "fr_FR",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/settings/translation/fr_FR.locz",
+    "pinned": false,
+    "time": "Mar 24, 3:57 PM"
+  }],
+  "generate.outputs": {
+    "Z:/development/robohelp/integra/en_EN/integra/publish/presets/Integra Help.preset": {
+      "exists": true,
+      "path": "C:/Users/ElijahR/Documents/My RoboHelp Projects/el_GR/random/index.htm",
+      "time": "2022-10-06T15:23:49-04:00",
+      "logFile": "C:/Users/ElijahR/AppData/Local/Temp/RHTMP/Integra Help.ehtml"
+    },
+    "C:/Users/ElijahR/Documents/My RoboHelp Projects/el_GR/integra/publish/presets/Integra Help.preset": {
+      "exists": true,
+      "path": "C:/Users/ElijahR/Documents/My RoboHelp Projects/el_GR/random/index.htm",
+      "time": "2022-10-06T15:39:43-04:00",
+      "logFile": "C:/Users/ElijahR/AppData/Local/Temp/RHTMP/Integra Help.ehtml"
+    }
+  },
+  "recent-files::external:image": [{
+    "title": "5s911lu0d1d0xncs9mypr4kr93to2ig1",
+    "path": "https://rescue.box.com/shared/static/5s911lu0d1d0xncs9mypr4kr93to2ig1.png",
+    "pinned": false,
+    "time": "Jul 15, 2:12 PM"
+  }],
+  "recent-files::internal:image": [{
+    "title": "EN",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/assets/images/EN.png",
+    "pinned": false,
+    "time": "Jul 15, 2:29 PM"
+  }, {
+    "title": "ES",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/assets/images/ES.png",
+    "pinned": false,
+    "time": "Jul 15, 2:28 PM"
+  }, {
+    "title": "FR",
+    "path": "Z:/development/robohelp/integra/en_EN/integra/contents/assets/images/FR.png",
+    "pinned": false,
+    "time": "Jul 15, 2:28 PM"
+  }]
+}

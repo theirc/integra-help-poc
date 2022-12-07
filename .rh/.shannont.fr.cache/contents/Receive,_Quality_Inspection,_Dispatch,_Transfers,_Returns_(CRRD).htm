@@ -1,0 +1,1021 @@
+
+  Receipt and Quality Inspection - Business Process Information
+  Business Process Flow Diagram
+  
+  Documents Processed in Receiving Process
+  The procedures below specify the sequence for first in first out (FIFO) and first expiry first out (FEFO) items in CRRD:
+  
+    Receipts list – Inventory personnel post a Receipts List when the product is received from the supplier. The Receipts List does not have an impact on financials or physical inventory.
+    Quality order – Once the Receipts List is posted, a Quality Order is automatically generated. A quality inspection is performed and results recorded. The quality inspection is performed by technical personnel from the requesting department.
+    Product Registration – All stock items (FIFO and FEFO) need to be registered to the correct location by Supply Chain personnel, i.e., change from Receiving location to actual location items will be stored. Pharmacy items are assigned a vendor batch number and food items are assigned a system batch number. 
+    Product receipt – A Product Receipt is recorded and posted. This is a prerequisite to invoice processing and three-way match. The posting of the product receipt updates physical inventory (for stock items) and financials.
+  
+  Important: When products, that were initially received/posted at a port of entry, arrive at the IRC warehouse, a Transfer Journal must be processed to record the transfer to the actual storage location inside IRC warehouse where the product has been physically stored.  
+  General Information for Receiving Stock Items
+  All stocked items go through inspection and receipt upon arrival at an IRC location. They will be quality controlled for all CRRD legal entities and some RAI entities. When material arrives or services are delivered at an IRC location, Integra must be updated to record the receipt of the material.  The receipt record is a prerequisite to invoice payment. 
+  Stock products are received and tracked in inventory. i.e., on-hand balances are updated with each product receipt.
+  A partial quantity of a PO may be received. In these situations, the PO remains open until all items are received.
+  Important: Services are received the same way non-stock items are received.
+  Delivered Products that Fail Quality Inspection
+  Procedures
+  Display On-hand Inventory
+  Purpose
+  Use this procedure to verify quantities of on-hand inventory associated for each stock product received into inventory. 
+  
+  You can also view all transactions processed for a specific item, such as purchase orders, sales orders, inventory adjustments, etc.
+  Important Tip: It is very useful to always have this report open in a separate Integra session while doing any transactions that affect inventory so you can validate if inventory levels are updating correctly.
+  Prerequisites
+  
+    The item has been set up as an inventory item in Integra.
+  
+  Steps
+  
+    From the Integra Home page, navigate the modules to Inventory management > Inquiries and reports > On-hand list.
+  
+  
+  
+    Apply any or all of the following filters by selecting the drop-down list for more filtering options: 
+  
+  
+    Item number 
+    Site 
+    Warehouse 
+    Project ID
+  
+  Note: If additional filters are needed, click the Add button to select other values. 
+  
+    Click Dimensions on the menu at the top of the page to add additional inventory dimension values to the on-hand inquiry display.
+  
+  
+  
+    Click the checkmark next to the dimensions to display in the relevant selections. E.g., Site, Warehouse, Location, Project ID, Batch number and Item number.
+    Click OK to proceed.
+  
+    
+  
+    Click Apply  on the left-hand Filters pane to retrieve results.
+  
+    
+  
+    Review the results of on-hand inventory displayed in the On-hand grid. 
+  
+  Tips:
+    - Refer to the topic, On-hand List - Column Descriptions, for explanations of each of the columns displayed in the report.
+    - Click the filter icon in the Filter pane to collapse or expand the Filters pane, as required.
+  
+    To view all transactions associated with an item, select a line and click Transaction details on the menu at the top of the page. E.g., view purchase order numbers or journal numbers.
+    Click X to close the On-hand List report when reviewing is complete.
+  
+  
+  Result
+  You have viewed the On-hand List for inventory items. 
+  Generate Receipts List
+  Purpose
+  Warehouse personnel use this procedure to generate a receipts list for stocked products received at an IRC location.
+  Note: Prior to beginning the procedure, first determine if the PO lines are for stocked or non-stocked products. 
+  The receipts list is a system acknowledgement of accepting delivery and is akin to signing for a package. Entering the receipt list does not impact inventory balances.
+  Prerequisites
+  
+    PO Approval status is Confirmed
+    Purchase order status is Open Order
+    Products have physically arrived at an IRC location or port of entry
+  
+  Steps
+  
+    From the Integra Home page, navigate modules to Procurement and sourcing > Purchase orders > All purchase orders.
+  
+  
+  
+    Find the relevant purchase order and click the PO number to open the PO form.
+  
+  Note: There are various search filters that can be used to find the PO number. Refer to the Navigate Integra eLearning and Process a Purchase Order eLearning for filtering and filtering to find a purchase order.
+  
+  
+    Review the information on the PO lines to ensure the correct PO was selected.
+  
+  Ensure the items on the PO are stocked items before proceeding.
+  Tip: You can also add the Warehouse and Location columns directly to the table grid by clicking Purchase order line > Display > Dimensions and selecting the desired dimensions.
+  
+    On the menu at the top of page, click Receive.
+  
+  
+  
+    Under the Generate action pane, click Receipt lists.
+  
+  
+  
+    Under the Settings section, toggle Print receipts list to Yes to print the receipts list, if required. 
+  
+  Note: The receipt list may be printed and signed by IRC and provided to the driver that they are receiving the products on the list.
+  
+  
+    Scroll down to the Lines section. (You may have to click the down arrow to expand the Lines section.)
+    On the receipt line, update the Quantity field with the actual quantity delivered. 
+    Click OK to proceed.
+  
+  
+  
+    Validate that a message displays at the top of the page indicating that a quality order was generated.
+    After the receipts list is posted, notice the following under the Receive tab of the purchase order.
+  
+  
+    Under the Quality management section, Quality order is now available. A quality order is automatically generated when a receipts list is created. For every received line in the Receipts list, a corresponding quality ordr is generated. For example, if five item lines were generated on the receipts list, the system creates five quality orders.
+    On the Receive tab, under the Journal section, notice the Receipts list journal is now available. The journal can be viewed and printed.
+    On the purchase order Header, under the General section, the Document status field is updated to display Receipts list.
+  
+  
+  
+    Validate the status of the PO status remains Open order.
+  
+  Note: Completing the Receipts list does not change the purchase order status.
+  
+    Click the X in the top right corner to close the purchase order.
+  
+  Result
+  You have posted the Receipts list for stock products delivered to an IRC location (or port of entry). A quality order and product receipt can now be completed.
+  Complete Quality Order after Inspection
+  Purpose
+  Use this procedure to complete a quality inspection order for all applicable stock products arriving at an IRC location. The quality order is automatically generated once the Receipts list is created.
+  Important Information:
+  
+    If some items fail inspection, the failed quantity must be blocked from inventory and a Non conformance created. This must be done before the quality order is validated.
+    Programs staff may monitor a list of all quality orders requiring action by navigating to: Inventory management > Periodic tasks > Quality management > Quality orders.
+  
+   
+  Prerequisites
+  
+    PO Approval status is Confirmed
+    Purchase order status is Open Order
+    Products have physically arrived at an IRC location and the receipt list has been posted
+    A Receipts List has been created
+  
+  Steps
+  
+    From the Integra Home page, navigate modules to Procurement and sourcing > Purchase orders > All purchase orders. Note: Programs staff may access this transaction directly to monitor the quality order list for items requiring action using: Inventory management > Periodic tasks > Quality management > Quality orders.
+  
+  
+  
+    Find the relevant PO and click the PO number to open the PO form.
+  
+  Note: There are various search filters that can be used to find the PO number.
+  
+    Review the information on the PO lines to ensure the correct PO was selected.
+  
+  
+  
+    On the menu at the top of page, click the Receive tab then click Quality orders under the Quality management section.
+  
+  
+  All completed and open quality orders are displayed in the top pane, i.e., if a vendor delivered multiple partial shipments of a PO line quantity, there would be multiple quanlity orders.
+  
+    Select the relevant Open quality order and click Results in the bottom section of screen.
+  
+  
+  
+    Click Edit on the Quality order line results form.
+  
+  
+  
+    In the Result quantity field, enter the number of items that passed inspection.
+    In the Outcome field, click the drop-down iand select Pass.
+    If some items failed inspection, click New at the top of hte page to add a new line. Enter the Result quantity that failed and select Fail in the Outcome field.
+  
+  
+  
+    On the menu at the top of the page, click Validate to validate the quality order line results.  (If multiple lines were entered, the order of the lines may reverse after clicking Validate.)
+  
+  Note: This line validation step is different than the overall quality order validation step, which happens later. 
+  
+    Click the X in the top right corner of page to close the Quality order line results form and return to the Quality orders form.
+  
+  
+  
+    Review the inspection line with the test results. 
+  
+  Note: A red X under the Test result column indicates that one or more items failed the quality inspection.
+  
+    
+      
+      
+    
+    
+      
+        If
+        Then
+      
+      
+        Some items failed inspection....
+        Proceed to step 13
+      
+      
+        All items passed inspection...
+        Proceed to step 29
+      
+    
+  
+  
+  
+    With the open quality order selected, on the menu at the top of page, click and select Inventory blocking from the drop-down selection list.
+  
+  
+  
+    On the menu at the top of page click Edit. 
+    Update the value in the Quantity field to reflect the quantity that failed inspection.
+    On the menu at the top of page, click Save.
+    Click the X in the top right corder of page to close the inventory blocking page and return to the Quality orders page.
+  
+  
+  
+    With the open quality order selected, on the menu at the top of page, click Inquiries and select Non conformances from the drop-down selection list.
+  
+  
+  
+    At the top of the page, click New. 
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+      
+    
+    
+      
+        Field/Button
+        Entry/Selection Required
+      
+      
+        Worker responsible
+        
+          Enter/select the personnel number of the employee who performed the inspection.
+            
+            Tip: Click the drop-down arrow to search by name under the Name column
+          
+        
+      
+      
+        Problem type
+        Select the relevant problem type from the drop-down selection list. E.g., Defective or damaged product, Produc
+      
+      
+        Defective quantity
+        Update the quantity to reflect on the defective quantity.
+      
+    
+  
+  
+    Click OK to return to the Non conformances page.
+  
+  
+  The newly created non conformance line is visible in the table.
+  
+    On the  menu at the top of page, click Functions and select Approve non conformance from the drop-down selection list. Select Yes when prompted with question, “Are you sure you want to approve this  non conformance?”
+  
+  Tip: If you have navigated away from the Non conformances page for any reason, you can access the page again by navigating to the purchase order, clicking the Receive tab and selecting Non conformances under the Quality management section.
+  
+  
+    On the  menu at the top of page, click Functions and select Close non conformance from the drop-down selection list. Select Yes when prompted with question, “Are you sure you want to close this non conformance?”
+  
+  
+  
+    Validate that the non conformance line is now Approved and Closed.
+    On the menu at the top of page, click Print and select Non conformance tag from the drop-down selection list.
+  
+  
+  
+    Click OK to proceed.
+  
+   
+  
+    Print/provide the Non conformance tag to Supply Chain so they have clear visibility that certain items failed inspection and should not be received into inventory
+    Close the Non conformance tag display to return to the Non conformances page.
+  
+  
+  
+    Close the Non conformance page to return to the Quality orders page.
+  
+  
+  
+    On the menu at the top of the Quality orders page, click Validate. 
+  
+  
+  
+    On the Validate the quality order form, click OK to proceed.
+  
+  
+  The message "Operation completed" should display at the top of the page. 
+  
+    Confirm that that the status of the quality order is no longer Open. If all items passed, it displays "Pass"; is some items failed, it displays, "Fail". 
+    Click the X in the top right corner of page to close the Quality orders page and return to the purchase order.
+  
+  x
+  
+    In the top right corner of the purchase order, click the refresh button.
+  
+  
+  
+    In the Purchase order lines section, scroll to the right to view that the value under column Quality order status has updated to Closed quality order. 
+    Note: The Closed quality order status in a PO line indicates that an inspection was performed and a quality order was completed.
+  
+  Result
+  You have completed a quality order required for items receivd on the purchase order.
+  Next Steps
+  Enter the product receipt for the items that passed quality inspection.
+  For items that did not pass quality inspection, refer to the procedure, Processing Items that Failed Quality Inspection.
+  Enter Product Receipt
+  Purpose
+  Use this to procedure to record the Product receipt for delivered products/services.
+  For items that were subject to quality inspection, only the quantity that passed should be received. 
+  For stock items, products must be registered. The receiving Location and Batch number (if applicable) are updated in the registration step.
+  Prerequisites
+  
+    PO Approval status is Confirmed
+    Purchase order status is Open Order
+    Products have been physically received
+    Vendor’s delivery document confirming shipment/receipt has been received 
+    The Receipts list has been posted
+    If applicable to product, (FIFO or FEFO), a Quality Order has been created and validated.
+  
+  - For items that failed quality inspection, the failed quanitity has been blocked and a Non Conformance has been recorded, approved, and closed.
+  Steps
+  
+    Prior to beginning the steps to record the product receipt, take a moment to ensure that all the prerequisites listed above have been met.
+    From the Integra Home page, navigate modules to Procurement and sourcing > Purchase orders > All purchase orders.
+  
+  
+  
+    Find the relevant PO and click the PO number to open the PO form.
+  
+  Note: There are various search filters that can be used to find the PO number.
+  
+    Review the information on the PO lines to ensure the correct PO was selected.
+  
+  
+  
+    On the menu at the top of page, click Receive.
+  
+  
+  
+    Under the Generate section, click Product receipt.
+  
+  Note: Always use Product receipt, even if you are receiving services.
+  
+  
+    Optional: Under PRINT OPTIONS, click the Print product receipt indicator so it displays Yes (indicator turns blue). This enables printing of the receipt.
+    Under the Overview section, in the Product Receipt field, enter the unique product receipt identifier. E.g., This may be a bill of lading number, certificate of service completion, etc. If no equivalent exists, enter the PO number. This is a required field so something must be entered.
+    Use the scroll bar on the right to scroll down to the Lines section. (You may have to click Lines to expand the section).
+  
+  
+  
+    In the receipt line, update the Quantity field with the actual quantity being received into inventory. If there are multiple lines on the PO, update the Quantity field for each line.
+  
+  Remember: Do not record receipts for items that did not pass quality inspection.
+  Example: If 100 items were physically delivered and 20 failed quality inspection, the product receipt is posted with a quantity of 80.
+  Product Registration
+  All stocked items and batch-controlled items are registered by entering batch information and expiry dates at the time of product receipt. This is also where the receiving Location is updated.
+  
+    On the menu just above the Lines grid, Click Update line > Registration to register the product.
+  
+  
+  
+    Under the Transactions section, click Add registration line. 
+  
+  
+  
+    Scroll down to the Registration lines section. 
+    Update the quantity being registered in the Register now field. 
+    Update the Location field with the correct location. 
+  
+  Note: If delivery was made to a port of entry, select Port of Entry in the Location field. Once products arrive at the IRC location, an inventory transfer journal must be created to move the product from the port of entry location to the IRC storage location.  
+  
+    If the correct batch number already exists, select it from the drop-down selection list in the Batch number field and proceed to step 17 of this procedure.  If new batch number must be created complete the bulleted steps listed below:
+  
+  
+     Right click on the Batch number field and select View Details.
+    Click New to enter the new batch number for the product received.
+    
+    In the Batch number field, enter the batch number for the product. 
+    On the menu at the top of the page, click Reset and select Reset vendor batch details.
+    
+    On the Change one or more details on the inventory batch form, enter the manufacturing date in the Vendor batch date field. Note: This is the date the product is manufactured and is provided by the vendor. If there is no manufactured date, use the batch date.
+    Toggle Use as manufacturing date to Yes (the slider turns blue).
+    Enter the date of expiry in the Vendor expiry date
+    Notes: 
+    The expiry date is typically listed on the product. If it is not available, for pharma products, contact the vendor to determine the expiry date.
+    When the expiry date is MM/YYYY, always use the last day of the month to record the date, e.g., March 2026 > 31/3/2026
+    
+      Click OK  to close the form and return to the new Batches form.   
+    
+    
+      
+    
+    Validate the entries made in the Properties and Vendor batch section. 
+    Click Save  to save the new batch entries.
+    Click X to close the new Batches form.
+    
+    Confirm the new batch number is displayed in the list in the Batches Standard View grid. 
+    Click Save  to save the new batch number created. 
+    Click X to close the Batches Standard View grid and return to the Registration page. 
+    
+    On the Registration form, under the Registration lines section, click the drop-down in the Batch number field and select the new batch number you created from the drop-down list.
+  
+  
+    Click Confirm registration to validate the product registration.
+  
+  You return to hte Vendor batch details form.
+  
+  
+    Click Save to save you entry.
+    Click X to close the Vendor batch details form. 
+  
+  You return to the Registration form.
+  
+  
+    Validate that the Batch number field is populated wit hthe new batch number created for the product. 
+  
+  Note: If the order you are receiving has multiple batch numbers for the same product, repeat the bulleted steps above for the number of batch numbers required. 
+  
+    Click Save to save the registration.
+    Click X to clsoe the Registration form and return to the Posting product receipt form. 
+    Scroll down to the lines section and review the line. 
+  
+  Optional: To validate and confirm the batch number for this product, go to: Modules à Inventory management à Inquiries and reports > On-hand list and locate the project, item number, location bin and batch number you just registered.
+  
+    Click OK on the Posting product receipt form to return to the purchase order.
+  
+  
+  
+    Confirm the Operation completed info-message displays indicating that the receipt was successfully processed.
+  
+  
+    If print option was previously selected, the print view of the product receipt automatically displays. To print the receipt, click the printer icon and select the print destination.
+    If the full amount of the PO was received, validate that the PO status has been updated to Received.  If a partial amount of the PO was received, validate that the PO status is still Open order.
+  
+  Result
+  You have posted a product receipt. If applicable, you have also applied/created a batch number for the received product.
+  To view/print/reprint a product receipt document at any time:
+  
+    On the Receive tab of the PO, select Product receipt under the Journals section
+    Select the relevant receipt document
+    Click Preview/Print tab and select Copy preview.
+    Select the printer icon to output to printer or PDF.
+  
+  Product Dispatch - Business Process Information
+  Product Dispatch - Business Process Flow 
+  Product Dispatch - General Information
+  The IRC uses the Integra pick/pack function for the following tasks:
+  
+    Distributing material from the IRC warehouse to a beneficiary
+    Transferring material from an IRC warehouse/dispensary to another IRC warehouse/dispensary
+  
+  The pick/pack function is triggered by either a transfer order or project consumption of items. Each of these actions automatically generate picking instructions for Supply Chain to review. Warehouse personnel print the picking list for the items to be shipped.
+  The picking list is used to go through the warehouse for picking the item quantities. Packing lists for item requirements are posted in order to distribute inventory. When a packing list is posted, inventory is reduced from both financial and physical inventory. The financial inventory is the inventory main account cost balance and physical inventory is the on-hand list quantity. The project expense is also posted.
+  IMPORTANT: Communication between Programs and Supply Chain is key to ensuring the correct items are being dispatched at the right time, in the right quantity.
+  E.g., The Programs person creating the picking list can print/share the picking list and obtain an approval signature (or email authorization) from the authorized Programs personnel. This information should then be provided to Supply Chain personnel who perform the physical picking of items and post the packing slip.
+  Generate a Picking List
+  Purpose
+  Use this procedure to generate a picking list for items that need to be issued to beneficiary.
+  Prerequisites
+  
+    Project ID is known and / or purchase order number is known.
+    Display the On-hand list to confirm there is a sufficient quantity of item under the Physical reserved column to fulfill dispatch requirements.
+  
+  Steps
+  
+    From the Integra Home page, navigate the modules to Project management and accounting > Projects > All projects.
+  
+  
+  
+    On the All projects grid search for the project the items will be dispatched from.
+    Click the checkbox to the left of the line to select the line.
+  
+  
+  
+    On the menu at the top, click the Plan tab and under the Item requirements section click Item requirements.
+  
+  
+  Note: For faster and more effective searching on this screen, add a column called Reference number to the item requirements table grid. This column contains the purchase order number, or journal number, associated with the item requirement line. 
+  
+    In the list of item requirements, click the checkmark to the left of the item for which to generate the picking list.
+  
+  Note: Multiple lines can be selected for picking. 
+  
+    On the menu at the top, click Manage.
+  
+  
+  
+    Click Posting and select Picking list from the drop-down list.
+  
+  
+  
+    Expand the Parameters section (if not already expanded).
+    In the Quantity field, select All (if not already defaulting).
+    Toggle Print picking list to Yes (indicator turns blue).
+    Scroll down to the Lines section.
+  
+  
+  
+    In the Update field, enter the quantity to be picked.
+  
+  Note: The quantity can be overwritten to pick a partial quantity if required.
+  Important: The quantity displayed in the field represents the current on-hand inventory. The quantity in the Update field represents the amount specified in the item requirements of the project. If there is not enough Available quantity, the Update field must be changed to represent the inventory available to pick.
+  
+    Click OK to proceed.
+  
+  
+  
+    Click Yes when prompted with warning message.
+  
+  
+  Note: A print preview of the picking list is displayed. The print view identifies the warehouse bin location from where the items are picked. Ensure the warehouse displayed is correct based on the requirement.
+  
+    To print the pick list, click the printer icon.
+  
+  To export the picking list form to a different format, click Export and select output format, e.g., PDF.
+  
+    Click the X in the top right corner of page to close the print view and return to the item requirements list.
+  
+  
+  Result
+  You have generated the picking list of products and quantities to pick from bin locations.
+  Once the full quantity of an item requirement has been picked, the Picking list is no longer available under the Posting menu
+  
+    Warehouse personnel use this picking list to go through the warehouse and pick the items to be dispatched and prepare them for shipping
+    Once all items are picked, warehouse personnel post a packing slip to record the distribution of items to clients.
+  
+  Post a Packing Slip
+  Purpose
+  Use this procedure to post a packing slip for  picked items.
+  Posting of the packing slip reduces on-hand physical inventory quantity and updates the inventory main account cost balance. The project expense is also updated.
+  Prerequisites
+  
+    The picking list has been posted and all available items have been picked.
+  
+  Steps
+  
+    From the Integra Home page, navigate the modules to Project management and accounting > Projects > All projects.
+  
+  
+  
+    On the All projects grid search for the project for which the items are to be packed.
+    Click the checkbox to the left of the line to select the line.
+  
+  
+  
+    On the menu at the top, click Plan and under the Item requirements section click Item requirements.
+  
+  
+  
+    In the list of item requirements, click the checkbox to the left of the item to generate the packing slip for.
+    Review the quantity of the selected line.
+    On the menu at the top, click Manage.
+  
+  
+  
+    On the action pane, click Posting and select Packing slip from the drop-down list.
+  
+  
+  
+    Under Parameters, in the Quantity field, select Picked from the drop-down selection list.
+    Scroll down to the Lines FastTab and review the lines listed.
+    Click OK to proceed.
+  
+  
+  
+    Click Yes when prompted with the warning.
+  
+  
+  
+    On the Show packing slip form, click OK to proceed.
+  
+  
+  
+    Review the packing slip for accuracy. The value in the Number field is the packing slip number. Take note for your reference.
+  
+  Note: Warehouse personnel review the packing list to verify contents being dispatched.
+  
+    To print the packing slip, click the printer icon.
+  
+  To export the packing slip form to a different format, click Export and select output format, e.g., PDF.
+  
+    Click the X in the top right corner to close the print view and return to the item requirements grid.
+  
+  
+  Result
+  You have generated and posted a packing slip to be included with the items being dispatched. Posting the packing list removes the quantity picked from inventory and expenses it to the project.
+  Receive CIK Inventory Items
+  Purpose
+  Use this procedure to record the receipt of CIK items into inventory. This only applies to CIK items that are tracked in inventory. E.g., large and/or high value items.
+  Note: Receipts are not entered for non-inventory CIK items as they are only tracked at the point of distribution.
+  Prerequisites
+  
+    CIK item has been set up as an inventory item in Integra.
+    If receiving CIK items under a donor project (versus a CIK project such as CK001), consult with Finance for the correct financial dimensions, i.e., D1 to D6, and D11, D12. 
+  
+  Important: Always consult with Finance for correct financial dimensions and market price requirements.
+  Steps
+  
+    From the Integra home page, navigate the modules Inventory management > Journal entries > Items > Movement.
+  
+  
+  
+    On the menu at the top, click New.
+  
+  
+  
+    In the Name field, select CIK_In_Mov from the drop-down selection list.
+  
+  Note: When CIK_INV_MO is selected, the Offset account field is automatically populated with account 41600.
+  
+    Click OK to proceed.
+  
+  
+  
+    Under the Journal lines section, click New to add a new journal line.
+  
+  
+  
+    Complete the following fields for the journal line:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry/Selection Required
+          
+        
+        
+          
+            Item number
+          
+          
+            Enter the CIK item number or click the drop-down arrow to perform a search for the item.
+            Note: Ensure the item description starts with CIK.
+          
+        
+        
+          
+            Product name
+          
+          
+            This value defaults after the item number is entered.
+            Note: CIK items begin with “CIK” in the product description.
+          
+        
+        
+          
+            Quantity
+          
+          
+            Enter the quantity being received.
+          
+        
+        
+          
+            Cost price
+          
+          
+            Enter the price of the CIK item being received.
+            Additional Notes:
+            Cost price should be entered based on the price given by the donor.
+            If the donor did not give a price, IRC will need to calculate the fair market value. Market value will be calculated following IRC’s internal policies.
+            Cost price is always in the legal entity accounting currency which is USD for all entities. Market value will be calculated following IRC’s internal policies.
+            If the fair market value is given to IRC in a different currency, this needs to be a manual calculation to convert to USD.
+          
+        
+        
+          
+            Cost amount
+          
+          
+            This value defaults based on the auto-calculation of cost price X quantity.
+          
+        
+      
+    
+  
+  
+    Scroll down to the Line details section and click the Financial dimension tab.
+  
+  
+  
+    Enter/validate the following financial dimension fields.
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry/Selection Required
+          
+        
+        
+          
+            Project ID (D1)
+          
+          
+            If items received are for a specific project, enter the specific D01 project ID. If not, enter CK001.
+          
+        
+        
+          Project category (D2)
+          If required for the project, enter the project category.
+        
+        
+          Program area (D3)
+          If required for the project, enter the program area.
+        
+        
+          
+            Operating Unit (D4)
+          
+          
+            Enter the relevant D4 code.
+            E.g., COCAR
+          
+        
+        
+          
+            Reporting Entity (D5)
+          
+          
+            This value defaults based on legal entity.
+          
+        
+        
+          Functional area (D6)
+          If required for the project, enter the functional area.
+        
+        
+          
+            Revenue Stream (D11)
+          
+          
+            Select OMSC - Miscellaneous.
+          
+        
+        
+          
+            Fundraising Credit (D12)
+          
+          
+            Select the relevant D12 code based on location.
+          
+        
+      
+    
+  
+  
+    Click the Inventory dimensions tab.
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry/Selection Required
+          
+        
+        
+          
+            Project ID
+          
+          
+            Enter the project ID.
+            This must match the value entered in the D1 field on the Financial dimensions tab.
+          
+        
+        
+          
+            Site
+          
+          
+            This value defaults.
+          
+        
+        
+          
+            Warehouse
+          
+          
+            Select the relevant warehouse from the drop-down selection list.
+          
+        
+        
+          
+            Location
+          
+          
+            Select the relevant location from the drop-down selection list.
+          
+        
+      
+    
+  
+  
+    Double-check that the Cost price field in the Journal lines section reflects the price previously entered. If not, re-enter the price.
+    On the menu at the top, click Save to check for any errors.
+  
+  
+  
+    On the menu at the top, click Post.
+  
+  
+  
+    Click OK to proceed.
+  
+  
+  
+    Validate that the posting success message appears. (It appears in a light blue bar near the top of the page.)
+    Create an item forecast line for each CIK item received and perform "marking" for each item requirement line that gets created.
+  
+  IMPORTANT: Step 16 is mandatory in order to perform  subsequent distribution of the CIK stock items. Refer to the following procedures in the Item Forecasting to PO Creation section for guidance,
+  Create an Item Forecast Line Directly in Integra
+  
+    If items are going to different locations, a separate item forecast line should be created for each location.
+  
+  Perform "Marking" for an Item Requirement Line
+  
+    Important: If items are FEFO, before marking the item, update the Batch number field on the Product dimensions tab of the item forecast line. 
+  
+  Result
+  You have recorded the receipt of CIK stock items into inventory and reserved and marked the items to the project.
+  Next Steps
+  Once CIK stock items are ready to be distributed, refer to the following procedures in this user guide: 
+  
+    Generate a Picking List (Programs)
+    Post a Packing Slip (Supply Chain)
+  
+  Update Purchase Order Quantity via Request Change Function
+  Purpose
+  Use this procedure to change a purchase order after it has been approved.
+  Example:
+  A quantity of purchase order shipment from the vendor did not not pass quality inspection and the vendor cannot provide replacement items. In this case, the quantity on PO must be reduced to reflect only the quantity of items that passed inspection.
+  Prerequisites
+  Purchase order has been approved and/or confirmed.
+  Steps
+  
+    Navigate modules to Procurement and sourcing > Purchase orders > All purchase orders.
+    Select and open the relevant purchase order.
+    Click the Purchase order tab on the top menu.
+  
+    
+  
+    Under the Maintain section, click Request change  to make a change to the order.
+  
+  Note: Once you click Request change on an order that has a status of Confirmed, the status returns to Draft.
+  
+    In the Quantity field, update the quantity to the number of items that passed inspection.
+  
+  Note: Validate/update the price on the line as sometimes it disappears after changing the quantity.
+  
+    Click Save  to save the update.
+    Click Workflow > Submit to resubmit the purchase order for approval.
+  
+  Note: After the purchase order is approved, it requires confirmation again. This step is performed by Supply Chain. Once this step is complete, the purchase order status will return to Open Order and the approval status will return to Confirmed.
+  Result
+  You have changed a purchase order using the "Request Change" function. an invoice can now be processed for the purchase order.
+  On-hand List - Column Descriptions
+  
+    
+      
+        Column Name
+         
+      
+      
+        Physical inventory
+        Total on-hand quantity
+      
+      
+        Physical reserved
+        Total on-hand reserved quantity
+      
+      
+        Available physical
+        Quantity available in stock but not reserved
+      
+      
+        Ordered in total
+        Total quantity awaiting to be received
+      
+      
+        On order
+        Quantity on an item requirement line or on a journal but not ordered/posted yet
+      
+      
+        Ordered reserved
+        Quantity ordered through a PO but not yet received, however, reserved to the SO
+      
+      
+        Available for reservation
+        The sum of ordered, on order, and received quantities not reserved to a sales order. 
+      
+      
+        Total available
+        Quantity available physical + Ordered quantity
+      
+    
+  
+   
+  Processing Items that Fail Quality Inspection - Scenarios
+  
+    
+      
+      
+    
+    
+      
+        Scenario
+        Steps
+      
+      
+        IRC refuses to receive defective quantity and supplier ACCEPTS to send full replacement of defective quantity 
+        
+          Prerequisite: Quantity of failed items have been recorded in a quality order; failed items have been blocked from inventory; a Non conformance has been created, approved, and closed.
+          
+            Supply Chain informs supplier about refused quantity.
+            Once replacement items are sent by supplier complete the steps outlined in the training user guide: Product Receipt and Dispatch.
+          
+        
+      
+      
+        
+          IRC refuses to receive defective quantity and supplier cannot replace any quantity of the defective items
+        
+        
+          Prerequisite: Quantity of failed items have been recorded in a quality order; failed items have been blocked from inventory; a Non conformance has been created, approved, and closed.
+          
+            Supply Chain opens PO and selects Request change option. 
+            Supply Chain updates the PO line quantity with only the quantity of items that passed inspection.
+            Supply Chain submits PO for approval, confirms it and sends updated PO to vendor.
+          
+        
+      
+      
+        
+          IRC refuses to receive defective quantity and supplier sends replacement for partial quantity of defective items  
+        
+        
+          Prerequisite: Quantity of failed items have been recorded in a quality order; failed items have been blocked from inventory; a Non conformance has been created, approved, and closed.
+          
+            Supply Chain informs supplier about refused quantity.
+            Supply Chain opens original PO and selects Request change option. 
+            Supply Chain updates the quantity in the PO line by deducting the quantity not being replaced by the supplier. 
+              
+                Ensure the Unit price field reflects the original purchase price; if not, update it.
+              
+            
+            Supply Chain submits PO for approval, confirms it and sends updated PO to vendor.
+            Once replacement items are sent by supplier repeat steps 1 through 8 above for the replacement quantity.
+          
+        
+      
+      
+        Pharmaceutical company recalls product.
+        If invoice for full quantity was already processed, Supply Chain creates a Return Purchase Order to obtain credit from vendor for the quantity of items not accepted. 
+      
+      
+        Receipt for full quantity was posted at port of entry but defects were found when products arrived at IRC warehouse.
+        
+          If invoice for full quantity was already processed, Supply Chain creates a Return Purchase Order to obtain credit from vendor for the quantity of items not accepted. 
+          If invoice has not been issued yet, vendor should issue invoice for only quantity received and accepted, i.e., the quantity on the Change PO.
+        
+      
+      
+        Return of non-stock items to vendor
+        
+          If invoice for full quantity was already processed, Supply Chain creates a Return Purchase Order to obtain credit from vendor for the quantity of items not accepted. 
+          If invoice has not been issued yet, vendor should issue invoice for only quantity received and accepted, i.e., the quantity on the Change PO.
+        
+      
+    
+  
+

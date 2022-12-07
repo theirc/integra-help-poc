@@ -1,0 +1,1569 @@
+
+  Business Process Overview
+  Accounts Receivable (AR) processing includes the following tasks:
+  
+    Adhoc receipt of daily checks, stocks or wires as donations from individuals (one-time gift)
+    Receipts of pledges (one-time gifts over a period of time)
+    Receipt of grants (grants seen on a daily basis from a country office)
+  
+  All donor receipts and intercompany transfers must be entered in Integra. Once payment is entered in Integra, it is automatically posted to the general ledger.
+  A donor may pledge a commitment to multi-year payments.
+  Rather than recording donor payments separately, a payment decrease can be applied to an account balance. Settlement within AR can occur between different transaction types that affect the customer balance, such as invoices and payments. Integra provides standard AR reporting functionality, such as customer aging and balance details. Accounts Receivable is also responsible to monitor and “draw down”.
+  Accounts Receivable Checklist
+  Daily Processing
+  
+    Salesforce journal uploads (including intercompany)
+    Cash receipts (in USD and foreign currencies)
+  
+  Month-End Processing
+  
+    Stock journals
+    Merchant fee bookings
+    IOM entries (International Organization for Migration)
+    Cash concentration entries
+    Bank fees and interest income
+    Administrative fees
+    AR reports
+  
+  Business Process Flow
+  
+  The Accounts Receivable Module in Integra
+  The following information can be accessed via the Accounts receivable module:
+  
+    For customer information, navigate to Customers.
+    To enter or view invoices, navigate to Invoices.
+    To enter or view payment information, navigate to Payments.
+    For detailed customer history, navigate to Inquiries and reports.
+  
+  
+  Process Payment from a Donor
+  Use this procedure to process a donor payment where the donor is already set up as a customer in Integra. This task typically occurs for donors who make monthly or annual donations.
+  Prerequisites
+  
+    Donor is set up as a vendor in Integra
+    Supporting documentation is available to attach to payment journal
+    Financial dimensions are known
+  
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer payment journal.
+  
+  
+  
+    On the toolbar at the top, click New to add a new journal line.
+  
+  
+  
+    In the Name field, enter or select CR (Cash Receipt).
+  
+  
+  
+    In the Description field, enter a meaningful description.
+  
+  
+  
+    On the menu at the top of page, click Lines.
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Account
+          
+          
+            Enter or select the relevant customer account number.
+            Tip: If number unknown, click the drop-down to perform a search by Name.
+          
+        
+        
+          
+            Account name
+          
+          
+            This field auto-populates after the customer account number is entered.
+          
+        
+        
+          
+            Description
+          
+          
+            Enter a description for the receipt.
+            E.g., Billings for [month]
+          
+        
+        
+          
+            Credit
+          
+          
+            Enter the amount being received.
+          
+        
+        
+          
+            Offset account
+          
+          
+            Select the relevant offset account from the drop-down selection list.
+          
+        
+      
+    
+  
+  
+  
+    Click the Payment tab.
+  
+  
+  
+    In the Posting profile field, select GENAR – General AR Posting Profile.
+    Click the List tab.
+  
+  
+  
+    On the menu above the Lines grid, click Financial dimensions and select Account.
+  
+  
+  
+    Enter the D1, D4, and D5 financial dimension codes.
+    Scroll down to the bottom of the financial dimensions pane and click OK.
+  
+  
+  
+    Again, on the menu above the Lines grid, click Financial dimensions but select Offset account this time.
+  
+  
+  
+    Enter the D1, D4, and D5 financial dimension codes for the offset account.
+  
+  Important: The D1 code for the offset account is the relevant project.
+  
+    Scroll down to the bottom of the financial dimensions pane and click OK.
+  
+  
+  
+    On the menu at the top of the page, click Validate and select Simulate posting.
+  
+  
+  
+    Validate the message Operation complete displays in a blue bar near the top of the page.
+  
+  
+  
+    Click Print > Journal to view the accounting for this journal.
+  
+  
+  
+    Click OK on the Print journal form to generate the print preview.
+  
+  
+  
+    Review the Payment journal print preview. Note and validate the accounts used in the Ledger account column.
+    Close the print preview.
+    Close the voucher page and return to the list of journals.
+  
+  
+  Attach Donor Receipt to Journal Line
+  
+    Select the relevant journal and click the paperclip icon in the top-right corner of page.
+  
+  
+  
+    On the menu at the top, click New and select File.
+  
+  
+  
+    Click Browse and locate and upload the receipt file.
+  
+  
+  
+    Validate the attached file is displayed in the left-hand pane.
+    If applicable, in the Notes field, enter any additional/clarifying notes for the attachment.
+    Click the X in the top-right corner to close the attachments page and return to the list of journals.
+      
+    
+    Click Workflow > Submit to submit the journal for approval. Add any comments for the approver.
+  
+  
+  
+    Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.
+  
+  Result
+  The donor payment journal is posted.
+  Process One time Payment from a Donor
+  Purpose
+  Use this procedure to process a one-time donation from a person/organization. This task is performed when the donating person/organization is not set up as a customer in Integra. For a one-time donor, a vendor account number is not entered.
+  Prerequisites
+  
+    Supporting documentation is available to attach to payment journal
+    Financial dimensions are known
+  
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer payment journal.
+  
+  
+  
+    On the toolbar at the top, click New to add a new journal line.
+  
+  
+  
+    In the Name field, enter or select CR (Cash Receipt).
+  
+  
+  
+    In the Description field, enter a meaningful description.
+  
+  
+  
+    On the menu at the top of page, click Lines.
+  
+  
+  
+    On the menu under Customer payments, click the General tab.
+  
+  
+  
+    In the Account type field, change the value from Customer to Ledger.
+  
+  
+  
+    Click List to return to the journal lines view.
+  
+  
+  
+    Click in the Account field.
+  
+  
+  
+    Using the right-hand fields, enter all required financial dimensions and main account. Scroll down to see all required fields.
+  
+  Note: Required entries are Main account, D1, D4, D5, D11, and D12, For example: 41300---TR131---UGAAT---6DAT---OMSC---DATL. The D11 and D12 will always be OMSC and DATL respectively.
+  
+  
+    Click in the Description field.
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Description
+          
+          
+            Enter text Unrestricted Donation.
+          
+        
+        
+          
+            Offset account
+          
+          
+            Select the relevant offset account from the drop-down selection list.
+            Note: This must be entered before the Credit field is populated. 
+          
+        
+        
+          
+            Credit
+          
+          
+            Enter the donation amount.
+          
+        
+      
+    
+  
+  
+  
+    On the menu at the top of the page, click Validate and select Simulate posting.
+  
+  
+  
+    Validate the message Operation complete displays in a blue bar near the top of the page.
+    Close the voucher page and return to the list of journals.
+  
+  
+  Attach Donor Receipt to Journal Line
+  
+    Select the journal line and click the paperclip icon in the top-right corner of page.
+  
+  Note: The attachment can be a copy of the check or any document that confirms receipt.
+  
+  
+    On the menu at the top, click New and select File.
+  
+  
+  
+    Click Browse and locate and upload the receipt file.
+  
+  
+  
+    Validate that the attached file is displayed in the left-hand pane.
+    If applicable, In the Notes box, enter any additional/clarifying notes for the attachment.
+    Click the X in the top-right corner to close the attachments page and return to the list of journals.
+      
+    
+    Click Workflow > Submit to submit the journal for approval. Add any comments for the approver.
+  
+  
+  
+    Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.
+  
+  
+    ‎Result
+  The one-time donor payment journal is posted.
+  Create Fee for Service Billing using a Free Text Invoice
+  Purpose
+  A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. These customers must be created if they have not been used before. Once the customer record is created, it remains in the system.
+  Example: IRC is working with a new hospital that is using our interpreter services.
+  This procedure contains two sections
+  
+    Section 1: Search to see if the customer already exists in Integra. If not, create the customer.
+    Section 2: Create the free text invoice.
+    Section 3: Settle fee for service billing
+  
+  Steps
+  Section 1: Search for Customer
+  
+    Navigate modules to Accounts receivable > Customers > All customers.
+  
+  
+  
+    In the Name column on the customer table grid, click the drop-down arrow to perform a search on the customer name.
+  
+  
+  
+    If the customer is not found, click New on the menu at the top of page.
+  
+  Note: If the customer is found, proceed to Section 2 of this procedure.
+  
+  
+    On the Create customer form, review/complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Customer account
+          
+          
+            Make note of the customer account number that was generated by the system.
+          
+        
+        
+          
+            Type
+          
+          
+            Select the relevant type of customer from the drop-down selection list. i.e., Person or Organization
+          
+        
+        
+          
+            Name
+          
+          
+            Enter the name of the customer.
+          
+        
+        
+          
+            Customer group
+          
+          
+            Select FFS_ORG from the drop-down selection list.
+          
+        
+        
+          
+            Address section
+          
+          
+            Enter as much address information as is known. At a minimum, enter the country.
+          
+        
+      
+    
+  
+  
+    Make note of the customer account number that was generated.
+    Once all information is entered, click Save.
+    Proceed to Section 2: Create Free Text Invoice.
+  
+  
+    ‎Section 2: Create Free Text Invoice
+  
+    Navigate modules to Accounts receivable > Invoices > All free text invoices.
+  
+  
+  
+    On the menu at the top of page, click New.
+  
+  
+  
+    In the Customer account field, enter the customer account number or perform a search by clicking the drop-down arrow.
+  
+  
+  
+    On the right-hand side of page, at the top of the form, click Header.
+  
+  
+  
+    Scroll down to the Financial dimensions fast tab and click to expand the section.
+  
+  
+  
+    Enter all applicable financial dimensions. D1, D4, and D5.
+  
+  Note: For the D1, enter the relevant project.
+  
+  
+    On the right-hand side of page, at the top of the form, click Lines and scroll down to the Invoice lines section.
+  
+  
+  
+    In the first row of the Invoice lines section, complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Description
+          
+          
+            Enter a meaningful description of the cash proceeds.
+            E.g., special donation
+          
+        
+        
+          
+            Main account
+          
+          
+            Enter the relevant cash receipt account number.
+          
+        
+        
+          
+            Unit price
+          
+          
+            Enter the invoice (receipt) amount.
+          
+        
+      
+    
+  
+  
+  Note: For project related service invoices, you must populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.
+  
+    Click Line details to expand the section and scroll down page to view the available tabs.
+  
+  
+  
+    Click the Project tab.
+  
+  
+  
+    Enter the relevant Project ID and Category (project category).
+  
+  
+  
+    On the menu at the top, click Save.
+    To post the invoice, click Post on the menu at the top of page. The invoice can be printed.
+  
+  
+  Once the invoice has been saved and posted, the Post button is no longer available and the invoice number is generated and displays as an FTI number in the Invoice field.
+  Once posted, the FTI invoice can be settled to the customer account.
+  Section 3: Settle Fee for Service Billing
+  
+  
+    Click the Customer account number hyperlinked in the Customer account field to access the customer record.
+  
+  
+  
+    Click the Collect tab and follow the menu path, Settle > Settle transactions.
+  
+  
+  
+    On the Settle transaction form for the customer, locate the posted FTI invoice to be settled in the list of invoices.
+    Apply a checkmark in the Mark column to mark the FTI invoice.
+    Locate the invoice that the FTI invoice is settled to and apply a checkmark in the Mark column.
+    Click Post to post the FTI invoice.
+  
+  
+  
+    Once posted, the FTI invoice no longer displays in the list on the Settle transactions form. The invoice that the FTI invoice settled to is now updated with remaining balance.
+    Close the customer record and return to the Free text invoice form.
+    Close the Free text invoice form.
+  
+  Result
+  
+    A fee-for-service free text invoice has been created, posted, and then settled to the related customer invoice.
+    Once the invoice is posted and payment is received, a cash receipt is entered in Integra.
+    To view the invoice, navigate to Accounts receivable > Invoices > All free text invoices.
+  
+  Create Fee for Service Billing using a Free Text Invoice - CRRD Scenario
+  Purpose
+  A free text invoice is used at the IRC to create invoices for irregular, miscellaneous billings. Integra generates an invoice to reflect the billing codes and rates for the transactions. 
+  Customers
+  Follow the steps in the previous procedure to search for the customer. If the customer does not exist, create the new customer, prior to executing the steps below to create the invoice.
+  Example: IRC is working with a new hospital that is using our interpreter services.
+  Steps
+  
+    Navigate modules to Accounts receivable > Invoices > All free text invoices.
+  
+  
+  
+    On the menu at the top of page, click New.
+  
+  
+  
+    In the Customer account field, enter or search for the customer account number.
+  
+  
+  
+    On the right-hand side of page, at the top of the form, click Header.
+  
+  
+  
+    Scroll down to the Financial dimensions fast tab and click to expand the section.
+  
+  
+  
+    Enter all applicable financial dimensions. D1, D4, D5, and D10.
+  
+  Note: Always enter D1 U1000 for fee for service invoices.
+  
+  
+    On the right-hand side of page, at the top of the form, click Lines and scroll down to the Invoice lines section.
+  
+  
+  
+    In the first row of the Invoice lines section, complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Description
+          
+          
+            Enter a meaningful description of the cash proceeds.
+            E.g., special donation
+          
+        
+        
+          
+            Main account
+          
+          
+            Enter the relevant cash receipt account number.
+          
+        
+        
+          
+            Unit price
+          
+          
+            Enter the invoice (receipt) amount.
+          
+        
+      
+    
+  
+  
+  Note: For project related service invoices, you must populate the project and project category fields in order to charge the project sub-ledger as opposed to selecting the main account.
+  
+    Click Line details to expand the section and scroll down page to view the available tabs.
+  
+  
+  
+    Click the Project tab.
+  
+  
+  
+    Enter the relevant Project ID and Category (project category).
+  
+  
+  
+    On the menu at the top, click Save.
+    To post the invoice, click Post on the menu at the top of page. The invoice can be printed.
+  
+  Result
+  
+    A fee-for-service free text invoice has been created and posted.
+    Once the invoice is posted and payment is received, a cash receipt is entered in Integra.
+    To view the invoice, navigate to Accounts receivable > Invoices > All free text invoices.
+  
+  Create Credit Memo using a Free Text Invoice
+  A customer credit memo can be created in Integra using a free text invoice form. 
+  To create a credit memo, simply enter a negative quantity in the Quantity field in the free text invoice line.
+    ‎
+   
+  Note: Entry of a negative quantity is the only difference for the free-text credit memo creation from the free-text-invoice steps in the previous procedure. 
+  Result
+  You have created a credit memo using a free-text invoice.
+  Create Fee for Service Cash Receipt
+  IRC has some “Fee for Service” programs that operate on a cash basis. This means that cash or payment is made immediately after, or before, the services are provided.
+  Example: Immigration - when an individual comes to the IRC for help filling out and filing an I-130 (officially the “Petition for Alien Relative”)
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer Payment Journal.
+    On the menu at the top, click New.
+    In the Name field name select the journal type CR – Cash Receipt.
+    On the menu at the top, click Lines.
+  
+  
+  
+    In the Account field, enter the customer account number.
+    Click on the Bank tab.
+  
+  
+  
+    Select the relevant Bank transaction type.
+    Click the List tab and enter the amount (credit), description and select the relevant bank account in the Offset account field.
+  
+  
+  
+    Click on the Financial dimensions tab then select account and enter all the required financial dimensions and click OK.
+  
+  
+  
+    Exit the line window by clicking the X in the top right corner.
+  
+  
+  
+    Submit the journal for approval by clicking on the Workflow button
+  
+  
+  
+    Enter submission instruction and click Submit.
+  
+  
+  
+    After approval, the journal can be posted.
+  
+  
+  Result
+  You have created a “Fee for Service” cash receipt.
+  Create Customer Payment Journal Entry
+  Purpose
+  For most cash receipts, you can enter and post a customer payment without settling it against any invoices. This applies to the following situations:
+  
+    Standard donor cash receipts
+    Prepayments
+    Intercompany cash receipts
+    Repayment of employee advance
+    Miscellaneous fees (bank fees, interest income, administrative fees, merchant fees, etc.)
+  
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer payment journal.
+  
+  
+  
+    On the menu at the top of page, click New.
+  
+  
+  A new journal line is added at the top of the table grid.
+  
+    In the Name field, enter or select CR.
+    In the Description field, enter a meaningful description for the journal.
+  
+  
+  
+    On the menu at the top of page, click Lines.
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Description and/or Action Required
+          
+        
+        
+          
+            Account
+          
+          
+            Enter the vendor account number.
+          
+        
+        
+          
+            Account name
+          
+          
+            This value defaults after the vendor account number is entered.
+          
+        
+        
+          
+            Description
+          
+          
+            Enter a meaningful description for the journal line.
+            Example: Billings
+          
+        
+        
+          
+            Credit
+          
+          
+            Enter the donation amount.
+          
+        
+      
+    
+  
+   
+  
+  
+    A warning message displays indicating that a bank transaction type is mandatory. Click the Bank tab just above the table grid to access the screen where this value is populated.
+  
+  
+  
+    In the Bank transaction type field, select 187-CASHLC Cash Letter Credit from the drop-down selection list.
+  
+  
+  
+    Click List to return to the journal lines.
+  
+  
+  
+    Scroll to the right to find the Offset account column. Select the relevant offset account from the drop-down selection list.
+  
+  
+  
+    On the menu just above the table grid, click the Financial dimensions tab and select Account from the drop-down selection list.
+  
+  
+  
+    On the Enter account financial dimensions screen, enter the correct financial dimensions based on the IRC account structure. 
+  
+  Note: Customer accounts require D1, D4, D5. 
+  
+    Click OK.
+    Click Financial dimensions > Offset account.
+    On the Enter offset account financial dimensions screen, enter the correct financial dimensions based on the IRC account structure.
+    Click OK.
+    Click Save.
+  
+  
+  Note: The following three steps apply only if processing a cash receipt (prepayment) at HQ. Otherwise, proceed to step 18.
+  
+    Click the Payment tab.
+    Select Yes in the Prepayment journal voucher field.
+    Click Save.
+  
+  
+    Close the page by selecting X at the top right of the screen.
+    Submit the journal to Workflow for approval.
+  
+  Result
+  You have created a customer payment journal entry.
+  Once approved, the customer payment journal can be posted.
+  Perform Accounts Receivable Settlement by Invoice
+  Purpose
+  Settlement involves the application of transactions from accounts to increase or decrease the balance of each account. Settlement within Accounts Receivable can occur between all transaction types that affect the customer balance, such as invoices and payments.
+  When Accounts Receivable records a customer payment, they mark the appropriate invoices for settlement, based on the information that is included with the donor's payment. The Settle transactions page is used to mark transactions for settlement. This page can be opened from any unposted invoice or payment. When the transaction is posted, the settlement is also posted.
+  As transactions are settled, the outstanding balance of each transaction increases or decreases as appropriate. In a typical scenario, where an invoice and payment are settled, the status and balance of each transaction is updated according to the following rules:
+  
+    If the payment amount is more than the invoice amount, the invoice balance is reduced to 0.00, and the invoice is closed. The payment remains open, and the balance is the amount by which the payment exceeds the invoice amount.
+    If the payment amount is less than the invoice amount, the payment balance is reduced to 0.00, and the payment is closed. The invoice remains open, and the balance is the amount by which the payment underpaid the invoice.
+    If the payment amount equals the invoice amount, both the payment and the invoice are closed, and the balance of both is 0.00.
+  
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer payment journal.
+  
+  
+  
+    Click New.
+  
+  
+   A new journal line is added at the top of the table grid.
+  
+    In the Name field, enter or select CR.
+    In the Description field, enter a meaningful description for the journal. 
+    On the menu at the top of page, click Lines.
+  
+  
+  
+    In the Account field, click the drop-down arrow to perform a search for the customer name.
+    In the Description field, enter a meaningful description for the line.
+    Click Save on the menu at the top of page. 
+  
+  
+  Note: A warning message displays indicating that a bank transaction type is mandatory. Click the Bank tab just above the table grid to access the screen where this value is populated.
+  
+    Click the Bank tab just above the table grid.
+  
+  
+  
+    In the Bank transaction type field, select 187-CASHLC Cash Letter Credit from the drop-down selection list.
+    Click List to return the voucher lines.
+  
+  
+  
+    Click Settle transactions.
+  
+  Note: The Settle Transactions button is no longer greyed out if there are transactions to settle.
+  
+  
+    Select the transaction to be settled. The credit or debit amount will auto-populate.
+  
+  Note: Lines that have a person icon next to them indicate that the transaction is in use in another customer payment journal. 
+  
+    Click OK to proceed.
+  
+  
+  
+    Choose the offset bank account.
+  
+  
+  
+    On the menu just above the table grid, click the Financial dimensions tab and select Account from the drop-down selection list.
+  
+  
+  
+    Enter the correct financial dimensions based on the IRC account structure. 
+  
+  Note: Customer accounts require the D1, D4, and D5 financial dimensions.
+  
+    Click OK to close the financial dimensions pane.
+  
+  
+  
+    Click the Financial dimensions tab again but select Offset account this time.
+    Enter the correct financial dimensions for the offset account based on the IRC account structure.
+    Click OK to close the financial dimensions pane.
+    On the menu at the top of the page, click Validate and select Simulate posting.
+    Attach any required documents as per standard attachment steps. (click the paperclip icon to access the attachments window).
+    Submit the journal to Workflow for approval.
+    Once the journal has been approved, Finance posts the journal by clicking Post and selecting Post from the drop-down selection list.Click Post.
+  
+  Result
+  You have performed account settlement.
+   
+  Perform Accounts Receivable Settlement by Customer
+  Purpose
+  Use this settlement procedure if there are no applicable invoices to settle. Accounts Receivable can settle a balance on a customer’s record without selecting any invoices.
+  Steps
+  
+    Navigate modules to Accounts receivable > Customers > All customers.
+  
+  
+  
+    Select the checkbox next to the relevant customer.
+  
+  Tip: Filter on the Name column to search for a customer.
+  
+    On the Customer action pane at the top of page, click Balance.
+  
+  
+  The customer’s balance is displayed. A positive amount shows that the customer owes a payment to IRC and a negative amount shows that IRC owes a credit to the customer.
+  
+    Close the page by clicking the X at the top right of the page to close the page and return to the All customers page. in the Name column to find the relevant customer.
+  
+  
+  
+    Ensure the customer is still selected. On the Collect action pane, click Settle transactions.  
+  
+  This will settle any receipts against existing credits.
+  Reimburse / Reverse a Cash Receipt
+  Purpose
+  A donor may be reimbursed for their full balance amount using the procedure below. A credit note or accounts payable journal entry may also be entered in Integra.
+  If the customer has multiple projects and therefore multiple D1 codes, these D1 codes will have different associated balances with each D1 code. For this reason, the procedure outlined below must not be used for customers with multiple D1 codes. The reimburse function is only available for a customer with one project.
+  For customers with more than one project and multiple D1 codes, reimbursement is made using the GL function. Refer to the procedure Reimburse a Customer/Donor using the General Ledger.
+  Steps
+  
+    Navigate modules to Accounts receivable > Customers > All customers.
+  
+  
+  A list of customers is displayed on the All customers screen.
+  
+    Select the customer account for the reversal.
+    Click Collect > Customers balances > Reimburse customer.
+  
+  
+  
+    On the Reimbursement form, click OK.
+  
+  
+  Result
+  The donor is fully reimbursed. The donor balance is moved to the corresponding donor account in the Accounts Payable module and the payment can be performed using the normal vendor payment process in AP.
+  Apply a Customer/Donor Write-Off (Single-Project Customer)
+  Use this procedure to apply a customer/donor write-off when the customer has a single project.
+  A donor balance write-off can be completed using the DynAd template or directly as a General Ledger entry. To write-off the amount, include the following required information in the journal entry:
+  
+    The customer reference number
+    The applicable debit or credit to the customer depending on the amount to be written off
+    Enter the following financial dimensions - D1, D4 and D5
+    Use the Expense write-off account type for the offset line
+  
+  Note: A donor write-off as documented in this procedure is only applicable to customers with only one project and one D1 code. If the customer/donor has multiple projects and therefore multiple D1 codes, refer to the procedure Reimburse a Customer/Donor using the General Ledger (Multi-Project Customer).
+   
+  Steps
+  
+    Navigate modules to Credit and Collections > Customers > All customers.
+  
+  
+  
+    Select the customer with a balance to write-off.
+    On the Collect tab, navigate to Customer Balances > Write Off.
+  
+  
+  
+    Validate the Write-off date field which defaults to today’s date.
+    Validate the Reason code which defaults to WRITEOFF.
+    Validate the Description field defaults to Write-off.
+    Click OK.
+  
+  
+  A confirmation message displays The write off process is complete… A general journal has been created and it is now ready to be posted.
+  
+    Navigate to General Ledger > Journal entries > General Journals to locate the write off journal.
+  
+  
+  Approval workflow is enabled for the Write-Off journal and it will go through the same level of review and approval that daily general journals go through.
+  
+    Review the journal lines and submit to Workflow for review and approval.
+  
+  
+  
+    When the write-off journal is approved, follow the steps to post a periodic journal. After the write-off journal is posted the voucher transaction is displayed.
+  
+  
+  Result
+  You have processed a customer/donor write-off when the customer has a single project.
+  Reimburse a Customer/Donor Using a General Ledger Journal (Multi-Project Customer)
+  Purpose
+  Use this procedure to process a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.
+  To determine all the D1 balances a customer has, navigate to Project management and accounting > Projects > All projects.
+  Note: You are not able to use the reimburse function because this reimburses the entire customer balance and for this scenario only a portion needs to be reimbursed to the specific project.
+  Prerequisites
+  Prior to being able to reimburse funds as a result of an outstanding balance on a project, the following prerequisites must be met.
+  
+    To be able to reimburse a customer, the customer must exist as a vendor in Integra.
+    Navigate to Organization administration > Global address book > Global address book to determine if the customer is set up as a vendor to enable payment.
+      
+        If the customer is not set up as a vendor, follow the established process and steps to add the vendor role to the customer.
+      
+    
+    Project is known
+    Customer is known.
+      
+      
+    
+  
+  Steps
+  
+    Navigate the modules to General ledger > Journal entries > General journals.
+  
+  
+  
+    Click New.
+    In the Name field, select JE general voucher.
+  
+  Note: Update the Description field to include a brief description of what the journal is for, e.g., Donor reimbursement GB751.This helps distinguish this journal from other journals which may be pending.
+  
+    Click Lines on the menu at the top.
+  
+  The journal lines open to populate based on the type of transaction you are booking.
+  Notes:
+      
+      The Date, Voucher, Company and Account type fields automatically default to today’s date, sequential voucher number, your legal entity and ledger. Each field except the Voucher field can be modified by the user.
+      
+      If the entry is related to your current legal entity, do not change the Company.
+  
+  
+    Update the Account type field to Customer, as the reimbursement is to the customer.The selection list in the drop-down depends on the Account Type that was previously selected.
+  
+  If Customer was selected in the Account type field, the drop-down selection list in the Account field are customer (donor) accounts.
+  
+  
+    Enter a description in the Description field of the type of journal this is.
+  
+  
+  
+    Click Financial dimensions in the menu above the lines grid.
+    Complete the following fields on the Enter account financial dimensions form:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Project ID (D1)
+          
+          
+            The project from which funds being reimbursed are associated.
+             
+            (e.g.) GB751 – FY2021 Reception and Placement.
+          
+        
+        
+          
+            Operating Unit (D4)
+          
+          
+            Operating Unit.
+            This entry is based on the location and legal entity.
+            (e.g.) UGAAT – Atlanta, GA.
+          
+        
+        
+          
+            Reporting Unit (D5)
+          
+          
+            This entry is based on the location and legal entity.
+            (e.g.) 6DAT – US, Atlanta.
+          
+        
+      
+    
+  
+  
+    Scroll down the form and click OK.
+  
+  
+  
+    Enter the credit balance that is being reimbursed in the Debit field.
+  
+  The debit/credit field depends on the Account type and nature of the entry selected.
+  Note: It is recommended that the offset account NOT be used to keep the journal concise and avoid system errors due to wrong data inputs. It is recommended to use double-entry, a line for debit and a line for credit.
+  
+    Click New to add a second line.
+    Update the Account type field to Vendor.
+  
+  The selection list in the drop-down depends on the Account Type that was previously selected.
+  
+  
+    Click Financial dimensions in the menu above the lines grid.
+    Select Account from the drop-down in the field.
+    Complete the following fields on the Enter account financial dimensions form:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Project ID (D1)
+          
+          
+            The project from which funds being reimbursed are associated.
+             
+            (e.g.) U1000 – UNRESTRICTED FUNDS.
+          
+        
+        
+          
+            Operating Unit (D4)
+          
+          
+            This entry is based on the location and legal entity.
+            (e.g.) UGAAT – Atlanta, GA.
+          
+        
+        
+          
+            Reporting Unit (D5)
+          
+          
+            This entry is based on the location and legal entity.
+            (e.g.) 6DAT – US, Atlanta.
+          
+        
+      
+    
+  
+  
+    Scroll down the form and click OK.
+    Complete the following fields on the second line:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Account
+          
+          
+            This is the vendor number for the customer the funds are being reimbursed to.
+            Enter the customer’s vendor number.
+          
+        
+        
+          
+            Description
+          
+          
+            Defaults from the previous line. Leave the default.
+          
+        
+        
+          
+            Credit
+          
+          
+            Enter the amount being reimbursed to the customer.
+            This is the same value being entered in the debit field on the previous line.
+          
+        
+      
+    
+  
+   
+  
+  
+    Click Validate > Simulate posting to validate the entries.
+    Click X to close the journal.
+    Click the paperclip icon to attach the relevant documentation that warrants a request for reimbursement.
+    Click Workflow > Approve.
+    Click Approve.
+  
+  Result
+  You have processed a reimbursement to a customer when the customer has multiple projects and multiple associated Project D1 balances.
+  Process Cash Return from Staff in Accounts Receivable
+  Purpose
+  Use this procedure to process a cash return when staff collects an advance for program activities, travel, or other purposes and there is a balance to return to the IRC.
+  Steps
+  
+    Navigate modules to Accounts receivable > Payments > Customer payment journal.
+  
+  
+  
+    On the menu at the top of page, click New.
+  
+  
+  A new journal line is added at the top of the Customer payment journal grid.
+  
+    In the Name field, enter or select CR – Cash Receipt.
+    In the Description field, Cash Receipt defaults. Enter a meaningful description for the journal (eg.) Cash receipt – From Staff.
+    On the menu at the top of page, click Lines.
+  
+  
+  
+    Click the General tab.
+    Select Vendor in the Account type field.
+    Click the List tab.
+  
+  
+  
+    Complete the following fields:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Description and/or Action Required
+          
+        
+        
+          
+            Account
+          
+          
+            Enter the account number for the staff person returning the funds.
+          
+        
+        
+          
+            Account name
+          
+          
+            This value defaults from the Account field. Leave the default.
+          
+        
+        
+          
+            Description
+          
+          
+            Enter a meaningful description for the journal line.
+            E.g.,Cash return from staff
+          
+        
+        
+          
+            Credit
+          
+          
+            Enter the cash return amount.
+          
+        
+        
+          
+            Offset account
+          
+          
+            Select the account where the funds are going.
+            E.g., 10326ATUSD JPMorgan Chase Bank
+          
+        
+        
+          
+            Method of payment
+          
+          
+            Select the method of payment from the staff person.
+            E.g., Check Check Payment
+          
+        
+      
+    
+  
+   
+  Note: If the funds being returned by staff is the result of an advance, complete steps 10 through 12; if not, proceed to step 13.  .
+  
+  
+    Click the Payment tab.
+    Complete the following fields:
+  
+  
+    Toggle Payment journal voucher to Yes.
+    Change the Posting profile to PROG ADV
+  
+  
+    Click the List tab to return to the journal lines.
+  
+  
+  
+    Click Validate > Simulate posting to validate the journal entry.
+  
+  
+  The journal entry is successfully validated and the message Operation completed is displayed. The journal can be submitted to workflow for approval.
+  
+    Click X to close the journal.
+    Click the paperclip icon to attach the relevant documentation.
+  
+  
+  
+    Click … on the top menu bar and select Workflow > Submit.
+    Enter comments as necessary and click Submit.
+  
+  Result
+  The journal is routed for approval. After approval, the approver or the Finance Manager/Officer posts the journal.
+  Process a Currency Revaluation
+  Use this procedure to process a currency revaluation. Currency revaluation is always performed at month-end when an office has grants in currencies other than USD. This procedure is executed by the Finance Manager, DDF, or another similar role.
+  Prerequisites
+  
+    All month-end journal processing is complete
+    Revenue recognition is complete
+  
+  Steps
+  
+    Navigate modules to Accounts receivable > Periodic tasks > Foreign currency revaluation.
+  
+  
+  
+    Select the line item for which to process the currency revaluation.
+    Click Foreign currency revaluation on the toolbar at the top.
+  
+  The Foreign currency revaluation form opens.
+  
+  
+    Complete the following fields in the Parameters section:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          
+            Method
+          
+          
+            Use Standard to post the foreign currency job no matter if there is a profit or a loss.
+            Use Minimum to post the revaluation only if it shows a loss.
+          
+        
+        
+          
+            Considered date
+          
+          
+            Uses the date the transactions are found. The exchange rate is for this date.
+            If a revaluation is run for an earlier date, the system will not go back to that date but will go to a more recent revaluation date.
+          
+        
+        
+          
+            Date of rate
+          
+          
+            This date determines the exchange rate that is used in the foreign currency revaluation. 
+          
+        
+        
+          
+            Use posting profile from
+          
+          
+            Use Posting for the posting profile for the customer transactions.
+            Use Select to enter the posting profile in the Posting Profile field. If you choose Select the profile decides how the revaluation is carried out.
+          
+        
+        
+          
+            Posting profile
+          
+          
+            Select the posting profile GENAR or CR.
+          
+        
+        
+          
+            Dimension
+          
+          
+            Posting – Financial dimensions will be posted on the transactions. The process defaults to the financial dimensions from your original transaction's AR ledger account for the AR main account while it defaults to the original transaction's expense/asset/revenue ledger account for the unrealized gain/loss main account for revaluation transactions.
+            Select Posting from the drop-down.
+          
+        
+      
+    
+  
+   
+  
+    Click OK.
+  
+  
+  
+    Click Yes to the pop-up message to proceed.
+    Click X to close the Foreign currency revaluation grid.
+  
+  Result
+  You have processed a foreign currency revaluation.
+  Display Customer Aging Report
+  Purpose
+  The customer aging report contains the calculated aged balances for a customer for a period. Each aging snapshot detail record contains the total amount of the transactions with dates that are in the aging period. Transactions are assigned to an aging period, such as 30 days past due. The date is relative to the Aging as of date that is specified when you create the aging snapshot.
+  Steps
+  
+    Navigate modules to Credit and collections > Inquiries and reports > Customers > Customer ageing report. 
+    Enter the following fields in the Customer aging report:
+  
+  
+    
+      
+        
+        
+      
+      
+        
+          
+            Field
+          
+          
+            Description and/or Action Required
+          
+        
+        
+          
+            Aging as of
+          
+          
+            The date that is in the first period interval or ageing period to include on the report. 
+          
+        
+        
+          
+            Balance as of
+          
+          
+            The date in which to view the customer balances.
+          
+        
+        
+          
+            Criteria
+          
+          
+            Type of date selection:
+            Transaction date – The posting date of the transactions. For example, this might be an invoice date that is the basis for the calculation of the due date.
+            Due date – The due date of the transactions, based on the terms of payment.
+            Document date – A user-defined document date that is the basis for the calculation of the due date.
+          
+        
+        
+          
+            Aging period definition
+          
+          
+            Aging interval.
+            E.g., 30-60-90-120 (days)
+          
+        
+      
+    
+  
+  
+    In the Print aging period description field, select Yes. 
+    Click OK.
+  
+  
+  Result
+  You have displayed the Customer Aging report with the reporting parameters indicated below.
+  
+  Display Donor Balance
+  Purpose
+  The donor balance contains the calculated balances for a customer at a point in time. This information is accessible on the customer record.
+  Steps
+  
+    Navigate modules to Accounts receivable > Customers > All customers.
+  
+  
+  
+    A list of customers is displayed on the All Customers screen. Select the customer record for which the balance will be reviewed.
+    Click Balance. 
+  
+   
+  Result
+  You have displayed a customer’s balance.
+  
+

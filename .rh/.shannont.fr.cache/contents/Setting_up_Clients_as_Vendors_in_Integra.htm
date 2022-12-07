@@ -1,0 +1,778 @@
+
+  
+    Setting up Clients as Vendors in Integra
+    In Integra, the details of all persons and organizations with whom the IRC interacts with are stored in the global address book. 
+    The BENE vendor group relates to any person who is targeted for assistance, who directly benefits from, or comes in contact with, an IRC-implemented or financially-supported IRC program.  
+    Most clients are automatically created in Integra through the ETO (Efforts to Outcome) interface. However, non-ETO clients who do not need heightened confidentiality (i.e., their name being saved in Integra is acceptable) can be manually entered by the Master Data Management (MDM) team.
+    If the office has programs where clients require heightened confidentiality, a universal naming convention can be aplied to prevent the client's name from being entered into the system. Please follow up with your technical advisor for guidance on naming conventions. 
+    The Client ID
+    
+      One client can have multiple client IDs if enrolled in multiple programs
+      When processing client payment requests, it is critical that the correct client ID is selected, as this is how Integra and ETO track what is spent on each collection and individual client.
+              
+      For client payments where the vendor selected is not the principal applicant, the client ID is the collection/case number. This number is linked to the principal applicant’s name.
+    
+     Business Process Flow
+    
+    Business Process Steps
+    
+      Caseworker enters client payment request in Client Payment Portal.
+      Caseworker submits payment request to workflow for approval.
+      Supervisor reviews the journal for accuracy. If everything is correct, the journal is approved and submitted to Finance. If errors are found, the supervisor must reject the journal so that the caseworker can make adjustments.
+      Finance posts the payment request and prints the RAI Client Journal. This is the receipt for client signature. The Receipt must be provided to the caseworker so that a signature from the client can be obtained in step 6.
+      Finance processes payment in Integra.
+    
+    
+      The client's date of birth is required for payment. Refer to the procedure in this section titled, Display List of Direct Assistance Cases, for instructions on finding this information.
+    
+    
+      Caseworker gives prepaid card (or check) to client (or vendor, when applicable) and obtains client's signature on hard copy printout of RAI Client Journal.
+      Caseworker saves electronic copy of signed journal in clien'ts digital Box folder or attaches it to the payment request journal in Integra.
+      Caseworker files hard copy in client’s folder.
+    
+    ‎
+    Recommended Follow-on Steps
+    
+      Caseworker validates that payment transferred to ETO.
+    
+    Display List of Direct Assistance Cases
+    Purpose
+    Use this procedure to determine/view the following:
+    
+      The list of clients that have come over from ETO, and in which programs they are enrolled. This helps determine the case number to use to process the payment request.
+      The invoice journals (payment requests) posted for a client.
+      The birth date of a client
+        
+          The finance manager requires the date of birth to load a customer card.
+        
+      
+    
+    ‎
+    Note: The table grid can be personalized to add/remove and move columns. Refer to the procedure directly after this procedure for instructions on personalizing a grid.
+    Steps
+    
+      Navigate to Project management and accounting  Projects  Direct assistance cases. You can also access this page by searching “Direct assistance cases” in the search bar at the top of the screen.
+    
+    
+    
+      A list of all cases is displayed for the legal entity. Review the information contained under each column. Scroll to the right to view all the columns.
+    
+    Note: The client’s date of birth is found in the Date of birth column (scroll to the right).
+    View the number and type of cases for a client
+    
+      To narrow down results to a specific client, filter on the Full name column.
+      Review all the individual case numbers related to that full name.
+    
+    View the invoice journals posted for a client
+    
+      Navigate to the Vendor account column in the grid. (Scroll to the right to see all columns)
+      Click a vendor account number to open the vendor master record.
+      On the action pane near the top of the form, under the Vendor tab, click Transactions to view a list of posted journals.
+    
+    Note: There will be two entries for each payment that has been completed. Those vouchers starting with “AP” reflect the invoice journals (initiated by caseworkers) and those with “PV” are those vendor payment journals completed by Finance used to process the client payment.
+    Result
+    You have displayed a list of clients and their enrollment programs. You have also viewed invoice journals (payment requests) posted for a client.
+      ‎
+    Create Client Payment Request on Mobile Client Payment Portal
+    Purpose
+    Use this procedure to enter a client payment request journal on the mobile client payment portal.
+    Each payment request journal requires two lines: a vendor line and a project line.
+    Attention:
+        
+         - If you are including multiple vendor lines in one journal (all using the same Client ID), each vendor line must have a corresponding project line.
+        
+        - Only one Client ID can be referenced on single journal. This is because the Client ID is now selected on the header level of journal and therefore applies to all lines in the journal.
+        
+        - Ensure you attach the client-signed document at the journal batch level, not on the individual journal voucher lines. 
+    There are different financial dimension requirements for each line in the payment request journal:
+    
+      The vendor line requires the D1, D4, and D5. These populate automatically.
+      The project line requires the D1, D2, D3, D4, D5, and D6 financial dimensions.
+    
+    Prerequisites
+    
+      Client has a BENE vendor record set up in the Integra system. If a BENE vendor record does not exist for the client, contact the Master Data Management (MDM) team.
+      All required financial dimensions are known
+    
+    Steps
+    
+      Navigate modules to Accounts Payable > Invoices > Invoice Journals Mobile > Invoice Journal (Mobile).
+    
+      
+    
+      On the menu at the top page, click New to generate a new invoice journal.
+    
+     
+    
+       Complete the following header-level information:
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+          Field
+          Entry Required
+        
+        
+          Journal name
+          Select the relevant journal name for your office from the drop-down selection list.
+        
+        
+          
+            Description
+          
+          
+            Enter a description with specific details to help you identify the payment request more easily, i.e., client name, payment reason, date, caseworker’s initials. 
+            e.g., Tang Cheng, Rental Assistance, ICM, June 2022
+          
+        
+        
+          
+            Client ID
+          
+          
+            Enter the client ID for the client.
+            Important Notes: 
+            
+              If you select a client ID that has expired, a warning message displays indicating that the client is not active. Contact Finance if the client ID needs to be reactivated.
+              Since the client ID is entered at the header level, only one client ID can be entered for the journal. This client ID is applied to all lines in the journal.
+            
+          
+        
+        
+          
+            Principle Applicant Name
+          
+          
+            This value defaults after the Client ID field is populated.
+          
+        
+      
+    
+    
+      
+    
+      Carefully review all completed fields for accuracy. Due to the mobile funtionality of this transaction, it is difficult to make changes to this information after you click OK.
+      Click OK to proceed.
+    
+      
+    
+      Validate that the new journal is highlighted and displayed at top of list. (Newest journals always display at top of list.)
+    
+    Tip: To display only journals created by you, click the checkbox next to Show user-created only. 
+    
+      Click the Lines tab to proceed.
+    
+      
+    
+      Click New. 
+    
+      
+    
+      Complete the following fields for the vendor line:
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
+          Field
+          
+            Entry Required
+          
+        
+        
+          Vendor account number
+          
+            Click the drop-down arrow and select the client's vendor account number.
+            Tip: To search the list, click the Search name column header to bing upa search filter window and enter the last nae of the client. If you select the search option, "Contains", you can search by first or last name.
+            Important: If paying a vendor on behalf of a client, enter the account number by searching for the name of the vendor you are paying, e.g., Walmart or landlord.
+          
+        
+        
+          
+            Invoice
+          
+          
+            Enter a unique invoice number.
+            Note: Each payment, regardless of whether it is to the same client, requires a unique invoice number. The standard format to use is the client’s initials and the date.
+            Example:
+            CT June 2022
+          
+        
+        
+          
+            Purpose (Description)
+          
+          
+            This is a free text field that allows you to enter a longer description.
+            Enter a clear description of what the payment is for.
+            This is the description that prints on the voucher.
+            Example:
+            Rental assistance for ICM Client, 123 Apple Road, Apt. 1E
+          
+        
+        
+          
+            Method of Payment (Posting profile)
+          
+          
+            Click the drop-down arrow and select the type of payment issuance. E.g., PREPCARD (Prepaid card).
+            Important: Selecting the correct method of payment is critical in ensuring the correct G/L account gets updated. Options GENAP or PREPCARD are the only options that should be selected.
+            
+              For any payments to a 3rd party (including rent to landlords or shopping for a client at Walmart), always use GENAP.
+              If check is being issued direct to client, use GENAP.
+            
+            For all prepaid payment cards, use PREPCARD, e.g., for “pocket money”.
+          
+        
+        
+          
+            Vendor amount
+          
+          
+             
+            Enter the amount being paid to the client.
+          
+        
+      
+    
+    
+      
+    
+      Click OK to proceed.
+    
+      
+    The vendor line entry is displayed. The project line must now be added.
+    
+      Click New.
+    
+      
+    
+      Complete the following fields for the project line:
+    
+    
+      
+      
+      
+        
+          
+            Field
+          
+          
+            Entry Required
+          
+        
+        
+          Project ID
+          Click the drop-down arrow and select the relevant project ID from the selection list.
+        
+        
+          
+            Category
+          
+          
+            Select the relevant project category from the drop-down selection list. 
+            The most common entries used:
+            
+              75020.0.e – Cash assistance
+              75006.0.e – Refugee Housing/Rent
+            
+          
+        
+        
+          
+            Project Amount
+          
+          
+            This value defaults from the amount entered on the vendor line. 
+            Note: If required, this amount can be split into different amounts for different project lines, as long as the different amounts are for the same client.
+          
+        
+        
+          
+            ETO Workspace
+          
+          
+            Select the relevant ETO workspace from the drop-down selection list
+            Example: Safety and Wellness
+          
+        
+        
+          
+            Client ETO program
+          
+          
+            This value defaults based on the Project ID entered.
+          
+        
+        
+          
+            Project ETO program
+          
+          
+            This value defaults based on the Project ID entered.
+          
+        
+      
+    
+     
+    
+       Click OK to proceed.
+    
+    Note: If amounts are being split among multiple projects for a single client, repeat steps 11 through 13 above. Otherwise, proceed to the next step.
+     
+    
+    
+    Enter Financial Dimensions for the Project Line(s) 
+    
+      With the project invoice line selected, click Financial dimensions and select Account from the drop-down selection list.
+    
+      
+    
+      Complete/validate all required financial dimensions for the project line. (D1 throught D6 are all required) 
+    
+    Note: With the exception of the Operating Unit (D4), some of these values may default based on the project setup.  
+    
+      Click OK to return to the list of journal lines.
+    
+    Note: If there are multiple project lines, repeat steps 14 through 16 above. If not, proceed to next step.
+      
+    
+      Once all journal lines are complete, click Save on the menu at the top of the page.
+      Click the X in the top right corner of page to return to the Invoice Journal (Mobile) page. 
+    
+    Validate Payment Journal Posting via Posting Simulation
+      
+    
+      Click Validate and select Simulate posting from the drop-down selection list. 
+      Confirm that a message appears at the top of the page stating, “Operation completed”.
+    
+    Note: This is just a simulation of the actual posting to ensure there will be no errors. 
+     
+    
+    Submit Invoice Journal to Workflow Approval 
+    
+      Select the journal (it should be highlighted in blue) and click Workflow > Submit on the top menu bar.
+      In the workflow comment window, enter any relevant details for the approver.
+    
+    Note: When requesting payments to a Bank of America pre-paid card, enter the client’s date of birth and proxy number in the workflow comment pane. 
+    
+      Click Submit.
+    
+    Additional Workflow Notes: 
+    
+      An invoice journal cannot be posted until the workflow approval is fully complete.
+      If you want to recall the item from workflow to make changes, and the item has not yet been approved, click Workflow à Recall. You can then make changes and resubmit to workflow.
+      If the workflow item gets rejected by the approver, the caseworker will receive an email alerting them it was rejected.
+    
+    Result
+    You have created a client payment request (invoice journal) and submitted it for approval.
+    
+      Once approved, Finance can post the invoice journal, process payment and provide the case worker the funds to give to the client, i.e., check or prepaid card. Remember to obtain the client’s signature on the printed invoice journal when payment is given to client.
+    
+    Next Steps
+    
+      Once the invoice is fully approved, Finance actions the final “post” for the invoice journal.
+      Finance prints the RAI Client Journal and provides it to the case worker.
+      Caseworker gives prepaid card (or check) to client (or vendor, when applicable) and obtains client signature on hard copy printout of RAI Client Journal.
+      Caseworker saves electronic copy of signed journal in client’s digital box folder or attaches it to payment request journal in Integra.
+      Caseworker files hardcopy in client's folder. 
+    
+    Print Posted Invoice Journal (Finance function)
+    Steps 
+    On the Invoice journal page, select the invoice journal to be printed.
+    
+      On the Invoice journal page, select the invoice journal to be printed.
+      On the menu at the top of the page, click Print and select  RAI Journal from the drop-down list. (This printout has been customized for RAI client payments)
+    
+    
+            
+               
+            
+           
+    
+      Under Destination section, click Change.
+    
+      
+    
+      Select Printer. 
+    
+      
+    
+      In the Name field, select the relevant printer from the drop-down list.
+      Click OK to proceed.
+    
+     \
+    
+      Review the print output for accuracy.
+      Close the print window to return to the payment processing screen.
+      Obtain client signature on printout when issuing payment and file the signed copy in client’s hard-copy file.
+    
+    Upload Signed Copy of Invoice to Journal Invoice Record
+    Purpose
+    Use this procedure to attach the client-signed invoice to the posted invoice journal in Integra.
+    IMPORTANT: The invoice must be attached at the journal batch level, not the journal voucher line level.
+    Prerequisites
+    
+      Finance has posted the invoice journal and issued payment to client.
+      Client has signed the hard copy of the invoice journal.
+    
+    Steps
+    
+      Access the Client Payment Dashboard page and select the tile Payment requests (Invoice journal).
+    
+    
+    
+      Under Show, click the drop-down arrow and select Posted.
+    
+    Notes:
+        - This field always defaults to Not posted so this must be changed to Posted each time a signed invoice needs to be uploaded.
+        - Select the checkbox next to Show user-created only to narrow down the list to only display journals created by you.
+    
+      Select the checkbox to the left of the relevant journal batch number.
+    
+    
+    
+      To upload/attach a file, click the paperclip icon in the top right corner tool bar.
+    
+    
+    
+      On the menu bar at top, click New and select File from the drop-down list.
+    
+    
+    
+      Click Browse and locate and attach the signed document.
+    
+    A message will appear when the upload is complete. The number on the paperclip icon will also update to reflect the number of attachments on the record.
+    
+      Close the attachment window to return to the invoice journal page.
+    
+    Note: To view all attachments at any time, simply click the paperclip icon and the attached documents are displayed in the left-hand pane.
+    Result
+    You have uploaded the client-signed invoice to the posted invoice journal in Integra
+      ‎
+    Check Workflow Approval Status for an Invoice Journal
+    Purpose
+    Use this procedure to find out if an invoice journal has been fully approved. The journal cannot be posted by Finance until the workflow approval is complete.
+    Note: A caseworker will get an email if an invoice journal has been rejected.
+    Prerequisites
+    
+      Invoice journal has been submitted to workflow.
+    
+    Steps
+    
+      Display the Invoice journal list screen.
+    
+    
+    
+      Select the relevant journal invoice line. (Click to the left of line and a blue checkmark will appear once selected).
+    
+    Note: Newest entries are at the bottom of the list.
+    
+      On the top menu, click Workflow and select View history.
+    
+    
+    
+      Scroll down to the Tracking details list section. Under the Message column, you can see the approver’s name.
+      Scroll down further to the Tracking details section.
+    
+    
+    
+      Review the status of the workflow item. Once approved, you will see a “Workflow completed” message.
+    
+    Result
+    You have checked the workflow approval status for an invoice journal.
+      ‎
+    Recall an Invoice Journal from Workflow
+    Purpose
+    Use this procedure if you would like to make any edits to a payment request (invoice journal) or delete a payment request that has been submitted but has not yet been fully approved. This option is only available if the workflow process has not been completed.
+    Prerequisites
+    
+      The invoice journal has been submitted to workflow.
+    
+    Steps
+    
+      Display the Invoice journal list screen.
+    
+    
+    
+      Select the relevant journal invoice line. (Click to the left of line and a blue checkmark will appear once selected).
+    
+    Note: Newest entries are at the bottom of the list.
+    
+      On the top menu, click Workflow and select Recall.
+    
+    
+    
+      Enter a comment (optional) and click Recall.
+    
+    ‎
+    Result
+    You have recalled an invoice journal from workflow.
+    
+      Make any required edits to the invoice journal and then submit to workflow again.
+      If invoice journal should be deleted, select the journal batch number on the Invoice journal page, and click Delete on the menu at the top of the page.
+    
+    ‎
+    Edit an Invoice Journal after Workflow Approval is Completed
+    Purpose
+    Use this procedure to make changes to an invoice journal that has already been fully approved. Once the change is made, the invoice journal must be submitted to workflow again.
+    Prerequisites
+    
+      The workflow status for the item is Complete.
+    
+    Steps
+    
+      Display the Invoice journal list screen.
+    
+    
+    
+      Select the relevant invoice journal line.
+      On the top menu, click Lines > Edit.
+    
+    Note: If you don’t see the Edit option, it means that the Workflow approval has not been completed and you can still use the Recall option from the Workflow menu.
+    
+    
+      Click OK when prompted with the pop-up message.
+    
+    
+    
+      Make required changes to journal lines.
+      Click X in the top right corner to close the window to return to the Invoice journal list screen.
+    
+    
+    
+      Select the updated journal and click Workflow > Submit.
+    
+    
+    
+      Enter a comment (optional) and click Submit.
+    
+    Result
+    You have edited an invoice journal after workflow was completed.
+    
+      Once edits are complete, submit invoice journal to workflow approval again.
+    
+    Approver Responsibilities
+    As an approver, you will receive an email when a client payment invoice journal requires your approval. Click the link in the email to access the approval pages in Integra.
+    
+      Alternatively, invoices requiring your approval can also be viewed and actioned from your Home page under Work items assigned to me.
+      All requests get routed to everyone in the supervisor approver group; supervisors should only look for their direct reports' requests.
+    
+    There are two lines to validate in every client payment invoice journal: 1. The project line and 2. The vendor line.
+    Approve a Client Payment Request
+    Steps
+    
+      Display your Integra Home page.
+    
+    Note: If you are applying the approval from your email notification, proceed to step 3.
+    
+    
+      Under Work items assigned to me, click the hyperlinked workflow item requiring your approval.
+    
+    
+    
+      Click the hyperlinked work item line to access the Invoice journal page.
+    
+    
+    
+      Click the relevant journal batch number to access the Vendor invoice journal page.
+    
+    
+    
+      Refer to the table below for approval review details.
+    
+    
+      
+        
+          
+          
+        
+        
+          
+            
+              Review Item
+            
+            
+              Details
+            
+          
+          
+            
+              Approval notes
+            
+            
+              Review any approval notes from the journal invoice creator. These notes can be seen in the email. They can also be seen in the workflow history under the Message column of the Tracking details section.
+            
+          
+          
+            
+              Project Line
+            
+          
+          
+            Project ID and description
+            This is displayed in the Account and Account name fields of the project line.
+          
+          
+            
+              Project category (D2)
+            
+            
+              This is displayed in the Category field of the project line.
+            
+          
+          
+            Client ID
+            Valiate the Client ID.
+          
+          
+            ETO Workspace
+            Ensure this matches the value in the Client ETO Program field, otherwise, the transaction will not flow to ETO.
+          
+          
+            
+              Description of payment
+               
+            
+            
+              This is displayed in the Description field.
+              E.g., pocket money
+            
+          
+          
+            
+              Amount of payment
+            
+            
+              This is displayed in the Debit field.
+            
+          
+          
+            
+              Financial dimensions
+            
+            
+              Select the checkbox to the left of the project line.
+              On the menu directly above the table, click Financial dimensions and select Account.
+              Validate the accuracy and completion of the D-codes for the project line.
+              Required entries are D1 through D6, and D9.
+              
+                Ensure the D9 reflects the vendor (client) being paid.
+              
+            
+          
+          
+            
+              Vendor Line
+            
+          
+          
+            
+              Client vendor ID and client name
+            
+            
+              This is displayed in the Account and Account name fields.
+            
+          
+          
+            
+              Description of payment
+               
+            
+            
+              This is displayed in the Description field and must match the description entered in the project line.
+              E.g., pocket money
+            
+          
+          
+            
+              Amount of payment
+            
+            
+              This is displayed in the Credit field and must match the amount displayed in the project line.
+            
+          
+          
+            
+              Financial dimensions for vendor line
+            
+            
+              Select the checkbox to the left of the vendor line.
+              On the menu directly above the table, click Financial dimensions and select Account.
+              Validate the accuracy and completion of the D-codes for the vendor line.
+              Required entries are D1, D4 and D5.
+              Note: The D1 should always be U1000 for the vendor line.
+            
+          
+          
+            
+              Posting profile
+              E.g., prepaid card
+            
+            
+              This is displayed in the Posting profile field of the vendor line if the journal has been personalized using the steps in the note below or under the Invoice Tab if it has not.
+              If a Posting Profile of Prepcard is selected, caseworker must provide the client’s DOB and card Proxy number in the description.
+              Note: This column must be manually added to the table. Refer to the document titled, Personalize Table Grid Layout for step-by-step instructions.
+            
+          
+        
+      
+    
+    
+    
+      In the bottom section of the page, validate that the balance is zero.
+      Once all information has been validated, click the X in the top right corner of page to return to the Invoice journal page.
+      To action the approval, on the menu at the top of the page, click Workflow and select Approve from the drop-down selection list.
+    
+    Note: If there are errors, select Reject and enter details of the error(s) in the approver notes. The creator will need to make the required changes and submit to workflow again.
+    
+      Click Approve to proceed.
+    
+    Result
+    You have approved the client payment request invoice journal.
+    
+      Finance can now post the invoice and process payment to client.
+    
+    ‎
+    Requesting Client Payment for Minor Clients (under 18 years)
+    
+      
+         Depending on the nature of your program, the steps for requesting payments on behalf of minor clients may differ. Ideally your program utilizes ETO to house minor clients – this is typically in the Youth, Workforce Development or Safety and Wellness Workspaces. If this is the case, the minor client is created via the ETO/Integra interface and appears on the Direct Assistance Case Table.
+          
+        If your program does not utilize ETO, then the minor client must be manually created by your office’s local finance manager on the Direct Assistance Case Table. It is ONLY the local office finance manager who is allowed to add clients to the Direct Assistance Case Table.
+           
+        In both of the above instances, as the minor client is under the age of 18, no vendor record is created.
+           
+        In most cases, when working with a minor client, payments are made to a responsible guardian, caretaker, or sponsor. When this happens, the guardian, caretaker, or sponsor must be created as a vendor in Integra. This is done by emailing TRADEVENDOR.CREATION@RESCUE.ORG and providing the following information:
+          
+          
+            First Name
+            Last Name
+            Date of Birth
+            Address – not required but strongly recommended 
+          
+        
+      
+       
+      
+        Once the minor client is on the Direct Assistance Case Table and the vendor is appearing on the All Vendors page, follow the steps starting on page 8 to process the request for a payment to a client.
+           
+        If there is a programmatic reason not to make the payment to a responsible guardian, caretaker, or sponsor, and instead, payment must be made directly to the minor child, select the generic client record as the vendor (e.g., Atlanta Client) on step 9 of the Create Client Payment Request procedure in this guide. All other steps of this procedure remain the same.
+           
+        As long as the correct ETO Program is tagged to the project ID and the correct client ID is selected, this transaction should flow over to ETO, the same as any third party payment.
+      
+    
+    
+  
+

@@ -188,3 +188,24 @@ var backgroundColor = "#509de6";
 	rh.model.publish(rh.consts('KEY_FEATURE'), features);
 	rh.model.publish(rh.consts("KEY_LAYOUT_VERSION"), "3.0");
 }.call(this));
+
+(function() {
+	document.addEventListener('DOMContentLoaded', function () {
+		rh._.delay(function() {
+			
+			
+				
+					document.getElementById("custom-button-2").addEventListener('click', () => {rh.model.publish(rh.consts('EVT_PRINT_TOPIC'));return false;});
+				
+				
+				
+			
+				
+					document.getElementById("custom-button-3").addEventListener('click', () => {rh.model.publish(rh.consts('EVT_REMOVE_HIGHLIGHT'));return false;});
+				
+				
+				
+			
+		}, 500)
+	})
+}.call(this));

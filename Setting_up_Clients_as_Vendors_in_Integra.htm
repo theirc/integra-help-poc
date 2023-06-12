@@ -2,46 +2,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 
-  <script type="text/javascript" language="JavaScript">
-    //<![CDATA[
-    function reDo() {
-      if (innerWidth != origWidth || innerHeight != origHeight)
-        location.reload();
-    }
-    if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
-      origWidth = innerWidth;
-      origHeight = innerHeight;
-      onresize = reDo;
-    }
-    onerror = null;
-  //]]>
-  </script>
-  <style type="text/css">/*<![CDATA[*/
 
-    < !-- div.WebHelpPopupMenu {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      z-index: 4;
-      visibility: hidden;
-    }
-
-    p.WebHelpNavBar {
-      text-align: right;
-    }
-
-    -->
-  
-/*]]>*/</style>
-
-  <script type="text/javascript">//<![CDATA[
-
-    gRootRelPath = ".";
-    gCommonRootRelPath = ".";
-    gTopicId = "25";
-  
-//]]></script>
-
+  <meta name="gRootRelPath" content="."/>
+	<meta name="gCommonRootRelPath" content="."/>
+  <meta name="gTopicId" content="25"/>
   <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
   <script type="text/javascript" src="./template/scripts/common.min.js"></script>
   <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
@@ -53,7 +17,7 @@
 <link rel="stylesheet" type="text/css" href="assets/masterpages/integra-rh_template.css"/><link rel="stylesheet" type="text/css" href="assets/css/integra-help.css"/>
   <meta charset="UTF-8"/>
   <title>Requesting Client Payments</title>
-  <meta name="generator" content="Adobe RoboHelp 2020"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
   
 </head>
 
@@ -84,7 +48,7 @@
     <p>In Integra, the details of all persons and organizations with whom the IRC interacts with are stored in the global address book. </p>
     <p>The <span style="font-weight:bold;">BENE <span style="font-weight:normal;">v</span></span><span style="font-weight:normal;">endor group </span>relates to any person who is targeted for assistance, who directly benefits from, or comes in contact with, an IRC-implemented or financially-supported IRC program.  </p>
     <p>Most clients are automatically created in Integra through the ETO (Efforts to Outcome) interface. However, non-ETO clients who do not need heightened confidentiality (i.e., their name being saved in Integra is acceptable) can be manually entered by the Master Data Management (MDM) team.</p>
-    <p>If the office has programs where clients require heightened confidentiality, a universal naming convention can be aplied to prevent the client&#39;s name from being entered into the system. Please follow up with your technical advisor for guidance on naming conventions. </p>
+    <p>If the office has programs where clients require heightened confidentiality, a universal naming convention can be applied to prevent the client&#39;s name from being entered into the system. Please follow up with your technical advisor for guidance on naming conventions. </p>
     <h2 class="Heading2"><a id="The_Client_ID"></a>The Client ID</h2>
     <ul>
       <li class="Numbering141"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">One client can have multiple client IDs if enrolled in multiple programs</span></span></span></li>
@@ -99,14 +63,14 @@
       <li>Caseworker enters client payment request in Client Payment Portal.</li>
       <li>Caseworker submits payment request to workflow for approval.</li>
       <li>Supervisor reviews the journal for accuracy. If everything is correct, the journal is approved and submitted to Finance. If errors are found, the supervisor must reject the journal so that the caseworker can make adjustments.</li>
-      <li>Finance posts the payment request and prints the RAI Client Journal. This is the receipt for client signature. The Receipt must be provided to the caseworker so that a signature from the client can be obtained in step 6.</li>
+      <li>Finance posts the payment request and prints the RAI Client Journal. This is the receipt for client signature. The receipt must be provided to the caseworker so that a signature from the client can be obtained in step 6.</li>
       <li>Finance processes payment in Integra.</li>
     </ol>
     <ul class="Decimal" style="margin-left: 40px;">
       <li>The client&#39;s date of birth is required for payment. Refer to the procedure in this section titled, <em>Display List of Direct Assistance Cases</em>, for instructions on finding this information.</li>
     </ul>
     <ol class="Decimal">
-      <li style="counter-reset: item1 5;" value="6">Caseworker gives prepaid card (or check) to client (or vendor, when applicable) and obtains client&#39;s signature on hard copy printout of RAI Client Journal.</li>
+      <li style="counter-reset: item1 5;" value="6">Caseworker gives prepaid card (or check) to client (or vendor, when applicable) and obtains client&#39;s signature on hard copy printout of the RAI Client Journal.</li>
       <li>Caseworker saves electronic copy of signed journal in clien&#39;ts digital Box folder or attaches it to the payment request journal in Integra.</li>
       <li>Caseworker files hard copy in client’s folder.</li>
     </ol>
@@ -131,17 +95,16 @@
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: The table grid can be personalized to add/remove and move columns. Refer to the procedure directly after this procedure for instructions on personalizing a grid.</span></h6>
     <h3 class="Heading3">Steps</h3>
     <ol>
-      <li>Navigate to <span style="font-weight:bold;">Project management and accounting  Projects  Direct assistance cases</span>. You can also access this page by searching “Direct assistance cases” in the search bar at the top of the screen.</li>
+      <li>Navigate to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt; Direct assistance cases</span>. You can also access this page by searching “Direct assistance cases” in the search bar at the top of the screen.</li>
     </ol>
     <p class="margin-left-0-25in"><span style="font-style:italic;"><span style="font-weight:bold;"><img src="assets/images/image47.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);"/></span></span></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">A list of all cases is displayed for the legal entity. Review the information contained under each column. Scroll to the right to view all the columns.</li>
     </ol>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: The client’s date of birth is found in the <span style="font-weight:bold;">Date of birth</span> column (scroll to the right).</span></h6>
-    <p><span style="font-style:italic;"><span style="font-weight:bold;">View the number and type of cases for a client</span></span></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">To narrow down results to a specific client, filter on the <span style="font-weight:bold;">Full name</span> column.</li>
-      <li style="counter-reset: item1 3;" value="4">Review all the individual case numbers related to that full name.</li>
+      <li style="counter-reset: item1 3;" value="4">Review all the individual client IDs related to that full name.</li>
     </ol>
     <p><span style="font-style:italic;"><span style="font-weight:bold;">View the invoice journals posted for a client</span></span></p>
     <ol>
@@ -156,14 +119,12 @@
     <h2 class="Heading2"><a id="Process_Payment_Request_for_a_Client"></a>Create Client Payment Request on Mobile Client Payment Portal</h2>
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to enter a client payment request journal on the mobile client payment portal.</p>
-    <p>Each payment request journal requires two lines: a vendor line and a project line.</p>
-    <h6 class="Heading6"><span style="font-weight:normal;"><strong><span style="color:#ff0000;">Attention:</span></strong><br/>
+    <p>Each payment request journal requires two lines: a <strong>vendor line</strong> (identifies who is getting the money) and a <strong>project line</strong> (identifies where the money is coming from).</p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><strong><span style="color:#ff0000;">Important Notes:</span></strong><br/>
         <br/>
-         - If you are including multiple vendor lines in one journal (all using the same Client ID), each vendor line must have a corresponding project line.<br/>
+        If you are including multiple vendor lines in one journal (all using the same Client ID), each vendor line must have a corresponding project line.<br/>
         <br/>
-        - Only <u>one </u><strong>Client ID</strong> can be referenced on single journal. This is because the Client ID is now selected on the header level of journal and therefore applies to all lines in the journal.<br/>
-        <br/>
-        - <span style="font-weight:normal;">Ensure you attach the client-signed document at the journal batch level, not on the individual journal voucher lines. </span></span></h6>
+        Only <u>one </u><strong>Client ID</strong> can be referenced on single journal. This is because the Client ID is now selected on the header level of journal and therefore applies to all lines in the journal.</span></h6>
     <p>There are different financial dimension requirements for each line in the payment request journal:</p>
     <ul>
       <li class="Numbering171">The vendor line requires the <span style="font-weight:bold;">D1</span>, <span style="font-weight:bold;">D4</span>, and <span style="font-weight:normal"><strong>D5</strong>. These populate automatically.</span></li>
@@ -178,13 +139,14 @@
     <ol>
       <li>Navigate modules to <strong>Accounts Payable &gt; Invoices &gt; Invoice Journals Mobile &gt; Invoice Journal (Mobile)</strong>.</li>
     </ol>
+    <p><strong>Note</strong>: Alternatively, each office has a QR code that may be scanned on a mobile device to access the login page.</p>
     <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" id="Picture_x0020_26" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image460.png" style="width: 519pt; height: 234pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_26" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image460.png" style="width: 519pt; height: 234pt; border-style: solid; border-width: 1px;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">On the menu at the top page, click <strong>New </strong>to generate a new invoice journal.</li>
     </ol>
     <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Teams
-Description automatically generated" id="Picture_x0020_36" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image462.png" style="width: 519pt; height: 237pt;"/> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_36" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image462.png" style="width: 519pt; height: 237pt; border-style: solid; border-color: rgb(0, 0, 0); border-width: 1px;"/> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span>Complete<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> the following header-level information:</span></span></span></li>
     </ol>
@@ -201,16 +163,22 @@ Description automatically generated" id="Picture_x0020_36" o:borderbottomcolor="
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="491">Entry Required</td>
         </tr>
         <tr>
-          <td style="border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-image: initial; border-top: none; padding: 0in 5.4pt;" valign="top" width="204">Journal name</td>
-          <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="491">Select the relevant journal name for your office from the drop-down selection list.</td>
+          <td style="border-bottom:1pt solid windowtext;border-image:initial;border-left:1pt solid windowtext;border-right:1pt solid windowtext;border-top:none;padding:0in 5.4pt;" valign="top" width="204">
+            <p><span style="margin-bottom:.1in;margin-left:0in;margin-right:0in;margin-top:.1in;margin:0in 0in 10pt;"><span style="font-size:12pt;"><span style="line-height:115%;"><span style="font-family:Arial,sans-serif;">Journal name</span></span></span></span></p>
+          </td>
+          <td style="border-bottom:1pt solid windowtext;border-left:none;border-right:1pt solid windowtext;border-top:none;padding:0in 5.4pt;" width="491">
+            <p><span style="margin-bottom:.1in;margin-left:0in;margin-right:0in;margin-top:.1in;margin:0in 0in 10pt;"><span style="font-size:12pt;"><span style="line-height:115%;"><span style="font-family:Arial,sans-serif;">Select the relevant journal name for your office from the drop-down selection list.</span></span></span></span></p>
+            <p><span style="margin-bottom:.1in;margin-left:0in;margin-right:0in;margin-top:.1in;margin:0in 0in 10pt;"><span style="font-size:12pt;"><span style="line-height:115%;"><span style="font-family:Arial,sans-serif;">The journa name selected determines where the invoice will be routed for approval.</span></span></span></span></p>
+          </td>
         </tr>
         <tr>
           <td style="border-right: 1pt solid windowtext; border-bottom: 1pt solid windowtext; border-left: 1pt solid windowtext; border-image: initial; border-top: none; padding: 0in 5.4pt;" valign="top" width="204">
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Description</span></span></span></span></p>
           </td>
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="491">
-            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Enter a description<b> </b>with specific details to help you identify the payment request more easily, i.e., client name, payment reason, date, caseworker’s initials. </span></span></span></p>
-            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">e.g., Tang Cheng, Rental Assistance, ICM, June 2022</span></span></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Enter a description<b> </b>with specific details to help you identify the payment request more easily, e.g., client name, payment reason, date, caseworker’s initials. </span></span></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Sample: Tang Cheng, Rental Assistance, ICM, June 2022</span></span></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><strong>Note</strong>: This value becomes the identifier in ETO.</p>
           </td>
         </tr>
         <tr>
@@ -220,10 +188,8 @@ Description automatically generated" id="Picture_x0020_36" o:borderbottomcolor="
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="491">
             <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Enter the client ID for the client.</span></span></span></span></p>
             <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%">Important Notes:</span></b> </span></span></span></p>
-            <ul>
-              <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 0in 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">If you select a client ID that has expired, a warning message displays indicating that the client is not active. Contact Finance if the client ID needs to be reactivated.</span></span></span></span></li>
-              <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">Since the client ID is entered at the header level, only <u>one</u> client ID can be entered for the journal. This client ID is applied to all lines in the journal.</span></span></span></span></li>
-            </ul>
+            <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">- If you select a client ID that has expired, a warning <span>message displays indicating that the client is not active. Contact Finance if the client ID needs to be reactivated.</span></span></span></span></span></p>
+            <p><span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">- Since the client ID is entered at the header level, only <u>one</u> client ID can be entered for the journal. This client ID is applied to all lines in the journal.</span></span></span></span></span></p>
           </td>
         </tr>
         <tr>
@@ -231,20 +197,20 @@ Description automatically generated" id="Picture_x0020_36" o:borderbottomcolor="
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Principle Applicant Name</span></span></span></span></p>
           </td>
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="491">
-            <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults after the Client ID field is populated.</span></span></span></span></p>
+            <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults after the <strong>Client ID</strong> field is populated.</span></span></span></span></p>
           </td>
         </tr>
       </tbody>
     </table>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Word
-Description automatically generated" id="Picture_x0020_34" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image463.png" style="width: 519pt; height: 235.5pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_34" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image463.png" style="width: 519pt; height: 235.5pt; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
-      <li style="counter-reset: item1 3;" value="4">Carefully review all completed fields for <u>accuracy</u>. Due to the mobile funtionality of this transaction, it is difficult to make changes to this information after you click OK.</li>
+      <li style="counter-reset: item1 3;" value="4">Carefully review all completed fields for <u>accuracy</u>. Due to the mobile functionality of this transaction, it is difficult to make changes to this information after you click OK.</li>
       <li style="" value="4">Click <strong>OK </strong>to proceed.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Teams
-Description automatically generated" height="619" id="Picture_x0020_39" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image464.png" style="width: 519.75pt; height: 235.5pt; cursor: nwse-resize;" width="1364"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="619" id="Picture_x0020_39" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image464.png" style="width: 519.75pt;height: 235.5pt;cursor: nwse-resize;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-color: #000000;border-top-color: #000000;border-right-color: #000000;border-bottom-color: #000000" width="1364"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 5;" value="6">Validate that the new journal is highlighted and displayed at top of list. (Newest journals always display at top of list.)<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b></b></span></span></span></li>
     </ol>
@@ -253,19 +219,19 @@ Description automatically generated" height="619" id="Picture_x0020_39" o:border
       <li style="counter-reset: item1 6;" value="7">Click the <strong>Lines </strong>tab to proceed.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" height="623" id="Picture_x0020_44" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image465.png" style="width: 519.75pt; height: 237.75pt; cursor: nwse-resize;" width="1361"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="623" id="Picture_x0020_44" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image465.png" style="width: 519.75pt;height: 237.75pt;cursor: nwse-resize;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-color: #000000;border-top-color: #000000;border-right-color: #000000;border-bottom-color: #000000" width="1361"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 7;" value="8">Click <strong>New</strong>. <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Teams
-Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image466.png" style="width: 519pt; height: 235.5pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image466.png" style="width: 519pt; height: 235.5pt; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 8;" value="9">Complete the following fields for the vendor line:</li>
     </ol>
-    <table class="MsoTableGrid" style="counter-reset: item1 1; width: 857px; margin-left: 17.75pt; border-collapse: collapse; border: 1pt solid windowtext;" width="695">
+    <table class="MsoTableGrid" style="counter-reset: item1 1; width: 1058.66px; margin-left: 17.75pt; border-collapse: collapse; border: 1pt solid windowtext;" width="695">
       <colgroup>
-        <col style="width: 300px;"/>
-        <col style="width: 524px;"/>
+        <col style="width: 280px;"/>
+        <col style="width: 745px;"/>
       </colgroup>
       <thead>
       </thead>
@@ -280,8 +246,8 @@ Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#
           <td style="border-bottom: 1pt solid windowtext; border-left: none; border-right: 1pt solid windowtext; border-top: none; padding: 0in 5.4pt;" width="527">Vendor account number</td>
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="527">
             <p>Click the drop-down arrow and select the client&#39;s vendor account number.</p>
-            <p>Tip: To search the list, click the Search name column header to bing upa search filter window and enter the last nae of the client. If you select the search option, &quot;Contains&quot;, you can search by first or last name.</p>
-            <p>Important: If paying a vendor on behalf of a client, enter the account number by searching for the name of the vendor you are paying, e.g., Walmart or landlord.</p>
+            <p><strong>Tip</strong>: To search the list, click the<strong> Search name</strong> column header to bring up a search filter window and enter the last name of the client. If you select the search option, &quot;Contains&quot;, you can search by first or last name.</p>
+            <p><strong style="color: #FF0000">Important</strong>: If paying a vendor on behalf of a client, enter the account number by searching for the name of the vendor you are paying, e.g., Walmart or landlord.</p>
           </td>
         </tr>
         <tr>
@@ -290,9 +256,9 @@ Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#
           </td>
           <td style="border-bottom: 1pt solid windowtext; border-left: none; border-right: 1pt solid windowtext; border-top: none; padding: 0in 5.4pt;" width="527">
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">E</span></span></span></span>nter a unique invoice number.</p>
-            <p>Note: Each payment, regardless of whether it is to the same client, requires a unique invoice number. The standard format to use is the client’s initials and the date.</p>
-            <p>Example:</p>
-            <p>CT June 20<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><i><span style="line-height:115%">22</span></i></span></span></span></p>
+            <p><strong>Note</strong>: Each payment, regardless of whether it is to the same client, requires a unique invoice number.The standard format to use is the client’s initials and the date.</p>
+            <p><strong>Example</strong>:</p>
+            <p><em>CT PM June 20<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">22</span></span></span></span></em></p>
           </td>
         </tr>
         <tr>
@@ -301,8 +267,7 @@ Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#
           </td>
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="527">
             <p>This is a free text field that allows you to enter a longer description.</p>
-            <p>Enter a clear description of what the payment is for.</p>
-            <p>This is the description that prints on the voucher.</p>
+            <p><strong style="color: #FF0000">Attention</strong>: This is the description that prints on the voucher.</p>
             <p><b>Example</b>:</p>
             <p><i>Rental assistance for ICM Client, 123 Apple Road, Apt. 1E</i></p>
           </td>
@@ -313,19 +278,19 @@ Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#
           </td>
           <td style="border-bottom: 1pt solid windowtext; border-top: none; border-left: none; border-right: 1pt solid windowtext; padding: 0in 5.4pt;" width="527">
             <p>Click the drop-down arrow and select the type of payment issuance. E.g., <b>PREPCARD</b> (Prepaid card).</p>
-            <p style="margin-top:.1in; margin-right:0in; margin-bottom:0in; margin-left:-.8pt; margin:0in 0in 10pt"><span style="line-height:normal"><b><span style="color:#c00000">Important</span></b>: Selecting the correct <b>method of payment</b> is critical in ensuring the correct G/L account gets updated. Options <b>GENAP or PREPCARD </b>are the only options that should be selected.<b></b></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:0in; margin-left:-.8pt; margin:0in 0in 10pt"><span style="line-height:normal"><b><span style="color:#c00000">Important</span></b>: Selecting the correct <b>method of payment</b> is critical in ensuring the correct G/L account gets updated. Options <b>GENAP (e.g., check) or PREPCARD (prepaid card) </b>are the only options that should be selected.<b></b></span></p>
             <ul>
               <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 0in 0.5in"><span style="line-height:normal">For any payments to a 3<sup>rd</sup> party (including rent to landlords or shopping for a client at Walmart), always use <b>GENAP</b>.</span></li>
               <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 10pt 0.5in"><span style="line-height:normal">If check is being issued direct to client, use <b>GENAP</b>.</span></li>
+              <li style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin:0in 0in 10pt 0.5in">For all prepaid payment cards, use <b>PREPCARD</b>, e.g., for “pocket money”.</li>
             </ul>
-            <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt">For all prepaid payment cards, use <b>PREPCARD</b>, e.g., for “pocket money”.</p>
           </td>
         </tr>
         <tr>
           <td style="border: 1pt solid windowtext; padding: 0in 5.4pt;" valign="top" width="168">
             <p>Vendor amount</p>
           </td>
-          <td style="border:1pt solid windowtext;padding:0in 5.4pt;" valign="top" width="168">
+          <td style="border: 1pt solid windowtext; padding: 0in 5.4pt;" valign="top" width="168">
             <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"> </p>
             <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt">Enter the amount being paid to the client.</p>
           </td>
@@ -334,18 +299,18 @@ Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#
     </table>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Word
-Description automatically generated" id="Picture_x0020_56" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image467.png" style="width: 519pt; height: 236.25pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_56" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image467.png" style="width: 519pt; height: 236.25pt; border-width: 1px; border-style: solid;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 9;" value="10">Click <strong>OK </strong>to proceed.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" height="621" id="Picture_x0020_57" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image468.png" style="width: 519pt; height: 236.25pt;" width="1365"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="621" id="Picture_x0020_57" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image468.png" style="width: 519pt; height: 236.25pt; border-width: 1px; border-style: solid;" width="1365"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <p>The vendor line entry is displayed. The project line must now be added.</p>
     <ol>
       <li style="counter-reset: item1 10;" value="11">Click <strong>New</strong>.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Word
-Description automatically generated" height="624" id="Picture_x0020_16" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image469.png" style="width: 519.75pt; height: 237pt;" width="1364"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="624" id="Picture_x0020_16" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image469.png" style="width: 519.75pt; height: 237pt; border-width: 1px; border-style: solid;" width="1364"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 11;" value="12"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span>Complete<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> the following fields for the project line:</span></span></span></li>
     </ol>
@@ -363,7 +328,11 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
         </tr>
         <tr>
           <td style="border:solid windowtext 1.0pt; width:1.75in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168">Project ID</td>
-          <td style="border-bottom:solid windowtext 1.0pt; width:395.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="527">Click the drop-down arrow and select the relevant project ID from the selection list.</td>
+          <td style="border-bottom:solid windowtext 1.0pt; width:395.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="527">
+            <p>Click the drop-down arrow and select the relevant project ID from the selection list.</p>
+            <p>E.g., TR131</p>
+            <p>The Project ID is also known as the &quot;Grant&quot; or the &quot;D1&quot;.</p>
+          </td>
         </tr>
         <tr>
           <td style="border:solid windowtext 1.0pt; width:1.75in; border-top:none; padding:0in 5.4pt 0in 5.4pt" valign="top" width="168">
@@ -376,6 +345,7 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
               <li style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin:0in 0in 0in 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">75020.0.e – Cash assistance</span></span></span></span></li>
               <li style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">75006.0.e – Refugee Housing/Rent</span></span></span></span></li>
             </ul>
+            <p><strong>Tip</strong>: All direct service codes begin with &quot;75&quot; so by typing just <strong>75 </strong>in the field, all direct service codes will display and be available for selection.</p>
           </td>
         </tr>
         <tr>
@@ -394,6 +364,7 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
           <td style="border-bottom:solid windowtext 1.0pt; width:395.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="527">
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Select the relevant ETO workspace from the drop-down selection list</span></span></span></span></p>
             <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><span style="line-height:115%">Example</span></b><span style="line-height:115%">: Safety and Wellness</span></span></span></span></p>
+            <p style="margin-top:6.0pt; margin-right:0in; margin-bottom:6.0pt; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">For the ETO integration to work, this value must match the values that default in the <b>Client ETO Program</b> and <b>Project ETO Program</b> fields. If they don’t match, a warning message will display indicating that there is a mismatch and the ETO integration will not work.</span></span></span></p>
           </td>
         </tr>
         <tr>
@@ -401,7 +372,7 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Client ETO program</span></span></span></span></p>
           </td>
           <td style="border-bottom:solid windowtext 1.0pt; width:395.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="527">
-            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults based on the Project ID entered.</span></span></span></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults based on the Client ID previously entered.</span></span></span></span></p>
           </td>
         </tr>
         <tr>
@@ -409,7 +380,7 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
             <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Project ETO program</span></span></span></span></p>
           </td>
           <td style="border-bottom:solid windowtext 1.0pt; width:395.5pt; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt" width="527">
-            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults based on the Project ID entered.</span></span></span></span></p>
+            <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">This value defaults based on the Project ID previously entered.</span></span></span></span></p>
           </td>
         </tr>
       </tbody>
@@ -420,7 +391,7 @@ Description automatically generated" height="624" id="Picture_x0020_16" o:border
     </ol>
     <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: If amounts are being split among multiple projects for a single client, repeat steps 11 through 13 above. Otherwise, proceed to the next step.</span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application, Word
-Description automatically generated" id="Picture_x0020_21" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image470.png" style="width: 519.75pt; height: 236.25pt;"/> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_21" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image470.png" style="width: 519.75pt; height: 236.25pt; border-style: solid; border-width: 1px;"/> </span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><i></i></b></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><i>Enter Financial Dimensions for the Project Line(s)</i></b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
@@ -428,9 +399,9 @@ Description automatically generated" id="Picture_x0020_21" o:borderbottomcolor="
       <li style="counter-reset: item1 13;" value="14">With the project invoice line selected, click <strong>Financial dimensions</strong> and select <strong>Account </strong>from the drop-down selection list.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" id="Picture_x0020_27" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image471.png" style="width: 519pt; height: 235.5pt;"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_27" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image471.png" style="width: 519pt;height: 235.5pt;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
-      <li style="counter-reset: item1 14;" value="15"><span style="font-size:12pt"><span style="line-height:115%"></span></span>Complete/validate<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> all required financial dimensions for the project line. (D1 throught D6 are all required) </span></span></span></li>
+      <li style="counter-reset: item1 14;" value="15"><span style="font-size:12pt"><span style="line-height:115%"></span></span>Complete/validate<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> all required financial dimensions for the project line. (<strong>D1 through D6</strong> are all required) </span></span></span></li>
     </ol>
     <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: With the exception of the <b>Operating Unit</b> (<b>D4</b>), some of these values may default based on the project setup. </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
@@ -438,26 +409,26 @@ Description automatically generated" id="Picture_x0020_27" o:borderbottomcolor="
     </ol>
     <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: If there are multiple project lines, repeat steps 14 through 16 above. If not, proceed to next step.</span></span></span></p>
     <p><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" height="571" id="Picture_x0020_76" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image472.png" style="width: 519pt; height: 217.5pt;" width="1362"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="571" id="Picture_x0020_76" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image472.png" style="width: 519pt; height: 217.5pt; border-style: solid; border-width: 1px;" width="1362"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 16;" value="17">Once all journal lines are complete, click Save on the menu at the top of the page.</li>
       <li style="" value="16"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Click the <b>X</b> in the top right corner of page to return to the Invoice Journal (Mobile) page. </span></span></span><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><i><span style="font-size:14.0pt"><span style="line-height:115%"></span></span></i></b></span></span></span></span></li>
     </ol>
     <p><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><i><span style="font-size:14.0pt"><span style="line-height:115%">Validate Payment Journal Posting via Posting Simulation</span></span></i></b></span></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" height="429" id="Picture_x0020_91" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image473.png" style="width: 519pt; height: 162.75pt;" width="1368"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
+Description automatically generated" height="429" id="Picture_x0020_91" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image473.png" style="width: 519pt;height: 162.75pt;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid" width="1368"/> </span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 18;" value="19"><span style="font-size:12pt"><span style="line-height:115%"></span></span>Click<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> <b>Validate</b> and select <b>Simulate posting</b> from the drop-down selection list.</span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></li>
       <li style="" value="16"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Confirm that a message appears at the top of the page stating, “Operation completed”.</span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b></b></span></span></span></li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: This is just a simulation of the actual posting to ensure there will be no errors. </span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="Graphical user interface, application
-Description automatically generated" id="Picture_x0020_92" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image474.png" style="width: 519pt; height: 183.75pt;"/> </span></span></span></p>
+Description automatically generated" id="Picture_x0020_92" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image474.png" style="width: 519pt; height: 183.75pt; border-style: solid; border-width: 1px;"/> </span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt 0.5in"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><i><span style="font-size:14.0pt"><span style="line-height:115%">Submit Invoice Journal to Workflow Approval</span></span></i></b></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
       <li style="counter-reset: item1 20;" value="21">Select the journal (it should be highlighted in blue) and click <strong>Workflow &gt; Submit</strong> on the top menu bar.</li>
-      <li style="" value="19">In the workflow comment window, enter any relevant details for the approver.</li>
+      <li style="" value="19">In the <strong>Comment </strong>field, enter any relevant details for the approver.</li>
     </ol>
     <p style="counter-reset: item1 1;margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:.25in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b style="margin-left: 0px">Note</b>: When requesting payments to a Bank of America pre-paid card, enter the client’s date of birth and proxy number in the workflow comment pane.</span></span></span><span style="font-size:12pt"><span style="line-height:normal"><span style="font-family:Arial,sans-serif"> </span></span></span></p>
     <ol>
@@ -466,14 +437,11 @@ Description automatically generated" id="Picture_x0020_92" o:borderbottomcolor="
     <p style="counter-reset: item1 1;margin-bottom:0in; margin:0in 0in 10pt"><span style="font-size:12pt"><span style="line-height:normal"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b>Additional Workflow Notes</b>: </span></span></span></span></p>
     <ul>
       <li class="Numbering91">An invoice journal cannot be posted until the workflow approval is fully complete.</li>
-      <li class="Numbering91"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If you want to recall the item from workflow to make changes, and the item has not yet been approved, click <b>Workflow </b><b><span style="font-family:Wingdings">à</span> Recall</b>. You can then make changes and resubmit to workflow.</span></span></span></li>
+      <li class="Numbering91"><span style="font-size:12pt"><span style="line-height:115%">If you want to recall the item from workflow to make changes, and the item has not yet been approved, click <b style="">Workflow &gt;</b><b style="font-family: Arial, sans-serif;"> Recall</b>. You can then make changes and resubmit to workflow.</span></span></li>
       <li class="Numbering91"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If the workflow item gets rejected by the approver, the caseworker will receive an email alerting them it was rejected.</span></span></span></li>
     </ul>
     <h3 class="Heading3">Result</h3>
     <p>You have created a client payment request (invoice journal) and submitted it for approval.</p>
-    <ul>
-      <li class="Numbering91">Once approved, Finance can post the invoice journal, process payment and provide the case worker the funds to give to the client, i.e., check or prepaid card. Remember to obtain the client’s signature on the printed invoice journal when payment is given to client.</li>
-    </ul>
     <h3 class="Heading3">Next Steps</h3>
     <ul>
       <li class="Numbering91">Once the invoice is fully approved, Finance actions the final “post” for the invoice journal.</li>
@@ -14974,7 +14942,7 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     <h2 class="Heading2"><a id="Upload_Signed_Copy_of_Invoice_to_Journal_Invoice_Record"></a>Upload Signed Copy of Invoice to Journal Invoice Record</h2>
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to attach the client-signed invoice to the posted invoice journal in Integra.</p>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">IMPORTANT</span>: The invoice must be attached at the journal batch level, not the journal voucher line level.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">IMPORTANT</span>: The invoice must be attached at the <strong>journal batch</strong> level, not the journal voucher line level.</span></h6>
     <h3 class="Heading3">Prerequisites</h3>
     <ul>
       <li class="Numbering151">Finance has posted the invoice journal and issued payment to client.</li>
@@ -14982,15 +14950,15 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
-      <li>Access the <span style="font-weight:bold;">Client Payment Dashboard</span> page and select the tile <span style="font-weight:bold;">Payment requests</span> (Invoice journal).</li>
+      <li>Access the <span style="font-weight:bold;">Client Payment Dashboard</span> page and select the tile <span style="font-weight:bold;">Payment requests</span> <strong>(Invoice journal)</strong>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 35" height="318.4" src="assets/images/Requesting Client Payments_files/image30.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 35" height="318.4" src="assets/images/Requesting Client Payments_files/image30.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 1;" value="2">Under <span style="font-weight:bold;">Show</span>, click the drop-down arrow and select <span style="font-weight:bold;">Posted</span>.</li>
     </ol>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Notes</span>:<br/>
         - This field always defaults to <span style="font-weight:bold;">Not posted</span> so this <span style="text-decoration:underline;">must</span> be changed to <span style="font-weight:bold;">Posted </span>each time a signed invoice needs to be uploaded.<br/>
-        - Select the checkbox next to <span style="font-weight:bold;">Show user-created only</span> to narrow down the list to only display journals created by you.</span></h6>
+        - <strong>Tip</strong>: Select the checkbox next to <span style="font-weight:bold;">Show user-created only</span> to narrow down the list to only display journals created by you.</span></h6>
     <ol>
       <li style="counter-reset: item1 2;" value="3">Select the checkbox to the left of the relevant journal batch number.</li>
     </ol>
@@ -14998,7 +14966,7 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     <ol>
       <li style="counter-reset: item1 3;" value="4">To upload/attach a file, click the paperclip icon in the top right corner tool bar.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 86" height="261.4" src="assets/images/Requesting Client Payments_files/image32.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 86" height="261.4" src="assets/images/Requesting Client Payments_files/image32.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li style="counter-reset: item1 4;" value="5">On the menu bar at top, click <span style="font-weight:bold;">New </span>and select <span style="font-weight:bold;">File </span>from the drop-down list.</li>
     </ol>
@@ -15057,7 +15025,7 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     <ol>
       <li class="Numbering21 Numbering41">Display the <span style="font-weight:bold;">Invoice journal</span> list screen.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 62" height="317.8" src="assets/images/Requesting Client Payments_files/image37.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 62" height="317.8" src="assets/images/Requesting Client Payments_files/image37.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li class="Numbering21 Numbering41" style="counter-reset: item1 1;" value="2">Select the relevant journal invoice line. (Click to the left of line and a blue checkmark will appear once selected).</li>
     </ol>
@@ -15065,7 +15033,7 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     <ol>
       <li class="Numbering21 Numbering41" style="counter-reset: item1 2;" value="3">On the top menu, click <span style="font-weight:bold;">Workflow </span>and select <span style="font-weight:bold;">Recall</span>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 63" height="317.1" src="assets/images/Requesting Client Payments_files/image38.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="696.0"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 63" height="317.1" src="assets/images/Requesting Client Payments_files/image38.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="696.0"/></p>
     <ol>
       <li class="Numbering21 Numbering41" style="counter-reset: item1 3;" value="4">Enter a comment (optional) and click <span style="font-weight:bold;">Recall</span>.</li>
     </ol>
@@ -15094,7 +15062,7 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
       <li>On the top menu, click <span style="font-weight:bold;">Lines &gt; Edit</span>.</li>
     </ol>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If you don’t see the Edit option, it means that the Workflow approval has not been completed and you can still use the Recall option from the Workflow menu.</span></h6>
-    <p class="margin-left-0-25in"><img src="assets/images/image51.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000"/></p>
+    <p class="margin-left-0-25in"><img src="assets/images/image51.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);"/></p>
     <ol>
       <li style="counter-reset: item1 2;" value="3">Click <span style="font-weight:bold;">OK </span>when prompted with the pop-up message.</li>
     </ol>
@@ -15153,114 +15121,111 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
         </colgroup>
         <tbody>
           <tr>
-            <td>
+            <td style="border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p><span style="color:#ffffff;">Review Item</span></p>
             </td>
-            <td>
+            <td style="border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p><span style="color:#ffffff;">Details</span></p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Approval notes</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Review any approval notes from the journal invoice creator. These notes can be seen in the email. They can also be seen in the workflow history under the <strong>Message</strong> column of the <strong>Tracking details</strong> section.</p>
             </td>
           </tr>
           <tr style="border-width: 1px;border-color: #C0C0C0;border-left-width: 1px;border-left-color: #C0C0C0;border-top-width: 1px;border-top-color: #C0C0C0;border-right-width: 1px;border-right-color: #C0C0C0;border-bottom-width: 1px;border-bottom-color: #C0C0C0">
-            <td>
+            <td style="border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p style="font-weight: bold"><span style="color:#000000">Project</span><span style="color:#000000;"> Line</span></p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">Project ID and description</td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">This is displayed in the <strong>Account </strong>and <strong>Account name</strong> fields of the project line.</td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">Project ID and description</td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">This is displayed in the <strong>Account </strong>and <strong>Account name</strong> fields of the project line.</td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Project category (D2)</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Category </strong>field of the project line.</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">Client ID</td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">Valiate the Client ID.</td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">Client ID</td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">Validate the client ID.</td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">ETO Workspace</td>
-            <td style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;">Ensure this matches the value in the Client ETO Program field, otherwise, the transaction will not flow to ETO.</td>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">ETO Workspace</td>
+            <td style="border-bottom-width:1px;border-color:#000000;border-left-width:1px;border-right-width:1px;border-top-width:1px;border-width:1px;border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid">Ensure this matches the value in the<strong> Client ETO Program</strong> field, otherwise, the transaction will not flow to ETO.</td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Description of payment</p>
               <p> </p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Description </strong>field.</p>
               <p>E.g., pocket money</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Amount of payment</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Debit</strong> field.</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Financial dimensions</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Select the checkbox to the left of the project line.</p>
               <p>On the menu directly above the table, click <strong>Financial dimensions</strong> and select <span style="font-weight:bold;"><strong>Account.</strong></span></p>
               <p>Validate the accuracy and completion of the D-codes for the project line.</p>
-              <p>Required entries are <strong>D1 </strong>through <strong>D6</strong>, and <strong>D9</strong>.</p>
-              <ul>
-                <li>Ensure the D9 reflects the vendor (client) being paid.</li>
-              </ul>
+              <p>Required entries are <strong>D1 </strong>through <strong>D6.</strong></p>
             </td>
           </tr>
           <tr>
-            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td colspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p style="font-weight: bold">Vendor Line</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Client vendor ID and client name</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Account </strong>and <strong>Account name</strong> fields.</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Description of payment</p>
               <p> </p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Description</strong> field and must match the description entered in the project line.</p>
               <p>E.g., pocket money</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Amount of payment</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Credit </strong>field and must match the amount displayed in the project line.</p>
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Financial dimensions for vendor line</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Select the checkbox to the left of the vendor line.</p>
               <p>On the menu directly above the table, click <strong>Financial dimensions</strong> and select <strong>Account</strong>.</p>
               <p>Validate the accuracy and completion of the D-codes for the vendor line.</p>
@@ -15269,13 +15234,13 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
             </td>
           </tr>
           <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Posting profile</p>
               <p>E.g., prepaid card</p>
             </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>This is displayed in the <strong>Posting profile </strong>field of the vendor line if the journal has been personalized using the steps in the note below or under the Invoice Tab if it has not.</p>
-              <p>If a Posting Profile of Prepcard is selected, caseworker must provide the client’s DOB and card Proxy number in the description.</p>
+              <p>If posting profile <strong>Prepcard</strong> is selected, caseworker must provide the client’s <strong>DOB </strong>and card <strong>Proxy </strong>number in the description.</p>
               <p><strong>Note</strong>: This column must be manually added to the table. Refer to the document titled, <strong><em>Personalize Table Grid Layout</em></strong> for step-by-step instructions.</p>
             </td>
           </tr>
@@ -15286,11 +15251,14 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
     <ol>
       <li style="counter-reset: item1 5;" value="6">In the bottom section of the page, validate that the balance is zero.</li>
       <li>Once all information has been validated, click the <strong>X</strong> in the top right corner of page to return to the Invoice journal page.</li>
-      <li>To action the approval, on the menu at the top of the page, click <strong>Workflow</strong> and select <strong>Approve</strong> from the drop-down selection list.</li>
+    </ol>
+    <p><img src="assets/images/image485.png"/></p>
+    <ol>
+      <li style="counter-set: item1 7;">To action the approval, on the menu at the top of the page, click <strong>Workflow</strong> and select <strong>Approve</strong> from the drop-down selection list.</li>
     </ol>
     <h6 class="Heading6" style="margin-left: 40px;"><span style="font-weight:normal;"><span style="font-family:Arial;"><span style="font-weight:bold;">Note</span>: If there are errors, select <strong>Reject</strong> and enter details of the error(s) in the approver notes. The creator will need to make the required changes and submit to workflow again.</span></span></h6>
     <ol>
-      <li style="counter-reset: item1 9;" value="10">Click <span style="font-weight:bold;">Approve </span>to proceed.</li>
+      <li style="counter-reset: item1 9; counter-set: item1 8;">Click <span style="font-weight:bold;">Approve </span>to proceed.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p>You have approved the client payment request invoice journal.</p>
@@ -15298,34 +15266,30 @@ X3JlbHMvdGhlbWUxLnhtbC5yZWxzUEsFBgAAAAAHAAcAAwIAADyRDAAAAA==
       <li class="Numbering251">Finance can now post the invoice and process payment to client.</li>
     </ul>
     <p class="Numbering251">‎</p>
-    <h2 class="Heading2"><a id="Requesting_Client_Payment_for_Minor_Clients_(under_18_years)"></a>Requesting Client Payment for Minor Clients (under 18 years)</h2>
-    <div class="WordSection1">
+    <h2 class="Heading2"><a id="Requesting_Client_Payment_for_Minor_Clients_(under_18_years)"></a>Requesting Client Payment for Minor Clients (under 18 years)<span class="position-relative"> </span></h2>
+    <div class="WordSection1"><span style="page:WordSection1"></span>
+      <p><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Minor clients (under age 18) enrolled in certain programs on or after April 29, 2023, can receive payments directly via Integra. </b>This makes client payments to these minors faster and more efficient.  <span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span></span></p>
+      <p><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b></b></span></span></span></span></p>
+      <p style="margin-bottom:8px"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">A BENE vendor record will be automatically created when you enroll a new minor client in ETO in one of the following programs: </span></span></span></span></p>
       <ul>
-        <li><span class="position-relative"> Depending on the nature of your program, the steps for requesting payments on behalf of minor clients may differ. Ideally your program utilizes ETO to house minor clients – this is typically in the Youth, Workforce Development or Safety and Wellness Workspaces. If this is the case, the minor client is created via the ETO/Integra interface and appears on the Direct Assistance Case Table.</span><span class="position-relative"><br/>
-          </span></li>
-        <li><span class="position-relative">If your program does not utilize ETO, then the minor client must be manually created by your office’s local finance manager on the Direct Assistance Case Table. It is ONLY the local office finance manager who is allowed to add clients to the Direct Assistance Case Table.<br/>
-          </span><span class="position-relative"> </span></li>
-        <li><span class="position-relative">In both of the above instances, as the minor client is under the age of 18, no vendor record is created.<br/>
-          </span><span class="position-relative"> </span></li>
-        <li><span class="position-relative">In most cases, when working with a minor client, payments are made to a responsible guardian, caretaker, or sponsor. When this happens, the guardian, caretaker, or sponsor must be created as a vendor in Integra. This is done by emailing <a href="" style="font-family:ArialBold; color:#956d16; text-decoration:underline">TRADEVENDOR.CREATION@RESCUE.ORG</a> and providing the following information:<br/>
-          </span>
-          <ul>
-            <li><span class="position-relative"></span><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">First Name</span></span></span></li>
-            <li><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Last Name</span></span></span></li>
-            <li><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Date of Birth</span></span></span></li>
-            <li><span style="font-size:11pt;"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Address – not required but strongly recommended</span></span><span class="position-relative"><span style="margin-left:96px;"> </span></span></span></li>
-          </ul>
-        </li>
+        <li><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif">General Intake – ONLY Non APA/UHP minor clients</span></span></span></span></li>
+        <li><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif">Youth</span></span></span></span></li>
+        <li><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif">Workforce Development</span></span></span></span></li>
+        <li><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif">Safety and Wellness</span></span></span></span></li>
       </ul>
-      <p> </p>
+      <p style="margin-bottom:13px"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b></b></span></span></span></span></p>
+      <p style="margin-bottom:13px"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>PLEASE NOTE:</b><b><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></b></span></span></span></span></p>
       <ul>
-        <li><span class="position-relative">Once the minor client is on the Direct Assistance Case Table and the vendor is appearing on the All Vendors page, follow the steps starting on page 8 to process the request for a payment to a client.<br/>
-          </span><span class="position-relative"> </span></li>
-        <li><span class="position-relative">If there is a programmatic reason not to make the payment to a responsible guardian, caretaker, or sponsor, and instead, payment must be made directly to the minor child, select the generic client record as the vendor (e.g., Atlanta Client) on step 9 of the Create Client Payment Request procedure in this guide. All other steps of this procedure remain the same.<br/>
-          </span><span class="position-relative"> </span><span class="position-relative"></span></li>
-        <li><span class="position-relative">As long as the correct ETO Program is tagged to the project ID and the correct client ID is selected, this transaction should flow over to ETO, the same as any third party payment.</span></li>
+        <li class="Numbering251"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif"></span></span></span></span>For minor clients enrolled (via ETO) in the above-mentioned programs prior to April 29, 2023, please continue to submit your vendor creation request to the MDM Team by emailing <a href="" style="font-family:ArialBold; color:#956d16; text-decoration:underline">TradeVendor.Creation@rescue.org</a>.  </li>
+        <li style="margin-bottom: 8px; margin-left: 8px;"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:106%"><span style="font-family:Arial,sans-serif">Payments cannot be issued directly to minor clients enrolled in Matching Grant (MG), Reception &amp; Placement (R&amp;P), Afghan Placement &amp; Assistance (APA) or Ukraine Housing Program (UHP). Payments to minor clients in these programs must be made to the responsible guardian, caretaker, or sponsor (as a vendor in Integra). Please see the <a href="" style="font-family:ArialBold; color:#956d16; text-decoration:underline"><span style="font-family:ArialBold"><span style="color:#858585">Client Payment User Guide</span></span></a> for further guidance. </span></span></span></span></li>
+        <li style="margin-bottom: 8px; margin-left: 8px;"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:&quot;Calisto MT&quot;,serif"><span style="color:#6e6e6e"><span style="font-weight:normal"> <span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif">If your program does not utilize ETO, then the minor client must be manually created by your office’s local finance manager on the Direct Assistance Case Table. It is ONLY the local office finance manager who is allowed to add clients to the Direct Assistance Case Table. </span></span></span></span></span></span></span></span></li>
+        <li style="margin-bottom: 8px; margin-left: 8px;"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:&quot;Calisto MT&quot;,serif"><span style="color:#6e6e6e"><span style="font-weight:normal"> <span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif">Once the minor client is on the Direct Assistance Case Table, and the vendor is appearing on the <i>All Vendors</i> page, follow the steps starting on page 8 to process the request for a payment to a client. </span></span></span></span></span></span></span></span></li>
+        <li style="margin-bottom: 8px; margin-left: 8px;"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:&quot;Calisto MT&quot;,serif"><span style="color:#6e6e6e"><span style="font-weight:normal"> <span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif">For programs where payments cannot be issued directly to minors, and there is a programmatic reason not to make the payment to a responsible guardian, caretaker, or sponsor, and instead, payment must be made directly to the minor child, select the <u>generic client record</u> as the vendor (e.g., Atlanta Client) on step 9 of the <i>Create Client Payment Request</i> procedure in this guide. All other steps of this procedure remain the same. </span></span></span></span></span></span></span></span></li>
+        <li style="margin-bottom: 8px; margin-left: 8px;"><span style="page:WordSection1"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:&quot;Calisto MT&quot;,serif"><span style="color:#6e6e6e"><span style="font-weight:normal"> <span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif">As long as the correct ETO Program is tagged to the project ID and the correct client ID is selected, this transaction should flow over to ETO, the same as any third party payment.</span></span></span></span></span></span></span></span></li>
       </ul>
     </div>
+    <span style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif"></span></span></span>
+    <div style="page-break-after:always"><span style="display: none;"> </span></div>
     <p><span style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif"></span></span></span></p>
   </div>
 

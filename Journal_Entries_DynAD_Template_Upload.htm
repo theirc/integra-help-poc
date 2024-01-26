@@ -195,18 +195,11 @@
   </div>
   <p>There are two different templates available to accommodate different currencies:</p>
   <ul>
-    <li><span style="font-weight:bold;">DynAd Journal Template </span>(used for USD/Base currency transactions)</li>
-    <li><span style="font-weight:bold;">DynAd Journal Template Other Amount</span> (used for all non-USD currency transactions)</li>
+    <li><span style="font-weight:bold;">DynAd Journal Template - </span>Single currency</li>
+    <li><span style="font-weight:bold;">DynAd Journal Template Other Amount</span> - Multi currency</li>
   </ul>
-  <p>The difference between the two templates above is that there are two additional columns in the non-USD/Base version to account for the exchange rate type and the exchange rate used.</p>
-  <h2 class="Heading2"><a id="Processing_Foreign_Currency_Journal_Entries"></a>Processing Foreign Currency Journal Entries</h2>
-  <p>On Import from the DynAd Template:</p>
-  <ul>
-    <li>The transaction date determines which exchange rate to use, if re-classifying an entry from/to the current period.</li>
-    <li>The amount in transaction currency is converted using the Integra rate and posted to the base/accounting currency amount field.</li>
-    <li>Make sure the exchange rate is entered as a factor of 100. For example, an exchange rate entered as 1.1463 will be translated to 114.63 in the upload journal.</li>
-  </ul>
-  <p>Additionally, currency clearing between currencies can also be done using the DynAd journal. This is often the case for cash receipt accounts for funds sent from HQ but received in local currency.</p>
+  <p>The difference between the two templates above is that there are two additional columns in the multi-currency version to account for the currency code used for the transactions and the exchange rate.</p>
+  <p><strong>Note</strong>: The exchange rate on the multi-currency form can be kept empty and the system will automatically take the exchange rate identified for that month to be converted to reporting currency.</p>
   <h2 class="Heading2"><a id="Create_a_Journal_Entry_"></a>Create a Journal Entry in Integra</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to create a journal entry directly in Integra.</p>
@@ -224,11 +217,11 @@
   <ol>
     <li style="counter-reset: item1 1;" value="2">On the menu at the top, click <span style="font-weight:bold;">New</span>.</li>
   </ol>
-  <p><img alt="Picture 236597765" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image3.png" style="cursor: nwse-resize;border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p><img alt="Picture 236597765" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image3.png" style="cursor: nwse-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
   <ol>
-    <li style="counter-reset: item1 2;" value="3">A row is added at the top of the table. In the <span style="font-weight:bold;">Name </span>field, click the drop-down arrow and select the relevant journal type from the selection list, e.g., JE (journal voucher); GL_IC (Intercompany transaction), etc.</li>
+    <li style="counter-reset: item1 2;" value="3">A row is added at the top of the table. In the <span style="font-weight:bold;">Name </span>field, click the drop-down arrow and select the relevant journal type from the selection list, for example, <strong>JE </strong>(journal voucher; GL_IC (Intercompany transaction), etc.</li>
   </ol>
-  <p><img alt="Picture 236597766" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image4.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p><img alt="Picture 236597766" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image4.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
   <ol>
     <li style="counter-reset: item1 3;" value="4">In the <span style="font-weight:bold;">Description </span>field, overwrite the default text with a meaningful description of the journal.</li>
   </ol>
@@ -317,16 +310,13 @@
           <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Debit</p>
           </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
+          <td colspan="1" rowspan="2" style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Completion of the <strong>Debit/Credit </strong>fields depend on the account type selected and the nature of the transaction.</p>
           </td>
         </tr>
         <tr>
           <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
             <p>Credit</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Completion of the <strong>Debit/Credit </strong>fields depend on the account type selected and the nature of the transaction.</p>
           </td>
         </tr>
         <tr>
@@ -366,22 +356,19 @@
   <p><img alt="Picture 236597784" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image8.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
   <ol>
     <li style="counter-reset: item1 8;" value="9">Complete the other required dimension field based on the IRC account structure. For example, a project transaction requires a D1-D2-D3-D4-D5-D6. The D7 is only required for salary and benefits.</li>
-  </ol>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: There is only one account used for subsidiaries. All subsidiaries with charges must be listed as 786500.0.e for the D2 Project category.</span></h6>
-  <ol>
     <li style="counter-reset: item1 9;" value="10">Close the financial dimensions window to return to the voucher lines screen.</li>
   </ol>
-  <p><img alt="Picture 1" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image9.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p><img alt="Picture 1" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image9.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
   <ol>
     <li style="counter-reset: item1 10;" value="11">To add the offset line, click <span style="font-weight:bold;">New </span>just above table grid.</li>
   </ol>
-  <p><img alt="Picture 75" height="238.4" src="assets/images/Journal Entries DynAD Template Upload_files/image10.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="624.0"/></p>
+  <p><img alt="Picture 75" height="238.4" src="assets/images/Journal Entries DynAD Template Upload_files/image10.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.0"/></p>
   <ol>
-    <li style="counter-reset: item1 11;" value="12">Complete all required fields in the voucher line for the offset line.</li>
-    <li>To enter financial dimensions for the offset line, click <span style="font-weight:bold;">Financial dimensions</span> and select <span style="font-weight:bold;">Offset account</span>.</li>
-    <li>Complete the financial dimensions for the offset line(s).</li>
+    <li style="counter-reset: item1 11;" value="12">Complete all required fields in the voucher line for the new line.</li>
+    <li style="counter-reset: item1 11; counter-set: item1 12;">Complete the financial dimensions for the new line(s).</li>
+    <li>If you used Offset account, fill the financial dimensions for the offset line by clicking, click <span style="font-weight:bold;">Financial dimensions</span> and selecting <span style="font-weight:bold;">Offset account</span>.</li>
   </ol>
-  <p><img alt="Picture 236597808" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image11.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p><img alt="Picture 236597808" height="301.9" src="assets/images/Journal Entries DynAD Template Upload_files/image11.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
   <ol>
     <li style="counter-reset: item1 14;" value="15">On the menu at the top of page, click <span style="font-weight:bold;">Validate</span> and select <span style="font-weight:bold;">Simulate posting</span>.</li>
     <li>When posting simulation is confirmed, close the Journal voucher page to return to the Genera journals page.</li>
@@ -458,7 +445,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>Submit journal to <span style="font-weight:bold;">Workflow </span>approval</li>
   </ol>
   <h3 class="Heading3">Result</h3>
-  <p>You have created a journal entry form a periodic journal. Once approved, Finance posts the journal.</p>
+  <p>You have created a journal entry from a periodic journal. Once approved, Finance posts the journal.</p>
   <h2 class="Heading2"><a id="Adjust_Accounting_on_Posted_Project_Transaction_(Easy_Method)"></a>Adjust Accounting on Posted Project Transaction (Easy Method)</h2>
   <p>Use this procedure to correct errors on main account codes or financial dimensions.</p>
   <p>This procedure reserves the original posting and recreates new ones.</p>
@@ -508,11 +495,11 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>Navigate to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt; All projects</span>.</li>
     <li>Click <span style="font-weight:bold;">Project ID </span>and in the drop-down search for the project ID that you want to adjust (select “contains” for easy search).</li>
   </ol>
-  <p><img alt="Picture 160" height="229.6" src="assets/images/Journal Entries DynAD Template Upload_files/image23.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="662.4"/></p>
+  <p><img alt="Picture 160" height="229.6" src="assets/images/Journal Entries DynAD Template Upload_files/image23.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="662.4"/></p>
   <ol>
     <li style="counter-reset: item1 2;" value="3">Under <span style="font-weight:bold;">Manage &gt; Process,</span> click <span style="font-weight:bold;">Adjust transactions</span>.</li>
   </ol>
-  <p><img alt="Picture 162" height="159.7" src="assets/images/Journal Entries DynAD Template Upload_files/image24.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="662.4"/></p>
+  <p><img alt="Picture 162" height="159.7" src="assets/images/Journal Entries DynAD Template Upload_files/image24.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="662.4"/></p>
   <ol>
     <li style="counter-reset: item1 3;" value="4">On the menu at the top, click <span style="font-weight:bold;">Select</span>. A pop-up window will appear.</li>
     <li>In the pop-up window, make sure that expense, item and/or fee are marked to Yes depending on the transaction type that you are planning to adjust.</li>
@@ -521,7 +508,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li>Scroll down to see the <span style="font-weight:bold;">Records to include </span>header. Records to include helps you to select multiple project IDs that you want to adjust at the same time. At this point, you will not use this function.</li>
     <li>Click <span style="font-weight:bold;">OK</span>.</li>
   </ol>
-  <p><img alt="Picture 164" height="291.6" src="assets/images/Journal Entries DynAD Template Upload_files/image25.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="662.4"/></p>
+  <p><img alt="Picture 164" height="291.6" src="assets/images/Journal Entries DynAD Template Upload_files/image25.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="662.4"/></p>
   <ol>
     <li style="counter-reset: item1 9;" value="10">From the list of transactions, select those that you wish to adjust.</li>
   </ol>
@@ -538,7 +525,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
       NonBill is used for those projects that do not require revenue recognition such as unrestricted and temporary restricted projects.</span></h6>
   <ol>
     <li style="counter-reset: item1 14;" value="15">If you wish to allocate to multiple D1 codes, insert additional lines and change the percent column to the appropriate allocation key. Otherwise, leave it at 100.</li>
-    <li>In the <span style="font-weight:bold;">Employee code </span>field type the employee D7 code. This is only required if you are adjusting transactions related to personnel.</li>
+    <li>In the <span style="font-weight:bold;">Employee code </span>field type the employee D7 code or name. This is only required if you are adjusting transactions related to personnel.</li>
     <li>In the <span style="font-weight:bold;">Reason code</span> field, select the corresponding code for your adjustment.</li>
     <li>In the <span style="font-weight:bold;">Reason comment </span>field, you can override the default entry and type additional comments for the adjustment.</li>
     <li>Click <span style="font-weight:bold;">OK</span>.</li>
@@ -546,7 +533,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p><img alt="Picture 12" height="283.2" src="assets/images/Journal Entries DynAD Template Upload_files/image27.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="578.5"/></p>
   <p>You will see a split screen showing the transactions that you are adjusting at the bottom.</p>
   <p><img alt="Picture 13" height="211.8" src="assets/images/Journal Entries DynAD Template Upload_files/image28.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="621.6"/></p>
-  <p>At the top of those transactions that you want to adjust, you can verify the financial dimensions. The financial dimensions will be automatically populated based on the previous coding. Therefore, you can modify the financial dimensions accordingly for each line.</p>
+  <p>At the top of those transactions that you want to adjust, you can verify the financial dimensions. The financial dimensions will be automatically populated based on the previous coding, therefore, you can modify the financial dimensions accordingly for each line.</p>
   <ol>
     <li style="counter-reset: item1 20;" value="21">Click <span style="font-weight:bold;">Post </span>on the menu at the top of page.</li>
     <li>Click <span style="font-weight:bold;">OK</span> in the window that opens.</li>
@@ -559,26 +546,26 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <p>Reversals can be used to reverse wrong entries in the GL and to later code them correctly.</p>
   <h3 class="Heading3">Steps</h3>
   <ol>
-    <li>After running the trial balance (see above), double-click the transaction in the <span style="font-weight:bold;">Closing balance</span> column that needs to be reversed.</li>
+    <li>After running the trial balance (see above),click the balance in the <span style="font-weight:bold;">Closing balance</span> column that needs to be reversed.</li>
     <li>Click <span style="font-weight:bold;">Reverse transaction</span>.</li>
   </ol>
-  <p><img alt="Picture 236597773" height="122.1" src="assets/images/Journal Entries DynAD Template Upload_files/image30.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="474.0"/><img alt="Picture 236597774" height="326.1" src="assets/images/Journal Entries DynAD Template Upload_files/image31.png" style="border-width: 1px; border-color: rgb(0, 0, 0); border-style: solid;" width="624.0"/></p>
+  <p><img alt="Picture 236597773" height="122.1" src="assets/images/Journal Entries DynAD Template Upload_files/image30.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="474.0"/></p>
   <ol>
     <li style="counter-reset: item1 2;" value="3">On the <span style="font-weight:bold;">Transaction reversal </span>screen, enter the <span style="font-weight:bold;">Reversal posting date</span>.</li>
     <li>Click <span style="font-weight:bold;">OK</span>.</li>
   </ol>
-  <p><img alt="Picture 236597775" height="203.6" src="assets/images/Journal Entries DynAD Template Upload_files/image32.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="288.6"/></p>
+  <p><img alt="Picture 236597775" height="203.6" src="assets/images/Journal Entries DynAD Template Upload_files/image32.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="288.6"/></p>
   <p>A message appears that the transaction has been reversed.</p>
   <ol>
     <li style="counter-reset: item1 4;" value="5">Click <span style="font-weight:bold;">Reversed tracing</span>. The original and reversed transactions are displayed.</li>
   </ol>
   <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">IMPORTANT</span>: Only general ledger transactions can be reversed. Any transaction that was posted from a sub-ledger cannot be reversed in the General Ledger.</span></h6>
   <ol>
-    <li style="counter-reset: item1 5;" value="6">Close the transaction by selecting <span style="font-weight:bold;">X</span> at the top right of the screen when the review is completed.</li>
+    <li style="counter-reset: item1 5;" value="6">Close the transaction when the review is complete.</li>
   </ol>
   <h3 class="Heading3">Result</h3>
   <p>The GL transaction has been reversed.</p>
-  <p><img alt="Picture 236597777" height="139.9" src="assets/images/Journal Entries DynAD Template Upload_files/image34.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="624.0"/></p>
+  <p><img alt="Picture 236597777" height="139.9" src="assets/images/Journal Entries DynAD Template Upload_files/image34.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.0"/></p>
   <p><img alt="Picture 236597778" height="164.6" src="assets/images/Journal Entries DynAD Template Upload_files/image35.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="624.0"/></p>
   <h2 class="Heading2"><a id="Populate_the_DynAd_Template"></a>Populate the DynAd Template</h2>
   <h3 class="Heading3">Purpose</h3>
@@ -596,7 +583,7 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
     <li style="counter-reset: item1 2;" value="3">Populate the Dynad Template with journal entries.</li>
   </ol>
   <p> </p>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Important</span>: Do not change any information in any of the column headers of the DynAd Template. If any changes are made the upload to Integra will fail.</span></h6>
+  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Important</span>: Do not change any information in any of the column headers of the DynAd Template. Do not add or remove any columns in the DynAd template. If any changes are made the upload to Integra will fail.</span></h6>
   <h2 class="Heading2"><a id="Upload_Completed_DynAd_Template_to_Integra"></a>Upload Completed DynAd Template to Integra</h2>
   <h3 class="Heading3">Purpose</h3>
   <p>Use this procedure to upload the DynAd template to Integra. The upload function creates a journal in Integra.</p>
@@ -609,160 +596,136 @@ Description automatically generated" height="261.3" src="assets/images/Journal E
   <ol>
     <li>Navigate modules to <span style="font-weight:bold;">General ledger &gt; Workspaces &gt; DynAd Journal Import</span>.</li>
   </ol>
-  <p><img alt="Picture 9" height="254.5" src="assets/images/Journal Entries DynAD Template Upload_files/image36.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="652.3"/></p>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: For files that have been successfully uploaded (with no errors) the options to <span style="font-weight:bold;">Simulate posting</span> and <span style="font-weight:bold;">Simulate posting in batch </span>are available under the <span style="font-weight:bold;">Validate </span>menu of the <span style="font-style:italic;">History and import</span> results grid. There is also the ability to <span style="font-weight:bold;">Post </span>journal import files from this grid. Alternatively, the journal may be posted via navigation path, <span style="font-weight:bold;">General ledger &gt; Journal entries &gt; General journals</span>.</span></h6>
+  <p><img alt="Picture 9" height="254.5" src="assets/images/Journal Entries DynAD Template Upload_files/image36.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="652.3"/></p>
+  <p> 
+  </p>
   <ol>
     <li style="counter-reset: item1 1;" value="2">Select the tile on the left labeled, <span style="font-weight:bold;">Import journal transactions</span>.</li>
   </ol>
-  <p><img alt="Picture 33" height="300.2" src="assets/images/Journal Entries DynAD Template Upload_files/image37.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p></p>
+  <p style="counter-reset: item1 1;"><img src="assets/images/image584.png"/></p>
   <ol>
-    <li style="counter-reset: item1 2;" value="3">Action the following fields/buttons:</li>
+    <li style="counter-reset: item1 1; counter-set: item1 2;"><span style="font-size:11.0pt"></span>In the <strong>Processing group</strong> field, click the drop-down arrow and select New DynAd Journal Import from the selection list.<span style="font-size:11.0pt"></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="font-size:11.0pt"><span style="line-height:115%"></span></span></span></span></span></li>
   </ol>
-  <div align="left">
-    <table border="1.3" cellspacing="0" style="width:660.0px">
-      <colgroup>
-        <col style="width:186px"/>
-        <col style="width:474px"/>
-      </colgroup>
-      <tbody>
-        <tr>
-          <td>
-            <p><span style="color:#ffffff;">Field/Button</span></p>
-          </td>
-          <td>
-            <p><span style="color:#ffffff;">Entry Required</span></p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Processing group</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Select<strong> DynAD Upload</strong> from the drop-down selection list.</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Run in batch mode</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Click button so it displays <img alt="Picture 23" height="25.3" src="assets/images/Journal Entries DynAD Template Upload_files/image38.png" width="94.5"/>.  </p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Enable multi-threading for batch</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Click button so it displays <img alt="Picture 25" height="30.0" src="assets/images/Journal Entries DynAD Template Upload_files/image39.png" width="95.0"/></p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Browse</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Click <strong>Browse </strong>to select the upload file.</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Upload</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Once file has been selected and is displayed, click <strong>Upload</strong>.</p>
-          </td>
-        </tr>
-        <tr>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>OK</p>
-          </td>
-          <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000">
-            <p>Click <img alt="Picture 27" height="29.0" src="assets/images/Journal Entries DynAD Template Upload_files/image40.png" width="56.0"/> to proceed and view the import results.</p>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <p> </p>
-  <p><img alt="Picture 36" height="208.9" src="assets/images/Journal Entries DynAD Template Upload_files/image41.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_25" src="assets/images/image580.png" style="width: 496pt; height: 263.5pt;"/> </span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 3;" value="4">Validate the message, “Batch import scheduled….” is displayed.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 3;"><strong>Run in batch mode</strong> toggle to <strong>Yes</strong>.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 4;"><strong>Enable multi-threading for batch</strong> toggle to <strong>No</strong>.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 5;">Click <strong>Browse </strong>to retrieve the upload file.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 6;">Once file is retrieved, click <strong>Upload</strong>. </li>
+    <li style="counter-reset: item1 1; counter-set: item1 7;">Click the <strong>OK </strong>button in the bottom right corner of DynAd Journal Import pane.</li>
   </ol>
-  <p><img alt="Picture 37" height="299.5" src="assets/images/Journal Entries DynAD Template Upload_files/image42.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_27" src="assets/images/image583.png" style="width: 495pt; height: 238.5pt;"/> </span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 4;" value="5">Wait for the system to process the journal. An Infolog will appear in the top-right corner displays once the DynAd Journal import is completed.</li>
-    <li>Close all messages.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 8;">Validate the display of the message in the blue ribbon, “Batch import scheduled”.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 9;">Wait for the system to process the journal.</li>
   </ol>
-  <p><img alt="Picture 38" height="299.4" src="assets/images/Journal Entries DynAD Template Upload_files/image43.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">An Infolog appears indicating the status of the scheduled batch job and a pop-up message displays once the DynAd Journal import is complete.</span></span></span></p>
+  <p style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="color:#a85402">Results</span></span></span></b></span></span></span></span></p>
+  <p class="PGNormal" style="margin-bottom:8px"><span style="font-size:11pt"><span style="line-height:115%"><span style="font-family:Helvetica,sans-serif"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">You have uploaded a completed DynAd template to Integra.</span></span></span></span></span></span></p>
+  <h2 class="Heading2" style="counter-reset: item1 1;"><a id="View_DynAd_Upoad_Results_and_Complete_Processing_of_Journal_in_Integra1"></a>View DynAd Upoad Results and Complete Processing of Journal in Integra</h2>
+  <h5 style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:&quot;Calibri Light&quot;,sans-serif"><span style="color:#2f5496"><span style="font-weight:normal"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#a85402">Purpose</span></span></span></span></b></span></span></span></span></span></h5>
+  <p class="Integrabulletlev" style="text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%">Use this procedure to view the import results from the DynAd Template, view journal in Integra and submit journal to workflow approval.</span></span></span></span></p>
+  <h5 style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:&quot;Calibri Light&quot;,sans-serif"><span style="color:#2f5496"><span style="font-weight:normal"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#a85402">Prerequisites</span></span></span></span></b></span></span></span></span></span></h5>
+  <ul>
+    <li style="margin-bottom:8px; margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Steps to upload DynAd template to Integra were executed.</span></span></span></li>
+  </ul>
+  <h5 style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:&quot;Calibri Light&quot;,sans-serif"><span style="color:#2f5496"><span style="font-weight:normal"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="color:#a85402">Steps</span></span></span></span></b></span></span></span></span></span></h5>
   <ol>
-    <li style="counter-reset: item1 6;" value="7">On the menu options to the left of the results grid, select <span style="font-weight:bold;">Import results</span>.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 0;">Return to the Integra Home page.</li>
   </ol>
-  <p><img alt="Picture 43" height="301.8" src="assets/images/Journal Entries DynAD Template Upload_files/image44.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_11" o:borderbottomcolor="#7f7f7f" o:borderleftcolor="#7f7f7f" o:borderrightcolor="#7f7f7f" o:bordertopcolor="#7f7f7f" src="assets/images/image585.png" style="width: 495pt; height: 204pt;"/> <span style="line-height:115%"></span></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 7;" value="8">Locate the relevant upload file and view the upload status under the <span style="font-weight:bold;">Execution summary stats</span> column.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 1;">In the left-hand navigation pane, click the drop-down next to <strong>Workspaces </strong>to expand the menu.</li>
   </ol>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Tips</span>:<br/>
-      - Filter with your name under the <span style="font-weight:bold;">User ID</span> field to only display files you have uploaded.<br/>
-      - To delete an upload file, select the line and click Delete.</span></h6>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_15" o:borderbottomcolor="#7f7f7f" o:borderleftcolor="#7f7f7f" o:borderrightcolor="#7f7f7f" o:bordertopcolor="#7f7f7f" src="assets/images/image586.png" style="width: 495pt; height: 201.5pt;"/> <span style="line-height:115%"></span></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 8;" value="9">Determine next step:
-      <ul class="LowerAlpha">
-        <li data-list-level="2">If status is <span style="font-weight:bold;">Successful</span>, return to the <span style="font-weight:bold;">All </span>menu and proceed with performing posting simulations and/or posting as per note described under step 1 above.</li>
-        <li data-list-level="2">If status displayed is <span style="font-weight:bold;">Failed </span>or <span style="font-weight:bold;">Partially succeeded</span>, proceed to step below to investigate issues.</li>
-      </ul>
-    </li>
-    <li>Select the import line and on the menu above the grid, click <span style="font-weight:bold;">Execution Details</span>.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 2;">Scroll down the menu and click <strong>Data management</strong>.</li>
   </ol>
-  <p><img alt="Picture 56" height="272.9" src="assets/images/Journal Entries DynAD Template Upload_files/image45.png" style="cursor: nwse-resize;border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p class="Integrabulletlev" style="text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_19" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image587.png" style="width: 495pt; height: 224pt;"/> <span style="line-height:115%"></span></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 10;" value="11">Review the status symbol displayed on page
-      <ul class="LowerAlpha">
-        <li data-list-level="2">Green checkmark = upload was successful.</li>
-        <li data-list-level="2">Red circle with red cross = upload failed</li>
-        <li data-list-level="2">Triangle with an exclamation mark = upload partially succeeded</li>
-      </ul>
-    </li>
-    <li>Review the information under the <span style="font-weight:bold;">Entity processing status</span> section:</li>
+    <li style="counter-reset: item1 1; counter-set: item1 3;">Scroll to the far right of page until you see the section titled <strong>Job history</strong>.</li>
+  </ol>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_33" src="assets/images/image588.png" style="width: 494.5pt; height: 112pt;"/> <span style="line-height:115%"></span></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 4;">Locate your DynAd upload job and click <strong>Execution details</strong>.</li>
+  </ol>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_36" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image589.png" style="width: 495pt; height: 200pt;"/> <span style="line-height:115%"></span></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 5;">Review the results:<span style="font-family:Arial,sans-serif"> </span></li>
   </ol>
   <ul>
-    <li data-list-level="2">The <span style="font-weight:bold;">Pending </span>column displays the number of records in the upload that require modification.</li>
-    <li data-list-level="2">The <span style="font-weight:bold;">In staging</span> column displays the number of records uploaded successfully.</li>
+    <li class="Integrabody" style="margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif">Checkmark = upload was successful. </span></span></span></span></li>
+    <li class="Integrabody" style="margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><a name="_Hlk57208845">Red circle with red cross = upload failed</a></span></span></span></span></li>
+    <li class="Integrabody" style="margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif">Yellow triangle with exclamation mark = upload partially succeeded</span></span></span></span></li>
   </ul>
-  <p><img alt="Picture 236597764" height="298.1" src="assets/images/Journal Entries DynAD Template Upload_files/image46.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
+  <p class="Integrabody" style="margin-top:8px; margin-bottom:8px; margin-left:24px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b>Note</b>: For uploads that were not fully successful, refer to the procedure in this guide titled, <i>Troubleshooting DynAd Template Upload Errors</i>.</span></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 12;" value="13">Click <span style="font-weight:bold;">View Staging Data</span> to view details about errors in the journal lines.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 6;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> I</span></span></span>f upload was successful, navigate modules to <strong>General ledger &gt; Journal entries &gt; General journals</strong>.<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></li>
   </ol>
-  <p><img alt="Picture 236597771" height="301.2" src="assets/images/Journal Entries DynAD Template Upload_files/image47.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="660.0"/></p>
+  <p class="Integrabody" style="margin-left:24px; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_236597806" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image590.png" style="width: 495pt; height: 226.5pt;"/> </span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 13;" value="14">On the menu at the top of page, click <span style="font-weight:bold;">Validate all </span>to see detailed error messages.</li>
-    <li>Add the column <span style="font-weight:bold;">Error message</span> to the table and move it to a suitable/visible location in the grid.</li>
-    <li>Review the grid to determine the completed lines and the lines with errors.</li>
-    <li>Click <span style="font-weight:bold;">Edit </span>to enable editing/correcting of the lines in the grid. Correct all the lines that have  <span style="font-weight:bold;">Staging to target </span>status of <span style="font-weight:bold;">Error </span>until all the lines have been corrected.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 7;">Select the checkbox next to <strong>Show user-created only</strong>. This will narrow down the list to only show journals that you have created.
+      <ul>
+        <li style="counter-reset:item1 1;counter-set:item1 8;">The newest journals are listed at the bottom of the list.</li>
+      </ul>
+    </li>
+    <li style="counter-reset: item1 1; counter-set: item1 8;">Under the <strong>Journal batch number</strong> column, locate and click the target journal number to view the individual voucher lines uploaded to the journal.</li>
   </ol>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Any errors in the data can corrected in the original DynAd MS Excel Template and then re-uploaded the error-free data to Integra. Use the Export to Excel function accessed via the toolbar in the top-right corner of page.</span></h6>
-  <p><img alt="Picture 236597812" height="114.3" src="assets/images/Journal Entries DynAD Template Upload_files/image48.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="589.9"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="_x0000_i1034" src="assets/images/image591.png" style="width: 497pt; height: 186pt;"/> </span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 17;" value="18">Click <span style="font-weight:bold;">Save</span>.</li>
-    <li>Click <span style="font-weight:bold;">Validate all </span>to validate the lines following the modifications.</li>
-    <li>Click <span style="font-weight:bold;">Copy data to target</span> to copy the corrected data to the associated journal.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 9;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> R</span></span></span>eview the individual journal voucher lines.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 10;">Click the back button to return to the list of journals.</li>
   </ol>
-  <p><img alt="Picture 63" height="308.9" src="assets/images/Journal Entries DynAD Template Upload_files/image49.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="641.0"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_236597805" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image592.png" style="width: 495pt; height: 193pt;"/> </span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 20;" value="21">On the<span style="font-weight:bold;"> Select a job ID to run</span> form, select <span style="font-weight:bold;">Criteria </span>in the <span style="font-weight:bold;">Run for</span> field.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 11;">Select the relevant journal and on the menu at the top of page, click <strong>Validate </strong>and select <strong>Simulate posting</strong>.</li>
   </ol>
-  <h6 class="Heading6"><span style="font-weight:normal;"><span style="color:#ff0000;"><span style="font-weight:bold;">Important</span></span>: The interim solution is to select <span style="font-weight:bold;">All </span>in the <span style="font-weight:bold;">Run for</span> field as there is a technical issue with selecting Criteria whereby all the lines do not get populated in the journal. (as of Dec. 16, 2020)</span></h6>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_62" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image593.png" style="width: 494.5pt; height: 226.5pt;"/> </span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Attach Supporting Documents</b></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 21;" value="22">Click <span style="font-weight:bold;">OK</span>.</li>
-    <li>Review the data on the <span style="font-weight:bold;">Target data execution</span> grid.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 12;"><span style="font-family:Arial,sans-serif"> </span>Once journal has successfully been validated, select the journal line and click the paper-clip icon in top right corner of screen.<span style="font-family:Arial,sans-serif"> </span></li>
   </ol>
-  <p><img alt="Picture 236597800" height="121.1" src="assets/images/Journal Entries DynAD Template Upload_files/image50.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="660.0"/></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: All supporting documents must be attached to the journal before submitting journal to workflow approval. Ensure documents are attached on the overall journal line rather than on individual voucher lines in the journal.  </span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_3" src="assets/images/image594.png" style="width: 497pt; height: 231pt;"/> </span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
   <ol>
-    <li style="counter-reset: item1 23;" value="24">Click <span style="font-weight:bold;">X</span> to close and return to the Execution summary view.</li>
+    <li style="counter-reset: item1 1; counter-set: item1 13;"><span style="font-family:Arial,sans-serif;"> </span>In the window that opens, click <strong>New </strong>and select the relevant option to upload the supporting documentation, e.g., File.</li>
   </ol>
-  <h3 class="Heading3">Result</h3>
-  <p>You have uploaded the DynAd template to Integra.</p>
-  <h2 class="Heading2"><a id="Appendix"></a>Appendix</h2>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_236597769" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image595.png" style="width: 495pt; height: 226.5pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 14;">Click <strong>Browse </strong>to locate and retrieve target file as per standard Windows functionality.</li>
+  </ol>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:-0.25in; margin-bottom:8px; margin-left:96px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></p>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_236597792" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image597.png" style="width: 495pt; height: 226.5pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 15;">Uploaded files are listed in the left-hand pane. Click the back button in the top-left corner of screen to close the Attachments page and return to the list of journals.</li>
+  </ol>
+  <p class="Integrabulletlev" style="margin-left:24px; text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_236597803" o:borderbottomcolor="#7f7f7f" o:borderleftcolor="#7f7f7f" o:borderrightcolor="#7f7f7f" o:bordertopcolor="#7f7f7f" src="assets/images/image599.png" style="width: 495pt; height: 197pt;"/> </span></span></span></p>
+  <p class="Integrabulletlev" style="text-indent:0in; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b><br/>
+            Submit Journal to Workflow</b></span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 16;">To submit the journal to workflow, click the three dots in top-right corner and select <strong>Workflow</strong>.</li>
+  </ol>
+  <p class="Integrabody" style="margin-left:24px; margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img id="Picture_x0020_21" o:borderbottomcolor="yellow pure" o:borderleftcolor="yellow pure" o:borderrightcolor="yellow pure" o:bordertopcolor="yellow pure" src="assets/images/image600.png" style="width: 221.5pt; height: 254pt;"/> </span></span></span></p>
+  <ol>
+    <li style="counter-reset: item1 1; counter-set: item1 17;">If required, enter any notes for the approver and then click <strong>Submit</strong>.</li>
+  </ol>
+  <p style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="color:#a85402"></span></span></span></b></span></span></span></span></p>
+  <p style="margin-bottom:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="page-break-after:avoid"><span style="font-family:Arial,sans-serif"><b><span style="font-size:13.0pt"><span style="line-height:115%"><span style="color:#a85402">Result</span></span></span></b></span></span></span></span></p>
+  <p><span style="font-size:12.0pt"><span style="line-height:107%"><span style="font-family:&quot;Arial&quot;,sans-serif">You have viewed the import results from the DynAd Template upload, viewed the journal in Integra and submitted journal to workflow approval.</span></span></span></p>
   <h2 class="Heading2"><a id="Re-classification_of_Base_and_Foreign_Currency_Transaction"></a>Re-classification of Base and Foreign Currency Transaction</h2>
   <p>For re-classification of entries from one project to another, IRC typically uses project adjustments, specifically for any re-classification entry that is recoding an ITEM expense from one project to another. This project adjustment has been customized to include reason codes and the user can trace these adjustments back to the original project transaction. The DynAd Journal does not have this ability.</p>
   <p>For re-classification of amounts from one balance sheet account to another, and for intercompany booking and re-coding, the DynAd Journal is used.</p>

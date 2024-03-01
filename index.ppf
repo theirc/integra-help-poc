@@ -10,6 +10,10 @@
     </topic>
     
     <topic>
+      new_topic.htm
+    </topic>
+    
+    <topic>
       Finance_Quick_Reference_Guides.htm
     </topic>
     
@@ -143,7 +147,7 @@
     </filenameentry>
     <filenameentry moniker="startpage">
       <filename>
-        index.htm
+        index.html
       </filename>
     </filenameentry>
         

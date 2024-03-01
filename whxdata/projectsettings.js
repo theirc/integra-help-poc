@@ -5,9 +5,9 @@ model = rh.model;
 var defaultTopic = "About_Integra.htm#About_Integra";
 rh._.exports(defaultTopic);
 rh.consts('DEFAULT_TOPIC', encodeURI("About_Integra.htm#About_Integra"));
-rh.consts('HOME_FILEPATH', encodeURI('index.htm'));
-rh.consts('START_FILEPATH', encodeURI('index.htm'));
-rh.consts('HELP_ID', '28b7a4d6-809c-40d6-a38e-0e5be5515177' || 'preview');
+rh.consts('HOME_FILEPATH', encodeURI('index.html'));
+rh.consts('START_FILEPATH', encodeURI('index.html'));
+rh.consts('HELP_ID', 'dc5f2309-a72a-4afd-bb65-29b472dcc168' || 'preview');
 rh.consts('LNG_SUBSTR_SEARCH', 0);
 
 model.publish(rh.consts('KEY_LNG_NAME'), "en");

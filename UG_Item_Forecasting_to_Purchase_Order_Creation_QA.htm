@@ -5,7 +5,7 @@
 
   <meta name="gRootRelPath" content="."/>
 	<meta name="gCommonRootRelPath" content="."/>
-  <meta name="gTopicId" content="26"/>
+  <meta name="gTopicId" content="27"/>
   <script type="text/javascript" src="./template/scripts/rh.min.js"></script>
   <script type="text/javascript" src="./template/scripts/common.min.js"></script>
   <script type="text/javascript" src="./template/scripts/topic.min.js"></script>
@@ -47,11 +47,11 @@
     <h1 class="Heading1"><a id="Business_Process_Information"></a>Business Process Information</h1>
     <h2 class="Heading2"><a id="Key_Messages"></a>Key Messages</h2>
     <ul>
-      <li class="ListParagraph">The item forecast is used by CRRD for all project-related procurement planning.</li>
+      <li class="ListParagraph">The item forecast is used by CRRD for the procurement planning of all restricted projects. </li>
       <li class="ListParagraph">Each project has their own item forecast.</li>
       <li class="ListParagraph">An item forecast line is required for every product (items and services) that IRC expects to procure and distribute during the life of a project.</li>
-      <li class="ListParagraph">After the first upload of the Excel version of the item forecast to Integra, ongoing additions/changes are made directly in the Item Forecast page in Integra.</li>
-      <li class="ListParagraph">The item forecast is a “living document”; Programs and Supply Chain collaboratively create and maintain this document throughout the life of the project.</li>
+      <li class="ListParagraph">After the first upload of the Excel version of the item forecast to Integra, ongoing additions/changes are made directly in the Item Forecast page in Integra. Some updates might required additional approval from the budget holder and validation from Finance.</li>
+      <li class="ListParagraph">The item forecast is a “living document”; Programs, with support from Supply Chain, creates and maintains this document throughout the life of the project.</li>
     </ul>
     <h2 class="Heading2" style="text-align: left;"><a id="Approval_Stage_of_Proposal/Project"></a>Timing for Populating the Item Forecast</h2>
     <p>Regardless of the approval stage of a proposal/project, the steps for populating the Item Forecast Template are the same; the difference lies in “when” you do it.</p>
@@ -83,7 +83,7 @@
     </ol>
     <p><span style="font-weight:bold;color:#FF0000">*</span> <span style="font-weight:bold;">Notes:</span></p>
     <ul>
-      <li>If <span style="display: none;"> </span>there is excess inventory of a required item on another project, those items may be unreserved from the project with excess inventory and transferred to the project that requires the items.</li>
+      <li>If <span style="display: none;"> </span>there is excess inventory of a required item on another project, those items may be unreserved from the project with excess inventory and transferred to the project that requires the items This process requires collaboration with the project&#39;s budget holder and their approval ahead of proceeding. </li>
       <li>For instructions for transferring inventory from one project to another,  refer to the section, <i>Inventory Transfers and Returns</i>.</li>
     </ul>
     <h1 class="Heading1">Procedures</h1>
@@ -92,13 +92,13 @@
     <ul>
       <li>Capitalized fixed assets</li>
       <li>Items using unrestricted funds</li>
-      <li>Shared program costs</li>
+      <li>Cost allocations (also known as SPCs)</li>
       <li>Planson products</li>
     </ul>
     <p>For instructions on how to process these type of purchases, refer to the following sections:</p>
     <ul>
-      <li><span style="font-style:italic;">Procure to Confirm (PR-PO)</span></li>
-      <li><span style="font-style:italic;">Fixed Asset Management</span></li>
+      <li><span style="font-style:italic;">Procure to Confirm</span></li>
+      <li><span style="font-style:italic;">Fixed Assets</span></li>
     </ul>
     <h2 class="Heading2"><a id="Populate_the_Item_Forecast_Template"></a>Populate the Item Forecast Template</h2>
     <h3 class="Heading3">Purpose</h3>
@@ -111,7 +111,7 @@
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
-      <li class="ListParagraph">Download and open the most current Item Forecast template from Box.</li>
+      <li class="ListParagraph">Download and open the most updated <em>Item Forecast Template</em> from Box.</li>
       <li class="ListParagraph">When Excel file opens, click <strong>Enable content</strong> at the top of the screen.<strong><br/>
           Note:</strong> The first time you login to the template, you will be prompted with the window below, you must click <strong>Organizational account</strong>, click <strong>Sign in</strong>, then select your user account and click <strong>Connect</strong>.<br/>
         <img src="assets/images/OData feed.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);"/>
@@ -122,18 +122,16 @@
     </ol>
     <p><span style="font-weight:bold;">Important things to remember when populating the template:</span></p>
     <ul>
-      <li class="ListParagraph">Always retrieve the most recent version of the item forecast template.</li>
+      <li class="ListParagraph">Always retrieve the most recent version of the item forecast template from Box.</li>
       <li>Ensure the product ID number selected is actually the correct number/description for the item being procured. That is, <u>do not</u> select an item that is just “similar’ to the required product. If the exact product cannot be found, send request to Supply Chain to create the product in the reporting entity.</li>
-      <li>Ensure the <strong>Description </strong>field is populated with the product name and any additional details/specs required for the product , as required.<br/>
-        <strong>Important</strong>: The <strong>Description </strong>field should always be populated with some description as this field provides the only descriptive text that is output on picking/packing lists. Otherwise, only the product ID is visible which does not provide enough information for SCM.
-      </li>
+      <li>Ensure the <strong>Description </strong>field is populated with the product name and any additional details/specs required for the product , as required.</li>
       <li class="ListParagraph">If there are multiple required by dates for a given product, an item forecast line is created for each different “required by date”.</li>
       <li class="ListParagraph">If there are multiple combinations of financial dimension values for a given product, an item forecast line must be created for each different combination of financial dimension values.</li>
       <li class="ListParagraph">Always use the drop-down selection lists to select data, where available.</li>
       <li class="ListParagraph">The <span style="font-weight:bold;">ProductName</span> field holds a maximum of 100 characters. If more than 100 characters are required, enter the full description in the <span style="font-weight:bold;">Description </span>column.</li>
-      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">You can modify the <strong>Price</strong> column to reflect your most recent estimated price for the product (Guidance on the estimated price can be provided by the SC team)</span></span></span></li>
+      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">You can add/update the <strong>Local price</strong> column to reflect your most recent estimated price for the product (Guidance on the estimated price can be provided by the Supply Chain team)</span></span></span></li>
       <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">Do not change the defaulting value in the <b>SalesUnitOfMeasure</b> field.</span></span></span></li>
-      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If item number is not known, enter <b>999999999</b> as a budget placeholder.<span style="color:#c00000">*</span></span></span></span><span style="margin-left:4px;"></span><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;"></span></span></span></span></span>
+      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If the product ID is not known, enter <b>999999999</b> as a budget placeholder.<span style="color:#c00000">*</span></span></span></span><span style="margin-left:4px;"></span><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;"></span></span></span></span></span>
         <ul>
           <li>Select <span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>999999999 in the ProductID field</b></span></span></span></li>
           <li><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family: Arial, sans-serif; text-indent: 14px;">Manually type a description in the <b>Description</b> field.</span></span></span></span></span><span style="margin-left:0px;"><span style="font-style:italic;"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"></span></span></span></span></span></li>
@@ -172,16 +170,15 @@
     <h3 class="Heading3">Steps</h3>
     <ol>
       <li class="ListParagraph">Open the target Box page.</li>
-      <li class="ListParagraph">Copy/upload file to Box location as per standard Box uploading procedures.</li>
       <li class="ListParagraph">Copy/upload completed template to target Box folder.</li>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Validate template was successfully uploaded to Integra.</li>
-      <li class="ListParagraph">After a few minutes, validate that file has disappeared from the Box location. This indicates that the file was uploaded to Integra.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3; counter-set: item1 2;">Validate template was successfully uploaded to Integra.</li>
+      <li class="ListParagraph">After a few minutes, validate that file has disappeared from the Box location. This indicates that the uploading of file to Integra has started.</li>
       <li class="ListParagraph">An email will be sent to indicate success of upload. (And likewise if it failed.)</li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p>The item forecast has been uploaded to Integra to the <strong>Project management and accounting</strong> module.</p>
     <h3 class="Heading3">Next Steps</h3>
-    <p>Supply Chain validates the uploaded item forecast lines against the donor restriction table.</p>
+    <p>Supply Chain, with direction from Programs, validates the uploaded item forecast lines against the donor restriction table.</p>
     <p> </p>
     <h2 class="Heading2"><a id="Validate_Uploaded_Item_Forecast_Lines_Against_Donor_Restricted_Items"></a>Validate Uploaded Item Forecast Lines Against Donor Restricted Items</h2>
     <h3 class="Heading3">Purpose</h3>
@@ -192,19 +189,19 @@
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
-      <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; All projects</span>.</li>
+      <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt; All projects</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 7" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image2.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the <em><strong>All projects</strong></em> list, search for, and open, the target project form.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 9" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image3.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of the project form, click <span style="font-weight:bold;">Plan</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of page, click <span style="font-weight:bold;">Plan</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 10" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image4.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>fast tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>action tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img src="assets/images/image455.png"/></p>
     <ol>
@@ -212,11 +209,11 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 40" height="152.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image6.png" style="border-width: 1px; border-color: rgb(0, 0, 0); border-style: solid;" width="713.8"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Review any donor restriction messages and take appropriate action.</li>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Under the <strong>Validation check </strong>column, review any donor restriction messages and take appropriate action.</li>
     </ol>
     <p class="Heading6"><span style="font-weight:bold;">Notes: </span></p>
     <ul>
-      <li class="Heading6">Lines with issues display a red X or a yellow exclamation point under the <strong>Validation check</strong> column.</li>
+      <li class="Heading6">Lines with problems display a red X or a yellow exclamation point under the <strong>Validation check</strong> column.</li>
       <li class="Heading6">If there are restrictions, one of the following two messages will display at the top of page.</li>
     </ul>
     <p class="margin-left-0-25in"><img alt="Picture 15" height="65.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image7.png" width="697.1"/></p>
@@ -226,7 +223,7 @@
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to approve item forecast lines. This action represents an approval to proceed with procuring the item or service.</p>
     <ul>
-      <li class="ListParagraph">Programs click <span style="font-weight:bold;">Workflow &gt; Submit</span> to action the approval. After a short period of time (usually less than a minute), the line is auto-approved by the system as long as lines have been validated without errors.</li>
+      <li class="ListParagraph"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">On the <i>Item Forecast</i> page, </span></span></span>Programs click <span style="font-weight:bold;">Workflow &gt; Submit</span> to action the approval. After a brief period of time (usually less than a minute), the line is auto approved by the system if lines were validated without errors.</li>
       <li class="ListParagraph">Once an item forecast line is approved, an item requirement line is created in the project.</li>
     </ul>
     <h3 class="Heading3">Prerequisites</h3>
@@ -237,11 +234,11 @@
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
-      <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; All projects</span>.</li>
+      <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt;  All projects</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 2" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image8.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the<em><strong> All projects</strong></em> list, search for, and open, the target project form.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 5" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image9.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
@@ -249,23 +246,21 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 6" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image10.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>fast tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>action tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 14" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image11.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <p class="ListParagraph" style="counter-reset: item1 4;"><span style="font-weight:normal;">A list of existing item forecast lines for the project is displayed.</span></p>
+    <p class="ListParagraph" style="counter-reset: item1 4;"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">Tip</span>: Filter on the <strong>Status </strong>field to show only item forecast lines in <em>Draft </em>status.</span></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Click the selection circle next to the lines requiring approval. Multiple lines may be selected at once.</li>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">On menu at top of page, click <span style="font-weight:bold;">Workflow &gt; Submit</span>.</li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;color:#FF0000">Tip</span>: Filter on the <strong>Status </strong>field to show only item forecast lines in <em>Draft </em>status.</span></h6>
-    <ol>
-      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">On menu at top of page, click the three dots and select <span style="font-weight:bold;">Workflow &gt; Submit</span>.</li>
-    </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If the three dots are not displayed, click <strong>Workflow </strong>on the menu at the top of page to perform the same action.</span></h6>
-    <p class="margin-left-0-25in"><img alt="Picture 23" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image12.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"><strong>Note</strong>: If the Workflow button is not displayed, click the ellipsis <span style="position:relative"><span style="top:3.0pt"><img id="Picture_x0020_1" src="assets/images/image506.png" style="width: 32pt; height: 16.5pt;"/> </span></span>  on the menu, then click <b>Workflow &gt; Submit</b> to perform the same action.</span></span></span></span></h6>
+    <p><img alt="Picture 23" height="320.6" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image12.png" style="font-size: 11pt; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 6;" value="7">Confirm the status of the lines have changed to <span style="font-weight:bold;">In review</span>.</li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: These lines will be auto-approved within a minute (approximately).</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: These lines will be auto approved within a minute (approximately).</span></h6>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 7;" value="8">Confirm that the status of the item forecast line(s) has changed to <span style="font-weight:bold;">Approved</span>.</li>
     </ol>
@@ -278,6 +273,7 @@
     <ul>
       <li class="ListParagraph">It has been verified that an item forecast line does not already exist for the requirement.</li>
       <li class="ListParagraph">Financial dimensions are known.<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="background:yellow"></span><span style="background:yellow"></span></span></span></span></li>
+      <li class="ListParagraph">Approval from budget holder(s) and validation from Finance has been acquired to attach to the item forecast line.</li>
       <li class="ListParagraph">If, applicable, the currency exchange rate has been configured in Integra.<span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="background:yellow"></span></span></span></span>
         <ul>
           <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="background:yellow"></span></span></span></span>To view configured exchange rates, navigate modules to <b>General ledger <span style="font-weight:bold;">&gt; </span></b><span style="font-weight:bold;">Currencies &gt; Currency exchange rate</span><span style="font-family: Arial, sans-serif; font-size: 12pt;">.</span></li>
@@ -291,11 +287,11 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 28" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image13.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the <em><strong>All projects </strong></em>list, search for, and open, the target project form.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 29" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image14.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of the project form, click <span style="font-weight:bold;">Plan</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of the page, click <span style="font-weight:bold;">Plan</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 30" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image15.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
@@ -303,11 +299,16 @@
     </ol>
     <p><img src="assets/images/image119.png"/></p>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: A list of existing item forecast lines for the project displays.</span></h6>
+    <p style="margin-bottom:8px; margin-left:24px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><a name="_Hlk91539935"><b><span style="color:#c00000">Navigation Tips</span></b>: </a></span></span></span></p>
+    <ul>
+      <li style="margin-bottom:8px; margin-left:26px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">To view more of the item forecast lines, drag the double bars down to expand the view.</span></span></span></li>
+      <li style="margin-bottom:8px; margin-left:26px"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Hide extraneous columns by right-clicking on the column header and selecting <b>Hide this column</b>. Save any layout changes as a personalized view.</span></span></span></li>
+    </ul>
     <ol>
-      <li class="ListParagraph" style="counter-reset:item1 4;" value="5">To add a new item forecast line, click <span style="font-weight:bold;">New </span>on the menu at the top of page.</li>
+      <li class="ListParagraph" style="counter-reset:item1 4;" value="5">To add a new item forecast line, select the top line and click <span style="font-weight:bold;">New </span>on the menu at the top of page.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 60" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image17.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
-    <p>A new line with status <strong>Draft </strong>is added to the table.</p>
+    <p>A new line with status <strong>Draft </strong>is added to the top of the table.</p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Complete/review the following fields for the new item forecast line:</li>
     </ol>
@@ -347,7 +348,7 @@
               <p>Requested receipt date </p>
             </td>
             <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
-              <p>Select the date the item needs to be received into IRC’s inventory.</p>
+              <p>Select the date the item needs to be received by IRC.</p>
             </td>
           </tr>
           <tr>
@@ -355,7 +356,7 @@
               <p>Requested ship date</p>
             </td>
             <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
-              <p>Select the date the item will be distributed to beneficiaries.</p>
+              <p>Select the date the item will be distributed to beneficiaries or utlized by IRC, in the case of non-inventory procurement.</p>
             </td>
           </tr>
           <tr>
@@ -399,20 +400,19 @@
             </td>
           </tr>
           <tr>
+            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">Unit</td>
+            <td style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;border-style:solid;border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid">
+              <p>Enter/validate the unit of measure.</p>
+              <p><strong>Note</strong>: This field typically auto populates with the unit of measure from the product record.</p>
+            </td>
+          </tr>
+          <tr>
             <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
               <p>Cost price</p>
             </td>
             <td style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;border-style:solid;border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid">
               <p style="margin-top:.1in; margin-right:0in; margin-bottom:.1in; margin-left:0in; margin:0in 0in 10pt"><span style="margin-bottom:.1in;margin-left:0in;margin-right:0in;margin-top:.1in;margin:0in 0in 10pt;">Th</span>e value in this field is always in USD currency. <strong>Do not edit this field.</strong></p>
-              <strong>Note</strong>: This field typically auto-populates with the USD item cost from the product record.
-            </td>
-          </tr>
-          <tr>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
-              <p>Sales price</p>
-            </td>
-            <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">
-              <p>Enter or validate the correct sales price. Consult with Finance for correct sales price.</p>
+              <strong>Note</strong>: This field typically auto populates with the USD item cost from the product record.
             </td>
           </tr>
           <tr>
@@ -425,7 +425,7 @@
           </tr>
           <tr>
             <td style="border-width: 1px;border-color: #000000;border-left-width: 1px;border-left-color: #000000;border-top-width: 1px;border-top-color: #000000;border-right-width: 1px;border-right-color: #000000;border-bottom-width: 1px;border-bottom-color: #000000;border-style: solid;border-left-style: solid;border-top-style: solid;border-right-style: solid;border-bottom-style: solid">Sales price</td>
-            <td style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;border-style:solid;border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid">This field auto-populates based on the values entered in the <strong>Local Price</strong> and <strong>Local </strong><strong>Currency</strong> field and reflects the price in the donor’s currency. This field cannot be updated.</td>
+            <td style="border-bottom-color:#000000;border-bottom-width:1px;border-color:#000000;border-left-color:#000000;border-left-width:1px;border-right-color:#000000;border-right-width:1px;border-top-color:#000000;border-top-width:1px;border-width:1px;border-style:solid;border-left-style:solid;border-top-style:solid;border-right-style:solid;border-bottom-style:solid">This field auto-populates based on the values entered in the <strong>Local Price</strong> and <strong>Local </strong><strong>Currency</strong> fields and reflects the price in the donor’s currency. This field cannot be updated.</td>
           </tr>
         </tbody>
       </table>
@@ -439,22 +439,22 @@
     <img alt="Picture 45" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image21.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 7;" value="8">In the <span style="font-weight:bold;">Category </span>field, enter/select the correct project category for the item/service.<br/>
-        <strong>Note</strong>: This is the same as the D2 code (Project category)
+        <strong>Note</strong>: This is the same as the D2 code (project category)
       </li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 519913857" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image20.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 8;" value="9">On the menu at the top, click the <span style="font-weight:bold;">Save</span> button. This will copy the project category value to the subsequent project category (D2 financial dimension) field.</li>
+      <li class="ListParagraph" style="counter-reset: item1 8;" value="9">On the menu at the top of page, click <span style="font-weight:bold;">Save</span> . This will copy the project category value to the subsequent project category (D2 financial dimension) field.</li>
       <li class="ListParagraph">Click the <span style="font-weight:bold;">Inventory dimensions</span> tab.</li>
       <li class="ListParagraph">In the <span style="font-weight:bold;">Location </span>field, click the drop-down arrow and select the relevant location.
         <ul>
-          <li class="ListParagraph">For stock products, select <strong>Receiving </strong>in the <strong>Location </strong>field; this value may be changed at the time of receipt.</li>
+          <li class="ListParagraph">For stock products, select <strong>Receiving </strong>in the <strong>Location </strong>field. This value may be changed at the time of receipt.</li>
           <li class="ListParagraph">For non-stock products, select <strong>Non Stock</strong>.</li>
           <li class="ListParagraph">This field is not applicable for services.</li>
         </ul>
       </li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Notes</span>:During receiving, the Location cannot be changed from Non stock to Stock, or vice versa.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>:During receiving, the <strong>Location </strong>cannot be changed from Non stock to Stock, or vice versa.</span></h6>
     <p class="margin-left-0-25in"><img alt="Picture 63" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image22.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 11;" value="12">Click the <span style="font-weight:bold;">Financial dimensions</span> tab.</li>
@@ -474,6 +474,7 @@
     <p class="margin-left-0-25in"><img alt="Picture 519913858" height="294.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image25.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 14;" value="15">On the menu at the top of page, click <span style="font-weight:bold;">Save</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 14; counter-set: item1 15;">Click the paperclip icon to attach the approval documenation to the item forecast line.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p>You have created a draft item forecast line directly in Integra.</p>
@@ -487,6 +488,10 @@
     <ul>
       <li class="ListParagraph">The item forecast template has been uploaded to Integra.</li>
       <li class="ListParagraph">Status of item forecast line(s) is “Draft”.</li>
+      <li class="ListParagraph"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif">If the change is in the Product, Price, Quantity or Financial Dimensions, an approval from the Budget Holder and a validation from Finance must be attached to the Item Forecast line ahead of the update.</span></span></span></li>
+      <li class="ListParagraph">
+        <p style="margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><b>Note</b>: Any changes required for an item forecast line that is in <em><strong>Approved </strong></em>status must be communicated to Supply Chain who will make the updates at the item requirement level.</span></span></span></p>
+      </li>
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
@@ -494,17 +499,17 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 31" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image26.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the <strong>All projects</strong> list, search for and open, the target project form.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 34" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image27.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
+    <p class="margin-left-0-25in"><em></em><img alt="Picture 34" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image27.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of the project form, click <span style="font-weight:bold;">Plan</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 35" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image28.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>fast tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Forecast </span>action tab, click <span style="font-weight:bold;">Item forecasts</span>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 36" height="283.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image29.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 36" height="283.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image29.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Make any required updates to the item forecast lines.</li>
       <li class="ListParagraph">Save changes.</li>
@@ -516,7 +521,7 @@
     <p class="margin-left-0-13in">Use this procedure to view on-hand inventory quantities.</p>
     <h3 class="Heading3">Prerequisites<span class="Heading3Char"> </span></h3>
     <ul>
-      <li class="ListParagraph">The item has been set up as an inventory item in Integra.</li>
+      <li class="ListParagraph">A product receipt has been posted for the inventory procurement.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
@@ -533,41 +538,42 @@
         </ul>
       </li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If additional filters are needed, click the Add button to select other values such as Project ID or Location.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: If additional filters are needed, click the <strong>Add </strong>button to select other values such as Project ID or Location.</span></h6>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">Click <span style="font-weight:bold;">Dimensions </span>on the menu at the top of the page to add additional inventory dimension values to the on-hand inquiry display.</li>
+      <li class="ListParagraph" style="counter-reset: item1 2;">Click <strong>Apply </strong>when all required filters have been entered.</li>
+      <li class="ListParagraph" style="counter-reset: item1 2; counter-set: item1 3;">Click <span style="font-weight:bold;">Dimensions </span>on the menu at the top of the page to add additional inventory dimension values to the on-hand inquiry display.</li>
     </ol>
-    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 161" height="316.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image31.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="666.0"/></p>
+    <p><strong>Note</strong>: This will split the quantity into multiple lines based on the batch numbers, project ID, warehouse, location, etc. </p>
+    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 161" height="316.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image31.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Select the box next to all the relevant dimensions to display. E.g., Site, Warehouse, Location, Project ID, and Item number.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3; counter-set: item1 4;">Select the checkbox next to all the relevant dimensions to display. E.g., Site, Warehouse, Location, Project ID, and Item number.</li>
       <li class="ListParagraph">Click <span style="font-weight:bold;">OK </span>to proceed.</li>
-    </ol>
-    <p class="ListParagraph margin-left-0-38in"><img alt="Picture 1" height="304.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image32.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="627.2"/></p>
-    <ol>
-      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">Apply </span>on the left-hand <span style="font-weight:bold;">Filters </span>pane to retrieve results.</li>
     </ol>
     <p class="ListParagraph margin-left-0-38in"><img alt="Picture 166" height="323.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image33.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="666.0"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 6;" value="7">Review the results of on-hand inventory displayed in the <span style="font-weight:bold;">On-hand</span> grid.</li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Use the Filter in the Filter pane to collapse or expand the pane, as required.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Tip</span>: Click the filter icon in the <strong>Filter </strong>pane to collapse or expand the pane, as required.</span></h6>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 7;" value="8">Click <span style="font-weight:bold;">X</span> to close the <span style="font-weight:bold;">On-hand inventory</span> report when reviewing is complete.</li>
+      <li class="ListParagraph" style="counter-reset: item1 7;" value="8">Click the back button to close the <span style="font-weight:bold;">On-hand inventory</span> report when reviewing is complete.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p class="margin-left-0-13in">You have viewed on-hand inventory quantities.</p>
     <h2 class="Heading2"><a id="Review_and/or_Update_Item_Requirement(s)_in_Project"></a>Review and/or Update Item Requirement(s) in Project</h2>
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to review or update item requirements that were generated from released item forecast lines.</p>
-    <h3 class="Heading3">Prerequisites</h3>
-    <p class="ListParagraph">Item forecast line has been released by Programs.</p>
+    <h3 class="Heading3">Prerequisites<span class="Heading3Char"> </span></h3>
+    <ul>
+      <li class="ListParagraph">The item forecast line is in <strong><em>Approved </em></strong>status. </li>
+      <li class="ListParagraph">Programs has communicated the required update to Supply Chain, with the approval (if required)</li>
+    </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
       <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt; All projects</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 38" height="280.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image34.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the <em><strong>All projects</strong></em> list, search for and open, the target project form.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 39" height="257.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image35.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
@@ -575,9 +581,9 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 41" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image36.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Item requirements</span> fast tab, click<span style="font-weight:bold;"> Item requirements</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Under the <span style="font-weight:bold;">Item requirements</span> action tab, click<span style="font-weight:bold;"> Item requirements</span>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 44" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image37.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 44" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image37.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Review the list of item requirements for the project.<br/>
         <strong>Tip</strong>: Add the following columns to the table grid for quick visibility of information:
@@ -589,20 +595,21 @@
       </li>
     </ol>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">Edit </span>to update item requirement lines, if required.</li>
+      <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">Edit </span>on the menu at the top of page to update item requirement lines, if required.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
-    <p>You have reviewed item requirements for a project.</p>
-    <p>A sales order line has been created for each item requirement line.</p>
+    <p>You have reviewed and/or updated an item requirement line in a project.</p>
+    <p>A sales order line is created for each item requirement line.</p>
     <h2 class="Heading2"><a id="Perform_Marking_for_an_Item_Requirement_Line"></a>Perform &quot;Marking&quot; for an Item Requirement Line</h2>
     <h3 class="Heading3">Purpose</h3>
-    <p>“Marking” is essentially the linking/matching of a new inventory transaction with the cost price used in a previous transaction. This is typically required for item requirement lines that were generated as a result of an inventory quantity increase via a method other than receipt on a PO. These methods include:</p>
+    <p>“Marking” is the linking/matching of a new inventory record with an item requirement record. This is typically required for item requirement lines that were generated as a result of an inventory quantity increase via a method <u>other than receipt on a purchase order</u>. These methods include:</p>
     <ul>
       <li>Any item movement journal (CIK and other)</li>
       <li>Return from beneficiary</li>
       <li>Positive inventory adjustment</li>
       <li>Positive discrepancy on a counting journal line</li>
       <li>Project to project inventory transfer</li>
+      <li>Partial transfer of inventory from one warehouse to another, or one location to another</li>
     </ul>
     <h3 class="Heading3">Prerequisites</h3>
     <ul>
@@ -634,7 +641,7 @@
     <p>Use this procedure to create purchase orders for items/services that are part of the item forecast.</p>
     <h3 class="Heading3">Prerequisites</h3>
     <ul>
-      <li class="ListParagraph">Supply Chain has confirmed there is not enough on-hand stock to fulfill item requirement amount For instructions on viewing on-hand inventory, refer to training user guide, Inventory Management.</li>
+      <li class="ListParagraph">Supply Chain has confirmed there is not enough on-hand stock to fulfill item requirement amount For instructions on viewing on-hand inventory, refer to procedure, <em>Display On-hand Inventory</em>.</li>
     </ul>
     <h3 class="Heading3">Steps</h3>
     <ol>
@@ -642,7 +649,7 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 519913892" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image38.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Search for, and open, the target project.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">In the <em><strong>All projects</strong></em> list, search for and open, the target project.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 1" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image39.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
@@ -650,13 +657,13 @@
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 26" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image40.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">On the action pane, click <span style="font-weight:bold;">Item requirements</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">On the <strong>Item requirements</strong> action pane, click <span style="font-weight:bold;">Item requirements</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 519913870" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image41.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 4;" value="5">On the menu at the top of page, click <span style="font-weight:bold;">Manage</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Select the line to be converted to a purchase order and on the menu at the top of page, click <span style="font-weight:bold;">Manage</span>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 519913871" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image42.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913871" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image42.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">Inquiries </span>and select <span style="font-weight:bold;">Sales order</span> from the drop-down selection list.</li>
     </ol>
@@ -664,7 +671,7 @@
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 6;" value="7">Make note of, or copy, the sales order number.</li>
     </ol>
-    <h6 class="Heading6"><strong>Note</strong>: Every item requirement line, for the sameproject, references the same sales order number. Therefore, any item requirement line can be selected to find out the sales order number.</h6>
+    <h6 class="Heading6"><strong>Note</strong>: Every item requirement line, for the same project, references the same sales order number. Therefore, any item requirement line can be selected to find out the sales order number.</h6>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 7;" value="8">Navigate to <span style="font-weight:bold;">Procurement and sourcing &gt; Purchase orders &gt; All purchase orders.</span></li>
     </ol>
@@ -672,7 +679,7 @@
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 8;" value="9">On the menu at the top of page, click <span style="font-weight:bold;">Purchase order</span>.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 519913874" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image45.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913874" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image45.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 9;" value="10">Under the <span style="font-weight:bold;">New </span>action pane, click <span style="font-weight:bold;">From a sales order</span>.</li>
     </ol>
@@ -690,15 +697,15 @@
       <li class="ListParagraph" style="counter-reset: item1 13;" value="14">Select the checkbox under the <span style="font-weight:bold;">Include </span>column for the item/service to be procured.</li>
       <li class="ListParagraph">In the <span style="font-weight:bold;">Vendor account </span>field, enter the vendor number from whom the item/service will be purchased.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 519913881" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image49.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="697.9"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 519913881" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image49.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 15;" value="16">Click <span style="font-weight:bold;">OK</span> to proceed.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 519913882" height="316.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image50.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 16;" value="17">Click the PO number that was just created to open the PO form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 16;" value="17">Click the purchase order number that was just created to open the purchase order form.</li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: New purchase orders are typically displayed at the bottom of the <strong>Purchase Order List</strong> page.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: New purchase orders are typically displayed at the bottom of the <em><strong>Purchase Order List</strong></em> page.</span></h6>
     <p class="margin-left-0-25in"><img alt="Picture 519913886" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image51.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <h6 class="Heading6"><strong>Tip</strong>: Add the <strong>Warehouse</strong>, <strong>Location</strong>, and <strong>Currency </strong>columns to the purchase order lines table grid for quick visibility.</h6>
     <ol>
@@ -707,7 +714,7 @@
     <p class="margin-left-0-25in"><img alt="Picture 519913889" height="319.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image52.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 18;" value="19">On the menu at the top of page, click <span style="font-weight:bold;">Edit</span>.</li>
-      <li class="ListParagraph">Under the <strong>Setup </strong>section of the header, in the <span style="font-weight:bold;">Requester </span>field, enter the name of the purchase order creator/submitter.</li>
+      <li class="ListParagraph">Under the <strong>Setup </strong>section of the header, in the <span style="font-weight:bold;">Requester </span>field, under the Administration section, enter the name of the purchase order creator/submitter.</li>
     </ol>
     <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Important</span>: This value determines the person (or group of people) to whom the PO is sent for  approval.E.g., the purchase order submitter&#39;s supervisor.</span></h6>
     <ol>
@@ -717,14 +724,14 @@
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 21;" value="22">Update the <strong>Delivery date</strong> field.</li>
     </ol>
-    <h6 class="Heading6"><strong>Note</strong>: This is the date that will display on the PO output and will be applied to all PO lines.</h6>
+    <h6 class="Heading6"><strong>Note</strong>: This is the date that will display on the PO printout and will be applied to all lines in the purchase order.</h6>
     <p><img alt="Picture 519913890" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image53.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 22;" value="23">On the menu at the top of page, click <span style="font-weight:bold;">Workflow </span>and submit the PO for approval.</li>
-      <li class="ListParagraph">Once approved, confirm and transmit the PO to vendor. Refer to the procedures, <em><strong>Confirm PO </strong></em>and <em><strong>Transmit to Vendor</strong></em>.</li>
+      <li class="ListParagraph">Once approved, confirm and transmit the PO to vendor. Refer to the procedure, <em><strong>Confirm PO and </strong></em><em><strong>Transmit to Vendor</strong></em>.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
-    <p>You have created a PO for a service/item identified in the item forecast.</p>
+    <p>You have created a purchase order for a service/item identified in the item forecast.</p>
     <h2 class="Heading2"><a id="Review_Draft_Purchase_Order_and_Submit_for_Approval"></a>Review Draft Purchase Order and Submit for Approval</h2>
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to submit a PO for approval.</p>
@@ -737,14 +744,12 @@
     <ol>
       <li class="ListParagraph">From the Integra home page, navigate modules to <span style="font-weight:bold;">Procurement and sourcing &gt; Purchase orders &gt; All purchase orders</span>.</li>
     </ol>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Project POs can also be accessed from within the project itself. Refer to the following procedure for instructions: <span style="font-style:italic;">View Purchase Orders for a Project</span>.</span></h6>
+    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Project purchase orders can also be accessed from within the project itself. Refer to the following procedure for instructions: <span style="font-style:italic;">View Purchase Orders for a Project</span>.</span></h6>
     <p class="ListParagraph margin-left-0-25in"><img alt="Picture 62" height="318.0" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image54.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.3"/></p>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Ensure the <span style="font-weight:bold;">Purchase Order List</span> view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</span></h6>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Locate and click the relevant PO number to open the PO form.</li>
+      <li class="ListParagraph" style="counter-reset: item1 1;" value="2">Locate and click the relevant PO number to open the purchase order form.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 21" height="325.1" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image55.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="714.0"/></p>
-    <h6 class="Heading6"><span style="font-weight:normal;"><span style="font-weight:bold;">Note</span>: Ensure the <span style="font-weight:bold;">Purchase Order LIst </span>view is active. If not, click the drop-down arrow to select it and pin it as your default view. This view has been customized for Integra users.</span></h6>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 2;" value="3">Validate the following fields in each line for accuracy and completion.</li>
     </ol>
@@ -808,32 +813,83 @@
       </table>
     </div>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 3;" value="4">Scroll down to the <span style="font-weight:bold;">Line details </span>section of PO and click the <span style="font-weight:bold;">Address </span>tab.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3;">Click the <strong>Header </strong>tab and scroll down to the <strong>Address </strong>section.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 32" height="317.5" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image56.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="699.2"/></p>
+    <p><img src="assets/images/image507.png"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 4;" value="5">If the items will initially be delivered to a location other than the destination IRC warehouse, e.g., port of entry airport, select the location from the drop-down selection list in the <span style="font-weight:bold;">Delivery address </span>field. Additionally, in the text box under <strong>Attention information</strong>, enter a note identifying the final destination location.</li>
-      <li class="ListParagraph" style="">Click the <span style="font-weight:bold;">Header </span>tab and scroll down to the <strong>Setup </strong>section of header.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3; counter-set: item1 4;">If the items will initially be delivered to a location other than the destination IRC warehouse, e.g., port of entry airport, select the location from the drop-down selection list in the <span style="font-weight:bold;">Delivery address </span>field. Additionally, in the text box under <strong>Attention information</strong>, enter a note identifying the final destination location.</li>
+      <li class="ListParagraph" style="counter-reset: item1 3; counter-set: item1 5;">Scroll to the <strong>Setup </strong>section of the header.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 37" height="315.9" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image57.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.3"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 6;" value="7">On the menu at the top of page, click <span style="font-weight:bold;">Edit</span>.</li>
       <li class="ListParagraph">In the <span style="font-weight:bold;">Requester </span>field, validate/enter the name of the PO creator. This name determines to whom the purchase order is routed for approval.</li>
-      <li class="ListParagraph">Scroll down to the Delivery section of the PO header.</li>
+      <li class="ListParagraph">Scroll down to the <strong>Delivery </strong>section of the PO header.</li>
     </ol>
     <p><img src="assets/images/image456.png"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 9;" value="10">Update the <strong>Delivery date</strong> field to the date the items are required. (Click <strong>Yes </strong>when prompted with the question to &quot;override&quot; the other dates.&quot;</li>
     </ol>
-    <h6 class="Heading6"><strong>Note</strong>: This is the date that will display on the PO output and will be applied to all PO lines.</h6>
+    <h6 class="Heading6"><strong>Remember</strong>: This is the date that will display on the PO output and will be applied to all PO lines.</h6>
     <p class="margin-left-0-25in"><img alt="Picture 58" height="318.2" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image58.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.3"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 10;" value="11">On the toolbar at the top of page, click <span style="font-weight:bold;">Workflow</span> and click <span style="font-weight:bold;">Submit</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">For each <span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">line item in the PO, scroll down to the <strong>Line details</strong> section of the purchase order, click the <strong>General </strong>tab, and ensure any additional information required for the purchase has been entered in the <strong>Text </strong>field.</span></span></span></li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">If prepayment is required, review the information immediately below this step. If not required, proceed to step <strong>13</strong>. </li>
+      <li style="margin-top:16px; margin-bottom:13px"><span style="font-size:12pt"><span style="page-break-after:avoid"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="background:yellow">If prepayment is required, review the information immediately below this step. If not, proceed to step <b>13</b>. </span></span></span></span></span></li>
+      <li style="margin-top:16px; margin-bottom:13px">Apply Prepayment on a a Purchase Order</li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">
+        <p style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><span style="line-height:107%">If vendor has requested prepayment for the PO, follow the guidance below.</span></span></span></span></p>
+      </li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Supply Chain identifies the vendor request for a prepayment(s) on purchase order during the quotation collection process.</span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><a name="_Hlk153528158">Supply Chain shares, via e-mail, the prepayment(s) request details and gets a reply with the approval of the authorized person approving the PO in Integra. The email and the approval reply are considered auditable supporting documents that must be attached to the PO.</a></span></span></span>
+        <ul style="list-style-type:circle">
+          <li style="margin-bottom:11px; margin-left:16px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">E-mail must include PO number, vendor name, vendor number, number of prepayments, prepayment value(s) and requested date(s) of the prepayment(s)</span></span></span></li>
+        </ul>
+      </li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Supply Chain records prepayment request details in the <i>Prepayment</i> form under the <b>Purchase</b> action tab on the purchase order.</span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">If more than one prepayment is requested, Supply Chain shall adhere to the following guidance in populating the prepayment form:</span></span></span>
+        <ul style="list-style-type:circle">
+          <li style="margin-bottom:11px; margin-left:16px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><a name="_Hlk153528459"><b>Description</b></a>: E.g., “2 Prepayments: 1<sup>st</sup>=50%, 2<sup>nd</sup>=50%”, etc.</span></span></span></li>
+        </ul>
+      </li>
+      <li style="list-style-type:none">
+        <ul style="list-style-type:circle">
+          <li style="margin-bottom:8px; margin-left:16px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><a name="_Hlk153528515"><b>Value</b></a>: Value must be equal to the total value of the prepayments in percentage or money amount</span></span></span></li>
+        </ul>
+      </li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Supply Chain informs Finance of the vendor’s prepayment request and attaches the approval email to the PO page in Integra. Finance receives the prepayment invoice from vendor. </span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Finance processes payment for vendor using the advance vendor payment journal, attaching the vendor invoice as a supporting document, and reviewing the vendor transactions to avoid duplication.</span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Finance informs Supply Chain that the prepayment is processed detailing out the amount and PO number.</span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Once the final invoice is received, Finance liquidates (settles) the amount for the advance vendor payment journal (or journals) related to the PO using the settlement function on the PO Invoicing tab.</span></span></span></li>
+      <li style="margin-bottom:11px; margin-left:8px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><span style="font-size:8.0pt"><span style="line-height:107%"></span></span>Finance and Supply Chain must collaborate to reconcile prepayments at least monthly, in addition to when final invoices are received.<b><span style="font-size:8.0pt"><span style="line-height:107%"></span></span></b></span></span></span></li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">
+        <p style="margin-bottom:11px; margin-left:24px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif"><b>System steps to record prepayment information on PO</b></span></span></span></p>
+      </li>
+      <li style="margin-bottom:13px; margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">Open the purchase order</span></span></span></span></li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">
+        <p style="margin-left:48px; margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="_x0000_i1026" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image603.png" style="width:517pt; height:110pt"/> <span style="line-height:115%"></span></span></span></span></p>
+      </li>
+      <li style="margin-bottom:13px; margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">On the <b>Purchase</b> menu, click <b>Prepayment</b>.</span></span></span></span></li>
+      <li class="ListParagraph" style="counter-reset: item1 10;">
+        <p style="margin-left:48px; margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><img alt="A screenshot of a computer
+Description automatically generated" id="Picture_x0020_1" o:borderbottomcolor="#7fff00 pure" o:borderleftcolor="#7fff00 pure" o:borderrightcolor="#7fff00 pure" o:bordertopcolor="#7fff00 pure" src="assets/images/image604.png" style="width:194pt; height:316.5pt"/> <span style="line-height:115%"></span></span></span></span></p>
+      </li>
+      <li style="margin-bottom:13px; margin-left:8px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span><span style="line-height:115%">Enter the required fields in the <b>Create or edit a prepayment</b> window.</span></span></span></span>
+        <ul style="list-style-type:circle">
+          <li style="margin-left:8px; margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span>In the <b>Description</b> field, enter a meaningful description for the prepayment schedule if there is only one prepayment. If there are multiple prepayments, use the following kind of description: “2 Prepayments: 1<sup>st</sup>=50%, 2<sup>nd</sup>=50%”, etc.<span style="line-height:115%"></span></span></span></span></li>
+          <li style="margin-left:8px; margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"><span style="line-height:115%"></span>Always select <b>PREPAYMENT</b> in the <b>Procurement category ID</b> field.<span style="line-height:115%"></span></span></span></span></li>
+        </ul>
+      </li>
+      <li class="ListParagraph" style="counter-reset: item1 10;"><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">Click</span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"> <b>Save</b>, then continue with the remaining steps to submit the </span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif">purchase order</span></span></span><span style="font-size:12.0pt"><span style="line-height:115%"><span style="font-family:&quot;Arial&quot;,sans-serif"> for approval.</span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Finance processes the final vendor invoice for the outstanding amount on the purchase order, per standard PO invoicing process, if any. </span></span></span></li>
+      <li style="margin-bottom:11px"><span style="font-size:12pt"><span style="line-height:107%"><span style="font-family:Arial,sans-serif">Finance processes vendor payment journal for outstanding amount after reconciling the vendor account, if applicable. </span></span></span></li>
+      <li style="margin-top:16px; margin-bottom:13px"><span style="font-size:12pt"><span style="line-height:115%"><span style="font-family:Arial,sans-serif"> Once the purchase order has been fully reviewed/updated, on the toolbar at the top of page, click <b>Workflow</b> and click <b>Submit</b>.</span></span></span></li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p class="ListParagraph">You have reviewed and submitted a PO to workflow for approval.</p>
     <h3 class="Heading3">Next Steps….</h3>
-    <p class="ListParagraph">Once PO is approved, confirm PO and transmit to vendor.</p>
+    <p class="ListParagraph">Once purchase order is approved, confirm PO and transmit to vendor.</p>
     <h2 class="Heading2"><a id="Confirm_PO_and_Transmit_to_Vendor"></a>Confirm PO and Transmit to Vendor</h2>
     <h3 class="Heading3">Purpose</h3>
     <p>Use this procedure to confirm a PO that has been fully approved.</p>
@@ -862,14 +918,23 @@
     <p class="margin-left-0-25in"><img alt="Picture 519913867" height="317.8" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image62.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol class="Decimal">
       <li class="ListParagraph" style="counter-reset: item1 4;" value="5">In the <span style="font-weight:bold;">Confirmation report</span> field, select the relevant option from the drop-down selection list.</li>
-      <li class="ListParagraph" style=""><img src="assets/images/image458.png"/></li>
+    </ol>
+    <p><img src="assets/images/image458.png"/></p>
+    <ol class="Decimal">
       <li class="ListParagraph" style="counter-reset: item1 5;" value="6">Click <span style="font-weight:bold;">OK </span>to proceed.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 519913869" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image63.png" style="cursor: nesw-resize; border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
       <li class="ListParagraph" style="counter-reset: item1 6;" value="7">Under the <span style="font-weight:bold;">Generate </span>action pane, click <span style="font-weight:bold;">Confirm</span>.</li>
-      <li class="ListParagraph">To view the PO, click <span style="font-weight:bold;">Purchase order confirmation</span> under the <span style="font-weight:bold;">Journals </span>fast tab.</li>
-      <li class="ListParagraph">If required, export the PO to PDF format by clicking <span style="font-weight:bold;">Export &gt; PDF</span>.</li>
+      <li class="ListParagraph">To view the confirmation, click <span style="font-weight:bold;">Purchase order confirmation</span> under the <span style="font-weight:bold;">Journals </span>action tab.</li>
+    </ol>
+    <p><img src="assets/images/image508.png"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-set: item1 8;">Select the confirmation line and click <strong>Preview/Print &gt; Original preview</strong>.</li>
+    </ol>
+    <p><img src="assets/images/image509.png"/></p>
+    <ol>
+      <li class="ListParagraph" style="counter-set: item1 9;">If required, export the purchase order to PDF format by clicking <span style="font-weight:bold;">Export &gt; PDF</span>.</li>
     </ol>
     <h3 class="Heading3">Result</h3>
     <p class="ListParagraph">You have confirmed a PO and transmitted PO to vendor.</p>
@@ -883,11 +948,11 @@
     <h3 class="Heading3">Steps</h3>
     <ol>
       <li class="ListParagraph">Navigate modules to <span style="font-weight:bold;">Project management and accounting &gt; Projects &gt; All projects</span>.</li>
-      <li class="ListParagraph">Open the project form.</li>
+      <li class="ListParagraph">Search for and open the relevant project form.</li>
     </ol>
-    <p class="margin-left-0-25in"><img alt="Picture 16" height="322.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image64.png" style="border-width: 1px;border-style: solid;border-color: #000000;border-left-width: 1px;border-left-style: solid;border-left-color: #000000;border-top-width: 1px;border-top-style: solid;border-top-color: #000000;border-right-width: 1px;border-right-style: solid;border-right-color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #000000" width="704.2"/></p>
+    <p class="margin-left-0-25in"><img alt="Picture 16" height="322.3" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image64.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="704.2"/></p>
     <ol>
-      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top, click <span style="font-weight:bold;">Manage</span>.</li>
+      <li class="ListParagraph" style="counter-reset: item1 2;" value="3">On the menu at the top of page, click <span style="font-weight:bold;">Manage</span>.</li>
     </ol>
     <p class="margin-left-0-25in"><img alt="Picture 47" height="318.7" src="assets/images/UG_Item Forecasting to Purchase Order Creation_QA_files/image65.png" style="border-width: 1px; border-style: solid; border-color: rgb(0, 0, 0);" width="697.9"/></p>
     <ol>
@@ -898,7 +963,7 @@
       <li class="ListParagraph" style="counter-reset: item1 4;" value="5">Review the list of purchase orders that have been generated for the project. Scroll to the right to see more information.</li>
     </ol>
     <ul style="margin-left: 40px;">
-      <li class="ListParagraph">To open the actual PO, click the PO number.</li>
+      <li class="ListParagraph">Click a specific PO number to view the purchase order.</li>
     </ul>
     <h3 class="Heading3">Result</h3>
     <p class="ListParagraph">You have displayed a list of all purchase orders linked to a project.</p>
